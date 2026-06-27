@@ -1153,28 +1153,31 @@ def _check_hed(
                 ))
             prev_level = level
 
-    # HED002 — Heading immediately followed by heading (no body text between)
-    # Only fires on real APA section headings (level >= 1).
-    # heading_level=0 means a layout/skip element (title page, caption, table label)
-    # and must not trigger this rule.
-    #
-    # Proximity guard: only fire when the two headings' document paragraph indices
-    # are close (≤ _HED002_MAX_GAP). A large gap means real content exists between
-    # them in the document (table cells, list items) that was excluded from the
-    # prose list — not a genuine APA violation. This also prevents the document
-    # title (which may sit far from the first section heading in document index terms)
-    # from triggering false positives.
-    _HED002_MAX_GAP = 5  # allow up to 4 non-prose document paragraphs between headings
+    # HED002 — Heading immediately followed by another real heading with no body
+    # prose between them. Layout elements (heading_level=0) are neutral: they are
+    # skipped for this scan and do not themselves satisfy the body-text requirement.
     if heading_cfg.get("flag_heading_without_body", True):
-        for i in range(len(paragraphs) - 1):
+        for i in range(len(paragraphs)):
             cur = paragraphs[i]
-            nxt = paragraphs[i + 1]
-            if (
-                cur.heading_level is not None and cur.heading_level >= 1
+            if not (
+                cur.heading_level is not None
+                and cur.heading_level >= 1
                 and not cur.is_reference_entry
-                and nxt.heading_level is not None and nxt.heading_level >= 1
-                and not nxt.is_reference_entry
-                and (nxt.index - cur.index) <= _HED002_MAX_GAP
+            ):
+                continue
+
+            nxt = None
+            for candidate in paragraphs[i + 1:]:
+                if candidate.is_reference_entry:
+                    break
+                if candidate.heading_level is None:
+                    break
+                if candidate.heading_level >= 1:
+                    nxt = candidate
+                    break
+
+            if (
+                nxt is not None
                 # Only flag when the next heading is at the same or higher
                 # (more general) level.  A Level-1 heading immediately followed
                 # by a Level-2 subheading is valid APA structure and must not

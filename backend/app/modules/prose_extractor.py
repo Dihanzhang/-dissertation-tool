@@ -47,7 +47,7 @@ _HEADING_STYLES = {
 
 # Word built-in non-prose styles that should be skipped by prose rules.
 # Title-page elements (Title, Subtitle, Author, Date) and navigation/caption styles
-# use these names. Treat them as heading_level=1 so rules like P001 skip them.
+# use these names. Treat them as heading_level=0 so prose and heading rules skip them.
 _SKIP_STYLES: set[str] = {
     "Title", "Subtitle", "Author", "Date",
     "TOC Heading", "TOC 1", "TOC 2", "TOC 3",
@@ -192,6 +192,14 @@ def _heading_level(para) -> Optional[int]:
     return None
 
 
+def _is_real_heading(p: ProseParagraph) -> bool:
+    return p.heading_level is not None and p.heading_level >= 1
+
+
+def _is_explicit_word_heading(p: ProseParagraph) -> bool:
+    return p.style_name in _HEADING_STYLES
+
+
 def _mask_inline_quotes(text: str) -> str:
     return _INLINE_QUOTE_RE.sub(QUOTE_MASK, text)
 
@@ -266,22 +274,36 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
         ))
 
     # Post-processing: reclassify heuristic headings in the title-page / preamble
-    # zone as layout elements (level 0).  The preamble is defined as everything
-    # before the first paragraph that carries an explicit Word "Heading N" style.
-    # Documents often place the title, subtitle, author, and institution in Normal
-    # style with bold/centred formatting; these look like headings to the heuristic
-    # but must not trigger HED001/HED002 or PRF001.
+    # zone as layout elements (level 0). Documents often place the title,
+    # subtitle, author, and institution in Normal style with bold/centred
+    # formatting; these look like headings to the heuristic but must not trigger
+    # HED001/HED002 or PRF001.
     first_explicit_heading_pos = next(
         (j for j, p in enumerate(paragraphs)
-         if p.heading_level is not None
-         and p.heading_level >= 1
-         and p.style_name.startswith("Heading")),
+         if _is_real_heading(p) and _is_explicit_word_heading(p)),
         None,
     )
     if first_explicit_heading_pos is not None:
         for j in range(first_explicit_heading_pos):
             p = paragraphs[j]
-            if p.heading_level is not None and p.heading_level >= 1 and not p.style_name.startswith("Heading"):
+            if _is_real_heading(p) and not _is_explicit_word_heading(p):
+                paragraphs[j].heading_level = 0
+    else:
+        # All-manual documents have no Word Heading styles. In that case, treat
+        # earlier heuristic headings before the first body paragraph as preamble,
+        # but preserve the final real heading immediately before that body text as
+        # the likely first APA section heading.
+        first_body_pos = next(
+            (j for j, p in enumerate(paragraphs)
+             if p.heading_level is None and not p.is_reference_entry),
+            None,
+        )
+        if first_body_pos is not None:
+            real_heading_positions = [
+                j for j, p in enumerate(paragraphs[:first_body_pos])
+                if _is_real_heading(p)
+            ]
+            for j in real_heading_positions[:-1]:
                 paragraphs[j].heading_level = 0
 
     return paragraphs

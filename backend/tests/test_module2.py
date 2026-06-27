@@ -461,6 +461,28 @@ class TestHED002:
         findings = check_paragraphs(paras, DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
         assert not has_rule(findings, "HED002")
 
+    def test_level_zero_between_same_level_headings_still_flagged(self):
+        paras = [
+            make_para("Background", heading_level=2, index=0),
+            make_para("Table 1", heading_level=0, index=1),
+            make_para("Literature Review", heading_level=2, index=2),
+        ]
+        findings = check_paragraphs(paras, DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
+        assert has_rule(findings, "HED002")
+
+    def test_body_after_level_zero_prevents_heading_without_body(self):
+        paras = [
+            make_para("Background", heading_level=2, index=0),
+            make_para("Table 1", heading_level=0, index=1),
+            make_para(
+                "This section describes the background literature. It establishes context.",
+                index=2,
+            ),
+            make_para("Literature Review", heading_level=2, index=3),
+        ]
+        findings = check_paragraphs(paras, DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
+        assert not has_rule(findings, "HED002")
+
 
 # ===========================================================================
 # CIT001 — "and" in parenthetical citation  §8.13

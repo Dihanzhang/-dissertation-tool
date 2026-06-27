@@ -465,7 +465,7 @@ reference_rules:
 
 **Location:** `backend/tests/`  
 **Runner:** `python -m pytest tests/ -q`  
-**Current count: 175 tests, all passing in < 1 second**
+**Current count: 180 tests, all passing in < 1 second**
 
 ### test_module2.py — APA Rule Engine
 
@@ -503,31 +503,24 @@ Covers citation lock (preserved/dropped/added/altered), text splitter (chunk bou
 
 ## 11. Known Issues & Pending Fixes
 
-### CRITICAL: HED002 False Positives on Document-Level Headings
+### HED002 False Positives on Document-Level Headings
 
-**Status: Partially fixed — root cause not fully resolved**
+**Status: Fixed as of 2026-06-27**
 
-**Symptoms:**
-- `HED002` fires on Para 9 "Organizational Change Implementation Plan"
-- `HED002` fires on Para 21 "Introduction to the Problem and Proposed Change"
-- `HED002` fires on Para 31 "Theory or Model of Change and Vision Statement"
+**Previous symptoms:**
+- `HED002` fired on Para 9 "Organizational Change Implementation Plan"
+- `HED002` fired on Para 21 "Introduction to the Problem and Proposed Change"
+- `HED002` fired on Para 31 "Theory or Model of Change and Vision Statement"
 
-**Root cause analysis:**
+**Root cause:** Bold or centered title-page elements were classified as real APA headings before the title-page fragment heuristic could mark them as layout elements.
 
-The document title (Para 9) is classified as `heading_level=1` (bold). If any paragraph at document index 10–14 is also classified as `heading_level=1`, the gap check `(nxt.index - cur.index) <= _HED002_MAX_GAP` fires with a gap ≤ 5.
+**Fix applied:**
+- `extract_prose()` now post-processes the title-page / preamble zone and reclassifies heuristic title-page headings as `heading_level=0`.
+- Documents with explicit Word `Heading 1`–`Heading 5` styles reclassify heuristic headings before the first explicit heading as layout elements.
+- All-manual documents preserve the final real heading immediately before the first body paragraph as the likely first APA section heading, while reclassifying earlier heuristic headings as layout elements.
+- `HED002` now scans for body prose before the next real heading instead of using `_HED002_MAX_GAP`.
 
-For Para 21 and Para 31: there may be a bold paragraph (e.g. a pull-out label, subtitle, or instructor annotation) immediately following the section heading that is incorrectly classified as a real APA heading.
-
-**Current mitigation:** `_HED002_MAX_GAP = 5` — only fires when two headings are within 5 document-paragraph indices of each other. This prevents (9→21, gap=12) and (21→31, gap=10) from triggering, but does NOT prevent (9→11, gap=2) if Para 11 is bold.
-
-**Step-7 heuristic** (`prose_extractor.py:186`): paragraphs ≤ 8 words with no terminal punctuation return `heading_level=0`. This correctly reclassifies non-bold title-page elements. Does NOT help if those elements are bold (bold check at step 4/5 fires first).
-
-**Definitive fix needed:** One of:
-- Post-processing pass in `extract_prose()` to reclassify bold short paragraphs that appear before the first body-prose paragraph as `heading_level=0`
-- Change HED002 to use a body-prose-exists check (not gap heuristic) between consecutive headings, and treat level-0 elements as neutral (neither prose nor heading)
-- Add explicit Word-style recognition for title-page layouts (detect `"Title"` style on Para 9 → reclassify all adjacent paragraphs within ±5 indices as level-0 if short)
-
-**Workaround while pending:** Ignore HED002 findings for headings that are recognisably document titles or major section dividers, or suppress HED002 for the first N paragraphs (e.g., first 20) of the document.
+**Regression coverage:** `backend/tests/test_prose_extractor.py` verifies docx-level preamble classification for both explicit-heading and all-manual documents. `backend/tests/test_module2.py` verifies that level-0 layout elements are neutral for `HED002`.
 
 ---
 
@@ -657,11 +650,16 @@ These are source extraction artifacts from APA 7 manual ingestion. Safe to delet
 - Identified persistent HED002 false positives on Para 9, 21, 31 — root cause is bold paragraphs immediately adjacent in document index
 - Total test count: 175 passing
 
+### Session 4 (2026-06-27)
+- Replaced HED002 paragraph-index proximity guard with a body-prose scan between real headings
+- Extended `extract_prose()` preamble post-processing for all-manual documents:
+  - heuristic title-page headings before the first body paragraph become `heading_level=0`
+  - the final heading immediately before body prose is preserved as the likely first section heading
+- Added docx-level extractor regression tests for explicit Word headings and all-manual heading formatting
+- Added HED002 regression tests for level-0 layout elements between headings
+- Total test count: 180 passing
+
 ### Pending Next Session
-- [ ] Definitive HED002 fix for document title + section headings being flagged as consecutive
-- [ ] Investigate whether bold title-page elements (if any) are hitting step 4/5 before the step-7 guard
-- [ ] Consider post-processing pass in `extract_prose()` to reclassify all paragraphs before the first body-prose paragraph as level-0 if they are short
-- [ ] Add `diagnose_styles.py` output to test suite so paragraph-level heading classification can be verified without uploading a `.docx`
 - [ ] Clean up temp `.txt` files in `backend/` root
 - [ ] Restrict CORS origins from `"*"` to specific frontend domain before production deployment
 - [ ] Wire up payment/Stripe for credit top-up
