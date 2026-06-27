@@ -1,0 +1,1890 @@
+I now have enough information from all chapters. Let me compile the complete gap analysis output.
+
+---
+
+## Gap Analysis: APA 7th Edition Rules MISSED or INCOMPLETELY Covered by the Previous Inventory
+
+---
+
+### CHAPTER 3 — Journal Article Reporting Standards (JARS) [ALL MISSED]
+
+---
+
+### §3.1 — Purpose of JARS [MISSED]
+
+**What was missed:** The entire existence and scope of JARS was not covered.
+
+**Rule:** JARS applies to quantitative, qualitative, and mixed methods research. Abstracts and the full manuscript each have separate standards. JARS tables are not requirements but represent community consensus on transparency.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag if method sections omit JARS-required elements for the declared research design type.
+
+**Confidence:** HIGH
+
+---
+
+### §3.2 — Quantitative Design: Abstract Reporting Standards [MISSED]
+
+**What was missed:** Quantitative abstracts must report: problem under investigation, participants/subjects (including species and number), study method (including apparatus, materials, measures), findings (including statistical significance, effect sizes, confidence intervals), and conclusions/implications.
+
+**Rule:** Abstract must include all those elements for a quantitative study. Missing any one is noncompliant.
+
+**Checkable:** PARTIAL
+
+**Detection:** Check abstract for presence of: problem statement, sample description, method keyword, result with statistics, conclusion.
+
+**Confidence:** HIGH
+
+---
+
+### §3.3 — Quantitative Design: Introduction Standards [MISSED]
+
+**What was missed:** Introduction must state the problem, summarize relevant scholarship with citations, identify gaps/inconsistencies motivating the study, and articulate hypotheses or research questions and how they are derived.
+
+**Rule:** Hypotheses must be explicitly stated and linked to prior literature.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag if hypotheses are absent or never connected to cited literature.
+
+**Confidence:** HIGH
+
+---
+
+### §3.4 — Quantitative Design: Method Reporting Standards [MISSED]
+
+**What was missed:** Method must describe: participant characteristics (including exclusion criteria), sampling procedure, sample size determination (power analysis), materials/measures (including psychometric properties), research design, and procedure (including IRB approval and informed consent).
+
+**Rule:** Sample size justification (power analysis) is a required element, not optional. Psychometric properties of measures must be reported.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag if power analysis is absent, if psychometric properties are unreported, or if IRB/consent language is missing.
+
+**Confidence:** HIGH
+
+---
+
+### §3.5 — Quantitative Design: Results Reporting Standards [MISSED]
+
+**What was missed:** Results must include: participant flow (how many started, completed, excluded), data screening procedures, descriptive statistics, inferential statistics (including exact test statistic, df, p values, effect sizes, and confidence intervals), and ancillary analyses.
+
+**Rule:** Effect sizes and confidence intervals are required for all inferential tests, not optional additions.
+
+**Checkable:** YES
+
+**Detection:** Flag any inferential statistic that lacks an effect size or confidence interval.
+
+**Confidence:** HIGH
+
+---
+
+### §3.6 — Quantitative Design: Discussion Standards [MISSED]
+
+**What was missed:** Discussion must: restate the hypothesis and whether it was supported, compare findings to prior literature, address limitations (including validity threats), and state implications and future directions.
+
+**Rule:** Hypotheses must be explicitly confirmed or refuted in Discussion.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag if Discussion lacks a clear return to stated hypotheses.
+
+**Confidence:** HIGH
+
+---
+
+### §3.7–3.8 — Qualitative Design: Abstract and Introduction Standards [MISSED]
+
+**What was missed:** Qualitative abstracts must include: problem, research questions, participant/site characteristics, data collection approach, approach to inquiry, findings, and implications. Introduction must present the problem, situate the study in the relevant literature, state the study purpose and research questions, and indicate approach to inquiry.
+
+**Rule:** The "approach to inquiry" (e.g., phenomenology, grounded theory, narrative) must be stated both in the abstract and in the introduction.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag if the qualitative tradition or approach is not named.
+
+**Confidence:** HIGH
+
+---
+
+### §3.9–3.10 — Qualitative Design: Method Standards [MISSED]
+
+**What was missed:** Qualitative method must report: researcher positionality (researcher characteristics and how they may affect data); site and participant selection (including purposive sampling rationale); data collection procedures (including duration, number of contacts, types of data); data analytic strategy; trustworthiness/rigor procedures (member checking, triangulation, negative case analysis, auditing, etc.).
+
+**Rule:** Researcher positionality statement is a required element in qualitative methods sections.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag qualitative papers that omit positionality or trustworthiness procedures.
+
+**Confidence:** HIGH
+
+---
+
+### §3.11 — Qualitative Design: Results/Findings Standards [MISSED]
+
+**What was missed:** Qualitative findings must: present the findings as themes, categories, or narratives; support findings with quotes or excerpts; describe how findings reflect the data; and address credibility/dependability.
+
+**Rule:** Participant quotes must be presented to support themes. Findings must connect back to the analytic strategy described in the method.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag if findings lack direct participant quotes.
+
+**Confidence:** HIGH
+
+---
+
+### §3.12 — Meta-Analysis Reporting Standards [MISSED]
+
+**What was missed:** Meta-analyses have specific JARS-M requirements: literature search procedures (databases, date ranges, search terms), inclusion/exclusion criteria, number of studies considered and included, effect size metric used, coding procedures, moderator analysis, publication bias assessment (funnel plots, Egger's test), and heterogeneity statistics (Q, I²).
+
+**Rule:** All meta-analyses must report heterogeneity statistics and a publication bias assessment.
+
+**Checkable:** YES
+
+**Detection:** Flag meta-analyses missing Q statistic, I², or a publication bias test.
+
+**Confidence:** HIGH
+
+---
+
+### §3.13–3.17 — Mixed Methods Reporting Standards [MISSED]
+
+**What was missed:** Mixed methods abstracts and methods must: identify the mixed methods design type (convergent, explanatory sequential, exploratory sequential, etc.); justify the rationale for mixing; describe the integration strategy (point of interface); present both quantitative and qualitative standards for each strand; and explain how inferences were drawn from integration.
+
+**Rule:** The mixed methods design type must be explicitly named and the rationale for mixing must be justified.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag if mixed methods design type is unnamed or if integration strategy is not described.
+
+**Confidence:** HIGH
+
+---
+
+### CHAPTER 4 — Writing Style and Grammar [GAPS]
+
+---
+
+### §4.1–4.2 — Transitions and Flow [MISSED]
+
+**What was missed:** Use transitional words and phrases to link ideas between sentences and paragraphs (e.g., however, therefore, moreover, in contrast, in addition). Avoid abrupt shifts in topic. Each paragraph should have a clear topic sentence.
+
+**Rule:** Transitional language is required for coherent flow; abrupt topic shifts indicate structural problems.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag paragraphs with no transitional language between contiguous paragraphs.
+
+**Confidence:** MEDIUM
+
+---
+
+### §4.4 — Conciseness and Clarity [MISSED]
+
+**What was missed:** Avoid redundancy (e.g., "the reason is because" → "the reason is that"; "four different groups" → "four groups"; "completely eliminate" → "eliminate"; "future plans" → "plans"; "end result" → "result").
+
+**Rule:** Eliminate jargon and redundant modifier pairs. Say things once.
+
+**Checkable:** YES
+
+**Detection:** Flag specific wordy patterns: "in order to" → "to"; "for the purpose of" → "to"; "the fact that" → delete; "at the present time" → "now"; "due to the fact that" → "because"; "in the event that" → "if".
+
+**Confidence:** HIGH
+
+---
+
+### §4.6 — Paragraph Length [MISSED]
+
+**What was missed:** No minimum or maximum sentence or paragraph length is specified. Single-sentence paragraphs should be used infrequently (they are abrupt and lack development). Paragraphs longer than one double-spaced page are likely too long. Strive for coherent, well-structured paragraphs of moderate length.
+
+**Rule:** One-sentence paragraphs signal underdevelopment; multi-page paragraphs signal lack of organization.
+
+**Checkable:** YES
+
+**Detection:** Flag paragraphs of exactly one sentence (unless used for stylistic emphasis) and paragraphs exceeding roughly 250 words.
+
+**Confidence:** HIGH
+
+---
+
+### §4.25–4.30 — Writing Improvement Strategies [MISSED]
+
+**What was missed:** APA explicitly recommends: (a) writing outlines before drafting; (b) reading the work aloud to catch awkward phrasing; (c) asking colleagues to review drafts; (d) setting aside drafts before revising (allowing distance). Scientific writing is a process requiring revision; first drafts are not final products.
+
+**Rule:** These are process recommendations, not style rules, but APA explicitly endorses them.
+
+**Checkable:** NO
+
+**Detection:** Cannot be automatically detected.
+
+**Confidence:** MEDIUM
+
+---
+
+### CHAPTER 5 — Bias-Free Language [GAPS]
+
+---
+
+### §5.2 — Sensitive Labels and Adjectival Nouns [MISSED]
+
+**What was missed:** Do not use adjectives as nouns to label people. Specific deprecated constructions:
+
+| Deprecated | Recommended |
+|---|---|
+| the gays | gay people; gay individuals |
+| the poor | people experiencing poverty; low-income people |
+| the elderly | older adults |
+| the mentally ill | people with mental illness |
+| amnesiacs | people with amnesia |
+| schizophrenics | people with schizophrenia |
+| the learning disabled | people with learning disabilities |
+| drug users (as a label) | people who use drugs; people with substance use disorder |
+| the homeless | people experiencing homelessness |
+| borderlines | people with borderline personality disorder |
+
+**Rule:** Do not nominalize demographic adjectives. Use noun + adjective phrase (person-first or identity-first as appropriate).
+
+**Checkable:** YES
+
+**Detection:** Flag: "the [adjective]" where adjective refers to a person group; flag "-ics" and "-ists" used as person labels (schizophrenics, bipolars, autistics — except where identity-first is preferred by the community, e.g., "autistic people" is acceptable).
+
+**Confidence:** HIGH
+
+---
+
+### §5.6 — Participation and Research Language [MISSED]
+
+**What was missed:** Specific deprecated research language:
+
+| Deprecated | Recommended |
+|---|---|
+| subjects failed (to complete the task) | participants did not complete |
+| patients/subjects were managed | participants completed; participants were treated |
+| patient placement | assignment to condition |
+| subjects were run | data were collected from participants |
+| the data suggest the patient... | the data suggest the participant... |
+
+**Rule:** Use active, respectful, non-clinical language for research procedures. Avoid "failed" when a participant simply did not do something.
+
+**Checkable:** YES
+
+**Detection:** Flag "failed to complete"; "subjects were run"; "patient management"; "patient placement".
+
+**Confidence:** HIGH
+
+---
+
+### §5.10 — Intersectionality [MISSED]
+
+**What was missed:** Acknowledge intersectionality: people simultaneously occupy multiple social identity categories (race, gender, class, disability, sexuality, religion, etc.) and those identities interact to shape experiences. Do not treat categories as independent or additive. Avoid writing as though one identity fully determines experience.
+
+**Rule:** When discussing marginalized experiences, acknowledge that multiple social identities interact. Do not reduce a person's experience to a single category.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag passages that discuss one demographic category while ignoring interaction effects when intersectionality is relevant to the study.
+
+**Confidence:** MEDIUM
+
+---
+
+### COMPLETE BIAS-FREE LANGUAGE TERM TABLE (§5.1–5.10)
+
+Organized by section, exhaustive based on textbook examples.
+
+---
+
+#### §5.1 — General Principles
+
+| Deprecated | Recommended |
+|---|---|
+| mankind | people; humans; human beings; humanity |
+| man (generic) | person; individual |
+| he (generic) | they (singular); he or she; rewrite to plural |
+| man-hours | person-hours; labor hours |
+| manpower | workforce; personnel |
+| chairman | chair; chairperson |
+| stewardess | flight attendant |
+| mailman | mail carrier; letter carrier |
+| policeman | police officer |
+| fireman | firefighter |
+
+---
+
+#### §5.2 — Sensitive Labels / Adjectival Nouns
+
+| Deprecated | Recommended |
+|---|---|
+| the gays | gay people; gay individuals |
+| the poor | people experiencing poverty; low-income people |
+| the elderly | older adults; older people |
+| the mentally ill | people with mental illness |
+| the homeless | people experiencing homelessness |
+| amnesiacs | people with amnesia |
+| schizophrenics | people with schizophrenia |
+| the learning disabled | people with learning disabilities |
+| drug users (as identity label) | people who use drugs; people with substance use disorder |
+| borderlines | people with borderline personality disorder |
+| depressives | people with depression |
+
+---
+
+#### §5.3 — Age
+
+| Deprecated | Recommended |
+|---|---|
+| elderly (noun) | older adults; older people |
+| the aged | older adults |
+| seniors (in formal writing) | older adults |
+| boys/girls (for adults) | men/women; use "boys/girls" only for people under 18 |
+| girl (adult woman) | woman |
+| boy (adult man) | man |
+| child/adolescent distinction | child: birth to 12; adolescent: 13–17; adult: 18+ |
+| young people (vague) | specify age range when possible |
+
+---
+
+#### §5.4 — Disability
+
+| Deprecated | Recommended |
+|---|---|
+| wheelchair-bound | wheelchair user; uses a wheelchair |
+| confined to a wheelchair | wheelchair user |
+| suffers from cerebral palsy | has cerebral palsy; person with cerebral palsy |
+| victim of autism | autistic person; person with autism (follow community preference) |
+| mentally retarded | intellectual disability; person with an intellectual disability |
+| retarded | person with an intellectual disability |
+| handicapped | person with a disability; disabled person |
+| able-bodied | nondisabled; person without a disability |
+| normal (versus disabled) | nondisabled; neurotypical (for cognitive/developmental) |
+| special needs | disability; specific disability name |
+| birth defect | congenital disability; condition present at birth |
+| demented | person with dementia |
+| insane; crazy | person with a mental health condition; person with psychosis (if applicable) |
+| patient (in non-clinical contexts) | participant; person; client |
+| commits suicide | died by suicide; death by suicide |
+| successful suicide | died by suicide |
+| failed suicide attempt | suicide attempt; nonfatal suicide attempt |
+
+Note: "Deaf" (capital D) refers to members of the Deaf community who identify culturally as Deaf; "deaf" (lowercase) refers to the audiological condition. Follow individual/community preference.
+
+Identity-first language acceptable when preferred: "autistic person," "Deaf person," "blind person" (many disability communities prefer identity-first; ask or follow community norms).
+
+---
+
+#### §5.5 — Gender and Sex
+
+| Deprecated | Recommended |
+|---|---|
+| sex (when referring to social identity) | gender |
+| gender (when referring to biology) | sex (biological sex) |
+| male/female as nouns for humans | men/women; man/woman |
+| males/females (noun usage) | men/women; boys/girls; male participants/female participants |
+| opposite sex | other sex; another sex; different sex |
+| hermaphrodite | intersex person; person with an intersex condition |
+| transgendered | transgender (no "-ed") |
+| a transgender / transgenders | a transgender person; transgender people |
+| transsexual (often outdated) | transgender (use individual's preference) |
+| pre-operative / post-operative transsexual | transgender person (avoid surgery-focused language unless clinically relevant) |
+| gender identity disorder | gender dysphoria (DSM-5 term) |
+| biological sex / natal sex / birth sex | sex assigned at birth |
+| non-binary as a phase | non-binary identity (treat as valid identity) |
+| preferred pronouns | pronouns (drop "preferred") |
+| he or she / (s)he / s/he | they (singular); rewrite sentence to plural; or use the person's stated pronoun |
+| ladies and gentlemen | everyone; all; colleagues |
+| wife/husband (assuming heterosexuality) | partner; spouse |
+
+---
+
+#### §5.6 — Race and Ethnicity
+
+| Deprecated | Recommended |
+|---|---|
+| nonwhite | people of color; specify group when possible |
+| Caucasian (for White people generally) | White; European American |
+| minority (used imprecisely) | specify the group; use "people of color" for multiple groups |
+| colored (historical but still used erroneously) | Black; person of color (never "colored") |
+| Oriental (for people) | Asian; Asian American; specify national origin |
+| Negro | Black; African American |
+| Hispanic (for all Spanish-speaking groups) | Latinx; Latino/a; specify national origin (Mexican American, Puerto Rican, Cuban American, etc.) |
+| illegal alien | undocumented immigrant; person without documentation |
+| illegal immigrant | undocumented immigrant |
+| American Indian (may be rejected by some) | Indigenous; Native American; Alaska Native; specify tribal affiliation when possible |
+| Eskimo (offensive in many communities) | Inuit; Yupik; Alaska Native (specify) |
+
+Note: Capitalization — capitalize racial/ethnic designations: Black, White, Indigenous, Asian, Hispanic, Latinx. Some style guides capitalize "White" to parallel "Black"; APA 7th does so consistently. "white" (lowercase) is not preferred.
+
+---
+
+#### §5.7 — Sexual Orientation
+
+| Deprecated | Recommended |
+|---|---|
+| sexual preference | sexual orientation (not a "preference"; is not a choice) |
+| homosexual / homosexuality (in most contexts) | gay; lesbian; bisexual; same-sex attracted; LGBTQ+ |
+| homosexual relationship | same-sex relationship |
+| gay lifestyle | gay identity; being gay |
+| admitted homosexual | openly gay person |
+| sexual deviance (for non-heterosexual identities) | do not use |
+| homophobia | antigay bias; sexual prejudice; negative attitudes toward gay people |
+| heterosexism | antigay bias; assumption of heterosexuality |
+| bisexual (used to mean confused or indecisive) | bisexual person; person with bisexual identity |
+
+---
+
+#### §5.8 — Socioeconomic Status
+
+| Deprecated | Recommended |
+|---|---|
+| lower class | people with low incomes; low-income people; economically marginalized people |
+| middle class | middle-income people; specify income bracket when possible |
+| upper class | high-income people; people with high incomes |
+| underprivileged | economically disadvantaged; people experiencing poverty |
+| the poor | people living in poverty; people experiencing economic hardship |
+| welfare recipient | person receiving public assistance; person receiving income support |
+
+---
+
+#### §5.9 — Intersectionality and Multiple Characteristics
+
+| Deprecated | Recommended |
+|---|---|
+| minority women | Black women; Latina women; specify the group |
+| minority men | specify race/ethnicity |
+| diverse populations (used vaguely) | specify the groups included |
+| double minority | person with multiple marginalized identities; specify |
+
+---
+
+#### §5.10 — Participation Language (Research Context)
+
+| Deprecated | Recommended |
+|---|---|
+| subjects | participants (for human research) |
+| failed to complete | did not complete |
+| patients were managed | participants were treated; the clinical team managed care |
+| patient placement | assignment to condition |
+| subjects were run | data were collected; participants completed the session |
+| normal control group | comparison group; nonclinical sample |
+| matched normals | matched comparison participants |
+
+---
+
+### CHAPTER 6 — Mechanics of Style [GAPS]
+
+---
+
+### §6.4 — Semicolon Use [MISSED]
+
+**What was missed:** Use a semicolon to separate two independent clauses not joined by a conjunction. Also use to separate items in a series when the items themselves contain commas.
+
+**Rule:** Semicolons join independent clauses without a coordinating conjunction; they separate complex list items that contain internal commas (e.g., "London, England; Paris, France; Berlin, Germany").
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag commas used between two independent clauses without a conjunction (comma splice). Flag series of items with internal commas not separated by semicolons.
+
+**Confidence:** HIGH
+
+---
+
+### §6.10 — Slash [MISSED]
+
+**What was missed:** The slash has limited uses: (a) to separate alternatives ("and/or," "pass/fail"); (b) fractions (3/4); (c) URLs. Do NOT use a slash as a substitute for "and" (e.g., write "anxiety and depression," not "anxiety/depression"). Avoid using a slash when "per" can be used (write "miles per hour," not "miles/hour" — but "per" is preferred except in units of measure that are conventionally written with slashes, e.g., km/h).
+
+**Rule:** Slashes as substitutes for "and" or "or" in prose are generally discouraged. Limit slashes to specific approved uses.
+
+**Checkable:** YES
+
+**Detection:** Flag "anxiety/depression" style constructions in prose (slash used where "and" or "or" should appear).
+
+**Confidence:** HIGH
+
+---
+
+### §6.15 — Job Titles and Positions [MISSED]
+
+**What was missed:** Capitalize a title when it immediately precedes a personal name (e.g., "President Obama," "Professor Smith"). Lowercase when following a name or used alone (e.g., "Barack Obama, president of the United States"; "the professor"). Formal titles used in place of a name retain capitalization (e.g., "the President" when referring to a specific president in formal government writing — but APA generally prefers lowercase).
+
+**Rule:** Title before name = uppercase. Title after name or standalone = lowercase.
+
+**Checkable:** YES
+
+**Detection:** Flag job titles used after names without capitalization lowercasing, and standalone job titles that are incorrectly capitalized.
+
+**Confidence:** HIGH
+
+---
+
+### §6.16 — Diseases, Disorders, and Theories [MISSED]
+
+**What was missed:** Names of diseases, disorders, syndromes, and conditions are generally lowercase (e.g., autism spectrum disorder, major depressive disorder, schizophrenia, diabetes). Exception: retain uppercase for the personal names embedded in eponyms (e.g., Alzheimer's disease, Parkinson's disease, Down syndrome). Similarly, names of theories and laws are generally lowercase (e.g., the theory of evolution, cognitive dissonance theory) but capitalize proper names within them (e.g., Freudian theory, Maslow's hierarchy of needs).
+
+**Rule:** Disease/disorder names = lowercase unless containing a personal name.
+
+**Checkable:** YES
+
+**Detection:** Flag capitalized disorder names that do not contain a proper noun (e.g., "Major Depressive Disorder" should be "major depressive disorder").
+
+**Confidence:** HIGH
+
+---
+
+### §6.21 — Factors, Variables, and Effects from Statistical Analyses [MISSED]
+
+**What was missed:** When factors or variables are derived from a factor analysis or statistical model and given a label by the authors, capitalize those derived labels (e.g., "Factor 1 (Neuroticism)," "the Emotional Reactivity factor"). Generic variable names remain lowercase (e.g., "the dependent variable").
+
+**Rule:** Author-constructed factor/scale names from a statistical analysis = capitalize. Generic terms = lowercase.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag factor analysis papers that fail to capitalize their named factors when used as proper labels in text.
+
+**Confidence:** MEDIUM
+
+---
+
+### §6.23 — Reverse Italics [MISSED]
+
+**What was missed:** When a word that would normally be italicized (e.g., a book title or a technical term) appears within text that is already italicized, the word is set in Roman (non-italic) type to create contrast. This is called "reverse italics."
+
+**Rule:** Inside an italic context (e.g., a journal title in a reference list or an italic book title in a figure caption), words that would otherwise be italic appear in Roman type.
+
+**Checkable:** YES
+
+**Detection:** Flag titles-within-titles and ensure nested titles use reverse italics.
+
+**Confidence:** HIGH
+
+---
+
+### §6.26 — Abbreviation Plurals and Sentence Position [MISSED]
+
+**What was missed:** To form the plural of an abbreviation, add a lowercase "s" without an apostrophe (e.g., IQs, DVDs, URLs, Eds.). Never begin a sentence with a lowercase abbreviation (e.g., do not begin a sentence with "p values suggest..."; rewrite to "The p values suggest..."). Numbers spelled out at the beginning of a sentence must begin with a capital letter only if they begin the sentence; rewrite to avoid starting with a numeral.
+
+**Rule:** Abbreviation plural = add "s" (no apostrophe). Never open a sentence with a lowercase abbreviation.
+
+**Checkable:** YES
+
+**Detection:** Flag possessive apostrophes on abbreviation plurals (IQ's). Flag sentences beginning with a lowercase letter abbreviation.
+
+**Confidence:** HIGH
+
+---
+
+### §6.30 — Chemical Compound Names [MISSED]
+
+**What was missed:** Chemical compound names are not italicized in text. Standard chemical symbols and formulas are acceptable (e.g., NaCl, CO₂, H₂O). Use standard element symbols as defined by IUPAC. Locants, descriptors, and multiplying prefixes in chemical names are italicized (e.g., N-methyl-D-aspartate; cis-dichlorodiammine; 2-amino-4-methylpentanedioic acid).
+
+**Rule:** Chemical names = no italics (except for locant prefixes). Symbols and formulas = standard notation.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag italicized chemical compound names when the italics are not locants/descriptors.
+
+**Confidence:** MEDIUM
+
+---
+
+### §6.31 — Gene and Protein Nomenclature [MISSED]
+
+**What was missed:** Gene symbols (human genes): italicize and use all-uppercase Roman letters (e.g., APOE, BRCA1). Protein products: do not italicize; use all-uppercase Roman letters (e.g., APOE, BRCA1 protein). Mouse/rat gene symbols: italicize; first letter uppercase, remaining lowercase (e.g., Brca1). Species-specific symbols vary by organism; follow the relevant genetic nomenclature authority.
+
+**Rule:** Human gene symbols = italic, all caps. Protein products = non-italic. Mouse/rat genes = italic, first-letter-cap only.
+
+**Checkable:** YES
+
+**Detection:** Flag gene symbols that are not italicized; flag protein products that are italicized.
+
+**Confidence:** HIGH
+
+---
+
+### §6.35 — Ordinal Numbers [MISSED]
+
+**What was missed:** Ordinal numbers (first, second, third; 1st, 2nd, 3rd) follow the same rules as cardinal numbers (see §6.32–6.34). Do not treat ordinals differently from cardinals for purposes of the number rules. Ordinals below 10 are spelled out in text (first through ninth); ordinals 10 and above are expressed as numerals (10th, 23rd, 101st). In tables and figures, numerals may be used throughout.
+
+**Rule:** Ordinals follow the same word/numeral threshold (10) as cardinal numbers.
+
+**Checkable:** YES
+
+**Detection:** Flag ordinal numbers below 10 written as numerals in prose (e.g., "1st" when it should be "first").
+
+**Confidence:** HIGH
+
+---
+
+### §6.40 — Data Presentation: Number of Items and Choice of Format [MISSED]
+
+**What was missed:** Use these thresholds for presenting numerical data: (a) 2 numbers: embed in text; (b) 3 to 4 numbers: a sentence or small table, author's choice; (c) 5 to 20 numbers: usually a table; (d) more than 20 numbers: usually a figure. These are guidelines, not absolute rules, and context may dictate otherwise.
+
+**Rule:** Threshold rule for text vs. table vs. figure based on number of data points.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag prose with more than 20 embedded numbers that might be better as a figure; flag lengthy tables with more than 20 data series that might benefit from a figure.
+
+**Confidence:** MEDIUM
+
+---
+
+### §6.41–6.42 — Statistics: No Reference for Common Formulas [MISSED]
+
+**What was missed:** §6.41: Do not provide a reference for common statistical procedures (e.g., t test, ANOVA, chi-square, regression). Only provide a reference for newer, less well-known, or controversial statistical methods. §6.42: Do not present the formulas for common statistics; present the formula only for newly developed or uncommon statistics, or when the formula is the focus of discussion.
+
+**Rule:** Common statistics need no citation and no formula. Novel statistics need both.
+
+**Checkable:** YES
+
+**Detection:** Flag citations to standard statistical procedures (e.g., "Cohen, 1988" for just reporting Cohen's d — citing the effect size conversion manual is fine, but citing a statistics textbook for a t test is unnecessary). Flag presented formulas for t, F, r, or χ² when they are not the focus.
+
+**Confidence:** HIGH
+
+---
+
+### §6.45 — Spacing Around Statistical Symbols [MISSED]
+
+**What was missed:** Use a space on each side of arithmetic operators (=, +, -, ×, ÷) and relational operators (<, >, ≤, ≥, ≠). No space between a sign and its value when the sign is a unary operator (e.g., −3, +2). Use a space between a value and the next element in an expression.
+
+**Rule:** Space before and after all binary operators; no space for unary negative/positive signs.
+
+**Checkable:** YES
+
+**Detection:** Flag missing spaces around operators (e.g., "t(38)=2.45" → "t(38) = 2.45"; "p=.03" → "p = .03").
+
+**Confidence:** HIGH
+
+---
+
+### §6.46–6.48 — Equations [MISSED]
+
+**What was missed:** §6.46: Short equations or expressions that run in the text do not need to be displayed on their own line unless they are complex. §6.47: Displayed equations should be centered and numbered in parentheses flush right (e.g., (1), (2)), if referred to elsewhere in the paper. §6.48: Align multi-line equations at the equals sign, and use the equation editor or similar tool; do not type equations using workarounds (slash for divide, asterisk for multiply in formal display).
+
+**Rule:** Display equations when complex; number displayed equations if referenced. Align multi-line equations at "=".
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag inline complex equations that would be clearer displayed; flag displayed equations without numbering when referenced elsewhere.
+
+**Confidence:** MEDIUM
+
+---
+
+### §6.49–6.52 — Lists [MISSED]
+
+**What was missed:** §6.49: APA permits three types of lists: bulleted (unordered), numbered (ordered sequence or priority), and lettered (ordered items within a paragraph). §6.50: Use numbered lists when sequence matters (e.g., steps in a procedure). Use bulleted lists when sequence does not matter. §6.51: Lettered lists appear within a paragraph and use lowercase letters in parentheses: (a), (b), (c). §6.52: A list item at the end of a complete sentence takes a period. List items that are not complete sentences are separated by commas or semicolons. Do not use a list for fewer than three items — use prose instead.
+
+**Rule:** Three or more items = list may be appropriate. Fewer than three = write in prose. Lettered in-paragraph list = (a), (b), (c) format.
+
+**Checkable:** YES
+
+**Detection:** Flag bulleted or numbered lists with only two items (should be prose); flag lettered lists not using the "(a), (b)" convention.
+
+**Confidence:** HIGH
+
+---
+
+### CHAPTER 7 — Tables and Figures [ALL MISSED]
+
+---
+
+### §7.1–7.4 — General Guidelines for Tables and Figures [MISSED]
+
+**What was missed:** §7.1: Use tables and figures only when they aid comprehension; do not include them merely to add bulk. §7.2: Tables and figures must be referred to in text; include a call-out in the text before each table or figure appears. §7.3: Permission and copyright: when reprinting or adapting from another source, provide a copyright attribution in the table note or figure note. Whether permission is required depends on whether the original is copyrighted and whether fair use applies (APA publications require permission if reproducing more than a few rows/columns; check publisher guidelines). §7.4: Figure resolution: figures for manuscript submission should be at 300 dpi minimum; figures in student papers can be in color.
+
+**Rule:** Every table and figure needs a text call-out. Reproduced tables/figures need copyright attribution. Figures: 300 dpi minimum for publication.
+
+**Checkable:** YES
+
+**Detection:** Flag tables or figures with no corresponding in-text reference. Flag reprinted tables/figures with no copyright note.
+
+**Confidence:** HIGH
+
+---
+
+### §7.5 — Referring to Tables and Figures in Text [MISSED]
+
+**What was missed:** Always refer to tables and figures by number only ("Table 1," "Figure 2"). Never use "the table above," "the table below," "the table on page 5," or "the following table." Do not use "the aforementioned table."
+
+**Rule:** Reference by number only. No positional references allowed.
+
+**Checkable:** YES
+
+**Detection:** Flag "the table above," "the figure below," "the following table/figure," "the table on page," "the aforementioned."
+
+**Confidence:** HIGH
+
+---
+
+### §7.6 — Table and Figure Placement [MISSED]
+
+**What was missed:** For manuscripts submitted for publication: place tables and figures after the reference list, each on its own page. For student papers: tables and figures may be embedded in the text after the paragraph that calls them out, or placed at the end per instructor preference. For dissertations: follow the institution's formatting requirements, which may differ from publication format.
+
+**Rule:** Publication format = tables/figures after references. Student/dissertation format = may be embedded; check institutional requirements.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag tables/figures that appear before they are first referenced in text.
+
+**Confidence:** HIGH
+
+---
+
+### §7.7 — Copyright Attribution for Reprinted Tables and Figures [MISSED]
+
+**What was missed:** When reprinting or adapting a table or figure, include a copyright attribution in the note. Use "Reprinted from" for verbatim reproductions and "Adapted from" for modified versions. Copyright attribution format:
+
+- For APA journal material (no permission needed): *Note.* Adapted from "Article Title," by A. A. Author & B. B. Author, Year, *Journal Name*, *vol*(issue), p. XX (https://doi.org/xx). Copyright Year by the American Psychological Association.
+- For copyrighted material (permission obtained): *Note.* Reprinted from [source info]. Copyright [year] by [copyright holder]. Reprinted with permission.
+
+**Rule:** "Reprinted from" vs. "Adapted from" — exact reproduction vs. any modification. Copyright attribution must appear in the note below the table or figure.
+
+**Checkable:** YES
+
+**Detection:** Flag tables/figures labeled "adapted from" or "reprinted from" that lack the full copyright attribution format in the note.
+
+**Confidence:** HIGH
+
+---
+
+### §7.8 — Accessibility of Tables and Figures [MISSED]
+
+**What was missed:** Tables and figures should be accessible. Provide alternative text (alt text) descriptions for figures in digital publications. Alt text should describe the key finding conveyed by the figure, not just its visual appearance ("alt text: Bar graph showing higher scores in Group A than Group B at p < .05"). For tables, ensure that the table structure is accessible to screen readers (use proper header row markup).
+
+**Rule:** Alt text required for figures in digital/online publications. Alt text describes what the figure communicates, not just what it looks like.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag digital submissions with figures that have no alt text.
+
+**Confidence:** MEDIUM
+
+---
+
+### §7.9 — Table Components [MISSED]
+
+**What was missed:** A standard table has five components: (1) table number, (2) title, (3) headings, (4) body, (5) notes. The stub column (leftmost column listing row names) is required. The stub column heading describes the contents of the stub. Every column including the stub must have a heading.
+
+**Rule:** All five components are standard. Every column — including the stub — requires a heading.
+
+**Checkable:** YES
+
+**Detection:** Flag tables with unheaded stub columns. Flag tables missing any of the five standard components.
+
+**Confidence:** HIGH
+
+---
+
+### §7.10 — Table Numbers [MISSED]
+
+**What was missed:** Table numbers use Arabic numerals (Table 1, Table 2 — not Table I, Table II). Number consecutively in the order first mentioned in text. The label "Table" and its number appear in bold, flush left, above the title. Appendix tables use "Table A1," "Table B1," etc., by appendix letter.
+
+**Rule:** Arabic numerals. Bold. Flush left. Sequential order of first mention.
+
+**Checkable:** YES
+
+**Detection:** Flag Roman numeral table numbers. Flag non-bold or non-flush-left table numbers.
+
+**Confidence:** HIGH
+
+---
+
+### §7.11 — Table Titles [MISSED]
+
+**What was missed:** Each table must have a brief, explanatory title. Avoid overly general titles ("Summary of Results") and overly detailed titles that replicate the note. The title appears in italic title case, one double-spaced line below the table number, flush left.
+
+**Rule:** Table title: italic, title case, flush left, brief but specific.
+
+**Checkable:** YES
+
+**Detection:** Flag table titles that are not italicized. Flag overly vague titles ("Table 1: Results").
+
+**Confidence:** HIGH
+
+---
+
+### §7.12 — Table Headings [MISSED]
+
+**What was missed:** All column headings, including the stub column heading, appear in sentence case (not title case). Headings are centered above their columns. Use singular forms unless the heading refers to a group (e.g., "score," not "scores"; but "Participants" is acceptable when referring to a group). Spanner headings (headings that span multiple columns) are centered over those columns and separated from column headings by a horizontal rule. Decked headings (two-level headings) use indentation.
+
+**Rule:** Column headings = centered, sentence case, singular. Stub heading = required. Spanner headings separated by rule above and below.
+
+**Checkable:** YES
+
+**Detection:** Flag title-case column headings (should be sentence case). Flag missing stub column heading.
+
+**Confidence:** HIGH
+
+---
+
+### §7.13 — Table Body [MISSED]
+
+**What was missed:** Use an em dash (—) to indicate a cell for which data are not available (the researcher looked for data but could not find it). Leave a cell blank when the datum is not applicable (the intersection does not logically exist). Do not use "N/A" or "n/a" unless defined. Do not use ellipses to fill empty cells. Report numerical data to a consistent number of decimal places throughout the column.
+
+**Rule:** Em dash = data not available. Blank = not applicable. Consistent decimal places within a column.
+
+**Checkable:** YES
+
+**Detection:** Flag "N/A" in tables without definition. Flag inconsistent decimal places within a single column.
+
+**Confidence:** HIGH
+
+---
+
+### §7.14 — Table Notes [MISSED]
+
+**What was missed:** Tables may have three types of notes, each beginning on a new line below the table:
+
+1. **General note:** begins with "*Note.*" in italic, followed by a period. Applies to the table as a whole. Defines abbreviations, gives copyright attribution, explains special formatting.
+2. **Specific note:** marked by superscript lowercase letters (a, b, c), assigned left-to-right, top-to-bottom across the table. Begin the specific note with the superscript letter: "a n = 50."
+3. **Probability note:** marks statistical significance using asterisks. Standard convention: *p* < .05. **p* < .01. ***p* < .001. Must be consistent within the same paper (same asterisk = same p threshold throughout).
+
+Order of notes: general note first, then specific notes, then probability notes. Only include the note types that apply.
+
+**Rule:** Three types of notes in fixed order. Asterisk/p-value convention must be consistent across all tables in a paper.
+
+**Checkable:** YES
+
+**Detection:** Flag inconsistent asterisk thresholds across tables in same paper. Flag specific notes not assigned sequentially left-to-right, top-to-bottom. Flag general notes not beginning with "*Note.*" in italic.
+
+**Confidence:** HIGH
+
+---
+
+### §7.15 — Standard Abbreviations in Tables and Figures [MISSED]
+
+**What was missed:** Standard abbreviations recognized in the field do not need to be defined in a table note (e.g., M, SD, SE, CI, df, F, t, p, n, N, %, ms). Non-standard abbreviations (author-created or uncommon) must be defined in a note. Statistics, Greek letters, and units of measurement do not require definition in the note.
+
+**Rule:** Common statistical abbreviations need no definition. Author-specific abbreviations must be defined.
+
+**Checkable:** YES
+
+**Detection:** Flag table notes defining standard abbreviations (M, SD, etc.) unnecessarily; flag tables using non-standard abbreviations without defining them.
+
+**Confidence:** HIGH
+
+---
+
+### §7.16 — Confidence Intervals in Tables [MISSED]
+
+**What was missed:** When reporting confidence intervals alongside point estimates in tables, present the CI in square brackets immediately after the point estimate, or place CI limits in separate lower-limit (LL) and upper-limit (UL) columns. State the CI level (e.g., 95%) in the column heading or table note. Do not use "CI" without specifying the level.
+
+**Rule:** CI must specify the level (95%, 90%, etc.). Present in brackets or separate LL/UL columns.
+
+**Checkable:** YES
+
+**Detection:** Flag "CI" in table headings without a percentage (e.g., "95% CI" is correct; "CI" alone is insufficient).
+
+**Confidence:** HIGH
+
+---
+
+### §7.17 — Table Borders and Shading [MISSED]
+
+**What was missed:** Use horizontal rules: (1) above the column headings, (2) below the column headings, (3) above spanner headings, (4) below the table body. Do NOT use vertical rules (no vertical lines between columns). Do NOT use horizontal rules between every row. Avoid shading of table cells; if shading must be used to distinguish rows, use minimal, light shading. The manuscript version of a table uses only these borders.
+
+**Rule:** Horizontal rules at top, under headings, above spanners, and at bottom ONLY. No vertical rules. No row-by-row horizontal rules. No shading.
+
+**Checkable:** YES
+
+**Detection:** Flag tables with vertical lines between columns. Flag tables with horizontal rules between every data row (grid-style tables). Flag tables with shaded cells.
+
+**Confidence:** HIGH
+
+---
+
+### §7.22 — Principles of Figure Construction [MISSED]
+
+**What was missed:** A good figure: augments (not duplicates) the text; conveys only essential information; omits visually distracting detail; is easy to read (font, lines, labels large enough); is easy to understand (purpose readily apparent); is consistent in style with other figures in the same article. Check: images are clear; lines smooth and sharp; font simple and legible; units provided; axes labeled; elements labeled or explained.
+
+**Rule:** Standards of simplicity, clarity, continuity, and information value. Consistency across figures in a paper.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag figures that duplicate content in the text verbatim.
+
+**Confidence:** MEDIUM
+
+---
+
+### §7.23–7.28 — Figure Components [MISSED]
+
+**What was missed:**
+
+- **§7.23 Components:** Figure number, title, image, legend (if applicable), note (if applicable).
+- **§7.24 Figure Numbers:** Arabic numerals, bold, flush left, above the title.
+- **§7.25 Figure Titles:** Italic title case, one double-spaced line below the figure number, flush left. Brief but explanatory.
+- **§7.26 Figure Images:** Sans serif font (Arial, Calibri, Lucida Sans Unicode) within image; 8–14 pt. Title case for axis labels. Color accessibility: ensure color-blind accessible contrast (WCAG 2.0 AA). Avoid decorative 3-D effects. Gridlines only when needed for precise reading. Error bars must be labeled (SD, SE, CI — specify which). Panels labeled with capital letters (A, B) at top left if labeled.
+- **§7.27 Figure Legends:** Placed within or below image (not to the side). Title case. Only include when symbols/shadings need definition.
+- **§7.28 Figure Notes:** Same three types as table notes (general, specific, probability), same format and order. General note includes definitions, copyright attributions. Error bar type specified in general note or on image.
+
+**Rule:** Figure number = bold, flush left. Figure title = italic, title case, flush left. Image font = sans serif 8–14pt. Legend = within/below image, title case. Notes = general, specific, probability in that order.
+
+**Checkable:** YES
+
+**Detection:** Flag figure numbers that are not bold or not flush left. Flag figure titles in Roman (non-italic) or in sentence case. Flag fonts in figure images other than sans serif. Flag legends placed to the side of figures.
+
+**Confidence:** HIGH
+
+---
+
+### §7.29 — Relation Between Figures [MISSED]
+
+**What was missed:** Figures of equal importance should be the same size and scale. Combine figures that are logically alike into a single multipanel figure to facilitate comparison.
+
+**Rule:** Consistent size/scale across comparable figures in the same paper.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag papers with multiple line graphs on the same axes using different scales without justification.
+
+**Confidence:** MEDIUM
+
+---
+
+### §7.30 — Photographs [MISSED]
+
+**What was missed:** Color photographs must have sufficient contrast to remain interpretable in grayscale. Clearly indicate any manipulations beyond simple cropping and brightness/contrast adjustment in a figure note. Intentional misrepresentation of photographic images is an ethical violation equivalent to data fraud. Obtain a signed release before photographing an identifiable person.
+
+**Rule:** Disclose all photographic manipulations beyond cropping/brightness in the note. Signed release required for identifiable persons.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag figure notes for photographs that do not disclose any manipulations performed.
+
+**Confidence:** MEDIUM
+
+---
+
+### §7.31–7.34 — Biological and Specialized Data Figures [MISSED]
+
+**What was missed:**
+
+- §7.31: Identify in the general note how images were processed or enhanced.
+- §7.32 (Electrophysiological): Indicate direction of negativity (negative up or negative down); state electrode count and placement; provide scale of response.
+- §7.33 (Radiological/Imaging): Label each image; label left/right hemispheres for axial/coronal sections; indicate whether sagittal slices are left or right hemisphere; show where slices were taken using a reference image; specify coordinate space (Talairach, MNI).
+- §7.34 (Genetic Data): Label locations, distances, markers, and identification methods with the figure.
+
+**Rule:** Specialized figures require specific disclosure elements in notes (direction, scale, coordinate space, hemisphere labels).
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag neuroimaging figures missing coordinate space specification. Flag ERP figures missing negativity direction labels.
+
+**Confidence:** HIGH (for neuroimaging/ERP work); LOW for most social science.
+
+---
+
+### §7.35 — Figure Checklist [MISSED]
+
+**What was missed:** APA provides an explicit figure checklist (self-verifying criteria). Key items: Is the figure necessary? Is it referred to in text? Is the number bold and flush left? Is the title italic title case flush left? Is the font sans serif 8–14 pt? Is the legend within or below image, in title case? Are modifications to photographs disclosed? Are notes in order (general, specific, probability)?
+
+**Rule:** Treat the figure checklist as a final verification step.
+
+**Checkable:** YES
+
+**Detection:** Use checklist items as individual detection flags.
+
+**Confidence:** HIGH
+
+---
+
+### CHAPTER 8 — Works Credited in Text [GAPS]
+
+---
+
+### §8.1 — Citation Density [MISSED]
+
+**What was missed:** Do not cite every sentence when paraphrasing from a single source across multiple sentences. Do not under-cite by omitting sources. Do not over-cite the same source repeatedly when it is already clear what is being cited. Do not cite sources you did not read. The purpose of citation is to give credit and enable retrieval, not to demonstrate breadth.
+
+**Rule:** Cite at the level of the idea, not the sentence. Once a source is established in a paragraph's narrative, repeated citation is unnecessary unless the source changes.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag the same parenthetical citation appearing at the end of every sentence in a paragraph (over-citation).
+
+**Confidence:** MEDIUM
+
+---
+
+### §8.2 — Plagiarism [MISSED]
+
+**What was missed:** Plagiarism = presenting another's work as your own, whether intentional or unintentional. Includes: copying without quotation marks, paraphrasing too closely without citation, and using someone's ideas without credit. Self-plagiarism is a separate violation (§8.3). The rules apply to text, data, figures, tables, and ideas.
+
+**Rule:** All text, data, and ideas from others must be attributed. Close paraphrase still requires citation.
+
+**Checkable:** PARTIAL
+
+**Detection:** Cannot reliably detect. Requires comparison to source.
+
+**Confidence:** HIGH (rule is clear)
+
+---
+
+### §8.3 — Self-Plagiarism [MISSED]
+
+**What was missed:** Reusing your own previously published text without quotation marks and citation is self-plagiarism. Dissertation-to-journal article conversion: it is acceptable to publish dissertation content as journal articles, but acknowledge in the author note that the article is based on the dissertation. Do not submit the same manuscript to two journals simultaneously (duplicate publication). Do not publish the same findings in two journals (redundant publication) without disclosure.
+
+**Rule:** Acknowledge dissertation origins in the author note. Do not republish without disclosure. Self-citation with attribution is acceptable.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag absence of dissertation acknowledgment note in journal articles based on dissertations.
+
+**Confidence:** HIGH
+
+---
+
+### §8.4 — Correspondence Between Text Citations and References [MISSED]
+
+**What was missed:** Every in-text citation must have a corresponding reference list entry, and every reference list entry must be cited in text. Exceptions: personal communications (cited in text only) and works included in a meta-analysis (marked with asterisk in reference list, may not be cited in text). Use only the year in the citation (not a more specific date if the reference has a year, month, and day — the date in the citation is always the year).
+
+**Rule:** One-to-one correspondence between citations and references. Citation year = year only (even if reference has full date).
+
+**Checkable:** YES
+
+**Detection:** Flag citations with no corresponding reference. Flag references with no corresponding in-text citation. Flag citations with month/day appended (e.g., "Smith, 2020, June 5" in text is wrong; use "Smith, 2020").
+
+**Confidence:** HIGH
+
+---
+
+### §8.5 — Reference the Specific Version [MISSED]
+
+**What was missed:** Cite the specific version of a work you used. If you used the 3rd edition, do not cite the 2nd. If you used a translation, cite the translated version (with year of translation). If you used an ebook, cite the ebook (not the print). Software versions must be specified.
+
+**Rule:** Cite the exact version accessed.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag software citations missing version numbers. Flag translation citations missing the translated edition information.
+
+**Confidence:** HIGH
+
+---
+
+### §8.6 — Secondary Sources [MISSED]
+
+**What was missed:** A secondary source is a work that cites another work (the primary source) that you have not read. Format: "As cited in [Secondary Source, year]." The secondary source is the only work that appears in the reference list. Use secondary sources sparingly — read the primary source when possible.
+
+**Rule:** "As cited in" format. Only the secondary source goes in the reference list. Use sparingly.
+
+**Checkable:** YES
+
+**Detection:** Flag "(as cited in Smith, 2020)" patterns to confirm the primary source is NOT in the reference list.
+
+**Confidence:** HIGH
+
+---
+
+### §8.7 — Interviews [MISSED]
+
+**What was missed:** Published interviews are cited as their source type (e.g., a magazine interview is cited as a magazine article). Unpublished personal interviews that you conducted are cited as personal communications (not in reference list).
+
+**Rule:** Published interview = cite as the medium. Unpublished personal interview = personal communication, text-only citation.
+
+**Checkable:** YES
+
+**Detection:** Flag interviews cited with a reference list entry when they are unpublished personal communications.
+
+**Confidence:** MEDIUM
+
+---
+
+### §8.8 — Classroom Materials [MISSED]
+
+**What was missed:** Cite course packets, class notes, PowerPoints, Blackboard/Canvas content, and other classroom materials as either personal communications (if not retrievable by others) or by their actual source (e.g., cite the original article, not the course pack). Do not cite the instructor's lecture slides as a primary source for published findings; cite the original research instead.
+
+**Rule:** Cite the original source, not the classroom intermediary, when possible. Unretrievable classroom materials = personal communication.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag citations to "[Instructor], personal communication" used to credit published research findings.
+
+**Confidence:** MEDIUM
+
+---
+
+### §8.9 — Personal Communications [MISSED]
+
+**What was missed:** Personal communications include: emails, text messages, phone calls, personal interviews, memos, letters, unarchived social media messages, course discussions. Format: "C. C. Communicator (personal communication, Month DD, YYYY)" or "(C. C. Communicator, personal communication, Month DD, YYYY)." Personal communications are NOT included in the reference list.
+
+**Rule:** Personal communications: text-only, no reference list entry. Full date (month, day, year) required.
+
+**Checkable:** YES
+
+**Detection:** Flag personal communications appearing in the reference list (they should only be in-text). Flag personal communications missing the full date.
+
+**Confidence:** HIGH
+
+---
+
+### §8.16 — Year Omission in Repeated Narrative Citations [MISSED]
+
+**What was missed:** In a single paragraph where the same work is cited multiple times in narrative format, the year may be omitted from the second and subsequent narrative citations. NEVER omit the year from a parenthetical citation. This applies only within the same paragraph; when starting a new paragraph, include the year again.
+
+**Rule:** Year omission = narrative citations only; same paragraph only; never parenthetical.
+
+**Checkable:** YES
+
+**Detection:** Flag parenthetical citations missing the year. Flag narrative citations where year was omitted across a paragraph break.
+
+**Confidence:** HIGH
+
+---
+
+### §8.20 — Authors With the Same Surname [MISSED]
+
+**What was missed:** When two different first authors share the same surname (but have different initials), include the first initial(s) of both authors in all in-text citations, even when only one work is cited and even when the years differ. Format: "(J. M. Taylor & Neimeyer, 2015; T. Taylor, 2014)." If two different people share both surname and initials, cite in standard author-date format (no disambiguation is needed by initials alone — context must do it). For authors who have published under two different names (e.g., after a name change), include initials only when the initials differ.
+
+**Rule:** Same surname + different initials → always include initials for both. Same surname + same initials → no additional disambiguation by initials (use standard format).
+
+**Checkable:** YES
+
+**Detection:** Flag same-surname different-initial situations where initials are not included.
+
+**Confidence:** HIGH
+
+---
+
+### §8.21 — Abbreviating Group Authors [MISSED]
+
+**What was missed:** Group author abbreviations may be used in-text (not in the reference list). First mention: "American Psychological Association (APA, 2017)." First mention parenthetical: "(American Psychological Association [APA], 2017)." Second and subsequent mentions: "(APA, 2017)." Reference list always uses full name. If two different groups abbreviate to the same form, spell out each every time.
+
+**Rule:** Introduce abbreviation on first mention using the specified formats. Full name in reference list always. Conflicting abbreviations → always spell out.
+
+**Checkable:** YES
+
+**Detection:** Flag group author abbreviations introduced without the full name first. Flag group author abbreviations in reference lists.
+
+**Confidence:** HIGH
+
+---
+
+### §8.22 — Mentions of Websites, Periodicals, Software, Apps Without Citation [MISSED]
+
+**What was missed:** A general website URL mentioned in passing (not a specific page you cite) needs only the URL in parentheses — no reference list entry and no formal in-text citation. Example: "We created our survey using Qualtrics (https://www.qualtrics.com)." Similarly, software and app names with version numbers mentioned in the method section do not need a reference list entry in most cases (see §10.10 for exceptions). Journal names mentioned in meta-analysis search descriptions are italicized and titled but need no citation.
+
+**Rule:** General website mention = parenthetical URL only. Common software mention = name + version in text, no reference.
+
+**Checkable:** YES
+
+**Detection:** Flag reference list entries for general website mentions that are not specific pages or sources of information.
+
+**Confidence:** HIGH
+
+---
+
+### §8.24 — Long Paraphrases [MISSED]
+
+**What was missed:** A paraphrase continuing for several sentences only needs the citation on first mention. Subsequent sentences paraphrasing the same source do not need the citation repeated, as long as the context makes the source clear. Reintroduce the citation at a paragraph break. If the paraphrase incorporates multiple sources or switches among sources, cite each source at each relevant point.
+
+**Rule:** Long single-source paraphrase: cite once per paragraph. Multiple sources within a paraphrase: cite each source each time it contributes.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag paragraphs where a source is cited only once in a long multi-sentence paraphrase (acceptable) vs. where no citation appears at all in a clearly derivative paragraph (not acceptable).
+
+**Confidence:** MEDIUM
+
+---
+
+### §8.25 — Principles of Direct Quotation [MISSED]
+
+**What was missed:** Prefer paraphrase over direct quotation. Use direct quotations only when: reproducing an exact definition, the author said something memorably or succinctly, or when responding to exact wording. Always include author, year, AND page number (or location equivalent) for every direct quotation, in both narrative and parenthetical formats. Do not insert an ellipsis at the beginning or end of a quotation (unless the original source has an ellipsis there).
+
+**Rule:** Direct quotations always require page numbers. No leading/trailing ellipsis unless original has it.
+
+**Checkable:** YES
+
+**Detection:** Flag direct quotations (quoted text) with no page number in the citation. Flag leading or trailing ellipses added to quotations.
+
+**Confidence:** HIGH
+
+---
+
+### §8.26 — Short Quotations (Fewer Than 40 Words) [INCOMPLETE]
+
+**What was missed:** Full formatting rules. Short quotation (< 40 words): enclose in double quotation marks, incorporate into running text. Citation placement: either (a) immediately after closing quotation mark, or (b) at end of sentence. Periods and commas go INSIDE closing quotation marks (American English convention). Other punctuation goes inside quotation marks only if part of the quoted material. End punctuation follows the parenthetical citation (not before it). Narrative citation: author and year in running text, page number in parentheses after the quote.
+
+**Rule:** Commas and periods inside quotes. Other punctuation outside quotes unless part of quoted material. End punctuation AFTER the closing parenthesis of the citation (not before).
+
+**Checkable:** YES
+
+**Detection:** Flag period or comma placed outside closing quotation marks. Flag end punctuation before the parenthetical citation rather than after. Flag missing page numbers in quotation citations.
+
+**Confidence:** HIGH
+
+---
+
+### §8.27 — Block Quotations (40 Words or More) [INCOMPLETE]
+
+**What was missed:** Block quotations (≥ 40 words): do NOT use quotation marks. Start on a new line. Indent the entire block 0.5 in. from the left margin. Additional paragraphs within a block: indent the first line of each subsequent paragraph an additional 0.5 in. Double-space the block; no extra space before or after. Citation: either (a) parenthetical citation after the final punctuation of the block (no period after the closing parenthesis), or (b) narrative citation before the block with page number only in parentheses after the final punctuation. Do NOT add a period after the closing parenthesis.
+
+**Rule:** 40 words = block threshold. No quotation marks. 0.5 in. indent. No period after closing citation parenthesis.
+
+**Checkable:** YES
+
+**Detection:** Flag block quotations retaining quotation marks. Flag block quotations with periods placed after the parenthetical citation.
+
+**Confidence:** HIGH
+
+---
+
+### §8.28 — Direct Quotation Without Page Numbers [MISSED]
+
+**What was missed:** For works without page numbers, use one of these alternatives: (a) section heading (e.g., "Osteoarthritis section"); (b) abbreviated heading in quotes; (c) paragraph number ("para. 1"); (d) heading + paragraph number combination ("Musical Forays section, para. 4"). For audiovisual works: use timestamp ("2:12"). For canonically numbered works (Bible, plays): use book/chapter/verse/act/scene/line numbers. Do NOT include Kindle location numbers.
+
+**Rule:** Six acceptable page-number substitutes, each specified by format. No Kindle locations.
+
+**Checkable:** YES
+
+**Detection:** Flag Kindle location numbers in citations. Flag audiovisual quotations without timestamps. Flag quotations from webpages without heading/paragraph locators.
+
+**Confidence:** HIGH
+
+---
+
+### §8.29 — Accuracy of Quotations [MISSED]
+
+**What was missed:** Quotations must match the source exactly in wording, spelling, and internal punctuation — even if the source contains an error. If the original contains an error that might confuse readers, insert "[sic]" (italicized, in brackets) immediately after the error. When in doubt, paraphrase rather than quote.
+
+**Rule:** Reproduce exactly. "[sic]" for source errors. No corrections to source text within quotation.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag quotations that appear to have been silently corrected.
+
+**Confidence:** HIGH
+
+---
+
+### §8.30–8.31 — Changes to Quotations [MISSED]
+
+**What was missed:** §8.30 (No explanation required): (a) Change first letter to upper/lowercase to fit sentence context. (b) Change end punctuation to fit sentence syntax (if meaning unaltered). (c) Change single to double quotation marks or vice versa. (d) Omit footnote/endnote callouts. §8.31 (Explanation required): (a) Omitting material from within a quotation: use three-period ellipsis ( . . . ) with spaces, or four periods ( . . . . ) when a sentence break falls within the omission. (b) Inserting material: use square brackets [like this]. (c) Adding emphasis: italicize word(s) and add "[emphasis added]" immediately after the italicized text.
+
+**Rule:** Specified cosmetic changes need no note. Any omission → ellipsis. Any insertion → square brackets. Any added emphasis → "[emphasis added]."
+
+**Checkable:** YES
+
+**Detection:** Flag omissions without ellipsis. Flag insertions using parentheses instead of square brackets. Flag italics added to quotes without "[emphasis added]."
+
+**Confidence:** HIGH
+
+---
+
+### §8.32 — Quotations Containing Embedded Citations [MISSED]
+
+**What was missed:** When quoting material that contains citations to other works (embedded citations), include those citations within the quotation. Do not add the embedded works to your reference list unless you cite them separately as primary sources. Footnote/endnote callout numbers within quoted material may be omitted without explanation. When a quotation ends with citations, it is acceptable to end the quotation before the citations and cite only the work you actually read.
+
+**Rule:** Embedded citations stay inside the quotation. Include in your reference list ONLY if you cite them elsewhere. May drop trailing embedded citations.
+
+**Checkable:** YES
+
+**Detection:** Flag reference list entries for works that appear only as embedded citations in quoted material (they should NOT be in the reference list).
+
+**Confidence:** HIGH
+
+---
+
+### §8.33 — Quotations Containing Material Already in Quotation Marks [MISSED]
+
+**What was missed:** Short quotation (< 40 words): if the quoted material already uses double quotation marks, change to single quotation marks within your double quotation marks: "mobile devices enabled employees to work 'anywhere, anytime'." Block quotation (≥ 40 words): if the original uses single quotation marks (British style), change to double quotation marks in the block.
+
+**Rule:** Nested quotes: double around single (short). Single quotation marks from British-style sources → double in block quotations.
+
+**Checkable:** YES
+
+**Detection:** Flag short quotations where quoted material within quotes uses double quotation marks (should be single).
+
+**Confidence:** HIGH
+
+---
+
+### §8.34 — Permission for Lengthy Quotations [MISSED]
+
+**What was missed:** Written permission may be required from the copyright holder for quotations exceeding approximately 800 words from a single source. Shorter works (poems, song lyrics) may require permission for any reproduction. See §12.14–12.18 for permission procedures. This applies to academic publication, not student papers.
+
+**Rule:** 800+ words from a single source may require permission. Song lyrics and poetry always check.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag papers citing lengthy quotations (approaching 800 words from one source) and confirm permission has been obtained for publication.
+
+**Confidence:** MEDIUM
+
+---
+
+### §8.35 — Epigraphs [MISSED]
+
+**What was missed:** An epigraph is a quotation that introduces a paper, chapter, or section. Format: (a) appears before the first line of text, (b) indented 0.5 in. from the left margin (like a block quotation), (c) no quotation marks. Credit line: em dash followed by author's full name, comma, and work title, aligned to the right — if NOT in reference list. If the source IS an academic work or is cited with permission, include a parenthetical citation (author, date, page) after the end punctuation, and add a reference list entry.
+
+**Rule:** Epigraph = block style, no quotes. Non-academic source = credit line aligned right, no reference. Academic source = parenthetical citation + reference list entry.
+
+**Checkable:** YES
+
+**Detection:** Flag epigraphs that use quotation marks. Flag epigraphs from academic sources without a parenthetical citation.
+
+**Confidence:** HIGH
+
+---
+
+### §8.36 — Quotations From Research Participants [MISSED]
+
+**What was missed:** Participant quotations use the same formatting rules as other quotations (< 40 words = quotation marks in text; ≥ 40 words = block). Since participant quotations are part of your original research, do NOT list them in the reference list and do NOT treat them as personal communications. State in the text that the quotations are from participants. Respect confidentiality/anonymity agreements. Assign pseudonyms if needed. If quoting a school policy or organizational document used in a case study that must remain confidential, do not cite or list it; describe information in the text in suitably disguised form.
+
+**Rule:** Participant quotes: same formatting as other quotes, but NOT in reference list and NOT personal communications. Label explicitly as "from participants." Confidential documents: do not cite; describe in disguised form.
+
+**Checkable:** YES
+
+**Detection:** Flag participant quotations listed in the reference list. Flag participant quotations labeled as "personal communication."
+
+**Confidence:** HIGH
+
+---
+
+### CHAPTER 9 — Reference List [GAPS]
+
+---
+
+### §9.2 — Webpages vs. Websites vs. Other Online Sources [MISSED]
+
+**What was missed:** "Website" is not a catch-all reference category. First ask: "What type of work is this?" A government agency report on a website = use the reports category, not the webpages category. A CDC page with health statistics = webpages/websites. Do not use the webpages category for works that better fit another category (journal article, book, report, etc.).
+
+**Rule:** Choose reference category by content type, not by retrieval method (online vs. print).
+
+**Checkable:** YES
+
+**Detection:** Flag references formatted as webpages that should be reports, journal articles, or other recognized types.
+
+**Confidence:** HIGH
+
+---
+
+### §9.3 — Online and Print References Are the Same Template [MISSED]
+
+**What was missed:** Do not use separate templates for online vs. print versions of the same work. The same template applies whether you accessed the work in print or online. The only difference appears in the source element (DOI or URL vs. no link for print without DOI). Database names and database URLs are generally NOT included in references.
+
+**Rule:** One template per reference type regardless of access method. Do not include database information unless the work is proprietary to that database.
+
+**Checkable:** YES
+
+**Detection:** Flag references that include database names (PsycINFO, EBSCO, Academic Search Complete) when the work is available in other databases too.
+
+**Confidence:** HIGH
+
+---
+
+### §9.7 — Definition of Author in References [MISSED]
+
+**What was missed:** "Author" is defined broadly: includes editors of books, directors of films, podcast hosts, principal investigators, etc. Organizational author from a website = the organization (unless otherwise stated). Annual reports = the organization as author. If the author cannot be determined, treat as no author (§9.12). Author may be determined from context even if not in the byline.
+
+**Rule:** Author = whoever is primarily responsible. For organizational content without a byline, the organization = author.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag references for organizational website pages that list the specific webpage author rather than the organization when the page has no individual author byline.
+
+**Confidence:** MEDIUM
+
+---
+
+### §9.9 — Spelling and Capitalization of Author Names [MISSED]
+
+**What was missed:** Preserve the author's preferred spelling exactly, including hyphens in hyphenated surnames (Santos-García), diacritics (López, Müller), two-part surnames (Velasco Rodríguez). Retain preferred capitalization (e.g., bell hooks = "hooks, b." in the reference). When uncertain, check the author's website, CV, or other publications.
+
+**Rule:** Reproduce author name exactly as preferred by the author, including diacritics, hyphens, and unconventional capitalization.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag author names stripped of diacritics when the original uses them.
+
+**Confidence:** HIGH
+
+---
+
+### §9.10 — Specialized Roles in References [MISSED]
+
+**What was missed:** Specialized roles are placed in parentheses after the inverted name and initials, followed by a period to end the author element. One editor: (Ed.). Multiple editors: (Eds.) — role listed once after the final editor. Multiple different roles: identify each separately. Multiple roles for one person: combine with "&" (Writer & Director). Some specialized roles appear later in the reference (e.g., TV series producer, edited book editor).
+
+**Rule:** Role in parentheses after name. "(Ed.)" for one; "(Eds.)" for multiple. Combine with "&" if same person holds multiple roles.
+
+**Checkable:** YES
+
+**Detection:** Flag "Ed" without period inside parentheses. Flag "(Eds)" missing the period. Flag role abbreviations not in parentheses.
+
+**Confidence:** HIGH
+
+---
+
+### §9.11 — Group Authors (Detailed Rules) [INCOMPLETE]
+
+**What was missed beyond the previous inventory:** When a government agency has multiple layers, use the most specific agency as author; parent agencies go in the source element as publisher. Exception: include parent if needed to avoid confusion (e.g., same-named agencies in two countries). When agencies are listed in the author element, they are NOT also listed as publisher. If individuals and a group co-author: list individuals as primary authors, group information elsewhere as applicable. Do not abbreviate group author names in the reference list entry (abbreviations are only for in-text use, §8.21).
+
+**Rule:** Most specific government agency = author. Parent agencies = publisher. No group name abbreviations in reference list.
+
+**Checkable:** YES
+
+**Detection:** Flag reference list entries that use group author abbreviations.
+
+**Confidence:** HIGH
+
+---
+
+### §9.12 — No Author [INCOMPLETE]
+
+**What was missed:** "Anonymous" (signed) → use "Anonymous" as author, alphabetize as a true name. No author (truly unknown) → move title to author position. In-text citation for no-author work: use the first few words of the title in quotation marks (for articles/chapters) or italics (for books/reports).
+
+**Rule:** Signed "Anonymous" → use Anonymous. Unknown author → title in author position.
+
+**Checkable:** YES
+
+**Detection:** Flag no-author works whose in-text citations do not use the title (they may be citing incorrectly with "Unknown" or "Anonymous" when the work is not signed that way).
+
+**Confidence:** HIGH
+
+---
+
+### §9.13 — Definition of Date [MISSED]
+
+**What was missed:** For books, use the copyright page date, not the release date (a book released December 2019 with copyright 2020 = cite as 2020). For journal articles, use the year of the volume, not the copyright year. For webpages, use the date the content was published or last updated (if available for the specific content). Do not use the footer copyright date of a website as the date.
+
+**Rule:** Book date = copyright page. Journal = volume year. Webpage = content publication/update date, not site footer date.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag dates sourced from website footers rather than from page-level publication dates.
+
+**Confidence:** MEDIUM
+
+---
+
+### §9.15 — Updated Online Works [MISSED]
+
+**What was missed:** Use the "last updated" date only if it clearly refers to the specific content being cited (not an overall page update). Do NOT use a "last reviewed" date in the reference (reviewed ≠ changed). If only a "last reviewed" date is given and no publication/update date, treat as no date.
+
+**Rule:** "Last updated" (if content-specific) = use as date. "Last reviewed" = ignore; treat as no date.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag references using "last reviewed" dates in the date element.
+
+**Confidence:** HIGH
+
+---
+
+### §9.16 — Retrieval Dates [MISSED]
+
+**What was missed:** Retrieval dates are needed ONLY for works that are inherently changeable or designed to change (dictionary entries, Twitter profiles, Facebook pages, maps generated by Google Maps, works on frequently updating websites). Works with archived/stable versions do NOT need retrieval dates (Wikipedia archived versions, Cochrane reviews with permalinks). Include retrieval date in format: "Retrieved Month DD, YYYY, from [URL]."
+
+**Rule:** Retrieval date = only for inherently unstable, unarchived content. NOT needed for most references.
+
+**Checkable:** YES
+
+**Detection:** Flag retrieval dates added to stable references (journal articles, books, archived webpages).
+
+**Confidence:** HIGH
+
+---
+
+### §9.20 — Series and Multivolume Works [MISSED]
+
+**What was missed:** For a book in a multivolume work (numbered volumes of a handbook): include the series title. For a book in a popular/conceptually related series (Harry Potter, Chronicles of Narnia): include ONLY the book title, NOT the series name (too variable, too hard to find consistently).
+
+**Rule:** Academic multivolume = include series. Popular series = omit series name, include only book title.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag references for popular fiction/trade series that include series titles.
+
+**Confidence:** MEDIUM
+
+---
+
+### §9.22 — No Title [MISSED]
+
+**What was missed:** When a work has no title, include a description in square brackets: [Map showing the population density of the United States as of the year 2010]. For untitled comments on periodical articles: include up to the first 20 words of the comment, plus a bracketed description. For untitled social media posts: include up to the first 20 words of the post in italics, plus a bracketed description.
+
+**Rule:** No-title works use bracketed descriptions. Comments/posts: first 20 words + description.
+
+**Checkable:** YES
+
+**Detection:** Flag no-title references using "Untitled" or similar instead of a bracketed description.
+
+**Confidence:** HIGH
+
+---
+
+### §9.26 — Online Periodicals Missing Information [MISSED]
+
+**What was missed:** For online newspaper articles or blog posts that lack volume, issue, and/or page numbers, simply omit those elements. Do not use "n.p." (no page). The reference may contain only: author, date, title, periodical name, and URL.
+
+**Rule:** Missing periodical info = omit the element; do not substitute "n.p." or placeholder.
+
+**Checkable:** YES
+
+**Detection:** Flag references using "n.p." or "(n.p.)" in place of missing page/volume numbers.
+
+**Confidence:** HIGH
+
+---
+
+### §9.27 — Article Numbers [MISSED]
+
+**What was missed:** For journal articles assigned article numbers (eLocators) instead of page ranges, write "Article" (capitalized) followed by the article number: "PLOS ONE, 11(7), Article e0158474." If the article also has numbered PDF pages, those page numbers may be used for in-text citations but do NOT appear in the reference list entry.
+
+**Rule:** Article number format: "Article [number]." PDF page numbers for in-text citation only, not in reference.
+
+**Checkable:** YES
+
+**Detection:** Flag references that use page ranges for article-number-only journals.
+
+**Confidence:** HIGH
+
+---
+
+### §9.28 — Edited Book Chapter and Reference Work Entry Sources [MISSED]
+
+**What was missed:** Chapter-in-edited-book format: "In [Initials Surname (Ed. or Eds.)], *Title of Book* (edition info, pp. XX–XX). Publisher." Edition and volume go in the same parentheses as page numbers in this order: edition, volume number, page numbers. When a numbered volume has its own title: "Main Title: Vol. 2. Volume Title (edition info, pp. XX–XX)." For reference works (dictionaries, encyclopedias) with author = publisher: use "In *Reference Work Title*" format, omit publisher. TV episode/podcast episode/song = same format as chapter-in-book.
+
+**Rule:** Chapter in edited book: "In Initials Surname (Ed.)," then italicized title, then parenthetical edition/volume/pages, then publisher period, then DOI/URL.
+
+**Checkable:** YES
+
+**Detection:** Flag edited book chapter references that omit the "In" element. Flag references where the editor is listed in inverted format in the source element (it should be non-inverted: "In E. E. Editor (Ed.)").
+
+**Confidence:** HIGH
+
+---
+
+### §9.29 — Publisher Sources [MISSED]
+
+**What was missed:** Do not include publisher location. Use the imprint or division as the publisher (not the parent organization: "Magination Press," not "American Psychological Association"). Omit business structure designations (Inc., Ltd., LLC). Multiple publishers: list all in the order on the copyright page, separated by semicolons. Author = publisher: omit the publisher name from the source element (avoid repetition). Do not abbreviate publisher names yourself (but a house-style abbreviation by the publisher on the work is acceptable).
+
+**Rule:** No location. Use imprint. No Inc./Ltd./LLC. Multiple publishers = semicolons. Author = publisher → omit publisher from source.
+
+**Checkable:** YES
+
+**Detection:** Flag references including publisher location (city, state, country). Flag "Inc." or "Ltd." in publisher names.
+
+**Confidence:** HIGH
+
+---
+
+### §9.30 — Database and Archive Sources [MISSED]
+
+**What was missed:** Database information is included ONLY when: (a) the work is proprietary and only available in that database (Cochrane, UpToDate), or (b) the work is of limited circulation (dissertations in ProQuest Dissertations; preprints in PsyArXiv; works in ERIC, university archives, government repositories). For all other databases (PsycINFO, PubMed Central, JSTOR general, EBSCOhost, Google Scholar, Scopus, etc.): do NOT include the database name or URL. The reference should be identical to the print version.
+
+**Rule:** Most academic databases = invisible in references. Limited-circulation databases = include name. Proprietary databases = include name as periodical title (italic).
+
+**Checkable:** YES
+
+**Detection:** Flag reference list entries that include PsycINFO, EBSCOhost, ProQuest (non-dissertation), or similar standard database names.
+
+**Confidence:** HIGH
+
+---
+
+### §9.31 — Works With Specific Locations [MISSED]
+
+**What was missed:** Conference presentations include city, state/province/territory (using two-letter postal codes for US states), and country in the source element. Examples: "New York, NY, United States"; "Vancouver, BC, Canada"; "Istanbul, Turkey"; "London, England."
+
+**Rule:** Conference location format: City, State, Country. Two-letter postal codes for US.
+
+**Checkable:** YES
+
+**Detection:** Flag conference references missing location. Flag locations written without two-letter state abbreviations for US conferences.
+
+**Confidence:** HIGH
+
+---
+
+### §9.32 — Social Media Sources [MISSED]
+
+**What was missed:** Use social media as a source ONLY for content originally published there. If you found a link via social media but the content lives elsewhere (a news article linked from a tweet), cite the original content, not the tweet. Social media site name: title case, no italics. Include the URL (not just the site name).
+
+**Rule:** Cite the content, not the social media link to it (unless the social media post itself IS the content). Site name: title case, non-italic.
+
+**Checkable:** YES
+
+**Detection:** Flag references to tweets/Facebook posts that are merely links to other content (cite the original content directly instead).
+
+**Confidence:** MEDIUM
+
+---
+
+### §9.33 — Website Sources [MISSED]
+
+**What was missed:** Website name in source element: title case, non-italic. When author = website name, omit the website name from the source (reference contains only the URL). This is the "author = publisher/source" de-duplication rule applied to websites.
+
+**Rule:** Author = website → omit site name; source element = URL only.
+
+**Checkable:** YES
+
+**Detection:** Flag references where the author name and website name are identical but the website name is still listed.
+
+**Confidence:** HIGH
+
+---
+
+### §9.34 — When to Include DOIs and URLs [INCOMPLETE]
+
+**What was missed:** DOI always supersedes URL — if both exist, include only the DOI. Print works without a DOI: no URL, no DOI. Online works from most academic databases without a DOI: no URL (treat same as print). Online works from websites (non-database) without a DOI: include URL. Do not include ISBN or ISSN in references. Do not use "Retrieved from" before DOI or URL.
+
+**Rule:** DOI > URL > nothing, in priority. ISBN/ISSN never in references. No "Retrieved from" preamble.
+
+**Checkable:** YES
+
+**Detection:** Flag references with both DOI and URL. Flag references including ISBN or ISSN. Flag references using "Retrieved from" before a DOI.
+
+**Confidence:** HIGH
+
+---
+
+### §9.35 — Format of DOIs and URLs [MISSED]
+
+**What was missed:** All DOIs must be formatted as hyperlinks: "https://doi.org/xxxxx." Standardize all older DOI formats to the current format (convert "doi:10.1037/xxx" or "http://dx.doi.org/10.1037/xxx" to "https://doi.org/10.1037/xxx"). Do not add a period after a DOI or URL. Do not manually add line breaks in hyperlinks. Copy-paste DOIs/URLs directly to avoid transcription errors; do not change capitalization or punctuation.
+
+**Rule:** All DOIs = https://doi.org/ format. No period after. No manual line breaks. Copy-paste.
+
+**Checkable:** YES
+
+**Detection:** Flag DOIs in "doi:" or "http://dx.doi.org" format. Flag periods placed after DOIs or URLs.
+
+**Confidence:** HIGH
+
+---
+
+### §9.36 — DOI/URL Shorteners [MISSED]
+
+**What was missed:** Short DOIs (via the International DOI Foundation shortDOI service) may be used in place of long DOIs. URL shorteners (bit.ly, etc.) are also acceptable, but must be checked to ensure they resolve to the correct content. A work has only one shortDOI.
+
+**Rule:** ShortDOI = acceptable from official DOI Foundation service. Shortened URLs acceptable if verified.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag unverified shortened URLs (cannot verify without clicking).
+
+**Confidence:** LOW
+
+---
+
+### §9.37 — No Source / Broken URLs [MISSED]
+
+**What was missed:** If a URL no longer works, check the Internet Archive (https://archive.org/) for an archived version. If no archived version is available, delete the reference and substitute another source. Do not include broken URLs. Test all URLs before submitting a manuscript.
+
+**Rule:** Broken URL = check archive first; if unavailable, delete the reference.
+
+**Checkable:** PARTIAL
+
+**Detection:** URL link-checking would catch broken links.
+
+**Confidence:** HIGH
+
+---
+
+### §9.38 — Works in Another Language [MISSED]
+
+**What was missed:** For works in another language, provide the original language citation (author, date, title, source in the original language) PLUS a translation of the title in square brackets after the title, before the period. For works in non-Roman alphabets, transliterate to Roman alphabet if possible; if not, reproduce the original. For the in-text citation, use the transliterated or original form.
+
+**Rule:** Non-English reference: keep original language + add [English translation] of title. Non-Roman alphabet: transliterate if possible.
+
+**Checkable:** YES
+
+**Detection:** Flag non-English references that lack the bracketed English title translation.
+
+**Confidence:** HIGH
+
+---
+
+### §9.39 — Translated Works [MISSED]
+
+**What was missed:** For a work that has been translated and you read the translation, cite the translation. Credit the translator in the reference. Include the year of original publication at the end in parentheses: "(Original work published 1955)." In-text citation includes both years: "(Freud, 1901/1955)."
+
+**Rule:** Translated work: credit translator; include "(Original work published YYYY)" at end. In-text: (Author, original year/translation year).
+
+**Checkable:** YES
+
+**Detection:** Flag translated works missing the "(Original work published YYYY)" note. Flag in-text citations for translated works using only one year.
+
+**Confidence:** HIGH
+
+---
+
+### §9.40 — Reprinted Works [MISSED]
+
+**What was missed:** A reprinted work (published in two places, both available) requires reference information for both publications. Provide the version you read first, then in parentheses: "Reprinted from [original source], by Author, original year, Original Source info." In-text citation includes both years: "(Author, original year/reprint year)."
+
+**Rule:** Reprinted = both publication records; original info in parentheses at end of reference.
+
+**Checkable:** YES
+
+**Detection:** Flag "reprinted from" language in references that only provide one source.
+
+**Confidence:** HIGH
+
+---
+
+### §9.41 — Republished or Reissued Works [MISSED]
+
+**What was missed:** A republished work (went out of print, then re-published) differs from a reprint. Cite the new publication details. Add "(Original work published YYYY)" at end. In-text: "(Author, original year/republication year)." Works in an anthology of previously published works = republished (not reprinted).
+
+**Rule:** Republished = new publication details + "(Original work published YYYY)." In-text: both years.
+
+**Checkable:** YES
+
+**Detection:** Flag republished works using only the republication year in both text and reference.
+
+**Confidence:** HIGH
+
+---
+
+### §9.42 — Religious and Classical Works [MISSED]
+
+**What was missed:** Religious works = no author (usually); treat as unsigned. Republished editions of religious works include the republication date (e.g., King James Bible, 1769/2017). Classical works (ancient Greek/Roman) = cite as republished. Use "B.C.E." for dates before common era; "ca." for approximate dates. Dates in the common era need not be labeled "C.E." In-text: use canonical section numbers (book, chapter, verse, act, scene, line) instead of page numbers (§8.28).
+
+**Rule:** Religious works: no author (unless annotated edition = editor). Use B.C.E./ca. for ancient dates. Classical works = republished format.
+
+**Checkable:** YES
+
+**Detection:** Flag Bible citations using page numbers instead of book/chapter/verse.
+
+**Confidence:** HIGH
+
+---
+
+### §9.43–9.44 — Reference List Format and Alphabetical Order [INCOMPLETE]
+
+**What was missed:** §9.43 covered, but key detail missed: the "References" heading is bold, centered. Apply a hanging indent (0.5 in.) — do not use manual tabs; use paragraph formatting. §9.44 detail: "Nothing precedes something" — "Loft, V. H." precedes "Loftus, E. F." Disregard spaces and punctuation (apostrophes, hyphens) in two-word surnames for alphabetizing. Disregard parenthetical role labels (Eds.) and square-bracket usernames when alphabetizing.
+
+**Rule:** "Nothing precedes something" for alphabetizing. Disregard spaces, punctuation, parenthetical roles, and brackets when alphabetizing.
+
+**Checkable:** YES
+
+**Detection:** Flag reference lists where "Nothing precedes something" is violated.
+
+**Confidence:** HIGH
+
+---
+
+### §9.45 — Order of Given Name vs. Surname [MISSED]
+
+**What was missed:** Naming conventions differ by culture (Chinese names may place surname first). APA always inverts to "Surname, Initials" format regardless of original order. If uncertain which name is the surname, check the author's website, publications, or institutional page. Example: "Zhang Yi-Chen" in Chinese publications → listed as "Zhang, Y.-C." in APA references.
+
+**Rule:** Always invert to Surname, Initials. When uncertain, consult the author's own materials.
+
+**Checkable:** PARTIAL
+
+**Detection:** Flag Chinese, Korean, and Japanese names that may have been inverted incorrectly.
+
+**Confidence:** MEDIUM
+
+---
+
+### §9.47 — Same Author, Same Date: Letter Assignment [INCOMPLETE]
+
+**What was missed:** The process for assigning letters is two-step: (1) Compare dates: references with only a year (e.g., 2020) precede those with more specific dates (e.g., 2020, March 26); specific dates listed chronologically. This determines the "a," "b," "c" order for those with different specific dates. (2) If dates are identical, alphabetize by title (disregarding "A," "An," "The"). Series articles (Part 1, Part 2) are ordered in series sequence regardless of alphabetical title order.
+
+**Rule:** Letter assignment: date specificity first, then alphabetical title. Series = series order.
+
+**Checkable:** YES
+
+**Detection:** Flag same-author same-year references where the letter is assigned alphabetically without first checking date specificity.
+
+**Confidence:** HIGH
+
+---
+
+### §9.49 — Order of No-Author and Anonymous Works [MISSED]
+
+**What was missed:** Signed "Anonymous" → alphabetize as if "Anonymous" were a true surname. Unsigned (no author) → reference begins with title; alphabetize by first significant word (ignoring "A," "An," "The"). Numerals: alphabetize as spelled out ("22" alphabetized as "twenty-two"; "100 Tips" alphabetized as "one hundred tips").
+
+**Rule:** Unsigned no-author works: title in author position; alphabetize by first significant word. Numerals spelled out for alphabetizing.
+
+**Checkable:** YES
+
+**Detection:** Flag reference lists where no-author entries are sorted by numeral value rather than spelled-out word.
+
+**Confidence:** HIGH
+
+---
+
+### §9.50 — Reference Abbreviations [MISSED]
+
+**What was missed:** Standard abbreviations for reference list elements:
+
+| Abbreviation | Meaning |
+|---|---|
+| ed. | edition |
+| Rev. ed. | revised edition |
+| 2nd ed. | second edition |
+| Ed. (Eds.) | editor (editors) |
+| Trans. | translator(s) |
+| Narr. (Narrs.) | narrator (narrators) |
+| n.d. | no date |
+| p. (pp.) | page (pages) |
+| para. (paras.) | paragraph (paragraphs) |
+| Vol. (Vols.) | volume (volumes) |
+| No. | number |
+| Pt. | part |
+| Tech. Rep. | technical report |
+| Suppl. | supplement |
+
+**Rule:** Use these specific abbreviations. Many (but not all) are capitalized.
+
+**Checkable:** YES
+
+**Detection:** Flag "Technical Report" spelled out instead of "Tech. Rep." Flag "Number" instead of "No." Flag "Pages" instead of "pp."
+
+**Confidence:** HIGH
+
+---
+
+### §9.51 — Annotated Bibliographies [MISSED]
+
+**What was missed:** An annotated bibliography follows standard APA reference formatting and ordering. Each annotation begins as a new paragraph BELOW its reference entry. Entire annotation is indented 0.5 in. from the left margin (same as a block quotation). First line of the annotation is NOT additionally indented. Subsequent paragraphs in a multi-paragraph annotation: indent the first line of each additional paragraph another 0.5 in. Use in-text citations within annotations only when referring to multiple works.
+
+**Rule:** Annotation = new paragraph below reference. Indented 0.5 in. (flush left within that indent, no first-line indent). Multi-paragraph: additional 0.5 in. first-line indent for second paragraph onward.
+
+**Checkable:** YES
+
+**Detection:** Flag annotated bibliographies where annotations begin on the same line as the reference. Flag annotations with extra first-line indent.
+
+**Confidence:** HIGH
+
+---
+
+### §9.52 — Meta-Analysis References [MISSED]
+
+**What was missed:** Studies included in a meta-analysis: (a) incorporated alphabetically into the main reference list (not a separate list); (b) marked with an asterisk at the start of the reference; (c) a statement appears below the "References" heading: "References marked with an asterisk indicate studies included in the meta-analysis." In-text citations for meta-analysis studies do not include asterisks. Meta-analysis references do not have to be cited in text, but may be.
+
+**Rule:** Meta-analysis sources: asterisk at start of reference; explanatory statement on first page of reference list; integrated alphabetically; no asterisk in in-text citations.
+
+**Checkable:** YES
+
+**Detection:** Flag meta-analysis papers that present included studies in a separate list rather than integrated into the main reference list. Flag missing asterisk explanatory statement.
+
+**Confidence:** HIGH
+
+---
+
+## Summary of Section Coverage
+
+| Section Range | Previously Covered | Newly Identified Gaps |
+|---|---|---|
+| §3.1–3.17 (JARS) | NONE | ALL — entire chapter missed |
+| §4.1–4.2, §4.4, §4.6, §4.25–4.30 | NONE | ALL — gaps identified |
+| §5.2, §5.6, §5.10 | NONE | ALL — gaps identified |
+| §6.4, §6.10, §6.15–6.16, §6.21, §6.23 | NONE | ALL — gaps identified |
+| §6.26, §6.30–6.31, §6.35, §6.40–6.42, §6.45–6.52 | NONE | ALL — gaps identified |
+| §7.1–7.36 (Tables and Figures) | NONE | ALL — entire chapter missed |
+| §8.1–8.9, §8.16 | NONE | ALL — gaps identified |
+| §8.20–8.36 | NONE | ALL — gaps identified |
+| §9.2–3, §9.7, §9.9–9.10 | NONE | All — gaps |
+| §9.12–9.16 (Date section) | PARTIAL | §9.13, §9.15, §9.16 missed |
+| §9.20, §9.22, §9.26–9.33 | NONE/PARTIAL | All missed or incomplete |
+| §9.34–9.42 | PARTIAL | §9.34–9.37, §9.38–9.42 missed |
+| §9.43–9.52 | PARTIAL | §9.44–9.45, §9.47, §9.49–9.52 missed |

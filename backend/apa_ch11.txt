@@ -1,0 +1,1071 @@
+
+============================================================
+PDF PAGE 371
+============================================================
+
+356 ~ LEGAL REFERENCES 
+law librarian, or a law school website for help. For example, the Legal Infor-
+mation Institute at Cornell Law School provides free guidance on legal cita-
+tions (https://www.law.comell.edu). These resources will help you verify that 
+your legal references (a) contain the information necessary for retrieval and (b) 
+reflect the current status of the legal authority cited to avoid the possibility of . 
+relying on a case that has been overturned on appeal or on legislation that has 
+been significantly amended or repealed. Table 11.1 summarizes key differences 
+between APA Style references and legal style references. 
+11.2 General Forms 
+A general form is provided for each of the legal reference types in the sections 
+that follow. Each reference form usually includes a popular or formal title or 
+name of the legislation and the reference information, which is called the citation. 
+Note: The term "citation" is used differently for legal references than it is in standard 
+APA Style. In this chapter, the legal reference sense of the word "citation" is meant 
+when it appears without the modifier "in-text" 
+Refer to the published statutory compilation of legislative materials where the 
+legislation is codified (e.g., a specific numbered section of a specific volume of 
+the United Sta tes Code), including the compilation's publication date in parenthe-
+ses, if the legislation has be en codified. If the legislation has not yet been cod-
+ified, provide the identifying label for the legislation assigned by the enacting 
+body during the particular legislative session (e.g., a specific section of an act 
+identified by its public law number). 
+For both legislation and court decisions, the reference may be followed by 
+certain additional descriptive information that pertains to the content of the 
+legislation or court decision, the history of the legislation or court decision (e.g., 
+later appeals of court decisions or later amendments to legislation), or other 
+sources from which the legislation or court citation may be retrieved. Consult 
+the Bluebook for the proper format for such additional information. 
+Table 11.1 Key Differences Between APA 5tyle References and Legal References 
+Difference 
+APA 5tyle 
+Legal style 
+Order of elements in the 
+Usually the author, date, title, 
+Usually the title, source, and date, in that order 
+reference list entry 
+and source, in that order 
+In-text citation 
+Usua lIy the author and year 
+Usually the title and year 
+Version of work being 
+The exact version used 
+The version of record as published in an official 
+referenced 
+legal publication such as the United Sta tes Code 
+or the Federal Register, plus a URL (optional) for 
+the version used 
+Use of standard 
+Used for parts of a work 
+Used for common legal entities and publications 
+abbreviations 
+(e.9., "2nd ed." for a second 
+(e.g., "S." for the Senate and "H.R." for the 
+edition) 
+House of Representatives) 
+
+
+============================================================
+PDF PAGE 372
+============================================================
+
+·Table 11.2 Common Legal Reference Abbreviations 
+Word or phrase 
+Part of government 
+Congress 
+House of Representatives 
+Senate 
+Type of legal material 
+Regulation 
+Resolution 
+Section of legal material 
+Section 
+Sections 
+Number 
+And following 
+Reporter (source) of federal legal material 
+United Sta tes Reports 
+Federal Reporter 
+Federal Reporter, Second Series 
+Federal Reporter, Third Series 
+Federal Supplement 
+Federal Supplement, Second Series 
+Federal Supplement, Third Series 
+United Sta tes Code 
+Congressional Record 
+Federal Register 
+Legal Reference Examples 
+Abbreviation 
+Congo 
+H.R. 
+S. 
+Reg. 
+Res. 
+§ 
+§§ 
+No. 
+et seq. 
+u.s. 
+F. 
+F.2d 
+F3d 
+F Supp. 
+F Supp. 2d 
+F Supp. 3d 
+u.s.e. 
+Congo Rec. 
+FR. 
+Because legal references may include a great deal of information (e.g., a cita-
+tion to a case may include information about appeals), legal reference style uses 
+abbreviations to make references shorter. See Table 11.2 for sorne examples of 
+the more common legal abbreviations that appear in APA Style papers. 
+11.3 In-Text Citations of Legal Materials 
+Although the reference formats for legal materials differ from those of other 
+kinds ofworks cited in APA publications, in-text citations are formed in approx-
+imately the same way and serve the same purpose. Most legal reference entries 
+begin with the title of the work; as a result, most in-text citations consist of the 
+title and year (e.g., Americans With Disabilities Act, 1990; Brown V. Board oi Educa-
+tion, 1954). Ifthe title is long (e.g., for federal testimony), shorten it for the in-text 
+citation (see Example 11), but give enough information in the in-text citation to 
+enable readers to locate the entry in the reference listo Examples of in-text cita-
+tions and reference entries for legal materials are given in the sections that follow. 
+Legal Reference Examples 
+11.4 Cases or Court Decisions 
+A reference for a case or court decision includes the following information: 
+• title or name of the case, usually one party versus another (e.g., Brown V . 
+Board oi Education); 
+~ 357 
+
+
+============================================================
+PDF PAGE 373
+============================================================
+
+358 
+~ LEGAL REFERENCES 
+• citation, usually to a volume and page of one of the various sets of books 
+where published cases can be found called reporters, which typically contain 
+decisions of courts in particular political divisions, which are called jurisdic-
+tions (eogo, Federal Reporter, Second Series); 
+• precise jurisdiction ofthe court writing the decision (eogo, Supreme Court, . 
+New York Court of Appeals), in parentheses; 
+• date of the decision, in parentheses (in the same set of parentheses as the 
+jurisdiction if both are present); and 
+• URL from which you retrieved the case information (optional; this is not 
+strictly required for legal citations but may aid readers in retrieval)o 
+To create a reference list entry for the case you want to cite, first identiry the 
+court that decided the case and then follow the relevant exampleo Often, the 
+document about the case will have the relevant citation included, or it can easily 
+be retrieved by searching the internet for the name of the court decision and the 
+word "citationo" When a reference list entry for a case or court decision includes 
+a page number, provide only the first page numbero Do not provide the page 
+range for the whole case or decisiono 
+Note: Unlike other reference types, the title or na me of a case is written in standard 
+type in the reference list entry and in italic type in the in-text citation. 
+Federal Court Decisionso The United States has both federal and state court 
+systemso Within federal courts there are multiple levels of authority, and deci-
+sions from these courts are published in different publicationso 
+• UoSo Supreme Court: Decisions from the UoSo Supreme Court, the highest 
+federal court, are published in the United Sta tes Reports (other reporters may 
+also publish Supreme Court decisions)o The template for Supreme Court 
+decisions is as follows: 
+Reference list: Name v. Name, Volume UoS. Page (Year)o URL 
+Parenthetical citation: (Name v. Name, Year) 
+Narrative citation: Name v. Name (Year) 
+• UoSo Circuit Court: Decisions from the UoSo Circuit Court are published 
+in the Federal Reportero The template for U.So Circuit Court decisions is as 
+follows: 
+Reference Iist: Name Vo Name, Volume F. [or F.2d, F.3d] Page (Court Year). URL 
+Parenthetical citation: (Name v. Name, Year) 
+Narrative citation: Name v. Name (Year) 
+• U.So District Court: Decisions from the UoSo District Court are published in 
+the Federal Supplementso The template for U.So District Court decisions is as 
+follows: 
+Reference Iist: Name v. Name, Volume F. Su pp. Page (Court Year). URL 
+Parenthetical citation: (Name v. Name, Year) 
+Narrative citation: Name v. Name (Year) 
+
+
+============================================================
+PDF PAGE 374
+============================================================
+
+Legal Reference Examples 
+~ 359 
+. State Court Decisions. At the state level, courts also operate at different levels 
+of authority, although different states have different names for the levels. These 
+levels are as follows: 
+• State supreme court: The state supreme court is generally the highest state 
+court (the state ofNewYork is one exception; the court of appeals is the high-
+est court in that state). 
+• State appellate court: The state court of appeals, also called appellate court, 
+is the intermediate court wherein precedent begins to be established. 
+• State tri al court: The state tri al court is the lowest court of the state. State 
+trial court decisions are seldom cited because they do not establish prece-
+dent, and they are not reported in the prominent legal databases Nexis Uni 
+(formerly LexisNexis Academic) or WestLaw. 
+The template for state court decisions is as follows: 
+Reference list: Name v. Name, Volume Reporter Page (Court Year). URL 
+Parenthetical citation: (Name v. Name, Year) 
+Narrative citation: Name v. Name (Year) 
+1. U.S. Supreme Court case, with a page number 
+Brown v. Board of Education, 347 U.S. 483 (1954). https://www.oyez.org/cases/1940-1955/ 
+347us483 
+Parenthetical citation: (Brown v. Board of Education, 1954) 
+Narrative citation: Brown v. Board of Education (1954) 
+• U.S. Supreme Court decisions are published in the United States Reports (abbrevi-
+ated "US." in the reference). For example, the decision to eliminate racial segrega-
+tion in public schools, Brown v. Board of Education, was published in Volume 347 of 
+the United States Reports, on page 483, in the year 1954. Cite Supreme Court deci-
+sions as published in the United States Reports whenever possible; cite the Supreme 
+Court Reporter for cases that have not yet been published in United States Reports. 
+2. U.S. Supreme Court case, without a page number 
+Obergefell v. Hodges, 576 U.S. _ 
+(2015). https://www.supremecourt.gov/opinions/14pdf/ 
+14-556_3204.pdf 
+Parenthetical citation: (Obergefell v. Hodges, 2015) 
+Narrative citation: Obergefell v. Hodges (2015) 
+• The court decision to legalize same-sex marriage in the United States, Obergefell 
+v. Hodges, occurred in 2015 and was published in Volume 576 of the United States 
+Reports. However, as of the printing of this Publication Manual, the paginated vol-
+umes of the United States Reports have been published only for decisions through 
+the 2012 Supreme Court termo For cases that have not been assigned a page num-
+ber (like Obergefell V. Hodges), include three underscores instead of the page 
+number in the reference list entry. 
+3. U.S. circuit court case 
+Daubert V. Merrell Dow Pharmaceuticals, Inc., 951 F.2d 1128 (9th Cir. 1991). https://openjurist. 
+org/951 /f2d/ 1128/william-daubert-v-merrell-dow-pharmaceuticals 
+Parenthetical citation: (Daubert v. Merrell Dow Pharmaceuticals, Inc., 1991) 
+Narrative citation: Daubert V. Merrell Dow Pharmaceuticals, Inc. (1991) 
+
+
+============================================================
+PDF PAGE 375
+============================================================
+
+360 ~ LEGAL REFERENCES 
+• This court decision regarding birth defects resulting fram me di ca ti o n use during 
+pregnancy appeared in Volume 951 of the Federal Reporter, Second Series, on page 
+1128, and was decided by the 9th Circuit Court in the year 1991. 
+4. U.S. district court case 
+Burriola v. GreaterToledo YMCA, 133 F. Supp. 2d 1034 (N.o. Ohio 2001). https://law.justia. 
+com/caseslfederal/district-courts/FSupp2/133/1 034/2293141 / 
+Parenthetical citation: (Burriola v. Greater Toledo YMCA, 2001) 
+Narrative citation: Burriola v. Greater Toledo YMCA (2001) 
+• This court decision stating that children with special needs should receive accom-
+modations for services at public after-school-care providers under the Americans 
+With Disabilities Act of 1990 appeared in Volume 133 of the Federal Supplement, Sec-
+ond Series, on page 1034. It was decided by the U.S. District Court for the Northern 
+District of Ohio in the year 2001. 
+5. U.S. district court case with appeal 
+Durflinger v. Artiles, 563 F. Supp. 322 (D. Kan. 1981), aff'd, 727 F.2d 888 (10th Cir. 1984). 
+https://openjurist.org/7271f2d/888/durflinger-v-artiles 
+Parenthetical citation: (Durflinger v. Arti/es, 1981/1984) 
+Narrative citation: Durflinger v. Artiles (1981/1984) 
+• This court decision regarding whether third parties should be protected fram 
+involuntarily committed psychiatric patients in state custody was rendered by the 
+federal district court for the District of Kansas in the year 1981. On appea!, the 
+decision was affirmed by the federal-leve! 10th Circuit Court of Appeals in 1984. 
+Information about both the original decision and the appealed decision appears in 
+the reference list entry. 
+• If on appeal the decision is affirmed, the abbreviation "aff'd" is used between the 
+two components, in italics and set off by commas; if the decision is overturned or 
+reversed, the abbreviation "rev'd" is used, in italics and set off by commas. 
+• Consult the Bluebook for the proper forms of the various stages in a case's history. 
+6. State supreme court case 
+Tarasoff v. Regents of the University of Califomia, 17 Cal.3d 425, 131 Cal. Rptr. 14,551 P.2d 
+334 (1976). https:/ /www.casebriefs.com/blog/law/torts/torts-keyed-to-dobbs/the-duty-
+to-protect-from-third-persons/tarasoff-v-regents-of-university-of-california 
+Parenthetical citation: (Tarasoff v. Regents of the University of California, 1976) 
+Narrative citation: Tarasoff v. Regents of the University of California (1976) 
+• This court decision he Id that mental health professionals have a duty to protect 
+individuals who are being threatened with bodily harm by a patient. It was decided 
+by the Supreme Court of the State of California in the year 1976. 
+• The court decision was reported in three places, which are all included in the par-
+alle! citation (see Section 11.1), shown here separated with commas. These three 
+sources are Volume 17 of the California Reports, Third Series (CaI.3d), page 425; Vol-
+ume 131 ofthe California Reporter (Cal. Rptr.), page 14; and Volume 551 ofthe Pacific 
+Reporter, Second Series (P.2d), page 334. AII three report locations are generally 
+reported together, so no additional research is needed to find them. 
+
+
+============================================================
+PDF PAGE 376
+============================================================
+
+Legal Reference Examples 
+~ 361 
+,7. State appellate court case 
+Texas v. Morales, 826 SW2d 201 (Tex. Ct. App. 1992). https://www. leagle.com/decision/ 
+. 19921 027826sw2d20111 01 O 
+Parenthetical citation: (Texas v. Morales, 1992) 
+Narrative citation: Texas v. Morales (1992) 
+• This court decision found that the equal protection and due process components 
+of the Texas Constitution prohibit the criminalization of consensual same-sex 
+activity among adults in private. It was published in Volume 826 of the South West-
+ern Reporter, Second Series, page 201, decided by the Texas State Court of Appeals in 
+the year 1992. 
+11.5 Statutes (Laws and Acts) 
+A statute is a law or act passed by a legislative body. As with court decisions, stat-
+utes exist on both the federal and state levels, such as an act passed by Congress 
+or by a state government. 
+Federal statutes are published in the United States Code (U.S.e.). The U.S.e. is 
+divided into sections called titles- for example, Title 42 refers to public health 
+and welfare. New laws are then added to the appropriate title as a way ofkeep-
+ing the law organized. State statutes are published in state-specific compila-
+tions; for example, statutes pertaining to the state of Florida are published in 
+the Florida Statutes. State sta tutes are also typically organized into titles. 
+In the reference list entry for a federal or state statute, include the name of 
+the act; the title, source (abbreviated as specified in the Bluebook), and section 
+number of the statute; and, in parentheses, the publication date of the stat-
+utory compilation you used (e.g., the U.S.e. or a state-specific compilation). 
+You may include the URL from which you retrieved the statute after the year. 
+This is not strictly required for legal citations but may aid readers in retrieval. 
+In the in-text citation, give the popular or official name of the act (if any) 
+and the year of the act. Determining the year for the statute can be confusing 
+because there is often ayear when the statute was first passed, ayear when it 
+was amended, and ayear when it was supplemented. The year in the reference 
+list entry and in-text citation should refer to the year in which the statute was 
+published in the source being cited. This date may be different from the year in 
+the name of the acto 
+The template for federal or state statutes is as follows: 
+Reference list: Name of Act, Title Source § Section Number (Year). URL 
+Parenthetical citation: (Na me of Act, Year) 
+Narrative citation: Name of Act (Year) 
+The format for state statutes may differ depending on the state but generally 
+follows the same format as for federal statutes. Consult the Bluebook or another 
+legal resource for further information on your particular state. For example, a 
+few states use chapter or article numbers instead of section numbers; for a ref-
+erence to a statute from one of these states, use the chapter or article number 
+in the reference in place of the section number. U se abbreviations or symbols 
+as shown in the Bluebook. 
+To cite a federal statute (i.e., a law or act), cite the sta tute as it was codified in 
+the United Sta tes Codeo You may see a public law number on the act as well; this 
+number is used in the reference list entry when the act is codified in scattered 
+
+
+============================================================
+PDF PAGE 377
+============================================================
+
+362 ~ LEGAL REFERENCES 
+sections (see Example 9) or to refer to an act before it is codified (see Example 
+11). However, if a statute has been codified in the United States Cade in a single 
+section or range of sections (see Example 8),it is not necessary to include the 
+public law number in the reference. 
+. 
+Next are several examples of acts commonly cited in APA Style papers. Cita-
+tions to other federal statutes follow the same formato 
+8. Federal statute, Americans With Disabilities Act of 1990 
+Americans With Disabilities Act of 1990, 42 U.s.e. § 12101 et seq. (1990). https://www. 
+ada.gov/pubs/adastatute08.htm 
+Parenthetical citation: (Americans With Disabilities Act, 1990) 
+Narrative citation: Americans With Disabilities Act (1990) 
+• This act can be located beginning at Section 12101 of Title 42 of the United States 
+Code and was codified in the year 1990. The phrase "et seq." is Latin for "and what 
+follows" and is a shorthand way of showing that the act covers not only the initial 
+section cited but also others that follow. 
+9. Federal statute, Civil Rights Act of 1964 
+Civil Rights Act of 1964, Pub. L. No. 88-352, 78 Stat. 241 (1964). https://www.govinfo.güv/ 
+content/pkg/STATUTE-78/pdflSTATUTE-7 8-Pg241 .pdf 
+Parenthetical citation: (Civil Rights Act, 1964) 
+Narrative citation: Civil Rights Act (1964) 
+• The Civil Rights Act of 1964 is codified in the United States Code in three scattered 
+sections: 2 U.S.C., 28 U.S.C., and 42 U.S.C. To cite the entire act, use the public law 
+number as shown in the example. 
+10. Federal statute, Every Student Succeeds Act 
+Every Student Succeeds Act, 20 U.s.e. § 6301 (2015). https://www.congress.gov/1 14/ 
+plaws/pubI95/PLAW-114pubI95.pdf 
+Parenthetical citation: (Every Student Succeeds Act, 2015) 
+Narrative citation: Every Student Succeeds Act (2015) 
+• The Every Student Succeeds Act pertains to educational policy for students in 
+public primary and secondary schools. It was codified in Title 20 of the United 
+Sta tes Code in Section 6301 in the year 2015. 
+11. Federal statute, Lilly Ledbetter Fair Pay Act of 2009 
+Lilly Ledbetter Fair Pay Act of 2009, Pub. L. No. 111-2, 123 Stat. 5 (2009). https://www. 
+govinfo.gov/contentlpkg/PLAW-111 pubI2/pdf/PLAW-11 1 publ2.pdf 
+Parenthetical citation: (Lilly Ledbetter Fair Pay Act, 2009) 
+Narrative citation: Lilly Ledbetter Fair Pay Act (2009) 
+• The Lilly Ledbetter Fair Pay Act of 2009 amended Title VII of the Civil Rights Act 
+(1964) and other acts and pertains to fair wage compensation. Because it was not 
+codified in the United Sta tes Code, cite the public law number. It was published in 
+Volume 123 of the United States Statutes at Large (abbreviated "Stat.") beginning on 
+page 5 in the year 2009. 
+
+
+============================================================
+PDF PAGE 378
+============================================================
+
+Legal Reference Examples 
+~ 363 
+12. Federal statute, Title IX (Patsy Mink Equal Opportunity in Education Act) 
+Patsy Mink Equal Opportunity in Education Act, 20 U.s.e. § 1681 et seq. (1972): https:// 
+www.justice.gov/crtltitle~ix-education-amendments-1972 
+Parenthetical citation: (Patsy Mink Equal Opportunity in Education Act, 1972) 
+Narrative citation: Patsy Mink Equal Opportunity in Education Act (1972) 
+• The Patsy Mink Equal Opportunity in Education Act, commonly knawn as Title 
+IX, prohibits discrimination on the basis of sex in federally funded educational 
+programs such as sports. It was published in Volume 20 of the United States Code, 
+beginning at Section 1681, in the year 1972. Note that "Title IX" refers to part of 
+the Education Amendments of 1972, not Title 9 of the United Sta tes Codeo 
+13. State statute in state code 
+Florida Mental Health Act, Fla. Stat. § 394 (1971 & rev. 2009). http://www.leg.state.fl.us/ 
+statutes/index.dm?App_mode=Display_Statute&URL=0300-0399/0394/0394.html 
+Parenthetical citation: (Florida Mental Health Act, 1971 /2009) 
+Narrative citation: Florida Mental Health Act (1971/2009) 
+• This Florida act can be found in the Florida Statutes, Section 394. It was first cod-
+ified in the year 1971 and then revised in 2009. Both years appear in the in-text 
+citation, separated by a slash. 
+• Consult the Bluebook for formats for other states. 
+11.6 Legislative Materials 
+Legislative materials inelude federal testimony, hearings, bills, resolutions, 
+reports, and related documents. Bills and resolutions that have been passed by 
+both houses of Congress and signed by the president become law and should 
+be cited as statutes (see Section 11.5). To cite an unenacted bill or resolution 
+(i.e., one that was not passed by both houses of Congress) or an enacted bill or 
+resolution that was not signed into law, follow the forms in this section. W hen 
+a URL for the material is available, it is optional to inelude it at the end of the 
+reference list entry. 
+14. Federal testimony 
+Template: 
+Title of testimony, xxx Congo (Year) (testimony of Testifier Name). URL 
+Example: 
+Federal real property refarm: How cutting red tape and better management could achieve 
+billions in savings, U.S. Senate Committee on Homeland Security and Govemmental 
+Affairs, 114th Congo (2016) (testimony of Norman Dong). http://www.gsa.gov/portal/ 
+content/233107 
+Parenthetical citation: (Federal Real Property Reform, 2016) 
+Narrative citation: Federal Real Property Reform (2016) 
+• For the title af federal testimony, include the title as it appears on the work and 
+the subcommittee and/or committee name (if anyl, separated by a comma. Then 
+provide the number of the Congress, the year in parentheses, and "testimony of" 
+followed by the name of the persan who gave the testimony in separate parenthe-
+ses. When the testimony is available online, also include a URL. 
+
+
+============================================================
+PDF PAGE 379
+============================================================
+
+364 
+~ LEGAL REFERENCES 
+15. Full federal hearing 
+Template: 
+Title of hearing, xxx Congo (Year). URL 
+Example: 
+Strengthening thefederal student loan program for borrowers: Hearing befo re the . 
+U.S. Senate Committee on Health, Education, Labor & Pensions, 113th Congo (2014). 
+https://www.help.senate.gov/hearings/strengthening-the-federa I-student -loa n-
+program-for-borrowers 
+Parenthetical citation: (Strengthening the Federal Student Loan Program, 2014) 
+Narrative citatíon: Strengtheníng the Federal Student Loan Program (2014) 
+• For the title of a full federal hearing, include the name of the hearing and the sub-
+committee name. Provide the number of the Congress and year. When a video or 
+other information about the hearing is available online, include its URL. 
+16. Unenacted federal bill or resolution 
+Template: 
+Title [if relevantl, H.R. or S. bill number, xxx Congo (Year). URL 
+Title [if relevantl, H.R. or S. Res. resolution number, xxx Congo (Year). URL 
+Example: 
+Mental Health on Campus Improvement Act, H.R. 1100, 113th Congo (2013). https:// 
+www.congress.gov/bill/113th-congress/house-bill/1100 
+Parenthetícal citatíon: (Mental Health on Campus Improvement Act, 2013) 
+Narratíve citatíon: Mental Health on Campus Improvement Act (2013) 
+o 
+The number should be preceded by "H.R." (House of Representatives) or "S." 
+(Senate), depending on the source of the unenacted bill or resolution. 
+17. Enacted simple or concurrent federal resolution 
+Template for Senate: 
+S. Res. xxx, xxx Cong., Volume Congo Rec. Page (Year) (enacted). URL 
+Template for House of Representatives: 
+H.R. Res. xxx, xxx Cong., Volume Congo Rec. Page (Year) (enacted). URL 
+Example: 
+S. Res. 438, 114th Cong., 162 Congo Rec. 2394 (2016) (enacted). https://www.congress. 
+gov / cong ressiona l-record/20 1 6/04/21 /senate-section/ a rticle/S23 94-2 
+Parenthetícal citatíon: (S. Resolution 438, 2016) 
+Narratíve citatíon: Senate Resolution 438 (2016) 
+• Use this format to cite enacted simple or concurrent resolutions from Congress. 
+These resolutions are reported in the Congressional Record (abbreviated "Cong. 
+Rec."). 
+o 
+Enacted bilis and joint resolutions are laws and should be cited as statutes (see 
+Section 11.5). 
+o 
+In the example, the Senate designated September 2016 as National Brain Aneu-
+rysm Awareness Month. The resolution is numbered 438 and is reported in Vol-
+ume 162 of the Congressional Record on page 2394. 
+18. Federal report 
+Template for Senate: 
+S. Rep. No. xxx-xxx (Year). URL 
+
+
+============================================================
+PDF PAGE 380
+============================================================
+
+Legal Reference Examples 
+~ 365 
+Template for House of Representatives: 
+H.R. Rep. No. xxx-xxx (Year). URL 
+Example: 
+H.R. Rep. No. 114-358 (2015). https://www:gpo.gov/fdsys/pkg/CRPT-114hrpt358/pdf/ 
+CRPT-114hrpt358.pdf 
+Parenthetical citation: (H.R. Rep. No. 114-358, 2015) 
+Narrative citation: House of Representatives Report No. 114-358 (2015) 
+o 
+This report was submitted to the House of Representatives by the Committee on 
+Veterans' Affairs concerning the Veterans Employment, Education, and Health-
+care Improvement Act. 
+o 
+For reports submitted to the Senate, use the abbreviation "S. Rep. No." in the 
+reference list entry and "Senate Report No." in the in-text citation. 
+11.7 Administrative and Executive Materials 
+Administrative and executive materials include rules and regulations, advisory 
+opinions, and executive orders. 
+19. Federal regulation, codified 
+Template: 
+Title or Number, Volume C.F.R. § xxx (Year). URL 
+Example: 
+Protection of Human Subjects, 45 C.F.R. § 46 (2009). https://www.hhs.gov/ohrp/sites/ 
+default/files/ohrp/policy/ohrpregulations.pdf 
+Parenthetical citation: (Protection of Human Subjects, 2009) 
+Narrative citation: Protection of Human Subjects (2009) 
+o 
+Official federal regulations are published in the Code of Federal Regulations. In the 
+reference, provide the title or number of the regulation, the volume number in 
+which the regulation appears in the Code of Federal Regulations, the abbreviation 
+"c.F.R.," the section number, and the year in which the regulation was codified. If 
+the regulation is available online, provide the URL. 
+20. Federal regulation, not yet codified 
+Template: 
+Title or Number, Volume F.R. Page (proposed Month Day, Year) (to be codified at Volume 
+C.F.R. § xxx). URL 
+Example: 
+Defining and Delimiting the Exemptions for Executive, Administrative, Professional, 
+Outside Sales and Computer Employees, 81 F.R. 32391 (proposed May 23, 2016) 
+(to be codified at 29 C.F.R. § 541). https:!/www.federalregister.gov/articles/2016/05/ 
+23/2016-11754/defining-and-delimiting-the-exemptions-for-executive-administrative-
+professiona I-outsi de-sa les-a nd 
+Parenthetical citation: (Defining and Delimiting, 2016) 
+Narrative citation: Defining and Delimiting (2016) 
+o 
+If the regulation has not yet been codified in the Code of Federal Regulations, it 
+wiU appear in the Federal Register first. Indicate this by the abbreviation "F.R." 
+instead of "c.F.R." Instead of the year codified, provide the date of proposa!. 
+AIso inelude the section of the Code of Federal Regulations where the proposed 
+rule will be codified. 
+
+
+============================================================
+PDF PAGE 381
+============================================================
+
+364 ~ LEGAL REFERENCES 
+15. Full federal hearing 
+Template: 
+Title of hearing, xxx Congo (Year). URL 
+Example: 
+Strengthening thefederal student loan program for borrowers: Hearing before the 
+U.S. Senate Committee on Health, Education, Labor & Pensions, 113th Congo (2014). 
+https://www.help.senate.gov/hearings/strengthening-the-federa I-student -loa n-
+program-for-borrowers 
+Parenthetical citation: (Strengthening the Federal Student Loan Program, 2014) 
+Narrative citation: Strengthening the Federal Student Loan Program (2014) 
+• For the title of a full federal hearing, include the name of the hearing and the sub-
+committee name. Provide the number of the Congress and year. When a video or 
+other information about the hearing is available online, include its URL. 
+16. Unenacted federal bill or resolution 
+Template: 
+Title [if relevantl, H.R. or S. bill number, xxx Congo (Year). URL 
+Title [if relevantl, H.R. or S. Res. resolution number, xxx Congo (Year). URL 
+Example: 
+Mental Health on Campus Improvement Act, H.R. 11 00, 113th Congo (2013). https:// 
+www.congress.gov/bill/113th-congress/house-bill/1100 
+Parenthetical citation: (Mental Health on Campus Improvement Act, 2013) 
+Narrative citation: Mental Health on Campus Improvement Act (2013) 
+• The number should be preceded by "H.R." (House of Representatives) or "S." 
+(Senate), depending on the source ofthe unenacted bill or resolution. 
+17. Enacted simple or concurrent federal resolution 
+Template for Senate: 
+S. Res. xxx, xxx Cong., Volume Congo Rec. Page (Year) (enacted). URL 
+Template for House of Representatives: 
+H.R. Res. xxx, xxx Cong., Volume Congo Rec. Page (Year) (enacted). URL 
+Example: 
+S. Res. 438, 114th Cong., 162 Congo Rec. 2394 (2016) (enacted). https://www.congress. 
+gov / con 9 ressiona l-record/20 1 6/04/21/ senate-section/ a rticle/S23 94-2 
+Parenthetical citation: (S. Resolution 438, 2016) 
+Narrative citation: Senate Resolution 438 (2016) 
+• Use this format to cite enacted simple or concurrent resolutions from Congress. 
+These resolutions are reported in the Congressional Record (abbreviated "Cong. 
+Rec."). 
+• Enacted bills and joint resolutions are laws and should be cited as statutes (see 
+Section 11.5). 
+• In the example, the Senate designated September 2016 as National Brain Aneu-
+rysm Awareness Month. The resolution is numbered 438 and is reported in Vol-
+ume 162 of the Congressional Record on page 2394. 
+18. Federal report 
+Template for Senate: 
+S. Rep. No. xxx-xxx (Year). URL 
+
+
+============================================================
+PDF PAGE 382
+============================================================
+
+Legal Reference Examples 
+C\,y 
+365 
+Template for House of Representatives: 
+H.R. Rep. No. xxx-xxx (Year). URL 
+Example: 
+H. R. Rep. No. 114-358 (2015). https:l/www.gpo.govlfdsys/pkg/CRPT-114hrpt358/pdfl 
+CRPT-114hrpt358.pdf 
+Parenthetical citation: (H.R. Rep. No. 114-358, 2015) 
+Narrative citation: House of Representatives Report No. 114-358 (2015) 
+o 
+This report was submitted to the House of Representatives by the Committee on 
+Veterans' Affáirs concerning the Veterans Employment, Education, and Health-
+care Improvement Act. 
+o 
+For reports submitted to the Senate, use the abbreviation "s. Rep. No." in the 
+reference list entry and "Senate Report No." in the in-text citation. 
+11.7 Administrative and Executive Materials 
+Administrative and executive materials include rules and regulations, advisory 
+opinions, and executive orders. 
+19. Federal regulation, codified 
+Template: 
+Title or Number, Volume C.F.R. § xxx (Year). URL 
+Example: 
+Protection of Human Subjects, 45 C.F.R. § 46 (2009). https://www.hhs.gov/ohrp/sites/ 
+default/files/ohrp/policy/ohrpregulations.pdf 
+Parenthetical citation: (Protection of Human Subjects, 2009) 
+Narrative citation: Protection of Human Subjects (2009) 
+o 
+Official federal regulations are published in the Code of Federal Regulations. In the 
+reference, provide the title or number of the regulation, the volume number in 
+which the regulation appears in the Code of Federal Regulations, the abbreviation 
+"C.ER.," the section number, and the year in which the regulation was codified. If 
+the regulation is available online, provide the URL. 
+20. Federal regulation, not yet codified 
+Template: 
+Title or Number, Volume F.R. Page (proposed Month Day, Year) (to be codified at Volume 
+C.F.R. § xxx). URL 
+Example: 
+Defining and Delimiting the Exemptions for Executive, Administrative, Professional, 
+Outside Sales and Computer Employees, 81 F.R. 32391 (proposed May 23, 2016) 
+(to be codified at 29 C.F.R. § 541). https://www.federalregister.gov/articles/2016/05/ 
+23/2016-117 54/defin ing-and-delimiting-the-exemptions-for-executive-admin istrative-
+professiona I-outside-sa I es-and 
+Parenthetical citation: (Defining and Delimiting, 2016) 
+Narrative citation: Defining and Delimiting (2016) 
+o 
+If the regulation has not yet been codified in the Code of Federal Regulations, it 
+will appear in the Federal Register first. Indicate this by the abbreviation "ER." 
+instead of "C.ER." Instead of the year codified, provide the date of proposa!. 
+AIso include the section of the Code of Federal Regulations where the proposed 
+rule will be codified. 
+
+
+============================================================
+PDF PAGE 383
+============================================================
+
+366 
+C\v 
+LEGAL REFEREN CES 
+21. Executive order 
+Template: 
+Exec. Order No. xxxxx, 3 C.F.R. Page (Year). URL 
+Example: 
+Exec. Order No. 13,676,3 C.F.R. 294 (2014). https://www.govinfo.gov/content/pkg/CFR-
+2015-title3-voI1 /pdf/CFR-2015-title3-voI1-eo 1367 6.pdf 
+Parenthetical citation: (Exec. Order No. 13,676,2014) 
+Narrative citation: Executive Order No. 13,676 (2014) 
+• Executive orders are reported in Title 3 of the Code of Federal Regulations, so "3 
+C.F.R." is always included in the reference list entry for an executive order. 
+• The executive order in the example addressed how to combat antibiotic-resistant 
+bacteria. It was published in the Code of Federal Regulations, on page 294, in the 
+year 2014. 
+11.8 Patents 
+Patent references look more like typical APA Style references because the 
+elements of author (inventor), year, title and patent number, and source are 
+included in that order. 
+Reference list: Inventor, A. A. (Year Patent Issued). Tit/e of patent (U.S. Patent No. x,xxx, 
+xxx). U.s. Patent and Trademark Office. URL 
+Parenthetical citation: (Inventor, Year) 
+Narrative citation: Inventor (Year) 
+The URL of the patent is optional but may be included in the reference list entry 
+if available. 
+22. Patent 
+Hiremath, S. c., Kumar, S., Lu, F., & Salehi, A. (2016). Using metaphors ta present concepts 
+across different intellectual damains (U.s. Patent No. 9,367,592). U.S. Patent and Trade-
+mark Office. http://patft.uspto.gov/netacgi/nph-Parser?patentnumber=9367592 
+Parenthetical citation: (Hiremath et al., 2016) 
+Narrative citation: Hiremath et al. (2016) 
+• This patent was issued in 2016 to the inventors Hiremath et al., who worked for 
+the computer company IBM. The patent number is a unique identifying code 
+given to every patent. The year refers to the year the patent was issued, not the 
+year the patent was applied foro 
+11.9 Constitutions and Charters 
+To cite a whole federal or state constitution, a citation is not necessary. Simply 
+refer to the constitution in texto 
+The U.S. Constitution has 26 amendments. 
+The Massachusetts Constitution was ratified in 1780. 
+Create reference list entries and in-text citations for citations to articles and 
+amendments of constitutions. In the reference list and in parenthetical cita-
+tions, abbreviate U.S. Constitution to "U.S. Const." and use the legal state abbre-
+viation for a state constitution (e.g. "Md. Const." for the Maryland Constitution; 
+see a list of state abbreviations for legal references at the Legal Information 
+
+
+============================================================
+PDF PAGE 384
+============================================================
+
+Legal Reference Examples 
+~ 367 
+. Institute at https://www.law.comell.edu/citation/4-S00). In the narrative, use 
+either "U.S." or "United States" for the U.S. Constitution, and spell out the name 
+of the state for a state constitution- for example, "the Wisconsin Constitution." 
+U.S. Constitution article and amendment numbersare Roman numerals. State 
+constitution article numbers are also Roman numerals, but state constitution 
+amendment numbers are Arabic numerals. URLs are not necessary for the ref-
+erence. Additional information about the cited source can be included in the 
+narrative, if desired. 
+23. Article of the U.S. Constitution 
+Template: 
+U.S. Consto arto xxx, § X. 
+Example: 
+U.S. Consto arto 1, § 3. 
+Parenthetical citation: (U.s. Consto arto 1, § 3) 
+Narrative citation: Article 1, Section 3, of the U.S. Constitution 
+24. Article of a state constitution 
+Template: 
+Sta te Const. arto xxx, § X. 
+Example: 
+S.e. Consto arto XI, § 3. 
+Parenthetical citation: (S.e. Consto arto IX, § 3) 
+Narrative citation: Article IX, Section 3, of the South Carolina Constitution 
+25. Amendment to the U.S. Constitution 
+Template: 
+U.S. Consto amend. xxx. 
+Example: 
+U.S. Consto amend. XIX. 
+Parenthetical citation: (U.S. Consto amend. XIX) 
+Narrative citation: Amendment XIX to the U.S. Constitution 
+• Amendments to state constitutions are cited in the same way as amendments to 
+the U.S. Constitution. 
+• No date is needed in the reference unless the amendment has been repealed (see 
+Example 27). 
+. 
+26. Repealed amendment to the U.S. Constitution 
+Template: 
+U.S. Consto amend. xxx (repealed Year). 
+Example: 
+U.S. Consto amend. XVIII (repealed 1933). 
+Parenthetical citation: (U.S. Const. amend. XVIII, repealed 1933) 
+Narrative citation: Amendment XVIII to the U.S. Constitution was repealed in 1933 
+• Because the amendment was repealed, ayear is included in the reference. 
+• Repealed amendments to state constitutions are cited in the same way as repealed 
+amendments to the U.S. Constitution. 
+
+
+============================================================
+PDF PAGE 385
+============================================================
+
+368 ~ LEGA L REFERENCES 
+27. U.S. BiII of Rights 
+U.S. Const. amend. I-X. 
+Parenthetical citation: (U.S. Consto amend. I-X) 
+Narrative citation: Amendments' I-X to the U.S. Constitution 
+• The first 10 amendments to the U.S. Constitution are collectively referred to as 
+the Bill of Rights. The citation is the same as that for an amendment to the consti-
+tution, except that the range of amendments is ineluded in the citation. 
+28. Charter of the United Nations 
+Template: 
+U.N. Charter arto xx, para. xx. 
+Example: 
+U.N. Charter arto 1, para. 3. 
+Parenthetical citation: (U.N. Charter arto 1, para. 3) 
+Narrative citation: Article 1, paragraph 3, of the United Nations Charter 
+• A citation to the charter of the United Nations should inelude the name of the 
+agreement, the artiele number, and the paragraph number. To cite an entire arti-
+ele, omit the paragraph number. 
+' 
+11.10 Treaties and International Conventions 
+References for treaties or international conventions should include the name 
+of the treaty, convention, or other agreement; the signing or approval date; 
+and a URL if available. In text, provide the name of the treaty or convention 
+and the year. 
+Reference list: Name of Treaty or Convention, Month Day, Year, URL 
+Parenthetical citation: (Name of Treaty or Convention, Year) 
+Narrative citation: Name of Treaty or Convention (Year) 
+29. United Nations convention 
+United Nations Convention on the Rights of the Child, November 20, 1989, https://www. 
+oh eh r. org/ en/professiona I i nterestlpages/ ere. aspx 
+Parenthetical citation: (United Nations Convention on the Rights of the Child, 1989) 
+Narrative citation: United Nations Convention on the Rights of the Child (1989) 
+
+
+============================================================
+PDF PAGE 417
+============================================================
+
+400 ~ CREDITS FOR ADAPTED TABLES, FIGURES, AND PAPERS 
+xge0000345). Copyright 2017 by the American Psy-
+chological Association. 
+Figure 7.13: Adapted from "The Limits of Learning: 
+Exploration, Generalization, and the Develop-
+ment of Learning Traps," by A. S. Rich and T. M: 
+Gureckis, 2018, ¡oumal of Experimental Psychology: 
+General, 147(11), p. 1560 (https://doi.org/1O.l037/ 
+xge0000466). Copyright 2018 by the American Psy-
+chological Association. 
+Figure 7.14: Adapted from 2017 Poverty Rate in the Unit-
+ed States, by the U.S. Census Bureau, 2017 (https:// 
+www.census.gov/library/visualizations/2018/ 
+comm/acs-poverty-map.html). In the public domain. 
+Figure 7.15: Adapted from "Empathic Accuracy for 
+Happiness in the Daily Lives ofOlder Couples: Fluid 
+Cognitive Performance Predicts Pattern Accu-
+racy Among Men," by G. Hülür, C. A. Hoppmann, 
+A. Rauers, H. Schade, N. Ram, and D. Gerstorf, 
+2016, Psychology and Aging, 31(5), p. 550 (https://doi. 
+org/ l0.1037/pag0000109). Copyright 2016 by the 
+American Psychological Association. 
+Figure 7.16: Adapted from ''An Empirically-Derived 
+Taxonomy of Moral Concepts;' by J. F. Landy and 
+D. M. Bartels, 2018, ¡oumal of Experimental Psychol-
+ogy: General, 147(11), p. 1752 (https://doi.org/10.1037/ 
+xge0000404). Copyright 2018 by the American Psy-
+chological Association. 
+Figure 7.17: Adapted from "Out of Place, Out of 
+Mind: Schema-Driven False Memory Effects for 
+Object-Location Bindings," by A. R. Lew and M. L. 
+Howe, ¡oumal of Experimental Psychology: Leaming, 
+Mem01y, and Cognition, 43(3), p. 405 (https://doi. 
+org/l0.1037/xlm0000317). Copyright 2016 by the 
+American Psychological Association. 
+Figure 7.18: Adapted from "Bayesian Mixture Modeling 
+of Significant p Values: A Meta-Analytic Method to 
+Estimate the Degree of Contamination From Ha," 
+by Q. F. Gronau, M. Duizer, M. Bakker, and E.-J. 
+Wagenmakers, 2017, ¡oumal of Experimental Psychol-
+ogy: General, 146(9), p. 1227 (https://doi.org/l0.1037/ 
+xge0000324). Copyright 2017 by the American Psy-
+chological Association. 
+Figure 7.19: Adapted from "Enhanced Processing of 
+Untrustworthiness in Natural Faces With Neutral 
+Expressions," by A. Lischke, M. Junge, A. O. Hamm, 
+and M. Weymar, 2018, Emotion, 18(2), p. 185 (https:// 
+doi.org/ l0.l037/emo0000318). Copyright 2017 by 
+the American Psychological Association. 
+Figure 7.20: Adapted from "Denying Humanity: The 
+Distinct Neural Correlates of Blatant Dehuman-
+ization," by E. Bruneau, N. Jacoby, N. Kteily, and 
+R. Saxe, 2018, ¡oumal of Experimental Psychology: 
+General, 147(7), p. 1087 (https://doi.org/1O.l037/ 
+xge0000417). Copyright 2018 by the American Psy-
+chological Association. 
+Figure 7.21: Adapted from "NF1 Microduplications: 
+Identification of Seven Nonrelated Individuals Pro-
+vides Further Characterization of the Phenotype," 
+by K. J. Moles, G. C. Gowans, S. Gedela, D. Bevers-
+dorf, A. Yu, L. H. Seaver, R. A. Schultz, J. A. Rosen-
+feld, B. S. Torchia, and L. G. Shaffer, 2012, Genetics 
+in Medicine, 14, p. 509 (https://doi.org/ l0.l038/gim. 
+2011.46). Copyright 2012 by the American College 
+of Medical Genetics and Genomics. Reprinted with 
+permission. 
+. 
+Figure 8.1: Adapted from "Clever People: Intelligence 
+and Humor Production Ability," by A. P. Chris-
+tensen, P. J. Silvia, E. C. Nusbaum, and R. E. Beaty, 
+2018, Psychology of Aesthetics, Creativity, and the Arts, 
+12(2), p. 136 (https://doi.org/l,D.1037/aca0000109). 
+Copyright 2018 bythe American PsychologicalAsso-
+ciation. 
+Figure 8.3: Adapted from "Can Journalistic 'False Bal-
+ance' Distort Public Perception of Consensus in Ex-
+pert Opinion?" by D. J. Koehler, 2016,¡oumal ofExper-
+imental Psychology: Applied, 22(1), pp. 24- 38 (https:// 
+doi.org/l0.1037/xap0000073). Copyright 2016 by the 
+American Psychological Association. 
+Figure 8.4: Adapted from "Discrimination, Work Out-
+comes, and Mental Health Among Women of 
+Color: The Protective Role ofWomanist Attitudes," 
+by B. L. Velez, R. Cox Jr., C. J. Polihronakis, and B. 
+Moradi, 2018,¡oumal ofCounseling Psychology, 65(2), 
+pp. 178, 193 (https://doi.org/l0.1037/cou0000274). 
+Copyright 2018 by the American Psychological 
+Association. 
+Figure 8.5: Adapted from "Play Therapists' Perceptions 
+ofWellness and Self-Care Practices;' by K. K. Mea-
+ny-Walen, A. Cobie-Nuss, E. Eittreim, S. Teeling, S. 
+Wilson, and C. Xander, 2018, Intemational ¡oumal of 
+Play Therapy, 27(3), p. 177 (https://doi.org/1O.1037/ 
+pla0000067). Copyright 2018 by the American Psy-
+chological Association. 
+Figure 8.6: Adapted from "Tabloids as Windows Into 
+Our Interpersonal Relationships: A Content Analy-
+sis of Mass Media Gossip From an Evolutionary Per-
+spective," by C. J. S. De Backer and M. L. Fisher, 2012, 
+¡oumal of Social, Evolutionary, and Cultural Psycholo-
+gy, 6(3), p. 421 (https:/ /doi.org/ 10.1037/h0099244). 
+Copyright 2012 by the American Psychological 
+Association. 
+Figure 8.7: Adapted from "Women Athletes' Self-Com-
+passion, Self-Criticism, and Perceived Sport Per-
+formance," by M. E. Killham, A. D. Mosewich, D. 
+E. Mack, K. E. Gunnell, and L. J. Ferguson, 2018, 
+Sport, Exercise, and Performance Psychology, 7(3), p. 297 
+(https://doi.org/1O.1037/spy0000127). Copyright 2018 ' 
+by the American Psychological Association. 
+Figure 9.1: Adapted from "Sensitivity to the Evaluation 
+of Others Emerges by 24 Months," by S. V. Botto 
+and P. Rochat, 2018, Developmental Psychology, 54(9), 
+p. 1723 (https://doi.org/10.1037/dev0000548). Copy-
+right 2018 by the American Psychological Associ-
+ation. 
+Figure 9.4: Adapted from "Aging and Recognition Mem-
+ory: A Meta-Analysis;' by S. H. Fraundorf, K. L. 
+Hourihan, R. A. Peters, and A. S. Benjamin, 2019, 
+Psychological Bulletin, 145(4), pp. 359-368 (https:// 
+doi.org/l0.1037/buI0000185). Copyright 2019 by the 
+American Psychological Association. 
+--
+
+
+============================================================
+PDF PAGE 419
+============================================================
+
+402 
+C\.\.> 
+REFERENCES 
+APA Publications and Communications Board Working Group on Journal Article Reporting Stan-
+dards. (2008). Reporting standards for research in psychology: Why do we need them? What 
+might they be? American Psychologist, 63(9), 839-851. https://doi.org/l0.1037/0003-066X.63.9.839 
+Appelbaum, M., Cooper, H., Kline, R. B., Mayo-Wilson, E.; Nezu, A M., & Rao, S. M. (2018). Jour-
+nal article reporting standards for quantitative research in psychology: The APA Publications 
+and Communications Board Task Force reporto American Psychologist, 73(1), 3-25. https://doi. 
+org/l0.1037/amp0000191 
+The Asexual Visibility & Education Network. (n.d.). General FAQ: Dejinitions. https://www.asexuality. 
+org/?q~general.htm l#def 
+Beaubien, S., & Eckard, M. (2014). Addressing faculty publishing concerns with open access jour-
+nal quality indicators. ¡oumal of Librarianship and Scholarly Communication, 2(2), Article eP1133. 
+https://doi.org/l0.7710/2162-3309.1133 
+Bentley, M., Peerenboom, C. A., Hodge, F. W., Passano, E. B., Warren, H. C., & Washburn, M. F. (1929). 
+Instructions in regard to preparation of manuscript. PsychologicalBulletin, 26(2), 57-63. https://doi. 
+org/l0.l037/h0071487 
+Blackless, M., Charuvastra, A, Derryck, A, Fausto-Sterling, A, Lauzanne, K., & Lee, E. (2000). How 
+sexually dimorphic are we? Review and synthesis. American ¡oumal of Human Biology, 12(2), 151-
+166. http://doi.org/bttkh4 
+The blueboolc: A uniform system of citation (20th ed.). (2015). Harvard Law Review Association. 
+Bowleg, L. (2008). When Black + woman + lesbian '" Black lesbian woman: The methodological 
+challenges of quantitative and qualitative intersectionality research. Sex Roles, 59(5-6), 312-325. 
+https://doi.org/1O.1007/s11199-008-9400-z 
+Bowman, J. D. (2014). Predatory publishing, questionable peer review, and fraudulent confer-
+ences. American ¡oumal of Pharmaceutical Education, 78(10), Article 176. https://doi.org/l0.5688/ 
+ajpe7810176 
+Brown, L. (n.d.).ldentityjirst language. Autistic Self Advocacy Network. https://autisticadvocacy.org/ 
+home/about-asan/identity-first-Ianguage (Original work published 2011) 
+Brueggemann, B. J. (2013). Disability studies/disability culture. In M. L. Wehmeyer (Ed.), The Oxford 
+handboolc of positive psychology and disability (pp. 279-299). Oxford University Press. https://doi. 
+org/l0.l093/oxfordhb/9780195398786.013.013.0019 
+Cooper, H. (2016, May 12). PrincipIes of good writing: Avoiding plagiarism. APA Style. https://blog. 
+apastyle.org/apastyle/2016/05/avoiding-plagiarism.html 
+Cooper, H. (2018). Reporting quantitative research in psychology: How to meetAPA Style joumal article report-
+ing standards (2nd ed.). American Psychological Association. https://doi.org/l0.l037/0000103-000 
+CopyrightAct of1976, 17 U.S.C. §§ 101- 810 (1976). 
+Crenshaw, K. W. (1989). Demarginalizing the intersections of race and sex: A Black feminist critique 
+of antidiscrimination doctrine, feminist theory, and antiracist politics. University of Chicago Legal 
+Forum, 1989( 1), Article 8. https://chicagounbound.uchicago.edu/uclf/voI1989/ issl/8/ 
+Creswell, J. W. (2015). A concise introduction to mixed methods research. SAGE Publications. 
+Creswell, J. W., & Plano Clark, v. L. (2017). Designing and conducting mixed methods research (3rd ed.). 
+SAGE Publications. 
+Creswell, J. W., & Poth, C. N. (2018). Qualitative inquiry and research design: Choosing among jive 
+approaches (4th ed.). SAGE Publications. 
+Data Sharing Working Group. (2015). Data sharing: Principies and considerations for policy development. 
+American Psychological Association. https://www.apa.org/science/leadership/bsa/data-sharing-
+reporto pdf 
+' 
+de Orus, C. M. (2017). What's in an "x"? An exchange about the politics of "Latinx." Chiricú ¡oumal: 
+Latina/o Literatures, Arts, and Cultures, 1(2), 78-91. https://doi.org/l0.2979/chiricu.1.2.07 
+Diemer, M. A, Mistry, R. S., Wadsworth, M. E., López, l., & Reimers, F. (2013). Best practices in con-
+ceptualizing and measuring social class in psychological research. Analyses of Sociallssues and Pub-
+tic Po/icy, 13(1), 77-113. https://doi.org/ l0.1111/asap.12001 
+DuBois, J. M., Walsh, H., & Strait, M. (2018). It is time to share (sorne) qualitative data: Reply to Guis-
+hard (2018), McCurdy and Ross (2018), and Roller and Lavrakas (2018). Qualitative Psychology, 5(3), 
+412-415. https://doi.org/ l0.1037/qup0000092 
+Dunn, D. S., & Andrews, E. E. (n.d.). Choosingwordsfor tallcing about disability. American Psychological 
+Association. https:/ /www.apa.org/pi/disability/resources/choosing-words.aspx 
+Dunn, D. S., & Andrews, E. E. (2015). Person-first and identity-first language: Developing psycholo-
+gists' cultural competen ce using disability language. American Psychologist, 70(3),255-264. https:// 
+doi.org/l0.l037/a0038636 
+
+
+============================================================
+PDF PAGE 420
+============================================================
+
+REFERENCES 
+C\.Y 
+403 
+Fine, M. (2013). Echoes of Bedford: A 20-year social psychology memoir on participatoryaction 
+research hatched behind bars. American Psychologist, 68(8), 687-698. https://doi.org/10.1037/ 
+a0034359 
+. 
+Fisher, C. B. (2017). Decoding the ethics code: A practical guidefor psychologists (4th ed.). SAGE Publica-
+tions. 
+Gastil, J. (1990). Generic pronouns and sexist language: The oxymoronic character of masculine 
+generics. Sex Roles, 23(11- 12), 629- 643. https://doi.org/1O.1007/BF00289252 
+Greene, J. C. (2007). Mixed methods in social inquiry. Jossey-Bass. 
+Guishard, M. A. (2018). Now's not the time! Qualitative data repositories on tricky ground: Comment 
+on DuBois et al. (2018). Qualitative Psychology, 5(3), 402-408. https://doi.org/l0.1037/qup0000085 
+Guishard, M. A., Halkovíc, A., Galletta, A., & Li, P. (2018). Toward epistemological ethics: Centering 
+communities and social justice in qualitative research. Forwn: Qualitative Social Research, 19(3), 
+Article 27. https://doi.org/10.17169lfqs-19.3.3145 
+Hallock, R M., & Dillner, K. M. (2016). Should title lengths really adhere to the American Psycholog-
+ical Association's twelve word limit? American Psychologist, 71(3),240-242. https://doi.org/l0.l037/ 
+a0040226 
+Hegarty, P., & Buechel, C. (2006). Androcentric reporting of gender differences in APA journals: 
+1965-2004. Review ofGeneral Psychology, 10(4), 377- 389. https://doi.org/10.1037/1089-2680.1O.4.377 
+Hill, C. E. (Ed.). (2012). Consensual qualitative research: A practical resource for investigating social science 
+phenomena. American Psychological Association. 
+Howard, J. A., & Renfrow, D. G. (2014). Intersectionality. In J. D. McLeod, E. J. Lawler, & M. 
+Schwalbe (Eds.), Handbook of the social psychology of inequality (pp. 95-121). Springer. https://doi. 
+org/l 0.1007/978-94-017 -9002-4 
+International Committee on Standardized Genetic Nomenclature for Mice & Rat Genome and 
+Nomenclature Committee. (2018). Guidelines for nomenclature of genes, genetic markers, alleles, and 
+mutations in mouse and rato Mouse Genome Informatics. http://www.informatics.jax.org/mgi-
+home/nomen/ gene.shtml 
+International Journal of Indigenous Health. (n.d.). Defining Aboriginal Peoples within Canada. https:// 
+journals.uvic.ca/journalinfo/ijih/IJIHDefiningIndigenousPeoplesWithinCanada.pdf 
+Intersex Society ofNorth America. (n.d.). How common is intersex?http://www.isna.orglfaq/frequency 
+Jamali, H. R , & Nikzad, M. (2011). Article title type and its relation with the number of downloads and 
+citations. Scientometrics, 88(2), 653-661. https://doi.org/10.1007/s11192-011-0412-z 
+Knatterud, M. E. (1991). Writing with the patient in mind: Don't add insult to injury. American Medical 
+WritersAssociationJoumal, 6(1), 10- 17. 
+Laine, C., & Winker, M. A. (2017). Identifying predatory or pseudo-journals. Biochemia Medica, 27(2), 
+285-291. https://doi.org/l0.11613/BM.2017.031 
+Levitt, H. M. (2019). Reporting qualitative research in psychology: How to meet APA Style joumal article 
+reporting standards. American Psychological Association. https://doi.org/10.1037/0000121-000 
+Levitt, H. M., Bamberg, M., Creswell, J. W., Frost, D. M., Josselson, R, & Suárez-Orozco, C. (2018). 
+Journal article reporting standards for qualitative primary, qualitative meta-analytic, and mixed 
+methods research in psychology: The APA Publications and Communications Board Task Force 
+report. American Psychologist, 73(1), 26-46. https://doi.org/1O.1037/amp0000151 
+Levitt, H. M., Motulsky, S. L., Wertz, F. J., Morrow, S. L., & Ponterotto, J. G. (2017). Recommendations 
+for designing and reviewing qualitative research in psychology: Promoting methodological integ-
+rity. Qualitative Psychology, 4(1),2-22. https://doi.org/10.1037/qup0000082 
+Lindland, E., Fond, M., Haydon, A., & Kendall-Taylor, N. (2015). Gauging aging: Mapping the gaps 
+between expert and public understandings of aging in America. FrameWorks Institute. 
+https:/lframeworksinstitute.org/assets/files/agin¡Lmtg.pdf 
+Lundebjerg, N. E., Trucil, D. E., Hammond, E. C., & Applegate, W. B. (2017). When it comes to older 
+adults, language matters: Joumal of the American Geriatrics Society adopts modified American 
+Medical Association Style. Joumal of the American Geriatrics Society, 65(7), 1386-1388. https://doi. 
+org/l0.1111/jgs.14941 
+Masten, Y, & Ashcraft, A. (2017). Due diligence in the open-access explosion era: Choosing a rep-
+utable journal for publication. FEMS Microbiology Lettas, 364(21), Article fnx206. https://doi. 
+org/10.1093/femsle/fnx206 
+McCurdy, S. A., & Ross, M. W. (2018). Qualitative data are notjust quantitative data with text but data 
+with context: On the dangers of sharing sorne qualitative data: Comment on DuBois et al (2018). 
+Qualitative Psychology, 5(3), 409-411. https://doi.org/1O.1037/qup0000088 

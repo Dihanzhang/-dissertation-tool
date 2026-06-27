@@ -1,0 +1,1717 @@
+=== PAGE 148 ===
+Contents 
+General Guidelines for Reducing Bias 
+5.1 Describe at the Appropriate Level of Specificity 
+132 
+5.2 Be Sensitive to Labels 
+133 
+Reducing Bias by Topic 
+5.3 Age 
+135 
+5.4 Disability 
+136 
+5.5 Gender 138 
+5.6 Participation in Research 
+141 
+5.7 Racial and Ethnic Identity 142 
+5.8 Sexual Orientation 
+145 
+5.9 Socioeconomic Status 
+147 
+5.10 Intersectionality 
+148 
+132 
+135 
+
+
+=== PAGE 149 ===
+5 
+BIAS-FREE LANGUAGE 
+GUIDELINES 
+Authors must strive to use language that is free of ~ias, meaning the implied 
+or irrelevant evaluation of the group or graups they are writing about. As an 
+organization, APA is committed to both the advancement of science and the 
+fair treatment of individuals and groups. These principIes require that authors 
+and students who use APA Style avoid perpetuating demeaning attitudes in 
+their writing. It is unacceptable to use constructions that might imply preju-
+dicial beliefs or perpetuate biased assumptions against persons on the basis of 
+age, disability, gender, participation in research, racial or ethnic identity, sexual 
+orientation, socioeconomic status, or sorne combination of these or other per-
+sonal factors (e.g., marital status, immigration status, religion). lnstead, authors 
+should use affirming and inclusive language. 
+Long-standing cultural practice can exert a powerful influence over even the 
+most conscientious writer. Just as you have learned to check what you write for 
+spelling, grammar, and wordiness, practice rereading your work for preconcep-
+tions about graups of people. Ask people fram the groups about which you are 
+writing to read and comment on your material or consult self-advocacy graups 
+to determine appropriate terminology. lf you work directly with participants, 
+ask them what terms they use to describe themselves. Language changes over 
+time, and it is important to use the terms that individuals and/or communities 
+use to describe themselves, their experiences, and their practices. 
+Sorne attempts to follow the guidelines in this chapter may result in wordi-
+ness or clumsy prase. As always, good judgment is required-these are not rigid 
+rules. lf your writing reflects respect for your participants and your readers, 
+and if you write with appropriate specificity and precision, you contribute to 
+the goal of accurate, unbiased communication. This chapter contains general 
+guidelines for writing without bias that apply across a range of issues and addi-
+tional guidelines that address specific topics, including age, disability, gender, 
+participation in research, race and ethnicity, sexual orientation, socioeconomic 
+131 
+
+
+=== PAGE 150 ===
+132 ~ BIAS-FREE LANGUAGE GUIDELlNES 
+status, and intersectionality. Additional examples of bias-free language can be 
+found on the APA Style website (https://apastyle.apa.org). 
+General Guidelines for Reducing Bias 
+5.1 Describe at the Appropriate Level of Specificity 
+Precision is essential in scholarly writing; when you refer to a person or per-
+sons, choose words that are accurate, clear, and free from bias or prejudicial 
+connotations. Bias, like inaccurate or unclear language, can be a form of impre-
+cision. For example, using "man" to refer to all human beings is not as accurate 
+or inclusive as using the terms "individuals," "people," or "persons." 
+Focus on Relevant Characteristics. Be mindful to describe only relevant char-
+acteristics. Although it is possible to describe a person's age, disability, gender 
+identity, participation in research, racial and ethnic identity, sexual orientation, 
+socioeconomic status, or other characteristic without bias, it is not always nec-
+essary to include all of this information in your report (for a more detailed dis-
+cussion of participant characteristics to report in quantitative and qualitative 
+studies, refer to Sections 3.6 and 3.14, respectively). For example, you would 
+be unlikely to mention participants' sexual orientation in a study of cognition 
+because sexual orientation is not relevant to cognition; however, you would 
+likely mention participants' gender in a study of stereotype threat because gen-
+der is relevant to the examination of stereotype threat. Furthermore, there may 
+be multiple relevant characteristics to discuss; when this is the case, address the 
+ways in which the characteristics intersect, as appropriate (see Section 5.10). 
+Acknowledge Relevant Differences That Do Exist. Part of writing without bias 
+is not only recognizing that differences should be mentioned only when rele-
+vant but also acknowledging relevant differences when they do existo Evaluate 
+the meaning of the word "difference" carefully in relation to the target popula-
+tion, not the dominant group. For example, a researcher who wants to general-
+ize the study results to people overall, or students overall, and so forth, should 
+assess and report whether the sample studied is different from the target popu-
+lation and, if so, describe how it is different. 
+Be Appropriately Specific. Once you have determined which characteristics 
+to describe, choose terms that are appropriately specific, which will depend on 
+the resear
+
+=== PAGE 151 ===
+General Guidelines for Reducing Bias 
+~ 133 
+• When writing about age, exact ages or age ranges (e.g., 15-18 years old, 65-80 
+years old) are more specific than broad categories (e.g., under 18 years old, 
+over 65 years old; see Section 5.3). Also include the age mean and median in 
+addition to the range of ages to increase the specificity of the reportiiJ.g. 
+• When writing about disability, names of conditions (e.g., Alzheimer's disease) 
+are more specific than categories of conditions (e.g., types of dementia) or 
+general references such as "people with disabilities" (see Section 5.4). 
+• When writing about gender identity, descriptors with modifiers (e.g., cisgen-
+der women, transgender women) are more specific than descriptors without 
+modifiers (e.g., women) or general nongendered terms (e.g., people, individ-
+uals; see Section 5.5 for how to differentiate between gender and sex). 
+• When writing about people who took part in research, terms that indicate 
+the context of the research (e.g., patients, participants, clients) are more 
+specific than general terms (e.g., people, children, women; see Section 5.6). 
+• When writing about racial or ethnic groups, the nation or region of origin 
+(e.g., Chinese Americans, Mexican Americans) is more specific than a gener-
+alized origin (e.g., Asian Americans, Latin Americans; see Section 5.7). 
+• When writing about sexual orientation, the names of people's orientations 
+(e.g., lesbians, gay men, bisexual people, straight people) are more specific 
+than broad group labels (e.g., gay; see Section 5.8). 
+• When writing about soéioeconomic status, income ranges or specific des-
+ignations (e.g., below the federal poverty threshold for a family of four) are 
+more specific than generallabels (e.g., low income; see Section 5.9). 
+5.2 Be Sensitive to Labels 
+Respect the language people use to describe themselves; that is, call people 
+what they call themselves. Accept that language changes with time and that 
+individuals within groups sometimesdisagree about the designations they use. 
+Make an effort to determine what is appropriate for your study or paper, par-
+ticularly when these designations are debated within groups. You may need to 
+ask your participants which designations they use and/or consult self-advocacy 
+groups that represent these communities to research the issue if you are not 
+working direcdy with participants. However, note that sorne individual s may 
+use slurs or stigmatizing language to refer to the
+
+=== PAGE 152 ===
+134 
+C\v 
+BI AS-FRE E LA NGUA GE GUIDELlN ES 
+mote a sense of unity and community (Solomon, 2012); use the label that 
+the community uses, even when that label is adjectival (note, however, that 
+not everyone who has hearing loss identifies as Deaf). In particular, the use 
+of labels where disability is con cerned is evolving, and people may disagree 
+about the preferred approach. When writing about disability, person-first . 
+language (e.g., "a person with paraplegia" rather than "a paraplegic"), identity-
+first language (e.g., "an autistic person" rather than "a person with autism"), 
+or both may be acceptable depending on the group you are writing about 
+(see Section 5.4). 
+Provide Operational Definitions and Labels. If you provide operational 
+definitions of groups early in your paper (e.g., "participants scoring a mini-
+mum ofX on the Y scale constituted the high verbal group, and those scoring 
+below X constituted the low verbal group"), the best practice is to describe 
+participants thereafter in terms of the measures used to classify them (e.g., 
+"the contrast for the high verbal group was statistically significant"), provided 
+the terms are not inappropriate. A pejorative label should not be used in any 
+formo Abbreviations or series labels for groups usually sacrifice clarity and 
+may be problematic: "LDs" or "LD group" to describe people with specific 
+learning difficulties is problematic; "HVAs" for "high verbal ability group" is 
+difficult to decipher. "Group !\' is not problematic, but it is also not descrip-
+tive. Instead, ensure that operational group labels are clear and appropriate 
+(e.g., "group with dysgraphia"). 
+Avoid False Hierarchies. Compare groups with careo Bias occurs when authors 
+use one group (often their own group) as the standard against which others are 
+judged (e.g., using citizens of the United States as the standard without speci-
+fying why that group was chosen). For example, usage of "normal" may prompt 
+readers to make the comparison with "abnormal," thus stigmatizing individu-
+als with differences. Likewise, contrasting lesbians with "the general public" 
+or "normal women" portrays lesbians as marginal to society. More appropriate 
+comparison groups for lesbians might be straight individuals, straight women, 
+or gay meno Use parallel designations for groups, especially when presenting 
+racial and ethnic information (see Section 5.7). 
+Be aware that the order of social group presentation may imply that the 
+first-men
+
+=== PAGE 153 ===
+Reducing Bias by Topie 
+5.3 Age 
+Redueing Bias by Topie 
+C\.V 
+135 
+Age should be reported as part of the description of participants in the' Method 
+section. Be specific in providing age ranges, means, and medians (see also Sec-
+tion 5.1). Avoid open-ended definitions such as "under 18 years" or "over 65 
+years;' unless referring, for instance, to broad research study eligibility criteria. 
+Terms for Different Age Groups. Different terms are used for individuals of dif-
+ferent ages, and these terms are often gendered (see Section 5.5). Use the terms 
+individuals use to self-describe, whether these are binary gender categories of 
+boy-girl or man-woman or descriptive and possibly nonbinary categories of 
+transgender, genderqueer, agender, or gender-fluid. 
+o For an individual of any age, appropriate terms are "person," "individual;' 
+and so on. In general, avoid using "males" and "females" as nouns; instead use 
+"men" and "women" or other age-appropriate words (see Section 5.5). "Males" 
+and "females" are appropriate when groups include individuals with a broad 
+age range (e.g., "males" to describe a group that includes both boys and men). 
+o For an individual aged 12 years and younger, appropriate terms are "infant" 
+(for a very young child), "child," "girl," "boy," "transgender girl," "transgender 
+boy," "gender-fluid child;' and so on. 
+o For an individual aged 13 to 17 years, appropriate terms are "adolescent," 
+"young person," "youth," "young woman," "young man," "female adolescent," 
+"male adolescent," "agender adolescent," and so on. 
+o For an individual aged 18 years and older, appropriate terms are "adult," 
+"woman;' "man," "transgender man;' "trans man;' "transgender woman," "trans 
+woman," "genderqueer adult," "cisgender adult," and so on. 
+Terms for Older Adults. Older adults are a subgroup of adults, and the age groups 
+of older adults may be described with adjectives. On first reference to a group of 
+older people, be as specific as possible by including the age range, average age, 
+and median age, when available. Terms such as "older persons," "older people," 
+"older adults," "older patients," "older individuals," "persons 65 years and older," 
+and "the older population" are preferred. Avoid using terms such as "seniors;' 
+"elderlY;' "the aged;' "aging dependents;' and similar "othering" terms because 
+they connote a stereotype and suggest that members of the group are not part 
+of society but rather a group apart (see Lundebjerg et al., 201
+
+=== PAGE 154 ===
+136 
+C\.\.> 
+BIAS-FREE LANGUAGE GUIDELlNES 
+tives, not as nouns (i.e., refer to "young-old individuals," not to "the young-old"). 
+When contrasting older adults with adults of other ages, describe that other 
+age group specifically (e.g., young adults vs.older adults, middle-aged adults 
+vs. older adults). You can use decade-specific descriptors if desired (e.g., octo-
+genarian, centenarian). Generational descriptors such as "baby boomers," "Gen 
+. X," "millennials;' "centennials," "Gen Z," and so on should be used only when 
+discussing studies related to the topic of generations. For more information 
+on writing about age, see "Guidelines for the Evaluation of Dementia and Age-
+Related Cognitive Change" (APA, 2012c) and "Guidelines for Psychological 
+Practice With Older Adults" (APA, 2014). 
+5.4 Disability 
+Disability is a broad term that is defined in both legal and scientific ways and 
+encompasses physical, psychological, intellectual, and socioemotional impair-
+ments (World Health Organization, 2001, 2011). The members of sorne groups of 
+people with disabilities-effectively sub cultures within the larger culture of dis-
+ability-have particular ways of referring to themselves that they would prefer 
+others to adopto When you use the disability language choice s made by groups 
+of disabled individuals, you honor their preferences. For example, sorne Deaf 
+individuals culturally prefer to be called "Deaf" (capitalized) rather than "people 
+with hearing loss" or "people who are deaf" (Dunn & Andrews, 2015). Likewise, 
+use the term "hard of hearing" rather than "hearing-impaired." Honoring the 
+preference of the group is not only a sign of professional awareness and respect 
+for any disability group but also a way to offer solidarity. 
+The language to use where disability is concerned is evolving. The overall 
+principIe for using disability language is to maintain the integrity (worth and 
+dignity) of all individuals as human beings. Authors who write about disability 
+are encouraged to use terms and descriptions that both honor and explain per-
+son-first and identity-first perspectives. Language should be selected with the 
+understanding that the expressed preference of people with disabilities regard-
+ing identification supersedes matters of style. 
+Person-First Language. In person-first language, the person is emphasized, not 
+the individual's disabling or chronic condition (e.g., use "a person with paraple-
+gia" and "a youth with epilepsy" rather than 
+
+=== PAGE 155 ===
+Redueing Bias by Topie 
+~ 137 
+Choosing Between Person-First and Identity-First Language. Both person-first 
+and identity-first approaches to language are designed to respect disabled per-
+sons; both are fine choices overall. It is permissible to use either approach or 
+to mix person-first and identitycfirst Ianguage unless or until you know that a 
+group clearIy prefers one approach, in which case, you should use the preferred 
+approach (Dunn & Andrews, n.d.). Mixing this language may help you avoid 
+cumbersome repetition of "person with ... " and is also a means to change how 
+authors and readers regard disability and people within particular disability 
+communities. Indeed, the level of disability identity integration can be an effec-
+tive way to decipher the language that is preferred by the persons about whom 
+you are writing. Those who embrace their disability as part of their cultural and/ 
+or personal identity are more likely to prefer identity-first language (Dunn & 
+Andrews, 2015). If you are unsure of which approach to use, seek guidance from 
+self-advocacy groups or other stakeholders specific to a group of people (see, 
+e.g., Brown, 2011/n.d.). If you are working with participants directly, use the lan-
+guage they use to describe themselves. 
+Relevance of Mentioning a Disability. The nature of a disability should be 
+indicated when it is relevant. For example, if a sample included people with 
+spinal cord injuries and people with autism-two different groups with disabil-
+ities- then it makes sense to mention the presence of the particular disabilities. 
+Within each group, there may be additional heterogeneity that should, under 
+some circumstances, be articulated (e.g., different levels of spinal cord injury, 
+different symptom severities of autism spectrum disorder). 
+Negative and Condescending Terminology. Avoid language that uses picto-
+rial metaphors or negativistic terms that imply restriction (e.g., "wheelchair 
+bound" or "confined to a wheelchair"; use the term "wheelchair user" instead) 
+and that uses excessive and negative labels (e.g., "AIDS victim," "brain damaged"; 
+use the terms "person with AIDS" or "person with a traumatic brain injury" 
+instead). Avoid terms that can be regarded as slurs (e.g., "cripple," "invalid," 
+"nuts," "alcoholic," "meth addict"); use terms like "person with a physical di s-
+ability," "person with a mental illness," "person with alcohol use disorder," or 
+"person with substance use disorder" instead, or b
+
+=== PAGE 156 ===
+138 ~ BIAS-FREE LANGUAGE GUIDELlNES 
+5.5 Gender 
+Gender offers an added layer of specificity when interpreting patterns or phe-
+nomena of human behavior. However, the tertns related to gender and sex are 
+often conflated, making precisioh essential to writing about gender and/or sex 
+without bias. The language related to gender identity and sexual orientation has 
+also evolved rapidly, and it is important to use the terms people use to describe 
+themselves (Singh, 2017; for how to determine appropriate terms, see Section 
+5.2; for a list ofterms and definitions, see APA, n.d.-a). 
+Gender Versus Sexo Gender refers to the attitudes, feelings, and behaviors that a 
+given culture associates with a person's biological sex (APA, 2012b). Gender is a 
+social construct and a social identity. Use the term "gender" when referring to 
+people as social groups. For example, when reporting the genders of participants 
+in the Method section, write something like this: "Approximately 60% of partic-
+ipants identified as cisgender women, 35% as cisgender men, 3% as transgender 
+women, 1% as transgender men, and 1% as nonbinary:' Sex refers to biological 
+sex assignment; use the term "sex" when the biological distinction of sex assign-
+ment (e.g., sex assigned at birth) is predominant. Using "gender" instead of "sex" 
+also avoids ambiguity over whether "sex" means "sexual behavior." In sorne cases, 
+there may not be a clear distinction between biological and acculturative factors, 
+so a discussion ofboth sex and gender would be appropriate. For example, in the 
+study of sexual orientation (se e Section 5.8), researchers continue to examine 
+the extent to which sexuality or sexual orientation-attraction to sex, gender, or 
+sorne combination of both-is a biological and/or acculturative phenomenon. 
+Gender Identity. Gender identity is a component of gender that describes a per-
+son's psychological sense of their gender. Many people describe gender identity 
+as a deeply felt, inherent sense of being a boy, aman, or male; a girl, a woman, 
+or female; or a nonbinary gender (e.g., genderqueer, gender-nonconformin~, 
+gender-neutral, agender, gender-fluid) that may or may not correspond to a per-
+son's sex assigned at birth, presumed gender based on sex assignment, or primary 
+or secondary sex characteristics (APA, 2015a). Gender identity applies to all indi-
+viduals and is not a characteristic only of transgender or gender-nonconforming 
+individuals. Gender identity is distinct from 
+
+=== PAGE 157 ===
+Redueing Bias by Topie 
+not conform to what is culturally associated with their sex assigned at birth. 
+Sorne transgender people hold a binary gender, such as man or woman, but oth-
+ers hilVe a gender outside ofthis binary, such as gender-fluid or nonbinary. Indi-
+viduals whose gender varies from presumptions based on their sex assigned at 
+birth may use terms other than "transgender" to describe their gender, including 
+"gender-nonconforming," "genderqueer;' "gender-nonbinary," "gender-creative," 
+"agender;' or "two-spirit," to name a few. (Note that "two-spirit" is a term specific 
+to Indigenous and Native American communities.) Transprejudice and transnega-
+tivity denote discriminatory attitudes toward individuals who are transgender. 
+Diverse identity terms are used by transgender and gender-nonconforming 
+(TGNC) people, and "TGNC" is a generally agreed-upon umbrella termo These 
+terms are generally used in an identity-first way (e.g., "transgender people," 
+"TGNC people"). However, there is sorne variation in the field; for example, clini-
+cians often refer to individuals according to identity (self-identified) or describe 
+gender variance, gender expansiveness, or gender diversity rather than gender noncon-
+formity or nonbinary gender. Be sure to use identity labels that are in accordance 
+with the stated identities of the people you are describing, and clearly define 
+how you are using such identity labels within your writing. 
+Sex Assignment. The terms "birth sex," "natal sex," "tranny," and "transvestite" 
+are considered disparaging by scholars in TGNC psychological research; by 
+many individuals identifying as transgender, gender-nonconforming, or nonbi-
+nary; and by people exhibiting gender diversity. Thus, these disparaging terms 
+should be avoided. Additionally, "birth sex" and "natal sex" imply that sex is an 
+immutable characteristic without sociocultural influence. It is more appropri-
+. ate to use "assigned sex" or "sex assigned at birth," as this functionally describes 
+the assignment of a sex term (frequently binary male or female; however, inter-
+sex is an accurate assignment for sorne) predicated on observation of genitalia 
+and/or determination of chromosomes and anatomical structures of the body 
+at birth, which necessarily is interpreted within a sociocultural contexto The 
+term "transsexual" is largely outdated, but sorne people identify with it; this 
+term should be used only for an individual who specifically claims it. 
+Gender a
+
+=== PAGE 158 ===
+140 
+~ BIAS-FREE LANGUAGE GUIDELlNES 
+dered endings such as "man" in occupational titles (e.g., use "police officer" 
+instead of "policeman"), as these can be ambiguous and may imply incorrectly 
+that aH persons in the group self-identify as one gender. Instead, use a non-
+gendered term if possible (e.g., "homemaker" instead of "housewife"). If you 
+use sources that include the generic "man," generic "he," or dated occupational 
+titles, clarify the historical context in which these terms were used (for more 
+details, see the APA Style website at https://apastyle.apa.org). 
+Gender and Prono un Usage. Pronoun usage requires specificity and care on 
+the author's part. Do not refer to the pronouns that transgender and gender-
+nonconforming people use as "preferred pronouns" because this implies a 
+choice about one's gender. Use the terms "identified pronouns," "self-identified 
+pronouns," or "pronouns" instead. When writing about a known individual, use 
+that person's identified pronouns. Sorne individuals use "they" as a singular 
+pronoun; sorne use alternative pronouns such as "ze," "xe," "hir," "per," "ve," 
+"ey," and "hen" (Swedish gender-neutral pronoun), among others. Sorne indi-
+viduals may alternate between "he" and "she" or between "he and/or she" and 
+"they," whereas others use no pronouns at aH and use their name in place of 
+pronouns. Refer to a transgender person using language appropriate to the 
+person's gender, regardless of sex assigned at birth-for example, use the pro-
+nouns "he," "him," and "his" in reference to a transgender man who indicates 
+use of these pronouns. 
+When referring to individuals whose identified pronouns are not known or 
+when the gender of a generic or hypothetical person is irrelevant within the con-
+text, use the singular "they" to avoid making assumptions about an individual's 
+gender. Use the forms "they," "them," "theirs," and so forth. Sexist bias can occur 
+when pronouns are used carelessly, as when the pronoun "he" is used to refer to 
+aH people, when a gendered pronoun is used exclusively to define roles by sex 
+(e.g., "the nurse .. . she"), or when "he" and "she" are alternated as though these 
+terms are generic. Pronouns associated with a specific gender have been found 
+to induce readers to think of individuals of that gender even when the pronoun 
+use is intended to be generic (Gastil, 1990; Moulton et al., 1978). In addition, 
+exposure to gender-specific language in a professional context has been linked 
+w
+
+=== PAGE 159 ===
+Redueing Bias by Topie 
+~ 141 
+sexes or genders; however, there are more similarities than differences among 
+people of different genders or sexes (see, e.g., Zell et al., 2015). As noted pre-
+viously, sorne individuals do not identify with either binary gender, and these 
+phrases ignore the existence of individmlls who have disorders or differences 
+of sex development or whoa re intersex (for more information, see Accord Alli-
+ance, n.d.; APA, 2015a; Blackless et al., 2000; Intersex Society of North Amer-
+ica, n.d.). To describe members of a relationship (e.g., romantic couples, people 
+in polyamorous relationships), use the phrases "mixed gender" or "mixed sex" 
+when the partners have different genders or sexes, rather than "opposite gen-
+der" or "opposite sex"; use the phrases "same gender" or "same sex" when the 
+partners have the same gender or sexo 
+5.6 Participation in Research 
+People participate in research in a variety of settings, including laboratories, 
+homes, schools, businesses, clinics, and hospitals. Specific terms are used in cer-
+tain contexts. When writing about people who participate in research, descrip-
+tive terms such as "college students," "children;' or "respondents" as well as the 
+more general terms "participants" and "subjects" are acceptable. "Subjects" and 
+"sample" are also customary when discussing established statistical terms and 
+experimental designs (e.g., "within-subjects design," "between-subjects design," 
+"sample-size-adjusted Bayesian information criterion," "between-samples esti-
+mate of the variance"). 
+Use the term "patient" to describe an individual diagnosed with a mental 
+health, behavioral health, and/or medical disease, disorder, or problem who 
+is receiving services from a health care provider (e.g., psychologist, physician, 
+nurse, or other provider). This language is consistent with the language used 
+in the health care system and pro motes psychologists as being perceived a part 
+of, and consistently integrated into, the culture of interprofessional, integrated 
+health careo However, in academic, business, school, or other settings, the term 
+"client" (or sorne other term) might be preferred instead of "patient." Within all 
+contexts, respect the individual and/or cultural preferences expressed by recip-
+ients of psychological services and their families when you choose language to 
+describe those individuals, families, or populations. (For further information, 
+see Resolution for the Use of the Tenn Pa
+
+=== PAGE 160 ===
+142 ~ BIAS-FREE LANGUAGE GUIDELlNES 
+low average and mildly impaired ranges, indicating a risk for a diagnosis of X"), 
+whereas in a diagnostic context, "the diagnosis was borderline" may be clarified 
+to specify a diagnosis (e.g., borderline personality disorder). When using the 
+term "at risk," specify who is at risk and the nature ofthat risk (e.g., "adolescents 
+who use substances are at risk for early school dropout"). 
+Across contexts, write about the people who participated in your work in 
+a way that acknowledges their contributions and agency. Sentence structure 
+plays a key role in this acknowledgment, as does using professionallanguage 
+(see Section 4.7). Use the active voice to describe your actions and the actions of 
+participants (see Section 4.13); the passive voice suggests individuals are acted 
+upon instead of being actors (e.g., "the subjects completed the tri al" and "we 
+collected data from the participants" are preferable to "the tri al was completed 
+by the subjects" and "the participants were run"). Avoid the term "failed," as in 
+"eight participants failed to complete the Rorschach test," because it can imply a 
+personal shortcoming instead of a research result; "did not complete" is a more 
+neutral choice (Knatterud, 1991). These choices will help ensure that you convey 
+respect for the people about whom you are writing. 
+5.7 Racial and Ethnic Identity 
+Terms used to refer to racial and ethnic groups continue to change over time. 
+One reason for this is simply personal preference; preferred designations are as 
+varied as the people they name. Another reason is that designations can become 
+dated over time and may hold negative connotations. When describing racial 
+and ethnic groups, be appropriately specific and sensitive to issues of labeling 
+(see Sections 5.1- 5.2). 
+Raee refers to physical differences that groups and cultures consider socially 
+significant. For example, people might identify their race as Aboriginal, Afri-
+can American or Black, Asian, European American or White, Native Ameri-
+can, Native Hawaiian or Pacific Islander, Maori, or sorne other race. Ethnieity 
+refers to shared cultural characteristics such as language, ancestry, practices, 
+and beliefs. For example, people might identify as Latino or another ethnicity. 
+Be clear about whether you are referring to a racial group or to an ethnic group. 
+Race is a social construct that is not universal, so one must be careful not to 
+impose raciallabels on ethnic gro
+
+=== PAGE 161 ===
+Redueing Bias by Tapie 
+~ 143 
+who are Indigenous or Aboriginal (e.g., "the authors were all Indigenous people 
+but belonged to different nations"). 
+Do not use hyphens in multiword names, even if the names act as unit mod-
+ifiers (e.g., write "Asian American participants," not "Asian-American partici-
+pants"). If people belong to multiple racial or ethnic groups, the names of the 
+specific groups are capitalized, but the terms "multiracial," "biracial," "multi-
+ethnic," and so on are lowercase. 
+Terms for Specific Groups. Designations for specific ethnic and racial groups 
+are described next. These groups frequendy are included in studies published in 
+APA journals; the examples provided are far from exhaustive but illustrate sorne 
+of the complexities of labeling. 
+People of African Origino When writing about people of African ancestry, several 
+factors inform the appropriate terms to use. People of African descent have 
+widely varied cultural backgrounds, family histories, and family experiences. 
+Sorne will be from Caribbean islands, Latin America, various regions in the 
+United States, countries in Africa, or elsewhere. Sorne American people of Afri-
+can ancestry prefer "Black," and others prefer "African American"; both terms 
+are acceptable. However, "African American" should not be used as an umbrella 
+term for people of African ancestry worldwide because it obscures other eth-
+nicities or national origins, such as Nigerian, Kenyan, Jamaican, or Bahamian; 
+in these cases use "Black." The terms "Negro" and "Afro-American" are outdated; 
+therefore, their use is generally inappropriate. 
+People of Asian Origino When writing about people of Asian ancestry from Asia, 
+the term "Asian" is appropriate; for people of Asian descent from the United 
+States or Canada, the appropriate term is "Asian American" or "Asian Cana-
+dian;' respectively. It is problematic to group ''Asian'' and ''Asian American" as if 
+they are synonymous. This usage reinforces the idea that Asian Americans are 
+perpetual foreigners. ''Asian'' refers to Asians in Asia, not in the United States, 
+and should not be used to refer to Asian Americans. The older term "Oriental" 
+is primarily used to refer to cultural objects such as carpets and is pejorative 
+when used to refer to people. To provide more specificity, ''Asian origin" may 
+be divided regionally, for example, into South Asia (including most of India and 
+countries such as Afghanistan, Pakistan, Bangladesh, and Nepal), Southeast
+
+=== PAGE 162 ===
+144 ~ BIAS-FREE LANGUAGE GUIDELlNES 
+Indigenous Peoples Around the World. When writing about Indigenous Peoples, use 
+the names that they call themselves. In general, refer to an Indigenous group as 
+a "people" or "nation" rather than as a "tribe." 
+• In North America, the collective terms "Native American" and "Native North 
+American" are acceptable (and may be preferred to "American Indian"). 
+"Indian" usually refers to people from India. Specify the nation or people if 
+possible (e.g., Cherokee, Navajo, Sioux). 
+• Hawaiian Natives may identify as "Native American," "Hawaiian Native," 
+"Indigenous Peoples of the Hawaiian Islands," and/or "Pacific Islander." 
+• In Canada, refer to the Indigenous Peoples collectively as "Indigenous Peo-
+pIes" or "Aboriginal Peoples" (Intemational ¡oumal ol Indigenous Health, n.d.); 
+specify the nation or people if possible (e.g., People of the First Nations of 
+Canada, People of the First Nations, or First Nations People; Métis; Inuit). 
+• In Alaska, the Indigenous People may identify as "Alas ka Natives." The Indig-
+enous Peoples in Alaska, Canada, Siberia, and Greenland may identify as a 
+specific nation (e.g., Inuit, Iñupiat). Avoid the term "Eskimo" because it may 
+be considered pejorative. 
+• In Latin America and the Caribbean, refer to the Indigenous Peoples col-
+lectively as "Indigenous Peoples" and by name if possible (e.g., Quechua, 
+Aymara, Taíno, Nahuatl). 
+• In Australia, the Indigenous Peoples may identify as ''Aboriginal People" or 
+"Aboriginal Australians" and "Torres Strait Islander People" or "Torres Strait 
+Island Australians." Refer to specific groups when people use these terms 
+to refer to themselves (e.g., Anangu Pitjantjatjara, Arrernte). 
+• In New Zealand, the Indigenous People may identify as "Maori" or the "Maori 
+people" (the proper spelling includes the diacritical macro n over the "a"). 
+For information on citing the Traditional Knowledge or Oral Traditions of 
+Indigenous Peoples as well as the capitalization of terms related to Indigenous 
+Peoples, see Section 8.9. 
+People 01 Middle Eastem Origino When writing about people of Middle Eastern 
+and North African (MENA) descent, state the nation of origin (e.g., Iran, Iraq, 
+Egypt, Lebanon, Israel) when possible. In sorne cases, people of MENA descent 
+who claim Arab ancestry and reside in the United States may be referred to as 
+''Arab Americans." In all cases, it is best to allow individuals to self-identify. 
+People 01 Hispanic or Latinx Ethnic
+
+=== PAGE 163 ===
+Redueing Bias by Topie 
+~ 145 
+.word "Latin@" to mean both Latino and Latina is now widely accepted. "Latinx" 
+can also be used as a gender-neutral or nonbinary term inclusive ofall gen-
+ders. There are compelling reasons to use any of the terms "Latino," "Latina," 
+"Latino/a," "Latin@," and/or "Latinx'.' (see de Onís, 2017), and variousgroups 
+advocate for the use of different forms. 
+Use the-term(s) your participants or population uses; ifyou are not working 
+directly with thispopulation but it is a focus of your research, it may be helpful 
+to explain why you chose the term you used or to choose a more inclusive term 
+like "Latinx." In general, naming a nation or region of origin is preferred (e.g., 
+Bolivian, Salvadoran, or Costa Rican is more specific than Latino, Latinx, Latin 
+American, or Hispanic). 
+Parallel Comparisons Among Groups. Nonparallel designations (e.g., "Afri-
+can Americans and Whites;' "Asian Americans and Black Americans") should 
+be avoided because one group is described by color, whereas the other group 
+is noto Instead, use "Blacks and Whites" or ''African Americans and European 
+Americans" for the former example and ''Asian Americans and African Ameri-
+cans" for the latter example. Do not use the phrase "White Americans and racial 
+minorities"; the rich diversity within racial minorities is minimized when it is 
+compared with the term "White Americans." 
+Avoiding Essentialism. Language that essentializes or reifies race is strongly 
+discouraged and is generally considered inappropriate. For example, phrases 
+such as "the Black race" and "the White race" are essentialist in nature, portray 
+human groups monolithically, and often perpetuate stereotypes. 
+Writing About "Minorities." To refer to non-White racial and ethnic groups 
+collectively, use terms such as "people of color" or "underrepresented groups" 
+rather than "minorities." 'f.he use of "minority" may be viewed pejoratively 
+because it is usually equated with being less than, oppressed, or deficient in 
+comparison with the majority (i.e., White people). Rather, a minority group is a 
+population subgroup with ethnic, racial, social, religious, or other character-
+istics different from those of the majority of the population, though the rele-
+vance of this term is changing as the demographics of the population change 
+(APA, 201Sa). If a distinction is needed between the dominant racial group 
+and nondominant racial groups, use a modifier (e.g., "ethnic," "racial") when 
+usin
+
+=== PAGE 164 ===
+146 ~ BIAS-FREE LANGUAGE GUIDELlNES 
+iation that may result from this attraction" (APA, 2015a, p. 862). Use the term 
+"sexual orientation" rather than "sexual preference," "sexual identity," or "sexual 
+orientation identity." All people choose their partners regardless of their sexual 
+orientation; however, the orien~ation itself is not a choice. 
+Sexual orientation can be conceptualized first by the degree to which a 
+person feels sexual and emotional attraction; sorne parallel terms are "sexual," 
+"demisexual" (or "gray-asexual" or "gray-A"), and "asexual" (see The Asexual Visi-
+bility & Education Network, n.d.). A person who identifies as sexual feels sexual 
+and emotional attraction toward sorne or all types of people, a person who iden-
+tifies as demisexual feels sexually attracted only within the context of a strong 
+emotional connection with another person, and a person who identifies as asex-
+ual does not experience sexual attraction or has little interest in sexual behavior 
+(see APA, 2015b). 
+Second, sexual orientation can be conceptualized as having a direction. 
+For people who identify as sexual or demisexual, their attraction then may be 
+directed toward people who are similady gendered, differently gendered, and 
+so on. That is, sexual orientation indicates the gendered directionality of attrac-
+tion, even ifthat directionality is very inclusive (e.g., nonbinary). Thus, a person 
+might be attracted to men, women, both, neither, masculinity, femininity, and/ 
+or to people who have other gender identities such as genderqueer or androg-
+ynous, or a person may have an attraction that is not predicated on a perceived 
+or known gender identity. 
+Terms for Sexual Orientation. Sorne examples of sexual orientation are lesbian, 
+gay, heterosexual, straight, asexual, bisexual, queer, polysexual, and pansexual 
+(also called multisexual and omnisexual). For example, a person who identifies 
+as lesbian might describe herself as a woman (gender identity) who is attracted 
+to women (sexual orientation)-the sexual orientation label of"lesbian" is pred-
+icated on a perceived or known gender identity of the other persono However, 
+someone who identifies as pansexual might describe their attraction to people 
+as being inclusive of gender identity but not determined or delineated by gen-
+der identity. Note that these definitions are evolving and that self-identification 
+is best when possible. 
+Use the umbrella term "sexual and gender minorities" to refer to mult
+
+=== PAGE 165 ===
+Redueing Bias by Topie 
+C\,y 
+147 
+,your paper, or use the phrase "gay men" to clarifY the usage. By convention, the 
+term "lesbians" is appropriate to use interchangeably with "lesbian women;' but 
+"gay men" or "gay people" should be used, not "gays." 
+. 
+Inaccurate or Pejorative Terms. Avoid the terms "homosexual" and "homo-
+sexuality." Instead, use specific, identity-first terms to describe people's sexual 
+orientation (e.g., bisexual people, queer people). These specific terms refer pri-
+marily to identities and to the culture and communities that have developed 
+among people who share thoseidentities. It is inaccurate to collapse these com-
+munities into the term "homosexual." Furthermore, the term "homosexuality" 
+. has been and continues to be associated with negative stereotypes, pathology, 
+and the reduction of people's identities to their sexual behavior. Homoprejudice, 
+biprejudice, homonegativity, and so forth are terms used to denote prejudicial 
+and discriminatory attitudes toward lesbians, gay men, bisexual individuals, 
+or other sexual minorities. Heterosexism refers to the belief that heterosexuality 
+is normative, as indicated in the assumption that individuals are heterosexual 
+unless otherwise specified (American Psychological Association of Graduate 
+Students, 2015). The terms "straight" and "heterosexual" are both acceptable to 
+use when referring to people who are attracted to individuals of another gen-
+der; the term "straight" may help move the lexicon away from a dichotomy of 
+heterosexual and homosexual. For more information regarding sexual orienta-
+tion, see "Guidelines for Psychological Practice With Transgender and Gender 
+Nonconforming People" (APA, 2015a). 
+5.9 Socioeconomic Status 
+Socioeconomic status (SES) encompasses not only income but also educational 
+attainment, occupational prestige, and subjective perceptions of social status 
+and social class. SES encompasses quality of life attributes and opportunities 
+afforded to people within society and is a consistent predictor of a vast array of 
+psychological outcomes. Thus, SES should be reported as part of the descrip-
+tion of participants in the Method section. Because SES is complex, it is not 
+indexed similarly in all studies; therefore, precise terminology that appropri-
+ately describes a level of specificity and sensitivity is essential to minimize bias 
+in language around SES (for a discussion, see Diemer et al., 2013). 
+Reporti'ng SES. When reporting SES, provide
+
+=== PAGE 166 ===
+148 ~ BIAS-FREE LA NGUAGE GUIDELlNES 
+stricken," and "welfare reliant." Instead, use specific, person-first language such 
+as "mothers who receive TANF benefits" rather than "welfare mothers" ("TANF" 
+stand s for "Temporary Assistance for Needy Families" and is the proper term 
+for the current welfare programin the United States). When discussing people 
+without a fixed, regular, or adequate nighttime residence, use specific language 
+that addresses the quality or lack of housing or length of time without housing, 
+not whether the people consider their residence ahorne. That is, use language 
+like "people experiencing homelessness," "people who are homeless," "people in 
+emergency shelter," or "people in transitional housing," rather than calling peo-
+pIe "the homeless." 
+It is important to note that SES terms such as "low-income" and "poor" have 
+historically served as implicit descriptors for racial and/or ethnic minority peo-
+pIe. Thus, it is critical that authors include racial and/or ethnic descriptors within 
+SES categories-for example, "This sample includes low-income and middle-
+income Puerto Rican fathers." Implicit biases around economic and occupa-
+tional status can result in deficit-based language that blames individuals for 
+their occupational, educational, or economic situation (e.g., "attendant eco-
+nomic deficits") rather than recognizing a broader societal context that influ-
+ences individual circumstances. Deficit-based language also focuses on what 
+people lack rather than on what they possess. Instead oflabeling people as "high 
+school dropouts," "being poorly educated," or "having little education," provide 
+more sensitive and specific descriptors such as "people who do not have a high 
+school diploma or equivalent." Alternatively, by adopting a strengths-based per-
+spective, authors can write about "people who have a grade school education." 
+Likewise, instead of writing about an "achievement gap," write about an "oppor-
+tunity gap" to emphasize how the context in which people live affects their out-
+comes or opportunities. 
+5.10 Intersectionality 
+When authors write about personal characteristics, they should be sensitive 
+to intersectionality-that is, to the way in which individuals are shaped by and 
+identify with a vast array of cultural, structural, sociobiological, economic, 
+and social contexts (Howard & Renfrow, 2014). Intersectionality is a paradigm 
+that addresses the multiple dimensions of identity and social systems as the
+
+=== PAGE 167 ===
+Redueing Bias by Topie 
+~ 149 
+in or driven by the perspectives of White women or of Black men (Bowleg, 
+2008; Crenshaw, 1989). That is, for example, even though Black women and 
+White women are both women, and Black women and Black men are both 
+Black, this do es not mean that the perspectives and experiences of the laUer 
+groups are the same as or related to those of Black lesbian women. 
+Intersectional identities also include experiences of privileged contexts that 
+intersect with those of oppression. For example, a Laotian immigrant woman 
+with a disability may experience a sense of safety and privilege because of her 
+legal immigration status in the United States, but she may experience discrim-
+. ination and a lack of access to appropriate resources within and outside of her 
+family and ethnic community on the basis of her disability status. A Jewish 
+American adolescent may experience privilege as a result of being perceived as 
+White but may be the target of anti-Semitic slurs at school and in social media 
+because of their religious beliefs. These examples illustrate how perspectives 
+are shaped by the multiplicity of identities and contexts to which an individual 
+belongs, sorne oppressed and sorne privileged. Aspects of identity such as race, 
+gender, and class can be oppressed or privileged, in ways that may differ across 
+contexts, and can result in differing experiences that interact dynamically to 
+shape an individual's experiences, advantages, and disadvantages across time 
+and space. The intersections of multiple identities transform the oppressed and 
+privileged aspects of each person's layered, interlocking identities. 
+To address intersectionality in a paper, identify individuals' relevant charac-
+teristics and group memberships (e.g., ability and/or disability status, age, gen-
+der, gender identity, generation, historical as well as ongoing experiences of 
+marginalization, immigrant status, language, national origin, race and/or ethnic-
+ity, religion or spirituality, sexual orientation, social class, and socioeconomic 
+status, among other variables), and describe how their characteristics and group 
+memberships intersect in ways that are relevant to the study. Report participant 
+data for each group using specific terms as described in Sections 5.3 to 5.9. For 
+example, when describing participants in terms of their race and gender, write 
+"20 participants were African American women, 15 participants were European 
+American women, 23 p
+
+=== PAGE 169 ===
+Contents 
+Punctuation 
+153 
+6.1 Spacing After Punctuation Marks 
+154 
+6.2 Period 
+154 
+6.3 Comma 
+155 
+6.4 Semicolon 
+156 
+6.5 Colon 
+156 
+6.6 Dash 
+157 
+6.7 Quotation Marks 
+157 
+6.8 Parentheses 
+159 
+6.9 Square Brackets 
+160 
+6.10 Slash 
+160 
+Spelling 
+6.11 Preferred Spelling 
+161 
+6.12 Hyphenation 
+162 
+161 
+Capitalization 
+165 
+6.13 Words Beginning a Sentence 
+165 
+6.14 Proper Nouns and Trade Names 
+165 
+6.15 Job Titles and Positions 
+166 
+6.16 Diseases, Disorders, Therapies, 
+Theories, and Related Terms 
+166 
+6.17 Titles ofWorks and Headings Within 
+Works 
+167 
+6.18 Titles of Tests and Measures 
+168 
+6.19 Nouns Followed by Numerals or 
+Letters 
+168 
+6.20 Names of Conditions or Groups in 
+an Experiment 
+169 
+6.21 Names of Factors, Variables, and 
+Effects 
+169 
+ltalics 
+170 
+6.22 Use of Italics 
+170 
+6.23 Reverse Italics 
+171 
+Abbreviations 
+172 
+6.24 Use of Abbreviations 
+172 
+6.25 Definition of Abbreviations 
+173 
+6.26 Format of Abbreviations 
+173 
+6.27 Unit of Measurement 
+Abbreviations 
+174 
+6.28 Time Abbreviations 
+176 
+6.29 Latin Abbreviations 
+176 
+6.30 Chemical Compound 
+Abbreviations 
+177 
+6.31 Gene and Protein Name 
+Abbreviations 
+177 
+Numbers 
+6.32 Numbers Expressed in 
+Numerals 
+178 
+6.33 Numbers Expressed in Words 
+179 
+6.34 Combining Numerals and Words 
+to Express Numbers 
+179 
+6.35 Ordinal Numbers 
+179 
+6.36 Decimal Fractions 
+180 
+6.37 Roman Numerals 
+180 
+6.38 Commas in Numbers 
+180 
+6.39 Plurals of Numbers 
+181 
+Statistical and Mathematical Copy 
+6.40 Selecting Effective 
+Presentation 
+1 81 
+6.41 References for Statistics 
+181 
+6.42 Formulas 
+181 
+6.43 Statistics in Text 
+181 
+6.44 Statistical Symbols and 
+Abbreviations 
+182 
+6.45 Spacing, Alignment, and 
+Punctuation for Statistics 
+187 
+Presentation of Equations 
+6.46 Equations in Text 
+188 
+6.47 Displayed Equations 
+188 
+6.48 Preparing Statistical and 
+Lists 
+Mathematical Copy for 
+Publication 
+189 
+6.49 List Guidelines 
+189 
+6.50 Lettered Lists 
+189 . 
+6.51 Numbered Lists 
+189 
+6.52 Bulleted Lists 
+190 
+178 
+181 
+188 
+189 
+
+
+=== PAGE 170 ===
+6 
+MECHANICS OF STYLE 
+Style refers to guidelines for ensuring clear, consistent communication and pre-
+sentation in written works. APA Style, as described in this Publication Manual, 
+provides guidelines for writing scholarly papers. Publishers and instructors 
+often require authors writing for publication and students writing for a course 
+or degree requirement to follow specific style guidelines to avoid inconsisten-
+cies among and within journal articles, book chapters, and academic papers. 
+For example, without style guidelines, authors might use the spellings "health 
+care," "health-care," and "healthcare" interchangeably in one work. Although 
+their meaning is the same and the choice of one style over another may seem 
+arbitrary (in this case, "health care," with a space and no hyphen, is APA Style), 
+such variations in style can distract or confuse readers. 
+In this chapter, we provide essential style guidelines for scholarly writing, 
+including punctuation, spelling, capitalization, italics, abbreviations, numbers, 
+statistical and mathematical copy, and lists. These guidelines often overlap with 
+those for general good writing practices. However, we omit general grammar 
+rules explained in widely available writing manuals and examples of grammar 
+or usage with little relevance to manuscripts submitted to journals that use APA 
+Style. Style manuals agree more often than they disagree; when they disagree, 
+the Publication Manual takes precedence for APA Style papers or publications. 
+Punduation 
+Punctuation establishes the cadence of a sentence, telling readers where to 
+pause (comma, semicolon, and colon), stop (period and question mark), or take 
+a detour (dash, parentheses, and square brackets). Punctuation of a sentence 
+usually denotes a pause in thought; different kinds of punctuation indicate dif-
+ferent kinds and lengths of pauses. 
+, I
+153 
+
+
+=== PAGE 171 ===
+154 ~ MECHANICS OF STYLE 
+6.1 Spacing After Punctuation Marks 
+Insert one space after the following: 
+• periods or other punctuation marks at the end of a sentence 
+• commas, colons, and semicofons 
+• periods that separate parts of a reference list entry (see Section 9.5) 
+• periods following initials in names (M. P. Clark) 
+Do not insert a space in the following cases: 
+• after internal periods in abbreviations (e.g., a.m., i.e., U.S.) 
+• after periods in identity-concealing labels for study participants (F.I.M.) 
+• around colons in ratio s (1:4) 
+Note: We recommend using one space after the period or other punctuation 
+mark at the end of a sentence; however, follow the guidelines of your publisher or 
+instructor if they have different requirements. 
+6.2 Period 
+Use a period or periods in the following cases: 
+• to end a complete sentence 
+• with initials in names (Bazerman, M. H.) 
+• in the abbreviations for "United States" and "United Kingdom" when they are 
+used as adjectives (U.S. Navy; it is not required to abbreviate these terms) 
+• in identity-concealing labels for study participants (F.I.M.) 
+• in Latin abbreviations (a.m., cf., e.g., i.e., p.m., vs.) 
+• in reference abbreviations (Vol. 1, 2nd ed., p. 6, paras. 11-12, F. Supp.) 
+• in era designations (B.C.E., e.E., B.e., A.D.; see Section 9.42) 
+• to end each elementwithin areference (except DOIs and URLs; see Section 9.5) 
+Do not use periods in the following cases: 
+• in abbreviations of state, province, or territory names (NY; CA; Washington, 
+DC; BC; ON; NSW) 
+• in capitalletter abbreviations and acronyms (APA, NDA, NIMH, IQ) 
+• in abbreviations for academic degrees (PhD, PsyD, EdD, MD, MA, RN, MSW, 
+LCSW, etc.; see Section 2.5) 
+• in abbreviations for routes of administration (icv, im, ip, iv, sc) 
+• in metric and nonmetric measurement abbreviations (cm, hr, kg, min, mI, s) 
+Note: Use a period with the abbreviation for "inch" or "inches" (in.) because 
+otherwise it could be misread. 
+
+
+=== PAGE 172 ===
+Punctuation 
+~ 155 
+• after URLs in the text (see Section 8.22); instead, place URLs in the middle of 
+the sentence or in parentheses to avoid ending a sentence with a URL 
+• after DOIs or URLs in the reference list(see Section 9.35) 
+6.3 Comma 
+Use a comma in the following cases: 
+• between elements in a series of three or more items, including before the 
+final item (see also Section 6.49); this last comma is called a serial camma or 
+Oxfard camma 
+Correct: height, width, and depth 
+Incorrect: height, width and depth 
+• after an introductory phrase (if the introductory phrase is short, the comma 
+after it is optional) 
+After the nurses administered the medication, patients rated their pain. 
+in this section, we discuss 
+or 
+in this section we discuss 
+• to set off a nonessential or nonrestrictive clause (see Section 4.21)- that is, a 
+clause that embellishes a sentence but if removed would leave the grammati-
+cal structure and meaning of the sentence intact 
+Strong fearful faces, which are rarely seen in everyday life, convey intense expression of 
+negative emotions. 
+• to set off statistics in the text that already contain parentheses, to avoid nested 
+parentheses 
+Sleep amount was not significantly different between the three groups (nap: M = 7.48 
+hr, SO = 1.99; wake: M = 8.13 hr, SO = 1.22; nap + wake: M = 7.25 hr, SO = 0.76), F(2, 71) 
+= 2.32, P = .11. 
+There was a main effect of group on corrected recognition, F(2, 71) = 3.38, P < .04, I'lp2 = .087. 
+• to separate two independent clauses joined by a conjunction 
+Facial expressions were presented, and different photo models were chosen randomly. 
+• to set off the year in exact dates in the text or in a retrieval date (see Section 
+9.16); however, when only a month and year appear in the text, do not use a 
+comma 
+Retrieved April 24, 2020, from 
+in April 2020 
+• to set off the year in parenthetical in-text citations 
+(Bergen-Abramoff, 2018) 
+(Horowitz, 2019, discovered . . . ) 
+• to separate groups of three digits in most numbers of 1,000 or more (see Sec-
+tion 6.38 for exceptions) 
+
+
+=== PAGE 173 ===
+156 
+~ MECHANICS OF STYLE 
+Do not use a comma in the following cases: 
+• before an essential or restrictive clause (see Section 4.21) because removing 
+such a clause from the sentence would alter the intended meaning 
+Adolescents who spent a small amount of time on electronic communication activities, 
+were happier than those who spent no time on such activities. 
+• between the two parts of a compound predicate 
+Correct: Participants rated the items and completed a demographic questionnaire. 
+Incorrect: Participants rated the items, and completed a demographic questionnaire, 
+• to separate parts of measurement 
+7 years 4 months 
+2 min 35 s 
+5 ft 10 in. 
+6.4 Semicolon 
+Use a semicolon in the following cases: 
+• to separate two independent clauses that are notjoined by a conjunction 
+Students received course credit for participation; community members received $10. 
+• to separate two independent clauses joined by a conjunctive adverb such as 
+"however;' "therefore," or "nevertheless" 
+The children studied the vocabulary words; however, they had difficulties with recall. 
+• to separate items in a list that already contain commas (see Section 6.49) 
+The color groups were red, yellow, and blue; orange, green, and purple; or black, gray, 
+and brown. 
+• to separate multiple parenthetical citations (see Section 8.12) 
+(Gaddis, 2018; Lai et al., 2016; Williams & Peng, 2019) 
+• to separate different types of information in the same set of parentheses, to 
+avoid back-to-back parentheses 
+(n = 33; Fu & Ginsburg, 2020) 
+• to separate sets of statistics that already contain commas 
+(age, M = 34.5 years, 95% el [29.4, 39.6]; years of education, M = 10.4 [8.7,12.1]; and 
+weekly income, M = $612 [522, 702]). 
+6.5 Colon 
+Use a colon in the following cases: 
+• between a grammatically complete introductory clause (one that could 
+stand alone as a sentence, including an imperative statement) and a final 
+phrase or clause that illustrates, extends, or amplifies the preceding thought 
+(if the-clause following the colon is a complete sentence, begin it with a cap-
+italletter; see Section 6.13) 
+There are three main patterns of mother-infant attachment: secure, avoidant, and resistantl 
+ambivalent (Ainsworth et al., 1978). 
+Yang et al. (2019) confirmed the finding: Test performance depended on preparation. 
+
+
+=== PAGE 174 ===
+Punctuation 
+~ 157 
+• in ratios and proportions 
+The proportion of salt tO water was 1 :8. 
+Do not use a colon in the following case: 
+• after an introduction that is not an independent clause or complete sentence 
+The formula is r; = a; + e. 
+Target behaviors included eating, sleeping, and socializing. 
+The participants were asked to 
+• rank the 15 items, 
+• explain their choices, and 
+• close their notebooks when finished. 
+6.6 Dash 
+Two kinds of dash are used in APA Style: the em dash (long dash) and the en dash 
+(midsized dash). These dashes are different from hyphens (see Section 6.12) and 
+minus signs (see Section 6.45). 
+Em Dash. Use an em dash to set off an element added to amplify or digress from 
+the main clause. Overuse of the em dash weakens the flow of material, so use 
+it judiciously. Do not use a space before or after an em dash. Word-processing 
+programs can be set to automatically convert two back-to-back hyphens to an 
+em dash. (See Section 6.17 for capitalization following em dashes in titles.) 
+Social adjustment-but not academic adjustment- was associated with extraversion. 
+En Dash. An en dash is longer and thinner than a hyphen but shorter than an em 
+dash. Use an en dash between words of equal weight in a compound adjective 
+and to indicate a numerical range, such as a page or date range. Do not insert 
+a space before or after an en dash. Word-processing programs have options for 
+inserting an en dash. 
+author-date citation 
+Sydney- Los Angeles flight 
+pp. 4-7 
+50%-60% 
+A hyphen rather than an en dash is generally used in an abbreviation that con-
+tains dashes, such as the abbreviation for a test or scale (e.g., MMPI-2) or a diag-
+nostic manual (DSM-S, ICD-ll; see Section 6.25). 
+6.7 Quotation Marks 
+This section addresses how to use quotation marks other than with direct quo-
+tations (see Sections 8.25-8.36). Quotation marks often appear with other punc-
+tuation marks. Place commas and periods inside closing quotation marks. Place 
+other punctuation marks (e.g., colons, semicolons, ellipses) outside closing quo-
+tation marks. 
+Use double quotation marks in the following cases: 
+• to refer to a letter, word, phrase, or sentence as a linguistic example or as itself 
+the letter "m" 
+the singular "they" 
+answered "yes" or "no" 
+. -·1 
+
+
+=== PAGE 175 ===
+158 
+~ MECHANICS OF STYLE 
+Instead of referring to someone as a "defective ch ild," talk about a "child with a congenital 
+disability" or a "child with a birth impairment." 
+Students wrote "1 promise to uphold the honor code" at the top of the test page. 
+• to present stimuli in the text (long lists of stimuli may be better presented in 
+atable, where qubtation marks are not needed) 
+. 
+The stimulus words were "garden," "Iaundry," "briefcase," and "salary." 
+Note: Some publishers prefer italics for the presentation of stimuli and so forth; 
+consult the manuscript preparation guidelines or journal editor for the preferred 
+format. 
+• to reproduce material from a test item or verbatim instructions to partici~ 
+pants (if instructions are long, present them in an appendix or set them off 
+from text in block quote format without quotation marks; see Sections 2.14 
+and 8.27) 
+The first item was "How tired do you feel after a long day at work?" 
+Participants read, "You can write as much as you like when answering the questions." 
+• to introduce a word or phrase used as an ironic comment, as slang, or as an 
+invented or coined expression; use quotation marks only for the first occur-
+rence of the word or phrase, not for subsequent occurrences 
+First occurrence: 
+considered "normal" behavior 
+called a "friendly link" 
+Subsequent occurrence: 
+normal behavior 
+a friend ly link 
+• to introduce a label; after the label has been used once, do not use quotation 
+marks for subsequent occurrences 
+The image label changed from "spiderweb" to "dartboard." The spiderweb and dartboard 
+labels . .. 
+• to set off the title of a periodical article or book chapter when the title is used 
+in the text or in a copyright attribution (do not use quotation marks around 
+the article or book chapter title in the reference list entry) 
+In text: 
+Oerlemans and Bakker's (2018) article, "Motivating Job Characteristics and Happiness at 
+Work: A Multilevel Perspective," described ... 
+In the reference Iist: 
+Oerlemans, W. G. M., & Bakker, A. B. (2018). Motivating job characteristics and happiness 
+at work: A mu ltilevel perspective. Joumal of Applied Psychology, 103(11), 1230- 1241. 
+https://doi.org/10.1037/apI0000318 
+In a copyright attribution: 
+Adapted from "Motivating Job Characteristics and Happiness at Work: A Multilevel 
+Perspective," by W. G. M. Oerlemans and A. B. Bakker, 2018, Joumal of Applied Psy-
+chology, 103(11), p. 1236 (https://doi.org/10.1 037/apI00003 18). Copyright 2018 by 
+t
+
+=== PAGE 176 ===
+Punctuation 
+~ 159 
+• to identify the anchors of a scale; instead, Lise italics (see Section 6.22) 
+• to refer to a numeral as itself because the meaning is sufficiently clear with-
+out quotation marks 
+The numeral 2 was displayed onscreen. 
+• to hedge or downplay meaning (do not use any punctuation with these 
+expressions) 
+Correct: The teacher rewarded the class with tokens. 
+Incorrect: The teacher "rewarded" the class with tokens. 
+6.8 Parentheses 
+Use parentheses in the following cases: 
+• to set off structurally independent elements 
+The patterns were statistically significant (se e Figure 5). 
+• to set off in-text citations (see Section 8.11) 
+Barnes and Spreitzer (2019) described 
+(Proctor & Hoffmann, 2016) 
+• to introduce an abbreviation in the text (see also Section 6.25) 
+galvanic skin response (GSR) 
+Child Report of Parental Behavior Inventory (CRPBI; Sehaefer, 1965) 
+• to set off letters that identify items in a list within a sentence or paragraph 
+(see also Section 6.50) 
+The subjeet areas included (a) synonyms associated with cultural interaetions, (b) descrip-
+tors for ethnic group membership, and (e) psyehologieal symptoms and outeomes assoei-
+ated with bieultural adaptation. 
+• to group mathematical expressions (see also Sections 6.9 and 6.46) 
+(k -1)/(g -2) 
+• to enclose numbers that identify displayed formulas and equations 
+M¡ = aM¡ _1 + f¡ + 9¡*9¡' 
+(1) 
+• to enclose statistical values that do not already contain parentheses 
+was statistieally signifieant (p = .031) 
+• to enclose degrees of freedom 
+t(75) = 2.19 
+F(2, 116) = 3.71 
+Note: (When a complete sentenee is enclosed in parentheses, like this, place the 
+end punetuation inside the parentheses.) If only part of a sentenee is enclosed in 
+parentheses, place punetuation outside the parentheses (Iike this). 
+Do not use parentheses in the following cases: 
+• to enclose text within other parentheses; instead, use square brackets to 
+avoid nested parentheses 
+(Beek Depression Inventory [BDI]; Beek et al., 1996) 
+
+
+=== PAGE 177 ===
+160 ~ MECHANICS OF STYLE 
+o to endose statistics that already contain parentheses; instead, use a comma 
+before the statistics to avoid nested parentheses 
+were significantly different, F(4, 132) = 13.62, P < .001. 
+o to endose back-to-back parenthetical information; instead, place the infor- . 
+mation in one set of parentheses, separated with a semi colon 
+Correct: (e.g., flow; Csikszentmihalyi, 2014) 
+Incorrect: (e.g., flow) (Csikszentmihalyi, 2014) 
+6.9 Square Brackets 
+Use square brackets in the following cases: 
+o to endose parenthetical material that is already in parentheses 
+(The results for the control group [n = 8] are also presented in Figure 2.) 
+o to endose abbreviations when the abbreviated term appears in parentheses 
+(Minnesota Multiphasic Personality Inventory-2 [MMPI-2]; Butcher et al., 2001) 
+o to endose values that are the limits of a confidence interval 
+95% Cls [-7.2, 4.3], [9.2, 12.4], and [-1.2, -0.5] 
+o to endose material inserted in a quotation by someone other than the origi-
+nal author (see also Section 8.31) 
+Schofield et al. (2016) found that "these types of [warm and accepting] parenting behav-
+iors are positively associated with healthy chi ld and adolescent adjustment" (p. 615). 
+o to endose a description ofform for sorne works (e.g., those outside the typ-
+ical peer-reviewed academic literature; see Section 9.21) in a reference list 
+entry 
+Do not use square brackets in the following cases: 
+o to set off statistics that already indude parentheses 
+Correct: in the first study, F(l, 32) = 4.37, P = .045. 
+Incorrect: in the first study (F[l, 32] = 4.37, P = .045). 
+Incorrect: in the first study [F(l, 32) = 4.37, P = .045]. 
+Note: In mathematical material, the placement of brackets and parentheses is 
+reversed; that is, parentheses appear within brackets (se e Section 6.46). 
+o around the year in a narrative citation when the sentence containing the nar-
+rative citation appears in parentheses; instead, use commas (see Section 8.11) 
+Correct: (as Gregory, 2020, concluded . .. ) 
+Incorrect: (as Gregory [2020] concluded ... ) 
+6.10 Slash 
+Use a slash (also called a "virgule," "solidus;' or "shill") in the following cases: 
+o to darify a comparison in a compound adjective, especially when one of 
+the elements is a hyphenated compound (alternatively, use an en dash; see 
+Section 6.6) 
+
+
+=== PAGE 178 ===
+the classification/similarity-judgment condition 
+hits/false-alarms comparison 
+testlretest reliability, test-retest reliability 
+• to specify either of two possibilities 
+and/or (use sparingly) 
+Latino/a 
+• to separate a numerator from a denominator 
+XIY 
+Spelling 
+~ 161 
+• to separate units of measurement accompanied by a numeric value (see Sec-
+tion 6.27); if no numeric value appears with the unit of measurement, spell out 
+the word "per." 
+0.5 deg/s 
+7.4 mg/kg 
+cost per square meter 
+• to set off phonemes 
+101 
+• in citations of translated, reprinted, reissued, or republished works in the 
+text (see Section 9.41) 
+Freud (1923/1961) 
+Do not use a slash in the following cases: 
+• more than once to express compound units; use centered dots and parenthe-
+ses as needed to prevent ambiguity 
+Correct: nmol • hr-1 • mg-1 
+Incorrect: nmol/hr/mg 
+• when a phrase would be clearer 
+Correct: Each child handed the toy to their parent or guardian. 
+Incorrect: Each child handed the toy to their parent/guardian. 
+Spelling 
+6.11 Preferred Spelling 
+Spelling in APA Style papers should conform to the Merriam-Webster.com Dictio-
+nary (https://www.merriam-webster.com). The spellings of psychological terms 
+should conform to the APA Dictionary oi Psychology (https://dictionary.apa.org). 
+lf a word appears differently in these two dictionaries, follow the spelling in 
+the APA Dictionary oi Psychology. lf a word is not in either of these dictionaries, 
+consult an unabridged edition of Websters dictionary (see https://unabridged. 
+merriam-webster.com). lf the dictionary offers a choice of spellings, select one 
+and use it consistently throughout your papero 
+The plural forms of sorne words of Latin or Greek origin can be troublesome 
+(particularly those that end in the letter "a"). A list of preferred spellings of sorne 
+of the more common ones follows. 
+Singular: 
+Plural: 
+appendix 
+appendices 
+criterion 
+criteria 
+curriculum 
+curricula 
+datum 
+data 
+phenomenon 
+phenomena 
+
+
+=== PAGE 179 ===
+162 
+~ MECHANICS OF STYLE 
+Remember that plural nouns take plural verbs. 
+Correct: The data indicate 
+Incorrect: The data indicates 
+In general, form the possessive of a singular name by adding an apostrophe and , 
+an "s" (e.g., "Milner's theory"). This guideline also applies when a name ends in "s" 
+(e.g., "Descartes's philosophy," ''James's work"). 
+The spellings of terms related to technology evolve over time. Use the follow-
+ing spellings for sorne common technology words in APA Style papers:' 
+email 
+ebook 
+ereader 
+database 
+data set 
+smartphone 
+internet 
+intranet 
+Wi-Fi 
+website 
+webpage 
+the web 
+horne page 
+username 
+login page (but "Iog in" 
+emoji (for the plural, either 
+when used as a verb) 
+"ernoji" or "ernojis") 
+6.12 Hyphenation 
+Compound words- words composed of two or more words- take many forms; 
+they may be written as (a) two separate words (open), (b) one hyphenated word, 
+or (c) one solid word. Compound words are ofien introduced into the language 
+as separate or hyphenated words; as they become more commonplace, they 
+tend to fuse into a solid word. For example, "data base" has become "database," 
+and "e-mail" has become "email." The dictionary is an excellent guide for choos-
+ing the proper form: When a compound appears in the dictionary, its usage is 
+established, and it is considered a permanent compound (e.g., "health care," 
+"self-esteem," "caregiver"). In general, follow the hyphenation shown in the dic-
+tionary for permanent compounds (e.g., write "health care" without a hyphen, 
+even in a phrase like "health care setting"); adjust hyphenation only to prevent 
+misreading. Dictionaries do not always agree on the way a compound should be 
+written (open, hyphenated, or solid); Section 6.11 specifies the dictionaries to 
+use for APA Style papers. 
+Another form of compound-the temporary compound-is made up of 
+two or more words that occur together, perhaps only in a particular paper, 
+to express a thought. Temporary compounds are not usually listed in the dic-
+tionary. To determine how to hyphenate temporary compounds, follow these 
+guidelines: 
+• If a temporary compound can be misread or expresses a single thought, 
+use a hyphen, especially when the temporary compound appears as an 
+adjective before the noun. When in doubt, use a hyphen for clarity. For 
+example, ''Adolescents resided in two parent homes" may mean that two 
+homes served as residences or that each adolescent lived with two parents; 
+a hyphen in "two-parent homes" s
+
+=== PAGE 180 ===
+Spelling 
+~ 163 
+Table 6.1 Guide to Hyphenating Temporary Compound Terms 
+Grammar guideline 
+Hyphenate 
+A compound with a participle when it precedes 
+the term it modifies 
+A phrase used as an adjective when it 
+precedes the term it modifies 
+An adjective-and-noun compound when it precedes 
+the term it modifies 
+A compound with a number as the first element 
+when the compound precedes the term it modifies 
+A fraction used as an adjective 
+Do not hyphenate 
+A compound that follows the term it modifies 
+A compound including an adverb ending in "-Iy" 
+A compound including a comparative ar 
+superlative adjective 
+Chemical terms 
+Latin phrases used as adjectives or adverbs 
+A modifier including a letter or numeral as the 
+second element 
+Fractions used as nouns 
+Example 
+decision-making behavior 
+water-deprived animals 
+Canadian-born actor 
+trial-by-trial analysis 
+to-be-recalled items 
+one-on-one interviews 
+high-anxiety group 
+middle-class families 
+low-frequency words 
+six-trial problem 
+12th-grade students 
+16-min interval 
+two-thirds majority 
+behavior related to decision making 
+students in the 12th grade 
+a majority of two thirds 
+widely used test 
+relatively homogeneous sample 
+randomly assigned participants 
+better written paper 
+less informed interviewers 
+higher arder learning 
+highest scoring students 
+sodium chloride solution 
+amino acid compound 
+a posteriori test 
+post hoc comparisons 
+were fed ad lib (but hyphenate the 
+adjectival form: ad-lib feeding) 
+Group B participants 
+Type 11 error 
+Trial 1 performance 
+one third of the participants 
+• Write most words formed with prefixes and suffixes as one word without a 
+hyphen. See Table 6.2 for examples of prefixes and suffixes that do not require 
+hyphens; see Table 6.3 for examples of prefixed and suffixed words that do 
+require hyphens. The same suffix may be hyphenated in sorne cases and not 
+in others (e.g., "nationwide" and "worldwide" vs. "industry-wide"). 
+• When two or more compound modifiers have a common base, that base 
+is sometimes omitted in aH except the last modifier, but the hyphens are 
+retained. Leave a space after the hyphen when the base has been omitted, 
+unless punctuation foHows the hyphen. 
+long- and short-term memory 
+2-, 3-, and 1 O-min trials 
+
+
+=== PAGE 181 ===
+164 ~ MECHANICS OF STYLE 
+Table 6.2 Prefixes and Suffixes That Do Not Require Hyphens 
+Prefix or suffix 
+Example 
+Prefix or suffix 
+Example 
+able 
+retrievable 
+mid 
+midterm 
+after 
+aftercare 
+mini 
+minisession 
+anti 
+antisocial 
+multi 
+multimethod 
+bi 
+bilingual 
+non 
+nonsignificant 
+cede/sede/ceed 
+intercede 
+over 
+oversampling 
+co 
+covariate 
+phobia 
+agoraphobia 
+cyber 
+cyberwarfare 
+post 
+posttest 
+equi 
+equimax 
+pre 
+preexperimental 
+extra 
+extracurricular 
+pseudo 
+pseudoscience 
+gram 
+cardiogram 
+quasi 
+quasiperiodic 
+infra 
+infrared 
+re 
+reevaluate 
+inter 
+intersex 
+semi 
+semidarkness 
+like 
+wavelike 
+socio 
+socioeconomic 
+macro 
+macrocosm 
+sub 
+subtest 
+mega 
+megawatt 
+super 
+superordinate 
+meta 
+metaethnography 
+supra 
+supraliminal 
+meter 
+nanometer 
+un 
+unbiased 
+micro 
+microcosm 
+under 
+underdeveloped 
+Note. However, use a hyphen in "meta-analysis" and "quasi-experimental." 
+Table 6.3 Compound Words That Require Hyphens 
+Occurrence 
+Example 
+Compounds in which the base word is 
+• capitalized 
+pro-Freudian 
+Likert-type 
+Stroop-like 
+• a number 
+post-1977 
+• an abbreviation 
+pre-UCS trial 
+• more than one word 
+non-achievement-oriented students 
+AII "self-" compounds, whether 
+self-report technique 
+adjectives or nouns ' 
+the test was self-paced 
+self-esteem 
+Words that could be misunderstood 
+re-pair (pair again) 
+re-form (form again) 
+un-ionized (not ionized) 
+Words in which the prefix ends and the 
+meta-analysis 
+,. 
+base word begins with "a," "i," or "o" b 
+anti-intellectual 
+co-occur 
+' But "self psychology." 
+b "Pre" and "re" compounds are not hyphenated with base words beginning with "e" (e.g., 
+"preexisting," "reexamine"). 
+
+
+=== PAGE 182 ===
+Capitalization 
+~ 165 
+. Ca pitalization 
+APA Style is a "down" style, meaning that words are lowercase unless there is 
+specific guidance to capitalize them, as described in' the following sections. 
+6.13 Words Beginning a Sentence 
+Capitalize the following: 
+• the first word in a complete sentence 
+' . the first word after a colon if what follows the colon is a complete sentence 
+The statement was emphatic: Further research is needed, 
+Do not capitalize the following: 
+• a personal name that begins with a lowercase letter when the name begins a 
+sentence; alternatively, reword the sentence 
+, , . after the test, van de Vijver et al. (2019) concluded 
+• a proper noun (other than a personal name) that begins with a lowercase let-
+ter (e.g., iPad, eBay) or a lowercase statistical term (e.g., t test, p value) when 
+it begins a sentence (see Section 6.26); instead, reword the sentence to avoid 
+beginning with a lowercase letter 
+6.14 Proper Nouns and Trade Names 
+Capitalize the following: 
+• proper nouns and proper adjectives 
+• names of racial and ethnic groups (see also Section 5.7) 
+We interviewed 25 Black women living in rural Louisiana, 
+• names of specific university departments, academic institutions, and aca-
+demic courses 
+Capitalize 
+Department of Psychology, San Francisco 
+State University 
+Psychology 101 
+Science of Nursing Practice 
+Do not capitalize 
+a psychology department, a university 
+a psychology course 
+a nursing course 
+• trade and brand names (in general, do not include the copyright or trade-
+mark symbol after a trade or brand name used in an academic paper; how-
+ever, such symbols may be included in business and marketing materials) 
+Capitalize 
+Do ríot capitalize 
+APA Style 
+a writing style 
+Zoloft 
+sertraline (generic name for Zoloft) 
+iPhone, Android phone 
+smartphone 
+Wi-Fi 
+wireless, hotspot 
+
+
+=== PAGE 183 ===
+166 
+C\.v 
+MECHANICS OF STYLE 
+Do not capitalize the following: 
+• proper adjectives that have a common meaning (consult a dictionary for 
+guidance; see Section 6.11), except for personal names within these terms 
+eustachian tube 
+cesarean section 
+but 
+Freudian slip 
+Wilks's lambda 
+Euclidean geometry 
+6.15 Job Titles and Positions 
+Capitalize a job title or position when the title precedes a name (titles are not 
+used in bylines; see Section 2.5): 
+President Lincoln was elected in 1860. 
+Executive Director of Marketing Carolina Espinoza led the meeting. 
+Dr. Aisha Singh, Dr. Singh 
+Registered Nurse Paul T. Lo, Nurse Lo 
+Do not capitalize ajob title or position when the title follows the name or refers 
+to a position in general: 
+Abraham Lincoln was president of the United States. 
+Carolina Espinoza, executive director of marketing, led the meeting. 
+president, vice president, chief executive officer, executive director, manager 
+professor, instructor, facu Ity, dean 
+psychologist, psychiatrist, counselor, social worker 
+physician, doctor, physician assistant 
+nurse, registered nurse, advanced practice nurse, nurse practitioner 
+6.16 Diseases, Disorders, Therapies, Theories, and Related Terms 
+Do not capitalize the names of the following: 
+• diseases or disorders 
+autism spectrum disorder 
+major depression 
+• therapies and treatments 
+cognitive behavior therapy 
+applied behavior analysis 
+diabetes 
+leukemia 
+immunotherapy 
+cataract surgery 
+• theories, concepts, hypotheses, principIes, models, and statistical procedures 
+object permanence 
+theory of mind 
+associative learning model 
+law of effect 
+psychoanalytic theory 
+two-group t test 
+However, capitalize personal names that appear within the names of diseases, 
+disorders, therapies, treatments, theories, concepts, hypotheses, principIes, 
+models, and statistical procedures. 
+Alzheimer's disease 
+non-Hodgkin's Iymphoma 
+Freudian theory 
+Down syndrome 
+Maslow's hierarchy of needs 
+Pavlovian conditioning 
+
+
+=== PAGE 184 ===
+Capitalization 
+co.v 
+167 
+·6.17 Titles of Works and Headings Within Works 
+APA Style uses two types of capitalization for titles of works and headings 
+within works: title case and sentence case. In title case, major words are cap-
+italized. In sentence case, most words are 10wercased. Nouns, verbs (including 
+linking vetbs), adjectives, adverbs, pronouns, and all words of four letters or 
+more are considered major words. Short (i.e., three letters or fewer) conjunc-
+tions, short prepositions, and all articles are considered minor words. 
+Title Case. In titlecase, capitalize the following words in a title or heading: 
+.• the first word, even a minor word such as "The" 
+• the first word of a subtitle, even if it is a minor word 
+• the first word after a colon, em dash, or end punctuation in a heading, even if 
+it is a minor word 
+• major words, including the second part of hyphenated major words (e.g., 
+"Self-Report," not "Self-report") 
+• words offour letters or more (e.g., "With," "Between," "From") 
+Lowercase only minor words that are three letters or fewer in a title or heading 
+(except the first word in a title or subtitle or the first word after a colon, em dash, 
+or end punctuation in a heading): 
+• short conjunctions (e.g., "and;' "as;' "but," "for," "if," "nor," "or," "so," "yet") 
+• articles ("a," "an," "the") 
+• 
+short prepositions (e.g., "as," "at," "by," "for," "in," "of," "off," "on," "per," "to," "up," 
+"vía") 
+When to Use Title Case. Use title case for the following: 
+• titles of articles, books, reports, and other works appearing in text 
+In the book Bilingualism Across the Lifespan: Factors Moderating Language Proficiency 
+In the article "Media Influences on Self-Stigma of Seeking Psychological Services: The 
+Importance of Media Portrayals and Person Perception " 
+• titles of tests or measures, including subscales (see Section 6.18) 
+Wechsler Adult Intelligence Scale 
+WAIS-IV Verbal Comprehension Index 
+• all headings within a work (Levels 1-5; see Section 2.27) 
+• the title of your own paper and of named sections and subsections within it 
+the Data Analyses section 
+• titles of periodicals (these are also italicized) 
+Journal of Experimental Psychology: Learning, Memory, and Cognition 
+The Washington Post 
+• table titles (these are also italicized; see Section 7.11) 
+• figure titles (these are also italicized), axis labels, and legends (see Sections 
+7.25-7.27) 
+
+
+=== PAGE 185 ===
+168 
+~ MECHANICS OF STYLE 
+Sentence Case. In sentence case, lowercase most words in the title or heading. 
+Capitalize only the following words: 
+• the first word of the title or heading 
+• the first word of a subtitle . 
+• the first word after a colon, em dash, or end punctuation in a heading 
+• nouns followed by numerals or letters 
+• proper nouns 
+When to Use Sentence Case. Use sentence case for the following: 
+• titles of articles, books, reports, webpages, and other works in reference list 
+entries, even iftitle case was used in the original work (see also Section 9.19) 
+Golden, A R., Griffin, C. B., Metzger, l. w., & Cooper, S. M. (2018). School racial climate 
+and academic outcomes in African American adolescents: The protective role of peers. 
+Journal of Black Psychology, 44(1),47-73. https://doi.org/10.1177/0095798417736685 
+Mena, J. A, & Quina, K. (Eds.). (2019). Integrating multiculturalism and intersectionality into 
+the psychology curriculum: Strategies for instructors. American Psychological Associ-
+ation. https://doi.org/10.1037/0000137-000 
+• table column headings, entries, and notes (see Sections 7.12-7.14) 
+• figure notes (see Section 7.28) 
+Note: Words in the image of a figure (see Section 7.26) may be in either title case 
+or sentence case. Follow the same guidelines for capitalization in a figure image as 
+used in the texto 
+6.18 Titles of Tests and Measures 
+Capitalize titles of published and unpublished tests and measures and their sub-
+scales. Do not capitalize words such as "test" and "scale" unless they are part of 
+the test or subscale title. See Section 10.11 for more on use of italics with the 
+titles of test and measures. 
+Thematic Apperception Test 
+Minnesota Multiphasic Personality Inventory-2 
+MMPI-2 Depression scale 
+Stroop Color-Word Interference Test 
+the authors' Mood Adjective Checklist 
+SF-36 Physical Functioning scale 
+Do not capitalize shortened, inexact, or generic titles of tests or measures. 
+a vocabulary test 
+Stroop-like color test 
+6.19 Nouns Followed by Numerals or Letters 
+Capitalize nouns followed by numerals or letters that denote a specific place in 
+a series. 
+Figure 3 
+Appendix B 
+Footnote 2 
+Trials 5 and 6 
+GrantAG11214 
+Table 1, Row 2, Column 6 
+Research Question 3 
+Days 7-9 
+Part 4 
+Chapter 8 
+
+

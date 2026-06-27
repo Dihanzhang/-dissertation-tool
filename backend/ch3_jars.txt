@@ -1,0 +1,2262 @@
+
+=== PDF PAGE 90 ===
+3 
+JOURNAL ARTICLE 
+REPORTING STANDARDS 
+This chapter orients readers to a specialized set of guidelines developed by APA 
+referred to as joumal article reporting standards, or JARS. These standards provide 
+guidelines for authors on what information should be included, at minimum, 
+in journal articles. By using JARS, authors can make their research clearer, 
+more accurate, and more transparent for readers. Writing clearly and report-
+ing research in a way that is easier to comprehend helps ensure scientific rigor 
+and methodological integrity and improves the quality of published research. 
+Reporting standards are closely related to the way studies are designed and con-
+ducted, but they do not prescribe how to design or execute studies, and they are 
+not dependent on the topic of the study or the particular journal in which the 
+study might be published. Comprehensive, uniform reporting standards make 
+it easier to compare research, to understand the implications of individual 
+studies, and to allow techniques of meta-analysis to proceed more efficiently. 
+Decision makers in policy and practice have also emphasized the importance of 
+understanding how research was conducted and what was found. 
+This chapter contains practical guidance for authors who will use JARSwhen 
+reporting their research-primarily, authors seeking professional publication 
+as well as undergraduate or graduate students conducting advanced research 
+projects. Undergraduate students who are writing les s complicated research 
+papers may also find the standards on the abstract and introduction helpful (see 
+Sections 3.3-3.4). Note that the information available regarding JARS is sub-
+stantial and detailed; this chapter is only an introduction. The APA Style JARS 
+website (https://apastyle.apa.org/jars) contains a wealth of resources (links to 
+many appear throughout this chapter). JARS may also be revised and expanded 
+in the future as new standards are developed; any such changes will be reflected 
+on the website. The sections that follow discuss the application of the principIes 
+of JARS, including why the standard s exist and how they have evolved; termi-
+nology used to discuss JARS, with a link to a glossary on the JARS website; 
+reporting standards for abstracts and introductions that pertain to all types of 
+71 
+
+
+=== PDF PAGE 91 ===
+72 
+~ JOURNAL ARTICLE REPORTING STANDARDS 
+research artieles; and specific standards for quantitative, qualitative, and mixed 
+methods research. 
+Overview of Reporting Standards 
+3.1 Application of the Principies of JARS 
+By adopting and following JARS in their artieles, researchers 
+• help readers fully understand the research being reported and draw valid 
+conelusions from the work, 
+• allow reviewers and editors to properly evaluate manuscripts submitted for 
+publication for their scientific value, 
+• enable future researchers to replicate the research reported, 
+• foster transparency (for more on the ethic of transparency in JARS, see the 
+JARS website at https://apastyle.apa.org/jars/transparency), and 
+• improve the quality of published research. 
+Within these guidelines for reporting standards, however, is flexibility in how 
+the standard s are applied across different types of research studies. Guide-
+lines on where to inelude information recommended in JARS within an arti-
+ele are flexible in most cases (exceptions are information that must appear in 
+the title page, abstract, or author note; see Tables 3.1-3.3 later in this chapter). 
+In general, any information that is necessary to comprehend and interpret the 
+study should be in the text of the journal artiele, and information that might 
+be needed for replication can be ineluded in supplemental materials available 
+online with few barriers to readers. Authors should consult withjournal editors 
+to resolve questions regarding what information to inelude and where, keeping 
+readability of the artiele as a prime consideration. Reviewers and editors are 
+encouraged to learn to recognize whether reporting standards have been met 
+regardless of the rhetorical style of the research presentation. 
+Reporting standard s are evolving to reflect the needs of the research com-
+munity. The original JARS, published in American Psychologist (APA Publica-
+tions and Communications Board Working Group on Journal Artiele Reporting 
+Standards, 2008) as well as in the sixth edition of the Publication Manual (APA, 
+2010), addressed only quantitative research. The updated JARS, published in 
+2018 (see Appelbaum et al., 2018; Levitt et al., 2018), expands on the types of 
+quantitative research (JARS-Quant) addressed and now ineludes standards for 
+reporting qualitative (JARS-Qual) and mixed methods (JARS-Mixed) research. 
+As research approaches continue to evolve, authors should use these standards 
+to support the publication of research; they should not allow these standard s to 
+restrict the development of new methods. 
+3.2 Terminology Used in JARS 
+Researchers use many methods and strategies to meet their research goals, and 
+the guidelines in JARS were developed to facilitate the reporting of research 
+across a range of research traditions (Appelbaum et al., 2018; Levitt et al., 2018). 
+These methods fall into either quantitative (Sections 1.1 and 3.5-3.8), qualitative 
+(Sections 1.2 and 3.13-3.16), or mixed methods (Sections 1.3 and 3.18) traditions; 
+separate reporting standards exist for each tradition. There are also special-
+
+
+=== PDF PAGE 92 ===
+Common Reporting Standards Across Research Designs 
+~ 73 
+ized standards for particular quantitative (see Sections 3.9-3.12) and qualitative 
+methodologies (see Section 3.17), such as meta-analysis. 
+Given this diversity, the terms used in this chapter may be unfamiliar to sorne 
+readers. See the JARS website (https://apastyle.apa.org/jars/glossary)fóraglos-
+sary of related terms, including "approaches to inquiry," "data-analytic strate-
+gies," "data-collection stfategies," "methodological integrity," "research design;' 
+and "trustworthiness." Because researchers do not always agree on terminology, 
+we encourage authors to translate these terms to reflect their own preferred 
+approaches, taking care to define terms for readers. We recognize that our lan-
+guage inevitably carries philosophical implications (e.g., do researchers "dis-
+cover," "understand," or "co-construct" findings?). We also encourage reviewers 
+and editors to view our terms as placeholders that may be usefully varied by 
+authors to reflect the values of their research traditions. 
+Common Reporting Standards Across Research Designs 
+Many aspects of the scientific process are common across quantitative, qualita-
+tive, and mixed methods approaches. This section reviews reporting standard s 
+that have considerable overlap for the two initial elements of journal articles-
+the abstract and the introduction. We present the common reporting standards 
+for the abstract and introduction as well as sorne distinctive features for each 
+approach. For descriptions of and formatting guidelines for the title, byline and 
+institutional affiliation, author note, running head, abstract, keywords, text (the 
+body of a paper), reference list, footnotes, appendices, and supplemental mate-
+rials, see Chapter 2 (Sections 2.4-2.15). 
+3.3 Abstract Standards 
+An abstract is a brief, comprehensive summary of the contents of the paper. A 
+well-prepared abstract can be the most important paragraph in an article. Many 
+people have their first contact with an article by reading the title and abstract, 
+usually in comparison with several others, as they conduct a literature search. 
+Readers frequently decide on the basis of the abstract whether to read the 
+entire article. The abstract needs to be dense with information. By embedding 
+essential terms in your abstract, you enhance readers' ability to find the article. 
+This section addresses the qualities of a good abstract and standards for what 
+to include in abstracts for different paper types (see Sections 1.1- 1.10). Require-
+ments for abstract length and instructions on formatting the abstract are pre-
+sented in Section 2.9. 
+Qualities of a Good Abstract. A good abstract is 
+• accurate: Ensure that the abstract correctly reflects the purpose and content 
+of the paper. Do not include information that do es not appear in the paper 
+body. If the study extends or replicates previous research, cite the relevant 
+work with an author- date citation. 
+• nonevaluative: Report rather than evaluate; do not add to or comment on 
+what is in the body of the paper. 
+• coherent and readable: Write in clear and deliberate language. Use verbs 
+rather than their noun equivalents and the active rather than the passive 
+voice (e.g., "investigated" instead of "an investigation of"; "we present results" 
+
+
+=== PDF PAGE 93 ===
+74 
+C\v 
+JOURNAL A RT ICLE REPORTING STANDARDS 
+instead of "results are presented"; see Section 4 .13). Use the present tense to 
+describe conelusions drawn or results with continuing applicability; use the 
+past tense to describe specific variables manipulated or outcomes measured. 
+If presenting statistical or mathematical information, see Sections 6.40 to 
+6.48 for the appropriate formats. 
+• concise: Be brief, and make each sentence maximally informative, espe-
+cially the lead sentence. Begin the abstract with the most important points. 
+Do not waste space by repeating the title. Inelude only the four or five most 
+important concepts, findings, or implications. Use the specific words in your 
+abstract that you think your audience will use in their searches. 
+Empirical Artieles. The abstract for an empirical artiele (quantitative, qualita-
+tive, or mixed methods; see Sections 1.1-1.3) should describe the following: 
+• the problem under investigation, in one sentence, if possible; when present-
+ing quantitative analyses, inelude the main hypotheses, questions, or theo-
+ries under investigation 
+• participants or data sources, specifying pertinent characteristics (e.g., for 
+nonhuman animal research, inelude the genus and species); participants will 
+be described in greater detail in the body of the paper 
+• essential features of the study method, ineluding 
+-
+research design (e.g., experimental, observational, qualitative, mixed 
+methods) 
+-
+analytic strategy (e.g., ethnography, factor analysis) 
+-
+data-gathering procedures 
+-
+sample size (typically for quantitative analyses) or description of the vol-
+ume of observations or number of participants (typically for qualitative 
+analyses) 
+-
+materials or central measures used 
+-
+a statement about whether the study is a secondary data analysis 
+• basic findings, ineluding 
+-
+for quantitative analyses, effect sizes and confidence intervals in addition 
+to statistical significance levels when possible 
+-
+for qualitative methods, main findings in relation to central contextual 
+features 
+• conelusions and implications or applications of the research findings 
+Replication Articles. The abstract for a replication artiele (see Section 1.4) 
+should describe the following: 
+• type of replication being reported (e.g., direct [exact, literal], approximate, 
+conceptual [construct 1) 
+• scope of the replication in detail 
+• original study or studies that are being replicated 
+• general conelusions reached in the replication 
+Quantitative or Qualitative Meta-Analyses. The abstract for a quantitative or 
+qualitative meta-analysis (see Section 1.5) should describe the following: 
+• research problems, questions, or hypotheses under investigation 
+
+
+=== PDF PAGE 94 ===
+Common Reporting Standards Across Resea rch Designs 
+• characteristics for the inclusion of studies, including 
+-
+for quantitative meta-analyses, independent variables, dependent vari-
+ables, and eligible study designs 
+-
+for qualitative meta-analyses, criteria for eligibility in terms of stúdy topic 
+and research design 
+• methods of synthesis, including statistical or qualitative metamethods used to 
+summarize or compare studies and specific methods used to integrate studies 
+• main results, including 
+-
+for all studies, the number of studies; the number of participants, observa-
+tions, or data sources; and their important characteristics 
+-
+for quantitative analyses, the most important effect sizes and any import-
+ant moderators of these effect sizes 
+-
+for qualitative analyses, the most important findings in their context 
+• conclusions (including limitations) 
+• implications for theory, policy, and/or practice 
+Literature Review Articles. The abstract for a literature review article (also 
+called a narrative literature review article; see Section 1.6) should describe the sub-
+stantive content being reviewed, including the following: 
+• scope of the literature examined in the review (e.g., journals, books, unpub-
+lished abstracts) and the number of items included in the review 
+• period oftime covered in the review (e.g., range ofyears) 
+• general conclusions reached in the review 
+Theoretical Articles. The abstract for a theoretical article (see Section 1.7) 
+should describe the following: 
+• how the theory or model works and/or the principIes on which it is based 
+• what phenomena the theory or model accounts for and linkages to empirical 
+results 
+Methodological Articles. The abstract for a methodological article (see Section 
+1.8) should describe the following: 
+• general class, essential features, and range of applications of the methods, 
+methodologies, or epistemological beliefs being discussed 
+• essential features of the approaches being reported, such as robustness or 
+power efficiency in the case of statistical procedures or methodological 
+integrity and trustworthiness in the case of qualitative methods 
+3.4 Introduction Standards 
+The body of a paper always opens with an introduction. The introduction contains 
+a succinct description of the issues being reported, their historical antecedents, 
+and the study objectives. 
+Frame the Importance of the Problem. The introduction of an article frames 
+the issues being studied. Consider the various concerns on which your issue 
+touches and its effects on other outcomes (e.g., the effects of shared storybook 
+reading on word learning in children). This framing may be in terms of funda-
+mental psychological theory, potential application including therapeutic uses, 
+C\.'Y 
+75 
+
+
+=== PDF PAGE 95 ===
+76 ~ JOURNAL ARTICLE REPORTING STANDARDS 
+input for public policy, and so forth. Proper framing helps set readers' expecta-
+tions for what the report will and will not include. 
+Historical Antecedents. Review the literature succinctly to convey to readers 
+the scope of the problem, its context, and its theoretical or practical implica-
+tions. Clarif)r which elements of your paper have been subject to prior investiga-
+tion and how your work differs fram earlier reports. In this process, describe any 
+key issues, debates, and theoretical frameworks and clarif)r barriers, knowledge 
+gaps, or practical needs. Including these descriptions will show how your work 
+builds usefully on what has already been accomplished in the field. 
+Articulate Study Goals. Clearly state and delimit the aims, objectives, and/or 
+goals of your study. Make explicit the rationale for the fit of your design in rela-
+tion to your aims and goals. Describe the goals in a way that clarifies the appro-
+priateness of the methods you used. 
+Quantitative Goals. In a quantitative article, the introduction should identif)r 
+the primary and secondary hypotheses as well as any exploratory hypotheses, 
+specif)ring how the hypotheses derive from ideas discussed in previous research 
+and whether exploratory hypotheses were derived as a result of planned or 
+unplanned analyses. 
+Qualitative Goals. In a qualitative article, the introduction may contain case 
+examples, personal narratives, vignettes, or other illustrative materials. It should 
+describe your research goal(s) and approach to inquiry. Examples of qualitative 
+research goals include developing theory, hypotheses, and deep understandings 
+(e.g., Hill, 2012; Stiles, 1993); examining the development of a social construct 
+(e.g., Neimeyer et al., 2008); addressing societal injustices (e.g., Fine, 2013); and 
+illuminating social discursive practices- that is, the way interpersonal and public 
+communications are enacted (e.g., Parker, 2015). The term approaches to inquiry 
+refers to the philosophical assumptions that underlie research traditions or strat-
+egies-for example, the researchers' epistemological beliefs, worldview, para-
+digm, strategies, or research traditions (Creswell & Poth, 2018; Morrow, 2005; 
+Ponterotto, 2005). For instance, you might indicate that your approach or 
+approaches to inquiry are constructivist, critical, descriptive, feminist, inter-
+pretive, postmodern, postpositivist, pragmatic, or psychoanalytic. Note that 
+researchers may define these philosophies differently, and sorne qualitative 
+research is more question driven and pragmatic than theoretical. You might 
+also address your approach to inquiry in the Method section (see Section 3.14). 
+Mixed Methods Goals. In a mixed methods or multimethod article, the introduc-
+tion should describe the objectives for all study components presented, the 
+rationale for their being presented in one study, and the rationale for the order 
+in which they are presented within the paper (see Section 3.18). In all cases, 
+clarif)r how the questions or hypotheses under examination led to the research 
+design to meet the study aims. 
+Goals for Other Types of Papers. Intraductions for other types of papers follow sim-
+ilar principIes and articulate the specific motivation for the study. For instance, 
+a replication study conducted as a quantitative study would have an introduc-
+tion that follows the principIes for the intraduction of a quantitative study but 
+that emphasizes the need to replicate a certain study or set of studies as well as 
+the methods used to accomplish the desired replication. 
+
+
+=== PDF PAGE 96 ===
+Reporting Standards for Quantitative Research 
+Reporting Standards for Quantitative Research 
+3.5 Basic Expectations for Quantitative Research Reporting 
+Whereas standards for reporting information in the abstract and introduction 
+of a paper are common to aH kinds of research (see Sections 3.3-3.4), there are 
+specific reporting standard s for quantitative research articles, including the 
+Method, Results, and Discussion sections (see Sections 3.6-3.8). Note that this 
+is a conceptual separation, but in practice, the information specified in these 
+three sets of reporting standards may be intermixed in several sections of the 
+paper to optimize readability. Standards specific to qualitative and mixed meth-
+ods research are presented in Sections 3.13 to 3.17 and 3.18, respectively. 
+The basic expectations for reporting quantitative research are presented in 
+Table 3.t1 This table describes minimal reporting standards that apply to aH 
+quantitative-based inquires. Additional tables describe other reporting features 
+that are added because of particular design features or empirical claims. Con-
+sult Figure 3.1 to determine which tables to use for your quantitative research 
+and for links to aH tables on the JARS website (because this chapter is an orien-
+tation to JARS, only the main quantitative table is presented here). Every empir-
+ical study must include features from Table 3.1 plus features from at least one 
+additional tableo The content ofTable 3.1 by itself is not sufficient as a descrip-
+tion of reporting standard s for quantitative studies. See Sections 3.9 to 3.12 for 
+descriptions of each additional tableo 
+Table 3.1 Quantitative Design Reporting Standards (JARS-Quant) 
+Title and Title Page 
+Title 
+C\.v 
+77 
+• 
+Identify main variables and theoretical issues under investigation and the relationships between them. 
+• 
+Identify the populations studied. 
+I Author Note 
+• 
+Provide acknowledgment and explanation of any special circumstances, including 
+-
+registration information if the study has been registered 
+-
+use of data also appearing in previous publications 
+-
+prior reporting of the fundamental data in dissertations or conference papers 
+-
+sources of funding or other support 
+-
+relationships or affiliations that may be perceived as conflicts of interest 
+-
+previous (or current) affiliation of authors if different from the location where the study was conducted 
+-
+contact information for the corresponding author 
+-
+additional information of importance to the reader that may not be appropriately included in other 
+sections of the paper 
+Abstract 
+Objectives 
+• 
+State the problem under investigation, including main hypotheses. 
+1 The tables and figure in this chapter can also be found on the JARS website (https://apastyle.apa.org/jars) in 
+the guidelines for quantitative, qualitative, and mixed methods research designs, with different numbering. The 
+JARS website has additional tables for other research designs, including experimental (e.g., clinical tria ls), non-
+experimental (e.g., observational), and special (e.g., longitudina l) designs for authors to use in their research. 
+
+
+=== PDF PAGE 97 ===
+78 
+~ JO URNAL ARTI CLE RE PORTI NG STA NDA RDS 
+Table 3.1 Quantitative Design Reporting Standards (JARS- Q uant) (contínued) 
+I Abst ract (continued) 
+Participants 
+Describe subjects (nonhuman animal research) or participants (human research), specifying their pertinent 
+characteristics for the study; in animal research, include genus and species. Participants are described in 
+greater detail in the body of the papero 
+Study Method 
+Describe the study method, including 
+-
+research design (e.g., experiment, observational study) 
+-
+sample size 
+-
+materials used (e.g., instruments, apparatus) 
+-
+outcome measures 
+-
+data-gathering procedures, including a brief description of the source of any secondary data. If the 
+study is a secondary data analysis, so indicate. 
+Findings 
+Report findings, including effect sizes and confidence intervals or statistical significance levels. 
+Conclusions 
+state conclusions, beyond just results, and report the implications or applications. 
+I lntroduction 
+Problem 
+• 
+Sta te the importance of the problem, including theoretical or practical implications. 
+Review of Relevant Scholarship 
+Provide a succinct review of relevant scholarship, including 
+-
+relation to previous work 
+-
+differences between the current report and earlier reports if some aspects of this study have been 
+reported on previously 
+Hypothesis, Aims, and Objectives 
+state specific hypotheses, aims, and objectives, including 
+-
+theories or other means used to derive hypotheses 
+-
+primary and secondary hypotheses 
+-
+other planned analyses 
+• 
+state how hypotheses and research design relate to one another. 
+r Method 
+Inclusion and Exclusion 
+Report inclusion and exclusion criteria, including any restrictions based on demographic characteristics. 
+Participant Characteristics 
+Report majar demographic characteristics (e.g., age, sex, ethnicity, socioeconomic status) and important 
+topic-specific characteristics (e.g., achievement level in studies of educational interventions). 
+In the case of animal research, report the genus, species, and strain number or other specific identi-
+fication, such as the name and location of the supplier and the stock designation. Give the number of 
+animals and the animals' sex, age, weight, physiological condition, genetic modification status, genotype, 
+health-immune status, drug or test na'l'veté, and previous procedures to which the animal may have been 
+subjected. 
+
+
+=== PDF PAGE 98 ===
+Reparting Standards far Quantitative Research 
+,Table 3.1 Q uant itative Design Reporting Standards (JA RS- Q uant) (continued) 
+Method (continuedJ 
+Sampling Procedures 
+Describe procedures for selecting participants, including 
+-
+sampling method if a systematic sampling plan was implemented 
+percentage of the sample approached that actually participated 
+C\.v 
+79 
+-
+whether self-selection into the study occurred (either by individuals or by units, such as schools or 
+clinics) 
+• 
+Describe settings and locations where data were collected as well as dates of data collection. 
+• 
+Describe agreements and payments made to participants. 
+• 
+Describe institutional review board agreements, ethical standards met, and safety monitoring. 
+Sample Size, Power, and Precision 
+• 
+Describe the sample size, power, and precision, including 
+-
+intended sample size 
+-
+achieved sample size, if different from the intended sample size 
+-
+determination of sample size, including 
+~ power analysis, or methods used to determine precision of parameter estimates 
+~ explanation of any interim analyses and stopping rules employed 
+Measures and Covariates 
+• 
+Define all primary and secondary measures and covariates, including measures collected but not 
+included in the reporto 
+Data Collection 
+Describe methods used to collect data. 
+Quality of Measurements 
+Describe methods used to enhance the quality of measurements, including 
+-
+training and reliability of data collectors 
+-
+use of multiple observations 
+Instrumentation 
+Provide information on validated or ad hoc instruments created for individual studies (e,g., psychometric 
+and biometric properties). 
+Masking 
+Report whether participants, those administering the experimental manipulations, and those assessing 
+the outcomes were aware of condition assignments. 
+If masking took place, provide a statement regarding how it was accomplished and whether and how the 
+success of masking was evaluated. 
+Psychometrics 
+Estimate and report reliability coefficients for the scores analyzed (i,e., the researcher's sample), if 
+possible. Provide estimates of convergent and discriminant validity where relevant. 
+Report estimates related to the reliability of measures, including 
+-
+interrater reliability for subjectively scored measures and ratings 
+-
+test-retest coefficients in longitudinal studies in which the retest interval corresponds to the measure-
+ment schedule used in the study 
+-
+internal consistency coefficients for composite scales in which these indices are appropriate for under-
+standing the nature of the instruments being used in the study 
+Report the basic demographic characteristics of other samples if reporting reliability or validity coeffi-
+cients from those samples, such as those described in test manuals or in norming information for the 
+instrument, 
+
+
+=== PDF PAGE 99 ===
+80 
+~ JOURNAL ARTICLE REPORTING STANDARDS 
+Table 3.1 Quantitative Design Reporting Standards (JARS-Quant) (continued) 
+I Method (continued) 
+Conditions and Design 
+State whether conditions were manipulated or naturally observed. Report the type of design as per the 
+JARS~Quant tables: 
+-
+experimental manipulation with participants randomized 
+1> Table 2 and Module A 
+-
+experimental manipulation without randomization 
+1> Table 2 and Module B 
+-
+clinical trial with randomization 
+1> Table 2 and Modules A and e 
+-
+clinical trial without randomization 
+1> Table 2 and Modules B and e 
+-
+nonexperimental design (i.e., no experimental manipulation): observational design, epidemiological 
+design, natural history, and so forth (single-group designs or multiple-group comparisons) 
+1> Table 3 
+-
+longitudinal design 
+1> Table 4 
+-
+N-of-1 studies 
+1> Table 5 
+-
+replications 
+1> Table 6 
+Report the common na me given to designs not currently covered in JARS-Quant. 
+Data Diagnostics 
+Describe planned data diagnostics, including 
+-
+criteria for post-data-collection exclusion of participants, if any 
+-
+criteria for deciding when to infer missing data and methods used for imputation of missing data 
+-
+definition and processing of statistical outliers 
+-
+analyses of data distributions 
+-
+data transformations to be used, if any 
+Analytic Strategy 
+• 
+Describe the analytic strategy for inferential statistics and protection against experiment-wise error for 
+-
+primary hypotheses 
+-
+secondary hypotheses 
+-
+exploratory hypotheses 
+I 
+Results 
+Participant Flow 
+Report the flow of participants, ineluding 
+-
+total number of participants in each group at each stage of the study 
+-
+flow of participants through each stage of the study (inelude figure depicting flow, when possible; see 
+Figure 7.5) 
+Recruitment 
+Provide dates defining the periods of recruitment and repeated measures or fol low-up. 
+Statistics and Data Analysis 
+Provide information detailing the statistical and data-analytic methods used, ineluding 
+-
+missing data 
+1> frequency or percentages of missing data 
+1> empirical evidence and/or theoretical arguments for the causes of data that are missing-for example, 
+missing completely at random (MeAR), missing at random (MAR), or missing not at random (MNAR) 
+1> methods actually used for addressing missing data, if any 
+
+
+=== PDF PAGE 100 ===
+-
+Reporting Standards for Quant itative Research 
+~ 81 
+, Table 3.1 Quantitative Design Reporting Standards (JARS-Quant) (continued) 
+I Results (continuedJ 
+-
+descriptions of each primary and secondary outcome, including the total sample and ea eh subgroup, 
+that includes the number of cases, cell means, standard deviations, and other measures that charac-
+terize the data used 
+-
+inferential statistics, including 
+1> results of all inferential tests conducted, including exact p values if null hypothesis significance 
+testing (NHSn methods were used, and reporting the minimally sufficient set of statistics (e.g" dfs, 
+mean square [MS] effect, MS error) needed to construet the tests 
+1> effect-size estimates and confidence intervals on estimates that correspond to each inferential test 
+conducted, when possible 
+1> c1ear differentiation between primary hypotheses and their tests-estimates, secondary hypotheses 
+and their tests-estimates, and exploratory hypotheses and their test-estimates 
+-
+complex data analyses-for example, structural equation modeling analyses (see Table 7 on the JARS 
+website), hierarchicallinear models, factor analysis, multivariate analyses, and so forth, including 
+1> details of the models estimated 
+1> associated variance-covariance (or correlation) matrix or matrices 
+1> identification of the statistical software used to run the analyses (e.g., SAS PROC GLM or the partic-
+ular R package) 
+-
+estimation problems (e.g., failure to converge, bad solution spaces), regression diagnostics, or analytic 
+anomalies that were detected and solutions to those problems 
+-
+other data analyses performed, including adjusted analyses, if performed, indicating those that were 
+planned and those that were not planned (though not necessarily in the level of detail of primary 
+analyses) 
+Report any problems with statistical assumptions and/or data distributions that could affect the validity 
+of findings. 
+Discussion 
+Support of Original Hypotheses 
+• 
+Provide a statement of support or nonsupport for all hypotheses, whether primary or secondary, including 
+-
+distinction by primary and secondary hypotheses 
+-
+discussion of the implications of exploratory analyses in terms of both substantive findings and error 
+rates that may be uncontrolled 
+Similarity of Results 
+• 
+Discuss similarities and differences between reported results and work of others. 
+Interpretation 
+Provide an interpretation of the results, taking into account 
+-
+sources of potential bias and threats to internal and statistical validity 
+-
+imprecision of measurement protocols 
+-
+overall number of tests or overlap among tests 
+-
+adequacy of sample sizes and sampling validity 
+Generalizability 
+Discuss generalizability (externa I validity) of the findings, taking into account 
+-
+target population (sampling validity) 
+-
+other contextual issues (setting, measurement, time; ecological validity) 
+Implications 
+Discuss implications for future research, programs, or policy. 
+
+
+=== PDF PAGE 101 ===
+82 
+C\.V 
+JOURNAL ARTICLE REPORTING STANDARDS 
+3.6 Quantitative Method Standards 
+The Method section of a paper provides most of the information that readers 
+need to fully comprehend what was done in the execution of an empirical study. 
+This section provides information that allows readers to understand the research 
+being reported and that is essential for replication of the study, although the . 
+concept of replication may depend on the nature of the study. The basic infor-
+mation needed to understand the results should (as a rule) appear in the main 
+article, whereas other methodological information (e.g., detailed descriptions of 
+procedures) may appear in supplemental materials. Readability of the resulting 
+paper must be part of the decision about where material is ultimately located. 
+Details of what content needs to be presented in the Method section of a quan-
+titative article are presented in Table 3.1 and must be used in conjunction with 
+JARS-Quant Tables 2 to 9 on the JARS website (https://apastyle.apa.org/jars/ 
+quantitative ). 
+Participant (Subject) Characteristics. Appropriate identification of research 
+participants is critical to the science and practice of psychology, particularly for 
+generalizing the findings, making comparisons across replications, and using 
+the evidence in research syntheses and secondary data analyses. 
+Figure 3.1 Flowchart of Quantitative Reporting Standards to Follow Depending on 
+Research Design 
+Step 1 
+Step 2 
+Step 3 
+Step 4 
+Step 5 
+If your study involved 
+an experimental 
+manipulation 
+Follow JARS-Quant 
+Table 2 
+If you randomly 
+assigned participants 
+to conditions 
+Follow JARS-Quant 
+Table 2, Module A 
+For all quantitative studies 
+Follow JARS-Quant Table 1 
+If your study did not 
+involve an experimental 
+manipulation 
+Follow JARS-Quant 
+Table 3 
+If you did not randomly 
+assign participants 
+to conditions 
+Follow JARS-Quant 
+Table 2, Module B 
+If your study was 
+conducted on a single 
+individual (N-of-1) 
+Follow JARS-Quant 
+Table 5 
+If your study 
+qualifies as a 
+clinical trial 
+Follow JARS- Quant 
+Table 2, Module e 
+If your study collected data on more than one occasion (longitudinal) 
+Follow JARS-Quant Table 4 
+If your study was a replication of an earlier study 
+Follow JARS-Quant Table 6 
+Note. JARS-Quant = quantitative journal article reporting standards. For more information, see the APA Style 
+JARS website (https:!/apastyle.apa.org/jars). 
+
+
+=== PDF PAGE 102 ===
+Reporting Standards for Quantitative Research 
+Detail the major demographic characteristics of the sample, such as age; sex; 
+ethnic and/or racial group; level of education; socioeconomic, generational, 
+or immigrant status; disability status; sexual orientation; gender identity; and 
+language preference, as well as important topic-specific characteristics (e.g., 
+achievement level in studies of educational interventions). As a rule, describe 
+the groups as specifically as possible, emphasizing characteristics that may 
+have bearing on the interpretation of results. Participant characteristics can be 
+important for understanding the nature of the sample and the degree to which 
+results can be generalized. For example, the following is a useful characteriza-
+tion of a sample: 
+The second group included 40 cisgender women between the ages of 20 and 30 years 
+(M = 24.2, SO = 2.1, Mdn = 25.1), all of whom had emigrated from El Salvador; had at 
+least 12 years of education; had be en permanent residents of the United States for at 
+least 10 years; and lived in Washington, De. 
+To help readers determine how far the data can be generalized, you may find it 
+useful to identify subgroups. 
+The Asian participants included 30 Chinese and 45 Vietnamese persons. 
+Among the Latino and Hispanic American men, 20 were Mexican American and 20 
+were Puerto Rican. 
+Even when a characteristic is not used in analysis of the data, reporting it may 
+give readers a more complete understanding of the sample and the generaliz-
+ability of results and may prove useful in meta-analytic studies that incorporate 
+the article's results. The descriptions of participant characteristics should be 
+sensitive to the ways the participants understand and express their identities, 
+statuses, histories, and so forth. Chapter 5 contains further guidance on writing 
+without bias. 
+When nonhuman animal subjects are used, report the genus, species, and 
+strain number or other specific identifier, such as the name and location of the 
+supplier and the stock designation. Give the number of nonhuman animal sub-
+jects and their sex, age, weight, and physiological condition. 
+Sampling Proceclures. Describe the procedures for selecting participants, in-
+cluding (a) the sampling method, if a systematic plan was implemented; (b) the 
+percentage of the sample approached that participated; and (c) whether self-
+selection into the study occurred (either by individuals or by units such as 
+schools or clinics) and the number of participants who selected themselves into 
+the sample. Report inclusion and exclusion criteria, including any restriction 
+based on demographic characteiistics. 
+Describe the settings and locations in which the data were collected and pro-
+vide the dates of data collection as a general range of dates, including dates for 
+repeated measurements and follow-ups. Describe any agreements with and pay-
+ments made to participants. Note institutional review board approvals, data safety 
+board arrangements, and other indications of compliance with ethical standards. 
+Sample Size, Power, and Precision. Provide the intended size of the sample 
+and number of individuals meant to be in each condition if separate conditions 
+were used. State whether the achieved sample differed in known ways from the 
+intended sample. Conclusions and interpretations should not go beyond what 
+C\.v 
+83 
+
+
+=== PDF PAGE 103 ===
+84 ~ JOURNAL ARTICLE REPORTING STANDARDS 
+the achieved sample warrants. State how the intended sample size was deter-
+mined (e.g., analysis of power or precision). If interim analysis and stopping 
+rules were used to modify the desired sample size, describe the methodology 
+and results of applying that methodology. 
+Measures and Covariates. Include in the Method section definitions of all 
+primary and secondary outcome measures and covariates, including mea-
+sures collected but not included in the current reporto Provide information on 
+instruments used, including their psychometric and biometric properties and 
+evidence of cultural validity (Section 10.10 for how to cite hardware and appara-
+tuses; see Section 10.11 for how to cite tests, scales, and inventories). 
+Data Collection. Describe the methods used to collect data (e.g., written ques-
+tionnaires, interviews, observations). Provide information on any masking of 
+participants in the research (Le., whether participants, those administering the 
+manipulations, and/or those assessing the outcomes were unaware of partici-
+pants' assignment to conditions), how masking was accomplished, and how the 
+masking was assessed. Describe the instrumentation used in the study, includ-
+ing standardized assessments, physical equipment, and imaging protocols, in 
+sufficient detail to allow exact replication of the study. 
+Quality of Measurements. Describe methods used to enhance the quality of 
+measurements, including training and reliability of data collectors, use of mul-
+tiple observers, translation of research materials, and pretesting of material s on 
+populations who were not included in the initial development of the instru-
+mentation. Pay attention to the psychometric properties of the measurement 
+in the context of contemporary testing standards and the sample being investi-
+gated; report the psychometric characteristics of the instruments used follow-
+ing the principIes articulated in the Standards far Educatianal and Psychalagical 
+Testing (American Educational Research Association et al., 2014). In addition to 
+psychometric characteristics for paper-and-pencil measures, provide interrater 
+reliabilities for subjectively scored measures and ratings. Internal consistency 
+coefficients can be useful for understanding composite scales. 
+Research Design. Specify the research design in the Method section. For exam-
+pIe, were participants placed into conditions that were manipulated, or were 
+they observed in their natural setting? If multiple conditions were created, how 
+were participants assigned to conditions-through random assignment or sorne 
+other selection mechanism? Was the study conducted as a between-subjects or 
+a within-subjects design? Reporting standard s vary on the basis ofthe research 
+design (e.g., experimental manipulation with randomization, clinical trial with-
+out randomization, longitudinal design). Consult Figure 3.1 to determine which 
+tables on the JARS website to use for your research designo See Sections 3.9 
+and 3.10 for a summary of design-specific reporting standards. See Section 3.11 
+for standards for particular analytic methods and Section 3.12 for quantitative 
+meta-analysis standards. 
+Studies can be mixtures of various types; for instance, a study may involve an 
+experimental manipulation with randomization with sorne factors repeated in 
+a longitudinal fashion. For studies not currently covered by JARS, provide the 
+commonly used name for that designo For more on mixed methods designs, see 
+Section 3.18. 
+
+
+=== PDF PAGE 104 ===
+Reparting Standards far Quantitative Research 
+, Experimental Manipulations or Interventions. If experimental manipulations 
+or interventions were ,used in the study, describe their specific content. Inelude 
+details of the interventions or manipulations intended for each study condition, 
+ineluding control groups (if any),and describe how and when interventions or 
+experimental manipulations were administered. Describe the essential features 
+of "treatment as usual" ifthat is ineluded as a study or control condition. 
+Carefully describe the content of the specific interventions or experimental 
+manipulations used. Often, this involves presenting a brief summary of instruc-
+tions given to participants. If the instructions are unusual, or if the instructions 
+themselves constitute the experimental manipulation, present them verbatim 
+in an appendix or supplemental materials. If the text is brief, present it in the 
+body of the paper if it do es not interfere with the readability of the report. 
+Describe the methods of manipulation and data acquisition. If a mechanical 
+apparatus was used to present stimulus materials or to collect data, inelude in 
+the description of procedures the apparatus model number and manufacturer 
+(when important, as in neuroimaging studies), its key settings or parameters (e.g., 
+pulse settings), and its resolution (e.g., stimulus delivery, recording precision). 
+As with the description of the experimental manipulation or intervention, this 
+material may be presented in the body of the paper, in an appendix, or in supple-
+mental materials, as appropriate. 
+When relevant- such as in the delivery of elinical and educational inter-
+ventions- the procedures should also contain a description of who delivered 
+the intervention, ineluding their level of professional training and their level 
+of training in the specific intervention. Present the number of deliverers along 
+with the mean, standard deviation, and range of number of individuals or units 
+treated by each deliverer. 
+Provide information about (a) the setting in which the manipulation or inter-
+vention was delivered, (b) the intended quantity and duration of exposure to 
+the manipulation or intervention (i.e., how many sessions, episodes, or events 
+were intended to be delivered and how long they were intended to last), (c) the 
+time span for the delivery of the manipulation or intervention of each unit (e.g., 
+whether the manipulation delivery was completed in one session, or, if partic-
+ipants returned for multiple sessions, how much time passed between the first 
+and last session), and (d) activities or incentives used to increase compliance. 
+When an instrument is translated into a language other than the language 
+in which it was developed, describe the specific method of translation (e.g., 
+back-translation, in which a text is translated into another language andthen 
+back into the first language to ensure that it is equivalent enough that results 
+can be compared). 
+-
+Describe how participants were grouped during data acquisition (i.e., was 
+the manipulation or intervention administered individual by individual, in 
+small groups, or in intact groupings such as elassrooms?). Indentify the smallest 
+unit (e.g., individuals, work groups, elasses) that was analyzed to assess effects. 
+If the unit used for statistical analysis differed from the unit used to deliver the 
+intervention or manipulation (i.e., from the unit of randomization), describe 
+the analytic method used to account for this (e.g., adjusting the standard error 
+estimates, using multilevel analysis). 
+Data Diagnosis. Describe how data were inspected after collection and, if rel-
+evant, any modifications of those data. These procedures may inelude outlier 
+C\.v 
+85 
+
+
+=== PDF PAGE 105 ===
+86 ~ JOURNAL ARTICLE REPORTING STANDARDS 
+detection and processing, data transformations based on empirical data distri-
+butions, and treatment of missing data or imputation of missing values. 
+Analytic Strategies. Describe the quantitativeanalytic strategies (usually statis-
+tical) used in analysis of the data; being careful to describe error-rate consider-
+ations (e.g., experiment-wise, false discovery rate). The analytic strategies should 
+be described for primary, secondary, and exploratory hypotheses. Exploratory 
+hypotheses are ones that were suggested by the data collected in the study being 
+reported, as opposed to ones generated by theoretical considerations or previ-
+ously reported empirical studies. 
+When applying inferential statistics, take seriously the statistical power con-
+siderations associated with the tests of hypotheses. Such considerations relate 
+to the likelihood of correctly rejecting the tested hypotheses given a particular 
+alpha level, effect size, and sample size. In that regard, provide evidence that the 
+study has sufficient power to detect effects of substantive interest. Be careful 
+in discussing the role played by sample size in cases in which not rejecting the 
+null hypothesis is desirable (i.e., when one wishes to argue that there are no 
+differences), when testing various assumptions underlying the statistical model 
+adopted (e.g., normality, homogeneity of variance, homogeneity of regression), 
+and in model fitting. Alternatively, use calculations based on a chosen target 
+precision (confidence interval width) to determine sample sizes. Use the result-
+ing confidence intervals to justif)r conclusions reached concerning effect sizes. 
+3.7 Quantitative Results Standards 
+In the Results section of a quantitative paper, summarize the collected data and 
+the results of any analyses performed on those data relevant to the discourse that 
+is to follow. Report the data in sufficient detail to justif)r your conclusions. Men-
+tion all relevant results, regardless of whether your hypotheses were supported, 
+including results that run counter to expectation; include small effect sizes (or 
+statistically nonsignificant findings) when theory predicts large (or statistically 
+significant) ones. Do not hide uncomfortable results by omission. In the spirit 
+of data sharing (encouraged by APA and other professional associations and 
+sometimes required by funding agencies; see Section 1.14), raw data, including 
+study characteristics and individual effect sizes used in a meta-analysis, can be 
+made available as supplemental materials (see Section 2.15) or archived online 
+(see Section 10.9). However, raw data (and individual scores) generally are not 
+presented in the body of the article because oflength considerations. The impli-
+cations of the results should be discussed in the Discussion section. 
+Participant Flow. For experimental and quasi-experimental designs, provide a 
+description of the flow of participants (humans, nonhuman animals, or units 
+such as classrooms or hospital wards) through the study. Present the total num-
+ber of participants recruited into the study and the number of participants 
+assigned to each group. Provide the number of participants who did not com-
+plete the experiment or who crossed over to other conditions and explain why. 
+Note the number of participants used in the primary analyses. (This number 
+might differ from the number who completed the study because participants 
+might not show up for or complete the final measurement.) See Figure 7.5 in 
+Section 7.36 for an example flowchart that displays the flow of participants 
+through each stage of a study. 
+
+
+=== PDF PAGE 106 ===
+Reporting Standards for Quantitative Research 
+Recruitment. Provide dates defining the periods of recruitment and follow-up 
+and the primary sources of participants, when appropriate. If recruitment and 
+. follow-up dates differ by group, provide the dates for each group. 
+Statistics and Data Analysis. Analyses of the data and reporting of the results 
+of those analyses are fundamental aspects of the conduct of research. Accu-
+rate, unbiased, complete, and insightful reporting of the analytic treatment 
+of data (be it quantitative or qualitative) must be a component of all research 
+reports. Researchers in the field of psychology use numerous approaches to 
+the analysis of data, and no one approach is uniformly preferred as long as the 
+method is appropriate to the research questions being asked and the nature 
+of the data collected. The methods used must support their analytic burdens, 
+including robustness to violations of the assumptions that underlie them, and 
+must provide clear, unequivocal insights into the data. In reporting your statis-
+tical and data analyses, adhere to the organizational structure suggested in the 
+Method section (see Section 3.6): primary hypotheses, secondary hypotheses, 
+and exploratory hypotheses. Ensure that you have reported the results of data 
+diagnoses (see Section 3.6) in the Method section before you report the results 
+linked to hypothesis confirmation or disconfirmation. Discuss any exclusions, 
+transformations, or imputation decisions that resulted from the data diagnosis. 
+Historically, researchers in psychology have relied heavily on null hypoth-
+esis significance testing (NHST) as a starting point for many of their analytic 
+approaches. Different fields and publishers have different policies; APA, for 
+example, stresses that NHST is but a starting point and that additional reporting 
+elements such as effect sizes, confidence intervals, and extensive description 
+are needed to convey the most complete meaning of the results (Wilkinson & 
+the Task Force on Statistical Inference, 1999; see also APA, n.d.-b). The degree to 
+which any journal emphasizes NHST is a decision of the individual editor. How-
+ever, complete reporting of all tested hypotheses and estimates of appropriate 
+effect sizes and confidence intervals are the minimum expectations for all APA 
+journals. Researchers are always responsible for the accurate and responsible 
+reporting of the results of their research study. 
+Assume that readers have a professional knowledge of statistical methods. 
+Do not review basic concepts and procedures or provide citations for the most 
+commonly used statistical procedures. If, however, there is any question about 
+the appropriateness of a particular statistical procedure,justiry its use by clearly 
+stating the evidence that exists for the robustness of the procedure as applied. 
+Missing Data. Missing data can have a detrimental effect on the legitimacy of 
+the inferences drawn by statistical tests. It is critical that the frequency or per-
+centages of missing data be reported along with any empirical evidence and/ 
+or theoretical arguments for the causes of data that are missing. Data might be 
+described as missing completely at random (as when values of the missing vari-
+able are not related to the probability that they are missing or to the value of 
+any other variable in the data set), missing at random (as when the probability of 
+missing a value on a variable is not related to the missing value itself but may 
+be related to other completely observed variables in the data set), or not missing 
+at random (as when the probability of observing a given value for a variable is 
+related to the missing value itself). It is also important to describe the methods 
+for addressing missing data, if any were used (e.g., multiple imputation). 
+I 
+~ 87 
+
+
+=== PDF PAGE 107 ===
+88 ~ JOURN AL ARTICLE REPORTING STANDARDS 
+Reporting Results of Inferential Statistical Tests. When reporting the results of 
+inferential statistical tests or when providing estimates of parameters or effect 
+sizes, indude sufficient information to help readers fully understand the analy-
+ses conducted and possible alternative explanations for the outcomes of those 
+analyses. Because each analytic technique depends on different aspects of the 
+. data and assumptions, it is impossible to specify what constitutes a "sufficient 
+set of statistics" in general terms. However, such a set usually indudes at least 
+the following: per-cell sample sizes, observed cell means (or frequencies of 
+cases in each category for a categorical variable), and cell standard deviations 
+or pooled within-cell variance. In the case of multivariable analytic systems, 
+such as multivariate analyses of variance, regression analyses, structural equa-
+tion modeling, and hierarchicallinear modeling, the associated means, sam-
+pIe sizes, and variance-covariance (or correlation) matrix or matrices often 
+represent a sufficient set of statistics. At times, the amount of information that 
+constitutes a sufficient set of statistics is extensive; when this is the ~ase, the 
+information could be supplied in a supplementary data set or an appendix 
+(see Sections 2.14- 2.15). For analyses based on small samples (induding N-of-1 
+investigations; see Section 3.10), consider providing the complete set of raw 
+data in atable or figure, provided that confidentiality can be maintained. Your 
+work will more easily become a part of the cumulative knowledge of the field 
+if you indude enough statistical information to allow its indusion in future 
+meta-analyses. 
+For inferential statistical tests (e.g., t, F, and chi-square tests), indude the 
+obtained magnitude or value of the test statistic, the degrees of freedom, the 
+probability of obtaining a value as extreme as or more extreme than the one 
+obtained (exact p value), and the size and direction of the effect. When point 
+estimates (e.g., sample means, regression coefficients) are provided, always 
+indude an associated measure of variability (precision), with an indication of 
+the specific measure used (e.g., standard error). 
+Inclusion of Conjidence Intervals. It can be extremely effective to indude confi-
+dence intervals (for estimates of parameters; functions of parameters, such as 
+differences in means; and effect sizes) when reporting results. Because con-
+fidence intervals combine information on location and precision and can be 
+directly used to infer significance levels, they are generally the best reporting 
+strategy. As a rule, it is best to use a single confidence level, specified on an 
+a priori basis (e.g., a 95% or 99% confidence interval), throughout the artide. 
+Wherever possible, base discussion and interpretation of results on point and 
+interval estimates. 
+When using complex data-analytic techniques- such as structural equation 
+modeling, Bayesian techniques, hierarchical linear modeling, factor analysis, 
+multivariate analysis, and similar approaches-provide details of the models 
+estimated (see Section 3.11). Also provide (usually in supplemental materials) 
+the associated variance-covariance (or correlation) matrices. Identify the soft-
+ware used to run the analysis (e.g., SAS PROC GLM or a particular R package) 
+and any parametric settings used in running the analyses (references are not 
+necessary for these software programs). Report any estimation problems (e.g., 
+failure to converge), regression diagnosis issues, or analytic anomalies. Report 
+any problems with statistical assumptions or data issues that might affect the 
+validity of the findings. 
+
+
+=== PDF PAGE 108 ===
+Reporting Standards for Quantitative Research 
+Eifect Sizes. For readers to appreciate the magnitude or importance of a study's 
+findings, it is recommendeo to include sorne measure of effect size in the Results 
+section. Effect sizes are statistical estimates; therefore, whenever possible, pro-
+vide a confidence interval for each effect size reported to indicate the precision 
+of estimation of the effect size .. Effect sizes may be expressed in the original units 
+(e.g., mean number of questions answered correctIy, kilograms per month for 
+a regression slope) and are most easily understood when reported as such. It 
+is valuable to also report an effect size in sorne standardized or units-free or 
+scale-free unit (e.g., Cohen's d value) or a stahdardized regression weight. Mul-
+tiple degree-of-freedom effect-size indicators are less useful than effect-size 
+indicators that decompose multiple degree-of-freedom tests into meaningful 
+one degree-of-freedom effects, particularly when the latter are the results that 
+inform the discussion. The general principIe to follow is to provide readers with 
+enough information to assess the magnitude of the observed effect. 
+Studies With Experimental Manipulations or Interventions. In studies reporting the 
+results of experimental manipulations or interventions, clarify whether the 
+analysis was by intent to treat. That is, were all participants assigned to condi-
+tions included in the data analysis regardless of whether they actually received 
+the intervention, or were only participants who completed the intervention sat-
+isfactorily included? Give a rationale for the choice. 
+Ancillary Analyses. Report any other analyses performed, including subgroup 
+analyses and adjusted analyses, indicating those that were prespecified and 
+those that were exploratory (although not necessarily in the level of detail of 
+primary analyses). Consider putting the detailed results of ancillary analyses in 
+supplemental materials. Discuss the implications, if any, of the ancillary analy-
+ses for statistical error rates. 
+Baseline Data. Be sure to provide baseline demographic and/or clinical charac-
+teristics of each group. 
+Adverse Events. If interventions were studied, detail all important adverse 
+events (i.e., events with serious consequences) and/or side effects in each inter-
+vention group. If none occurred, note this as well. 
+3.8 Quantitative Discussion Standards 
+After presenting the results, you are in a position to evaluate and interpret 
+their implications, especially with respect to your original hypotheses. In the 
+Discussion section of a quantitative paper, examine, interpret, and qualify the 
+results of your research and draw inferences and conclusions from them. In 
+the case of empirical studies, there should be a tight relationship between the 
+results that are reported and their discussion. Emphasize any theoretical or 
+practical consequences of the results. When the discussion is relatively brief 
+and straightforward, you can combine it with the Results section, creating 
+a section called "Results and Discussion." If a manuscript presents multiple 
+studies, discuss the findings in the order· that the studies were presented 
+within the article. 
+Open the Discussion section with a clear statement of support or nonsup-
+port for all hypotheses, distinguished by primary and secondary hypotheses. 
+In the case of ambiguous outcomes, explain why the results are judged as such. 
+~ 89 
+
+
+=== PDF PAGE 109 ===
+90 
+C\.v 
+JOURNAL ARTICLE REPORTING STANDARDS 
+Discuss the implications of exploratory analyses in terms of both substantive 
+findings and error rates that may be uncontrolled. 
+Similarities and differences between your results and the work of others 
+(where they exist) should be us.ed to contextualize, confirm, and clarify your 
+conclusions. Do not simply reformulate and repeat points already made; each 
+new statement should contribute to your interpretation and to readers' under-
+standing of the problem. 
+Limitations and Strengths. Your interpretation of the results should take into 
+account (a) sources of potential bias and other threats to internal validity, (b) the 
+imprecision of measures, (c) the overall number of tests and/or overIap among 
+tests, (d) the adequacy of sample sizes and sampling validity, and (e) other limita-
+tions or weaknesses of the study. If an intervention or manipulation is involved, 
+discuss whether it was successfully implemented, and note the mechanism 
+by which it was intended to work (i.e., its causal pathways and/or alternative 
+mechanisms). Discuss the fidelity with which the intervention or manipulation 
+was implemented, and describe the barriers that were responsible for any lack 
+of fidelity. Acknowledge the limitations of your research, and address alterna-
+tive explanations of the results. Discuss the generalizability, or external valid-
+ity, of the findings. This critical analysis should take into account differences 
+between the target population and the accessed sample. For interventions, dis-
+cuss characteristics that make them more or les s applicable to circumstances 
+not included in the study, what outcomes were measured and how (relative 
+to other measures that might have been used), the length of time to measure-
+ment (between the end of the intervention and the measurement of outcomes), 
+incentives, compliance rates, and specific settings involved in the study as well 
+as other contextual issues. 
+Study Implications. End the Discussion section with a reasoned and justifiable 
+commentary on the importance of your findings. This concluding section may 
+be brief, or it may be extensive if it is tightly reasoned, self-contained, and not 
+overstated. In the conclusion, consider returning to a discussion of why the 
+problem is important (as stated in the introduction); what larger issues, mean-
+ing those that transcend the particulars of the subfield, might hinge on the find-
+ings; and what propositions are confirmed or disconfirmed by the extrapolation 
+of these findings to such overarching issues. 
+Also consider the following issues: 
+• What is the theoretical, clinical, or practical significance of the outcomes, 
+and what is the basis for these interpretations? 
+• Ifthe findings are valid and replicable, what real-life psychological phenom-
+ena might be explained or modeled by the results? 
+• Are applications warranted on the basis ofthis research? 
+• What problems remain unresolved or arise anew because of these findings? 
+The responses to these questions are the core of the contribution of your study 
+and justify why readers both inside and outside your specialty should attend to 
+the findings. Readers should receive clear, unambiguous, and direct answers. 
+
+
+=== PDF PAGE 110 ===
+Reporting Standards for Quantitative Research 
+3.9 Additional Reporting Standards for Typical Experimental and 
+Nonexperimental Studies 
+As mentioned in Section 3.5, the reporting standards in Table 3.1 apply to all 
+quantitative studies. Additional standards apply because of particular design 
+features or empirical claims made. Studies with experimental (e.g., studies using 
+random assignment, studies using nonrandom assignment, clinical trials) and 
+nonexperimental designs have these additional specific reporting standards. 
+See Figure 3.1 for a flowchart of what standards to use for your research and 
+links to the associated standard s on the JARS website. 
+Studies Using Random Assignment. Describe the unit of randomization and 
+the procedures used to generate assignments. Be careful to note when units 
+such as classrooms are the unit of randomization, even though data collection 
+may be from individual students within the classroom. Indicate the unit of ran-
+domization in the analysis of such study outcomes as well. Describe masking 
+provisions used to ensure the quality of the randomization process. 
+Studies Using Nonrandom Assignment. Describe the unit of assignment and 
+the method (rules) used to assign the unit to the condition, including details 
+of any assignment restrictions such as blocking, stratification, and so forth. 
+Describe any procedures used to minimize selection bias such as matching or 
+propensity score matching. 
+Clínical Trials. Within the JARS context, a clinical trial or a randomized clinical 
+trial is a research investigation that evaluates the effects of one or more health-
+related interventions (e.g., psychotherapy, medication) on health outcomes by 
+prospectively assigning people to experimental conditions. As used here, a clin-
+ical trial is a subset of a class of studies called "randomized control studies," and 
+the reporting standard s for clinical trials apply to randomized control studies as 
+well. Most clinical trials are experimental studies with random assignment, so 
+all reporting standards for those types of studies also apply. Report information 
+about the clinical trial aspect of the study. Ifthe trial has been registered (e.g., 
+on ClinicaITrials.gov), report its registration on the title page in the author note 
+(see Section 2.7) and in the texto In the Method section, provide details of any 
+site-specific considerations if the trial is a multisite trial. Provide access to the 
+study protocol; if the study is a comparison to a current "standard" treatment, 
+describe that standard treatment in sufficient detail that it can be accurately 
+replicated in any follow-up or replication study. Describe the data safetyand 
+monitoring board and any stopping rules if used. If there was a follow-up, pro-
+vide the rationale for the length ofthe follow-up periodo 
+Nonexperimental Designs. Nonexperimental studies (in which no variable is 
+manipulated) are sometimes called, among other things, "observational," "cor-
+relational," or "natural history" studies. Their purpose is to observe, describe, 
+classify, or analyze naturally occurring relationships between variables of inter-
+esto In general, describe the design of the study, methods of participant selection 
+and sampling (e.g., prospective, retrospective, case-control, cohort, cohort-
+sequential), and data sources. Define all variables and describe the comparabil-
+ity of assessment across natural groups. Indicate how predictors, confounders, 
+and effect modifiers were included in the analysis. Discuss the potentiallimita-
+tions of the study as relevant (e.g., the possibility of unmeasured confounding). 
+~ 91 
+
+
+=== PDF PAGE 111 ===
+92 ~ JOURNAL ARTICLE REPORTING STANDARDS 
+3.10 Reporting Standards for Special Designs 
+Studies with sorne special designs (e.g., longitudinal, N-of-l, replication) have 
+specific reporting standards. See Figure 3.1 for a flowchart of what standards 
+to use for your research, including studies with special designs, and links to the 
+associated standards on the JARS website. 
+Longitudinal Studies. A longitudinal study involves the observation of the same 
+individuals using the same set of measurements (or attributes) at multiple times 
+or occasions. This multiple observational structure may be combined with 
+other research designs, including those with and without experimental manipu-
+lations, randomized clinical trials, or any other study type. Reporting standards 
+for longitudinal studies must combine those for the basic underlying study 
+structure with those specific to a longitudinal study. 
+Thus, in addition to the information dictated by the underlying structure of the 
+study, report information about the longitudinal aspects of the study. For exam-
+pIe, describe sample recruitment and retention methods, including attrition at 
+each wave of data collection and how any missing data were handled. Describe 
+any contextual changes that occurred during the progress of the study (e.g., a 
+major economic recession). Report any changes in instrumentation that occurred 
+over the course of the study, such as a change in leve! of a measure of school 
+achievement. Because longitudinal studies are often reported in a segmental fash-
+ion, report where any portions of the data have been previously published and 
+the degree of overlap with the current report (see Section 1.16). 
+N-of-l Studies. Studies with N-of-l designs occur in several different forms; 
+however, the essential feature of all these designs is that the unit of study is a 
+single entity (usually a person). In sorne N-of-l studies, several individual results 
+are described, and consistency of results may be a central point of the discus-
+sion. No N-of-l study, however, combines the results from several cases (e.g., by 
+computing averages). 
+Describe the design type (e.g., withdrawal-reversal, multiple base!ine, alter-
+nating-simultaneous treatments, changing criterion) and its phases and phase 
+sequence when one or more manipulations have been used. Indicate whether 
+and how randomization was used. For each participant, report the sequence 
+actually completed and the participant's results, including raw data for target 
+behaviors and other outcomes. 
+Replication Articles. For a replication article (see Section 1.4), indicate the 
+type of replication (e.g., direct [exact, literal], approximate, conceptual [con-
+struct]). Provide comparisons between the original study and the replication 
+being reported so readers can evaluate the degree to which there may be fac-
+tors present that would contribute to any differences between the findings of 
+the original study and the findings of the replication being reported. Compare 
+recruitment procedures; demographic characteristics of participants; and 
+instrumentation, including hardware and "soft" measures (e.g., questionnaires, 
+interviews, psychological tests), modifications made to measures (e.g., transla-
+tion or back-translation), psychometric characteristics of scores analyzed, and 
+informants and methods of administration (e.g., paper-and-pencil vs. online). 
+Report results of the same analytic methods (statistical or other quantitative 
+manipulations) used in the original study, as well as any results from additional 
+or different analyses. Report in detail the rules (e.g., comparison of effect sizes) 
+
+
+=== PDF PAGE 112 ===
+Reporting Standards for Qua litative Research 
+that were used in deciding the degree to which the original results were repli-
+cated in the new study being reported. 
+3.11 Standards for Analytic Approaches 
+Although reporting standards are generally associated with entire research 
+designs, sorne quantitative procedures (e.g., structural equation modeling, 
+Bayesian techniques) are of sufficient complexity and open to such internal vari-
+ation that additional information (beyond just the name of the technique and 
+a few parameters) must be reported for readers to be able to fully comprehend 
+the analysis. Other researchers may need additional information to evaluate the 
+conclusions the authors have drawn or to replicate the analysis with their own 
+data. Standard s for structural equation modeling and Bayesian techniques are 
+on the JARS website (https://apastyle.apa.org/jars/quantitative). 
+Structural Equation Modeling. Structural equation modeling is a family of statis-
+tical techniques that involve the specification of a structural or measurement 
+model. The analysis involves steps that estimate the effects represented in the 
+model (parameters) and evaluate the extent of correspondence between the 
+model and the data. These standards are complex and call for a comprehensive 
+description of data preparation, specification of the initial model(s), estimation, 
+model fit assessment, respecification of the model(s), and reporting of results. 
+Bayesian Techniques. Bayesian techniques are inferential statistical procedures 
+in which researchers estimate parameters of an underlying distribution on the 
+basis of the observed distribution. These standard s are complex and address the 
+needs of this analytic approach, including how to specif)r the model, describe 
+and plot the distributions, describe the computation of the model, report any 
+Bayes factors, and report Bayesian model averaging. 
+3.12 Quantitative Meta-Analysis Standards 
+Quantitative meta-analyses (see Section 1.5) have specific reporting standard s 
+that are available in full on the JARS website (https://apastyle.apa.org/jars/ 
+quant-table-9.pdf). These standards are specific to meta-analyses but can eas-
+ily generalize to other quantitative research synthesis approaches. One feature 
+of meta-analyses that makes them different (in reporting demands) from other 
+study types is that the units of analysis are research reports-usually articles that 
+have been published or archived. The primary features of the included studies 
+are numerical estimates of the effect sizes of the phenomena of interest. The 
+reporting standards for quantitative meta-analyses are complex and include 
+how to describe study selection, study inclusion and exclusion criteria, and data 
+collection, as well as how to summarize the selected studies and their character-
+istics (e.g., through tables and figures; see Table 7.4 in Section 7.21 for a sample 
+summary meta-analysis table). 
+Reporting Standards for Qualitative Research 
+3.13 Basic Expectations for Qualitative Research Reporting 
+Whereas standard s for reporting information in the abstract and introduction 
+of a paper are common to all kinds of research (see Sections 3.3- 3.4), there 
+"" 93 
+
+
+=== PDF PAGE 113 ===
+94 ~ JOURNAL ARTICLE REPORTING STANDARDS 
+are specific reporting standards for qualitative research artieles, ineluding 
+the Method (Section 3.14), Findings or Results (Section 3.15), and Discussion 
+(Section 3.16) sections. Standards specific to quantitative and mixed methods 
+research are presented in Sections 3.5 to 3.12 and 3.18, respectively. ' 
+The basic expectations for reporting qualitative research are presented in 
+Table 3.2. An additional table on the JARS website describes the reporting stan-
+dards for qualitative meta-analyses (see Section 3.17). There are many qualita-
+tive procedures and methods as well as many designs and approaches to inquiry 
+in which they can be embedded; because of this variation, all the elements 
+described in Table 3.2 and the guidelines in Sections 3.14 to 3.16 may not be 
+appropriate for all qualitative studies. 
+Authors must decide how sections should be organized within the context 
+of their specific study. For example, qualitative researchers may combine the 
+Results and Discussion sections because they may not find it possible to separate 
+a given finding from its interpreted meaning within a broader contexto Qualita-
+tive researchers may also use headings that reflect the values in their tradition 
+(such as "Findings" instead of"Results") and omit ones that do noto As long as the 
+necessary information is present, the paper do es not need to be segmented into 
+the same sections and subsections as a quantitative papero 
+Qualitative papers may appear different from quantitative papers because 
+they tend to be longer. This added length is due to the following central features 
+of qualitative reporting: (a) In place of referencing statistical analyses, researchers 
+must inelude detailed rationales and procedural descriptions to explain how an 
+analytic method was selected, applied, and adapted to fit each specific question 
+or context; (b) researchers must inelude a discussion of their own backgrounds 
+and beliefs and how they managed them throughout the study; and (c) research-
+ers must show how they moved from their raw data to develop findings by add-
+ing quoted materials or other demonstrative evidence into their presentation 
+of results. Because qualitative artieles need to be lengthier to provide the infor-
+mation necessary to support an adequate review, limitations on length should 
+be more flexible than they are for quantitative artieles, which may not need to 
+inelude this information. When journal page limits conflict with the length of 
+a qualitative paper, qualitative researchers should work with journal editors to 
+reach a solution that enables an adequate review of the paper in question. 
+3.14 Qualitative Method Standards 
+The Method section of a qualitative artiele ineludes the following types of infor-
+mation (see also Table 3.2). 
+, 
+Research Design Overview. The Method section of a qualitative artiele begins 
+with a paragraph that summarizes the research designo It might mention the 
+data-collection strategies, data-analytic strategies, and approaches to inquiry 
+and provide a brief rationale for the design selected if this was not described in 
+the objectives section ofthe introduction (see Section 3.4). 
+Researcher Description. To situate the investigation within the expectations, 
+identities, and positions ofthe researchers (e.g., interviewers, analysts, research 
+team), describe the researchers' backgrounds in approaching the study, empha-
+sizing their prior understandings of the phenomena under study. Descriptions 
+of researchers relevant to the analysis could inelude (but are not limited to) their 
+
+
+=== PDF PAGE 114 ===
+Reporting Standards for Qualitative Research 
+C\.v 
+95 
+. Table 3.2 Qualitative Design Reporting Standards (JARS-Qual) 
+Title Page 
+Title 
+Identify key issues/topic underconsideration. 
+Author Note 
+o 
+Acknowledge funding sources or contributors. 
+o 
+Acknowledge conflicts of interest, if any. 
+Abstract 
+Sta te the problem/question/objectives under investigation. 
+Indicate the study design, including types of participants or data sources, analytic strategy, main results/ 
+findings, and main implications/significance. 
+Identify five keywords. 
+Guidance for Authors 
+-
+Consider including at least one keyword that describes the method and one that describes the types 
+of participants or phenomena under investigation. 
+-
+Consider describing your approach to inquiry when it will facilitate the review process and intelligibility 
+of your papero If your work is not grounded in a specific approach to inquiry or your approach would 
+be too complicated to explain in the allotted word count, however, it would not be advisable to pro-
+vide explication on this point in the abstracto 
+Introduction 
+Description of Research Problem or Question 
+o 
+Frame the problem or question and its contexto 
+o 
+Review, critique, and synthesize the applicable literature to identify key issues/debates/theoretical frame-
+works in the relevant literature to clarify barriers, knowledge gaps, or practical needs. 
+Guidance for Reviewers 
+-
+The introduction may include case examples, personal narratives, vignettes, or other illustrative material. 
+5tudy Objectives/ Aims/Research Goals 
+o 
+State the purpose(s)/goal(s)/aim(s) of the study. 
+State the target audience, if specific. 
+o 
+Provide the rationale for fit of design used to investigate this purpose/goal (e.g., theory building, explana-
+tory, developing understanding, social action, description, highlighting social practices). 
+o 
+Describe the approach to inquiry, if it illuminates the objectives and research rationale (e.g., descriptive, inter-
+pretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, or pragmatic approaches). 
+Guidance for Authors 
+-
+If relevant to objectives, explain the relation of the current analysis to prior articles/publications. 
+Guidance for Reviewers 
+-
+Oualitative studies often legitimately need to be divided into multiple manuscripts beca use of journal 
+article page limitations, but each manuscript should have a separate focus. 
+-
+Oualitative studies tend not to identify hypotheses, but rather research questions and goals. 
+Method 
+Research Design Overview 
+Summarize the research design, including data-collection strategies, data-analytic strategies, and, if 
+illuminating, approaches to inquiry (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, 
+critical, postmodern, constructivist, or pragmatic approaches). 
+Provide the rationale for the design selected. 
+Guidance for Reviewers 
+-
+Method sections can be written in a chronological or narrative formato 
+-
+Although authors provide a method description that other investigators should be able to follow, it is 
+not required that other investigators arrive at the same conclusions but rather that the method descrip-
+tion leads other investigators to conclusions with a similar degree of methodological integrity. 
+
+
+=== PDF PAGE 115 ===
+96 
+C\.v 
+JOURNAL ARTICLE REPORTING STANDARDS 
+Table 3.2 Qualitative Design Reporting Standards (JARS-Qual) (continued) 
+Method (continued) 
+-
+At times, elements may be relevant to multiple sections and authors need to organize what'belongs in 
+each subsection in order to describe the methüd coherently and reduce redundancy. For instance, the 
+overview and the objectives statement may be presented in one section. 
+-
+Processes of qualitative research are often iterative versus linear, may evolve through the inquiry 
+process, and may move between data collection and analysis in multiple formats. As a result, data 
+collection and analysis sections might be combined. 
+-
+For the reasons stated previously and because qualitative methods often are adapted and combined 
+creatively, requiring detailed description and rationale, an average qualitative Method section typically 
+is longer than an average quantitative Method section. 
+Study Participants or Data Sources 
+RESEARCHER DESCRIPTION 
+Describe the researchers' backgrounds in approaching the study, emphasizing their prior understandings 
+of the phenomena under study (e.g., interviewers, analysts, or research team). 
+• 
+Describe how prior understandings of the phenomena under study were managed and/or influenced the 
+research (e.g., enhancing, limiting, or structuring data collection and analysis). 
+Guidance for Authors 
+-
+Prior understandings relevant to the analysis could inelude, but are not limited to, descriptions of 
+researchers' demographic/cultural characteristics, credentials, experience with phenomena, training, 
+values, and/or decisions in selecting archives or material to analyze. 
+Guidance for Reviewers 
+-
+Researchers differ in the extensiveness of reflexive self-description in reports. It may not be possible for 
+authors to estimate the depth of description desired by reviewers without guidance. 
+PARTICIPANTS OR OTHER DATA SOURCES 
+• 
+Provide the numbers of participants/documents/events analyzed. 
+• 
+Describe the demographics/cultural information, perspectives of participants, or characteristics of data 
+sources that might influence the data collected. 
+Describe existing data sources, if relevant (e.g., newspapers, internet, archive). 
+Provide data repository information for openly shared data, if applicable. 
+Describe archival searches or process of locating data for analyses, if applicable. 
+RESEARCHER-PARTICIPANT RELATIONSHIP 
+Describe the relationships and interactions between researchers and participants relevant to the research 
+process and any impact on the research process (e.g., was there a relationship prior to research, are there 
+any ethical considerations relevant to prior relationships). 
+Participant Recruitment 
+RECRUITMENT PROCESS 
+Describe the recruitment process (e.g., face-to-face, telephone, mail, email) and any recruitment protocols. 
+Describe any incentives or compensation, and provide assurance of relevant ethical processes of data 
+collection and consent process as relevant (m ay inelude institutional review board approval, particular 
+adaptations for vulnerable populations, safety monitoring). 
+Describe the process by which the number of participants was determined in relation to the study designo 
+Provide any changes in numbers through attrition and final number of participants/sources (jf relevant, 
+refusal rates or reasons for dropout). 
+Describe the rationale for decision to halt data collection (e.g., saturation). 
+• 
+Convey the study purpose as portrayed to participants, if different from the purpose stated. 
+Guidance for Authors/Reviewers 
+-
+The order of the recruitment process and the selection process and their contents may be determined 
+in relation to the authors' methodological approach. Some authors will determine a selection process 
+and then develop a recruitment method based on those criteria. Other authors will develop a recruit-
+ment process and then select participants responsively in relation to evolving findings. 
+Guidance for Reviewers 
+-
+There is no agreed-upon minimum number of participants for a qualitative study. Rather, the author 
+should provide a rationale for the number of participants chosen. 
+
+
+=== PDF PAGE 116 ===
+Reporting Standards for Qua litative Research 
+C\.v 
+97 
+. Table 3.2 Qualitative Design Reporting Standards (JARS-Qual) (continued) 
+Method (contir:ued) 
+PARTICIPANT SELECTION 
+Describe the participantldata source selection process (e.g., purposive sampling methods, such as 
+maximum variation; convenience sampling methods, such as snowball selection; theoretical sampling; 
+diversity sampling) and inclusion/exclusion criteria. 
+Provide the general context for the study (when data were collected, sites of data collection). 
+If your participant selection is from an archived data set, describe the recruitment and selection process 
+from that data set as well as any decisions in selecting sets of particípants from that data seto 
+Guidance for Authors 
+-
+A statement can clarify how the number of particípants fits with practices in the design at hand, rec-
+ognizing that transferability of findings in qualitative research to other contexts is based in developing 
+deep and contextualized understandings that can be applied by readers rather than quantitative 
+estimates of error and generalízations to populations. 
+Guidance for Authors/Reviewers 
+-
+The order of the recruitment process and the selection process and their contents may be determined 
+in relation to the authors' methodological approach. Some authors will determine a selection process 
+and then develop a recruitment method based on those criteria. Other authors will develop a recruit-
+ment process and then select participants responsively in relation to evolving findings. 
+Data Collection 
+DATA-COLLECTION OR IDENTIFICATION PROCEDURES 
+State the form of data collected (e.g., interviews, questionnaires, media, observation). 
+Describe the origins or evolution of the data-collection protocol. 
+Describe any alterations of data-collection strategy in response to the evolving findings or the study 
+rationale. 
+Describe the data-selection or data-co llection process (e.g., were others present when data were 
+collected, number of times data were callected, duration of callection, context). 
+Convey the extensiveness of engagement (e.g., depth of engagement, time intensiveness of data 
+collection). 
+For interview and written studies, indicate the mean and range of the time duration in the data-collection 
+process (e.g., interviews were held for 75 to 110 min, with an average interview time of 90 min). 
+Describe the management or use of reflexivity in the data-collection process, as it illuminates the study. 
+Describe questions asked in data collection: cantent of central questions, form of questions (e.g., open 
+vs. closed). 
+Guidance for Reviewers 
+-
+Researchers may use terms for data callection that are coherent within their research approach and 
+process, such as "data identification," "data collection," or "data selection." Descriptions should be 
+provided, however, in accessible terms in relation to the readership. 
+-
+It may not be useful for researchers to reproduce all of the questions they asked in an interview, espe-
+cially in the case of unstructured or semistructured interviews as questions are adapted to the cantent 
+of each interview. 
+RECORDING AND DATA TRANSFORMATION 
+• 
+Identify data audio/visual recording methods, field notes, or transcription processes used. 
+Analysis 
+DATA-ANALYTIC STRATEGIES 
+Describe the methods and procedures used and for what purpose/goal. 
+Explicate in detail the process of analysis, including some discussion of the procedures (e.g., cading, 
+thematic analysis) following a principie of transparency. 
+• 
+Describe coders or analysts and their training, if not already described in the researcher description 
+section (e.g., cader selection, callaboration groups). 
+Identify whether cading categories emerged from the analyses or were developed a priori. 
+Identify units of analysis (e.g., entire transcript, unit, text) and how units were formed, if applicable. 
+
+
+=== PDF PAGE 117 ===
+98 
+~ JOURNAL ARTICLE REPORTING STANDARDS 
+Table 3.2 Qualitative Design Reporting Standards (JARS-Qual) (continued) 
+Method (continued) 
+Describe the process of arriving at an analytic scheme, if applicable (e.g., if one was developed before or 
+during the analysis or was emergent throughout)". 
+Provide illustrations and descriptions of the analytic scheme development, if relevant. 
+Indicate software, if used. 
+Guidance for Authors 
+-
+Provide rationales to illuminate analytic choices in relation to the study goals. 
+Guidance for Reviewers 
+-
+Researchers may use terms for data analysis that are coherent within their research approach and 
+process (e.g., "interpretation," "unitization," "eidetic analysis," "coding"). Descriptions should be 
+provided, however, in accessible terms in relation to the readership. 
+METHODOLOGICAL INTEGRITY 
+Demonstrate that the claims made from the analysis are warranted and have produced findings with meth-
+odological integrity. The procedures that support methodological integrity (i.e., fidelity and utility) typically 
+are described across the relevant sections of a paper, but they could be addressed in a separate section 
+when elaboration or emphasis would be helpful. Issues of methodological integrity include the following: 
+-
+Assess the adequacy of the data in terms of the ability to capture forms of diversity most relevant to 
+the question, research goals, and inquiry approach. 
+-
+Describe how the researchers' perspectives were managed in both the data collection and analysis 
+(e.g., to limit their effect on the data collection, to structure the analysis). 
+-
+Demonstrate that findings are grounded in the evidence (e.g., using quotes, excerpts, or descriptions 
+of researchers' engagement in data collection). 
+-
+Demonstrate that the contributions are insightful and meaningful (e.g., in relation to the current litera-
+ture and the study goal). 
+-
+Provide relevant contextual information for findings (e.g., setting of study, information about partici-
+pants, interview question asked is presented before excerpt as needed). 
+-
+Present findings in a coherent manner that makes sense of contradictions or disconfirming evidence in 
+the data (e.g., reconcile discrepancies, describe why a conflict might exist in the findings). 
+Demonstrate consistency with regard to the analytic processes (e.g., analysts may use demonstrations of 
+analyses to support consistency, describe their development of a stable perspective, interrater reliability, 
+consensus) or describe responses to inconsistencies, as relevant (e.g., coders switching midway through 
+analysis, an interruption in the analytic process). If alterations in methodological integrity were made for 
+ethical reasons, explicate those reasons and the adjustments made. 
+• 
+Describe how support for claims was supplemented by any checks added to the qualitative analysis. 
+Examples of supplemental checks that can strengthen the research may include 
+-
+transcripts/data collected returned to participants for feedback 
+-
+triangulation across multiple sources of information, findings, or investigators 
+-
+checks on the interview thoroughness or interviewer demands 
+-
+consensus or auditing process 
+-
+member checks or participant feedback on findings 
+-
+data displays/matrices 
+-
+in-depth thick description, case examples, or illustrations 
+-
+structured methods of researcher reflexivity (e.g., sending memos, field notes, diary, logbooks, journals, 
+bracketing) 
+-
+checks on the utility of findings in responding to the study problem (e.g., an evaluation of whether a 
+solution worked) 
+Guidance for Reviewers 
+-
+Research does not need to use all or any of the checks (as rigor is centrally based in the iterative 
+process of qualitative analyses, which inherently includes checks within the evolving, self-correcting 
+iterative analyses), but their use can augment a study's methodological integrity. Approaches to inquiry 
+have different traditions in terms of using checks and which checks are most valued. 
+Describe research findings (e.g., themes, categories, narratives) and the meaning and understandings 
+that the researcher has derived from the data analysis. 
+Demonstrate the analytic process of reaching findings (e.g., quotes, excerpts of data). 
+
+
+=== PDF PAGE 118 ===
+Reporting Standards for Qualitative Research 
+~ 99 
+, Table 3.2 Qualitative Design Reporting Stan'dards (JARS-Qual) (continued) 
+Findings/Results 
+Findings/Results Subsections 
+o 
+Present research findings in a way that is compatible with the study designo 
+o 
+Present synthesizing illustration's (e.g ., diagrams, tables, models), if useful in organizing and conveying 
+findings. Photographs or links to videos can be used. 
+Guidance for Authors 
+-
+Findings presented in an artistic manner (e.g., a link to a dramatic presentation of findings) should also 
+indude information in the reporting standards to support the research presentation. 
+-
+Use quotes or excerpts to augment data description (e.g., thick, evoca ti ve description, field notes, text 
+excerpts), but these should not replace the description of the findings of the analysis. 
+Guidance for Reviewers 
+-
+The Findings section tends to be longer than in quantitative papers because of the demonstrative 
+rhetoric needed to permit the evaluation of the analytic procedure. 
+-
+Depending on the approach to inquiry, findings and discussion may be combined or a personalized 
+discursive style might be used to portray the researchers' involvement in the analysis. 
+-
+Findings mayor may not indude quantified information, depending upon the study's goals, approach 
+to inquiry, and study characteristics. 
+I Discussion 
+Discussion Subsections 
+o 
+Describe the central contributions and their significance in advancing disciplinary understandings. 
+o 
+Describe the types of contributions made by findings (e.g., challenging, elaborating on, and supporting 
+prior research or theory in the literature describing the relevance) and how findings can be best utilized. 
+o 
+Identify similarities and differences from prior theories and research findings. 
+o 
+Reflect on any alternative explanations of the findings. 
+o 
+Identify the study's strengths and limitations (e.g., consider how the quality, source, or types of the data 
+or the analytic processes might support or weaken its methodological integrity). 
+o 
+Describe the limits of the scope of transferability (e.g., what readers should bear in mind when using 
+findings across contexts). 
+Revisit any ethical dilemmas or challenges that were encountered, and provide related suggestions for 
+future researchers. 
+o 
+Consider the implications for future research, policy, or practice. 
+Guidance for Reviewers 
+-
+Accounts could lead to multiple solutions rather than a single one. Many qualitative approaches hold 
+that there may be more than one valid and useful set of findings from a given data set. 
+demographic, cultural, and/or identity characteristics; credentials; experience 
+with the phenomena under study; training; values; or decisions in selecting 
+archives or material to analyze. Describe how prior understandings of the phe-
+nomena under study were managed and/or how they influenced the research 
+(e.g., by enhancing, limiting, or structuring data collection and analysis). 
+Participants or Other Data Sources. When describing participants or data 
+sources, the following information should be reported: number of participants, 
+documents, or events that were analyzed; demographic or cultural information 
+relevant to the research topic; and perspectives of participants and character-
+istics of data sources relevant to the research topic. As applicable, data sources 
+should be described (e.g., newspapers, internet, archive). Information about 
+data repositories used for openly shared data should be reported if used. The 
+processes entailed in performing archival searches or locating data for analysis 
+should be described as well. 
+
+
+=== PDF PAGE 119 ===
+100 
+<O.v 
+JOURNAL ARTICLE REPORTING STA NDARDS 
+Qualitative researchers should report participant characteristics (listed in 
+Section 3.6) and personal history factors (e.g., age, trauma exposure, abuse his-
+tory, substance abuse history, family history, geographic history) that are rel-
+evant to the specific contexts and topics of their research (see Morse, 2008). 
+Certain characteristics hold influence across many spheres of participants' lives 
+. within a given context and would be expected in most research reports; in the 
+United States, these typically include age, gender, race, ethnicity, and socio-
+economic status, but other features may be highly relevant as well to a given 
+research question and context (e.g., sexual orientation, immigration status, dis-
+ability). The descriptions of participant characteristics should be sensitive to the 
+participants and the ways in which they understand and express their identities, 
+statuses, histories, and so forth. Chapter 5 contains further guidance on writing 
+about participant characteristics without bias. 
+In addition to participant characteristics and personal history factors, other 
+features within a study may influence the experience of a given phenomenon 
+(e.g., psychotherapy orientation in research on psychotherapists, political party 
+membership in a study on economic beliefs) and therefore are important to 
+reporto The decision of which participant characteristics and features to report 
+can be driven by a review of prior research, the researchers' experience with a 
+phenomenon, pilot interviews, study goals, contextual dynamics, and empirical 
+data that are analyzed as the data collection proceeds. In this way, reporting 
+considerations may be experientially, theoretically, and empirically driven. 
+Researcher-Participant Relationships. To increase transparency, describe the 
+relationships and interactions between researchers and participants that are rel-
+evant to the research process and any impact on the research process (e.g., any 
+relationships prior to the study, any ethical considerations relevant to prior rela-
+tionships). Existing relationships may be helpful (e.g., by increasing trust and facil-
+itating disclosure) or harmful (e.g., by decreasing trust and inhibiting disclosure), 
+so the specific dynamics of the relationships should be considered and reported. 
+Participant Recruitment. There is no minimum number of participants for a 
+qualitative study (see Levitt et al., 2017, for a discussion on adequacy of data 
+in qualitative research). Authors should provide a rationale for the number of 
+participants chosen, often in light of the method or approach to inquiry that is 
+used. Sorne studies begin with researchers recruiting participants to the study 
+and then selecting participants from the pool that responds. Other studies 
+begin with researchers selecting a type of participant pool and then recruit-
+ing from within that pool. The content of Method sections should be ordered 
+to reflect the study's process. Specifically, participant selection might follow 
+participant recruitment or vice versa; thus, discussion of the number of par-
+ticipants is likely to be placed in reference to whichever process carne second. 
+Recruitment Process. Report the method of recruitment (e.g., face-to-face, tele-
+phone, mail, email) and any recruitment protocols, and describe how you con-
+veyed the study purpose to participants, especially if it was different from the 
+purpose stated in the study objectives (see Section 3.4). For instance, research-
+ers might describe a broader study aim to participants (e.g., to explore partici-
+pants' experience of being on parole) but then focus their analysis in a specific 
+manuscript on one aspect of that aim (e.g., the relationships between partici-
+
+
+=== PDF PAGE 120 ===
+Reporting Standards for Qualitative Research 
+~ 101 
+'pants and parole officers). Provide details on any incentives or comperisation 
+given to participants" and state relevant ethical pro ces ses of data collection 
+and consent, potentially describing institutional review board approval, any 
+adaptations for vulnerable populations, or safety monitoring practicés. Pres-
+ent the process for determining the number of participants in relation to the 
+study design (e.g., approaches to inquiry, data-collection strategies, data-
+analytic strategies). Any changes in this number through attrition (e.g., refusal 
+rates, reasons for dropout) and the final number of participants or sources 
+should be conveyed, as should the rationale for decisions to halt data collection 
+, (e.g., saturation). 
+Participant Selection. To describe how participants were selected from within an 
+identified group, explain any inclusion and/or exclusion criteria as well as the 
+participant and/or data source selection process that was used. This selection 
+process can consist of purposive sampling methods, such as maximum variation; 
+convenience sampling methods, such as snowball selection; theoretical sampling; 
+or diversity sampling. Provide the general context for your study (e.g., when data 
+were collected, sites of data collection). If you selected participants from an 
+archived data set, describe the recruitment and selection process for that data set 
+and any decisions affecting the selection of participants from that data seto 
+Data Colleetion. Researchers may use terms for data eollection that are coher-
+ent with their research approach and process, su eh as "data identification," "col-
+lection," or "selection." Descriptions should be provided, however, in terms that 
+are accessible to readers. 
+Data-Collection or Identification Procedures. In addition to describing the form 
+of data collected (e.g., interviews, questionnaires, media, observation), con-
+vey any alterations to the data-collection strategy (e.g., in response to evo lv-
+ing findings or the study rationale). It may not be useful to reproduce all of the 
+questions asked in an interview, especially in the case of unstructured or semi-
+structured interviews in which questions are adapted to the content of each 
+interview. The content of central or guiding questions should be communicated, 
+however, and the format of the questions can be described (e.g., open questions, 
+nonleading paraphrases, written prompts). Describe the process of data selec-
+tion or data collection (e.g., whether others were present when data were col-
+lected, number of times data were collected, duration of collection, context). 
+Convey the extensiveness of the researchers' engagement (e.g., depth of engage-
+ment, time intensiveness of data collection). Describe the management or use of 
+reflexivity in the data-collection process when it illuminates the study. 
+Recording and Data Transformation. Identif)r how data were recorded for analysis 
+and explain whether and how data were transformed. This might indude a state-
+ment regarding audio or visual recording methods, field notes, or transcription. 
+Analysis. The two primary topics to report in the description of qualitative 
+analyses are the data analysis and the establishment of methodological integ-
+rity. Researchers may use terms for data analysis that are coherent within their 
+research approach and process (e.g., "interpretation;' "unitization," "eidetic anal-
+ysis," "coding"). Descriptions should be provided, however, in terms that are 
+accessible to readers. 
+
+
+=== PDF PAGE 121 ===
+102 ~ JOURNAL ARTICLE REPO RTING STANDARDS 
+Data-Analytic Strategies. Describe the methods and procedures of data analysis 
+and the purpose or goal for which they were used. Explain in detail the pro-
+cess of analysis. Describe the process of arriving at an analytic approach (e.g., 
+whether a set of categories of coding was developed before or during the analy-
+sis, whether findings emerged from an inductively driven process of analysis; see 
+the glossary on the JARS website at https://apastyle.apa.org/jars/glossary). Also 
+include a discussion of analytic procedures (e.g., coding, thematic analysis) and 
+a description of coders or analysts and their training if not already described in 
+the researcher description section. In this description, identif)r units of analysis 
+(e.g., entire transcript, unit, text) and how units were formed, if applicable. Indi-
+cate whether any categories or codes emerged from the analyses or were devel-
+oped a priori, and outline the process used in each case. Provide illustrations 
+and descriptions of their development, if relevant. Indicate software, if used. 
+Methodological Integrity. Highlight procedures that support methodological 
+integrity throughout the paper or summarize central points in a separate sec-
+tion ofthe Method section when elaboration or emphasis would be helpful (for 
+more on methodological integrity, see Levitt et al., 2017, and the glossary on the 
+JARS website at https://apastyle.apa.org/jars/glossary). Demonstrate that the 
+claims made from the analysis are warranted. Highlight key features of method-
+ological integrity, as foHows: 
+• adequacy: Assess the adequacy of the data in terms of their ability to capture 
+forms of diversity most relevant to the research questions, research goals, 
+and inquiry approach. 
+• researchers' perspectives: Describe how the researchers' perspectives were 
+managed in both the data coHection and the analysis (e.g., to limit their effect 
+on the data coHection, to structure the analysis). 
+• groundedness: Demonstrate that findings are grounded in the evidence (e.g., 
+using quotes, excerpts, or descriptions of researchers' engagement in data 
+coHection). 
+• meaningfulness: Demonstrate that the contributions are insightful and 
+meaningful (e.g., in relation to the current literature and the study goals). 
+• context: Provide relevant contextual information for findings (e.g., setting 
+of the study, information about participants; present the interview question 
+asked before an excerpt as needed). 
+• coherence: Present findings in a coherent manner that makes sense of con-
+tradictions or disconfirming evidence in the data (e.g., reconcile discrepan-
+cies, describe why a conflict might exist in the findings). 
+• consistency: As relevant, comment on consistency with regard to the analytic 
+processes, especiaHy in the face of changing conditions or contexts (e.g., use 
+demonstrations of analyses to support consistency or to describe the devel-
+opment of a stable perspective, such as through the use of interrater reliability 
+or consensus), or describe responses to inconsistencies (e.g., coders switching 
+in the middle of analysis, an interruption in the analytic process). 
+Support for claims of methodological integrity may be supplemented by any 
+checks added to the qualitative analysis. Approaches to inquiry have different 
+traditions in terms of using checks, and researchers do not need to use aH or 
+any of the checks, but their use can augment a study's methodological integ-
+
+
+=== PDF PAGE 122 ===
+Reporting Standards for Oualitative Research 
+~ 103 
+rity. The following are examples of supplemental checks that can strengthen the 
+research: 
+• transcripts or data returned to participants for feedback; 
+• triangulation acrass multiple sources of information, findings, or investigators; 
+• checks on interview thoraughness or interviewer demands; 
+• consensus or auditing processes; 
+• member checks or participant feedback on findings; 
+• data displays or matrices; 
+• in-depth thick description, case examples, and illustrations; 
+• structured methods of researcher reflexivity (e.g., memos, field notes, log-
+books, diaries, journals, bracketing); and 
+• checks on the utility of findings in responding to the study problem (e.g., 
+evaluation ofwhether a solution worked). 
+3.15 Qualitative Findings or Results Standards 
+In qualitative research papers, findings may or may not include quantified infor-
+mation, depending on the study's goals, approach to inquiry, and study char-
+acteristics. Note that the heading "Findings" may be used rather than "Results." 
+Descriptions of Both the Development of Findings and the Findings Them-
+selves. Describe research findings (e.g., themes, categories, narratives) and the 
+meaning and understandings that the researchers derived from the data analy-
+sis in relation to the purpose of the study. Descriptions of results often include 
+quotes, evidence, or excerpts that demonstrate the pracess of data analysis and 
+of reaching findings (e.g., thick, evocative description; field notes; text excerpts). 
+These should not replace the description of the findings of the analysis, how-
+ever. Instead, balance these illustrations with text descriptions that make clear 
+the meanings drawn fram individual quotes or excerpts and how they answer 
+the study question. 
+Compatibility With Study pesign. Findings should be presented in a manner 
+that is compatible with the study designo For instance, findings of a graunded 
+theory study might be described using categories organized in a hierarchical 
+form and marked by discrete divisions, whereas findings of an ethnographic 
+study might be written in a chronological narrative formato Also, findings should 
+be written in a style that is coherent with the approach to inquiry used. 
+Depictions of Findings. Qualitative findings can be presented in various ways. 
+Illustrations (e.g., diagrams, tables, models; see Chapter 7) may be used to orga-
+nize and convey findings. Photographs or links to videos can be used as well (see 
+Sections 2.15 and 7.30). Findings presented in an artistic manner (e.g., link to a 
+dramatic presentation), however, should also include the information called for 
+in the reporting standards to support the research presentation and a description 
+that clarifies the analytic pracess and meanings drawn fram the findings. 
+3.16 Qualitative Discussion Standards 
+The purpose of a qualitative Discussion section is to communicate the con-
+tributions of the study in relation to the prior literature and the study goals. 
+In this process, the interpretations of the findings are described in a way that 
+
+
+=== PDF PAGE 123 ===
+104 ~ JOURNAL ARTICLE REPORTING STANDARDS 
+takes into account the limitations of the study as weIl as plausible alternative 
+explanations. The Discussion section conveys applications of your findings and 
+provides directions for future investigators. IEyou present multiple studies, dis-
+cuss the findings in the order in which they are presented within the paper. 
+Interpreting the Meaning ofYour Findings. Instead of simply restating results, 
+a good Discussion section develops readers' understanding of the issues at hand. 
+To do this, describe the central contributions of your research and their sig-
+nificance in advancing disciplinary understandings. Identifying similarities and 
+differences from prior theories and research findings will help in this process. 
+Describe the contributions the findings make (e.g., elaborating on, chaIlenging, 
+or supporting prior research or theory) and how findings can be best utilized. 
+Reflect on any alternative explanations of the findings to clarify the strengths and 
+weaknesses of the explanation that you selected. More than one valid or useful 
+set of findings may emerge fram a given data seto It is not considered a drawback 
+for there to be more than one possible interpretation because researchers may 
+centralize different processes or perspectives; however, findings should remain 
+grounded in the empirical analysis of the data. 
+Limitations and Strengths. Include a subsection to identify the strengths and 
+limitations of the study (e.g., consider how the quality, source, or types of data 
+or the analytic processes might support or weaken the study's methodological 
+integrity, reliability, or validity). Within this subsection, describe the limits of 
+the scope of generalizability or transferability (e.g., issues readers should con-
+sider when using findings across contexts). 
+Study Implications. Convey to readers how your findings might be used and 
+their implications. In this process, you might outline emerging research ques-
+tions, theoretical insights, new understandings, or methodological designs that 
+advantage the conceptualization, implementation, review, or reporting of future 
+studies. In addition, implications for policy, clinical practice, and advocacy can 
+be communicated to assist readers in implementing your findings. 
+3.17 Qualitative Meta-Analysis Standards 
+Qualitative meta-analyses (see Section 1.5) have unique reporting standards 
+that are available in fuIl on the JARS website (https://apastyle.apa.org/jars/qual-
+table-2.pdf). Two features of qualitative meta-analysis reporting highlighted in 
+this section are reporting on the aggregative process and reporting situatedness. 
+Reporting on the Aggregative Process. The methodological integrity of the 
+results of meta-analyses rests largely on the extent to which those carrying out 
+the analysis can detail and defend the choices they made of studies to review 
+and the process they undertook to weigh and integrate the findings of the stud-
+ies. Authors of meta-analyses often aggregate qualitative studies from multiple 
+methodological or theoretical approaches, and they must communicate the 
+approaches of the studies they reviewed as well as their own approach to sec-
+ondary data analysis. Qualitative meta-analysis involves the interpretive aggre-
+gation of thematic findings rather than reanalysis of primarydata. Forms of 
+qualitative meta-analysis range on a continuum fram assessing the ways findings 
+do or do not replicate each other to arranging interpreted findings into narra-
+tive accounts that relate the studies to one another. Authors of meta-analyses 
+
+
+=== PDF PAGE 124 ===
+Reporting Standards for Mixed Methods Research 
+~ 105 
+enhance their fidelity to the findings by considering the contradictions and 
+ambiguities within and across studies. 
+Reporting Situatedness. Another factor that distihguishes qualitative meta-
+analyses from primary qualitative analyses is that they often include an exam-
+ination of the situatedness of the authors of the primary studies reviewed (e.g., 
+the perspectives of the primary researchers as well as their social positions and 
+contexts and their studies' reflection ofthese perspectives). Situatedness can be 
+considered in the Findings/Results or Discussion section and may be presented 
+narratively or in tables when simplifying the presentation of trends. See the 
+. online table for complete information on reporting qualitative meta-analyses. 
+Reporting Standards for Mixed Methods Research 
+3.18 Basic Expectations for Mixed Methods Research Reporting 
+Whereas standards for reporting information in the abstract and introduction 
+of a paper are common to all kinds of research (see Sections 3.3-3.4), there are 
+specific reporting standards for mixed methods research articles. The basic 
+expectations for reporting mixed methods research are presented in Table 3.3. 
+Standards specific to quantitative and qualitative research are presented in Sec-
+tions 3.5 to 3.12 and 3.13 to 3.17, respectively. 
+The inherent assumption of mixed methods research is that the combined 
+qualitative findings and quantitative results lead to additional insights not gleaned 
+from the qualitative or quantitative findings alone (Creswell, 2015; Greene, 2007; 
+Tashakkori & Teddlie, 2010). In mixed methods research, the thoughtful integra-
+tion of qualitative findings and quantitative results leads to a deeper understand-
+ing of the data and enhanced insights. In addition, authors can publish multiple 
+papers from a single mixed methods study, such as a qualitative study paper, a 
+quantitative study paper, and a mixed methods overview papero 
+Incorporating Both Quantitative and Qualitative Standards. The thoughtful 
+and robust use of mixed methods requires researchers to meet the standards 
+of both quantitative and qualitative research methodology in the design, imple-
+mentation, and reporting stages. To this end, various mixed methods designs 
+have emerged in the literature (Creswell & Plano Clark, 2017), and they help 
+inform the procedures used in reporting studies (e.g., convergent design, explor-
+atory sequential design, explanatory sequential design). Typically, additional 
+mixed methods standard s also need to be met along with quantitative and qual-
+itative standards. Authors may use their discretion in presenting the sequence 
+of studies but are encouraged to present them in a way that shows a logical 
+progression of narrative as well as an audit trail (Merriam & Tisdell, 2016). 
+Reflecting on the Gains From Integration. The standards for mixed methods 
+designs emphasize the need to not only present both qualitative and quantita-
+tive aspects of the research but also describe their integration throughout the 
+sections of the papero The mixed methods guidelines assist authors in describ-
+ing the combination of qualitative and quantitative methods. Authors should 
+convey not only how the qualitative and quantitative methods contribute to the 
+study goals but also how they enhance one another to provide a greater depth 
+of understanding or further the research aims. 
+
+
+=== PDF PAGE 125 ===
+106 
+~ JOURNAL ARTICLE REPORTING STANDARDS 
+Table 3.3 Mixed Methods Design Reporting Standards (JARS-Mixed) 
+I 
+Title Page 
+Title 
+• 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Guidance for Authors 
+-
+Refrain from using words that are either qualitative (e.g., "explore," "understand") or quantitative 
+(e.g., "determinants," "correlates") beca use mixed methods stands in the middle between qualitative 
+and quantitative research. 
+-
+Reference the mixed methods, qualitative methods, and quantitative methods used. 
+Author Note 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Abstract 
+• 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+• 
+Indicate the mixed methods design, including types of participants or data sources, analytic strategy, 
+main resultslfindings, and major implications/significance. 
+Guidance for Authors 
+-
+Specify the type of mixed methods design used. See the note on types of designs in the Research 
+Design Overview section of this table. 
+Consider using one keyword that describes the type of mixed methods design and one that describes 
+the problem addressed. 
+Describe your approach(es) to inquiry and, if relevant, how intersecting approaches to inquiry are 
+combined when this description will facilitate the review process and intelligibility of your papero If your 
+work is not grounded in a specific approach(es) to inquiry or your approach would be too complicated 
+to explain in the allotted word count, however, it would not be advisable to provide explication on this 
+point in the abstracto 
+Introduction 
+Description of Research Problems/Questions 
+• 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Guidance for Authors 
+-
+This section may convey barriers in the literature that suggest a need for both qualitative and quantita-
+ti ve data. 
+Guidance for Reviewers 
+-
+Theory or conceptual framework use in mixed methods varies depending on the specific mixed 
+methods design or procedures used. Theory may be used inductively or deductively (or both) in 
+mixed methods research. 
+5tudy Objectives/ Aims/Research Goals 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+State three types of research objectives/aims/goals: qualitative, quantitative, and mixed methods. Order 
+these goals to reflect the type of mixed methods design used. 
+Describe the ways approaches to inquiry were combined, as it illuminates the objectives and mixed 
+methods rationale (e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, post-
+modem, constructivist, or pragmatic approaches). 
+Guidance for Reviewers 
+-
+A mixed methods objective, aim, or goal may not be familiar to reviewers. It describes the results to 
+be obtained from using the mixed methods design type where "mixing" or integration occurs (e.g., 
+the aim is to explain quantitative survey results with qualitative interviews in an explanatory sequential 
+design). For instance, the goal of a qualitative phase could be the development of a conceptual model, 
+the goal of a quantitative phase could be hypothesis testing based upon that model, and the goal 
+of the mixed methods phase could be to generate integrated support for a theory based upon 
+quantitative and qualitative evidence. 
+
+
+=== PDF PAGE 126 ===
+Reporting Standards for Mixed Methods Research 
+C\Y 
+107 
+,Table 3.3 Mixed Methods Design.Reporting Standards (JARS-Mixed) (continued) 
+Method 
+Research Design Overvlew 
+See the JARS-Quant and JARS:-Qual Standards (Tables 3,1-3.2). 
+Explain why mixed methods research is appropriate as a methodology given the paper's goals. 
+• 
+Identify the type of mixed methods design used and define it. 
+Indicate the qualitative approach to inquiry and the quantitative design used within the mixed methods 
+design type (e.g., ethnography, randomized experiment). 
+• 
+If multiple approaches to inquiry were combined, describe how this was done and provide a rationale 
+(e.g., descriptive, interpretive, feminist, psychoanalytic, postpositivist, critical, postmodern, constructivist, 
+or pragmatic approaches), as it illuminates the mixed method in use. 
+• 
+Provide a rationale or justification for the need to collect both qualitative and quantitative data and the 
+added value of integrating the results (findings) from the two data sets. 
+Guidance for Reviewers 
+-
+Because mixed methods research is a relatively new methodology, it is helpful to provide a definition 
+of it from a major reference in the field. 
+Mixed methods research involves rigorous methods, both qualitative and quantitative. Refer to the 
+qualitative and quantitative standards for details of rigor, 
+One of the most widely discussed topics in the mixed methods literature would be research designs. 
+There is not a generic mixed methods design but rather multiple types of designs. Basic, core designs 
+inelude convergent design, explanatory sequential design, and exploratory sequential designo Although 
+the na mes and types of designs may differ among mixed methods writers, a common understanding 
+is that the procedures for conducting a mixed methods study may differ from one project to another. 
+Further, these basic procedures can be expanded by linking mixed methods to other designs (e.g., an 
+intervention or experimental trial mixed methods study), to theories or standpoints (e.g., a feminist mixed 
+methods study), or to other methodologies (e.g., a participatory action research mixed methods study). 
+PARTICIPANTS OR OTHER DATA SOURCES 
+• 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+• 
+When data are collected from multiple sources, elearly identify the sources of qualitative and quantitative 
+data (e.g., participants, text), their characteristics, and the relationship between the data sets, if there is 
+one (e.g., an embedded design). 
+• 
+State the data sources in the order of procedures used in the design type (e.g., qualitative sources first in 
+an exploratory sequential design followed by quantitative sources), if a sequenced design is used in the 
+mixed methods study. 
+Guidance for Authors 
+-
+Because multiple sources of data are collected, separate descriptions of samples are needed when 
+they differ. Atable of qualitative sources and quantitative sources is helpful. This table could inelude 
+type of data, when data were collected, and from whom. This table might also inelude study aims/ 
+research questions for each data source and anticipated outcomes of the study. In mixed methods 
+research, this table is often called an "implementation matrix." 
+-
+Rather than describe data as represented in numbers versus words, it is better to describe sources 
+of data as open-ended information (e.g., qualitative interviews) and elosed-ended information (e.g., 
+quantitative instruments). 
+RESEARCHER DESCRIPTION 
+• 
+See the JARS-Qual Standards (Table 3.2), 
+Guidance for Authors 
+-
+Because mixed methods research ineludes qualitative research, and reflexivity is often ineluded in qualita-
+tive research, we recommend statements as to how the researchers' backgrounds influence the research. 
+Guidance for Reviewers 
+-
+It is helpful to establish in a publication the researchers' experiences (or research teams' experiences) 
+with both qualitative and quantitative research as a prerequisite for conducting mixed methods research. 
+
+
+=== PDF PAGE 127 ===
+108 
+C\.v 
+JOURNAL ARTICLE REPORTING STANDARDS 
+Table 3.3 Mixed Methods Design Reporting Standards (JARS-Mixed) (continued) 
+: Method (continued) 
+Participant Recruitment 
+PARTICIPANT SAMPLlNG OR SELECTION 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Describe the qualitative and the quantitative sampling in separate sections. 
+Relate the order of the sections to the procedures used in the mixed methods design type. 
+PARTICIPANT RECRUITMENT 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Discuss the recruitment strategy for qualitative and quantitative research separately. 
+Data Collection 
+DATA-COLLECTION/IDENTIFICATION PROCEDURES 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+RECORDING AND TRANSFORMING THE DATA 
+See the JARS-Qual Standards (Table 3.2). 
+Data Analysis 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Devote separate sections to the qualitative data analysis, the quantitative data analysis, and the mixed 
+methods analysis. This mixed methods analysis consists of ways that the quantitative and qualitative 
+results were "mixed" or integrated according to the type of mixed methods design used (e.g., merged in 
+a convergent design, connected in explanatory sequential designs and in exploratory sequential designs). 
+Validity, Reliability, and Methodological Integrity 
+• 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Indicate methodological integrity, quantitative validity and reliability, and mixed methods validity or 
+legitimacy. Further assessments of mixed methods integrity are also indicated to show the quality of the 
+research process and the inferences drawn from the intersection of the quantitative and qualitative data. 
+I Findings/Results 
+Findings/Results Subsections 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Indicate how the qualitative and quantitative results were "mixed" or integrated (e.g., discussion; tables of 
+joint displays; graphs; data transformation in which one form of data is transformed to the other, su eh as 
+qualitative text, codes, or themes transformed into quantitative counts or variables). 
+Guidance for Authors 
+-
+In mixed methods research, the Findings section typically ineludes sections on qualitative findings, 
+quantitative results, and mixed methods results. This seetion should mirror the type of mixed methods 
+design in terms of sequence (i.e., whether quantitative strand or qualitative strand comes first; if both are 
+gathered at the same time, either qualitative findings or quantitative results could be presented first). 
+Guidance for Reviewers 
+-
+In mixed methods Results sections (or in the Discussion section to follow). authors are conveying their 
+mixed methods analysis through "joint display" tables or graphs that array qualitative results (e.g., 
+themes) against the quantitative results (e.g., categorical or continuous data). This enables researchers 
+to directly compare results or to see how results differ between the quantitative and qualitative strands. 
+i D' 
+. 
+I 
+, 
+Iscusslon 
+Discussion Subsections 
+See the JARS-Quant and JARS-Qual Standards (Tables 3.1-3.2). 
+Guidance for Authors 
+-
+Typically, the Discussion section, like the Method and Findings/Results, mirrors in sequence the proce-
+dures used in the type of mixed methods designo It also reflects on the implications of the integrated 
+findings from across the two methods. 
+Note. JARS-Qual = qualitative journal article reporting standards; JARS-Quant = quantitative journal article reporting standards. 
+
+
+=== PDF PAGE 128 ===
+
+
+=== PDF PAGE 129 ===
+Contents 
+EFFECTIVE SCHOLARLY WRITING 
+Continuity and Flow 
+4.1 Importance of Continuity and Flow 
+111 
+4.2 Transitions 
+112 
+4.3 Noun Strings 
+112 
+Conciseness and Clarity 
+4.4 Importance of Conciseness and Clarity 
+113 
+4.5 Wordiness and Redundancy 
+114 
+4.6 Sentence and Paragraph Length 
+115 
+4.7 Tone 
+115 
+4.8 Contractions and Colloquialisms 
+116 
+4.9 Jargon 
+116 
+4.10 Logical Comparisons 
+116 
+4.11 Anthropomorphism 
+117 
+111 
+111 
+113 
+GRAMMAR ANO USAGE 
+117 
+Verbs 
+117 
+4.12 Verb Tense 
+117 
+4.13 Active and Passive Voice 
+118 
+4.14 Mood 
+119 
+4.15 Subject and Verb Agreement 
+119 
+Pronouns 
+120 
+4.16 First- Versus Third-Person Pronouns 
+120 
+4.17 Editorial "We" 
+120 
+4.18 Singular "They" 
+120 
+4.19 Pronouns for People and Animals ("Who" vs. "That") 
+121 
+4.20 Pronouns as Subjects and Objects ("Who" vs. "Whom") 
+122 
+4.21 Pronouns in Restrictive and Nonrestrictive Clauses 
+("That" vs. "Which") 
+122 
+Sentence Construction 
+4.22 Subordinate Conjunctions 
+123 
+4.23 Misplaced and Dangling Modifiers 
+123 
+4.24 Parallel Construction 
+124 
+Strategies to Improve Your Writing 
+4.25 Reading to Learn Through Example 
+126 
+4.26 Writing From an Outline 
+126 
+4.27 Rereading the Draft 
+126 
+4.28 Seeking Help From Colleagues 
+126 
+4.29 Working With Copyeditors and Writing Centers 
+126 
+4.30 Revising a Paper 
+127 
+123 
+12~ 

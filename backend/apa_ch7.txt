@@ -1,0 +1,3092 @@
+=== PDF PAGE 211 ===
+7 
+TABLES ANO FIGURES 
+Tables and figures enable authors to present a large amount of information 
+efficiently and to make their data more comprehensible. Tables usually show 
+numerical values (e.g., means and standard deviations) or textual information 
+(e.g., lists of stimulus words, responses from participants) arranged in an orderly 
+display of columns and rows. A figure may be a chart, graph, photograph, draw-
+ing, or any other illustration or non textual depiction. At times, the boundary 
+between tables and figures may be unclear; in general, tables are characterized 
+by a row-column structure, and any type of illustration or image other than a 
+table is considered a figure. In this chapter, we discuss the purpose of tables 
+and figures; principIes for designing, preparing, placing, and reproducing them; 
+and guidelines for creating and formatting tables and figures in APA Style, with 
+examples of various types. 
+General Guidelines for Tables and Figures 
+7.1 Purpose of Tables and Figures 
+The primary purpose of any table or figure is to facilitate readers' understanding 
+ofthe work. For example, tables and figures can be used to summarize informa-
+tion (e.g., a theoretical model, qualities of studies included in a meta-analysis), to 
+present the results of exploratory data analysis or data mining techniques (e.g., a 
+factor analysis), to estimate sorne statistic or function (e.g., a nomograph), or to 
+share full trial-Ievel data (for more on data sharing, see Section 1.14). Although 
+tables and figures attract attention, they should not be used for mere decoration 
+in an academic papero Instead, every table and figure should serve a purpose. 
+7.2 Design and Preparation of Tables and Figures 
+When preparing atable or figure, first determine the purpose of the display 
+and the relative importance of that purpose (see Section 7.1); then, select a 
+195 
+
+=== PDF PAGE 212 ===
+196 ~ TABLES AND FIGURES 
+format that supports that purpose (see Sections 7.21 and 7.36 for sample tables 
+and figures, respectively). For example, if the purpose is to illustrate a the-
+oretical model, a chart is most likely the best option. Sometimes, multiple 
+approaches are possible; forexample, if your goal is to present group scores, . 
+atable would allow readers to see each group's exact scores, whereas a figure 
+would emphasize similarities or differences between groups. When possible, 
+use a standard, or canonical, form for atable or figure (examples are shown in 
+Sections 7.21 and 7.36). 
+Design tables and figures with readers in mind. Communicate findings 
+clearly while also creating attractive visual displays. Prepare tables and fig-
+ures with the same care as the text of the paper; changes in text often demand 
+changes in tables and figures, and a mismatch between data presented in the 
+text versus in tables and figures may result in the need for a correction notice 
+for published articles or in a lower grade for student assignments if the error 
+is not corrected before publication or submission, respectively. Use the fol-
+lowing principIes when designing tables and figures: 
+• Label all columns in tables. 
+• Label all elements in figure images (e.g., label the axes of a graph). 
+• Place items that are to be compared next to each other. 
+• Place labels next to the elements they are labeling. 
+• In figure images, use sans serif fonts that are large enough to be read without 
+magnification. 
+• Design the table or figure so it can be understood on its own (meaning read-
+ers do not have to refer to the text to understand it). Define abbreviations 
+used in the table or figure even if they are also defined in the text (see Section 
+7.15 for sorne exceptions). 
+• Tables or figures designated as supplemental materials should also contain 
+enough information to be understood on their own. 
+• Avoid decorative flourishes, which are distracting and can interfere with 
+readers' comprehension; instead, ensure thát every element supports the 
+goal of effective communication. 
+7.3 Graphical Versus Textual Presentation 
+Be selective in choosing how many tables and figures to include in your paper. 
+Readers may lose track of your message if there are a large number of tables 
+and figures; for example, if many tables and figures accompany a small amount 
+of text, it can cause problems with page layout for published articles. More-
+over, graphical presentation is not always optimal for effective communica-
+tion. For example, the results of a single statistical significance test or a few 
+group means and standard deviations can be presented in texto 
+The one-way ANOVA, F(1, 136) = 4.86, MSE = 3.97, P = .029, 112 = .03, demonstrated ... 
+Scores on the insomnia measure (M = 4.08, SD = 0.22) were ... 
+Atable or figure is an effective choice to present the results of multiple sta-
+tistical tests or many descriptive statistics (e.g., when reporting the results of 
+numerous analyses ofvariance [ANOVAs] or summarizing participant demo-
+
+=== PDF PAGE 213 ===
+General Guidelines lar Ta bles and Figures 
+~ 197 
+, graphic data). It may also be possible to combine several smaller tables or fig-
+ures with similar contentinto one larger table or figure. Consider how the table 
+or figure augments or supplements the texto For example, when the components 
+of a theoretical model are discussed in the text, a figure may help summarize the 
+model; the value of the figure is the visual summaq However, tables or figures 
+that are redundant with the text may be unnecessary. 
+7.4 Formatting Tables and Figures 
+Tables and figures follow the same structure: They have atable or figure num-
+. ber, atable or figure title, a body (for tables) or an image (for figures), and table 
+or figure notes as needed. Tables and figures may be produced in many different 
+file formats; publishers or instructors may limit the formats they accept. 
+Use the tables function ofyour word-processing program to create tables. If 
+you copy and paste tables from another program (e.g., SPSS, Excel) into your 
+word-processing program, you may need to adjust the formatting to comply 
+with APA Style guidelines. Do not use the tab key or space bar to manually 
+create the look of atable; this approach is prone to alignment errors and is 
+especially problematic if the table will be typeset for publication. 
+Figures can be created in a variety of ways using many programs, such as Excel, 
+PowerPoint, Photoshop, Illustrator, MATLAB, and Inkscape. Regardless of the 
+program used to create the figure, the output should be of sufficient resolution 
+to produce high-quality images. TIFF and EPS files are recommended for figures 
+that are to be submitted for publication; file formats such as JPG or PNG are also 
+acceptable for other works produced in APA Style (e.g., classroom assignments). 
+Sorne types of figures require higher resolution than others; for example, line art 
+requires finer detail than a photograph. Ensure that the format used supports the 
+resolution needed for clear presentation of the image. Check the author guide-
+lines for the journal or publisher to which you are submitting your work for spec-
+ifications (for APA journals, see the Journal Manuscript Preparation Guidelines 
+at http://on.apa.orgIWDtxdW). 
+7.5 Referring to Tables and Figures in the Text 
+In the text, refer to every table and figure by its number- known as a callout (see 
+Sections 7.10 and 7.24, respectively, for how to assign numbers for tables and fig-
+ures that accompany the main text; see Section 2.14 for how to assign numbers 
+for tables and figures that appear in appendices). When you call out atable or 
+figure, also tell readers what to look for in that table or figure. 
+As shown in Table 1, the demographic characteristics ... 
+Figure 2 shows the event-related potentials .. . 
+. . . of the results of the testing (see Table 3) . 
+. . . of the comparisons (see Figures 4 and 7). 
+Do not write "the table above" (or "below") or "the figure on page 32." Page 
+numbers often shift during the writing process, which can lead to errors. For 
+published work, final page numbers and the placement of tables and figures 
+on the page are determined during typesetting. Referring to tables and figures 
+by number rather than by location on the page also helps readers who access 
+a work using assistive technologies such as screen readers. Authors seeking 
+publication also should not write "place Table 1 here" or "put Figure 2 here"; 
+
+=== PDF PAGE 214 ===
+198 ~ TABLES AND FIGURES 
+the typesetter will determine the position of tables and figures in relation to 
+the callouts. 
+7.6 Placement of Tables and Figures 
+There are two options for the placement of tables and figures in a papero The 
+first option is to place all tables and figures on separate pages after the refer-
+ence list (with each table on a separate page followed by each figure on a sép-
+arate page). The second option is to embed each table and figure within the 
+text after its first callout. Follow the specifications of the journal publisher or 
+of the classroom assignment for the placement of tables and figures. Placing 
+all tables and figures on separate pages after the reference list may be prefer-
+able for manuscripts being submitted for publication to facilitate copyediting; 
+either approach is appropriate for student assignments or when the placement 
+for tables and figures has not been specified. Dissertations and theses may have 
+different specifications for the placement of tables and figures; for example, 
+in sorne university guidelines, multiple tables or figures may be placed on the 
+same page at the end of the document as long as they fit. When formatting your 
+dissertation or thesis, abide by the guidelines specified by your advisor and/or 
+university. Authors seeking publication may need to submit figures as high-res-
+olution files separate from the manuscript regardless of where the figures are 
+located within the manuscript. 
+Align all tables and figures with the left margin regardless of where they 
+appear in the papero When embedding atable or figure within the text, position 
+it after a full paragraph, ideally the paragraph where it is first called out. Place 
+the table or figure so that it fits on one page if possible (see Section 7.18 for tables 
+longer or wider than a page). lf text appears on the same page as atable or figure, 
+add a double-spaced blank line between the text and the table or figure so that 
+the separation between the text and table or figure is easier to see. Put a short 
+table or small figure at the beginning or end of a page rather than in the middle. 
+Tables and figures that support but are not essential to the text may be placed 
+in one or more appendices. Tables and figures may appear within an appendix 
+that also contains text, or atable or figure may constitute a whole appendix by 
+itself (see Section 2.14). Tables and figures can also be placed in supplemental 
+materials when they would enrich understanding of the material presented in 
+the article but are not essential to a basic understanding or cannot be fully dis-
+played in print (see Section 2.15). lftables or figures are included as supplemen-
+tal materials, call them out in the text but describe them only briefly (e.g., write 
+"see Table 1 in the supplemental materials for the list of stimuli"). 
+7.7 Reprinting or Adapting Tables and Figures 
+lfyou reprint or adapt atable or figure from another source in your paper (e.g., 
+atable from your own published work, an image you found on the internet), 
+you must include a copyright attribution in the table note or figure note indi-
+cating the origin of the reprinted or adapted material in addition to a reference 
+list entry for the work. You may also need to obtain permission from the copy-
+right holder to reprint or adapt the table or figure. Table 7.14 in Section 7.21 
+and Figures 7.3, 7.14, and 7.21 in Section 7.36 show copyright attributions for an 
+adapted table when permission is not necessary, a reprinted figure when per-
+
+=== PDF PAGE 215 ===
+Tables 
+C\.v 
+199 
+, mission is not necessary, a reprinted figure in the public domain, and a figure 
+reprinted with permission, respectively. See Sections 12.14 to 12.18 for further 
+information on copyright and permission and for more copyright attribution 
+formats and examples. 
+Tables 
+7.8 Principies of Table Construction 
+Tables should be integral to the text but designed so that they are concise and 
+can be understood in isolation. The principIe of conciseness is relevant not only 
+for tables induded with the main text but also for tables to be placed in appen-
+dices and supplemental materials. Although supplemental tables may be lon-
+ger and more detailed than tables that accompany the main text, they must be 
+directly and dearly related to the content of the artide (see Section 2.15). 
+AH tables are meant to show something specific; for example, tables that 
+communicate quantitative data are effective only when the data are arranged 
+so that their meaning is obvious at a glance (Wainer, 1997). Often, the same data 
+can be arranged in different ways to emphasize different features of the data, 
+and which arrangement is better depends on your purpose. Above aH, table lay-
+out should be logical and easily grasped by readers. Table entries that are to 
+be compared should be next to one another. In general, different indices (e.g., 
+means, sample sizes) should be presented in different rows or columns. Place 
+variable and condition labels dose to their values to facilitate comparison. See 
+the sample tables (Section 7.21) for examples of effective layouts. 
+7.9 Table Components 
+The basic components of a prototypical table are shown in Table 7.1 and are 
+summarized as foHows. 
+• number: The table number (e.g., Table 1) appears aboye the table in bold font 
+(see Section 7.10). 
+• title: The table title appears one double-spaced line below the table number 
+in italic title case (see Sections 6.17 and 7.11). 
+• headings: Tables may indude a variety ofheadings depending on the nature 
+and arrangement of the data. AH tables should indude column headings, 
+induding a stub heading (heading for the leftmost column). Sorne tables 
+also indude column spanners, decked heads, and table spanners (see Sec-
+tion 7.12). 
+• body: The table body indudes aH the rows and columns of atable (see Sec-
+tion 7.13). A cell is the point of intersection between a row and a column. The 
+body may be single-spaced, one-and-a-half-spaced, or double-spaced. 
+• notes: Three types of notes (general, specific, and probability) appear below 
+the table as needed to describe contents of the table that cannot be under-
+stood from the table title or body alone (e.g., definitions of abbreviations, 
+copyright attribution). Not aH tables indude table notes (see Section 7.14). 
+See Section 7.21 for sample tables. 
+
+=== PDF PAGE 216 ===
+200 ~ TA BLES A ND FIG URE S 
+Table 7.1 Basic Components of a Table 
+table number 
+column spanner: 
+heading that describes 
+the entries in two or more 
+columns in the table body 
+L-ta_b_le_ ti_tl_e __ -,~ 
+Table 1 
+Numbers of Children With and 
+stub heading: heading 
+that describes the 
+¡-.. Grade 
+Girl 
+leftmost column 
+With 
+table spanner: 
+Wave 1 
+heading that covers 
+ro-
+3 
+280' 
+the entire width 
+240 b 
+281 
+232 
+of the table body, 
+4 
+297 
+251 
+290 
+264 
+allowing for further 
+divisions 
+S 
+301 
+260 
+306 
+221 
+Total 
+878 
+751 
+877 
+717 
+stub column or stub: I 
+table spanner F=+ 
+leftmost column of the 
+3 
+201 
+table; usually lists the 
+Wave2 
+189 
+210 
+199 
+major independent or 
+4 
+214 
+194 
+236 
+210 
+predictor variables 
+S 
+221 
+216 
+239 
+213 
+Total 
+636 
+599 
+685' 
+622 
+table notes: 
+explanations to 
+supplement or 
+clarify information 
+in the table body 
+~ 
+Note. This table demonstrates the elements of a prototypical table. A 
+general note to atable appears first and contains information needed to 
+understand the table, including definitions of abbreviations (see Sections 
+7.14-7.15) and the copyright attribution for a reprinted or adapted table 
+(see Section 7.7). 
+, A specific note appears in a separate paragraph below the general note. 
+bSubsequent specific notes follow in the same paragral?h (see Section 
+7.14). 
+'A probability note (for p values) appears as a separate paragraph below 
+any specific notes; subsequent probability notes follow in the same 
+paragraph (see Section 7.14). 
+7.10 Table Numbers 
+decked heads: 
+headings that are 
+stacked, often' to 
+avoid repetition in 
+column heads 
+column heading: 
+heading that iden· 
+tifies the entries in 
+just one column in 
+the table body 
+cell: point of 
+intersection 
+between a row 
+and a column 
+table body: rows 
+and columns of 
+cells containing 
+the primary data 
+of the table 
+Number aH tables that are part of the main text (i.e., not part of an appendix or 
+supplemental materials) using Arabic numerals-for example, Table 1, Table 2, 
+and Table 3. Assign the numbers in the order in which each table is first men-
+tioned in the text, regardless of whether a more detailed discussion of the table 
+occurs elsewhere in the paper. Write the word "Table" and the number in bold 
+and flush left (Le., not indented or centered). Tables that appear in appendices 
+foHow a different numbering scheme (see Section 2.14). 
+
+=== PDF PAGE 217 ===
+Tables 
+~ 201 
+. 7.11 Table Titles 
+Give every table. a briefbut clear and explanatory title; the basic ccintent of 
+the table should be easily inferred fram the title. Write the table title,in italic 
+title case belowthe table number and double-space the table number and title. 
+Avoid overIy general and overly detailed table titles. 
+Title quality 
+Too general 
+Too detailed 
+Effective 
+Example table title 
+Relation Between College Majors and 
+Performance 
+Mean Performance Scores on Test A, 
+Test B, and Test C of Students With 
+Psycho/ogy, Physics, English, and 
+Engineering Majors 
+Mean Performance Scores of Students 
+With Different College Majors 
+Rationale 
+It is unclear what data are 
+presented in the table. 
+The title duplicates information 
+in the headings of the table. 
+The title is specific but not 
+redundant with headings. 
+Abbreviations that appear in the headings or the body of atable may be paren-
+thetically explained in the table title. 
+Hit and Fa/se-Alarm (FA) Proportions in Experiment 2 
+Abbreviations may also be defined in a general note to the table (see Section 
+7.14). Do not use a specific note to clarify an element ofthe title. 
+7.12 Table Headings 
+Headings establish the organization of information in the table and identify 
+what is in each column. Column headings describe the entries below them. 
+Table headings should be brief; if possible, the heading should be not much 
+wider than the information in the column below it. Pravide a heading for every 
+column in atable, including the stub co1umn or stub, which is the leftmost col-
+umn ofthe table (see Table 7.1 for an illustration). 
+The stub column usually lists the major independent or predictor variables. 
+In Table 7.1, for instance, the stub column lists the grades. For the stub column, 
+the heading "Variable" is often used when no other heading is suitable. Write 
+the entries in the stub column in parallel form (see Section 4.24 for guidance on 
+parallel construction). Number entries in the stub column only in a correlation 
+matrix (see Tables 7.10-7.11 in Section 7.21) or when they are referred to by num-
+ber in the texto To show subordination within the stub column, use indentation 
+rather than creating an additional column (see, e.g., Table 7.2, in which "Single," 
+"Married/Partnered," etc. are indented under the heading "Marital Status").! Set 
+indentation using the paragraph-formatting feature of your word-processing 
+program rather than by using the tab key. In typeset articles, the indentation is 
+equal to one em space; this can be approximated in draft manuscripts by setting 
+the paragraph indentation to 0.15 in. or inserting an em space from the special 
+characters menu ofyour word-processing programo 
+The headings aboye the columns to the right of the stub column identify 
+what is in each column. A co1umn heading applies to just one column; a co1-
+umn spanner is a heading that covers two or more columns, each with its own 
+column heading. Headings stacked in this way are called decked heads. Often, 
+1 Table column headings are written in sentence case in atable but in title case if they are referred to in the tex!. 
+
+=== PDF PAGE 218 ===
+202 ~ TABLES AND FIGURES 
+decked heads can be used to avoid repetition of words in column headings 
+(see Table 7.1). If possible, do not use more than two levels of decked heads. 
+More complex tables may require table spanners, which are headings within 
+the body of the table that cover the entire width of the table, 'allowing for 
+further divisions within the table when the column headings remain the same 
+(see Table 7.1). Table spanners can also be used to combine two tables, pro-
+vided they have identical column headings. 
+Any item within a column should be syntactically as well as conceptu-
+ally comparable with the other items in that column, and all items should be 
+described by the column heading. For example, a column with the heading "%" 
+would contain only percentages; numbers in that column would not be followed 
+by the percent symbol because the symbol is already in the heading (see Table 
+7.2 in Section 7.21). 
+Use sentence case for all headings in atable (see Section 6.17). Center all 
+table headings aboye their column(s). Stub headings, column headings, and col-
+umn spanners should be singular (e.g., Measure, Item) unless they refer to a 
+group (e.g., Children, Women), but table spanners may be singular or plural. 
+7.13 Table Body 
+The main part of the table, the table body, contains information organized in 
+cells. Information in atable body may be in the form of numbers, words, or a 
+mixture of both. The body of the table (including table headings) may be single-
+spaced, one-and-a-half-spaced, or double-spaced, depending on which presen-
+tation most effectively conveys information to readers (e.g., single spacing may 
+allow atable to fit on one page). If entries are longer than one line, use a hanging 
+indent of 0.15 in. or one em space. In the stub column of the table, center the 
+stub heading and align the entries flush left beneath it. If entries in this column 
+are significantly shorter than the stub heading, it is permissible to center them 
+beneath the stub heading (e.g., single-digit numbers in the stub column; see the 
+partial table later in this section for an example). The entries in all other cells 
+of the table should be centered (however, aligning them flush left is acceptable 
+if doing so improves the readability oflonger entries). Use sentence case for all 
+word entries in the table body (see Section 6.17). Numbers that appear in the 
+table body should be written as words or numerals according to the guidelines 
+in Sections 6.32 to 6.39; however, it is permissible to use numerals for all num-
+bers in tables if this would be clearer or save space. 
+Decimal Values. Express numerical values to the number of decimal places that 
+the precision of measurement justifies (see Section 6.36). If possible, carry all 
+comparable values to the same number of decimal places. Numerical values 
+should be centered in the column and may also be aligned on the decimal if 
+desired (for the published version, the typesetter will typically center values and 
+align on the decimal). 
+Empty Cells. If a cell cannot be filled because data are not applicable, leave 
+the cell blank. Use a general or specific table note if you need to explain why 
+the cell is blank or the element is inapplicable (see Section 7.14). If a cell can-
+not be filled because data were not obtained or are not reported, insert a dash 
+in that cell and explain the use of the dash in the general note to the table (see 
+Section 7.14). By convention, a dash in the main diagonal position ofa correla-
+
+=== PDF PAGE 219 ===
+Tables 
+C\.v 
+203 
+, tion matrix (see Tables 7.10-7.11 in Section 7.21) indicates the correlation of an 
+item with itself, which must be 1.00, and is simply replaced by the dash with 
+no explanation needed. 
+Conciseness. Be selective in your presentation. Do not include columns of 
+data that can be calculated easily from other columns. For example, the follow-
+ing partial table is redundant because it shows both the number of responses 
+per tri al and the total number of responses; instead, show only whichever is 
+more important to the discussion. 
+I 
+No. of responses 
+I 
+Participant 
+First trial 
+Second trial 
+Total responses 
+1 
+5 
+7 
+12 
+2 
+6 
+4 
+10 
+Citations in Tables. If atable contains citations to other works, follow the for-
+mats described in Section 8.11. Use an ampersand (&) for the word "and" in all 
+citations in tables to conserve space. Table 7.4 in Section 7.21 shows an example 
+of atable containing citations to studies included in a meta-analysis. 
+7.14 Table Notes 
+Tables may have three kinds of notes, which are placed below the body of the 
+table: general notes, specific notes, and probability notes. Table notes apply 
+only to a specific table and not to any other tableo If information in one table 
+note is true for another table, repeat the information in the notes for both tables 
+so that the tables can be understood on their own. Some tables do not require 
+table notes at all. 
+General Note. A general note qualifies, explains, or provides information relating 
+to the table as a whole and explains any abbreviations, symbols, special use of 
+italics, bold, or parentheses, and the like. The general note also includes any 
+acknowledgments that atable is reprinted or adapted from another source (see 
+Section 7.7). General notes are designated by the word "Note" (italicized) fol-
+lowed by a period (see Table 7.1 and the sample tables in Section 7.21 for exam-
+pIes). Explanations of abbreviations and copyright attributions for reprinted or 
+adapted tables appear at the end of the general note, in that order. 
+Note. Factor loadings greater than ,45 are shown in bold. M = match process; N ~ non-
+match process, 
+Specific Note. A specific note refers to a particular column, row, or cell. Specific 
+notes are indicated by superscript lowercase letters (e.g., a , b, e). Do not add spe-
+cific notes to atable title; instead, use a general note. Within each table that has 
+specific notes, order the superscripts from left to right and from top to bottom, 
+starting at the top left and beginning with the letter "a" (see, e.g., Tables 7.2, 7.10, 
+and 7.15 in Section 7.21). The corresponding specific note below the table begins 
+with the same superscript letter. Place a superscript space before the super-
+script letter in the table body (e.g., Group a). Place a superscript space after the 
+superscript letter in the specific note. This space prevents specific notes from 
+getting caught by spell-check and improves readability. 
+a n = 25. b This participant did not complete the trials. 
+
+=== PDF PAGE 220 ===
+204 ~ TA BLES AND FIGURES 
+Probability Note. A probabiliry note describes how asterisks and other symbols 
+are used in atable to indicate p values and thus the significance of the results of 
+statistical hypothesis testing. To report the results of significance testing, it is best 
+to provide the exact probabilities to two or three decimal place s (e.g., p = .023; 
+see, e.g., Tables 7.8- 7.9 in Section 7.21; see also Section 3.7 and Section 6.36). How.-
+ever, when p values are less than .001, it is acceptable to write the value as "<.001." 
+It may sometimes be difficult to report exact p values in atable becaüse 
+doing so would make the table difficult to read. An alternative to reporting 
+exact p values in atable is to use the "p <" notation. Use this notation only in 
+tables and figures (see Section 7.28 for more on figure notes), not in the text. 
+In the "p <" notation, asterisks or daggers appear after table entries to indi-
+cate that the entries have reached the established threshold for significance; 
+definitions of the asterisks and/or daggers appear in a corresponding prob-
+ability note. Use the same number of asterisks to indicate the same p val-
+ues across tables (or figures) within your paper, such as *p < .05, **p < .01, and 
+***p < .001 (see, e.g., Tables 7.10-7.11 in Section 7.21). In general, do not use 
+any p value smaller than .001. Daggers are sometimes used to indicate non-
+significant trends based on the threshold established for your study (e.g., 
+tp < .10) or to distinguish between one-tailed and two-tailed tests. Use super-
+script formatting for asterisks and daggers. In atable body (or a figure), posi-
+tion asterisks and daggers immediately after the entries they belong to, with no 
+space in between (e.g., .02*). In the probability note, place asterisks and daggers 
+immediately before the p, with no space in between (e.g., *p < .002). 
+One-Tailed Versus Two-Tailed Tests. If you need to distinguish between one-
+tailed and two-tailed tests in the same table, use an asterisk for the two-tailed 
+p values and an alternate symbol (e.g., dagger) for the one-tailed p values, and 
+specify the convention in the probability note. 
+'p < .05, two-tailed. "p < .01, two-tailed. tp < .05, one-tailed. ttp < .01, one-tailed. 
+Indicating Significant Differences Between Values. To indicate statistically sig-
+nificant differences between two or more table values-for example, when com-
+paring values with post hoc tests such as Tukey's honestly significant difference 
+(HSD) test, Bonferroni procedure, Scheffé method, Fisher's least significant dif-
+ference, or Duncan's new multiple range test-use lowercase subscript letters 
+(see Table 7.9 in Section 7.21 for an example). Explain the use ofthe subscripts in 
+the table's general note, as in the following example: 
+Note. Means sharing a common subscript are not significantly different at a = .01 accord-
+ing to Tukey's honestly significant difference procedure. 
+Formatting of Notes. Begin each kind of note on a new line below the table 
+body. A general note appears first. A specific note begins on a new line under 
+a general note; subsequent specific notes begin on the same lineo A probabil-
+ity note begins on a new line under any general or specific notes; subsequent 
+probability notes begin on the same lineo Multiple specific or probability notes 
+are separated from each other by a period and a space. Lengthy specific notes 
+may be presented on separate lines if this improves readability. Double-space 
+all table notes, and align all notes flush left (Le., with no paragraph indentation). 
+Note. The responses were gathered in the laboratory. 
+a n = 25. b n = 42. 
+'p < .05. " p < .01. "'p < .001 . 
+
+=== PDF PAGE 221 ===
+Tables 
+,Use ofNotes to Eliminate Repetition. Table notes can be useful for eliminating 
+repetition from the bodyof atable. Certain types of information are appropri-
+ate either in the table body or in anote. To determine the placement of such 
+material, remember that dearly and efficiently organized data enable readers to 
+focus on that data. Thus, if probability values or subsample sizes are numerous, 
+use a column rather than many notes. Conversely, if a row or column contains 
+few entries (or the same entry), eliminate the column by adding a note to the 
+table, as shown in the following partial tables. 
+Group 
+Anxious 
+Depressed 
+Control 
+Repetitive 
+n 
+15 
+15 
+15 
+Group ' 
+Anxious 
+Depressed 
+Control 
+Concise 
+' n = 15 for each group. 
+7.15 Standard Abbreviations in Tables and Figures 
+Use standard abbreviations and symbols for all statistics (e.g., M, SD, SE, F, dj, 
+n, p), Greek letters (e.g., a,~ , x2 ) , and units of measurement (see Tables 6.4- 6.5) 
+used in tables without defining them in a note. This guidance also applies to 
+statistics, Greek letters, and units of measurement appearing in figures (see Sec-
+tion 7.28 for more on figure notes). The abbreviation "no." (for number) and the 
+symbol "%" (for percent) may also be used without providing a definition. Other 
+abbreviations used in atable or figure should be defined in the table or figure 
+title, body, or note, even if the abbreviations are also defined in the paper (see 
+Sections 6.25 and 6.44). Except where it makes sense to group similar abbrevia-
+tions, define the abbreviations in the order that they appear in the table, starting 
+at the top left and moving left to right, top to bottom. 
+7.16 Confidence Intervals in Tables 
+When atable indudes point estimates- for example, means, correlations, or 
+regression slopes- it should also, when possible, indude confidence intervals. 
+Report confidence intervals in tables either by using square brackets, as in the 
+text (see Section 6.9) and in Table 7.16 in Section 7.21, or by giving lower and 
+upper limits in separate columns, as in Table 7.17 in Section 7.21. In every table 
+that indudes confidence intervals, state the confidence level (e.g., 95% or 99%). 
+It is usually best to use the same confidence level throughout a paper. 
+7.17 Table Borders and Shading 
+Limit the use of borders or lines in atable to those needed for darity. In gen-
+eral, use a border at the top and bottom of the table, beneath column head-
+ings (induding decked heads), and aboye column spanners. You may also use a 
+border to separate a row containing totals or other summary information from 
+other rows in the table (see Table 7.1 for an example). Do not use vertical borders 
+to separate data, and do not use borders around every cell in a tableo Use spac-
+ing between columns and rows and strict alignment to darify relations among 
+the elements in atable. 
+Avoid the use of shading in tables. Do not use shading for mere decoration. 
+To emphasize the content of a particular cell or cells, use a specific or probabil-
+
+=== PDF PAGE 222 ===
+206 ~ TABLES AND FIGURES 
+ity note; italics or bold may also be used with explanation in the table's general 
+note. Instead of using shading, add white space or borders between rows and 
+columns to help readers distinguish them. If shading is necessary, explain its 
+purpose in the table's generalnote. 
+7.18 Long or Wide Tables 
+If atable is longer than one page, repeat the heading row on each subsequent 
+page of the tableo It is best to use the automated table-formatting tools of your 
+word-processing program rather than manually retyping the headings. Table 7.4 
+in Section 7.21 shows an example of a multipage table-in this case, atable sum-
+marizing the studies included in a meta-analysis. 
+Wide tables may be presented in landscape orientation (it is not important 
+if landscape orientation impacts the position of the page header). If atable 
+in landscape format is still too wide to fit on one page, the stub column (left 
+column) should repeat on each subsequent page. If atable is too wide and too 
+long to fit on one page, create separate tables. 
+7.19 Relation Between Tables 
+Consider combining tables that repeat data. Ordinarily, identical columns 
+or rows of data should not appear in two or more tables. Be consistent in the 
+presentation of all tables within a paper to facilitate comparisons. Use similar 
+formats, titles, and headings and the same terminology across tables whenever 
+possible (e.g., do not use "response time" in one table and "reaction time" in 
+another table to refer to the same concept). If multiple tables contain similar 
+data but cannot be combined, number these tables separately (e.g., Table 1 and 
+Table 2); do not use letters to indicate subtables (i.e., do not label two tables 
+Table lA and Table lB). 
+7.20 Table Checklist 
+The table checklist may help ensure that the data in your table are effectively 
+presented and conform to the style guidelines presented in this chapter. 
+7.21 Sample Tables 
+Sorne tables have certain standard, or canonical, forms (e.g., a correlation table). 
+When possible, use a standard form rather than designing your own formo The 
+advantage of using the canonical form is that readers generally already know 
+where to look in the table for certain kinds of information. In sorne situations, 
+you may want to use a form other than the canonical table form to make a specific 
+point or to stress certain relationships. The judicious use of nonstandard forms 
+can be effective but must always be motivated by the special circumstances of the 
+data array. When using nonstandard forms, make certain that labeling is clear. 
+Sample tables are presented next; follow these samples to design basic tables. 
+The exact contents and structure of your table will vary from the sample tables 
+depending on the nature of the information being presented. For variations not 
+addressed in this chapter, consult similar published articlesto see examples of 
+current standards and practices. 
+
+=== PDF PAGE 223 ===
+Tables 
+~ 207 
+Table Checklist 
+D Is the table necessary? 
+D Does the table belong in the print and electronic versions of the article, or can it 
+be placed in supplemental materials? 
+D Are all comparable tables in the paper consistent in presentation? 
+D Are all tables numbered consecutively with Arabic numerals in the order in which 
+they are first mentioned in the text? 15 the table number bold and flush left? 
+D Are all tables called out or referred to in the text? 
+D 15 the table title brief but explanatory? 15 it written in italic title case and flush left? 
+D Does every column have a column heading, including the leftmost (stub) column? 
+Are all column headings centered? 
+D Are all abbreviations explained (with exceptions as noted in Section 7.15), as well 
+as the special use of italics, bold, parentheses, dashes, and symbols? 
+D Are the table notes, if needed, in the order of general note, specific note, and 
+probability note? Are the notes double-spaced and flush left and in the same font 
+as the text of the paper? 
+D Are table borders correctly applied (at the top and bottom of the table, beneath 
+column headings, above table spanners)? 
+D 15 the line spacing of the table correctly applied (double-spacing for the table 
+number, title, and notes; single-spacing, one-and-a-half-spacing, or double-spac-
+ing for the table body)? 
+D Are entries in the left column flush left beneath the centered stub heading? Are all 
+other column headings and cell entries centered (except when aligning entries to 
+the left would improve readability)? 
+D Are confidence intervals reported for all major point estimates? 15 the confidence 
+level-for example, 95%-stated, and is the same level of confidence used for all 
+tables and throughout the paper? 
+D If the results of statistical significance testing are included in the table, are all p val-
+ues correctly identified? Are exact p values provided? 15 the "p <" notation used 
+only when needed? When the "p <" notation is used, are asterisks or daggers 
+attached to the appropriate table entries and defined? Are asterisks or daggers 
+used consistently to indicate the same p value in all tables in the same paper? 
+D If all or part of atable is reprinted or adapted, is there a copyright attribution? If 
+permission was necessary to reproduce the table, have you received written per-
+mission for its reuse (in print and electronic forms) from the copyright holder and 
+sent a copy of that written permission with the final version of your paper? 
+
+=== PDF PAGE 224 ===
+208 ~ TABLES A N D FIGURES 
+• demographic characteristics of study participants (Table 7.2): Demographic 
+data can help readers understand the generalizability of the results. The 
+demographic data you report will depend on the nature of the study. 
+• properties of study variables (Table 7.3): Describe the properties of study 
+variables (e.g., means, standard deviations). If reporting psychometric infor- . 
+mation, clearly state the index of reliability (or other psychometric property) 
+being used and the sample on which the reliability was based (if different 
+from the study sample). 
+• meta-analysis summary (Table 7.4): The qualities of the studies included in 
+a meta-analysis can be reported in a table as a summary for readers (what 
+information is relevant to report will depend on the nature of the study). 
+• summary of complex experimental design (Table 7.5): Complex designs can 
+be summarized in atable, making the entire structure of the experiment(s) 
+clear without the need for lengthy textual description. 
+• descriptive statistics for study measures (Table 7.6): Descriptive statistics 
+include means and standard deviations. The exact statistics you should pro-
+vide will depend on the nature and purpose of the analyses. 
+• chi-square results (Table 7.7): The results of individual chi-square tests are 
+usually reported in the text only (see Section 6.43). The results of multiple 
+chi-square tests may be summarized in atable, which typically also includes 
+frequencies, p values, and any other relevant statistics such as effect sizes. 
+• t-test results (Table 7.8): When there is only one t test to report, the results 
+should be incorporated into the text (see Section 6.43). Use atable to report 
+the results of multiple t tests. 
+• a priori or post hoc comparisons (Table 7.9): A priori and post hoc tests (e.g., 
+Tukey's HSD test, Bonferroni procedure, Scheffé method, Fisher's least sig-
+nificant difference, Duncan's new multiple range test) are used to compare 
+specific group means in studies in which the independent variables have 
+more than two levels. Although these results are often presented in the text 
+rather than in a table, a table can be used to summarize comparisons. This 
+table is similar to the table for presenting descriptive statistics (Table 7.6) with 
+the addition of subscripts to note significantly different means. 
+• correlations (Tables 7.10- 7.11): A correlation table presents correlations 
+between study variables and may also incorporate descriptive statistics, 
+alpha values, or other relevant statistics (Table 7.10). The perfect correlation 
+along the diagonal is indicated by an em dash. Intercorrelations for two dif-
+ferent groups can be presented in the same table, with correlations for one 
+group aboye the diagonal and for the other group below the diagonal (Table 
+7.11). The variables in a correlation table should be numbered and named in 
+the stub column, with corresponding numbers alone in the column headings 
+to avoid repeating the variable names in the column headings. 
+• analysis of variance (Tables 7.12-7.13): The results of a single one-way AN OVA 
+are typically reported in the text only. The results of multiple ANOVAs can be 
+reported in atable; various presentations are possible. For example, degrees 
+of freedom may be presented in the column heading when they are the 
+
+=== PDF PAGE 225 ===
+Tables 
+C\.Y 
+209 
+same for all tests (Table 7.12) or in their own column when they differ (Table 
+7.13). Sums of squares and mean squares are not typically included in tables 
+intended for publication: 
+o factor analysis (Table 7.14): Factor coefficients or loadings (rotated or unro-
+tated) can be presented in a variety of ways and may be accompanied by 
+other indices such as the percentage of variance and eigenvalues. lf a rotation 
+is used, specify the type (e.g., varimax, oblimin). Factor coefficients or load-
+ings aboye a prescribed threshold are typically indicated by the use of bold; 
+the purpose of any bolding should be explained in the table note. 
+o multiple regression (Tables 7.15-7.18): The results of multiple regression, 
+including mediation and moderation analyses, can be presented in a variety of 
+ways depending on the purpose of the table and need for detail. Clearly label 
+the regression type (e.g., hierarchical) and the type of regression coefficients 
+(raw or standardized) being reported. For hierarchical and other sequential 
+regressions, be sure to provide the increments of change (see Section 6.43). 
+Four options are shown in the sample tables: regression coefficients without 
+confidence intervals (Table 7.15), regression coefficients and bracketed confi-
+dence intervals (Table 7.16), moderator analysis with confidence intervals in 
+separate columns (Table 7.17), and hierarchical multiple regression (Table 7.18). 
+o model comparisons (Tables 7.19-7.21): Model comparison tables are used to 
+compare different models of data (Table 7.19), including multilevel models 
+(Table 7.20), and to report the results of confirmatory factor analyses (Table 
+7.21). Ensure that the competing models are clearly identified and that the 
+comparisons are clearly specified. Comparative fit indices can be useful for 
+readers. 
+o qualitative tables (Tables 7.22-7.23): Qualitative data can be presented in tab-
+ular form in an innumerable variety of ways depending on the purpose of the 
+tableo Qualitative tables might include descriptions of variables (as in Table 
+7.22), referenced studies, test items, or quotations from research participants. 
+Quantitative data may be incorporated alongside the qualitative data (e.g., quo-
+tations might be presented alongside response frequencies, as in Table 7.23). 
+o mixed methods tables (Table 7.24): The procedures or findings of mixed 
+methods research can be presented in tabular form in various ways depend-
+ing on the purpose of the tableo 
+
+=== PDF PAGE 226 ===
+210 ~ TABLES AND FIGURES 
+Sample Tables 
+Table 7.2 Sample Demographic Characteristics Table 
+Table 1 
+Sociodemographic Characteristics of Participants at Baseline 
+Baseline 
+characteristic 
+Guided self-help 
+Unguided self-help 
+Wait-list control 
+Full sample 
+n 
+% 
+n 
+% 
+n 
+% 
+n 
+% 
+Gender 
+Female 
+25 
+50 
+20 
+40 
+23 
+46 
+68 
+45.3 
+Male 
+25 
+50 
+30 
+60 
+27 
+54 
+82 
+54.7 
+Marital status 
+Single 
+13 
+26 
+11 
+22 
+17 
+34 
+41 
+27.3 
+Marriedjpartnered 
+35 
+70 
+38 
+76 
+28 
+56 
+101 
+67.3 
+Divorcedjwidowed 
+1 
+2 
+1 
+2 
+4 
+8 
+6 
+4.0 
+Other 
+1 
+1 
+O 
+O 
+1 
+2 
+2 
+1.3 
+Children ' 
+26 
+52 
+26 
+52 
+22 
+44 
+74 
+49.3 
+Cohabitating 
+37 
+74 
+36 
+72 
+26 
+52 
+99 
+66.0 
+Highest educational 
+level 
+Middle school 
+O 
+O 
+1 
+2 
+1 
+2 
+2 
+1.3 
+High school/some 
+22 
+44 
+17 
+34 
+13 
+26 
+52 
+34.7 
+college 
+University or post-
+27 
+54 
+30 
+60 
+32 
+64 
+89 
+59.3 
+graduate degree 
+Employment 
+Unemployed 
+3 
+6 
+5 
+10 
+2 
+4 
+10 
+6.7 
+Student 
+8 
+16 
+7 
+14 
+3 
+6 
+18 
+12.0 
+Employed 
+30 
+60 
+29 
+58 
+40 
+80 
+99 
+66.0 
+Self-employed 
+9 
+18 
+7 
+14 
+5 
+10 
+21 
+14.0 
+Retired 
+O 
+O 
+2 
+4 
+O 
+O 
+2 
+1.3 
+use of 
+Previous psychological 
+17 
+34 
+18 
+36 
+24 
+48 
+59 
+39.3 
+specific 
+treatment ' 
+note 
+Previous psychotropic 
+6 
+12 
+13 
+26 
+11 
+22 
+30 
+20.0 
+medication ' 
+Note. N = 150 (n = 50 for each condition) . Participants were on average 39.5 years old (SO = 10.1), and 
+participant age did not differ by condition. 
+' Reflects the number and percentage of participants answering "yes" to this question. 
+
+=== PDF PAGE 227 ===
+Sample Tables 
+~ 211 
+Table 7.3 Sample Properties of Study Variables Table 
+Table 1 
+Psychometric Properties for OWPFQ Seales ond Subscales 
+Scale 
+M 
+SO 
+Range 
+Cronbach's a 
+Identity total score 
+86.6 
+28.0 
+28-155 
+.94 
+Work Identity 
+41.6 
+13.3 
+16-76 
+.88 
+Socialldentity 
+45.0 
+15.7 
+14-84 
+.91 
+Self-Directedness total score 
+91.2 
+26.5 
+34-151 
+.92 
+Work Self-Directedness 
+44.9 
+13.5 
+16-76 
+.85 
+Social Self-Directedness 
+46.3 
+14.3 
+17-80 
+.86 
+Empathy total score 
+101.8 
+15.8 
+48-139 
+.84 
+Work Empathy 
+49.9 
+8.2 
+20--72 
+.72 
+Social Empathy 
+51.9 
+8.6 
+28-76 
+.77 
+Intimacy total score 
+122.9 
+28.6 
+56-189 
+.91 
+Work Intimacy 
+61.7 
+14.3 
+28-94 
+.82 
+Sociallntimacy 
+61.2 
+15.4 
+24-96 
+.86 
+Note. The Oiagnostic and Statistieal Manual of Mental Oisorders (5th ed.) Levels of Personality 
+Functioning Questionnaire (DLOPFQ) we developed had four scales (Identity, Self-Directedness, 
+Empathy, and Intimacy), each with subscales for the work and social domains. 
+
+=== PDF PAGE 228 ===
+212 ~ TABLES AND FIGURES 
+Table 7.4 Sample Meta-Analysis Summary Table 
+Table 1 
+Sample and Task Informarían for Studies Inc/uded in the Meta-Analysis 
+Study 
+Sample 
+Task 
+Barch et al. (2001) 
+14 with first-episode schizophrenia 
+AX-CPT 
+12 healthy control participants 
+Barch et al. (2008) 
+57 with chronic schizophrenia 
+AX-CPT 
+37 healthy control participants 
+Becker (2012) 
+49 with chronic schizophrenia 
+AX-CPT 
+28 healthy control participants 
+Braver et al. (1999) 
+16 with first-episode schizophrenia 
+AX-CPT 
+16 healthy control participants 
+Chung et al. (2011) 
+41 with chronic schizophrenia 
+AX-CPT 
+27 healthy control participants 
+Cohen et al. (1999) 
+53 with chronic schizophrenia 
+AX-CPT 
+Delawalla 
+Study 
+MacDonald & Carter (2003) 
+Edwards e 
+Poppe et al. (2016) 
+Gold et al. 
+Reilly et al. (2017) 
+Holmes et 
+Sheffield et al. (2014) 
+Jones et al 
+Todd et al. (2014) 
+Zhang et al. (2015) 
+Sample 
+17 with chronic schizophrenia 
+17 healthy control participants 
+47 with chronic schizophrenia 
+56 healthy control participants 
+402 with chronic schizophrenia 
+304 bipolar with psychotic features 
+210 healthy control participants 
+104 with chronic schizophrenia 
+132 healthy control participants 
+33 with chronic schizophrenia 
+58 healthy control participants 
+339 with chronic schizophrenia 
+665 healthy control participants 
+headings 
+repeat on 
+second page 
+oftable 
+Task 
+AX-CPT 
+DPX 
+DPX 
+AX-CPT, DPX 
+AX-CPT 
+DPX 
+Note. AX-CPT = AX-continuous performance task; DPX = dot-pattern expectancy task. 
+
+=== PDF PAGE 229 ===
+,Table 7.5 Sample Summary of Complex Experimental Design Table 
+Table 1 
+Summary of Designs of Experiments 1-4 
+Group 
+Experiment 1 
+Compound 
+Compound novel 
+Experiment 2 
+Compound A 
+Compound X 
+Compound novel 
+Experiment 3 
+Compound 
+Element 
+Experiment 4 
+Control 
+Element A 
+Element Y 
+Preexposure 1 
+A-X-Y-
+A-X-Y-
+A-X-Y-
+A-X-Y-
+A-X-Y-
+A-X-Y-
+A-X-Y-
+A-X-Y-
+A-X-Y-
+Preexposure 2 
+AX-BY-
+AX-BY-
+AX-BY-
+AX-BY-
+AX-BY-
+AX-Y-
+AX-Y-
+A-X-Y-
+A-X-Y-
+Sample Tables 
+C\.v 
+213 
+Conditioning 
+Test 
+X+ 
+X-
+Y+ 
+Y-
+A+ 
+A-
+X+ 
+X-
+Y+ 
+Y-
+X+ 
+X-
+Y+ 
+Y-
+A+/Y+ 
+A-/Y-
+A+ 
+A-
+Y+ 
+Y-
+Note. A, X, Y, and B = tone, clicker, steady light, and flashing light, respectively (counterbalanced), with the 
+constraint that A and B are drawn from one modality and X and Y from another (counterbalanced); plus sign (+) = 
+shock to floor of rat chamber; minus sign H = absence of shock. 
+Table 7.6 Sample Descriptive Statistics for Study Measures Table 
+Table 1 
+Means and Standard Deviations of Scores on Baseline Measures 
+Scale 
+High BAS group 
+Moderate BAS group 
+p 
+46.17 (2.87) 
+37.99 (1.32) 
+BAS-T 
+<.001 
+Parenthetical values in 
+SR 
+17.94 (1.88) 
+11.52 (1.84) 
+<.001 
+a sh6rt table are easily 
+BDI 
+7.11 (6.50) 
+6.18 (6.09) 
+.254 
+read. In most tables, 
+different indices should 
+ASRM 
+6.46 (4.01) 
+5.63 (3.69) 
+.109 
+be presented in different 
+rows or columns. 
+M-SRM 
+11.05 (3.36) 
+11.76 (2.75) 
+.078 
+Note. Standard deviations are presented in parentheses. BAS = Behavioral Activation System; 
+BAS-T = Behavioral Activation System-Total scores from the Behaviorallnhibition System/ 
+Behavioral Activation System Scales; SR = Sensitivity to Reward scores from the Sensitivity to 
+Punishment and Sensitivity to Reward Questionnaire; BDI = Beck Depression Inventory scores; 
+ASRM = Altman Self-Rating Mania Scale scores; M-SRM = Modified Social Rhythm Metric 
+Regu la rity scores. 
+
+=== PDF PAGE 230 ===
+214 ~ TA BLES AND FI GURES 
+Table 7.7 Sample Chi-Square Analysis Table 
+Table 1 
+Frequencíes and Chi-5quare Results far Belief Perseverance in Attitudes Toword Celebrities (N = 201) 
+Souree 
+Do not believe 
+Unsure 
+Believe 
+X' (2) 
+n 
+% 
+n 
+% 
+n 
+% 
+Media reports 
+17 
+8.46 
+140 
+69.65 
+44 
+21.89 
+124.75" 
+Family reports 
+47 
+23.38 
+106 
+52.74 
+48 
+23.88 
+34.06' 
+Friends' reports 
+42 
+20.90 
+112 
+55.72 
+47 
+23.38 
+45.52' 
+Caught by media 
+19 
+9.45 
+82 
+40.80 
+100 
+49.75 
+54.00" 
+Celebrity display of 
+12 
+5.97 
+61 
+30.35 
+128 
+63.68 
+101.22' 
+behavior 
+p< .001. 
+Table 7.8 Sample Results of Several t Tests Table 
+Table 2 
+Results of Curve-Fitting Analysis Examining the Time Course of Fixations to the Target 
+Logistie para meter 
+9-year-olds 
+16-year-olds 
+t(40) 
+p 
+Cohen's d 
+M 
+SO 
+M 
+SO 
+Maximum asymptote, proportion 
+.843 
+.135 
+.877 
+.082 
+0.951 
+.347 
+0.302 
+Crossover, in ms 
+759 
+87 
+694 
+42 
+2.877 
+.006 
+0.840 
+Slope, as ehange in proportion 
+.001 
+.0002 
+.002 
+.0002 
+2.635 
+.012 
+2.078 
+per ms 
+Note. For eaeh participant, the logistic funetion was fit to target fixations separately. The maximum asymptote 
+is the asymptotie degree of looking at the end of the time course of fixations. The erossover is the point in time 
+when the function crosses the midway point between peak and baseline. The slope represents the rate of 
+change in the funetion measured at the crossover. Mean parameter values for ea eh of the analyses are shown 
+for the 9-year-olds (n = 24) and the 16-year-olds (n = 18), as well as the results of t tests (assuming unequal 
+varianee) eomparing the para meter estimates between the two ages. 
+
+=== PDF PAGE 231 ===
+Sample Tables 
+C\V 
+215 
+Table 7.9 Sample a Priori or Post Hoc Comparisons Table 
+Table 3 
+Analyses for the Interaction of Prafessor Type ond Timing of Response on Perceptions of Prafessor Traits 
+Professor trait 
+End of semester 
+Start of semester 
+F ratio 
+p 
+1]' 
+professor type 
+professor type 
+.-J 
+exact p values 
+Typical 
+Effective 
+Typical 
+Effective 
+Dedicated 
+4.706b 
+4.789b 
+4.154, 
+5.000, 
+19.26 
+.001 
+.15 
+Easy to 
+3.059, 
+4.895, 
+3.231, 
+4.429b 
+5.01 
+.028 
+.03 
+understand 
+Fair 
+4.000b 
+4.263b 
+3.731, 
+4.667, 
+5.75 
+.019 
+.06 
+Manipulative 
+1.471, 
+1.632, 
+1.731, 
+1.238, 
+3.92 
+.051 
+.05 
+Insensitive 
+2.059b 
+1.526, 
+2.538, 
+1.143, 
+8.12 
+.006 
+.06 
+Note. Means with different subscripts differ at the p = .05 level by Duncan's new multiple range test. 
+Table 7.10 Sample Correlation Table for One Sample 
+use of 
+specific 
+note 
+Table 1 
+Oescriptive statistics and Correlations for study Variables 
+Variable 
+n 
+M 
+SO 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+1. Internal-
+3,697 
+0.43 
+0.49 
+~ 
+external status' 
+2. Manager job 
+2,134 
+3.14 
+0.62 
+-.08" 
+performance 
+3. Starting salaryb 
+3,697 
+1.01 
+0.27 
+.45" 
+-.01 
+4. Subsequent 
+3,697 
+0.33 
+0.47 
+.08" 
+-.07" 
+.04' 
+promotion 
+5.0rganizational 
+3,697 
+6.45 
+6.62 
+- .29" 
+.09" 
+.01 
+.09" 
+tenure 
+6. Unit service 
+3,505 
+85.00 
+6.98 
+-.25" 
+-.39" 
+.24" 
+.08" 
+.01 
+performance ' 
+7. Unit financial 
+694 
+42.61 
+5.86 
+.00 
+-.03 
+.12' 
+-.07 
+- .02 
+.16" 
+performance ' 
+' O = internal hires and 1 = external hires. b A linear transformation was performed on the starting salary 
+values to maintain pay practice confidentiality. The standard deviation (0.27) can be interpreted as 27% of 
+the average starting salary for all managers. Thus, ±1 SO includes a range of starting salaries from 73% 
+(i.e., 1.00 - 0.27) to 127% (i.e., 1.00 + 0.27) of the average starting salaries for all managers. 'Values reflect 
+the average across 3 years of data. 
+'p < .05. " p < .01. 
+
+=== PDF PAGE 232 ===
+216 ~ TABLES AND FIGURES 
+Table 7"11 Sample Correlation Table for Two Samples 
+Table 1 
+Intercorrelations for Study Variables Oisaggregated by Gender 
+Variable 
+1 
+2 
+3 
+4 
+1. Grade point average 
+49"" 
+.35"" 
+- .05 
+2. Academic self-concept 
+.35"" 
+.36"" 
+.02 
+3. Teacher trust 
+.49"" 
+.35"" 
+.20"" 
+4.Age 
+.10 
+.21" 
+-.15 
+Note. The results for the female sample (n = 199) are shown above the diagonal. The results for 
+the male sample (n = 120) are shown below the diagonal. 
+"p < .05. ""p < .01. 
+Table 7"12 Sample Analysis of Variance Table (Option 1) 
+Table 1 
+Means, Standard Oeviations, and One-Way Analyses of Variance in Psychological and Social 
+Resources and Cognitive Appraisals 
+Measure 
+Urban 
+Rural 
+F(1,294) 
+~ 2 
+M 
+SO 
+M 
+SO 
+Self-esteem 
+2.91 
+0.49 
+3.35 
+0.35 
+68.87""" 
+.19 
+Social support 
+4.22 
+1.50 
+5.56 
+1.20 
+62.60"" 
+.17 
+Cognitive appraisals 
+Threat 
+2.78 
+0.87 
+1.99 
+0.88 
+56.35"" 
+.20 
+Challenge 
+2.48 
+0.88 
+2.83 
+1.20 
+7.87""" 
+.03 
+Se If-effi ca cy 
+2.65 
+0.79 
+3.53 
+0.92 
+56.35""" 
+.16 
+""" P < .001. 
+
+=== PDF PAGE 233 ===
+Sample Tables 
+C\.v 
+.Table 7.13 Sample Analysis of Variance Table (Option 2) 
+Table 2 
+Means, Standard Oeviatians, and Twa-Way ANOVA Statistics far Study Variables 
+Variable 
+5MT 
+Control 
+ANOVA 
+M 
+SO 
+M 
+SO 
+Effect 
+Fratio 
+df 
+r¡' 
+Psychological strain 
+Time 1 
+0.24 
+0.30 
+0.22 
+0.29 
+G 
+2.82 
+1,151 
+.02 
+Time 2 
+0.16 
+0.27 
+0.27 
+0.32 
+T 
+0.38 
+2,302 
+.00 
+Time 3 
+0.16 
+0.26 
+0.26 
+0.31 
+GxT 
+4.64" 
+2,302 
+.03 
+Emotional exhaustion 
+Time 1 
+2.82 
+1.47 
+2.50 
+1.25 
+G 
+0.32 
+1,151 
+.00 
+Time 2 
+2.55 
+1.31 
+2.47 
+1.28 
+T 
+6.59" 
+2,302 
+.04 
+Time 3 
+2.36 
+1.39 
+2.43 
+1.16 
+G x T 
+3.89' 
+2,302 
+.03 
+Depersonalization 
+Time 1 
+1.20 
+1.09 
+1.12 
+1.05 
+G 
+0.07 
+1,149 
+.00 
+Time 2 
+1.13 
+1.07 
+1.25 
+1.16 
+T 
+0.67 
+2,302 
+.00 
+Time 3 
+1.00 
+0.93 
+1.24 
+0.93 
+G x T 
+3.04' 
+2,302 
+.02 
+Note. N = 153. ANOVA = analysis of variance; 5MT = stress management training group; Control = wait-list control 
+group; G = group; T = time. 
+'p < .05. " p < .01. 
+217 
+
+=== PDF PAGE 234 ===
+218 
+~ TA BLES AND FIGURES 
+Table 7.14 Sample Factor Analysis Table 
+Table 1 
+Results From a Factor Analysis of the Parental Care and Tenderness (PCAT) Questionnaire 
+PCATitem 
+Factor loading 
+1 
+2 
+3 
+Factor 1: Tenderness-Positive 
+20. You make a baby laugh over and over again by making silly faces. 
+.86 
+.04 
+.01 
+22. A child blows you kisses to say goodbye. 
+.85 
+- .02 
+-.01 
+16. A newborn baby curls its hand around your finger. 
+.84 
+-.06 
+.00 
+19. You watch as a toddler takes their first step and tumbles gently back 
+.77 
+down. 
+25. You see a father tossing his giggling baby up into the air as a game. 
+.70 
+.10 
+- .03 
+use of bold 
+on factor 
+Factor 2: Liking 
+loadings 
+5. I think that kids are annoying. (R) 
+-.01 
+.95 
+.06 
+8. I can't stand how children whine all the time. (R) 
+-.12 
+.83 
+-.03 
+2. When I hear a child crying, my first thought is "shut up!" (R) 
+.04 
+.72 
+.01 
+11. I don't like to be around babies. (R) 
+.11 
+.70 
+-.01 
+14. If I could, I would hire a nanny to take care of my children. (R) 
+.08 
+.58 
+- .02 
+Factor 3: Protection 
+7. I would hurt anyone who was a threat to a child. 
+-.13 
+-.02 
+.95 
+12. I would show no mercy to someone who was a danger to a child. 
+.00 
+- .05 
+.74 
+15. I would use any means necessary to protect a child, even if I had to 
+.06 
+.08 
+.72 
+hurt others. 
+4. I would feel compelled to punish anyone who tried to harm a child. 
+.07 
+.03 
+.68 
+9. I would sooner go to bed hungry than let a child go without food. 
+.46 
+- .03 
+.36 
+Note. N = 307. The extraction method was principal axis factoring with an oblique (promax with Kaiser 
+normalization) rotation. Factor loadings above .30 are in bold. Reverse-scored items are denoted with 
+(R). Adapted from "Individual Differences in Activation ofthe Parental Care Motivational System: 
+Assessment, Prediction, and Implications," by E. E. Buckels, A. T. Beall, M . K. Hofer, E. Y. Lin, Z. Zhou, 
+and M . Schaller, 2015, Journal of Personality and Social Psychology, 108(3), p. 501 (https://doi. 
+org/l0.l037/pspp0000023). Copyright 2015 by the American Psychological Association. 
+example copyright 
+attribution for an 
+adapted table when 
+permission is not 
+necessary 
+
+=== PDF PAGE 235 ===
+5ample Tables 
+~ 219 
+'Table 7.15 Sample Regression Table, Without Confidence Intervals 
+Table 2 
+Regression Coefftcients of Leoder Sleep on Charismatic Leadership 
+Variable 
+Model1 
+Model2 
+B 
+~ 
+SE 
+B 
+~ 
+SE 
+Constant 
+2,65" 
+,31 
+2.76 
+Leader gender' 
+- .11 
+- .07 
+.16 
+- .09 
+-.06 
+.15 
+-.36" 
+-.24 
+.15 
+R' 
+.09 
+.14 
+t::.R' 
+.05' 
+Note. N = 88. We examined the impact of leader sleep condition (control vs. sleep deprived) on ratings of 
+charismatic leadership. In Model1, we entered the control variables of gender and video length to predict 
+leader charisma. In Model 2, we entered sleep condition as a predictor. 
+' Male = 1, female = 2. bControl condition = O, sleep-deprived condition = 1. 
+'p < .05. " p < .01. 
+Table 7.16 Sample Regression Table, With Confidence Intervals in Brackets 
+Table4 
+Regressions of Associations Between Marital Satisfoction and Average Levels of Marital Behavior 
+Variable 
+B 
+SE 
+P 
+95% CI 
+Angry behavior 
+Actor 
+H-"7H 
+-98.90 
+40.20 
+-2.46 
+.016 
+[-179.1, -18.7] 
+W-"7W 
+-.87.11 
+30.87 
+-2.82 
+.006 
+[-148.7, -25.6] 
+Partner 
+W-"7H 
+-76.18 
+39.43 
+-1.93 
+.057 
+[-154.8, 2.4] 
+H-"7W 
+-91.80 
+38.16 
+-2.41 
+.019 
+[-167.9, -15.7] 
+square brackets 
+around confidence 
+Disregard 
+intervals 
+Actor 
+H-"7H 
+-38.62 
+27.86 
+-1.39 
+.170 
+[-94.2, 16.9] 
+W-"7W 
+-47.54 
+26.99 
+-1.76 
+.082 
+[-101.4, 6.3] 
+Partner 
+W-"7H 
+-82.81 
+32.01 
+-2.59 
+.012 
+[-146.6, -19.0] 
+H-"7W 
+-79.36 
+27.16 
+-2.92 
+.005 
+[-133.5, -25.2] 
+Distancing 
+Actor 
+H-"7H 
+-47.42 
+24.72 
+-1.92 
+.059 
+[-96.7, 1.9] 
+W-"7W 
+3.04 
+23.48 
+0.13 
+.897 
+[-43.8, 49.8] 
+Partner 
+W-"7H 
+-0.05 
+23.91 
+0.00 
+.998 
+[-47.7, 47.6] 
+H -"7 W 
+-53.50 
+24.47 
+-2.19 
+.032 
+[-102.3, -4.7] 
+Note. CI = confidence interval; H -"7 H = husband-as-actor effect on the husband's own marital 
+satisfaction; W -"7 W = wife-as-actor effect on the wife's own marital satisfaction; W -"7 H = 
+wife-as-partner effect on the husband's satisfaction; H -"7 W = husband-as-partner effect on 
+the wife's satisfaction. 
+
+=== PDF PAGE 236 ===
+220 ~ TABLES A N D FIGURES 
+Table 7.17 Sample Regression Table, With Confidence Intervals in Separate Columns 
+Table 3 
+Moderator Anolysis: Types oi Measurement and Study Year 
+Fixed effects 
+Intercept 
+Effect 
+ereativity measurement' 
+Academic achievement 
+measurement b 
+Study year ' 
+Goal d 
+Published ' 
+Random effects 
+Within-study variance 
+Between-study va ria nce 
+Estimate 
+SE 
+.119 
+.040 
+.097 
+.028 
+- .039 
+.018 
+.0002 
+.001 
+-.003 
+.029 
+.054 
+.030 
+.009 
+.001 
+.018 
+.003 
+95% el 
+LL 
+UL 
+.041 
+.198 
+.042 
+.153 
+-.074 
+- .004 
+- .001 
+.002 
+- .060 
+.054 
+- .005 
+.114 
+.008 
+.011 
+.012 
+.023 
+confidence 
+intervals in 
+separate 
+columns 
+/L--_----' 
+p 
+.003 
+.001 
+.03 
+.76 
+.91 
+.07 
+<.001 
+<.001 
+Note. Number of studies = 120, number of effects = 782, total N = 52,578. el = confidence 
+interval; LL = lower limit; UL = upper limit. 
+' O = self-report, 1 = test. bO = test, 1 = grade point average. ' Study year was grand centered. 
+dO = other, 1 = ves. ' O = no, 1 = ves. 
+
+=== PDF PAGE 237 ===
+Sample Tables 
+~ 221 
+, Table 7.18 Sample Hierarchical Multiple Regression Table 
+Table 2 
+Hierarchical Regression Results for Well-Being 
+Variable 
+B 
+95% CI for B 
+SEB 
+R' 
+b.R' 
+LL 
+UL 
+Step 1 
+.11 
+.11'" 
+Constant 
+4.37'" 
+3.72 
+5.03 
+0.33 
+Perceived social class 
+0.43'" 
+0.19 
+0.68 
+0.12 
+.30'" 
+Generation level 
+-0,11 
+-0.27 
+0.04 
+0,08 
+- ,12 
+Step 2 
+,23 
+.13'" 
+Constant 
+1,78 
+-0.39 
+3.95 
+1,10 
+Perceived social class 
+0.40'" 
+0.16 
+0.64 
+0.12 
+.28'" 
+Generation level 
+-0.02 
+-0.23 
+0.19 
+0.11 
+-.02 
+Familismo 
+0.33" 
+0.07 
+0.60 
+0.14 
+.21" 
+Acculturation 
+0.09 
+-0.31 
+0.48 
+0.20 
+.04 
+Enculturation 
+0.29 
+-0.04 
+0.61 
+0.17 
+.19 
+Mex Am margin 
+-0.23" 
+-0.45 
+-0.01 
+0.11 
+- .17" 
+Step 3 
+.26 
+.03" 
+Constant 
+2.27" 
+0.08 
+4.45 
+1.11 
+Perceived social class 
+0.45'" 
+0.21 
+0.69 
+0.12 
+.31'" 
+Generation level 
+-0.01 
+-0.21 
+0.20 
+0.10 
+-.01 
+Familismo 
+0.37' 
+0.10 
+0.63 
+0.13 
+.23' 
+Acculturation 
+0.11 
+-0.28 
+0.50 
+0.20 
+.05 
+Enculturation 
+0.35" 
+0.02 
+0.68 
+0.17 
+.24" 
+Mex Am margin 
+-0.23" 
+-0.45 
+-0.02 
+0.11 
+-.17" 
+Masculinity ideology 
+-0.05" 
+-0.10 
+-0.01 
+0.20 
+-.18" 
+Note. CI = confidence interval; LL = lower limit; UL = upper limit; familismo = the collective importance of family 
+unity that emphasizes interdependence and solidarity; Mex Am margin = Mexican American marginalization. 
+'p < .05. " p < .01. '''p < .001. 
+Table 7,19 Sample Model Comparison Table 
+Table 1 
+Comparison of Fit In dices in Models Fitted to Simulated Data Across Longitudinal Mediation Model Types 
+Model 
+X' 
+RMSEA 
+AIC 
+BIC 
+!'.AIC 
+b.BIC 
+Value 
+df 
+p 
+Value 
+95%CI 
+p 
+Simplex lagged 
+63.3 
+28 
+<.001 
+.044 
+[.030, .059] 
+.72 
+13,479 13,658 
+Simplex 
+58.0 
+29 
+.001 
+.040 
+[.024, .054] 
+.87 
+13,472 13,646 
+-7 
+-12 
+contemporaneous 
+Latent growth 
+65.0 
+33 
+<.001 
+.039 
+[.025, .053] 
+.90 
+13,471 13,627 
+-8 
+-31 
+Modified latent 
+26.2 
+33 
+.79 
+.000 
+[.000, .020] 
+>.99 
+13,432 13,588 
+-47 
+-70 
+change 
+Note. AIC and BIC differences are relative to the simplex lagged model. RMSEA = root-mean-square error of 
+approximation; CI = confidence interval; AIC = Akaike information criterion; BIC = Bayesian information criterion. 
+
+=== PDF PAGE 238 ===
+222 
+~ TABLES A ND FIGURES 
+Table 7.20 Sample Multilevel Model Comparison Table 
+Table 2 
+Model Parameters and Goodness of Fit for Linear and Quadratic Changes in Emotions by Behavior Type 
+Effect 
+Parameter 
+Positive emotions 
+Negative emotions 
+Model1 
+Model2 
+Model1 
+Model2 
+Fixed effects 
+Status at posttest, Ito; 
+Intercept 
+Yoo 
+3.60'" (0.06) 
+3.34'" (0.12) 
+1.59'" (0.05) 
+1.82'" (0.11) 
+Prosocial behavior 
+Yo, 
+0.39" (0.14) 
+-0.36" (0.13) 
+Self-focused behavior 
+Y03 
+0.26 (0.17) 
+-0.16 (0.15) 
+Linear rate of change, Itli 
+Time 
+ViO 
+-0.03 (.02) 
+-0.002 (0.05) 
+0.01 (0.02) 
+0.01 (0.04) 
+Prosocial behavior 
+Yll 
+-0.06 (0.06) 
+0.02 (0.05) 
+Self-focused behavior 
+Y12 
+0.001 (0.07) 
+-0.04 (0.06) 
+Quadratic rate of change, It,; 
+Time' 
+Y,o 
+-0.02'" (0.01) 
+-0.001 (0.01) 
+0.02'" (0.01) 
+0.02 (0.01) 
+Prosocial behavior 
+Y21 
+-0.03' (0.02) 
+0.01 (0.02) 
+Self-focused behavior 
+y" 
+-0.01 (0.02) 
+-0.01 (0.02) 
+Random effects 
+Variance components 
+Level1 
+o; 
+0.52 
+0.52 
+0.51 
+0.51 
+Level2 
+aa 
+1.34 
+1.31 
+1.02 
+1.00 
+al 
+0.040 
+0.040 
+.002 
+0.001 
+al 
+0.004 
+0.003 
+0.001 
+0.001 
+Goodness of fit 
+Deviance 
+6,703.18 
+6,692.50 
+6,424.12 
+6,413.91 
+t:.X' 
+10.68' 
+10.21 
+Mf 
+6 
+6 
+Note. Standard errors are in parentheses. AII p values in this table are two-tailed. In Model1 (unconditional qua-
+dratic growth), the intercept para 
+ter estimate (Yoo) represents the average positive or negative emotions score 
+at posttest across the sample. In Mo 
+12 (prosocial and self-focused behavior vs. control), the intercept parameter 
+estimate (Yoo) represents the average po itive or negative emotions score in the control condition at posttest, YOl 
+represents the difference at posttest betw en the prosocial behavior conditions and the control condition, and Yo, 
+represents the difference at posttest betwee the self-focused behavior condition and the control condition. YlO 
+represents the average linear rate of change in 
+e control condition, Yll represents additional effects of prosocial 
+behavior on linear rate of change, and Y12 represe s additional effects of self-focused behavior on linear rate of 
+change. Finally, y,o represents the average quadratic 
+te of change in the control condition, Y21 represents addi-
+tional effects of prosocial behavior on quadratic rate o 
+hange, and y" represents additional effects of self-focused 
+behavior on quadratic rate of change. In all models, the in 
+rcept, linear slope (time), and quadratic slope (time' ) 
+were free to va ry. 
+'p ~ .10. 'p < .05. " p < .10. "'p < .001. 
+Displaying values in parentheses 
+sometimes saves space when 
+they are not applicable to all 
+portions of the table. In most 
+tables, different indices should 
+be presented in different rows 
+or columns. 
+
+=== PDF PAGE 239 ===
+Sample Tables 
+~ 223 
+'rabie 7.21 Sample Confirmatory Factor Analysis Model Comparison Table 
+Table 2 
+Results of Confirmatory Factor Analysis for the Relationships Among Three Types of Intelligence 
+Model 
+x' 
+di 
+NFI 
+CFI 
+RMSEA 
+A: One-intelligence model ' 
+B: Two-intelligences model b 
+C: Three-intelligences model ' 
+10,994.664'" 
+10,091.236'" 
+8,640.066'" 
+1539 
+1538 
+1536 
+.296 
+.354 
+.447 
+.326 
+.390 
+.494 
+.115 
+.109 
+.100 
+Note. Structural equation modeling was used for the analysis. NFI = normed fit index; CFI = comparative fit 
+index; RMSEA = root-mean-square error of approximation. 
+, In Model A, all57 items of social intelligence, emotional intelligence, and cultural intelligence were loaded 
+onto one factor. b In Model B, the 21 items of social intelligence were loaded onto one factor, and the 16 items 
+of emotional intelligence and the 20 items of cultural intelligence were loaded onto another factor. ' In Model C, 
+the 21 items of social intelligence were loaded onto one factor, the 16 items of emotional intelligence were 
+loaded onto a second factor, and the 20 items of cultural intelligence were loaded onto a third factor. 
+'''p < .001. 
+Table 7,22 Sample Qualitative Table With Variable Descriptions 
+Table 2 
+Master Narrative Voices: Struggle and Success and Emancipation 
+Discourse and dimension 
+Struggle and success 
+Self-actualization as a member of a 
+larger gay community is the end goal of 
+healthy sexual identity development, or 
+"coming ouf' 
+Maintaining healthy sexual identity entails 
+vigilance against internalization of 
+societal discrimination 
+Emancipation 
+Open exploration of an individually 
+fluid sexual self is the goal of healthy 
+sexual identity development 
+Questioning discrete, monolithic 
+categories of sexual identity 
+Example quote 
+"My path of gayness ... going from denial to saving, 'well, this is 
+it: and then the process of coming out, and the process of just 
+sort of looking around and seeing, well where do I stand in the 
+world? And sort of having, uh, political feelings." (Carl, age 50) 
+"When I'm, like, thinking of criticisms of more mainstream gay 
+culture, I try to ... make sure it's coming from an appropriate 
+place and not, like, a place of self-Ioathing." (Patrick, age 20) 
+"[For heterosexuals] the man penetrates the woman, whereas 
+with gay people, I feellike there is this potential for really 
+playing around with that model a lot, you know, and just 
+experimenting and exploring." (Orion, age 31) 
+"LGBTQI, you know, and added on so many letters. It does start 
+to raise the question about what the terms mean and whether 
+... any term can adequately be descriptive." (Bill, age 50) 
+
+=== PDF PAGE 240 ===
+224 ~ TABLES AND FIG URE S 
+Table 7.23 Sample Qualitative Table Incorporating Quantitative Data 
+Table 1 
+Reasons Why Individuals Chose to Wateh the Royal Wedding (N = 45) 
+Reason for interest 
+Royal family and 
+its history 
+Fashion and pop 
+culture 
+Fairy tales and 
+love stories 
+To pass time/ it 
+wasonTV 
+Example quote 
+"llove all things British. I studied abroad in the U.K. I also watched the 
+weddings of Charles & Diana and Andrew & Fergie. I watched Diana's 
+funeral. Watching William & Kate get married seemed like the natural 
+thing to do." 
+"1 find the royal family and their practices and traditions fascinating. I am a 
+big fan of tradition in any capacity (graduation ceremonies, weddings, 
+etc.) and enjoy watching traditions older than our own country (the U.S.)." 
+"When big pop culture things happen, I tend to want to watch so I'm 'in 
+on it: Also, when I was little my mom made us get up to watch Princess 
+Diana get married, so it felt a little like tradition." 
+"1 was curious. Wanted to see her dress and how the other people who 
+attended dressed. Like pomp and ceremony." 
+"1 watched his mom and dad get married, watched him grow up. Plus 
+Ilove a fairy tale that comes true. I believe in love and romance." 
+"1 am a romantic and think this is a great love story." 
+"1 was at the airport and it was broadcasting on TV w hile I was waiting 
+for my flight." 
+"It was on CNN when I got up." 
+Table 7.24 Sample Mixed Methods Table 
+Table 3 
+Integrated Results Matrix for the Effeet of Topie Familiarity on Relianee on Author Expertise 
+Frequency, n (%) 
+16 (35.6) 
+13 (28.9) 
+11 (24.4) 
+5 (11.1) 
+Quantitative result 
+Qualitative result 
+Example quote 
+When the topic was more 
+familiar (climate change) 
+and cards were more 
+relevant, participants 
+placed less value on author 
+expertise. 
+When the topie was less familiar 
+(nuclear power) and eards 
+were more relevant, 
+participants plaeed more 
+value on author expertise. 
+When an assertion was 
+considered to be more 
+familiar and to be general 
+know ledge, participants 
+perceived less need to rely 
+on author expertise. 
+When an assertion was 
+considered to be less familiar 
+and not general knowledge, 
+participants perceived more 
+need to rely on author 
+expertise. 
+Participant 144: "1 feel that I know more about 
+climate, and there are several things on the 
+climate cards that are obvious, and that if 
+I sort of know it already, then the source 
+is not so critica I . .. whereas with nuclear 
+energy, I don't know so mueh, so then I'm 
+maybe more interested in who says what." 
+Participant 3: "[Nuclear power], which I 
+know mueh, mueh less about, I would 
+baek up my arguments more with w hat 
+I trust from the professors." 
+Note. We integrated quantitative data (w hether students seleeted a eard about nuclear power or about elimate 
+change) and qualitative data (interviews w ith students) to provide a more eomprehensive deseription of students' 
+eard selections between the two topies. 
+
+=== PDF PAGE 241 ===
+Figures 
+~ 225 
+Figures 
+7.22 Principies of Figure Construction 
+AH types of graphical displays other than tables are considered figures in APA 
+Style. Ensure that all figures .add substantively to readers' understanding and 
+do not dupHcate other elements of the papero Also consider whether a figure is 
+the best way to communicate the information. In sorne cases (particularly when 
+quantitative information is being conveyed), atable may offer more precision 
+than, say, a graph. Ifyou focus on the principIe of enhancing readers' understand-
+jng, other questions-for example, use of color, use of photographic images, or 
+magnitude of cropping of a picture-should be relatively easy to resolve. 
+The standards for good figures are simplicity, clarity, continuity, and (of 
+course) information value. A good figure 
+• augments rather than duplicates the text, 
+• conveys only essential information, 
+• omits visually distracting detail, 
+• is easyto read-its elements (e.g., type, Hnes, labels, symbols) are large enough 
+to be seen and interpreted with ease, 
+• is easy to understand- its purpose is readily apparent, 
+• is carefully planned and prepared, and 
+• is consistent with and in the same style as similar figures in the same article. 
+For figures of all types, check that 
+• images are clear, 
+• lines are smooth and sharp, 
+• font is simple and legible, 
+• units of measurement are provided, 
+• axes are clearly labeled, and 
+• elements within the figure are labeled or explained. 
+Be certain, for instance, to distinguish between error bars and confidence inter-
+vals. When using confidence intervals, clearly specify the size of the interval (e.g., 
+95%); when using error bars, provide the label for the error (e.g., standard error of 
+the mean) in the figure image or note. In addition, check all figures to ensure that 
+• sufficient information is given in the legend and/or note to make the figure 
+understandable on its own (i.e., apart from the text), 
+• symbols are easy to differentiate, and 
+• the graphic is large enough for its elements to be discernible. 
+Even when using high-quality graphics software to construct figures, examine 
+figures carefully and make any necessary adjustments to follow these guidelines. 
+7.23 Figure Components 
+The basic components of a prototypical figure are shown in Figure 7.1 and are 
+summarized as follows: 
+• number: The figure number (e.g., Figure 1) appears aboye the figure in bold 
+(see Section 7.24). 
+• title: The figure title appears one double-spaced Hne below the figure number 
+in italic title case (see Sections 6.17 and 7.25). 
+I 
+
+=== PDF PAGE 242 ===
+226 ~ TABLES AND FIGURES 
+Figure 7.1 Basic Components of a Figure 
+figure number 
+I 
+'---------J~ 
+figure title 
+I 
+'--------~ 
+image: graph, chart, 
+drawing, map, plot, 
+or photograph itself 
+Figure 1 
+Changes ín Work Attítude as a Functíon of Day and Time 
+ly-aXiS~ 
+L.. ~ 3 
+~=y=-a=X=is==ti=tl=e~1 
+~ 1 
+legend or key: 
+__ Monday 
+explanation of 
+.- symbols used 
+___ Friday 
+in the image 
+~ 
++-------.----~----~----~--==---:._j x-axis la beis 
+9 a.m. 
+11 a.m. 
+1 p.m. 
+3 p.m. 
+5 p.m. 
+. 
+Time of Day 
+..... ..------___ -1 x-axis title 
+figure notes: V 
+explanations to 
+supplement or 
+Note. This figure demonstrates the elements 01 a prototypical figure. A general note to a figure 
+appears first and contains information needed to understand the figure, including definitions of 
+abbreviations (see Sections 7.15 and 7.28) and the copyright attribution lor a reprinted or 
+clarify information 
+adapted figure (see Section 7.7). 
+in the image 
+~ A specific note explains a particular element of the figure and appears in a separate paragraph below 
+any general notes. b Subsequent specific notes lollow in the same paragraph (see Section 7.28). 
+'A probobility note (Ior p values) appears as a separate paragraph below any specific notes; subse-
+quent probability notes lollow in the same paragraph (see Section 7.28). 
+• image: The image portion of the figure is the chart, graph, photograph, draw-
+ing, or other illustration itself (see Section 7.26). 
+• legend: A figure legend, or key, if present, should be positioned within the 
+borders of the figure and explains any symbols used in the figure image (see 
+Section 7.27). 
+• note: Three types of notes (general, specific, and probability) can appear 
+below the figure to describe contents of the figure that cannot be under-
+stood from the figure title, image, and/or legend alone (e.g., definitions of 
+abbreviations, copyright attribution). Not all figures include figure notes 
+(see Section 7.28). 
+See Section 7.36 for sample figures. 
+
+=== PDF PAGE 243 ===
+Figures 
+~ 227 
+7.24 Figure Numbers 
+, Number all figures that are part of the main text (i.e., not part of an appendix or 
+supplemental materials) using Arabic numerals-for example, Figure 1, Figure 2, 
+and Figure 3. Assign the numbers in the order in which each figure is first men-
+tioned in the text, regardless of whether a more detailed discussion of the figure 
+occurs elsewhere in the paper. Write the word "Figure" and the number in bold 
+and flush left (i.e., not indented or centered). Figures that appear in appendices 
+follow a different numbering scheme (see Section 2.14). 
+7.25 Figure Titles 
+Give every figure a brief but clear and explanatory title; the basic content of the 
+figure should be easily inferred from the title. Write the figure title in italic title 
+case below the figure number and double,space the figure number and title. 
+Avoid overly general and overly detailed figure titles (see Section 7.11). 
+7.26 Figure Images 
+The image part of the figure (e.g., graph, chart, diagram) should be saved in 
+a resolution sufficient to allow for clear printing or viewing (see Section 7.4). 
+Attend to the following considerations when creating images. 
+Size and Proportion ofElements. Each element in a figure must be large enough 
+and sharp enough to be legible. Use a simple sans seriffont (e.g., Aria!, Calibri, 
+Lucida Sans Unicode; see Section 2.19) within the image portion of the figure 
+with enough space between letters to avoid crowding. Letters should be clear, 
+sharp, and uniformly dark and should be sized consistently throughout the fig-
+ure; the font size should be no smaller than 8 points and no larger than 14 points. 
+As a general guideline, plot symbols should be about the size oflowercase letters 
+that appear in a label within the figure. Also consider the weight (i.e., size, den-
+sity) of each element in a figure in relation to that of every other element, and 
+make the most important elements the most prominent. For example, curves on 
+line graphs and outlines ofbars on bar graphs should be bolder than axis labels, 
+which should be bolder than the axes and tick marks. 
+Spelling, Capitalization, and Numbers Within Figure Images. Use title case 
+for axis labels. Abbreviate the words "percentage" to "%" and "number" to "no." 
+Words within figure images other than those on the axis labels or in the figure 
+legend may be written in either title case or sentence case (see Section 6.17), 
+depending on the contents of the figure. In general, labels, phrases, or words 
+that serve as headings would be better set in title case, whereas other descrip-
+tive phrases, sentences, or paragraphs within a figure would be better set in 
+sentence case. Numbers that appear in the image portion of a figure should be 
+written as words or numerals according to the guidelines in Sections 6.32 to 
+6.39; however, it is permissible to use numerals for all numbers in a figure if this 
+would be clearer or save space. Statistics, Greek letters, and units of measure-
+ment do not need to be defined in a figure note (see Section 7.15). 
+Shading. Limit the number of different shadings used in a single graphic. If 
+different shadings are used to distinguish bars or segments of a graph, choose 
+shadings that are distinct; for example, the best option to distinguish two sets of 
+bars is no shading ("open") and black or gray ("solid"). If more than two shadings 
+
+=== PDF PAGE 244 ===
+228 ~ TABLES AND FIGURES 
+are needed, use patterns, again making sure that the patterns are distinct-for 
+example, use no (open) shading, solid black or gray, and stripes for three shad-
+ings. If error bars or other information overlaps with shaded areas (e.g., double-
+sided error bars in a bar graph), ensure that the overlapping information can be 
+clearly distinguished from the shading. 
+Color. Color can serve both communicative and decorative purposes in figtlres. 
+Authors seeking publication should avoid the use of color except when it is nec-
+essary for understanding the material because of the relatively high cost of color 
+reproduction for printed materials (authors may bear sorne ofthis cost; for APA 
+journals guidelines, see http://on.apa.org/WDtxdW). For example, photographs, 
+fMRl images, and gene staining results often use color. If color representation 
+is not crucial for understanding and the article is to be published both in print 
+and online, convert the figure to grayscale or consider placing the figure online 
+as supplemental material. Sorne journals offer the option to publish a figure in 
+color online and in grayscale in print at no cost; when using this option, ensure 
+that the figure can still be understood even when it is printed in grayscale. It is the 
+author's responsibility to ensure that the final representation is accurate. How-
+ever, authors submitting a manuscript to an online-only journal may use color 
+more liberally (e.g., colored bars rather than gray and white bars in a bar graph). 
+Likewise, students preparing a figure for a course assignment may use color pro-
+vided that the assignment will be delivered in a format that supports it. 
+When selecting colors for a figure, ensure that there is plenty of contrast 
+so that people living with a color-vision deficiency (often referred to as "color 
+blindness") or people who do not see color in a typical way can understand the 
+information and tell the colors aparto Best practice is to use a contrast checker 
+such as the free Colour Contrast Analyser (https://developer.paciellogroup. 
+com/resources/contrastanalyser) to evaluate the contrast ratio and confirm 
+that your content passes the standard s for WCAG 2.0 AA or later.2 Adequate 
+contrast ratio s ensure that the figure is not only accessible to readers with color-
+deficient vision but also understandable by all readers if the figure is printed or 
+photocopied in grayscale. Another strategy to achieve adequate contrast is to 
+use a pattern in combination with color so that the differentiation of elements 
+does not rely on color alone (e.g., in a line graph, different lines may be in differ-
+ent colors and also of different styles, such as solid, dashed, and dotted). When 
+many colors must be used and it is not possible to achieve high contrast among 
+all of them, label colored areas directly in the image or use lines to connect the 
+object to its label rather than placing the label in a legend, if possible, so that 
+readers do not have to match colors in the figure to colors in the legend. See the 
+APA Style website (https://apastyle.apa.org) for an example ofhow people with 
+certain color-vision deficiencies see color and how the colors used in figures 
+can be adjusted to accommodate them. 
+Gridlines and 3-D Effects. Avoid the use of gridlines in figures unless the grid-
+lines will substantially aid readers in understanding the content, such as when 
+many data points need to be compared across the x-axis. Likewise, avoid includ-
+ing 3-D effects for mere decoration (e.g., 3-D bar graphs) because they may 
+make the figure more difficult to read. However, 3-D effects can be used to con-
+vey essential information (e.g., 3-D representations of stimuli). 
+2 WCAG 2.0 refers to the Web Content Accessibility Guidelines, Version 2.0 (Web Accessibility Initiative, 2018). 
+
+=== PDF PAGE 245 ===
+Figures 
+~ 229 
+'Panels. The decision of whether to divide a figure into panels or create a sep-
+arate figure for each panel will depend on the nature of the information being 
+presented. Althoúgh panels help readers directly compare information, they 
+also increase the density of the information being presented on the page; as 
+always, prioritize clear communication when constructing any figure. If the fig-
+ure includes multiple panels, it is optional to label them. If panels are unlabeled, 
+refer to panels by their position (e.g., the top panel, the left panel, the middle 
+panel). To label panels, assign each one a capitalletter (e.g., A, B) and place the 
+label at the top left of the panel. Refer to the panels as Panel A, Panel B, and so 
+forth. In the main text, refer to a panel using the format "Figure 5/\' or "Panel A 
+of Figure 5." In the figure general note, explain each panel. See Figures 7.18 and 
+7.19 in Section 7.36 for examples of figures with labeled panels. 
+Citations in Figures. If a figure contains citations to other works, follow the 
+formats described in Section 8.11. Use an ampersand (&) for the word "and" in 
+all citations in figures to conserve space. 
+7.27 Figure Legends 
+A legend (also called a key) explains any symbols, line styles, or shading or pat-
+tern variants used in the image portion of the figure (see Figures 7.2- 7.3 in Sec-
+tion 7.36 for examples). The legend is an integral part of the figure; therefore, 
+its lettering should be of the same kind and proportion as that appearing in the 
+rest of the figure. Capitalize words in the legend using title case (see Section 
+6.17). Only figures that have symbols, line styles, or shadings needing defini-
+tion should include legends. When possible, place legends within or below the 
+image instead of to the side to avoid having empty space around the legend. 
+7.28 Figure Notes 
+Figure notes contain information needed to clarify the contents of the figure for 
+readers. As with tables, figures may have three kinds of notes: general, specific, 
+and probability. 
+A general note should explain units of measurement, symbols, and abbrevia-
+tions that are not included in the legend or defined elsewhere in the figure (see 
+Section 7.15 for information on abbreviations and symbols that do not require 
+definitions). Make certain that the symbols, abbreviations, and terminology in 
+the note and legend match the symbols, abbreviations, and terminology in the 
+figure, in other figures in the paper, and in the texto Explain the use of shading, 
+color, and any other design element that carries meaning. Provide individual 
+descriptions of panels for multipanel figures. If a graph includes error bars, 
+explain in the image or general note whether they represent standard devia-
+tions, standard errors, confidence limits, or ranges; it is also helpful to provide 
+sample sizes. Also include within the general note any acknowledgment that a 
+figure is n~printed or adapted from another source (see Section 7.7). Place expla-
+nations of abbreviations and copyright attributions for reproduced figures last 
+in the general note. 
+Position any superscripts for specific notes near the element being identified. 
+It is preferable to report exact p values; however, if statistically significant values 
+are marked with asterisks or daggers in the figure, explain them in a probability 
+note (see Section 7.14). For guidelines on formatting figure notes, see Section 7.14. 
+
+=== PDF PAGE 246 ===
+230 ~ TABLES AN D FIGURES 
+7.29 Relation Between Figures 
+Similar figures or figures of equal importance should be of equal size and scale. 
+Combine figures that are alike to facilitate comparisons between their contento 
+For example, two line graphs with identical axes might be combined horizon-
+tally into a single figure, or multiple figures might be combined into one figure . 
+with multiple panels (see Section 7.26). 
+7.30 Photographs 
+Photographs are a type of figure with special considerations. Authors seeking 
+publication must check publisher guidelines to ensure the photograph is sub-
+mitted in the correct file type. Photographs may be printed in grayscale or in 
+color, depending on the contents of the photograph and the venue of publica-
+tion. Color photographs should include enough contrast to ensure that con-
+tents will be understandable if reproduced in grayscale. Photographs in most 
+student papers can be in color and saved in any widely available photo format 
+(see Section 7.26 for more information on the use of color in figures). 
+It is essential that photographic images be submitted at appropriate levels of 
+resolution (as specified by the publisher). Because reproduction softens con-
+trast and detail in photographs, starting with rich contrast and sharp detail will 
+improve the final version of the image. The camera view and the lighting should 
+highlight the subject and provide high contrast; a light or dark background can 
+provide even more contrasto Photographs usually benefit from cropping to, for 
+example, eliminate extraneous detail or center the image. However, when a 
+photographic image has been altered in a manner beyond simple cropping and/ 
+or adjustment for light levels, clearly indicate in a general note how the image 
+has been altered. Ethical principIes of publication forbid any intentional mis-
+representation of images, just as fradulent data manipulation is forbidden. See 
+Figure 7.17 in Section 7.36 for an example of a photograph as a figure. 
+-
+lf you photograph an identifiable person, obtain a signed release from that 
+person to use the photograph in your paper (see Section 12.17); if the person 
+is not identifiable, a release is not needed. lf you took a photograph yourself, 
+no citation or copyright attribution is required in the figure note. lf you want 
+to reprint or adapt a photograph from another source, you may need to obtain 
+permission to use it in your paper because professional photographs are usually 
+the property of the photographer. See Sections 12.14 to 12.18 for further infor-
+mation on reprinting or adapting photographs from other sources. 
+7.31 Considerations for Electrophysiological, Radiological, Genetic, 
+and Other Biological Data 
+The presentation of electrophysiological, radiological, genetic, and other bio-
+logical data presents special challenges because of the complexity of the data. 
+Focus first on making sure your image accurately represents the data. lt is 
+essential that you identify in the general note how images were processed or 
+enhanced and that you clearly label the images. Next, consider principIes of 
+clarity of representation, necessity for inclusion, and consistency among repre-
+sentations. lf your figure contains more than one panel or your paper contains 
+more than one figure, keep style and formatting elements as consistent as pos-
+sible throughout (although specific features such as axis labels and scale units 
+
+=== PDF PAGE 247 ===
+Figures 
+~ 231 
+'may vary). Biological and genetic data often must be presented in color for the 
+information to be interpretable (see Section 7.26). 
+Carefully consider whether to include complex graphs and images in the 
+main text or as supplemental materials. Use supplemental materials to present 
+content that is better displayed online than in print or that can only be viewed 
+online. For example, the dynamic spread of brain activation may be able to be 
+displayed only through color video clips. 
+7.32 Electrophysiological Data 
+When presenting electrophysiological data, clear labeling of the image is es sen-
+tial; for example, in the presentation of event-related brain potential data, it is 
+essential that the direction of negativity (i.e., negative up or down) be indicated 
+as well as the scale of the response. Information that is necessary for proper 
+interpretation of the image, such as number or placement of electrodes, should 
+accompany the figure. See Figure 7.19 in Section 7.36 for an example of a figure 
+presenting event-related brain potential data. 
+7.33 Radiological (lmaging) Data 
+When presenting brain images, clearly label each image and provide details 
+needed to interpret the image in the figure note. When axial or coronal sections 
+are being displayed, clearly label which hemisphere is the left and which is the 
+right. When sagittal slices are displayed, clearly indicate whether each slice is of 
+the right or the left hemisphere. When slices are shown, also present an image 
+that indicates where in the brain the slices were taken to help orient readers. 
+Specify the coordinate space in which the images have been normalized (e.g., 
+Talairach, MNI). 
+Cutaway views of the brain that show activations interior to it can be useful 
+if the cutaways clearly depict the tissue that has been excised. When activations 
+are superimposed on a surface-rendered image of a brain, clear explanation of 
+what activations are being shown should accompany the figure, particularly 
+with regard to the depth of the activation that has been brought to the surface; 
+the use of flattened surface images may help make the data clearer. When using 
+color, use it consistently in all representations within the paper and clearly spec-
+ify the color-scale mapping. Neuroimaging data almost always require exten-
+sive postacquisition processing, and details of the processing methods should 
+accompany their display. Photomicrographs are often used in cell-staining and 
+other types of imaging studies. When preparing photomicrographs, include a 
+scale bar and staining materials information. See Figure 7.20 in Section 7.36 for 
+an example of fMRI data in a figure. 
+7.34 Genetic Data 
+As with other displays of biological material, clear labeling of images enhances 
+displays of genetic information (e.g., deletion patterns), be they ofthe physical 
+map variety or the photographic stain variety. Present information concern-
+ing locations, distances, markers, and identification methods with the figure. 
+Genetic data displays often contain much information; careful and circum-
+scribed editing of the image and its legend can improve the communicative 
+value of the figure. See Figure 7.21 in Section 7.36 for an example of a physical 
+map of genetic material in a figure. 
+
+=== PDF PAGE 248 ===
+232 ~ TABLES AND FIGURES 
+7.35 Figure Checklist 
+The figure checklist may be helpful to ensure that your figure communicates 
+effectively and conforms to the style guidelines presented in this chapter. 
+Figure Checklist 
+o 15 the figure necessary? 
+O Does the figure belong in the print and electronic versions of the article, or can it 
+be placed in supplemental materials? 
+O 15 the figure being submitted in a file format acceptable to the publisher? 
+O Has the file been produced at a sufficiently high resolution to allow for accurate 
+reproduction? 
+O Are figures of equally important concepts prepared according to the same size 
+and scale? 
+O Are all figures numbered consecutively with Arabic numerals in the order in which 
+they are first mentioned in the text? 15 the figure number bold and flush left? 
+O Are all figures called out or referred to in the text? 
+O 15 the figure title brief but explanatory? 15 it written in italic title case and flush left? 
+O 15 the figure image simple, clear, and free of extraneous detail? 
+O Are all elements of the image clearly labeled? 
+O Are the magnitude, scale, and direction of grid elements clearly labeled? 
+O Has the figure been formatted properly? 15 the font sans serif within the image 
+portion of the figure and between 8 and 14 points in size? 
+O Are all abbreviations explained (with exceptions as noted in Section 7.15), as well 
+as the use of special symbols? 
+O If the figure includes a legend to define symbols, line styles, or shading variants, 
+does the legend appear within or below the image? Are words in the legend writ-
+ten in title case? 
+O Have all substantive modifications to photographic images been disclosed? 
+O Are the figure notes, if needed, in the order of general note, specific note, and 
+probability note? Are the notes double-spaced and flush left and in the same font 
+as the text of the paper? 
+O If all or part of a figure is reprinted or adapted, is there a copyright attribution? 
+If permission was necessary to reproduce the figure, have you received written 
+permission for reuse (in print and electronic forms) from the copyright holder and 
+sent a copy of that written permission with the final version of your paper? 
+
+=== PDF PAGE 249 ===
+Figures 
+~ 233 
+7.36 Sample Figures 
+Many types of figures cim be used to present data to readers. The more common 
+types of figures usedin qualitative, quantitative, and mixed methods research 
+are presented next. There are many variations and versions of each, and the 
+distinctions among many bf them are not clear. For situations not addressed 
+here, consult similar published articles to see examples of current standards 
+and practices and follow those examples. 
+• graphs (Figures 7.2-7.3): Graphs typically display the relationship between 
+two quantitative indices or between a continuous quantitative variable (usu-
+ally displayed on the y-axis) and groups of participants or subjects (usually 
+displayed on the x-axis). Bar graphs (Figure 7.2) and line graphs (Figure 7.3) 
+are two examples of graphs. 
+• charts (Figures 7.4-7.11): Charts generally display nonquantitative infor-
+mation with the use of enclosed boxes, squares, or circles connected with 
+straight or curved lines or arrows. They are used to 
+-
+show the flow of participants or subjects, such as through a study process 
+(Figure 7.4) or in a randomized clinical trial (Figure 7.5; this is referred to 
+as a CONSORT flow diagram; for a downloadable template, see the CON-
+SORT website at http://www.consort-statement.org/consort-statement/ 
+flow-diagram); 
+-
+illustrate models-for example, conceptual or theoretical models (Figure 
+7.6), structural equation models (Figure 7.7), confirmatory factor analysis 
+models (Figure 7.8), and path models (Figure 7.9); and 
+-
+illustrate qualitative (Figure 7.10) and mixed methods (Figure 7.11) research 
+designs or frameworks. 
+• drawings (Figures 7.12-7.13): Drawings show information pictorially and can 
+be used to illustrate, for example, 
+-
+experimental setups (Figure 7.12) and 
+-
+experimental stimuli (Figure 7.13). 
+• maps (Figure 7.14): Maps generally display spatial information-for example, 
+geographic census information. This information often comes from govern-
+ment sources (e.g., the U.S. Census Bureau or the Centers for Disease Con-
+trol and Prevention); to reprint or adapt tables or figures from these sources, 
+see Section 12.16. 
+• plots (Figures 7.15-7.16): Plots present individual data points as a function of 
+axis variables. Common types of plots include 
+-
+the scatterplot (Figure 7.15), which is used to explore the relationship 
+between two variables (e.g., a linear relationship may be indicated if the 
+data points are clustered along the diagonal), and 
+-
+multidimensional scaling (Figure 7.16), in which similar points or stimuli 
+are presented close together in a multidimensional space and those that 
+are dissimilar appear farther aparto 
+• photographs (Figure 7.17): Photographs (see Section 7.30) contain direct 
+visual representations of information. They are often used to present infor-
+
+=== PDF PAGE 250 ===
+234 ~ TABLES AND FIGURES 
+mation that would be difficult to portray effectively with drawings, such as 
+facial expressions or precise placement of stimuli in an environment. 
+Multipanel Figures. A multipanel figure may combine bar graphs,line graphs, 
+histograms, and other figure types into one figure (see Figure 7.18 for an exam-. 
+pIe; see also Section 7.26). Whether it is advisable to combine panels into orie 
+figure or to present panels as separate figures will depend on the size of the 
+figures and the nature of the information being presented. 
+Figures for Electrophysiological, Radiological, Genetic, and Other Biological 
+Data. A variety of figures are used to present biological data. These data include 
+• event-related potentials (Figure 7.19), 
+• fMRI data (Figure 7.20), and 
+• genetic maps (Figure 7.21). 
+Sample Figures 
+Figure 7.2 Sample Bar Graph 
+Figure 1 
+Framing Scores for Different Reward Sizes 
+Low Risk 
+High Risk 
+OA 
+e 0.3 
+o 
+u 
+VI 
+~ 0.2 
+·E 
+~ 
+LL 0.1 
+o 
+Adolescent 
+o Small Reward 
+• Medium Reward 
+O Large Reward 
+Young Adult 
+Adolescent 
+Age Group 
+Young Adult 
+Note. Framing scores of adolescents and young adults are shown tor low and high risks and tor small, 
+medium, and large rewards. Framing scores were calculated as the proportion of risky choiees in the 
+gain trame from the proportion of risky choiees in the 1055 trame. Error bars show standard errors. 
+
+=== PDF PAGE 251 ===
+Figure 7.3 Sample Line Graph 
+Figure 3 
+Mean Regression Slopes in Experiment 1 
+1.4 
+Sample Figures 
+____ Stereo Motion 
+-o-Monocular Mation (Biocular View) 
+~Cambined 
+C\\J 
+235 
+-<>-Monocular Matian (Monocular View) 
+1.2 
+Qj a. 
+O 
+Vi 
+e o 
+'¡;; 
+VI 
+1 
+Qj 
+be 
+Qj 
+a: 
+e 
+'" 
+Qj 
+~ 
+0.8 
+0.6 4-----------,-----------,-----------,-----------,-----------, 
+25' 
+35' 
+45' 
+Rotation Amount 
+55' 
+65' 
+Note. Mean regression slopes in Experiment 1 are shown tor the stereo motion, biocularly viewed monocular motion, 
+combined, and monocularly viewed monocular motion conditions, plotted by rotation amount. Error bars represent 
+standard errors. From "Large Continuous Perspective Change With Noncoplanar Points Enables Accurate 51ant Perception," 
+by X. M. Wang, M. Li 
+44(10), p. 1513 (h 
+example copyright 
+attribution for a 
+reprinted figure 
+when permission 
+is not necessary 
+P. Bingham, 2018, Journol of Experimental Psychology: Human Perception and Performance, 
+10.1037 xh 0000553). Copyright 2018 by the American Psychological Association. 
+
+=== PDF PAGE 252 ===
+236 ~ TABLES AND FIGURES 
+Figure 7.4 Sample Figure Showing the Flow of Participants Through a Study Process 
+Figure 1 
+Flowchort 01 Porticipont Decisions 
+Exercised 
+Answered 
+Exercised 
+Answered 
+right to 
+Rernained 
+rightto 
+sorne 
+sorne 
+silence 
+silent 
+questions 
+silence 
+questions 
+n =43 
+n=l 
+n=9 
+n=7 
+n = 44 
+(81.1%) 
+(1.9%) 
+(17.0%) 
+(13.7%) 
+(86.3%) 
+¡ 
+¡ 
+¡ 
+Continued 
+Confessed 
+Exercised right 
+Continued 
+Confessed 
+to silence 
+responding 
+to silence 
+responding 
+n=2 
+n=9 
+n=3 
+n=4 
+(3.8%) 
+n =25 
+n = 10 
+(5.7%) 
+(7.5%) 
+(49.0%) 
+(19.6%) 
+(17.6%) 
+Note. Participant decisions regarding the right to silence, confessions, and admissions of incriminatory information are shown. 
+
+=== PDF PAGE 253 ===
+Sample Figures 
+C\V 
+'237 
+Figure 7.5 Sample CONSORT Flow Diagram 
+Figure 7.5 
+caNsaRT Flowchort of Participants 
+[ 
+Enrollment 
+1 
+l 
+Assessed for eligibility (n = 100) I 
+ExcJuded (n = 30) 
+• Oid not meet incJusion criteria (n = 21) 
+I 
+• Oeclined to participate (n = 9) 
+I 
+I Randomized In = 701 I 
+J 
+1 
+1 
+J 
+Allocation 
+1 
+l 
+JAllocated to intervention (n = 21) 
+Allocated to intervention (n = 49) 
+• Received allocated intervention (n = 49) 
+• Received allocated intervention (n = 21) 
+• Oid not receive allocated intervention (n = O) 
+• Oid not receive allocated intervention (n = O) 
+1 
+r 
+Follow·Up 
+1 
+1 
+Lost to follow-up (n = O) 
+Lost to follow-up (n = O) 
+Oiscontinued intervention (n = 4) 
+Oiscontinued intervention (n = O) 
+• Withdrew voluntarily (n = 4) 
+Completed intervention and follow-up (n = 21) 
+Completed intervention and follow-up (n = 45) 
+1 
+J 
+Analysis 
+1 
+1 
+Ana Iyzed (n - 41) 
+Analyzed (n - 21) 
+• Exc!uded from analysis (n = 4) 
+• ExcJuded from analysis (n = O) 
+o Unusable data (excessive motion; n = 2) 
+o Unable to complete scan (insufficient 
+compatible corrective lenses; n = 1) 
+o No Icnger met inc1usion criteria (emergent 
+psychosis at follow-up; n = 1) 
+

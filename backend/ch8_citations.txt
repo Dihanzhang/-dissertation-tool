@@ -1,0 +1,1428 @@
+
+=== PDF PAGE 269 ===
+8 
+WORKS CREDITED IN THE TEXT 
+Scientific knowledge represents the accomplishments of many researchers over 
+time. A critical part of writing in APA Style is helping readers place your contri-
+bution in context by citing the researchers who influenced you. 
+In this chapter, we provide the ground rules for acknowledging how others 
+contributed to your work. General guidance for in-text citation is presented 
+first, including how to provide an appropriate level of citation and avoid pla-
+giarism and self-plagiarism in your writing. Specific guidance for in-text cita-
+tion follows, including formats for interviews, classroom and intranet sources, 
+and personal communications; in-text citations in general; and paraphrases and 
+direct quotations. 
+General Guidelines for Citation 
+8.1 Appropriate Level of Citation 
+Cite the work of those individuals whose ideas, theories, or researchhave 
+directly influenced your work. The works you cite provide key background 
+information, support or dispute your thesis, or offer critical definitions and data. 
+Cite only works that you have read and ideas that you have incorporated into 
+your writing. Cite primary sources when possible and secondary sources spar-
+ingly (see Section 8.6). In addition to crediting the ideas of others that you used 
+to develop your thesis, provide documentation for all facts and figures that are 
+not common knowledge. Both paraphrases (see Sections 8.23-8.24) and direct 
+quotations (see Sections 8.25-8.35) require citations. If you reprint or adapt a 
+table or figure (e.g., if you reproduce an image from the internet, even if it was 
+free or in the Creative Commons) or reprint a long quotation or commercially 
+copyrighted test item, you may also need to seek permission from the copyright 
+holder and provide a copyright attribution (see Sections 12.14-12.18). 
+253 
+
+
+=== PDF PAGE 270 ===
+254 ~ WORKS CREDITED IN THE TEXT 
+The number of sources you cite in your paper depends on the purpose of 
+your work. For most papers, cite one or two of the most representative sourees 
+for each key point. Literature review papers, however, typieally include a more 
+exhaustive list of references; given that the purpose of the paper is to acquaint 
+readers with everything that has been written on the topie. 
+Avoid both undercitation and overcitation. Undercitation can lead to plagia-
+rism (see Section 8.2) and/or self-plagiarism (see Section 8.3). Even when sourees . 
+cannot be retrieved (e.g., because they are personal communications; see Section 
+8.9), you still need to credit them in the text (however, avoid using online sourees 
+that are no longer recoverable; see Section 9.37). Overcitation can be distraeting 
+and is unnecessary. For example, it is considered overcitation to repeat the same 
+citation in every sentence when the souree and topic have not changed. Instead, 
+when paraphrasing a key point in more than one sentence within a paragraph, 
+cite the source in the first sentence in which it is relevant and do not repeat 
+the citation in subsequent sentences as long as the source remains clear and 
+unchanged (see Section 8.24). When the author's name appears in the narrative, 
+the year ean be omitted in repeated eitations under certain circumstances (see 
+Section 8.16). Figure 8.1 provides an example of an appropriate level of citation. 
+8.2 Plagiarism 
+Plagiarism is the act of presenting the words, ideas, or images of another as your 
+own; it denies authors or creators of content the credit they are due. Whether 
+deliberate or unintentional, plagiarism violates ethical standards in scholar-
+ship (see APA Ethics Code Standard 8.11, Plagiarism). Writers who plagiarize 
+disrespect the efforts of original authors by failing to acknowledge their contri-
+butions, stifle further research by preventing readers from tracing ideas back 
+to their original sources, and unfairly disregard those who exerted the effort 
+to complete their own work. Writers who try to publish plagiarized work face 
+Figure 8.1 Example of an Appropriate Level of Citation 
+Humor plays an important role in everyday life, from interacting w ith strangers to attracting 
+mates (Bressler & Balshine, 2006; Earleywine, 2010; Tornquist & Chiappe, 2015). Some people, 
+however, come up with funny and witty ideas much more easily than do others. In this study, 
+we examined the role of cognitive abilities in humor production, a topic w ith a long past 
+(e.g., Feingold & Mazzella, 1991; Galloway, 1994) that has recently attracted more attention 
+(Greengross & Miller, 2011; Kellner & Benedek, 2016). Humor production ability is measured w ith 
+open-ended tasks (Earleywine, 2010), the most common of w hich involves asking participants to 
+write captions for single-panel cartoons (for a review, see Nusbaum & Silvia, 2017). 
+Note. The authors have provided citations to representative sources for each new idea in the texto Common knowledge . 
+(here, the idea that some people come up with funny ideas more easily than do others) does not require a citation. 
+
+
+=== PDF PAGE 271 ===
+General Guidelines for Citation 
+~ 255 
+rejection from publication and possible censure in their place of employment. 
+Students who plagiarize may fail the assignment or course, be placed on aca-
+demic probation, or be expelled from their institution (see also Section 1.17). 
+To avoid plagiarism, provide appropriate credit to the source when·ever you 
+do the following: 
+• paraphrase (i.e., state in your own words) the ideas of others (see Sections 
+8.23-8.24) 
+• directly quotethe words of others (see Sections 8.25-8.35) 
+• refer to data or data sets (see Section 10.9) 
+• reprint or adapt atable or figure, even images from the internet that are free 
+or licensed in the Creative Commons (see Sections 12.14- 12.18) 
+• reprint a long text passage or commercially copyrighted test item (see Sec-
+tions 12.14-12.18) 
+For most works, appropriate credit takes the form of an author-date citation 
+(see Section 8.10). However, according to U.S. copyright law, authors who wish 
+to reprint or adapt tables, figures, and images or to reprint long quotations or 
+commercially copyrighted test items (see Section 12.15) must provide more 
+comprehensive credit in the form of a copyright attribution (see Section 12.18) 
+and may need permission from the copyright holder to use the material s (see 
+Section 12.17). 
+The necessity for credit extends to the ideas of others as well. For example, 
+authors should credit the originators of theories they refer to in their paper. 
+lf authors model a study after one conducted by someone else, the author of 
+the original study should be given credit. lf the rationale for a study was sug-
+gested in someone else's article, that person should be given credit. Given the 
+free exchange of ideas, which is important to the health of intellectual discourse, 
+authors may not be able to pinpoint exactly where the idea for their study origi-
+nated. They should make their best effort to find and acknowledge the source(s), 
+including any personal communications (see Section 8.9). 
+Although many cases of plagiarism are straightforward (e.g., passages of text 
+copied from another source without attribution), other cases are more challeng-
+ing to evaluate. Usually, using incorrect citations (e.g., misspelling an author's 
+name, forgetting or mistyping an element in a reference list entry, or citing a 
+source in the text that do es not have a corresponding reference list entry) is 
+not considered plagiarism if the error is minor and attributable to an editorial 
+oversight rather than an intentional attempt to steal someone's ideas or obfus-
+cate the origin ofthe information (Cooper, 2016). However, such errors may still 
+result in deductions on an academic assignment or a request for revision of a 
+manuscript submitted for publication. 
+Publishers and educators may use plagiarism-checking software (e.g., iThen-
+ticate, Turnitin) to identify cases in which entire papers have been copied, pas-
+sages of specified lengths match, or a few words have been changed but content 
+is largely the same (the latter is known as patchwriting; see Merriam-Webster, 
+n.d.-a). However, human review is often necessary to determine whether pla-
+giarism has actually taken place. Take careful notes as you research and write 
+to keep track of and accurately cite your sources. Check your work carefully to 
+ensure that you acknowledge the words and ideas of others with citations in the 
+text that have corresponding reference list entries. 
+
+
+=== PDF PAGE 272 ===
+256 
+~ WORKS CREDITED IN THE TEXT 
+Unethical writing practices other than plagiarism are also prohibited. For exam-
+pIe, it is unethical to fabricate citations and/or reference list entries. This practice 
+gives the appearance of properly credited sources, but the sources are fictitious or 
+untraceable; the author may have made up the information as well as the sources, 
+or the information may come from real works that have not been credited. ,Like-
+wise, contract cheating, in which students hire another person to write a paper for 
+them, is unethical. Even when the resulting work is original (i.e., not plagiarized), 
+these students still take credit for work that they did not do themselves, which 
+violates academic integrity policies, honor codes, and ethics codeso 
+8.3 Self-Plagiarism 
+Self-plagiarism is the presentation of your own previously published work as 
+original; like plagiarism, self-plagiarism is unethical. Self-plagiarism deceives 
+readers by making it appear that more information is available on a topic than 
+really exists. It gives the impression that findings are more replicable than is 
+the case or that particular conclusions are more strongly supported than is 
+warranted by the evidence. It may lead to copyright violations if you publish 
+the same work with multiple publishers (sometimes called duplicate publication; 
+see Section 1.16). 
+Sorne institutions may consider it self-plagiarism if a student submits a paper 
+written for one class to complete an assignment for another class without per-
+mission from the current instructor; using the same paper in multiple classes 
+may violate the academic integrity policy, honor code, or ethics code of the uni-
+versity. However, incorporating previous classwork into one's thesis or disser-
+tation and building on one's own existing writing may be permissible; students 
+who wish to do this should discuss their ideas with their instructor or advisor 
+and follow their university's honor code, ethics code, or academic policies when 
+reusing their previous work. 
+In specific circumstances, authors may wish to duplicate their previously 
+used words without quotation marks or citation (e.g., in describing the details of 
+an instrument or an analytic approach), feeling that extensive self-referencing is 
+undesirable or awkward and that rewording may lead to inaccuracies. When the 
+duplicated material is limited in scope, this approach is permissible. 
+When the duplication is more extensive, authors should cite the source of 
+the duplicated material. What constitutes the maximum acceptable length of 
+duplicated material is difficult to define but must conform to legal notions of 
+fair use (see Section 12.17). General guidelines for using an acceptable amount 
+of duplicated material are as follows: 
+• Ensure that the core of the new document constitutes an original contribu-
+tion to knowledge in that 
+-
+only the amount of previously published material necessary to understand 
+that contribution is included and 
+-
+the material appears primarily in the discussion of theory and methodology. 
+• Place all duplicated material in a single paragraph or a few paragraphs, when 
+feasible, with a citation at the beginning or end of each paragraph. Introduce 
+the duplicated material with a phrase such as "as I have previously discussed." 
+Do not use quotation marks or block quotation formatting around your own 
+duplicated material. 
+
+
+=== PDF PAGE 273 ===
+General Guidelines far Citatian 
+~ 257 
+• W hen you reanalyze your own previously published data, such as in a large-
+scale, longitudinal, or multidisciplinary project, provide sufficient informa-
+tion about the projectso that readers can evaluate the current report but do 
+not repeat every detail ofthe design and method. Find a balance that involves 
+referring readers to the earlier work using citations. 
+If a manuscript will receive masked review (see Section 12.7), you may need to 
+conceal references to your previous work until the manuscript is ready for pub-
+lication. To conc~al your previous work, omit the relevant entries from the ref-
+erence list and indicate in the text where citations will be reinstated after the 
+review process by including "citation omitted," or similar, in parentheses. 
+An exception to the prohibition against self-plagiarism is publishing a work 
+of limited circulation in a venue of wiaer circulation. For example, authors 
+may publish their doctoral dissertation or master's thesis in whole or in part 
+in one or more journal articles. In such cases, authors would not cite their 
+dissertation or thesis in the article text but rather acknowledge in the author 
+note that the work was based on their dissertation or thesis (see Section 2.7). 
+Similarly, an article based on research the authors described in an abstract 
+published in a conference program or proceeding do es not usually constitute 
+duplicate publication; the author should acknowledge previous presentation 
+of the research in the article's author note (see the author note of the sample 
+professional paper in Chapter 2 as an example). Seek clarification from the 
+j ournal editor or course instructor if you are concerned about duplicate pub-
+lication or self-plagiarism. 
+8.4 Correspondence Between Reference List and Text 
+APA Style uses the author-date citation system (see Section 8.10), in which a 
+brief in-text citation directs readers to a full reference list entry. Each work cited 
+in the text must appear in the reference list, and each work in the reference list 
+must be cited in the texto Ensure that the spelling of author names and the publi-
+cation dates in the reference list entries match those in the in-text citations. The 
+date element of a reference list entry may include the month, season, and/or 
+day in addition to the year; however, the corresponding in-text citation includes 
+only the year (see, e.g., Example 15 in Chapter 10). 
+There are a few exceptions to these guidelines: 
+• Personal communications, which are unrecoverable sources, are cited in the 
+text only (see Section 8.9). 
+• General mentions of whole websites or periodicals (see Section 8.22) and 
+common software and apps (see Section 10.10) in the text do not require a 
+citation or reference list entry. 
+• The source of an epigraph do es not usually appear in the reference list (see 
+Section 8.35). 
+• Quotations from your research participants can be presented and discussed 
+in the text but do not need citations or reference list entries (see Section 8.36). 
+• References included in a meta-analysis, which are marked with an asterisk in 
+the reference list, may be cited in the text (or not) at the author's discretion 
+(see Section 9.52). 
+
+
+=== PDF PAGE 274 ===
+258 ~ WORKS CREDITED IN THE TEXT 
+8.5 Use of the Published Version or Archival Version 
+Multiple versions of the same work might coexist on the internet, and you 
+should cite the version of the work you used. Ideally, use and cite.the final, pub-
+lished version of a work (see Chapter 10, Examples 1-3). However, if you used 
+the advance online version (see Chapter 10, Example 7), the in-press versión ' 
+(see Chapter 10, Example 8), or the final peer-reviewed manuscript accepted 
+for publication (but before it was typeset or copyedited; see Chapter 10, Exam-
+pIe 73), cite that version. The final peer-reviewed manuscript as accepted for 
+publication might be available from a variety of places, ineluding a personal 
+website, an employer's server, an institutional repository, a reference manager, 
+or an author social network. 
+Informally published works, such as those in a preprint archive (e.g., 
+PsyArXiv) or an institutional repository or databas e (e.g., ERIC), can also be 
+cited (see Chapter 10, Examples 73-74) when these are the version used. Draft 
+manuscripts (unpublished, in preparation, or submitted) can be cited when the 
+draft is the most current version of the work (see Chapter 10, Examples 70-72). 
+When you cite a draft manuscript, in-press artiele, advance online publication, 
+or informally published work in your paper, ensure you have the most up-
+to-date publication information for these works and update the reference list 
+entry if necessary before you submit your paper. Publishers label advance 
+online publications in various ways (e.g., "online first publication," "advance 
+online publication," "epub ahead of print"); standardize this label to "advance 
+online publication" for an APA Style reference list entry (see Chapter 10, 
+Example 7). 
+8.6 Primary and Secondary Sources 
+In scholarly work, a primary source reports original content; a secondary source 
+refers to content first reported in another source. Cite secondary sources -
+sparingly-for instance, when the original work is out of print, unavailable, 
+or available only in a language that you do not understand. If possible, as a 
+matter of good scholarly practice, find the primary source, read it, and cite it 
+directly rather than citing a secondary source. For example, rather than citing 
+an instructor's lecture or a textbook or encyelopedia that in turn cites original 
+research, find, read, and cite the original research directly (unless an instructor 
+has directed you to do otherwise). 
+When citing a secondary source, provide a reference list entry for the sec-
+ondary source that you used. In the text, identify the primary source and then 
+write "as cited in" the secondary source that you used. If the year of publication 
+of the primary source is known, also inelude it in the texto For example, if you 
+read a work by Lyon et al. (2014) in which Rabbitt (1982) was cited, and you were 
+unable to read Rabbitt's work yourself, cite Rabbitt's work as the original source, 
+followed by Lyon et al.'s work as the secondary source. Only Lyon et al.'s work 
+appears in the reference listo 
+(Rabbitt, 1982, as cited in Lyon et al., 2014) 
+Ifthe year ofthe primary source is unknown, omit it from the in-text citation. 
+Allport's diary (as cited in Nicholson, 2003) 
+
+
+=== PDF PAGE 275 ===
+Works Requ iring Special Approaches to Citation 
+C\v 259 
+Works Requiring Special Approaches to Citation 
+8.7 Interviews 
+An interview is a dialogue or an exchange of information between people. Inter-
+views used as sources can be elassified into three categories: published inter-
+views, personal interviews, and research participant interviews. 
+• Published interviews appear in a variety of places- for example, in a maga-
+zine, newspaper, recorded radio broadcast, podcast episode, YouTube video, 
+TV show, or transcript of a video or audio recording. To cite a published inter-
+view, follow the format for the reference type (e.g., magazine artiele, podcast 
+episode, radio broadcast; see Chapter 10, Examples 15 and 95, for interviews 
+published in a magazine artiele and a digital archive, respectively). The person 
+being interviewed will not necessarily appear in the author element of the 
+reference; when this is case, integrate the person's name into the narrative of 
+the sentence if desired (see Chapter 10, Example 88). 
+• Personal interviews are those you conduct as a means of obtaining informa-
+tion to support a key point in your paper (e.g., an email to an author inquir-
+ing about their published work). Because readers cannot recover this type of 
+interview, cite it as a personal communication (see Section 8.9). 
+• Research participant interviews are those you conducted as part of your 
+methodology. They do not require a citation in APA Style because you do 
+not cite your own work in the paper in which it is being first reported. How-
+ever, information gathered from research participant interviews can be pre-
+sented and discussed in a paper according to the guidelines in Section 8.36. 
+8.8 Classroom or Intranet Resources 
+Sorne works are recoverable only by certain audiences, which determines how 
+they are cited. For example, a student writing a paper for a course assignment 
+might cite works from the elassroom website or learning management system 
+(LMS; e.g., Canvas, Blackboard, Brightspace, Moodle, Sakai), or an employee 
+might cite resources from the company intranet when writing an internal com-
+pany report. These sources are recoverable by the instructor and fellow students 
+or by other employees of the company but not the general publico 
+When the audience you are writing for can retrieve the works you used, cite 
+the works using the formats shown in Chapter 10, which are organized accord-
+ing to reference group and category. For example, to cite a recorded lecture 
+or PowerPoint presentation available from a elassroom website or LMS for 
+a student assignment, follow the format shown in Chapter 10, Example 102. 
+The so urce element of these references ineludes the name of the elassroom 
+website or LMS and the URL (which for sites requiring users to log in should 
+be the homepage or login page URL). Likewise, for a report on a company 
+intranet, follow the report formats shown in Section 10.4. However, if the work 
+is for professional publication or intended for a wider audience who will not 
+have access to these sources, cite the sources as personal communications 
+(see Section 8.9). 
+
+
+=== PDF PAGE 276 ===
+260 ~ WORKS CREDITED IN THE TEXT 
+8.9 Personal Communications 
+Works that cannot be recovered by readers (i.e., works without a source ele-
+ment; see Section 9.4) are cited in the text as personal communicati9ns. Personal 
+communications include emails, text messages, online chats or direct messages, 
+personal interview8, telephone conversations, live speeches, unrecorded classc 
+room lectures, memos, letters, messages from nonarchived discussion groups 
+or online bulletin boards, and so on. 
+Use a personal communication citation only when a recoverable source is 
+not available. For example, if you learned about a topic via a classroom lec-
+ture, it would be preferable to cite the research on which the instructor based 
+the lecture. However, if the lecture contained original content not published 
+elsewhere, cite the lecture as a personal communication. When communica-
+tions are recoverable only in an archive (e.g., a presidentiallibrary), cite them 
+as archival materials (see the APA Style website at https://apastyle.apa.org for 
+more). Do not use a personal communication citation for quotes or information 
+from participants whom you interviewed as part of your own original research 
+(see Section 8.36). 
+Citing Personal Communications in the Text. Because readers cannot retrieve 
+the information in personal communications, personal communications are 
+not included in the reference list; they are cited in the text only. Give the ini-
+tial( s) and surname of the communicator, and provide as exact a date as possi-
+ble, using the following formats: 
+Narrative citation: E.-M. Paradis (personal communication, August 8, 2019) 
+Parenthetical citation: (T. Nguyen, personal communication, February 24, 2020) 
+Citing Traditional Knowledge or Oral Traditions of Indigenous Peoples. 
+The manner of citing Traditional Knowledge or Oral Traditions (other terms -
+are "Traditional Stories" and "Oral Histories") of Indigenous Peoples varies 
+depending on whether and how the information has been recorded- only 
+certain cases use a variation of the personal communication citation. If the 
+information has been recorded and is recoverable by readers (e.g., video, 
+audio, interview transcript, book, article), cite it in the text and include a ref-
+erence list entry in the correct format for that type of source (see Section 
+10.12, Example 90, for a recording on YouTube; see Section 10.13, Example 95, 
+for a recorded interview). 
+Examine published works carefully (especially older works) to ensure 
+that the information about Indigenous Peoples is accurate and appropriate 
+to share before citing those works. Likewise, work closely with Indigenous 
+people to ensure that material is appropriate to publish (e.g., sorne stories 
+are told only at certain times of year or by certain people and may not be 
+appropriate to publish in a journal article) and that your wording accurately 
+mirrors and maintains the integrity of their perspectives (see Younging, 2018, 
+for more on the nature of collaboration with Indigenous people). Likewise, 
+because Indigenous cultural heritage belongs to Indigenous Peoples in per-
+petuity, matters concerning copyright and authorship may arise depending 
+on the scope and nature of the material being presented (see Younging, 2018, 
+for more). 
+
+
+=== PDF PAGE 277 ===
+In-Text Citations 
+~ 261 
+. Capitalize most terms related to Indigenous Peoples. These include names of spe-
+dfie groups (e.g., Cherokee, Cree, Ojibwe) and words related to Indigenous culture 
+(e.g., Creation, the Creator, Elder, Oral Tradition, Traditional Knowledge, Vision Quest). 
+The capitalization is intentional and demonstrates respect for Indigenous perspectives 
+(for more, see International Journal of Indigenous Health, n.d.; Younging, 2018). 
+To describe Traditional Know1edge or Oral Traditions that are not recorded 
+(and therefore are not recoverable by readers), provide as much detail in the 
+in-text citation as is necessary to describe the content and to contextualize the 
+origin of the information. Because there is no-recoverable source, a reference 
+list entry is not used. 
+If the purpose of your paper is to present the Oral History of one or more 
+of your research participants, follow the guidelines in Section 8.36 for includ-
+ing quotations from research participants. If the paper is published, this Oral 
+History then becomes part of the recorded scholarly literature and can thus be 
+cited by others using standard formats. 
+If you spoke with an Indigenous person directly to learn information (but 
+they were not a research participant), use a variation of the personal communi-
+cation citation: Provide the person's full name and the nation or specific Indige-
+nous group to which they belong, as well as their location or other details about 
+them as relevant, followed by the words "personal communication," and the date 
+of the communication. Provide an exact date of correspondence if available; if 
+correspondence took place over a period of time, provide a more general date 
+or a range of dates. (The date refers to when you consulted with the person, not 
+to when the information originated.) Ensure that the person agrees to have their 
+name included in your paper and confirms the accuracy and appropriateness of 
+the information you presento 
+We spoke with Anna Grant (Ha ida Nation, lives in Vancouver, British Columbia, Canada, 
+personal communication, April 2019) about traditional understandings of the world by 
+First Nations Peoples in Canada. She described .. 
+If you are an Indigenous person and are sharing your own experiences or the 
+previously unrecorded Traditional Knowledge or Oral Tradition of your people, 
+describe yourself in the text (e.g., what nation you belong to, where you live) to 
+contextualize the origin of the information you are sharing. Do not use a per-
+sonal communication citation or provide a reference list entry because you do 
+not need to cite personal information. It is often useful to collaborate with other 
+Indigenous people to address any questions that may arise. For more on the 
+terms to use when describing Indigenous Peoples, see Section 5.7. 
+In-Text Citations 
+8.10 Author-Date Citation System 
+Use the author-date citation system to cite references in the text in APA Style. In 
+this system, each work used in a paper has two parts: an in-text citation and a 
+corresponding reference list entry (see Figure 8.2). The in-text citation appears 
+within the body of the paper (or in a table, figure, footnote, or appendix) and 
+
+
+=== PDF PAGE 278 ===
+262 
+~ WORKS CREDITED IN THE TEXT 
+Figure 8.2 Correspondence Between a Reference List Entry and an In-Text Citation 
+Reference list entry: 
+Alexander, P. A. (2018). Past as prologue: Educational psychology's 
+legacy and progeny. Journal of Educational Psychology, 
+110(2), 147- 162. https:j/doi.org/1O.1037/edu0000200 
+Parenthetical citation: 
+(Alexander, 2018) 
+Narrative citation: 
+Alexander (2018) 
+Note. The four elements of a reference list entry inelude the author (in purple), the date (in blue), the title (in 
+yellow), and the source (in green). The in-text citations that correspond to this reference inelude the last name 
+of the author and year of publication, which match the information in the reference list entry. 
+briefly identifies the cited work by its author and date of publication. This 
+in-text citation enables readers to locate the corresponding entry in the alpha-
+betical reference list at the end of the papero Each reference list entry provides 
+the author, date, title, and source of the work cited in the paper and enables 
+readers to identify and retrieve the work (see Chapter 9 for how to create and 
+order reference list entries). 
+In an in-text citation, provide the surname(s) ofthe author(s) or the name(s) 
+ofthe group author(s). Do not include suffixes such as "Jr." in the in-text cita-
+tion. (For authors with only one name or only a username, see Section 9.8.) 
+The list of authors in an in-text citation may be shortened in certain cases (for 
+individual authors, see Section 8.17; for group authors, see Section 8.21). To 
+create an in-text citation for a work with an unknown or anonymous author, 
+see Section 8.14. 
+The date in the in-text citation should match the date in the reference list 
+entry. Use only the year in the in-text citation, even if the reference list entry 
+contains a more specific date (e.g., year, month, and day). For works with no 
+date, use "n.d." in the in-text citation (see also Section 9.17); for works that have 
+been accepted for publication but have not yet been published, use "in press." 
+Do not use phrases like "in progress" for draft manuscripts; instead, use the year 
+the draft was written (see Section 10.8). 
+Each in-text citation must correspond to only one reference list entry. Avoid 
+ambiguity when abbreviating the list of authors (see Sections 8.17 and 8.21), 
+when multiple works have the same author(s) and date (see Section 8.19), and 
+when multiple first authors share the same surname (see Section 8.20). 
+8.11 Parenthetical and Narrative Citations 
+In-text citations have two formats: parenthetical and narrative. In parenthetical 
+citations, the author name and publication date (or equivalent information; see 
+Section 9.12) appear in parentheses. In narrative citations, this information is 
+incorporated into the text as part of the sentence. 
+
+
+=== PDF PAGE 279 ===
+In-Text Citations 
+'Parenthetical Citation. Both the author and the date, separated by a comma, 
+appear in parentheses for a parenthetical citation. A parenthetical citation can 
+appear within or at the end of a sentence. When a parenthetical citation is at 
+the end of a sentence, put the period or other end punctuation after the'closing 
+parenthesis. 
+Falsely balanced news coverage can distort the public's perception of expert consensus 
+on an issue (Koehler, 2016). 
+• If other text appears with the parenthetical citation, use commas around 
+the year. 
+(se e Koehler, 2016, for more detail) 
+• When text and a citation appear together in parentheses, use a semicolon to 
+separate the citation from the text; do not use parentheses within parentheses. 
+(e.g., falsely balanced news coverage; Koehler, 2016) 
+Narrative Citation. The author appears in running text and the date appears in 
+parentheses immediately after the author name for a narrative citation. 
+Koehler (2016) noted the dangers of falsely balanced news coverage. 
+• In rare cases, the author and date might both appear in the narrative. In this 
+case, do not use parentheses. 
+In 2016, Koehler noted the dangers of falsely balanced news coverage. 
+8.12 Citing Multiple Works 
+When citing multiple works parenthetically, place the citations in alphabetical 
+order, separating them with semicolons. Listing both parenthetical in-text cita-
+tions and reference list entries in alphabetical order helps readers locate and 
+retrieve works because they are listed in the same order in both places. 
+(Adams et al., 2019; Shumway & Shulman, 2015; Westinghouse, 2017) 
+• Arrange two or more works by the same authors by year of publication. Place 
+citations with no date first, followed by works with dates in chronological 
+order; in-press citations appear lasto Give the authors' surnames once; for 
+each subsequent work, give only the date. 
+(Department of Veterans Affairs, n.d" 2017a, 2017b, 2019) 
+Zhou (n.d., 2000, 2016, in press) 
+• In the case of multiple works in which sorne author names have been abbre-
+viated to "et al." (see Section 8.17), place the citations in chronological order 
+(regardless of the order in which they appear in the reference list). 
+(Carraway et al., 2013, 2014, 2019) 
+• To highlight the work(s) most directly relevant to your point in a given sen-
+tence, place those citations first within parentheses in alphabetical order and 
+then insert a semi colon and a phrase, such as "see also," before the first of the 
+remaining citations, which should also be in alphabetical order. This strategy 
+allows authors to emphasize, for example, the most recent or most important 
+research on a topic, which would not be reflected by alphabetical order alone. 
+(Sampson & Hughes, 2020; see also Augustine, 2017; Melara et al., 2018; Pérez, 2014) 
+~ 263 
+
+
+=== PDF PAGE 280 ===
+264 ~ W ORKS CREDITED IN THE TEXT 
+• Readers may find a long string of citations difficult to parse, especially if they 
+are using assistive technology such as a screen reader; therefore, include only 
+those citations needed to support your immediate point (for more on appro-
+priate level of citation, see Section 8.1). 
+. 
+• If multiple sources are cited within the narrative of a sentence, they c·ari 
+appear in any order. 
+Suliman (2018), Gutiérrez (2012, 2017), and Medina and Reyes (2019) examined ... 
+8.13 Citing Specific Parts of a Source 
+To cite a specific part of a source, pravide an author-date citation for the work 
+plus information about the specific parto There are many possible parts to cite, 
+including 
+• pages, paragraphs, sections, tables, figures, supplemental materials, or foot-
+notes fram an article, book, report, webpage, or other work; 
+• chapters, forewords, or other sections of authored books; 
+• time stamps of videos or audiobooks; and 
+• slide numbers in PowerPoint presentations. 
+For religious and classical works with canonically numbered parts common 
+across editions (e.g., books, chapters, verses, lines, cantos), cite the part instead 
+of a page number (see Section 9.42). 
+(Centers for Disease Control and Prevention, 2019, p. 10) 
+(Shimamura, 2017, Chapter 3) 
+(Armstrong, 2015, pp. 3-17) 
+(Shadid, 2020, paras. 2-3) 
+(KovaCic & Horvat, 2019, Table 1) 
+(Thompson, 2020, Slide 7) 
+(Beck Institute for Cognitive Behavior Therapy, 2012, 1 :30:40) 
+(KingJamesBible, 1769/2017, 1 Cor.13:1) 
+(Aristotle, ca. 350 B.C.EJ1994, Part IV) 
+(Shakespeare, 1623/1995, 1.3.36-37) 
+In the reference list, provide an entry for the entire work (not only the part that 
+you used). 
+It is possible to cite a specific part of a source whether you are paraphrasing 
+(see Sections 8.23-8.24) or directly quoting (see Sections 8.25-8.27). For further 
+guidance on quoting works without page numbers (e.g., webpages, websites, 
+audiovisual works) and religious and classical works with canonically num-
+bered sections, see Section 8.28. 
+8.14 Unknown or Anonymous Author 
+When the author of a work is not named, the author may be unknown (i.e., no 
+author is listed on the work, as with a religious work) or identified specifically 
+as ''Anonymous.'' For works with an unknown author (see Section 9.12), include 
+the title and year of publication in the in-text citation (note that the title moves 
+to the author position in the reference list entry as well). If the title of the work 
+is italicized in the reference, also italicize the title in the in-text citation. If the 
+
+
+=== PDF PAGE 281 ===
+In-Text Citations 
+~ 265 
+title of the work isnot italicized in the reference, use double quotation marks 
+around the title in the in-text citation. Capitalize these titles in the text using 
+title case (see Section 6.17), even though sentence case is used in the reference 
+list entry. If the title is long, shbrtenit for the in-text citation. 
+. 
+Book with no author: (Interpersonal Ski 115, 2019) 
+Magazine arfic/e with no author: ("Understanding Sensory Memory," 2018) 
+When the author of a work is overtly designated as "Anonymous" (see Section 
+9.12), ''Anonymous'' takes the place ofthe author name in the in-text citation. 
+(Anonymous, 2017) 
+8.15 Translated, Reprinted, Republished, and Reissued Dates 
+References to translated, reprinted, republished, or reissued works (see Sec-
+tions 9.39-9.41) contain two dates in the in-text citation: the year of publica-
+tion of the original work and the year of publication of the translation, reprint, 
+republication, or reissue. Separate the years with a slash, with the earlier year 
+first (see Chapter 10, Example 29). 
+Freud (1900/1953) 
+(Piaget, 1966/2000) 
+8.16 Omitting the Year in Repeated Narrative Citations 
+In general, include the author and date in every in-text citation. If you need to 
+repeat a citation (see Section 8.1), repeat the entire citation; do not, for example, 
+include only a page number (the abbreviation "ibid." is not used in APA Style). 
+The year can be omitted from a citation only when multiple narrative citations 
+to a work appear within a single paragraph (se e Figure 8.3 for an example). 
+Figure 8.3 Example of Repeated Narrative Citations With the Year Omitted 
+I author name and year I 
+Koehler (2016) experimentally examined how journalistic coverage influences 
+public perception of the level of agreement among experts. Koehler provided 
+participants with quotations from real reviews for movies that critics either loved or 
+loathed. He found that participants better appreciated the level of expert consensus 
+for highly rated movies when only positive reviews were provided rather than when 
+both positive and negative reviews were provided, even when the proportion of 
+positive to negative reviews was indicated. These findings, in combination with 
+similar research, demonstrate that providing evidence for both sides when most 
+experts agree may lead to a false sense of balance (Koehler, 2016; Reginald, 2015). 
+.-------------r~ 
+I 
+year always included in I 
+parenthetical citations 
+/' 
+year 
+I 
+omitted 
+
+
+=== PDF PAGE 282 ===
+266 ~ WORKS CREDITED IN THE TEXT 
+Once you have provided a narrative citation to a work in a paragraph, do not 
+repeat the year in subsequent narrative citations in that same paragraph. Follow 
+this guideline with each paragraph (i.e., indude the year in the first narrative 
+citation in a new paragraph).Indude the year in every parenthetical citation. 
+However, if you cite multiple works by the same author or authors, regard ~ . 
+less of the publication years, indude the date in every in-text citation to pre-
+vent ambiguity. For example, if you cite Mohammed and Mahfouz (2017) and 
+Mohammed and Mahfouz (2019), indude the year with every citation, even 
+when one of the references is cited multiple times in a single paragraph. 
+8.17 Number of Authors to Inelude in In-Text Citations 
+The format of the author element of the in-text citation changes depending on 
+the number of authors and is abbreviated in sorne cases. See Table 8.1 for exam-
+pIes of the basic in-text citation styles. 
+• For a work with one or two authors, indude the author name(s) in every 
+citation. 
+• For a work with three or more authors, indude the name of only the first 
+author plus "et al." in every citation, induding the first citation, unless doing 
+so would create ambiguity (see Section 8.18). 
+In parenthetical citations, use an ampersand (&) between names for a work with 
+two authors or before the last author when all names must be induded to avoid 
+ambiguity (see Section 8.18). In narrative citations, spell out the word "and." 
+(J6reskog & S6rbom, 2007) 
+Eifert and Yildiz (2018) 
+In tables and figures, use an ampersand between names in both parenthetical -
+and narrative citations. 
+The same guidelines apply when any of the authors are groups. For example, 
+if a work is authored by three groups, the in-text citation would indude the 
+name ofthe first group plus "et al." 
+(American Educational Research Association et al., 2014) 
+Table 8.1 Basic In-Text Citation Styles 
+Author type 
+Parenthetical citation 
+Narrative citation 
+One author 
+(Luna, 2020) 
+Luna (2020) 
+Two authors 
+(Salas & D'Agostino, 2020) 
+Salas and D'Agostino (2020) 
+Three or more authors 
+(Martin et al., 2020) 
+Martin et al. (2020) 
+Group author with abbreviation 
+First citation' 
+(National Institute of Mental Health 
+Nationallnstitute of Mental Health 
+[NIMHl, 2020) 
+(NIMH,2020) 
+Subsequent citations 
+(NIMH,2020) 
+NIMH (2020) 
+Group author without abbreviation 
+(Stanford University, 2020) 
+Stanford University (2020) 
+' Define the abbreviation for a group author only once in the text, choosing either the parenthetical or the narrative formal. 
+Thereafter, use the abbreviation for all mentions of the group in the text (see Section 8.21). 
+I 
+
+
+=== PDF PAGE 283 ===
+In-Text Citations 
+C\.Y 
+267 
+8.18 Avoiding Ambiguity in In-Text Citations 
+Sometimes multiple works with three or more authors and the same publication 
+year shorten to thesamein-text citation form when the guidelines described in 
+Section 8.17 are applied, which creates qmbiguity. To avoid ambiguity, when the 
+in-text citations of multiple works with three or more authors shorten to the 
+same form, write out as many names as needed to distinguish the references, 
+and abbreviate the rest of the names to "et al." in every citation. For example, 
+two works have the following authors: 
+Kapoor, Bloom, Montez, Warner, and Hill (2017) 
+Kapoor, Bloom, Zucker, Tang, Ki:iroglu, L'Enfant, Kim, and Daly (2017) 
+Both these citations shorten to Kapoor et al. (2017). To avoid ambiguity when 
+citing them both in your paper, cite them as follows: 
+Kapoor, Bloom, Montez, et al. (2017) 
+Kapoor, Bloom, Zucker, et al. (2017) 
+Because "et al." is plural (meaning "and others"), it cannot stand for only one name. 
+When only the final author is different, spell out all names in every citation. 
+Hasan, Liang, Kahn, and Jones-Miller (2015) 
+Hasan, Liang, Kahn, and Weintraub (2015) 
+8.19 Works With the Same Author and Same Date 
+When multiple references have an identical author (or authors) and publication 
+year, include a lowercase letter after the year (see Section 9.47). The year-Ietter 
+combination is used in both the in-text citation and the reference list entry. Use 
+only the year with a letter in the in-text citation, even ifthe reference list entry 
+contains a more specific date. 
+(Judge & Kammeyer-Mueller, 2012a) 
+Judge and Kammeyer-Mueller (2012b) 
+(Sifuentes, n.d.-a, n.d.-b) 
+8.20 Authors With the Same Surname 
+If the first authors of multiple references share the same surname but have dif-
+ferent initials, include the first authors' initials in all in-text citations, even if the 
+year of publication differs. Initials help avoid confusion within the text and help 
+readers locate the correct entry in the reference list (see Section 9.48). 
+(J. M. Taylor & Neimeyer, 2015; T. Taylor, 2014) 
+If the first authors of multiple references share the same surname and the same 
+initials, cite the works in the standard author-date formato 
+Sometimes people publish under multiple names because of a name change 
+(e.g., transgender authors, authors with a change in marital status). It is seldom 
+relevant to note that two names refer to the same persono When a given name 
+has changed, include initials with in-text citations only when the initials are 
+different. If it is necessary to clarify that two names refer to the same person 
+(e.g., to avoid confusion when reviewing an author's body of work), consult the 
+person and respect their preferences in whether and how to address the name 
+change. If it is necessary to clarify that two names refer to different people to 
+avoid confusion, include the first name of the first author in the in-text citation: 
+"Sarah Williams (2019) stated X, whereas Shonda Williams (2020) stated Y." 
+
+
+=== PDF PAGE 284 ===
+268 ~ WORKS CREDITED IN THE TEXT 
+If multiple authors within a single reference share the same surname, the initials 
+are not needed in the in-text citation; cite the work in the standard author-date 
+formato 
+(Chen & Chen, 2019) 
+8.21 Abbreviating Group Authors 
+If a reference has a group author, the name of the group can sometimes be 
+abbreviated-for example, ''American Psychological Association" can be abbre-
+viated to ''APA.'' You are not obligated to abbreviate the name of a group author, 
+but you can if the abbreviation is well-known, will help avoid cumbersome rep-
+etition, or will appear at least three times in the paper. 
+• As with other abbreviations (see Section 6.25), provide the full name of the 
+group on first mention in the text, followed by the abbreviation. 
+• If the group name first appears in a narrative citation, include the abbrevia-
+tion before the year in parentheses, separated with a comma. 
+The American Psychological Association (APA, 2017) described ... 
+• If the group name first appears in a parenthetical citation, include the abbre-
+viation in square brackets, followed by a comma and the year. 
+(American Psychological Association [APA], 2017) 
+• In the reference list entry, do not abbreviate the group author name. Instead, 
+spell out the full name of the group as presented in the source. 
+American Psychological Association. (2017, January). Understanding and overcoming 
+opioid abuse. https://www.apa.org/helpcenter/opioid-abuse.aspx 
+• If several references have the same group author, introduce the abbreviatiorí 
+only once in the texto 
+• In the rare case that two different groups abbreviate to the same form (e.g., 
+both the American Psychological Association and the American Psychiatric 
+Association abbreviate to ''APA'') and you cite both groups in your paper, spell 
+out each name every time to avoid confusion. 
+• If a work has three or more group authors, the in-text citation is also short-
+ened as described in Section 8.17. 
+8.22 General Mentions of Websites, Periodicals, and Common 
+Software and Apps 
+For a general mention of a website with no indication of particular informa-
+tion or a specific page from that site, no reference list entry or in-text citation 
+is needed. Provide the name of the website in the text and include the URL in 
+parentheses. For example, if you used a website to create a survey, mention the 
+website in the texto 
+We created our survey using Qualtrics (https://www.qualtrics.com). 
+A variation of this technique is also used for general mentions of periodicals. 
+For example, if you want to include the name of a journal you searched during a 
+meta-analysis, provide the journal title (in italic) using title case. 
+
+
+=== PDF PAGE 285 ===
+Paraphrases and Quotations 
+~ 269 
+I searched the Journal of Abnormal Psychology for studies to in dude in the meta-
+analysis. 
+Common softwareand mobile apps are treated in a similar manner;. in most 
+cases, it is sufficient to mention the name of the program or app and the version 
+used (if known) in the text, without providing an in-text citation or reference 
+list entry (see Section 10.10). Likewise, for I~pparatuses , provide a reference for 
+specialized products only (see Section 10.10). 
+Paraphrases and Quotations 
+8.23 Principies of Paraphrasing 
+A paraphrase restates another's idea (or your own previously published idea) in 
+your own words. Paraphrasing is an effective writing strategy because it allows 
+authors to summarize and synthesize information from one or more sources, 
+focus on significant information, and compare and contrast relevant details. 
+Published authors paraphrase their sources most of the time, rather than 
+directly quoting the sources; student authors should emulate this practice by 
+paraphrasing more than directly quoting. Use a professional tone when describ-
+ing a concept, idea, or finding in your own words (see Section 4.7). 
+Cite the work you paraphrase in the text using either the narrative or paren-
+thetical format (see Section 8.11). 
+Avid readers of science fiction and fantasy books are more likely than readers of other 
+genres to believe in futuristic scenarios-for example, that it wi ll someday be possible 
+to travel to other galaxies or power a car on solar energy (Black et al., 2018). 
+Although it is not required to provide a page or paragraph number in the cita-
+tion for a paraphrase, you may include one in addition to the author and year 
+when it would help interested readers locate the relevant passage within a long 
+or complex work (e.g., a book). 
+Webster-Stratton (2016) described a case example of a 4-year-old girl who showed 
+an insecure attachment to her mother; in working with the family dyad, the therapist 
+focused on increasing the mother's empathy for her child (pp. 152-153). 
+The guidelines in this section pertain to when authors read a primary source 
+and paraphrase it themselves. If you read a paraphrase of a primary source in 
+a published work and want to cite that source, it is best to read and cite the 
+primary source directly if possible; if not, use a secondary source citation (see 
+Section 8.6). 
+8.24 Long Paraphrases 
+A paraphrase may continue for several sentences. In such cases, cite the 
+work being paraphrased on first mention. Once the work has been cited, it 
+is not necessary to repeat the citation as long as the context of the writing 
+makes it clear that the same work continues to be paraphrased (see Figure 
+8.4 for an example). The citation may be either parenthetical or narrative; if 
+you select the narrative approach and repeat the author names in the narra-
+tive of subsequent sentences, the year of the work can often be omitted (see 
+Section 8.16). 
+
+
+=== PDF PAGE 286 ===
+270 ~ WORKS CREDITED IN THE TEXT 
+Figure 8.4 Example of a Long Paraphrase With a Single In-Text Citation 
+Velez et al. (2018) found that for women of color, sexism and racism in the workplace 
+were associated with poor work and mental health outcomes, including job-related 
+burnout, turnover intentions, and psychological distress. However, self-esteem, 
+person-organization fit, and perceived organizational support mediated these 
+effects. Additionally, stronger womanist attitudes-which acknowledge the unique 
+challenges faced by women of color in a sexist and racist society-weakened 
+the association of workplace discrimination with psychological distress. These 
+findings underscore the importance of considering multiple forms of workplace 
+discrimination in c1inical practice and research with women of color, along with 
+efforts to challenge and reduce such discrimination. 
+If the paraphrase continues into a new paragraph, reintroduce the citation. 
+If the paraphrase incorporates multiple sources or switches among sources, 
+repeat the citation so the source is clear (see Figure 8.5 for an example). Read 
+your sentences carefully to ensure you have cited sources appropriately. 
+8.25 Principies of Direct Quotation 
+A direct quotation reproduces words verbatim from another work or from 
+your own previously published work. It is best to paraphrase sources (see 
+Sections 8.23- 8.24) rather than directly quoting them because paraphras-
+ing allows you to fit material to the context of your paper and writing style. 
+Use direct quotations rather than paraphrasing when reproducing an exact 
+definition (see example in Section 6.22), when an author has said something 
+memorably or succinctIy, or when you want to respond to exact wording 
+(e.g., something someone said). Instructors, programs, editors, and publish-
+ers may establish limits on the use of direct quotations. Consult with your 
+instructor or editor if you are concerned that you may have too much quoted 
+material in your paper. 
+When quoting directIy, always provide the author, year, and page number 
+of the quotation in the in-text citation in either parenthetical or narrative 
+format (see Section 8.11). To indicate a single page, use the abbreviation "p." 
+(e.g., p. 25, p. S41, p. e221); for multiple pages, use the abbreviation "pp." and 
+separate the page range with an en dash (e.g., pp. 34- 36). If pages are discon-
+tinuous, use a comma between the page numbers (e.g., pp. 67, 72). Ifthe work 
+does not have page numbers, provide another way for the reader to locate the 
+quotation (see Section 8.28). 
+
+
+=== PDF PAGE 287 ===
+Paraphrases and Quotations 
+C\.Y 
+271 
+Figure 8.5 Example of Repeated Citations Necessary to Clarify Sources 
+Play therapists can experience many symptoms of impaired wellness, including 
+emotional exhaustion or reduced ability to empathize with others (Elwood et 
+al., 2011; Figley, 2002), disruption in personal relationships (Elwood et al., 2011; 
+Robinson-Keilig, 2014), decreased satisfaction with work (Elwood et al., 2011), 
+avoidance of particular situations (Figley, 2002; O'Halloran & Unton, 2000), and 
+feelings or thoughts of helplessness (Elwood et al., 2011; Figley, 2002; O'Halloran & 
+Unton, 2000). 
+Note. In this passage, so me works are cited multiple times to support multiple points. It is necessary to 
+repeat these citations beca use different combinations of works support different ideas-the sources change 
+and thus must be made clear to readers. If al! ideas had the same sources, it would not be necessary to 
+repeat the citations. 
+The format of a direct quotation depends on its length (fewer than 40 
+words vs. 40 words or more; see Sections 8.26- 8.27). Regardless of quotation 
+length, do not insert an ellipsis at the beginning and/or end of a quotation 
+unless the original source includes an ellipsis, If you need to make changes 
+to a direct quotation, see Sections 8,30 and 8,31. For other uses of quotation 
+marks, such as when presenting verbatim instructions to participants or quo-
+tations from research participants, see Sections 6.7 and 8.36, respectively. To 
+reproduce material that is already a direct quotation in the work you are cit-
+ing, see Section 8.33. 
+8.26 Short Quotations (Fewer Than 40 Words) 
+If a quotation consists of fewer than 40 words, treat it as a short quotation: 
+Incorporate it into the text and enclose it within double quotation marks. For 
+a direct quotation, always include a full citation (parenthetical or narrative) 
+in the same sentence as the quotation. Place a parenthetical citation either 
+immediately after the quotation or at the end of the sentence. For a narrative 
+citation, include the author and year in the sentence and then place the page 
+number or other location information in parentheses after the quotation; if 
+the quotation precedes the narrative citation, put the page number or loca-
+tion information after the year and a comma. 
+If the citation appears at the end of a sentence, put the end punctuation 
+after the closing parenthesis for the citation. If the quotation includes cita-
+tions, see Section 8.32; if the quotation includes material already in quota-
+tion marks, see Section 8.33. Place periods and commas within closing single 
+or double quotation marks. Place other punctuation marks inside quotation 
+marks only when they are part of the quoted material. 
+Short quotations can be presented in a variety of ways, as shown in Table 8.2. 
+
+
+=== PDF PAGE 288 ===
+272 
+~ WORKS CREDITED IN THE TEXT 
+Table 8.2 Examples of Direct Quotations Cited in the Text 
+Correct 
+Effective teams can be difficult to 
+describe beca use "high performance 
+along one domain does not translate 
+to high performance along another" 
+(Ervin et al ., 2018, p. 470). 
+" Even smart, educated, emotionally 
+stable adults believe superstitions 
+that they recognize are not rational," 
+as exemplified by the existence of 
+people who knock on wood for good 
+luck (Risen, 2016, p. 202). 
+Biebel et al . (2018) noted that "incor-
+porating the voice of students with 
+psychiatric disabilities into supported 
+education services can increase 
+access, involvement, and retention" 
+(p. 299). 
+"Some people are hilarious, others 
+are painfully unfunny, and most are 
+somewhere in between," wrote 
+Nusbaum et al. (2017, p. 231) in their 
+exploration of humor. 
+The item read, "What were the best 
+aspects of the program for you?" 
+(Shayden et al., 2018, p. 304). 
+In 2018, Soto argued that "more 
+similar stimuli, such as those coming 
+from the same modality, produce 
+more configural processing" (p. 598). 
+Incorrect 
+Effective teams can be difficult to 
+describe beca use "high performance 
+along one doma in does not translate 
+to high performance along another." 
+(Ervin et al., 2018, p. 470) 
+"Even smart, educated, emotionally 
+stable adults believe superstitions 
+that they recognize are not rational 
+(Risen, 2016, p. 202)," as exemplified 
+by the existence of people who 
+knock on wood for good luck. 
+Biebel et al. (2018) noted that " incor-
+porating the voice of students with 
+psychiatric disabilities into supported 
+education services can increase 
+access, involvement, and retention." 
+(p. 299) 
+"Some people are hilarious, others 
+are painfully unfunny, and most are 
+somewhere in between," (p. 231) 
+wrote Nusbaum et al. (2017) in their 
+exploration of humor. 
+The item read, "What were the best 
+aspects of the program for you"? 
+(Shayden et al., 2018, p. 304). 
+In 2018, Soto argued that "more 
+similar stimuli, such as those coming 
+from the same modality, produce 
+more configural processing" (Soto, 
+2018, p. 598). 
+8.27 Block Quotations (40 Words or More) 
+Rationale 
+The period marking the end 
+of a sentence should fol low 
+the citation, not precede it'. 
+The citation should be 
+outside the quotation marks, 
+not within them. 
+The period marking the 
+end of the sentence should 
+follow the page number, 
+not precede it. 
+The page number should be 
+within the same parentheses 
+as the year when the quota-
+tion precedes the narrative 
+citation. 
+The question mark that ends 
+the quotation should appear 
+within the quotation marks. 
+It is not necessary to repeat 
+the author and year within 
+parentheses when they 
+already appear in the 
+narrative. 
+lf a quotation contains 40 words or more, treat it as a block quotation. Do not 
+use quotation marks to endose a block quotation. Start a block quotation on 
+a new line and indent the whole block 0.5 in. from the left margino lf there are 
+additional paragraphs within the quotation, indent the first line of each subse-
+quent paragraph an additional 0.5 in. Double-space the entire block quotation; 
+do not add extra space before or after it. Either (a) cite the source in parenthe-
+ses after the quotation's final punctuation or (b) cite the author and year in the 
+narrative before the quotation and place only the page number in parentheses 
+after the quotation's final punctuation. Do not add a period after the dosing 
+parenthesis in either case. 
+Block quotation with parenthetical citation: 
+Researchers have studied how people talk to themselves: 
+Inner speech is a paradoxical phenomenon. It is an experience that is central to many 
+people's everyday lives, and yet it presents considerable challenges to any effort to 
+study it scientifically. Nevertheless, a wid e range of methodologies and app roaches 
+have combined to shed light on the subjective experience of inner speech and its cog-
+nitive and neura l underpinnings. (Alderson-Day & Femyhough, 2015, p. 957) 
+
+
+=== PDF PAGE 289 ===
+Paraphrases and Quotations 
+C\\.> 
+273 
+Block quotation with narrative citation: 
+Flores et al. (2018) described how they addressed potential researcher bias when working 
+with an intersectional comnlunity of transgender people of color: 
+Everyone on the research team belonged to a stigmatized group but also held privi-
+leged identities. Throughout the research process, we attended to the ways in which 
+our privileged and oppressed identities may have influenced the research process, 
+findings, and presentation of results. (p. 311) 
+Block quotation consisting of two paragraphs: 
+Regarding implicati,ons for chronicbiases in expectation formation, 
+in order to accurately estimate whetHer people are likely to form positive or negative 
+expectations on any given occasion, it is necessary to go beyond simply considering 
+chronic individual differences and identify the factors that make people more likely to 
+form expectations in line with one bias or the other. 
+The present research sheds light on this issue by identifying a crucial distinction in 
+the operation of these two trait biases in expectation formation. Specifically, people's 
+valence weighting biases and self-beliefs about the future appear to shape expecta-
+tions via qualitatively distinct processes. (Niese et al., 2019, p. 210) 
+If the block quotation includes citations, see Section 8.32; if the block quotation 
+includes material already in quotation marks, see Section 8.33. 
+8.28 Direct Quotation of Material Without Page Numbers 
+Textual Works. To directly quote from written material that does not contain 
+page numbers (e.g., webpages and websites, sorne ebooks), provide readers with 
+another way of locating the quoted passage. Any of the following approaches is 
+acceptable; use the approach that will best help readers find the quotation: 
+• Provide a heading or section name. 
+For people with osteoarthritis, "painful joints should be moved through a full range 
+of motion every day to maintain flexibility and to slow deterioration of cartilage" 
+(Gecht-Silver & Duncombe, 2015, Osteoarthritis section). 
+• Provide an abbreviated heading or section name in quotation marks to 
+indicate the abbreviation if the full heading or section name is too long or 
+unwieldy to cite in full. In the next example, the original heading was "What 
+Can You Do to Prevent Kidney Failure?" and the items are quoted separately 
+because they originally appeared as part of a bulleted listo 
+To prevent kidney failure, patients should "get active," "quit smoking," and "take med-
+ications as directed" (Centers for Disease Control and Prevention, 2017, "What Can 
+You Do" section). 
+• Provide a paragraph number (count the paragraphs manually if they are not 
+numbered). 
+People planning for retirement need more than just money-they also "need to stock-
+pi le their emotional reserves" to ensure adequate support from family and friends 
+(Chamberlin, 2014, para. 1). 
+• Provide a heading or section name in combination with a paragraph number. 
+Music and language are intertwined in the brain such that "people who are better 
+at rhythmic memory skills tend to excel at language skills as well" (DeAngelis, 2018, 
+Musical Forays section, para. 4). 
+
+
+=== PDF PAGE 290 ===
+274 
+~ WORKS CREDITED IN THE TEXT 
+Do not include Kindle location numbers with in-text citations. Instead, provide 
+the page number (which is available in many Kindle books, especially those 
+based on print editions) or use the methods described in this section to create a 
+page number alternative. 
+Note that the name of the section or other part of the work will not neces- . 
+sarily appear in the reference list entry for the work. For example, if you cite a 
+particular section of a webpage or website in the text, the reference list entry 
+should be for the page you used, not for only that section of the page. 
+Audiovisual Works. To directly quote from an audiovisual work (e.g., audio-
+book, YouTube video, TED Talk, TV show), provide a time stamp for the begin-
+ning of the quotation in place of a page number. 
+People make "sweeping inferences and judgments from body language" (Cuddy, 
+2012, 2: 12). 
+Works With Canonically Numbered Sections. To directly quote from material 
+with canonically numbered sections (e.g., religious or classical works; see also 
+Section 9.42 and Chapter 10, Examples 35-37), use the name of the book, chap-
+ter, verse, line, and/or canto instead of a page number. 
+The person vowed to "set me as a seal upon thine heart" (King James Bible, 1769/2017, 
+Song of Solomon 8:6). 
+For plays, cite the act, scene, and line(s). In the following example, "1.3.36-37" 
+refers to Act 1, Scene 3, Lines 36 and 37. 
+In Much Ado About Nothing, Don John said, "In the meantime / let me be that I am 
+and seek not to alter me" (Shakespeare, 1623/1995, 1.3.36-37). 
+8.29 Accuracy of Quotations 
+Direct quotations must be accurate. Except as noted here and in Sections 8.30 
+and 8.31, the quotation must match the wording, spelling, and interior punctua-
+tion of the original source, even if the source is incorrecto If any incorrect spell-
+ing, punctuation, or grammar in the source might confuse readers, insert the 
+word "[sic]," italicized and in brackets, immediately after the error in the quota-
+tion. (See Section 8.31 regarding the use of square brackets to clarify meaning 
+in quotations.) A quotation that includes an error may be distracting, so con-
+sider paraphrasing instead. When quoting, always check your paper against the 
+source to ensure that there are no discrepancies. 
+Nowak (2019) wrote that "people have an obligation to care for there [sic] pets" (p. 52). 
+8.30 Changes to a Quotation Requiring No Explanation 
+Sorne changes can be made to direct quotations without alerting readers: 
+• The first letter of the first word in a quotation may be changed to an upper-
+case or a lowercase letter to fit the context of the sentence in which the quo-
+tation appears. 
+• Sorne punctuation marks at the end of a quotation may be changed to fit the 
+syntax of the sentence in which the quotation appears, as long as meaning 
+is not changed (e.g., it might alter meaning to change a period to a question. 
+mark, depending on how the sentence is written). 
+
+
+=== PDF PAGE 291 ===
+Paraphrases and Quotations 
+~ 275 
+.' Single quotation marks may be changed to double quotation marks and 
+vice versa. 
+• Footnote or endnote number callouts can be omitted (see also Section 8.32). 
+Any other changes (e.g., italicizing words for emphasis or omitting words; see 
+Section 8.31) must be explicitly indicated. For more on quoting from a bulleted 
+list without reproducing the bullets, see the second example in Section 8.28. 
+8.31 Changes to a Quotation Requiring Explanation 
+Sorne changes to direct quotations require explanation, as shown in the exam-
+pIe in Figure 8.6. 
+Omitting Material. Use an ellipsis to indicate that you have omitted words 
+within a quotation (e.g., to shorten a sentence or tie two sentences together). 
+Either type three periods with spaces around each ( ... ) or use the ellipsis char-
+acter created by your word-processing program when you type three periods in 
+a row ( ... ), with a space before and after. Do not use an ellipsis at the beginning 
+or end of any quotation unless the original source includes an ellipsis; start or 
+end the quotation at the point where the source's text begins or ends. Use four 
+periods- that is, a period plus an ellipsis ( .... )- to show a sentence break within 
+omitted material, such as when a quotation includes the end of one sentence 
+and the beginning of another sentence. 
+Inserting Material. Use square brackets, not parentheses, to enclose material 
+such as an addition or explanation you have inserted in a quotation. 
+Adding Emphasis. If you want to emphasize a word or words in a quotation, use 
+italics. Immediately after the italicized words, insert "emphasis added" within 
+square brackets as follows: [emphasis added]. 
+Figure 8.6 Example of Changes Made to a Direct Quotation 
+,---------1 "adults" added in brackets 
+to clarify meaning 
+De Baeker and Fisher (2012) noted that "those [adults] who read gossip magazines, 
+wateh gossip-related television shows, or read gossip artieles from internet sites ... 
+may feel guilty about wasting their time on a leisure pursuit" (p. 421). They emphasized 
+that "it is important to remember that gossip helped our oncestors survive [emphasis 
+addedJ, and thus by aeeessing gossip, one is faeed with an opportunity to vieariously 
+learn solution [sic] to adaptive problems" (De Baeker & Fisher, 2012, p. 421). 
+L--------\-------------------1 "emphasis added" 
+noted to indieate 
+new italies 
+
+
+=== PDF PAGE 292 ===
+276 
+C\.v 
+WORKS CREDITED IN THE TEXT 
+8.32 Quotations That Contain Citations to Other Works 
+When quoting material that contains embedded citations, indude the citations 
+within the quotation. Do not indude these works in the reference list unless you 
+cite them as primary sources elsewhere in your paper. In the following example, 
+Panero et al. (2016) would appear in the reference list, but the Stanislavski cita-
+tions would not: 
+Actors "are encouraged to beco me immersed in a character's life (Stanislavski, 1936/1948, 
+1950), an activity that calls for absorption" (Panero et al., 2016, p. 234). 
+Footnote or endnote number callouts in the quoted material can be omitted 
+with no explanation (see Section 8.30). 
+If citations appear at the end of material you want to quote, it is common 
+practice to end the quotation before the citations and to cite only the work you 
+read (see Figure 8.7 for an example).1t is appropriate to omit the citations at the 
+end of a quotation when the material you quote represents a new approach to 
+or conceptualization of the ideas presented in the cited works-for example, 
+when authors have summarized a body of work and you want to quote and cite 
+that summary. If you want to quote the same material that was quoted in the 
+work you are citing, see Section 8.33. 
+Figure 8.7 Example of Citations Omitted at the End of a Quotation 
+Original sentence 
+from Killham et al. 
+-. Sport participation has the potential to promote positive experiences for young 
+(2018) 
+-
+women through the satisfaction of psychological needs (e.g., competence, 
+relatedness, and autonomy), promotion of positive physiological adaptations 
+to the cardiovascular system and musculoskeletal health, as well as the 
+development of interpersonal and leadership skills (e.g., Bruner et al., 2017; 
+Crocker, 2016; Eime et al., 2013; Forcier et al., 2006; Gunnell et al., 2014). 
+Quotation from 
+Killham et al. (2018) 
+~ 
+Sports can help young women have positive experiences "through the 
+in your paper 
+satisfaction of psychological needs (e.g., competence, relatedness, 
+and autonomy), promotion of positive physiological adaptations to the 
+cardiovascular system and musculoskeletal health, as well as the development 
+of interpersonal and leadership ski 115" (Killham et al., 2018, p. 297). 
+Note. In the original passage, Killham et al. (2018) summarized the results of many studies and cited their sources at the end 
+of the sentence. To quote Killham et al.'s summarY in your paper, cite Killham et al., and omit the citations at the end of the 
+original sentence. Interested readers can consult Killham et al. for further information. 
+
+
+=== PDF PAGE 293 ===
+Paraphrases and Quotations 
+C\,y 
+277 
+8.33 Quotations That Contain Material Already in Quotation Marks 
+e lf your source indudes a direct quotation from another work, and you would 
+like to use the same direct quotation in your paper, it is best to read and cite the 
+original source directly. lf the original source is unavailable, cite the quotation 
+using the secondary source (see Section 8.6). 
+To quote material that already uses quotation marks for sorne other purpose 
+(e.g., to endose a phrase such as a coined expression or linguistic example; see 
+Section 6.7), it may be necessaryto change double quotation marks to single or 
+vice versa in your paper depending on the number of words you are quoting. 
+/ 
+Short Quotations. For quotations of fewer than 40 words, use single quotation 
+marks within double quotation marks to set off material that was endosed in 
+double quotation marks in the original source. 
+Correct: Bliese et al. (2017) noted that "mobile devices enabled employees in many jobs 
+to work 'anywhere, anytime' and stay electronica lly tethered to work outside formal work-
+ing hours" (p. 391). 
+Incorrect: Bliese et al. (2017) noted that "mobile devices enabled employees in many 
+jobs to work "anywhere, anytime" and stay electronically tethered to work outside formal 
+working hours" (p. 391). 
+Block Quotations. Use double quotation marks around quoted material that 
+appears within a block quotation. (lf the original quotation marks were single 
+quotation marks, as in British-style publications, change them to double quota-
+tion marks in your paper.) 
+Correct: 
+It is also worth considering the need for subjective certainty: 
+If a conjecture is just mere guess, one wou ld not expect the same bias to occur, 
+because it might likely come along with the metacognition of "1 know 1 am/was just 
+guessing, " which would counteract retrospectively increased perceptions of fore-
+seeability. (von der Beck & Cress, 2018, p. 97) 
+Incorrect: 
+It is also worth considering the need for subjective certainty: 
+If a conjecture is just mere guess, one would not expect the same bias to occur, 
+beca use it might likely come along with the metacognition of '1 know 1 am/was just 
+guessing,' which would counteract retrospectively increased perceptions of fore-
+seeability. (von der Beck & Cress, 2018, p. 97) 
+8.34 Permission to Reprint or Adapt Lengthy Quotations 
+You may need written permission from the owner of a copyrighted work ifyou 
+indude lengthy quotations (usually more than 800 words) from it in your work. 
+Quotations from shorter works (e.g., poems, songs) may also need permission. 
+See Sections 12.14 to 12.18 for guidelines on citing these quotations. 
+8.35 Epigraphs 
+An epigraph is a quotation that is used to introduce an artide, book, chapter, 
+dissertation, or other work. Authors may use an epigraph to set the stage for 
+what follows or to serve as a summary or counterpoint. The epigraph should 
+appear before the first line of text and should be indented 0.5 in. from the left 
+margin, like a block quotation, without quotation marks. 
+
+
+=== PDF PAGE 294 ===
+278 ~ WORKS CREDITED IN THE TEXT 
+The source of an epigraph is not usually listed in the reference list unless the 
+work is cited elsewhere in the text of the paper or is important within the con-
+text of the topic. If the source of the epigraph is not included in the reference 
+list, on the line below the quotation, provide the credit line-consisting of an 
+em dash and then the author's full name, a comma, and the title of the work in 
+which the quotation appeared-and align it to the right. 
+Research is formalized curiosity. It is poking and prying with a purpose. 
+-Zora Neale Hurston, Dust Tracks on a Road 
+However, do provide a reference list entry for an epigraph from an academic 
+source (e.g., scholarly book or journal) or a quotation used with permission. The 
+parenthetical citation, including the author, date, and page number, appears 
+after the end punctuation of the quotation with no line break. The example quo-
+tation comes from a republished work (se e Chapter 10, Example 29). 
+If life is to be sustained, hope must remain, even where confidence is wounded, trust 
+impaired. (Erikson, 1966/2000, p. 192) 
+8.36 Quotations From Research Participants 
+Quotations from participants whom you interviewed as part of your research 
+are treated differently than quotations from published works. When quoting 
+research participants, use the same formatting as for other quotations: Present a 
+quotation of fewer than 40 words in quotation marks within the text (see Section 
+8.26), and present a quotation of 40 words or more in a block quotation (see Sec-
+tion 8.27). Because quotations from research participants are part of your origi-
+nal research, do not include them in the reference list or treat them as personal 
+communications; state in the text that the quotations are from participants. 
+When quoting research participants, abide by the ethical agreements reg5lrd-
+ing confidentiality and/or anonymity between you and your participants. Take 
+extra care to obtain and respect participants' consent to have their information 
+included in your reporto You may need to assign participants a pseudonym, 
+obscure identif),ring information, or present information in the aggregate (strat-
+egies for adequately disguising materials are further described in Sections 1.14 
+and 1.19; see also Section 1.15 regarding confidentiality in qualitative studies). 
+Participant "Julia," a 32-year-old woman from California, described her experiences as 
+a new mother as "simultaneously the best and hardest time of my life." Several other 
+participants agreed, describing the beginning of parenthood as "joyful," "Ionely," and 
+"intense." Julia and the other participants completed interviews in their homes. 
+Agreements regarding confidentiality and/or anonymity may also extend to other 
+sources related to your methodology (e.g., quoting a school policy document 
+when conducting a case study at a school). These sources would not be cited 
+in text or listed in the reference list because doing so would compromise the 
+school's confidentiality and/or anonymity. However, it may be possible to discuss 
+information from these sources in the text if the material is suitably disguised. 
+Our study was conducted at a high school in Atlanta, Georgia. School administrators 
+provided documents containing students' average test scores and the percentage of 
+students receiving free or reduced-price lunch. We used these data to contextua lize 
+the impact of our intervention. 
+
+
+=== PDF PAGE 295 ===
+
+
+=== PDF PAGE 296 ===
+Contents 
+Reference Categories 
+281 
+9.1 Determining the Reference 
+Category 
+281 
+9.2 Using the Webpages and Websites 
+Reference Category 282 
+9.3 Online and Print References 
+282 
+Principies of Reference List Entries 
+283 
+9.4 Four Elements of a Reference 
+283 
+9.5 Punctuation Within Reference List 
+Entries 
+284 
+9.6 Accuracy and Consistency in 
+References 
+285 
+REFERENCE ELEMENTS 
+285 
+Author 
+285 
+9.7 Definition of Author 285 
+9.8 Format of the Author Element 286 
+9.9 Spelling and Capitalization of 
+Author Names 
+287 
+9.10 Identification of Specialized Roles 
+287 
+9.11 Group Authors 288 
+9.12 No Author 289 
+Date 
+289 
+9.13 Definition of Date 
+289 
+9.14 Format of the Date Element 289 
+9.15 Updated or Reviewed Online 
+Works 
+290 
+9.16 Retrieval Dates 
+290 
+9.17 No Date 
+291 
+Title 
+291 
+9.18 Definition of Title 
+291 
+9.19 Format of the Title Element 
+291 
+9.20 Series and Multivolume Works 
+292 
+9.21 Bracketed Descriptions 
+292 
+9.22 No Title 
+292 
+Source 
+293 
+9.23 Definition of Source 
+293 
+9.24 Format of the Source Element 293 
+9.25 Periodical Sources 
+294 
+9.26 Online Periodicals With Missing 
+Information 
+294 
+9.27 Article Numbers 
+294 
+9.28 Edited Book Chapter and Reference 
+Work Entry Sources 
+295 
+9.29 Publisher Sources 
+295 
+9.30 Database and Archive Sources 
+296 
+9.31 Works With Specific Locations 
+297 
+9.32 Social Media Sources 
+297 
+9.33 Website Sources 
+298 
+9.34 When to Include DOls and URLs 
+298 
+9.35 Format of DOls and URLs 
+299 
+9.36 DOlor URL Shorteners 300 
+9.37 No Source 
+300 
+Reference Variations 
+301 
+9.38 Works in Another Language 
+301 
+9.39 Translated Works 
+301 
+9.40 Reprinted Works 
+302 
+9.41 Republished or Reissued Works 
+302 
+9.42 Religious and Classical Works 
+302 
+Reference List Format and Order 
+303 
+9.43 Format of the Reference List 303 
+9.44 Order of Works in the Reference 
+List 
+303 
+9.45 Order of Surname and Given 
+Name 303 
+9.46 Order of Multiple Works by the 
+Same First Author 304 
+9.47 Order of Works With the Same 
+Author and Same Date 305 
+9.48 Order of Works by First Authors 
+With the Same Surname 
+305 
+9.49 Order ofWorks With No Author 
+or an Anonymous Author 306 
+9.50 Abbreviations in References 
+306 
+9.51 Annotated Bibliographies 
+307 
+9.52 References Included in a 
+Meta-Analysis 307 

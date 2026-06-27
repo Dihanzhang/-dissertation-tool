@@ -1,0 +1,949 @@
+
+=== PDF PAGE 130 ===
+4 
+WRITING STYLE ANO 
+GRAMMAR 
+The main objective of scholarly writing is clear communication, which can be 
+achieved by presenting ideas in an orderly and concise manner. Establishing a 
+tone that conveys the essential points of your work in an interesting way will 
+engage readers and communicate your ideas effectively. Precise, clear word 
+choice and sentence structure also contribute to the creation of a substantive, 
+impactful work. 
+In this chapter, we provide guidance on achieving the four qualities of effec-
+tive scholarly writing: continuity, flow, conciseness, and clarity. This is followed 
+by general rules for grammar and usage and suggested strategies for improving 
+your writing. 
+Effective Scholarly Writing 
+Being able to communicate ideas clearly and succinctly is a recipe for success for 
+all writers, be they students submitting assignments to their instructor or profes-
+sionals submitting manuscripts to a journal. Effective scholarly writing balances 
+continuity and flow with conciseness and clarity. By implementing the tech-
+niques and principies described in Sections 4.1 to 4.11, writers will improve these 
+aspects of their communication and become more effective communicators. 
+Continuity and Flow 
+4.1 Importance of Continuity and Flow 
+Effective writing is characterized by continuity, the logical consistency of expres-
+sion throughout a written work, and by flow, the smooth cadence ofwords and 
+sentences. Inconsistencies, contradictions, omissions, and irrelevancies in your 
+111 
+
+
+=== PDF PAGE 131 ===
+112 ~ WRITING STYLE AND GRAMMAR 
+writing style and presentation of ideas can make your arguments seem less 
+credible. A work that lacks continuity and flow may seem disorganized or con-
+fusing, and details may seem incomplete or inconsistent. Readers will better 
+understand your ideas if you aim for continuity in words, concepts, and the-
+matic development fram the opening statement to the conclusion. Explain rela-
+tionships between ideas clearly, and present ideas in a logical order to imprave 
+the readability of your papero 
+4.2 Transitions 
+To improve continuity and flow in your writing, check transitions between sen-
+tences, paragraphs, and ideas to ensure that the text is smooth and clear rather 
+than abrupt or disjointed. When editing your writing, use additional transi-
+tional devices to make it less choppy. Text that sounds choppy or disjointed may 
+indicate that you have abandoned an argument or theme prematurely-instead 
+consider amplifying its discussion. 
+Punctuation marks contribute to continuity and flow by signaling transitions 
+and demonstrating relationships between ideas. They also reflect the pauses, 
+inflections, subordination, and pacing normally heard in speech. Use the full 
+range of punctuation. Neither overuse nor underuse one type of punctuation, 
+such as commas or dashes: Overuse may annoy readers, whereas underuse may 
+cause confusion. Instead, use punctuation to support meaning. 
+Likewise, transitional words and phrases help maintain the flow of ideas, 
+especially when the material is complex or abstracto For example, using a pro-
+noun that refers to a noun in the preceding sentence not only serves as a transi-
+tion but also avoids repetition. Be sure the referent is obvious. Other transitional 
+words and phrases include the following: 
+• time links (e.g., "then," "next," "after," "while," "since") 
+• cause-effect links (e.g., "therefore," "consequentIy," "as a result") 
+• addition links (e.g., "in addition," "moreover," "furthermore," "similarly") 
+• contrast links (e.g., "but," "conversely," "nevertheless:' "however," "although") 
+Use adverbs judiciously as introductory or transitional words (e.g., adverbs such 
+as "certainly," "consequentIy," "conversely," "fortunatelY;' "importantly," "interest-
+ingly," "more importantly," "regrettably," and "similarly"). Writers often overuse 
+adverbs, so ask yourself whether the introduction or transition is needed. For 
+example, both "importantly" and "interestingly" can often be recast to enhance 
+the message of a sentence or simply omitted without a loss of meaning. 
+4.3 Noun Strings 
+Noun strings, meaning several nouns placed one after another to modify a final 
+noun, can confuse readers and force them to question how the words relate 
+to one another. Although skillful hyphenation can clarify the relationships 
+between words, often the best option is to untangle the string. One appraach to 
+untangling is to move the final noun earlier in the string and show relationships 
+between the other nouns by using verbs and prepositions. For example, "cultur-
+ally sensitive qualitative interview techniques" can be rearranged to "culturally 
+sensitive techniques for qualitative interviews." Consider the following, nearly 
+uninterpretable noun strings and how each could be better structured: 
+
+
+=== PDF PAGE 132 ===
+Noun string 
+skinfold test body fat percentage 
+examination 
+preliminary online collegiate 
+instructional methods survey results 
+Conciseness and Clarity 
+Conciseness and Clarity 
+C\v 
+113 
+Better sentence structure 
+• 
+a caliper examination to determine body fat 
+percéntage 
+• 
+a skinfold test to determine body fat percentage 
+• 
+determination of body fat percentage using 
+calipers to measure skinfold thickness 
+• 
+preliminary results of an online survey of collegiate 
+instructional methods 
+• 
+preliminary results of an online survey to assess 
+college students' preferred instructional methods 
+I 
+I 
+4.4 Importance of Conciseness and Clarity 
+Say only what needs to be said in your writing: The author who is more concise-
+that is, more frugal with words-writes a more readable papero Authors seeking 
+publication and students completing assignments increase their chances of suc-
+cess when they write concisely. Likewise, writing that is clear and precise is 
+more accurate and transparento In combination, conciseness and clarity in 
+your writing ensure that readers understand your meaning. 
+Sorne writers may fear that writing concisely will make their papers too short. 
+However, adding extraneous material or "fluff" to make your paper longer will 
+dilute its focus and meaning and will not improve your chances of publication 
+or of getting a favorable grade. If your paper is too short when written concisely, 
+your ideas and themes may need to be further developed to add substance. 
+Where possible, tighten language to eliminate wordiness, redundancy (see 
+Section 4.5), evasiveness, overuse of the passive voice, circumlocution, and 
+clumsy prose. Shorten or eliminate overly detailed descriptions of equipment 
+or apparatus, participants, or procedures (beyond those called for in journal 
+article reporting standards; see Chapter 3); elaborations of the obvious; and 
+irrelevant observations or asides. Information that would cause the paper to be 
+too long and is not essential to understanding the research-but would none-
+theless be helpful to a subset of readers-may be placed, when appropriate, in 
+supplemental materials (see Section 2.15). 
+Short words and short sentences are easier to comprehend than long ones 
+(see Section 4.6). A long technical term, however, may be more precise thansev-
+eral short words, and technical terms are inseparable from scientific reporting. 
+However, a paper with too much jargon or terminology familiar to only a few 
+specialists does not sufficiently contribute to the literature because its meaning 
+is obfuscated (see Section 4.9). Rather, the technical terms in a paper should be 
+either readily understood by readers across disciplines or defined for readers 
+who may be unfamiliar with them. 
+Concise writing must also be clear. Be deliberate in your word choices, mak-
+ing certain that every word means exactly what you intend. For example, in 
+informal style, "feel" broadly substitutes for "think" or "believe," but in academic 
+style, such latitude in word choice is not acceptable. Likewise, using a word 
+with multiple meanings can cause confusion. For example, sorne writers use the 
+word "significant" to mean "important;' whereas others use "significant" only in 
+the context of statistical significance testing; ensure that your intended meaning 
+
+
+=== PDF PAGE 133 ===
+114 ~ WRITING STYLE AND GRAMMAR 
+is dear. Choose words and phrases carefully, and specifY the intended meaning 
+if there is potential for ambiguity. 
+If you use a word or phrase multiple times, do so consistently (e.g., do not 
+switch between "participants il) the music condition" and "participants who 
+heard the music while completing the task"- choose one presentation and use 
+it consistently). Sorne writers deliberately use synonyms or near-synonyms 
+to avoid repeating a word or phrase. The intention is commendable, but in 
+practice the use of synonyms can lead to imprecision: By using synonyms, 
+you may unintentionally suggest a subtle difference. Therefore, use synonyms 
+with careo 
+Word choice is especially important when talking about people who are 
+members of specific groups, such as in a Method section. Carefully consider the 
+descriptors you use, making sure they are accurate, consistent with current pre-
+ferred terminology, and in line with how the individuals you are writing about . 
+describe themselves. In no case should you use biased, pejorative, or demeaning 
+language (see Chapter 5 for guidelines on using bias-free language). 
+Strive for a professional tone and professionallanguage (see Sections 4.7-4.9). 
+Avoid heavy alliteration, rhyming, poetic expressions, and clichés. Use meta-
+phors sparingly; although they can help simplifY complicated ideas, metaphors 
+can also be distracting or undear. Avoid mixed metaphors (e.g., "a theory rep-
+resenting one branch of a growing body of evidence") and words with surplus 
+or unintended meanings (e.g., "outstanding" for "remaining"), which may dis-
+tract or mislead readers. Use figurative expressions with restraint and colorful 
+expressions with care; because these expressions can be open to interpretation 
+and even cultural differences, they generally do not add to understanding for 
+all possible readers. Instead, make direct, logical comparisons (see Section 4.10) 
+and dearly attribute actions (se e Section 4.11). 
+4.5 Wordiness and Redundancy 
+Wordiness can impede readers' understanding by forcing them to sort through 
+unnecessary words to decipher your ideas. Unconstrained wordiness lapses 
+into embellishment and flowery writing, which are inappropriate in academic 
+style. Consider the following examples of wordy and concise language: 
+Wordy 
+Concise 
+I 
+at the present time 
+now 
+for the purpose of 
+for, to 
+there were several students who completed 
+several students completed 
+Whereas wordiness refers to using more words than are necessary, redundancy 
+means using multiple words with the same meaning. Writers often use redun-
+dant language to be emphatic. Instead, use sentence structure to convey empha-
+sis, for example, by placing the words to be emphasized at the beginning or end 
+of a sentence. When possible and appropriate for the context, use the active 
+voice (see Section 4.13) to reduce wordiness and redundancy. In the following 
+examples, the highlighted words are redundant and should be omitted: 
+
+
+=== PDF PAGE 134 ===
+they were both alike 
+a sum total 
+four different groups saw 
+were exactly the same as 
+absolutely essential 
+has been previously found 
+small in size 
+one and the same 
+in close proximity to 
+completely unanimous 
+positioned very close 
+period of time 
+summarize briefly 
+the reason is because 
+4.6 Sentence and Paragraph Length 
+Conciseness and Clarity 
+~ 115 
+There is no minimum or maximum sentence length in APA Style. Overuse of 
+short, simple sentences produces choppy prose, however, and overuse of long, 
+involved sentences results in difficult, sometimes incomprehensible, language. 
+Varied sentence length helps readers maintain interest and comprehension. 
+When involved concepts require long sentences, the components should pro-
+ceed logically. Avoid including multiple ideas in a single sentence; instead, 
+break the sentence into shorter ones. Direct, declarative sentences with simple, 
+common words are usually best. 
+Similar cautions apply to paragraph length. Single-sentence paragraphs are 
+abrupt and should be used infrequently. Paragraphs that are too long (i.e., lon-
+ger than one double-spaced manuscript page) risk losing readers' attention. A 
+new paragraph signals a shift to a new idea and provides a pause for readers-a 
+chance to assimilate one step in the conceptual development before beginning 
+another. Look for a logical place (or places) to break up a long paragraph or 
+reorganize the material. 
+4.7 Tone 
+Although scientific writing differs in form and content from creative or liter-
+ary writing, it need not lack style or be dull. When writing a scholarly paper, 
+keep in mind that scientific prose and creative or literary writing serve differ-
+ent purposes. Devices that are often used in creative writing- for example, 
+setting up ambiguity; inserting the unexpected; omitting the expected; and 
+suddenly shifting the topic, tense, or person- do not support the objective 
+of clear communication in scientific writing. Similarly, devices or embellish-
+ments that attract attention to words and sounds instead of to ideas are inap-
+propriate in scientific writing. 
+Thus, when describing your research, present the ideas and findings in a 
+direct, straightforward manner, while also aiming for an interesting and com-
+pelling style- for example, by fully elaborating on an idea or concept (see Sec-
+tion 4.2), making word choices that reflect your involvement with the problem 
+(see Section 4.4), and varying sentence and paragraph lengths (see Section 4.6). 
+Use language that conveys professionalism and formality (see Section 4.8). For 
+example, scientific writing often contrasts the positions of different research-
+ers, and these differences should be presented in a professional, noncombative 
+manner: Stating "Gerard (2019) did not address" is acceptable, whereas "Gerard 
+(2019) completely overlooked" is noto 
+One way to achieve the right tone is to imagine a specific reader you intend 
+to reach and write in a way that will inform and persuade that individual. For 
+
+
+=== PDF PAGE 135 ===
+116 ~ WRITING STYLE AND GRAMMAR 
+example, your reader might be a researcher in a related field who is trying to 
+keep abreast of the literature but is not familiar with the jargon or insider per-
+spectives of your field. What would facilitate this reader's understanding of and 
+appreciation for the importance.of your work? 
+4.8 Contractions and Colloquialisms 
+Avoid using contractions and colloquialisms, which detract from a profes-
+sional tone in scholarly writing. Contractions-shortened forms of one or two 
+words in which an apostrophe is used in place of missing letters-generally 
+do not appear in scholarly writing because they convey an informal tone. To 
+avoid contractions and improve your writing, evaluate words with apostrophes 
+carefully. Except for cases noted, rewrite a word like "can't" into "cannot." Use 
+apostrophes to indicate possession (e.g., "the student's work"), but remember 
+that possessive pronouns do not include apostrophes (e.g., write "its purpose 
+was" not "it's purpose was"). However, contractions can be appropriately used 
+in sorne circumstances, such as in reproducing a direct quotation that con-
+tains a contraction (e.g., when quoting a research participant, do not change 
+a participant's use of "let's go" to "let us go"), referring to a contraction as a 
+linguistic example (e.g., when discussing confusion of "who's" with "whose"), 
+or referring to an idiom or common saying that contains a contraction (e.g., 
+"yo u can"t take it with you"). 
+Likewise, avoid colloquialisms, which are informal expressions used in every-
+day speech and writing (e.g., "to write up" instead of"to report," "gonna" instead 
+of"going to"). These expressions often diffuse meaning, as in the case of approxi-
+mations of quantity; "quite a large part," "practically all;' and "very few" are inter-
+preted differently by different readers or in different contexts. Approximations 
+weaken statements, especially those describing empirical observations. Instead, 
+use precise, scholarly language. 
+4.9 Jargon 
+Jargon is specialized terminology that is unfamiliar to those outside a specific 
+group. Overuse of jargon, even in papers in which that vocabulary is relevant, 
+hinders comprehension. Jargon also may be euphemistic if substituted for a 
+familiar term (e.g., "period of economic adjustment" instead of "recession"), 
+and you should avoid usingjargon in this way. Bureaucratic jargon has had the 
+greatest publicity, but academic or scientific jargon may also grate on readers, 
+encumber communication, and waste space. Ensure that the language you use 
+allows readers to understand your writing even if they are not experts in your 
+field, and define on first use any specialized terms that are key to your topic. 
+4.10 Logical Comparisons 
+Ensure that the comparisons you make are expressed clearly and logically. 
+Ambiguous or illogical comparisons result from the omission of key words or 
+from nonparallel structure (see Section 4.24). Consider, for example, "Twelve-
+year-olds were more likely to play with age peers than 6-year-olds." Does this 
+sentence mean that 12-year-olds were more likely than 6-year-olds to play with 
+age peers? Or does it mean that 12-year-olds were more likely to play with age 
+peers and less likely to play with 6-year-olds? Ambiguity occurs when parallel-
+
+
+=== PDF PAGE 136 ===
+Verbs 
+~ 117 
+.ism is overlooked for the sake of brevity, as in "The responses of transgender 
+participants were more positive than cisgender participants." One correct way 
+to write this sentence would be "The responses of transgender participants 
+were more positive than those of cisgender participants." Thoughtful atten-
+tion to good sentence structure and word choice reduces the chance of this 
+kind of ambiguity. 
+4.11 Anthropomorphism 
+Do not attribute human characteristics to animals or to inanimate sources-
+doing so is called anthropomorphism. 
+Correct 
+Incorrect 
+Rationale 
+1 
+Pairs of rats (cage mates) 
+Rat couples (cage mates) 
+"Rat couples" implies a misleading 
+were allowed to forage 
+were allowed to forage 
+parallel between human romantic 
+together. 
+together. 
+couples and pairs of rats. 
+The theory addresses 
+The theory concludes 
+A theory might address, indicate, 
+or present, but it is the researchers 
+(not the theory itself) who 
+conclude. 
+Pair active verbs with human actors (e.g., write "we extrapolated the rate of 
+change" rather than "the study extrapolated the rate of change"). However, 
+many acceptabIe constructions in widespread use do not constitute anthro-
+pomorphism because they do not impede understanding or misIead readers. 
+When describing the content of different sections of a paper, you may write, 
+for exampIe, "this section addresses" or "the chapter focuses on" as well as "in 
+this section we address" or "in this chapter, we focus on" (see Section 6.3 for 
+comma use with introductory phrases). Similarly, when describing the results 
+of a study, you may write "the results suggest," "the data provide," "the research 
+contributes," "the study found," and so forth. 
+Determining what constitutes anthropomorphism can be challenging, and 
+even distinguished scholars may disagree. In ambiguous cases, we recommend 
+that authors keep the principIe of clear communication at the forefront of their 
+word choice and sentence structure. 
+Grammar and Usage 
+Incorrect grammar and careIess construction of sentences distract readers, 
+introduce ambiguity, and impede clear communication. The exampIes in this 
+section represent common grammar and usage errors that often appear in 
+papers submitted to journal editors and academic instructors. 
+Verbs 
+4.12 Verb Tense 
+Verbs are vigorous, direct communicators. The past tense is appropriate when 
+expressing an action or a condition that occurred at a specific, definite time in 
+
+
+=== PDF PAGE 137 ===
+118 
+~ WRITING STYLE AND GRAMMAR 
+the past, such as when discussing another researcher's work. The present per-
+fect tense is appropriate to express a past action or condition that did not occur 
+at a specific, definite time or to describe an action beginning in the past and 
+continuing to the presento 
+Use verb tenses consistently, and stay within the chosen tense to ensure 
+smooth expression. Sudden, unnecessary shifts in verb tense in the same para-
+graph or in adjacent paragraphs may confuse readers. Use the verb tenses 
+shown in Table 4.1 to report information in various parts of the papero 
+4.13 Active and Passive Voice 
+Voice describes the relationship between a verb and the subject and object asso-
+ciated with it. In the active voice, the subject of a sentence is presented first, fol-
+lowed by the verb and then the object of the verb (e.g., "students completed 
+surveys"). In the passive voice, the object of the verb is presented first, followed by 
+the verb (usually a form of "to be" + past participle + the word "by") and then the 
+subject last (e.g., "surveys were completed by students"); sometimes, the subject 
+is omitted altogether, resulting in confusion about who is performing the action. 
+Choose voice carefully. Both the active and passive voices are permitted in 
+APA Style, but many writers overuse the passive voice. Use the active voice as 
+much as possible to create direct, clear, and concise sentences. For example, use 
+the active voice to describe the actions of participants and others involved in 
+your study (see Section 5.6), as in "the patients took the medication orally," not 
+"the medication was taken orally by the patients." 
+The passive voice is acceptable in expository writing when focusing on 
+the object or recipient of the action rather than on the actor. For example, a 
+description of the experimental setup in the Method section might read, "the 
+speakers were attached to either side of the chair," which appropriately empha-
+sizes the placement of the speakers, not who placed them. Similarly, "the tests 
+were gathered promptly" emphasizes the importance of the tests and their 
+timely collection. When it is important to know who performed the action, use 
+the active voice. 
+Table 4.1 Recommended Verb Tenses in APA Style Papers 
+Paper section 
+Recommended tense 
+Example 
+Literature review (or 
+Past 
+Quinn (2020) presented 
+whenever discussing other 
+Present perfect 
+Since then, many investigators have 
+researchers' work) 
+used 
+Method 
+Past 
+Participants completed a survey 
+Description of procedure 
+Present perfect 
+Others have used similar approaches 
+Reporting of results 
+Past 
+Results were nonsignificant 
+Scores increased 
+Hypotheses were supported 
+Discussion of implications 
+Present 
+The results indicate 
+of results 
+Presentation of conclusions, 
+Present 
+We conclude 
+limitations, future directions, 
+Limitations of the study are 
+and so forth 
+
+
+=== PDF PAGE 138 ===
+Verbs 
+C\Y 
+119 
+·4.14 Mood 
+Mood refers to the forin of a verb authors use to express their attitude toward 
+what they are saying (e.g., whether they believe what they are saying or just 
+wish it were true). Use the indicative mood to make factual statements (e.g., 
+"we addressed," "the findings demonstrate"). Use the subjunctive mood only to 
+describe conditions that are contrary to fact or improbable; do not use the sub-
+junctive to describe simple conditions or contingencies. 
+Correet 
+If the campus were larger, we 
+would have had access to 
+more participants. 
+Ineorreet 
+If the campus was larger, we 
+would have had access to more 
+participants. 
+Rationale 
+The campus is not in fact 
+larger; the writer is only 
+wishing that this were so. 
+Use the word "would" with careo "Would" can be used in the indicative mood to 
+mean "habitually," as in "The child would walk about the classroom," or in the 
+conditional mood to express a condition of action, as in "We would sign the 
+letter if we could." Do not use "would" to hedge; for example, change "it would 
+appear that" to "it appears that." 
+4.15 Subject and Verb Agreement 
+A verb must agree in number (i.e., singular or plural; see Section 6.11) with its 
+subject, regardless of intervening phrases such as "together with," "including," 
+"plus," and "as well as." 
+Corred: The pereentage of correct responses, as well as the speed of the responses, 
+increases with praetiee. 
+Incorrect: The pereentage of eorrect responses, as we ll as the speed of the responses, 
+increase with praetiee. 
+Collective Nouns. Collective nouns (e.g., "series;' "set;' "faculty," "pair," "social 
+media") can refer to several individuals or to a single unit. If the action of the 
+verb applies to the group as a whole, treat the noun as singular and use a singu-
+lar verbo If the action of the verb applies to members of the group as individuals, 
+treat the noun as plural and use a plural verbo The context (i.e., your emphasis) 
+determines whether the action applies to the group or to individuals. 
+Singular in context: The number of people in the state is growing. 
+A pair of animals was in ea eh eage. 
+Plural in context: A number of people are watehing. 
+A pair of animals were then yoked. 
+Use of"None." The subject pronoun "none" can be singular or plural. When the 
+noun that follows it is singular, use a singular verb; when the noun is plural, use 
+a plural verbo 
+Singular in context: None of the information was correcto 
+Plural in context: None of the ehildren were finished in the time allotted. 
+Compound Subjects Joined by "Or" or "Nor." When a compound subject is 
+composed of a singular and a plural noun joined by "or" or "nor," the verb agrees 
+with the no un that is closer to the verbo 
+
+
+=== PDF PAGE 139 ===
+120 ~ WRITING STYLE AND GRAMM A R 
+Correct: Neither the participants nor the confederate was in the room. 
+Neither the confederate nor the participants were in the room. 
+Incorrect: Neither the participants nor the confederate were in the room. 
+Pronouns 
+4.16 First- Versus Third-Person Pronouns 
+Pronouns replace nouns, and each pronoun should refer clearly to its anteced-
+ent. To avoid ambiguity in attribution, use the first person rather than the third 
+person when describing the work you did as part of your research and when 
+expressing your own views. If you are writing a paper by yourself, use the pro-
+noun ''1''; do not use the pronoun "we" to refer to yourself if you do not have 
+coauthors (see also Section 4.17). Ifyou are writing a paper with coauthors, use 
+the pronoun "we." Do not refer to yourself or your coauthors in the third person 
+as "the author(s)" or "the researcher(s)." 
+However, use the third person to refer to the specific contribution of a par-
+ticular coauthor within a paper with multiple authors. In the following example, 
+Sonia J. Cousteau is one of the authors of the paper: 
+We assessed children's language abilities. Sonia J. Cousteau, who is a speech-Ianguage 
+pathologist, trained all testers. 
+Keep in mind that if you refer to coauthors by name in the text of your man-
+uscript, you may need to mark out their names each time they appear if your 
+paper is to undergo masked review (see Section 12.7). 
+4.17 Editorial "We" 
+Do not use "we" to refer to people in general, as in "We live on the same planet, 
+but we rarely truly understand each other"; this use is called the editorial "we." 
+It is especially important to avoid the editorial "we" in multiauthored papers 
+because readers may wonder whether you are referring to all people, members 
+of your professional group(s), or yourself and your coauthors. Substitute a more 
+specific noun or clarif}' your usage. 
+Correct: Psychological researchers typically study decision making in a laboratory setting. 
+Incorrect: We typically study decision making in a laboratory setting. 
+Sorne alternatives to "we" are "people," "humans," "researchers," "psychologists," 
+"nurses," and so on. However, "we" is an appropriate and useful referent once a 
+specific subject has been established. 
+Correct: As nurses, we tend to rely on ... 
+Incorrect: We tend to rely on . .. 
+4.18 Singular "They" 
+Writers should always use the singular "they" to refer to a person who uses "they" 
+as their pronoun (see Section 5.5 for more on gender and pronoun usage). Also 
+use "they" as a generic third-person singular pronoun to refer to a person whose 
+gender is unknown or irrelevant to the context of the usage. Although usage of 
+the singular "they" was once discouraged in academic writing, many advocacy 
+groups and publishers have accepted and endorsed it, includingMerriam-Websters 
+
+
+=== PDF PAGE 140 ===
+Pronouns 
+C\v 
+121 
+. Dictionary (Merriam-Webster, n.d.-b). The use ofthe singular "they" is inclusive 
+of all people, helps writers avoid making assumptions about gender, and is part 
+of APA Style. 
+When using the singular "they," use the forms "they," "them;' "their;' "theirs," 
+and "themselves." The variant "themself" is also acceptable because the referent 
+is clearly singular, although "themselves" is currently the more common usage. 
+The following are examples of correct usage of the singular "they." 
+Each participant turned in their questionnaire. 
+Jamie shared their experiences as a genderqueer persono 
+A child should learn to play by themselves [or themseln as well as with friends. 
+Rowan, a transgender person, helped themselves [or themseln to the free coffee. 
+Do not use "he" or "she" alone as a generic third-person pronoun. Use "he or 
+she" and "she or he" sparingly, and ensure that these pronouns match the pro-
+nouns of the people being described; if you do not know the pronouns used by 
+the people being described, use "they" instead or rewrite the sentence. Do not 
+use the combination forms "(s)he" and "s/he" or alternate "he" and "she" (unless 
+you know that a person uses these forms); these choices may have uninten-
+tional implications. For further discussion of gender and pronoun usage, see 
+Section 5.5. 
+Keep in mind that there are typically many possible ways to write a sentence. 
+If the singular "they" as a generic third-person pronoun seems awkward or dis-
+tracting, try one of the following strategies to rewrite the sentence. 
+Strategy 
+Gender neutral 
+Gender biased 
+Rephrasing 
+When an individual attends 
+When an individual attends 
+psychotherapy, that person can improve 
+psychotherapy, she can improve 
+emotional regulation. 
+emotional regulation. 
+Therapy can help an individual improve 
+emotional regulation. 
+Using plural nouns or 
+Therapists who are too much like their 
+A therapist who is too much like 
+plural pronouns 
+clients can lose their objectivity. 
+his client can lose his objectivity. 
+Replacing the pronoun 
+A researcher must apply for the grant by 
+A researcher must apply for his 
+with an article 
+September 1. 
+grant by September 1. 
+Dropping the pronoun 
+The researcher must avoid letting biases 
+The researcher must avoid letting 
+and expectations influence the interpreta-
+her own biases and expectations 
+tion of the results. 
+influence the interpretation of 
+the results. 
+4.19 Pronouns for People and Animals ("Who" vs. "That") 
+Relative pronouns introduce subordinate clauses linked to nouns. Use the rela-
+tive pronoun "who" for human beings; use the relative pronoun "that" or "which" 
+for nonhuman animals (e.g., rats, chimpanzees) and for inanimate objects. 
+Correct: The students who completed the task 
+Correct: The instructions that were included 
+Incorrect: The students that completed the task 
+Use neuter pronouns to refer to animal s (e.g., "the dog ... it"). However, it is 
+acceptable to use gendered pronouns if the animal has been named and its sex 
+is known, as in the following example: 
+I 
+
+
+=== PDF PAGE 141 ===
+122 
+~ WRITING STYLE AND GRAMMAR 
+The chimps were tested daily. Sheba was tested unrestrained in an open testing area, 
+which was her usual context for training and testing. 
+4.20 Pronouns as Subjects and Objects ("Who" vs. "Whom") 
+Relative pronouns can be subjects or objects ofverbs or prepositions. Use "who" 
+as the subject of a verb and "whom" as the object of a verb or a preposition. You 
+can determine whether a pronoun is the subject or object of a verb by turning 
+the subordinate clause around and substituting a personal pronoun. If you can 
+substitute "he," "she;' or "they," then "who" is correcto In the following examples, 
+"who" and its replacement personal pronoun are highlighted to show the substi-
+tutions. The sentence with the substitution is a way to verify whether the origi-
+nal sentence is correcto 
+Use of "who" 
+Original sentence 
+Substitution sentence 
+I 
+Correct 
+The participants who passed the 
+They passed the exam and were 
+exam were given course credit. 
+given course credit. 
+Incorrect 
+Eligible participants were mothers, 
+Eligible participants were mothers; 
+each of who had a child under the 
+each of they had a child under the 
+age of 21 with cancer. 
+age of 21 with cancer. 
+Likewise, if you can substitute "him," "her," or "them," then "whom" is correcto 
+Use of "whom" 
+Original sentence 
+Substitution sentence 
+I 
+Correct 
+Eligible participants were mothers, 
+Eligible participants were mothers; 
+each of whom had a child under 
+each of them had a child under the 
+the age of 21 with cancer. 
+age of 21 with cancer. 
+Incorrect 
+The participants whom passed the 
+Them passed the exam and were 
+exam were given course credit. 
+given course credit. 
+4.21 Pronouns in Restrictive and Nonrestrictive Clauses 
+("That" vs. "Which") 
+Relative pronouns (e.g., "who," "whom," "that," "which") introduce an element 
+that is subordinate to the main clause of the sentence, and that subordinate 
+clause may be either restrictive or nonrestrictive. 
+Restrictive clauses- also called "that" clauses- are essential to the meaning of 
+the sentence. Restrictive clauses are not set off with commas. 
+Therapist self-disclosure that conflicts with the patient's story might hinder the thera-
+peutic process. 
+In the example, only self-disclosure that conflicts with the patient's story, not all 
+self-disclosure, might hinder the therapeutic process. 
+Nonrestrictive clauses- also called "which" clauses-add further information to 
+the sentence but are not essential to its meaning. Nonrestrictive clauses are set 
+off with commas. 
+AII interviews were conducted at participants' offices, which provided suitable privacy 
+to secure participants' anonymity. 
+
+
+=== PDF PAGE 142 ===
+Sentence Construction 
+~ 123 
+, In the example, aH interviews were conducted at the offices, and aH offices pro-
+vided suitable privacy. 
+Although sorne writers use "which" for both restrictive and nonrestrictive 
+clauses, APA Style reserves "which" for nonrestrictive clauses and "that" for 
+restrictive clauses. Consistent use of "that" for restrictive clauses and "which" 
+for nonrestrictive clauses will help make your writing clear and precise. 
+Sentence Construction 
+4.22 Subordinate Conjunctions 
+Subordinate conjunctions (e.g., "since;' "while," "although," "because," "whereas"), 
+like relative pronouns (see Sections 4.19-4.21), introduce subordinate clauses. 
+Select these conjunctions with care; interchanging conjunctions with more 
+than one meaning may reduce the precision of your writing. Although sorne 
+writers use "while" and "since" when they do not refer strictly to time, restrict-
+ing your use of "while" and "sine e" to their temporal meanings can be helpful 
+to readers. 
+"While" Versus ''Although,'' "Despite," ''And,'' or "But." U se "while" to link events 
+occurring simultaneously. 
+Individual goal striving in late adulthood may enrich life while reducing stagnation and 
+boredom. 
+Otherwise, use "although," "despite," "and," or "but" in place of "while." 
+Precise: Although goal progress predicted well-being for all genders, the associations 
+tended to be stronger for women . 
+Goal progress predicted well-being for all genders, but the associations tended to be 
+stronger for women. 
+Imprecise: While goal progress predicted well-being for all genders, the associations 
+tended to be stronger for women . 
+"Since" Versus "Because." In cases where the meaning of "since" is ambiguous 
+(it could be either "from a time in the past" or "because"), replace "sine e" with 
+"because." If the meaning is not ambiguous, it is acceptable to use either "sine e" 
+or "because" to mean "because." 
+Precise: Participants were leaving beca use the light turned green. 
+Imprecise: Participants were leaving since the light turned green. 
+4.23 Misplaced and Dangling Modifiers 
+An adjective or an adverb, whether a single word or a phrase, must clearly refer 
+to the word that it modifies. Having modifiers without clear referents can make 
+it hard for readers to foHow the logic of your sentence. 
+Misplaced Modifiers. Because of their placement in a sentence, misplaced mod-
+ifiers ambiguously or illogicaHy modify a word. Eliminate misplaced modifiers 
+by placing an adjective or an adverb as close as possible to the word it modifies. 
+
+
+=== PDF PAGE 143 ===
+124 
+C\.v 
+WRITING STYLE AND GRAMMAR 
+Correct 
+Incorrect 
+Rationale 
+Using this procedure, the investi-
+The investigator tested 
+The incorrect sentence 
+gator tested the participants. 
+the participants using this 
+is unclear about whether 
+The investigator tested the 
+-procedure. 
+the investigator or the 
+participants who were using 
+participants used this 
+the procedure. 
+procedure. 
+On the basis of this assumption, we 
+Based on this assumption, 
+The incorrect construc-
+developed a model . 
+we developed a model. 
+tion says, "we are based 
+Based on this assumption, the 
+on this assumption." 
+model ... 
+Many writers misplace the word "only." Place "only" next to the word or phrase 
+it modifies. 
+Correct 
+These data provide only a 
+partial answer. 
+Incorrect 
+These data only provide a 
+partial answer. 
+Rationale 
+The answer is partial, 
+not the providing of it. 
+Squinting modifiers are a type of misplaced modifier. Because of their ambigu-
+ous placement, they make it difficult to tell whether the modifier refers to the 
+phrase before or after the modifier. 
+Correct 
+My comprehension is improved 
+when I read slowly. 
+Incorrect 
+Reading books slowly 
+improves my comprehension. 
+Rationale 
+It is unclear whether 
+the reading or the 
+improvement is slow. 
+¡ 
+Dangling Modifiers. Dangling modifiers have no referent in the sentence. Many 
+ofthese result from the use ofthe passive voice (see Section 4.13). You can avoid 
+many dangling modifiers by writing in the active voice. 
+Correct 
+Incorrect 
+Rationale 
+Using this procedure, I tested the 
+The participants were tested 
+1, not the participants, 
+participants. 
+using this procedure. 
+used the procedure. 
+Armitage and Martinez (2017) found 
+Congruent with other studies, 
+The result, not 
+that the treatment group performed 
+Armitage and Martinez (2017) 
+Armitage and Martinez, 
+better, a result congruent with those 
+found that the treatment 
+is congruent. 
+of other studies. 
+group performed better. 
+4.24 Parallel Construction 
+To enhance readers' understanding, present parallel ideas in parallel or coordi-
+nate formo Use parallel structure in compound sentences, series and lists (see 
+Sections 6.49-6.52), and table stubs (se e Section 7.12). 
+Repetition of Parallel Elements. Ensure that all elements of the parallelism are 
+present before and after the coordinating conjunction (e.g., "and;' "but," "or;' 
+"nor"). For example, if the first part of the clause is introduced by "that," the 
+second part of the clause should be as well. When a clause has two parts (and 
+not three or more), do not use a comma or semicolon before the conjunction. 
+
+
+=== PDF PAGE 144 ===
+Strategies to Improve Your Writing 
+C\v 125 
+Correct: Ford (2020) found that homework is positively related to achievement and that 
+the association is strongerin middle and high school than in elementary schooL 
+'ncorrect: Ford (2020) found that homework is positively related to achievement, and that 
+the associationis stronger in middleand high school than in elementary school. 
+Coordinating Conjunctions Used in Pairs. With coordinating conjunctions 
+used in pairs ("between ... and," "both ... and," "neither . o o nor;' "either o o o or," 
+"not only o .. but also"), place the first conjunction immediately before the first 
+part of the parallelismo 
+"Between" and ':4.ndo" 
+Correct: We recorded the difference between the performance of participants who com-
+pleted the first task and the performance of those who completed the second task. 
+'ncorrect: We recorded the difference between the performance of participants who com-
+pleted the first task and the second task. 
+Correct: between 2.5 and 400 years old 
+'ncorrect: between 2.5-4.0 years old 
+"Both" and ':4.nd." 
+Correct: The names were difficult both to pronounce and to spelL 
+'ncorrect: The names were difficult both to pronounce as well as to spell. 
+Never use "both" with "as well as": The resulting construction is redundanto 
+"Neither" and "Nor"; "Either" and "Or." 
+Correct: Neither the responses to the auditory stimuli nor the responses to the tactile 
+stimuli were repeatedo 
+'ncorrect: Neither the responses to the auditory stimuli nor to the tactile stimuli were 
+repeatedo 
+Correct: The respondents either gave the worst answer or gave the best answer. 
+Correct: The respondents gave either the worst answer or the best answero 
+'ncorrect: The respondents either gave the worst answer or the best answer. 
+"Not On/y" and "But Alsoo" 
+Correct: It is surprising not only that pencil-and-paper seo res predicted this result but 
+also that all other predictors were less accurateo 
+'ncorrect: It is not only surprising that pencil-and-paper scores predicted this result but 
+also that all other predictors were less accurate. 
+Elements in a Series. Elements in a series should also be parallel in formo 
+Correct: The participants were told to make themselves comfortable, to read the instruc-
+tions, and to ask about anything they did not understand. 
+'ncorrect: The participants were told to make themselves comfortable, to read the instruc-
+tions, and that they should ask about anything they did not understando 
+Strategies to Improve Your Writing 
+Good writing is a skilllearned through practiceo In this section, we recommend 
+strategies to improve your writing. These strategies can aid both professionals 
+preparing manuscripts for journal submission and students preparing papers 
+for course submission. 
+
+
+=== PDF PAGE 145 ===
+126 ~ WRITING STYLE AND GRAMMAR 
+4.25 Reading to Learn Through Example 
+Reading is one of the most effective practices for authors to improve their writ-
+ing because it enables them to learn thraugh example. For instance¡ a student 
+tasked with writing a literature review would benefit fram reading other litera-
+. ture reviews (including the literature review sections oflonger works) to see the 
+various ways in which information can be organized and discussed. Likewise, 
+an author who needs to present complex statistical information in atable would 
+benefit from seeing how other authors have organized similar information in 
+their tables. Careful reading in your chosen area of study will help you learn 
+about not only new developments in the field but also ways to effectively convey 
+information on the page. 
+4.26 Writing From an Outline 
+Writing from an outline ensures that the flow of your paper reflects the logic of 
+your research or ideas. Creating and using an outline helps you identify main 
+ideas, define subordinate ideas, focus your writing, avoid tangential excursions, 
+and find omissions. In the outline, you can also designate headings and subhead-
+ings you will use in your paper (see Sections 2.26-2.27 for more on principIes 
+of organization and levels of heading). Outlines can take many forms, including 
+the traditional format with Roman numeral headings or a concept map. 
+4.27 Rereading the Draft 
+Rereading your own work after setting it aside for a few hours or days allows 
+you to look at it fram a fresh perspective. Taking the further step of reading 
+your paper aloud may reveal faults that you previously overlooked and may 
+help strengthen the tone and style ofyour writing. You can also try reading the 
+sections of your paper in reverse order- from the conclusion back to the intro-
+duction-to ensure that you have set up arguments appropriately. Budget ample 
+time when writing to allow yourself to take advantage of these strategies. 
+4.28 Seeking Help From Colleagues 
+After you have reread your draft, give a revised copy to a colleague-preferably 
+a person who has published in or studied a related field but who is not familiar 
+with your own work- for a critical review. Even better, get critiques from two 
+colleagues, and you will have a trial run of a journal's review pracess. Students 
+are also encouraged to solicit feedback fram their instructor and peers. 
+4.29 Working With Copyeditors and Writing Centers 
+Sorne writers, particularly new writers and those writing in a nonnative lan-
+guage, may benefit from extra help with their writing. They might hire a copy-
+editor to review and proofread their paper or visit a tutor at a university writing 
+center. A copyeditor or writing center tutor can assist with idiomatic language 
+use, organization, and other areas. We highly recommend use of these services 
+for authors who consistently face obstacles in getting their work published 
+or students who would like to attain more success in the classroom. Students 
+should check the academic integrity policies of their institution to determine 
+what kinds of assistance are acceptable. 
+
+
+=== PDF PAGE 146 ===
+Strategies to Improve Your Writing 
+~ 127 
+,4.30 Revising a Paper 
+Revising a draft intoa polished paper takes time and effort. Writers should 
+develop a revision plan. Itis best tostartwith the big picture and work down to 
+the details. Consider the following broad questions when reviewing you'r paper: 
+• Is the central point ot thesis of your paper clear? Do the arguments follow 
+logically from the thesis? 
+• Is the information well organized? 
+• For students, does the draft meet the parameters of the assignment? If there 
+is a rubric for the assignment, does the paper address each element of the 
+rubric? 
+• For authors seeking publication, do es the draft fit the journal style and for-
+matting requirements (see Sections 12.2-12.4)? 
+At the detaillevel, check sentences for correct grammar and usage (see Sections 
+4.12-4.24). Also check for spelling and grammar errors using the automatic 
+spell-check and grammar-check functions of your word-processing programo 
+Although an electronic spell-check cannot take the place of careful proofread-
+ing (because words spelled correctly may be used incorrectly), it willlessen the 
+chances that typographical errors make their way into the published article or 
+the submitted assignment. APA uses Merriam-Websters Dictionary and the APA 
+Dictionary 01 Psychology as its authorities' on spelling (for additional information 
+on spelling, see Sections 6.11-6.12). Grammar-check functions are useful for 
+identifying problematic sentence structure. Keep in mind, however, that gram-
+mar is complex and therefore grammar-checkers are not infallible. 
+Although the Publication Manual addresses many aspects of grammar and 
+usage, it focuses on the areas that are the most problematic for writers of schol-
+arly work. For grammatical questions not addressed in the Publication Manual, 
+consult a trusted grammar reference. 
+
+
+=== PDF PAGE 147 ===
+
+
+=== PDF PAGE 148 ===
+Contents 
+General Guidelines for Reducing Bias 
+5.1 Describe at the Appropriate Level of Specificity 
+132 
+5.2 Be Sensitive to Labels 
+133 
+Reducing Bias by Topic 
+5.3 Age 
+135 
+5.4 Disability 
+136 
+5.5 Gender 138 
+5.6 Participation in Research 
+141 
+5.7 Racial and Ethnic Identity 142 
+5.8 Sexual Orientation 
+145 
+5.9 Socioeconomic Status 
+147 
+5.10 Intersectionality 
+148 
+132 
+135 

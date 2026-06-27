@@ -1,0 +1,59 @@
+# APA 7 Rule Checker Configuration
+# Rules derived from APA Publication Manual, 7th ed. (2020).
+# Edit thresholds and toggles here; no code changes required.
+
+prose_rules:
+  # P001 — paragraph length (professor checklist, not strict APA)
+  # APA §4.6: single-sentence paragraphs are "abrupt — use infrequently"
+  # Lowered to 2 — APA only objects to 1-sentence paragraphs; 2 is acceptable.
+  min_sentences_per_paragraph: 2
+
+  # N001 — numeral threshold  APA §6.32–6.33
+  # Numerals for 10+; spell out zero through nine (with many exceptions)
+  numeral_threshold: 10
+
+  # PR001 — first-person pronoun flag
+  # APA §4.16 ENDORSES "I" and "we" — set to false by default.
+  # Enable only if your program/advisor requires third-person writing.
+  flag_first_person_pronouns: false
+
+  # List of pronouns to flag if flag_first_person_pronouns is true
+  personal_pronouns:
+    - we
+    - us
+    - our
+    - I
+    - me
+    - my
+
+  # Allow first person in positionality / reflexivity / limitations sections
+  first_person_allowed_in_positionality: true
+
+  # Section heading keywords that trigger positionality mode (case-insensitive)
+  positionality_section_keywords:
+    - positionality
+    - reflexivity
+    - limitations
+    - researcher role
+    - researcher perspective
+
+  # C001 — repeated narrative citation advisory  APA §8.16
+  flag_repeated_narrative_citations: true
+
+  # WILE001 — advisory for sentence-opening "while"  APA §4.22
+  flag_while_contrast: true
+
+citation_rules:
+  # Levenshtein distance threshold for surname spelling-mismatch check
+  spelling_mismatch_threshold: 2
+  require_year_match_for_spelling_mismatch: true
+
+heading_rules:
+  # H002 — heading immediately followed by heading  APA §2.27
+  flag_heading_without_body: true
+  # H001 — skipped heading levels  APA §2.27
+  flag_skipped_heading_levels: true
+
+reference_rules:
+  check_hanging_indent: true
+  check_alphabetical_order: true
