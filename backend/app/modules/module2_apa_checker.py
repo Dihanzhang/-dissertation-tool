@@ -114,8 +114,10 @@ def _near_quote_mask(masked: str, start: int, end: int, window: int = 10) -> boo
 def _loc(para: ProseParagraph) -> str:
     anchor = para.raw_text[:60].strip()
     if len(para.raw_text) > 60:
-        anchor += "…"
-    return f'Para {para.index + 1} — "{anchor}"'
+        anchor += "..."
+    page = getattr(para, "page_number", 1)
+    para_on_page = getattr(para, "paragraph_number_on_page", para.index + 1)
+    return f'Page {page}, Para {para_on_page} - "{anchor}"'
 
 
 def _excerpt(text: str, start: int, end: int, window: int = 20) -> str:
@@ -255,6 +257,41 @@ _SPACED_EMDASH_RE = re.compile(r' — ')
 
 # MEC013: -ly adverb hyphenation
 _LY_HYPHEN_RE = re.compile(r'\b([a-z]+ly)-([a-z]+)\b', re.IGNORECASE)
+_LY_ADJECTIVE_EXEMPT_FIRST_WORDS = {
+    "brotherly", "burly", "chilly", "comely", "costly", "cowardly",
+    "curly", "daily", "deadly", "early", "elderly", "family",
+    "fatherly", "friendly", "ghastly", "goodly", "hilly", "holy",
+    "homely", "hourly", "jolly", "leisurely", "likely", "lively",
+    "lonely", "lovely", "manly", "measly", "monthly", "motherly",
+    "nightly", "oily", "orderly", "scholarly", "shapely", "sickly",
+    "silly", "sisterly", "sly", "stately", "surly", "timely",
+    "ugly", "unlikely", "weekly", "wily", "womanly", "woolly",
+    "yearly",
+}
+_LY_ADVERB_FIRST_WORDS = {
+    "accurately", "actively", "adequately", "approximately", "broadly",
+    "carefully", "clearly", "closely", "commonly", "completely",
+    "consistently", "directly", "effectively", "especially", "fully",
+    "generally", "globally", "highly", "indirectly", "jointly",
+    "largely", "locally", "merely", "mutually", "narrowly", "newly",
+    "partially", "particularly", "poorly", "previously", "primarily",
+    "quickly", "randomly", "rapidly", "recently", "relatively",
+    "significantly", "slowly", "statistically", "strongly",
+    "typically", "widely",
+}
+_LY_ADVERB_SUFFIXES = (
+    "ably", "ally", "edly", "ently", "fully", "ibly", "ically",
+    "ingly", "ively", "lessly", "ously",
+)
+
+
+def _looks_like_ly_adverb(word: str) -> bool:
+    lower = word.lower()
+    if lower in _LY_ADJECTIVE_EXEMPT_FIRST_WORDS:
+        return False
+    if lower in _LY_ADVERB_FIRST_WORDS:
+        return True
+    return lower.endswith(_LY_ADVERB_SUFFIXES)
 
 # MEC014: Time unit spelled out with numeral (should use abbreviation)
 _TIME_UNIT_SPELLED_RE = re.compile(
@@ -786,9 +823,11 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     for m in _LY_HYPHEN_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
+        if not _looks_like_ly_adverb(m.group(1)):
+            continue
         corrected = f"{m.group(1)} {m.group(2)}"
         _add("MEC013", Severity.WARNING,
-             f"APA §6.9: Do not hyphenate compound modifiers when the first word ends in '-ly'. "
+             f"APA §6.9: Do not hyphenate compound modifiers that include an adverb ending in '-ly'. "
              f"'{m.group()}' → '{corrected}'.",
              f"Replace '{m.group()}' with '{corrected}'", True,
              _excerpt(masked, m.start(), m.end()), "§6.9")
@@ -1353,8 +1392,10 @@ def _check_ref_entries(
     if not entries:
         return
 
+    para_by_index = {p.index: p for p in ref_paragraphs}
     raw_findings = check_ref_entries(entries, cfg)
     for rf in raw_findings:
+        para = para_by_index.get(rf["paragraph_index"])
         findings.append(Finding(
             rule_id=rf["rule_id"],
             severity=Severity.WARNING if rf["severity"] == "warning" else Severity.ERROR,
@@ -1362,7 +1403,7 @@ def _check_ref_entries(
             message=rf["message"],
             suggested_fix=rf.get("suggested_fix", ""),
             excerpt=rf.get("excerpt", ""),
-            location_hint=rf.get("location_hint", ""),
+            location_hint=_loc(para) if para else rf.get("location_hint", ""),
             category=Category.REFERENCE.value,
             chapter=rf.get("chapter", "§9"),
         ))

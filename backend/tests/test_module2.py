@@ -212,6 +212,29 @@ class TestMEC013:
         findings = run("This was a highly significant finding in the literature.")
         assert not has_rule(findings, "MEC013")
 
+    def test_early_warning_not_flagged(self):
+        findings = run("The early-warning system was described in the implementation plan.")
+        assert not has_rule(findings, "MEC013")
+
+    @pytest.mark.parametrize("text", [
+        "The friendly-reminder email was sent to participants.",
+        "The scholarly-writing workshop supported doctoral students.",
+        "The daily-practice routine improved confidence.",
+        "The costly-intervention model was not adopted.",
+    ])
+    def test_ly_adjectives_not_flagged(self, text):
+        findings = run(text)
+        assert not has_rule(findings, "MEC013"), f"MEC013 should not flag adjective: {text!r}"
+
+    @pytest.mark.parametrize("text", [
+        "The randomly-assigned participants completed the survey.",
+        "The relatively-homogeneous sample limited transferability.",
+        "The newly-developed instrument was piloted.",
+    ])
+    def test_clear_ly_adverbs_flagged(self, text):
+        findings = run(text)
+        assert has_rule(findings, "MEC013"), f"Expected MEC013 for adverb compound: {text!r}"
+
 
 # ===========================================================================
 # MEC018 — Series noun uncapitalized  §6.19
@@ -598,6 +621,10 @@ class TestPRF001:
             "These are discussed in detail below."
         )
         findings = run(text)
+        assert not has_rule(findings, "PRF001")
+
+    def test_table_label_not_flagged(self):
+        findings = run("Table 1", heading_level=0)
         assert not has_rule(findings, "PRF001")
 
 

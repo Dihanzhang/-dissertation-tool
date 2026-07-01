@@ -29,6 +29,8 @@ class ProseParagraph:
     masked_text: str     # quoted spans replaced with QUOTE_MASK
     heading_level: Optional[int]  # 1-5 for APA headings, None if not a heading
     is_reference_entry: bool = False
+    page_number: int = 1
+    paragraph_number_on_page: int = 1
 
 
 QUOTE_MASK = "\x00QUOTE\x00"
@@ -65,6 +67,7 @@ _HEADING_HEURISTIC_PAREN_YEAR = re.compile(r'\(\d{4}[a-z]?\)')
 # Table and figure label pattern — "Table 1", "Figure 3" etc.
 # These must never be classified as headings even when bold/centered.
 _TABLE_FIGURE_LABEL_RE = re.compile(r'^(?:Table|Figure)\s+\d+\s*$', re.IGNORECASE)
+_TERMINAL_PUNCT_RE = re.compile(r'[.!?]\s*$')
 
 
 def _looks_like_heading(text: str) -> bool:
@@ -162,7 +165,7 @@ def _heading_level(para) -> Optional[int]:
     # 3. Explicit table/figure label exclusion — never classify as a heading
     #    even if the paragraph is bold or centered ("Table 1", "Figure 3", etc.)
     if _TABLE_FIGURE_LABEL_RE.match(text):
-        return None
+        return 0
 
     # 4. XML-based formatting: manually formatted headings in Normal-style paragraphs.
     #    APA Level 1 = bold + centred.  APA Level 2 = bold + flush-left.
@@ -214,6 +217,29 @@ def _is_in_table(para) -> bool:
     return False
 
 
+def _contains_page_break(para) -> bool:
+    """Return True if the paragraph contains an explicit DOCX page break marker."""
+    if para._p.xpath('.//w:br[@w:type="page"]'):
+        return True
+    return bool(para._p.xpath('.//w:lastRenderedPageBreak'))
+
+
+def _is_table_figure_label_text(text: str) -> bool:
+    return bool(_TABLE_FIGURE_LABEL_RE.match(text.strip()))
+
+
+def _is_table_figure_title_after_label(text: str) -> bool:
+    """Return True for a likely separate table/figure title following its label."""
+    stripped = text.strip()
+    if not stripped or len(stripped) > 200:
+        return False
+    if _HEADING_HEURISTIC_LIST_ITEM.match(stripped):
+        return False
+    if _HEADING_HEURISTIC_PAREN_YEAR.search(stripped):
+        return False
+    return not _TERMINAL_PUNCT_RE.search(stripped)
+
+
 def extract_prose(doc: Document) -> list[ProseParagraph]:
     """
     Walk the document body and return only author-prose paragraphs.
@@ -228,25 +254,39 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
     """
     paragraphs: list[ProseParagraph] = []
     in_reference_section = False
+    page_number = 1
+    paragraph_number_on_page = 0
+    previous_was_table_figure_label = False
 
     for idx, para in enumerate(doc.paragraphs):
         text = para.text.strip()
+        has_page_break = _contains_page_break(para)
 
         # Skip empty paragraphs
         if not text:
+            if has_page_break:
+                page_number += 1
+                paragraph_number_on_page = 0
+                previous_was_table_figure_label = False
             continue
 
         # Skip table cells entirely
         if _is_in_table(para):
+            if has_page_break:
+                page_number += 1
+                paragraph_number_on_page = 0
+                previous_was_table_figure_label = False
             continue
 
         level = _heading_level(para)
-
+        if previous_was_table_figure_label and _is_table_figure_title_after_label(text):
+            level = 0
         # Check if we've hit the reference list
         if level is not None and _REF_HEADING_KEYWORDS.match(text):
             in_reference_section = True
 
         if in_reference_section and level is None:
+            paragraph_number_on_page += 1
             # Reference entry — skip prose rules but keep for citation matching
             paragraphs.append(ProseParagraph(
                 index=idx,
@@ -255,12 +295,25 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
                 masked_text=text,
                 heading_level=None,
                 is_reference_entry=True,
+                page_number=page_number,
+                paragraph_number_on_page=paragraph_number_on_page,
             ))
+            previous_was_table_figure_label = False
+            if has_page_break:
+                page_number += 1
+                paragraph_number_on_page = 0
             continue
 
         # Block quotes — exclude from prose rule scanning
         if _is_block_quote(para):
+            previous_was_table_figure_label = False
+            if has_page_break:
+                page_number += 1
+                paragraph_number_on_page = 0
             continue
+
+        if level is None:
+            paragraph_number_on_page += 1
 
         masked = _mask_inline_quotes(text)
 
@@ -271,7 +324,14 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
             masked_text=masked,
             heading_level=level,
             is_reference_entry=False,
+            page_number=page_number,
+            paragraph_number_on_page=paragraph_number_on_page,
         ))
+        previous_was_table_figure_label = _is_table_figure_label_text(text)
+        if has_page_break:
+            page_number += 1
+            paragraph_number_on_page = 0
+            previous_was_table_figure_label = False
 
     # Post-processing: reclassify heuristic headings in the title-page / preamble
     # zone as layout elements (level 0). Documents often place the title,

@@ -520,6 +520,7 @@ def match_citations_to_references(
                     seen_mismatch_pairs.add(pair)
                     spelling_mismatches.append({
                         "citation": cite.raw,
+                        "paragraph_index": cite.paragraph_index,
                         "reference": ref.raw[:100],
                         "distance": dist,
                         "message": (

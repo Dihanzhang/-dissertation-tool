@@ -26,7 +26,9 @@ except ImportError:
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
+from starlette.background import BackgroundTask
 
 from .modules.prose_extractor import ProseParagraph, extract_prose, QUOTE_MASK
 from .modules.module2_apa_checker import check_paragraphs, Finding, _load_config
@@ -173,9 +175,227 @@ def _suggestion_to_out(s: EditSuggestion) -> SuggestionOut:
     )
 
 
+def _paragraph_lookup(paragraphs: list[ProseParagraph]) -> dict[int, ProseParagraph]:
+    return {p.index: p for p in paragraphs}
+
+
+def _paragraph_order(para: ProseParagraph | None, fallback: int = 10**9) -> tuple[int, int, int]:
+    if para is None:
+        return (10**9, 10**9, fallback)
+    return (
+        getattr(para, "page_number", 1),
+        getattr(para, "paragraph_number_on_page", para.index + 1),
+        para.index,
+    )
+
+
+def _sort_findings(findings: list[Finding], paragraphs: list[ProseParagraph]) -> list[Finding]:
+    para_by_index = _paragraph_lookup(paragraphs)
+    return sorted(
+        findings,
+        key=lambda f: (*_paragraph_order(para_by_index.get(f.paragraph_index), f.paragraph_index), f.rule_id),
+    )
+
+
+def _decorate_and_sort_citation_issues(
+    citation_result: CitationMatchResult,
+    paragraphs: list[ProseParagraph],
+) -> None:
+    para_by_index = _paragraph_lookup(paragraphs)
+
+    def decorate(issue: dict) -> dict:
+        para = para_by_index.get(issue.get("paragraph_index"))
+        if para is not None:
+            issue["page_number"] = para.page_number
+            issue["paragraph_number_on_page"] = para.paragraph_number_on_page
+            anchor = para.raw_text[:60].strip()
+            if len(para.raw_text) > 60:
+                anchor += "..."
+            issue["location_hint"] = (
+                f'Page {para.page_number}, Para {para.paragraph_number_on_page} - "{anchor}"'
+            )
+        return issue
+
+    def sort_key(issue: dict) -> tuple[int, int, int, int]:
+        para = para_by_index.get(issue.get("paragraph_index"))
+        page, para_on_page, doc_index = _paragraph_order(
+            para,
+            int(issue.get("line_index", 10**9)),
+        )
+        return (page, para_on_page, doc_index, int(issue.get("line_index", 0)))
+
+    for attr in (
+        "missing_references",
+        "year_mismatches",
+        "spelling_mismatches",
+        "co_author_only_matches",
+        "uncited_references",
+    ):
+        issues = [decorate(issue) for issue in getattr(citation_result, attr)]
+        setattr(citation_result, attr, sorted(issues, key=sort_key))
+
+
+_RULE_LABELS = {
+    "PRF001": "Short paragraph",
+    "REF010": "Publisher business designation",
+    "STY001": "Passive voice",
+}
+
+
+def _rule_label(rule_id: str, message: str) -> str:
+    if rule_id in _RULE_LABELS:
+        return _RULE_LABELS[rule_id]
+    without_apa = re.sub(r"^APA\s+§[\d.]+:\s*", "", message)
+    first_clause = re.split(r"[.:(-]", without_apa, maxsplit=1)[0].strip()
+    return first_clause or rule_id
+
+
+def _highlight_runs(paragraph, target: str = "") -> list:
+    from docx.enum.text import WD_COLOR_INDEX
+
+    runs = [run for run in paragraph.runs if run.text]
+    if not runs:
+        return []
+
+    para_text = paragraph.text or ""
+    target = (target or "").strip()
+    start = -1
+    end = -1
+    if target and target in para_text:
+        start = para_text.index(target)
+        end = start + len(target)
+    elif target:
+        lower_para = para_text.lower()
+        lower_target = target.lower()
+        start = lower_para.find(lower_target)
+        if start >= 0:
+            end = start + len(target)
+
+    if start < 0:
+        for run in runs:
+            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+        return runs
+
+    highlighted = []
+    cursor = 0
+    for run in runs:
+        run_start = cursor
+        run_end = cursor + len(run.text)
+        if run_end > start and run_start < end:
+            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+            highlighted.append(run)
+        cursor = run_end
+    return highlighted
+
+
+def _comment_text(row: dict) -> str:
+    parts = [
+        f'{row["kind"]}: {row["label"]}',
+        f'Severity: {row["severity"]}',
+        str(row["message"]),
+    ]
+    if row.get("suggested_fix"):
+        parts.append(f'Suggested fix: {row["suggested_fix"]}')
+    return "\n".join(parts)
+
+
+def _finding_target(finding: Finding) -> str:
+    return finding.excerpt or ""
+
+
+def _citation_issue_groups(citation_result: CitationMatchResult) -> list[tuple[str, dict]]:
+    groups: list[tuple[str, dict]] = []
+    for issue in citation_result.spelling_mismatches:
+        groups.append(("Possible spelling mismatch", issue))
+    for issue in citation_result.year_mismatches:
+        groups.append(("Year mismatch", issue))
+    for issue in citation_result.missing_references:
+        label = "Missing reference" if issue.get("severity") == "error" else "Possible missing reference"
+        groups.append((label, issue))
+    for issue in citation_result.co_author_only_matches:
+        groups.append(("Co-author-only match", issue))
+    for issue in citation_result.uncited_references:
+        groups.append(("Reference not cited in text", issue))
+    return groups
+
+
+def _annotated_rows(
+    apa_findings: list[Finding],
+    citation_result: CitationMatchResult,
+) -> list[dict]:
+    rows: list[dict] = []
+    for finding in apa_findings:
+        rows.append({
+            "kind": "APA",
+            "label": _rule_label(finding.rule_id, finding.message),
+            "severity": finding.severity.value.upper(),
+            "paragraph_index": finding.paragraph_index,
+            "location": finding.location_hint,
+            "context": finding.excerpt,
+            "message": finding.message,
+            "suggested_fix": finding.suggested_fix,
+            "target": _finding_target(finding),
+        })
+
+    for label, issue in _citation_issue_groups(citation_result):
+        rows.append({
+            "kind": "Citation",
+            "label": label,
+            "severity": str(issue.get("severity", "warning")).upper(),
+            "paragraph_index": issue.get("paragraph_index"),
+            "location": issue.get("location_hint", ""),
+            "context": issue.get("citation") or issue.get("reference", ""),
+            "message": issue.get("message", ""),
+            "suggested_fix": "",
+            "target": issue.get("citation", ""),
+        })
+
+    return sorted(
+        rows,
+        key=lambda row: (
+            row.get("paragraph_index") is None,
+            int(row.get("paragraph_index") or 10**9),
+            row["kind"],
+            row["label"],
+        ),
+    )
+
+
+def _annotate_docx(doc_path: str, output_path: str, rows: list[dict]) -> None:
+    from docx import Document
+
+    doc = Document(doc_path)
+    for row in rows:
+        para_index = row.get("paragraph_index")
+        if not isinstance(para_index, int):
+            continue
+        if para_index < 0 or para_index >= len(doc.paragraphs):
+            continue
+        anchor_runs = _highlight_runs(doc.paragraphs[para_index], str(row.get("target") or ""))
+        if anchor_runs:
+            doc.add_comment(
+                anchor_runs,
+                text=_comment_text(row),
+                author="Dissertation Review",
+                initials="DR",
+            )
+
+    doc.save(output_path)
+
+
+def _cleanup_paths(paths: list[str]) -> None:
+    for path in paths:
+        try:
+            if path and os.path.exists(path):
+                os.unlink(path)
+        except OSError:
+            pass
+
+
 _SENTENCE_END = re.compile(r'[.!?]\s*$')
 _LIST_ITEM = re.compile(r'^[\d]+[.)]\s|^[-•*–]\s')
 _PAREN_YEAR_IN_TEXT = re.compile(r'\(\d{4}[a-z]?\)')
+_TABLE_FIGURE_LABEL = re.compile(r'^(?:Table|Figure)\s+\d+\s*$', re.IGNORECASE)
 
 
 def _is_likely_heading(text: str) -> bool:
@@ -212,12 +432,26 @@ def _is_likely_heading(text: str) -> bool:
 def _build_paragraphs(text: str) -> list[ProseParagraph]:
     """Build minimal ProseParagraph list from raw text (no .docx structure)."""
     paras = []
+    para_on_page = 0
+    previous_was_table_figure_label = False
     for i, raw in enumerate(text.split("\n\n")):
         raw = raw.strip()
         if not raw:
             continue
         masked = re.sub(r'“[^”]*?”|"[^"]*?"', QUOTE_MASK, raw)
-        heading_level = 1 if _is_likely_heading(raw) else None
+        is_table_figure_label = bool(_TABLE_FIGURE_LABEL.match(raw))
+        is_table_figure_title = (
+            previous_was_table_figure_label
+            and len(raw) <= 200
+            and not _SENTENCE_END.search(raw)
+            and not _PAREN_YEAR_IN_TEXT.search(raw)
+        )
+        if is_table_figure_label or is_table_figure_title:
+            heading_level = 0
+        else:
+            heading_level = 1 if _is_likely_heading(raw) else None
+        if heading_level is None:
+            para_on_page += 1
         paras.append(ProseParagraph(
             index=i,
             style_name="Heading 1" if heading_level else "Normal",
@@ -225,9 +459,11 @@ def _build_paragraphs(text: str) -> list[ProseParagraph]:
             masked_text=masked,
             heading_level=heading_level,
             is_reference_entry=False,
+            page_number=1,
+            paragraph_number_on_page=para_on_page,
         ))
+        previous_was_table_figure_label = is_table_figure_label
     return paras
-
 
 def _empty_citation_result(note: str) -> CitationMatchResult:
     return CitationMatchResult(
@@ -258,13 +494,15 @@ async def check_text(req: TextCheckRequest):
     threshold = req.levenshtein_threshold or citation_cfg.get("spelling_mismatch_threshold", 2)
 
     paragraphs = _build_paragraphs(req.body_text)
-    apa_findings = check_paragraphs(paragraphs, prose_cfg, heading_cfg)
+    apa_findings = _sort_findings(check_paragraphs(paragraphs, prose_cfg, heading_cfg), paragraphs)
 
     citation_result = (
-        run_citation_check(req.body_text, req.reference_text, levenshtein_threshold=threshold)
+        run_citation_check_paragraphs(paragraphs, req.reference_text, levenshtein_threshold=threshold)
         if req.reference_text
         else _empty_citation_result("No reference list provided — citation matching skipped.")
     )
+
+    _decorate_and_sort_citation_issues(citation_result, paragraphs)
 
     return CheckResponse(
         apa_findings=[_finding_to_out(f) for f in apa_findings],
@@ -309,7 +547,7 @@ async def check_docx(
         from docx import Document
         doc = Document(tmp_path)
         paragraphs = extract_prose(doc)
-        apa_findings = check_paragraphs(paragraphs, prose_cfg, heading_cfg)
+        apa_findings = _sort_findings(check_paragraphs(paragraphs, prose_cfg, heading_cfg), paragraphs)
 
         effective_ref = reference_text or "\n".join(
             p.raw_text for p in paragraphs if p.is_reference_entry
@@ -319,6 +557,7 @@ async def check_docx(
             if effective_ref
             else _empty_citation_result("No reference list found — citation matching skipped.")
         )
+        _decorate_and_sort_citation_issues(citation_result, paragraphs)
     finally:
         if tmp_path and os.path.exists(tmp_path):
             os.unlink(tmp_path)
@@ -343,6 +582,65 @@ async def check_docx(
 # ---------------------------------------------------------------------------
 # Endpoints — Module 1 (LLM, metered)
 # ---------------------------------------------------------------------------
+
+@app.post("/api/check/docx/annotated")
+async def check_docx_annotated(
+    file: UploadFile = File(...),
+    reference_text: str = Form(default=""),
+    levenshtein_threshold: int = Form(default=2),
+):
+    """Return a copy of the uploaded .docx with findings highlighted and summarized."""
+    if not file.filename or not file.filename.endswith(".docx"):
+        raise HTTPException(status_code=400, detail="Only .docx files are supported.")
+
+    cfg = _cfg()
+    prose_cfg = cfg.get("prose_rules", {})
+    heading_cfg = cfg.get("heading_rules", {})
+    citation_cfg = cfg.get("citation_rules", {})
+    threshold = levenshtein_threshold or citation_cfg.get("spelling_mismatch_threshold", 2)
+
+    content = await file.read()
+    tmp_path = None
+    out_path = None
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".docx", delete=False) as tmp:
+            tmp.write(content)
+            tmp_path = tmp.name
+
+        from docx import Document
+        doc = Document(tmp_path)
+        paragraphs = extract_prose(doc)
+        apa_findings = _sort_findings(check_paragraphs(paragraphs, prose_cfg, heading_cfg), paragraphs)
+
+        effective_ref = reference_text or "\n".join(
+            p.raw_text for p in paragraphs if p.is_reference_entry
+        )
+        citation_result = (
+            run_citation_check_paragraphs(paragraphs, effective_ref, levenshtein_threshold=threshold)
+            if effective_ref
+            else _empty_citation_result("No reference list found - citation matching skipped.")
+        )
+        _decorate_and_sort_citation_issues(citation_result, paragraphs)
+
+        rows = _annotated_rows(apa_findings, citation_result)
+        with tempfile.NamedTemporaryFile(suffix=".docx", delete=False) as out:
+            out_path = out.name
+        _annotate_docx(tmp_path, out_path, rows)
+
+        original_stem = Path(file.filename).stem or "document"
+        safe_stem = re.sub(r"[^A-Za-z0-9_.-]+", "_", original_stem).strip("._") or "document"
+        download_name = f"{safe_stem}_reviewed.docx"
+
+        return FileResponse(
+            out_path,
+            media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            filename=download_name,
+            background=BackgroundTask(_cleanup_paths, [tmp_path, out_path]),
+        )
+    except Exception:
+        _cleanup_paths([p for p in [tmp_path, out_path] if p])
+        raise
+
 
 @app.post("/api/review/estimate", response_model=EstimateResponse)
 async def review_estimate(req: EstimateRequest):

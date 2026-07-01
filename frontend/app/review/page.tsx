@@ -3,6 +3,8 @@
 import { useState, useCallback, useRef } from "react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const BETA_VERSION = process.env.NEXT_PUBLIC_BETA_VERSION || "Beta v0.1";
+const FEEDBACK_EMAIL = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL || "";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -21,13 +23,26 @@ interface Finding {
 
 interface CheckResponse {
   apa_findings: Finding[];
-  missing_references: Array<{ citation: string; paragraph_index: number; message: string; severity?: string }>;
-  uncited_references: Array<{ reference: string; line_index: number; message: string }>;
-  year_mismatches: Array<{ citation: string; message: string }>;
-  spelling_mismatches: Array<{ citation: string; reference: string; distance: number; message: string }>;
-  co_author_only_matches: Array<{ citation: string; message: string }>;
+  missing_references: Array<CitationIssue>;
+  uncited_references: Array<CitationIssue>;
+  year_mismatches: Array<CitationIssue>;
+  spelling_mismatches: Array<CitationIssue>;
+  co_author_only_matches: Array<CitationIssue>;
   scope_warning: string;
   stats: { paragraphs_checked: number; apa_findings_count: number; citations_found: number; references_parsed: number };
+}
+
+interface CitationIssue {
+  citation?: string;
+  reference?: string;
+  paragraph_index?: number;
+  line_index?: number;
+  page_number?: number;
+  paragraph_number_on_page?: number;
+  location_hint?: string;
+  message: string;
+  severity?: string;
+  distance?: number;
 }
 
 interface Suggestion {
@@ -78,6 +93,80 @@ function randomId() {
   return Math.random().toString(36).slice(2) + Date.now().toString(36);
 }
 
+const RULE_LABELS: Record<string, string> = {
+  PRF001: "Short paragraph",
+  REF010: "Publisher business designation",
+  STY001: "Passive voice",
+};
+
+function ruleLabel(f: Finding) {
+  if (RULE_LABELS[f.rule_id]) return RULE_LABELS[f.rule_id];
+  const withoutApa = f.message.replace(/^APA\s+§[\d.]+:\s*/, "");
+  const firstClause = withoutApa.split(/[.:(-]/)[0]?.trim();
+  return firstClause || f.rule_id;
+}
+
+function citationIssueOrder(issue: CitationIssue) {
+  return [
+    issue.page_number ?? Number.MAX_SAFE_INTEGER,
+    issue.paragraph_number_on_page ?? Number.MAX_SAFE_INTEGER,
+    issue.paragraph_index ?? Number.MAX_SAFE_INTEGER,
+    issue.line_index ?? Number.MAX_SAFE_INTEGER,
+  ];
+}
+
+function compareCitationIssues(a: CitationIssue, b: CitationIssue) {
+  const ao = citationIssueOrder(a);
+  const bo = citationIssueOrder(b);
+  for (let i = 0; i < ao.length; i += 1) {
+    if (ao[i] !== bo[i]) return ao[i] - bo[i];
+  }
+  return a.message.localeCompare(b.message);
+}
+
+function buildFeedbackTemplate({
+  mode,
+  fileName,
+  checkResult,
+}: {
+  mode: "paste" | "upload";
+  fileName: string;
+  checkResult: CheckResponse | null;
+}) {
+  const stats = checkResult
+    ? [
+        `APA findings: ${checkResult.apa_findings.length}`,
+        `Citation issues: ${
+          checkResult.missing_references.length +
+          checkResult.uncited_references.length +
+          checkResult.year_mismatches.length +
+          checkResult.spelling_mismatches.length +
+          checkResult.co_author_only_matches.length
+        }`,
+        `Paragraphs checked: ${checkResult.stats.paragraphs_checked}`,
+      ].join("\n")
+    : "No check result yet.";
+
+  return [
+    `Version: ${BETA_VERSION}`,
+    `Mode: ${mode}`,
+    `File: ${fileName || "N/A"}`,
+    stats,
+    "",
+    "1. What worked well?",
+    "",
+    "2. What was confusing?",
+    "",
+    "3. False positives or wrong APA suggestions:",
+    "",
+    "4. Missing issues the tool should have found:",
+    "",
+    "5. Reviewed DOCX formatting/comment problems:",
+    "",
+    "6. Overall: Would you use this again? Why or why not?",
+  ].join("\n");
+}
+
 // ---------------------------------------------------------------------------
 // Sub-components
 // ---------------------------------------------------------------------------
@@ -100,7 +189,7 @@ function FindingCard({ f }: { f: Finding }) {
         <span className={`text-xs font-semibold px-2 py-0.5 rounded ${SEV_BADGE[f.severity] ?? ""}`}>
           {f.severity.toUpperCase()}
         </span>
-        <span className="text-xs text-gray-500 font-mono">{f.rule_id}</span>
+        <span className="text-xs text-gray-600 font-medium">{ruleLabel(f)}</span>
       </div>
       <p className="text-sm text-gray-800 mb-2">{f.message}</p>
       {f.excerpt && (
@@ -121,10 +210,16 @@ function FindingCard({ f }: { f: Finding }) {
 }
 
 function CitationIssueCard({ issue, label }: { issue: Record<string, unknown>; label: string }) {
+  const locationHint = typeof issue.location_hint === "string" ? issue.location_hint : "";
   return (
     <div className="border border-orange-200 bg-orange-50 rounded-lg p-3 mb-2">
       <p className="text-xs font-semibold text-orange-700 mb-1">{label}</p>
       <p className="text-sm text-gray-800">{String(issue.message)}</p>
+      {locationHint && (
+        <p className="text-xs text-gray-400 italic mt-1">
+          <span className="font-medium not-italic text-gray-500">Find in doc: </span>{locationHint}
+        </p>
+      )}
     </div>
   );
 }
@@ -190,8 +285,10 @@ export default function ReviewPage() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [checking, setChecking] = useState(false);
+  const [annotating, setAnnotating] = useState(false);
   const [checkResult, setCheckResult] = useState<CheckResponse | null>(null);
   const [checkError, setCheckError] = useState("");
+  const [feedbackCopied, setFeedbackCopied] = useState(false);
   const [tab, setTab] = useState<"apa" | "citations">("apa");
 
   const [reviewing, setReviewing] = useState(false);
@@ -246,6 +343,56 @@ export default function ReviewPage() {
     } finally {
       setChecking(false);
     }
+  }
+
+  async function handleDownloadAnnotated() {
+    if (!uploadedFile) return;
+    setAnnotating(true);
+    setCheckError("");
+
+    try {
+      const form = new FormData();
+      form.append("file", uploadedFile);
+      const res = await fetch(`${API_BASE}/api/check/docx/annotated`, { method: "POST", body: form });
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
+
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      const baseName = uploadedFile.name.replace(/\.docx$/i, "");
+      link.href = url;
+      link.download = `${baseName}_reviewed.docx`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      setCheckError(err instanceof Error ? err.message : "Could not create annotated document.");
+    } finally {
+      setAnnotating(false);
+    }
+  }
+
+  async function handleCopyFeedbackTemplate() {
+    const template = buildFeedbackTemplate({
+      mode,
+      fileName: uploadedFile?.name ?? "",
+      checkResult,
+    });
+    await navigator.clipboard.writeText(template);
+    setFeedbackCopied(true);
+    window.setTimeout(() => setFeedbackCopied(false), 2500);
+  }
+
+  function handleEmailFeedback() {
+    const template = buildFeedbackTemplate({
+      mode,
+      fileName: uploadedFile?.name ?? "",
+      checkResult,
+    });
+    const subject = encodeURIComponent(`Dissertation Review beta feedback - ${BETA_VERSION}`);
+    const body = encodeURIComponent(template);
+    window.location.href = `mailto:${FEEDBACK_EMAIL}?subject=${subject}&body=${body}`;
   }
 
   // ---------------------------------------------------------------------------
@@ -304,6 +451,27 @@ export default function ReviewPage() {
       checkResult.year_mismatches.length + checkResult.spelling_mismatches.length +
       checkResult.co_author_only_matches.length
     : 0;
+  const citationIssues = checkResult
+    ? [
+        ...checkResult.spelling_mismatches.map((issue) => ({
+          issue,
+          label: "Possible spelling mismatch - review, do not auto-correct",
+        })),
+        ...checkResult.year_mismatches.map((issue) => ({ issue, label: "Year mismatch" })),
+        ...checkResult.missing_references.map((issue) => ({
+          issue,
+          label: issue.severity === "error" ? "Missing reference" : "Possible missing reference",
+        })),
+        ...checkResult.co_author_only_matches.map((issue) => ({
+          issue,
+          label: "Co-author-only match (soft flag)",
+        })),
+        ...checkResult.uncited_references.map((issue) => ({
+          issue,
+          label: "Reference not cited in text",
+        })),
+      ].sort((a, b) => compareCitationIssues(a.issue, b.issue))
+    : [];
 
   const acceptedCount = Object.values(decisions).filter((d) => d === "accepted").length;
   const words = mode === "paste" ? wordCount(pastedText) : uploadedFile ? null : 0;
@@ -320,6 +488,46 @@ export default function ReviewPage() {
 
         <div className="bg-blue-50 border border-blue-200 rounded-lg px-4 py-2 text-xs text-blue-700 mb-6">
           Your text is processed server-side and deleted immediately. Not stored, not used for training.
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4 mb-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <span className="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-100 text-indigo-700">
+                  {BETA_VERSION}
+                </span>
+                <span className="text-sm font-semibold text-gray-900">Private beta test</span>
+              </div>
+              <ol className="list-decimal list-inside text-xs text-gray-600 space-y-1">
+                <li>Upload a DOCX chapter or paste a short sample.</li>
+                <li>Run the free APA check and review the on-screen findings.</li>
+                <li>For DOCX uploads, download the reviewed copy and inspect Word comments.</li>
+                <li>Report false positives, missing issues, confusing wording, and formatting problems.</li>
+              </ol>
+              <p className="text-xs text-gray-500 mt-3">
+                For testing, remove sensitive names or confidential content when possible.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 sm:min-w-48">
+              <button
+                type="button"
+                onClick={handleCopyFeedbackTemplate}
+                className="px-3 py-2 text-xs font-semibold border border-gray-300 rounded bg-white text-gray-700 hover:bg-gray-50 transition"
+              >
+                {feedbackCopied ? "Template copied" : "Copy feedback template"}
+              </button>
+              {FEEDBACK_EMAIL && (
+                <button
+                  type="button"
+                  onClick={handleEmailFeedback}
+                  className="px-3 py-2 text-xs font-semibold bg-gray-900 text-white rounded hover:bg-gray-800 transition"
+                >
+                  Email beta feedback
+                </button>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* Input form */}
@@ -427,6 +635,23 @@ export default function ReviewPage() {
               </div>
             )}
 
+            {mode === "upload" && uploadedFile && (
+              <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:justify-between">
+                <div>
+                  <p className="text-sm font-semibold text-gray-800">Annotated DOCX</p>
+                  <p className="text-xs text-gray-500">Downloads a copy with highlighted findings and Word comments beside the problem text.</p>
+                </div>
+                <button
+                  type="button"
+                  onClick={handleDownloadAnnotated}
+                  disabled={annotating}
+                  className="px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded hover:bg-green-700 disabled:opacity-50 transition"
+                >
+                  {annotating ? "Preparing..." : "Download reviewed .docx"}
+                </button>
+              </div>
+            )}
+
             <div className="flex border-b border-gray-200 mb-4">
               {(["apa", "citations"] as const).map((t) => (
                 <button
@@ -447,20 +672,8 @@ export default function ReviewPage() {
 
             {tab === "citations" && (
               <div>
-                {checkResult.spelling_mismatches.map((m, i) => (
-                  <CitationIssueCard key={`sm-${i}`} issue={m as unknown as Record<string, unknown>} label="Possible spelling mismatch — review, do not auto-correct" />
-                ))}
-                {checkResult.year_mismatches.map((m, i) => (
-                  <CitationIssueCard key={`ym-${i}`} issue={m as unknown as Record<string, unknown>} label="Year mismatch" />
-                ))}
-                {checkResult.missing_references.map((m, i) => (
-                  <CitationIssueCard key={`mr-${i}`} issue={m as unknown as Record<string, unknown>} label={m.severity === "error" ? "Missing reference" : "Possible missing reference"} />
-                ))}
-                {checkResult.co_author_only_matches.map((m, i) => (
-                  <CitationIssueCard key={`ca-${i}`} issue={m as unknown as Record<string, unknown>} label="Co-author-only match (soft flag)" />
-                ))}
-                {checkResult.uncited_references.map((m, i) => (
-                  <CitationIssueCard key={`ur-${i}`} issue={m as unknown as Record<string, unknown>} label="Reference not cited in text" />
+                {citationIssues.map(({ issue, label }, i) => (
+                  <CitationIssueCard key={`ci-${i}`} issue={issue as unknown as Record<string, unknown>} label={label} />
                 ))}
                 {citationTotal === 0 && (
                   <p className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-lg p-4">
