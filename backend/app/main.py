@@ -385,11 +385,15 @@ def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> l
 
 
 def _comment_text(row: dict) -> str:
+    message = str(row["message"])
+    label = str(row["label"])
+    if label and message.lower().startswith(label.lower()):
+        message = message[len(label):].lstrip(": -")
     parts = [
         f'{row["kind"]}: {row["label"]}',
         f'Severity: {row["severity"]}',
         _severity_definition(str(row["severity"])),
-        str(row["message"]),
+        message,
     ]
     if row.get("suggested_fix"):
         parts.append(f'Suggested fix: {row["suggested_fix"]}')
@@ -397,6 +401,11 @@ def _comment_text(row: dict) -> str:
 
 
 def _finding_target(finding: Finding) -> str:
+    if finding.rule_id == "CIT004" and finding.excerpt:
+        return finding.excerpt
+    found = re.search(r"Found:\s*'([^']+)'", finding.message)
+    if found:
+        return found.group(1)
     quoted = re.search(r"'([^']{2,80})'", finding.message)
     if quoted:
         return quoted.group(1)
@@ -450,8 +459,26 @@ def _annotated_rows(
             "target": issue.get("citation", ""),
         })
 
+    deduped: dict[tuple, dict] = {}
+    for row in rows:
+        key = (
+            row.get("paragraph_index"),
+            str(row.get("kind", "")).lower(),
+            str(row.get("label", "")).lower(),
+            str(row.get("severity", "")).lower(),
+            re.sub(r"\s+", " ", str(row.get("target", "")).strip().lower()),
+        )
+        existing = deduped.get(key)
+        if existing is None:
+            deduped[key] = row
+            continue
+        existing_score = len(str(existing.get("message", ""))) + len(str(existing.get("suggested_fix", "")))
+        row_score = len(str(row.get("message", ""))) + len(str(row.get("suggested_fix", "")))
+        if row_score > existing_score:
+            deduped[key] = row
+
     return sorted(
-        rows,
+        deduped.values(),
         key=lambda row: (
             row.get("paragraph_index") is None,
             int(row.get("paragraph_index") or 10**9),

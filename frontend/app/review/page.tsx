@@ -189,22 +189,22 @@ const SEVERITY_GUIDE = [
   {
     label: "Warning",
     className: "bg-yellow-100 text-yellow-800 border-yellow-200",
-    text: "Likely APA or formatting issue. Review and fix unless your program template says otherwise.",
+    text: "Review and usually fix.",
   },
   {
     label: "Suggestion",
     className: "bg-cyan-100 text-cyan-800 border-cyan-200",
-    text: "Optional writing improvement. Use only if it improves clarity and preserves meaning.",
+    text: "Optional style improvement.",
   },
   {
     label: "Info",
     className: "bg-blue-100 text-blue-800 border-blue-200",
-    text: "Program preference or soft signal. Check against chair, school, or template requirements.",
+    text: "Check program preference.",
   },
   {
     label: "Error",
     className: "bg-red-100 text-red-800 border-red-200",
-    text: "High-priority inconsistency, usually citation/reference related. Correct before submission.",
+    text: "Correct before submission.",
   },
 ];
 
@@ -305,7 +305,7 @@ function SuggestionCard({
 // ---------------------------------------------------------------------------
 
 export default function ReviewPage() {
-  const [mode, setMode] = useState<"paste" | "upload">("paste");
+  const [mode, setMode] = useState<"paste" | "upload">("upload");
   const [pastedText, setPastedText] = useState("");
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -516,70 +516,12 @@ export default function ReviewPage() {
           Your text is processed server-side and deleted immediately. Not stored, not used for training.
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-lg p-4 mb-6">
-          <h2 className="text-sm font-semibold text-gray-900 mb-3">Severity guide</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            {SEVERITY_GUIDE.map((item) => (
-              <div key={item.label} className={`border rounded-md px-3 py-2 ${item.className}`}>
-                <p className="text-xs font-semibold mb-1">{item.label}</p>
-                <p className="text-xs leading-relaxed">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="bg-white border border-gray-200 rounded-lg p-4 mb-6">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-            <div>
-              <div className="flex flex-wrap items-center gap-2 mb-2">
-                <span className="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-100 text-indigo-700">
-                  {BETA_VERSION}
-                </span>
-                <span className="text-sm font-semibold text-gray-900">Private beta test</span>
-              </div>
-              <ol className="list-decimal list-inside text-xs text-gray-600 space-y-1">
-                <li>Upload a DOCX chapter or paste a short sample.</li>
-                <li>Run the free APA check and review the on-screen findings.</li>
-                <li>For DOCX uploads, download the reviewed copy and inspect Word comments.</li>
-                <li>Report false positives, missing issues, confusing wording, and formatting problems.</li>
-              </ol>
-              <p className="text-xs text-gray-500 mt-3">
-                For testing, remove sensitive names or confidential content when possible.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 sm:min-w-48">
-              <button
-                type="button"
-                onClick={handleCopyFeedbackTemplate}
-                className="px-3 py-2 text-xs font-semibold border border-gray-300 rounded bg-white text-gray-700 hover:bg-gray-50 transition"
-              >
-                {feedbackCopied ? "Template copied" : "Copy feedback template"}
-              </button>
-              {FEEDBACK_EMAIL && (
-                <button
-                  type="button"
-                  onClick={handleEmailFeedback}
-                  className="px-3 py-2 text-xs font-semibold bg-gray-900 text-white rounded hover:bg-gray-800 transition"
-                >
-                  Email beta feedback
-                </button>
-              )}
-            </div>
-          </div>
-        </div>
-
         {/* Input form */}
-        <form onSubmit={handleCheck} className="mb-6">
+        <form onSubmit={handleCheck} className="max-w-2xl mx-auto mb-5">
 
           {/* Mode toggle */}
-          <div className="flex gap-1 p-1 bg-gray-100 rounded-lg w-fit mb-4">
-            <button
-              type="button"
-              onClick={() => { setMode("paste"); setUploadedFile(null); }}
-              className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${mode === "paste" ? "bg-white shadow text-gray-900" : "text-gray-500 hover:text-gray-700"}`}
-            >
-              Paste text
-            </button>
+          <div className="flex justify-center mb-3">
+          <div className="flex gap-1 p-1 bg-gray-100 rounded-lg">
             <button
               type="button"
               onClick={() => setMode("upload")}
@@ -587,6 +529,14 @@ export default function ReviewPage() {
             >
               Upload .docx
             </button>
+            <button
+              type="button"
+              onClick={() => { setMode("paste"); setUploadedFile(null); }}
+              className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${mode === "paste" ? "bg-white shadow text-gray-900" : "text-gray-500 hover:text-gray-700"}`}
+            >
+              Paste text
+            </button>
+          </div>
           </div>
 
           {mode === "paste" ? (
@@ -611,7 +561,7 @@ export default function ReviewPage() {
                 const f = e.dataTransfer.files[0];
                 if (f?.name.endsWith(".docx")) setUploadedFile(f);
               }}
-              className="border-2 border-dashed border-gray-300 rounded-lg p-10 text-center cursor-pointer hover:border-blue-400 hover:bg-blue-50 transition"
+              className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer bg-white hover:border-blue-400 hover:bg-blue-50 transition"
             >
               <input
                 ref={fileInputRef}
@@ -644,11 +594,66 @@ export default function ReviewPage() {
           <button
             type="submit"
             disabled={checking || !canSubmit}
-            className="mt-4 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 transition"
+            className="mt-4 sm:mr-3 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 transition"
           >
-            {checking ? "Checking…" : "Run APA 7 check (free)"}
+            {checking ? "Checking..." : "Run APA 7 check"}
           </button>
+          {mode === "upload" && uploadedFile && checkResult && (
+            <button
+              type="button"
+              onClick={handleDownloadAnnotated}
+              disabled={annotating}
+              className="mt-3 sm:mt-4 px-6 py-2.5 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 disabled:opacity-50 transition"
+            >
+              {annotating ? "Preparing..." : "Download reviewed .docx"}
+            </button>
+          )}
         </form>
+
+        <div className="bg-white border border-gray-200 rounded-lg px-3 py-2 mb-5">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-semibold text-gray-700 mr-1">Severity</span>
+            {SEVERITY_GUIDE.map((item) => (
+              <span key={item.label} className={`border rounded px-2 py-1 text-xs ${item.className}`}>
+                <span className="font-semibold">{item.label}:</span> {item.text}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-3 mb-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <div className="flex flex-wrap items-center gap-2 mb-1">
+                <span className="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-100 text-indigo-700">
+                  {BETA_VERSION}
+                </span>
+                <span className="text-sm font-semibold text-gray-900">Private beta test</span>
+              </div>
+              <p className="text-xs text-gray-500">
+                Check the on-screen findings and reviewed DOCX, then report false positives or confusing comments.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={handleCopyFeedbackTemplate}
+                className="px-3 py-2 text-xs font-semibold border border-gray-300 rounded bg-white text-gray-700 hover:bg-gray-50 transition"
+              >
+                {feedbackCopied ? "Template copied" : "Copy feedback template"}
+              </button>
+              {FEEDBACK_EMAIL && (
+                <button
+                  type="button"
+                  onClick={handleEmailFeedback}
+                  className="px-3 py-2 text-xs font-semibold bg-gray-900 text-white rounded hover:bg-gray-800 transition"
+                >
+                  Email beta feedback
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
 
         {checkError && (
           <div className="border border-red-300 bg-red-50 rounded-lg p-4 text-red-700 text-sm mb-6">
@@ -670,23 +675,6 @@ export default function ReviewPage() {
             {checkResult.scope_warning && (
               <div className="border border-yellow-200 bg-yellow-50 rounded-lg px-4 py-2 text-sm text-yellow-800 mb-4">
                 {checkResult.scope_warning}
-              </div>
-            )}
-
-            {mode === "upload" && uploadedFile && (
-              <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:justify-between">
-                <div>
-                  <p className="text-sm font-semibold text-gray-800">Annotated DOCX</p>
-                  <p className="text-xs text-gray-500">Downloads a copy with highlighted findings and Word comments beside the problem text.</p>
-                </div>
-                <button
-                  type="button"
-                  onClick={handleDownloadAnnotated}
-                  disabled={annotating}
-                  className="px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded hover:bg-green-700 disabled:opacity-50 transition"
-                >
-                  {annotating ? "Preparing..." : "Download reviewed .docx"}
-                </button>
               </div>
             )}
 
