@@ -173,32 +173,32 @@ function buildFeedbackTemplate({
 // ---------------------------------------------------------------------------
 
 const SEV_BORDER: Record<string, string> = {
-  error: "border-red-300 bg-red-50",
-  warning: "border-yellow-300 bg-yellow-50",
-  suggestion: "border-cyan-200 bg-cyan-50",
-  info: "border-blue-200 bg-blue-50",
+  error: "border-red-200 bg-white",
+  warning: "border-amber-200 bg-white",
+  suggestion: "border-teal-200 bg-white",
+  info: "border-sky-200 bg-white",
 };
 const SEV_BADGE: Record<string, string> = {
-  error: "bg-red-100 text-red-700",
-  warning: "bg-yellow-100 text-yellow-700",
-  suggestion: "bg-cyan-100 text-cyan-700",
-  info: "bg-blue-100 text-blue-700",
+  error: "bg-red-50 text-red-700 ring-1 ring-red-200",
+  warning: "bg-amber-50 text-amber-800 ring-1 ring-amber-200",
+  suggestion: "bg-teal-50 text-teal-800 ring-1 ring-teal-200",
+  info: "bg-sky-50 text-sky-800 ring-1 ring-sky-200",
 };
 
 const SEVERITY_GUIDE = [
   {
     label: "Warning",
-    className: "bg-yellow-100 text-yellow-800 border-yellow-200",
+    className: "bg-amber-50 text-amber-800 border-amber-200",
     text: "Review and usually fix.",
   },
   {
     label: "Suggestion",
-    className: "bg-cyan-100 text-cyan-800 border-cyan-200",
+    className: "bg-teal-50 text-teal-800 border-teal-200",
     text: "Optional style improvement.",
   },
   {
     label: "Info",
-    className: "bg-blue-100 text-blue-800 border-blue-200",
+    className: "bg-sky-50 text-sky-800 border-sky-200",
     text: "Check program preference.",
   },
   {
@@ -209,27 +209,34 @@ const SEVERITY_GUIDE = [
 ];
 
 function FindingCard({ f }: { f: Finding }) {
+  const accent: Record<string, string> = {
+    error: "before:bg-red-500",
+    warning: "before:bg-amber-500",
+    suggestion: "before:bg-teal-500",
+    info: "before:bg-sky-500",
+  };
+
   return (
-    <div className={`border rounded-lg p-4 mb-3 ${SEV_BORDER[f.severity] ?? "border-gray-200 bg-gray-50"}`}>
+    <div className={`relative overflow-hidden border rounded-lg p-4 mb-3 shadow-sm before:absolute before:left-0 before:top-0 before:h-full before:w-1 ${accent[f.severity] ?? "before:bg-slate-300"} ${SEV_BORDER[f.severity] ?? "border-slate-200 bg-white"}`}>
       <div className="flex items-center gap-2 mb-1">
-        <span className={`text-xs font-semibold px-2 py-0.5 rounded ${SEV_BADGE[f.severity] ?? ""}`}>
+        <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full ${SEV_BADGE[f.severity] ?? ""}`}>
           {f.severity.toUpperCase()}
         </span>
-        <span className="text-xs text-gray-600 font-medium">{ruleLabel(f)}</span>
+        <span className="text-xs text-slate-600 font-medium">{ruleLabel(f)}</span>
       </div>
-      <p className="text-sm text-gray-800 mb-2">{f.message}</p>
+      <p className="text-sm text-slate-800 mb-2 leading-6">{f.message}</p>
       {f.excerpt && (
-        <p className="text-xs text-gray-600 font-mono bg-white/70 rounded px-2 py-1 border border-gray-200 mb-1 break-words">
-          <span className="text-gray-400 select-none">Context: </span>{f.excerpt}
+        <p className="text-xs text-slate-600 font-mono bg-slate-50 rounded-md px-2 py-1.5 border border-slate-200 mb-1 break-words">
+          <span className="text-slate-400 select-none">Context: </span>{f.excerpt}
         </p>
       )}
       {f.location_hint && (
-        <p className="text-xs text-gray-400 italic mb-1">
-          <span className="font-medium not-italic text-gray-500">Find in doc: </span>{f.location_hint}
+        <p className="text-xs text-slate-400 italic mb-1">
+          <span className="font-medium not-italic text-slate-500">Find in doc: </span>{f.location_hint}
         </p>
       )}
       {f.suggested_fix && (
-        <p className="text-xs text-green-700 mt-1">Suggested fix: {f.suggested_fix}</p>
+        <p className="text-xs text-emerald-700 mt-1">Suggested fix: {f.suggested_fix}</p>
       )}
     </div>
   );
@@ -238,12 +245,12 @@ function FindingCard({ f }: { f: Finding }) {
 function CitationIssueCard({ issue, label }: { issue: Record<string, unknown>; label: string }) {
   const locationHint = typeof issue.location_hint === "string" ? issue.location_hint : "";
   return (
-    <div className="border border-orange-200 bg-orange-50 rounded-lg p-3 mb-2">
-      <p className="text-xs font-semibold text-orange-700 mb-1">{label}</p>
-      <p className="text-sm text-gray-800">{String(issue.message)}</p>
+    <div className="border border-amber-200 bg-white rounded-lg p-3 mb-2 shadow-sm">
+      <p className="text-xs font-semibold text-amber-700 mb-1">{label}</p>
+      <p className="text-sm text-slate-800 leading-6">{String(issue.message)}</p>
       {locationHint && (
-        <p className="text-xs text-gray-400 italic mt-1">
-          <span className="font-medium not-italic text-gray-500">Find in doc: </span>{locationHint}
+        <p className="text-xs text-slate-400 italic mt-1">
+          <span className="font-medium not-italic text-slate-500">Find in doc: </span>{locationHint}
         </p>
       )}
     </div>
@@ -504,39 +511,55 @@ export default function ReviewPage() {
   const canSubmit = mode === "paste" ? pastedText.trim().length > 0 : uploadedFile !== null;
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-10">
+    <main className="min-h-screen bg-[#f7f8f5] text-slate-900">
+      <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
 
-        <h1 className="text-2xl font-bold text-gray-900 mb-1">Dissertation Review</h1>
-        <p className="text-sm text-gray-500 mb-4">
-          APA 7 rule checking is free. AI-assisted polish uses credits.
-        </p>
-
-        <div className="bg-blue-50 border border-blue-200 rounded-lg px-4 py-2 text-xs text-blue-700 mb-6">
-          Your text is processed server-side and deleted immediately. Not stored, not used for training.
+        <div className="mb-7 flex flex-col gap-4 border-b border-[#dce4db] pb-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <span className="rounded-full bg-[#123c3d] px-3 py-1 text-xs font-semibold text-white">
+                Dissertation Review
+              </span>
+              <span className="rounded-full border border-[#cfd9cf] bg-white px-3 py-1 text-xs font-medium text-slate-600">
+                APA 7 DOCX checker
+              </span>
+            </div>
+            <h1 className="max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+              Review your dissertation chapter before submission
+            </h1>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
+              Upload a Word document to find APA, citation, style, and formatting issues. Download a reviewed copy with comments in the same document.
+            </p>
+          </div>
+          <div className="rounded-lg border border-[#dce4db] bg-white px-4 py-3 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Privacy</p>
+            <p className="mt-1 max-w-xs text-xs leading-5 text-slate-600">
+              Processed server-side and deleted immediately. Not stored or used for training.
+            </p>
+          </div>
         </div>
 
         {/* Input form */}
-        <form onSubmit={handleCheck} className="max-w-2xl mx-auto mb-5">
+        <form onSubmit={handleCheck} className="mx-auto mb-5 max-w-2xl">
 
           {/* Mode toggle */}
-          <div className="flex justify-center mb-3">
-          <div className="flex gap-1 p-1 bg-gray-100 rounded-lg">
-            <button
-              type="button"
-              onClick={() => setMode("upload")}
-              className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${mode === "upload" ? "bg-white shadow text-gray-900" : "text-gray-500 hover:text-gray-700"}`}
-            >
-              Upload .docx
-            </button>
-            <button
-              type="button"
-              onClick={() => { setMode("paste"); setUploadedFile(null); }}
-              className={`px-4 py-1.5 rounded-md text-sm font-medium transition ${mode === "paste" ? "bg-white shadow text-gray-900" : "text-gray-500 hover:text-gray-700"}`}
-            >
-              Paste text
-            </button>
-          </div>
+          <div className="mb-3 flex justify-center">
+            <div className="flex gap-1 rounded-lg border border-[#dce4db] bg-white p-1 shadow-sm">
+              <button
+                type="button"
+                onClick={() => setMode("upload")}
+                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "upload" ? "bg-[#123c3d] text-white shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
+              >
+                Upload .docx
+              </button>
+              <button
+                type="button"
+                onClick={() => { setMode("paste"); setUploadedFile(null); }}
+                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "paste" ? "bg-[#123c3d] text-white shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
+              >
+                Paste text
+              </button>
+            </div>
           </div>
 
           {mode === "paste" ? (
@@ -546,10 +569,10 @@ export default function ReviewPage() {
                 onChange={(e) => setPastedText(e.target.value)}
                 rows={16}
                 placeholder={`Paste your text here — body and references together.\n\nIf your reference list starts with a "References" heading, citation matching will work automatically.`}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+                className="w-full resize-y rounded-lg border border-[#cfd9cf] bg-white px-3 py-2.5 font-mono text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2f7d6b]"
               />
               {words !== null && words > 0 && (
-                <p className="text-xs text-gray-400 mt-1">{words.toLocaleString()} words</p>
+                <p className="mt-1 text-xs text-slate-400">{words.toLocaleString()} words</p>
               )}
             </div>
           ) : (
@@ -561,7 +584,7 @@ export default function ReviewPage() {
                 const f = e.dataTransfer.files[0];
                 if (f?.name.endsWith(".docx")) setUploadedFile(f);
               }}
-              className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer bg-white hover:border-blue-400 hover:bg-blue-50 transition"
+              className="cursor-pointer rounded-lg border-2 border-dashed border-[#b8c9bd] bg-white p-8 text-center shadow-sm transition hover:border-[#2f7d6b] hover:bg-[#f4faf6]"
             >
               <input
                 ref={fileInputRef}
@@ -572,65 +595,67 @@ export default function ReviewPage() {
               />
               {uploadedFile ? (
                 <div>
-                  <p className="text-sm font-medium text-gray-800">{uploadedFile.name}</p>
-                  <p className="text-xs text-gray-400 mt-1">{(uploadedFile.size / 1024).toFixed(0)} KB</p>
+                  <p className="text-sm font-semibold text-slate-900">{uploadedFile.name}</p>
+                  <p className="mt-1 text-xs text-slate-400">{(uploadedFile.size / 1024).toFixed(0)} KB</p>
                   <button
                     type="button"
                     onClick={(e) => { e.stopPropagation(); setUploadedFile(null); }}
-                    className="text-xs text-red-500 underline mt-2"
+                    className="mt-2 text-xs font-medium text-red-600 underline"
                   >
                     Remove
                   </button>
                 </div>
               ) : (
                 <div>
-                  <p className="text-sm text-gray-500">Drop a .docx file here, or click to browse</p>
-                  <p className="text-xs text-gray-400 mt-1">Heading styles, block quotes, and tables are handled automatically</p>
+                  <p className="text-sm font-semibold text-slate-800">Drop a .docx file here, or click to browse</p>
+                  <p className="mt-1 text-xs text-slate-500">Heading styles, block quotes, bullet lists, tables, and figures are handled automatically</p>
                 </div>
               )}
             </div>
           )}
 
-          <button
-            type="submit"
-            disabled={checking || !canSubmit}
-            className="mt-4 sm:mr-3 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 transition"
-          >
-            {checking ? "Checking..." : "Run APA 7 check"}
-          </button>
-          {mode === "upload" && uploadedFile && checkResult && (
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <button
-              type="button"
-              onClick={handleDownloadAnnotated}
-              disabled={annotating}
-              className="mt-3 sm:mt-4 px-6 py-2.5 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 disabled:opacity-50 transition"
+              type="submit"
+              disabled={checking || !canSubmit}
+              className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
             >
-              {annotating ? "Preparing..." : "Download reviewed .docx"}
+              {checking ? "Checking..." : "Run APA 7 check"}
             </button>
-          )}
+            {mode === "upload" && uploadedFile && checkResult && (
+              <button
+                type="button"
+                onClick={handleDownloadAnnotated}
+                disabled={annotating}
+                className="rounded-lg bg-[#2f7d6b] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#256a5b] disabled:opacity-50"
+              >
+                {annotating ? "Preparing..." : "Download reviewed .docx"}
+              </button>
+            )}
+          </div>
         </form>
 
-        <div className="bg-white border border-gray-200 rounded-lg px-3 py-2 mb-5">
+        <div className="mb-5 rounded-lg border border-[#dce4db] bg-white/80 px-3 py-2 shadow-sm">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-gray-700 mr-1">Severity</span>
+            <span className="mr-1 text-xs font-semibold text-slate-700">Severity</span>
             {SEVERITY_GUIDE.map((item) => (
-              <span key={item.label} className={`border rounded px-2 py-1 text-xs ${item.className}`}>
+              <span key={item.label} className={`rounded-full border px-2.5 py-1 text-xs ${item.className}`}>
                 <span className="font-semibold">{item.label}:</span> {item.text}
               </span>
             ))}
           </div>
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-lg p-3 mb-6">
+        <div className="mb-6 rounded-lg border border-[#dce4db] bg-white p-3 shadow-sm">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <div className="flex flex-wrap items-center gap-2 mb-1">
-                <span className="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-100 text-indigo-700">
+                <span className="rounded-full bg-[#e8efe8] px-2 py-0.5 text-xs font-semibold text-[#123c3d]">
                   {BETA_VERSION}
                 </span>
-                <span className="text-sm font-semibold text-gray-900">Private beta test</span>
+                <span className="text-sm font-semibold text-slate-900">Private beta test</span>
               </div>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-slate-500">
                 Check the on-screen findings and reviewed DOCX, then report false positives or confusing comments.
               </p>
             </div>
@@ -638,7 +663,7 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={handleCopyFeedbackTemplate}
-                className="px-3 py-2 text-xs font-semibold border border-gray-300 rounded bg-white text-gray-700 hover:bg-gray-50 transition"
+                className="rounded-md border border-[#cfd9cf] bg-white px-3 py-2 text-xs font-semibold text-slate-700 transition hover:bg-[#f4faf6]"
               >
                 {feedbackCopied ? "Template copied" : "Copy feedback template"}
               </button>
@@ -646,7 +671,7 @@ export default function ReviewPage() {
                 <button
                   type="button"
                   onClick={handleEmailFeedback}
-                  className="px-3 py-2 text-xs font-semibold bg-gray-900 text-white rounded hover:bg-gray-800 transition"
+                  className="rounded-md bg-slate-900 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-800"
                 >
                   Email beta feedback
                 </button>
@@ -656,7 +681,7 @@ export default function ReviewPage() {
         </div>
 
         {checkError && (
-          <div className="border border-red-300 bg-red-50 rounded-lg p-4 text-red-700 text-sm mb-6">
+          <div className="mb-6 rounded-lg border border-red-300 bg-red-50 p-4 text-sm text-red-700">
             Error: {checkError}
           </div>
         )}
@@ -664,26 +689,26 @@ export default function ReviewPage() {
         {/* Results */}
         {checkResult && (
           <div className="mb-8">
-            <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-wrap gap-6 text-sm">
-              <span><strong>{checkResult.stats.paragraphs_checked}</strong> paragraphs</span>
-              <span><strong>{checkResult.apa_findings.length}</strong> APA findings</span>
-              <span><strong>{checkResult.stats.citations_found}</strong> citations</span>
-              <span><strong>{checkResult.stats.references_parsed}</strong> references</span>
-              {citationTotal > 0 && <span className="text-orange-600"><strong>{citationTotal}</strong> citation issues</span>}
+            <div className="mb-4 grid gap-3 rounded-lg border border-[#dce4db] bg-white p-3 text-sm shadow-sm sm:grid-cols-5">
+              <span className="rounded-md bg-[#f4faf6] px-3 py-2"><strong>{checkResult.stats.paragraphs_checked}</strong> paragraphs</span>
+              <span className="rounded-md bg-[#f4faf6] px-3 py-2"><strong>{checkResult.apa_findings.length}</strong> APA findings</span>
+              <span className="rounded-md bg-[#f4faf6] px-3 py-2"><strong>{checkResult.stats.citations_found}</strong> citations</span>
+              <span className="rounded-md bg-[#f4faf6] px-3 py-2"><strong>{checkResult.stats.references_parsed}</strong> references</span>
+              {citationTotal > 0 && <span className="rounded-md bg-amber-50 px-3 py-2 text-amber-700"><strong>{citationTotal}</strong> citation issues</span>}
             </div>
 
             {checkResult.scope_warning && (
-              <div className="border border-yellow-200 bg-yellow-50 rounded-lg px-4 py-2 text-sm text-yellow-800 mb-4">
+              <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-2 text-sm text-amber-800">
                 {checkResult.scope_warning}
               </div>
             )}
 
-            <div className="flex border-b border-gray-200 mb-4">
+            <div className="mb-4 flex border-b border-[#dce4db]">
               {(["apa", "citations"] as const).map((t) => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}
-                  className={`px-4 py-2 text-sm font-medium ${tab === t ? "border-b-2 border-blue-600 text-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+                  className={`px-4 py-2 text-sm font-semibold ${tab === t ? "border-b-2 border-[#123c3d] text-[#123c3d]" : "text-slate-500 hover:text-slate-700"}`}
                 >
                   {t === "apa" ? `APA Rules (${checkResult.apa_findings.length})` : `Citations (${citationTotal})`}
                 </button>
@@ -692,7 +717,7 @@ export default function ReviewPage() {
 
             {tab === "apa" && (
               checkResult.apa_findings.length === 0
-                ? <p className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-lg p-4">No APA 7 rule findings.</p>
+                ? <p className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">No APA 7 rule findings.</p>
                 : checkResult.apa_findings.map((f, i) => <FindingCard key={i} f={f} />)
             )}
 
@@ -702,7 +727,7 @@ export default function ReviewPage() {
                   <CitationIssueCard key={`ci-${i}`} issue={issue as unknown as Record<string, unknown>} label={label} />
                 ))}
                 {citationTotal === 0 && (
-                  <p className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-lg p-4">
+                  <p className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
                     No citation issues.
                     {checkResult.stats.references_parsed === 0 && " No reference list detected — include a \"References\" heading in your text for citation matching."}
                   </p>
@@ -714,9 +739,9 @@ export default function ReviewPage() {
 
         {/* AI Polish — only available for pasted text (docx body not retained client-side) */}
         {checkResult && mode === "paste" && (
-          <div className="border-t border-gray-200 pt-8">
-            <h2 className="text-lg font-semibold text-gray-900 mb-1">AI-Assisted Polish</h2>
-            <p className="text-sm text-gray-500 mb-4">
+          <div className="border-t border-[#dce4db] pt-8">
+            <h2 className="mb-1 text-lg font-semibold text-slate-900">AI-Assisted Polish</h2>
+            <p className="mb-4 text-sm text-slate-500">
               Improves clarity, reduces passive voice, raises doctoral register.
               Every suggestion requires your approval — citations are locked and cannot be changed.
             </p>
@@ -744,7 +769,7 @@ export default function ReviewPage() {
               <button
                 onClick={() => runReview(false)}
                 disabled={reviewing}
-                className="px-6 py-2.5 bg-violet-600 text-white rounded-lg font-semibold hover:bg-violet-700 disabled:opacity-50 transition"
+                className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
               >
                 {reviewing ? "Running AI review…" : "Run AI polish (1 credit)"}
               </button>
