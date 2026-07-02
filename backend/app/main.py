@@ -239,6 +239,7 @@ _RULE_LABELS = {
     "PRF001": "Short paragraph",
     "REF010": "Publisher business designation",
     "STY001": "Passive voice",
+    "MEC023": "First-line paragraph indent",
 }
 
 
@@ -250,8 +251,26 @@ def _rule_label(rule_id: str, message: str) -> str:
     return first_clause or rule_id
 
 
-def _highlight_runs(paragraph, target: str = "") -> list:
+def _severity_definition(severity: str) -> str:
+    definitions = {
+        "ERROR": "Required fix: likely APA/reference inconsistency that should be corrected before submission.",
+        "WARNING": "Review carefully: likely APA issue or formatting problem; fix unless your program requires otherwise.",
+        "SUGGESTION": "Optional improvement: writing/style recommendation; accept only if it improves clarity and meaning.",
+        "INFO": "Informational/program preference: check against your dissertation chair or school template.",
+    }
+    return definitions.get(severity.upper(), "Review this item and decide whether a change is needed.")
+
+
+def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> list:
     from docx.enum.text import WD_COLOR_INDEX
+
+    colors = {
+        "ERROR": WD_COLOR_INDEX.RED,
+        "WARNING": WD_COLOR_INDEX.YELLOW,
+        "SUGGESTION": WD_COLOR_INDEX.TURQUOISE,
+        "INFO": WD_COLOR_INDEX.BRIGHT_GREEN,
+    }
+    highlight_color = colors.get(severity.upper(), WD_COLOR_INDEX.YELLOW)
 
     runs = [run for run in paragraph.runs if run.text]
     if not runs:
@@ -273,7 +292,7 @@ def _highlight_runs(paragraph, target: str = "") -> list:
 
     if start < 0:
         for run in runs:
-            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+            run.font.highlight_color = highlight_color
         return runs
 
     highlighted = []
@@ -282,7 +301,7 @@ def _highlight_runs(paragraph, target: str = "") -> list:
         run_start = cursor
         run_end = cursor + len(run.text)
         if run_end > start and run_start < end:
-            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+            run.font.highlight_color = highlight_color
             highlighted.append(run)
         cursor = run_end
     return highlighted
@@ -292,6 +311,7 @@ def _comment_text(row: dict) -> str:
     parts = [
         f'{row["kind"]}: {row["label"]}',
         f'Severity: {row["severity"]}',
+        _severity_definition(str(row["severity"])),
         str(row["message"]),
     ]
     if row.get("suggested_fix"):
@@ -371,7 +391,11 @@ def _annotate_docx(doc_path: str, output_path: str, rows: list[dict]) -> None:
             continue
         if para_index < 0 or para_index >= len(doc.paragraphs):
             continue
-        anchor_runs = _highlight_runs(doc.paragraphs[para_index], str(row.get("target") or ""))
+        anchor_runs = _highlight_runs(
+            doc.paragraphs[para_index],
+            str(row.get("target") or ""),
+            str(row.get("severity") or "WARNING"),
+        )
         if anchor_runs:
             doc.add_comment(
                 anchor_runs,

@@ -17,6 +17,8 @@ def make_para(
     index: int = 0,
     heading_level=None,
     is_ref: bool = False,
+    has_format_metadata: bool = False,
+    first_line_indent_twips=None,
 ) -> ProseParagraph:
     import re
     masked = re.sub(r'"[^"]*?"|"[^"]*?"', QUOTE_MASK, text)
@@ -27,6 +29,8 @@ def make_para(
         masked_text=masked,
         heading_level=heading_level,
         is_reference_entry=is_ref,
+        has_format_metadata=has_format_metadata,
+        first_line_indent_twips=first_line_indent_twips,
     )
 
 
@@ -127,6 +131,73 @@ class TestMEC003:
         findings = run("The mean score was 361.5 points.")
         n = [f for f in findings if f.rule_id == "MEC003"]
         assert len(n) == 0, f"MEC003 fired on decimal digit: {[f.excerpt for f in n]}"
+
+    def test_comma_grouped_thousand_not_treated_as_small_digit(self):
+        findings = run("The program served 1,000 participants across the region.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on comma-grouped number: {[f.excerpt for f in n]}"
+
+    def test_sentence_start_comma_grouped_number_is_one_finding(self):
+        findings = run("1,000 participants completed the survey. The rate was high.")
+        n = [f for f in findings if f.rule_id == "MEC002"]
+        assert len(n) == 1
+        assert "1,000" in n[0].excerpt
+
+
+class TestAuditCorrections:
+    def test_spaced_em_dash_uses_correct_apa_section(self):
+        findings = run("The result was clear — but implementation varied.")
+        mec012 = [f for f in findings if f.rule_id == "MEC012"]
+        assert mec012
+        assert mec012[0].chapter == "§6.6"
+        assert "§6.6" in mec012[0].message
+
+    def test_ly_adverb_hyphen_uses_hyphenation_section(self):
+        findings = run("The highly-significant result was overstated.")
+        mec013 = [f for f in findings if f.rule_id == "MEC013"]
+        assert mec013
+        assert mec013[0].chapter == "§6.12"
+        assert "§6.12" in mec013[0].message
+
+    def test_group_author_with_and_not_flagged_as_parenthetical_author_error(self):
+        findings = run("This aligns with national guidance (Department of Health and Human Services, 2024).")
+        assert not has_rule(findings, "CIT001")
+
+    def test_figure_panel_label_not_flagged_as_subtable(self):
+        findings = run("The pattern is shown in Figure 5A and described in the text.")
+        assert not has_rule(findings, "TBL003")
+
+    def test_table_letter_suffix_still_flagged(self):
+        findings = run("The pattern is shown in Table 1A and described in the text.")
+        assert has_rule(findings, "TBL003")
+
+
+# ===========================================================================
+# MEC023 - First-line paragraph indentation  §2.24
+# ===========================================================================
+
+class TestMEC023:
+    def test_docx_body_paragraph_without_indent_flagged(self):
+        para = make_para(
+            "This body paragraph has enough sentences. It should still use first-line indentation.",
+            has_format_metadata=True,
+            first_line_indent_twips=None,
+        )
+        findings = check_paragraphs([para], DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
+        assert has_rule(findings, "MEC023")
+
+    def test_docx_body_paragraph_with_half_inch_indent_not_flagged(self):
+        para = make_para(
+            "This body paragraph has enough sentences. It uses the expected first-line indentation.",
+            has_format_metadata=True,
+            first_line_indent_twips=720,
+        )
+        findings = check_paragraphs([para], DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
+        assert not has_rule(findings, "MEC023")
+
+    def test_pasted_text_without_format_metadata_not_flagged(self):
+        findings = run("This pasted paragraph has no formatting metadata. The app cannot check indentation.")
+        assert not has_rule(findings, "MEC023")
 
 
 # ===========================================================================

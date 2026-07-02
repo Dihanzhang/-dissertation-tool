@@ -221,10 +221,13 @@ _WORD_NUM_EXEMPT_RE = re.compile(
 _DOUBLE_SPACE_RE = re.compile(r'\.\s{2,}')
 
 # MEC002: Sentence-starting numeral
-_SENTENCE_START_NUM_RE = re.compile(r'(?:(?:^)|(?<=[.!?])\s+)(\d+)', re.MULTILINE)
+_SENTENCE_START_NUM_RE = re.compile(
+    r'(?:(?:^)|(?<=[.!?])\s+)(\d{1,3}(?:,\d{3})+|\d+)',
+    re.MULTILINE,
+)
 
 # MEC003: Small numeral 1–9
-_SMALL_NUMERAL_RE = re.compile(r'\b([1-9])\b')
+_SMALL_NUMERAL_RE = re.compile(r'(?<![\d,])([1-9])(?![\d,])')
 
 # MEC006: "N percent" → "N%"
 _N_PERCENT_RE = re.compile(r'\b(\d+(?:\.\d+)?)\s+percent\b', re.IGNORECASE)
@@ -248,6 +251,9 @@ _BIG_NUM_CONTEXT_EXEMPT = re.compile(
     r'\b(?:k?MHz?|GHz)\b|°[CF]|degrees?\s*[CF]\b)',
     re.IGNORECASE,
 )
+
+_APA_FIRST_LINE_INDENT_TWIPS = 720  # 0.5 in. = 1.27 cm
+_APA_FIRST_LINE_INDENT_TOLERANCE = 80
 
 # MEC011: Apostrophe in number plural
 _NUM_APOSTROPHE_RE = re.compile(r"\b(\d+)'s\b")
@@ -563,12 +569,12 @@ _DISORDER_CAP_RE = re.compile(
 
 # CIT001: "and" in parenthetical citation
 _CIT_AND_PAREN_RE = re.compile(
-    r'\((?:[A-Z][A-Za-z\-\' ]+)\s+and\s+(?:[A-Z][A-Za-z\-\' ]+),\s*\d{4}',
+    r'\((?P<authors>[A-Z][A-Za-z\-\' ]+\s+and\s+[A-Z][A-Za-z\-\' ]+),\s*\d{4}',
 )
 
 # CIT002: "&" in narrative citation
 _CIT_AMP_NARR_RE = re.compile(
-    r'[A-Z][A-Za-z\-\' ]+\s+&\s+[A-Z][A-Za-z\-\' ]+\s+\(\d{4}',
+    r'(?P<authors>[A-Z][A-Za-z\-\' ]+\s+&\s+[A-Z][A-Za-z\-\' ]+)\s+\(\d{4}',
 )
 
 # CIT003: Three+ authors listed in full (should be et al.)
@@ -621,6 +627,18 @@ _ANY_CIT_RE = re.compile(
     r'\s*(?:n\.d\.|\d{4}[a-z]?)',
 )
 
+_GROUP_AUTHOR_WORD_RE = re.compile(
+    r'\b(?:Association|Agency|Board|Bureau|Center|Centre|Committee|Commission|'
+    r'Council|Department|Foundation|Group|Institute|Ministry|Office|Organization|'
+    r'Organisation|Research|Services|University|Inc|LLC|Ltd|Corp|Company|'
+    r'Gartner|PwC|Deloitte|McKinsey|Forrester|Markets)\b',
+    re.IGNORECASE,
+)
+
+
+def _looks_like_group_author_name(author_text: str) -> bool:
+    return bool(_GROUP_AUTHOR_WORD_RE.search(author_text))
+
 
 # ===========================================================================
 # TBL — Table rule patterns (prose references to tables)
@@ -642,7 +660,7 @@ _TBL_ROMAN_RE = re.compile(
 
 # TBL003: Letter suffix on table/figure number (§7.19: no "Table 1A" or "Table 1B")
 _TBL_LETTER_SUFFIX_RE = re.compile(
-    r'\b(?:Table|Figure)\s+\d+[A-Za-z]\b',
+    r'\bTable\s+\d+[A-Za-z]\b',
 )
 
 # TBL006: "See Table X for" → APA prefers embedding in text
@@ -681,6 +699,21 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
             excerpt=exc or text[:80], location_hint=loc,
             category=cat, chapter=ch,
         ))
+
+    # MEC023 - Body paragraph first-line indent (DOCX uploads only).
+    if getattr(para, "has_format_metadata", False):
+        indent = getattr(para, "first_line_indent_twips", None)
+        if indent is None or abs(indent - _APA_FIRST_LINE_INDENT_TWIPS) > _APA_FIRST_LINE_INDENT_TOLERANCE:
+            _add(
+                "MEC023",
+                Severity.WARNING,
+                "APA §2.24: Indent the first line of each body paragraph 0.5 in. (1.27 cm). "
+                "This paragraph does not appear to have the required first-line indent.",
+                "Set first-line indentation to 1.27 cm / 0.5 in. for this body paragraph.",
+                False,
+                text[:80],
+                "§2.24",
+            )
 
     # MEC001 — Double space after period
     for m in _DOUBLE_SPACE_RE.finditer(masked):
@@ -814,10 +847,10 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
         _add("MEC012", Severity.WARNING,
-             "APA §6.7: Em dashes (—) should not be surrounded by spaces. "
+             "APA §6.6: Em dashes (—) should not be surrounded by spaces. "
              "Remove the spaces immediately before and after the em dash.",
              "Remove spaces around the em dash: word—word",
-             True, _excerpt(masked, m.start(), m.end()), "§6.7")
+             True, _excerpt(masked, m.start(), m.end()), "§6.6")
 
     # MEC013 — -ly adverb hyphenation
     for m in _LY_HYPHEN_RE.finditer(masked):
@@ -827,10 +860,10 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
             continue
         corrected = f"{m.group(1)} {m.group(2)}"
         _add("MEC013", Severity.WARNING,
-             f"APA §6.9: Do not hyphenate compound modifiers that include an adverb ending in '-ly'. "
+             f"APA §6.12: Do not hyphenate compound modifiers that include an adverb ending in '-ly'. "
              f"'{m.group()}' → '{corrected}'.",
              f"Replace '{m.group()}' with '{corrected}'", True,
-             _excerpt(masked, m.start(), m.end()), "§6.9")
+             _excerpt(masked, m.start(), m.end()), "§6.12")
 
     # MEC014 — Time unit spelled out with numeral
     for m in _TIME_UNIT_SPELLED_RE.finditer(masked):
@@ -927,7 +960,7 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     # MEC017 — Wordy title phrases (check first ~200 chars only — likely title/abstract)
     if para.index < 5:
         for m in _WORDY_TITLE_RE.finditer(text):
-            _add("MEC017", Severity.WARNING,
+            _add("MEC017", Severity.SUGGESTION,
                  f"APA §2.4: Avoid wordy opening phrases in titles such as '{m.group()}'. "
                  "The title should be concise and specific.",
                  "Remove the wordy phrase and start with the substantive content.",
@@ -967,7 +1000,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
         for m in pat.finditer(masked):
             if _near_quote_mask(masked, m.start(), m.end()):
                 continue
-            _add("STY002", Severity.WARNING,
+            _add("STY002", Severity.SUGGESTION,
                  f"APA §4.5: Redundant phrasing — '{m.group().strip()}' can be simplified to '{fix}'.",
                  f"Replace with '{fix}'", True,
                  _excerpt(masked, m.start(), m.end()), "§4.5")
@@ -977,7 +1010,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
         for m in pat.finditer(masked):
             if _near_quote_mask(masked, m.start(), m.end()):
                 continue
-            _add("STY003", Severity.WARNING,
+            _add("STY003", Severity.SUGGESTION,
                  f"APA §4.4: Wordy phrase — '{m.group().strip()}'. Consider replacing with '{fix}'.",
                  f"Replace with '{fix}'", True,
                  _excerpt(masked, m.start(), m.end()), "§4.4")
@@ -1000,7 +1033,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
         ctx = masked[max(0, m.start() - 30):m.end() + 5]
         if _WHICH_PREP_RE.search(ctx):
             continue
-        _add("STY005", Severity.WARNING,
+        _add("STY005", Severity.SUGGESTION,
              "APA §4.21: 'which' without a preceding comma introduces a restrictive clause. "
              "APA Style reserves 'which' for nonrestrictive clauses (preceded by a comma). "
              "Use 'that' for restrictive clauses, or add a comma if the clause is nonrestrictive.",
@@ -1022,7 +1055,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     for m in _COLLOQUIAL_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
-        _add("STY007", Severity.WARNING,
+        _add("STY007", Severity.SUGGESTION,
              f"APA §4.8: Colloquial or informal language detected: '{m.group().strip()}'. "
              "Academic writing requires formal, precise vocabulary.",
              "Replace with more formal academic language.",
@@ -1054,7 +1087,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     for m in _BARE_DEMO_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
-        _add("STY010", Severity.WARNING,
+        _add("STY010", Severity.SUGGESTION,
              f"APA §4.11: Bare demonstrative as subject — '{m.group().strip()}'. "
              "Add a specific noun after the demonstrative for clarity: "
              "'This finding shows…' not 'This shows…'.",
@@ -1089,7 +1122,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     for m in _HEDGING_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
-        _add("STY013", Severity.WARNING,
+        _add("STY013", Severity.SUGGESTION,
              f"APA §4.14: Avoid hedging with 'would' for factual statements. "
              f"'{m.group().strip()}' → use the indicative: 'it appears', 'it seems', 'the findings suggest'.",
              "Replace with indicative mood: 'it appears', 'it seems', 'the data suggest'",
@@ -1099,7 +1132,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     for m in _WHILE_CONTRAST_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
-        _add("STY014", Severity.WARNING,
+        _add("STY014", Severity.SUGGESTION,
              "APA §4.22: 'while' should be used only for simultaneous events. "
              "If expressing contrast or concession, use 'although', 'whereas', or 'but' instead.",
              "Replace 'while' with 'although', 'whereas', or 'but' (as appropriate)",
@@ -1109,7 +1142,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     for m in _ANTHRO_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
-        _add("STY015", Severity.WARNING,
+        _add("STY015", Severity.SUGGESTION,
              f"APA §4.11: Avoid attributing human characteristics to inanimate entities: "
              f"'{m.group().strip()}'. Use 'the findings indicate…' or 'we conclude…' instead.",
              "Recast with a human agent or use 'the findings indicate/show/suggest'",
@@ -1258,6 +1291,8 @@ def _check_cit(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
 
     # CIT001 — "and" in parenthetical citation (should be &)
     for m in _CIT_AND_PAREN_RE.finditer(text):
+        if _looks_like_group_author_name(m.group("authors")):
+            continue
         _add("CIT001", Severity.ERROR,
              f"APA §8.13: Use '&' (not 'and') between author names inside parenthetical citations. "
              f"Found: '{m.group()[:60]}'.",
@@ -1266,6 +1301,8 @@ def _check_cit(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
 
     # CIT002 — "&" in narrative citation (should be "and")
     for m in _CIT_AMP_NARR_RE.finditer(text):
+        if _looks_like_group_author_name(m.group("authors")):
+            continue
         _add("CIT002", Severity.ERROR,
              f"APA §8.13: Use 'and' (not '&') between author names in narrative citations. "
              f"Found: '{m.group()[:60]}'.",
@@ -1370,7 +1407,7 @@ def _check_cit(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
         cit_counts[key] = cit_counts.get(key, 0) + 1
     for cite, count in cit_counts.items():
         if count >= 3:
-            _add("CIT019", Severity.WARNING,
+            _add("CIT019", Severity.INFO,
                  f"APA §8.1: '{cite}' is cited {count} times in a single paragraph. "
                  "Over-citation reduces readability. Cite once at the most relevant point; "
                  "subsequent sentences can omit the citation when the source is clear.",
@@ -1444,10 +1481,10 @@ def _check_tbl(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
              f"Replace '{m.group()}' with an Arabic numeral",
              _excerpt(text, m.start(), m.end()), "§7.10")
 
-    # TBL003 — Letter suffix on table/figure number (§7.19)
+    # TBL003 — Letter suffix on table number (§7.19)
     for m in _TBL_LETTER_SUFFIX_RE.finditer(text):
         _add("TBL003", Severity.WARNING,
-             f"APA §7.19: Do not use letters to distinguish sub-tables or sub-figures "
+             f"APA §7.19: Do not use letters to distinguish subtables "
              f"(e.g., '{m.group()}' is incorrect). Number them separately as Table 1 and Table 2.",
              f"Remove the letter suffix and assign a separate sequential number",
              _excerpt(text, m.start(), m.end()), "§7.19")

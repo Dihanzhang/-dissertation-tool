@@ -185,6 +185,33 @@ class TestDirectGroupAuthorMatch(unittest.TestCase):
                          f"Unexpected uncited references: {result.uncited_references}")
 
 
+class TestPublicationAndOrganizationAuthors(unittest.TestCase):
+    """Publication and organisation names can be APA group authors in text."""
+
+    def test_gartner_parenthetical_matches_reference(self):
+        result = run_citation_check(
+            "The market shifted quickly (Gartner, 2024).",
+            "Gartner. (2024). Market guide.",
+        )
+        self.assertEqual(result.missing_references, [])
+        self.assertEqual(result.uncited_references, [])
+
+    def test_pwc_narrative_matches_reference(self):
+        result = run_citation_check(
+            "PwC (2024) reported new workforce patterns.",
+            "PwC. (2024). Workforce report.",
+        )
+        self.assertEqual(result.missing_references, [])
+        self.assertEqual(result.uncited_references, [])
+
+    def test_lowercase_pwc_narrative_matches_reference(self):
+        result = run_citation_check(
+            "pwc (2024) reported new workforce patterns.",
+            "PwC. (2024). Workforce report.",
+        )
+        self.assertEqual(result.missing_references, [])
+
+
 # ===========================================================================
 # Test 9 — Multi-author parenthetical: (Smith & Jones, 2021)
 # ===========================================================================

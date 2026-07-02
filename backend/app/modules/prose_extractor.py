@@ -31,6 +31,9 @@ class ProseParagraph:
     is_reference_entry: bool = False
     page_number: int = 1
     paragraph_number_on_page: int = 1
+    is_list_item: bool = False
+    first_line_indent_twips: Optional[int] = None
+    has_format_metadata: bool = False
 
 
 QUOTE_MASK = "\x00QUOTE\x00"
@@ -217,6 +220,36 @@ def _is_in_table(para) -> bool:
     return False
 
 
+def _has_numbering(para) -> bool:
+    """Return True for Word numbered/bulleted list paragraphs, even with Normal style."""
+    pPr = para._p.find(qn("w:pPr"))
+    return pPr is not None and pPr.find(qn("w:numPr")) is not None
+
+
+def _first_line_indent_twips(para) -> Optional[int]:
+    """Return direct/style first-line indent in twips, or None if not set."""
+    pPr = para._p.find(qn("w:pPr"))
+    if pPr is not None:
+        ind = pPr.find(qn("w:ind"))
+        if ind is not None:
+            if ind.get(qn("w:hanging")) is not None:
+                return -abs(int(ind.get(qn("w:hanging"), "0")))
+            if ind.get(qn("w:firstLine")) is not None:
+                return int(ind.get(qn("w:firstLine"), "0"))
+
+    style = para.style if para.style else None
+    if style is not None:
+        style_pPr = style._element.find(qn("w:pPr"))
+        if style_pPr is not None:
+            ind = style_pPr.find(qn("w:ind"))
+            if ind is not None:
+                if ind.get(qn("w:hanging")) is not None:
+                    return -abs(int(ind.get(qn("w:hanging"), "0")))
+                if ind.get(qn("w:firstLine")) is not None:
+                    return int(ind.get(qn("w:firstLine"), "0"))
+    return None
+
+
 def _contains_page_break(para) -> bool:
     """Return True if the paragraph contains an explicit DOCX page break marker."""
     if para._p.xpath('.//w:br[@w:type="page"]'):
@@ -279,6 +312,9 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
             continue
 
         level = _heading_level(para)
+        is_list_item = _has_numbering(para)
+        if is_list_item:
+            level = 0
         if previous_was_table_figure_label and _is_table_figure_title_after_label(text):
             level = 0
         # Check if we've hit the reference list
@@ -297,6 +333,9 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
                 is_reference_entry=True,
                 page_number=page_number,
                 paragraph_number_on_page=paragraph_number_on_page,
+                is_list_item=is_list_item,
+                first_line_indent_twips=_first_line_indent_twips(para),
+                has_format_metadata=True,
             ))
             previous_was_table_figure_label = False
             if has_page_break:
@@ -326,6 +365,9 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
             is_reference_entry=False,
             page_number=page_number,
             paragraph_number_on_page=paragraph_number_on_page,
+            is_list_item=is_list_item,
+            first_line_indent_twips=_first_line_indent_twips(para),
+            has_format_metadata=True,
         ))
         previous_was_table_figure_label = _is_table_figure_label_text(text)
         if has_page_break:

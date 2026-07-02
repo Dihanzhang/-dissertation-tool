@@ -1,5 +1,7 @@
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 
 from app.modules.prose_extractor import extract_prose
 
@@ -88,6 +90,29 @@ def test_headings_and_list_paragraphs_do_not_increment_paragraph_number():
 
     assert paragraphs[1].paragraph_number_on_page == 1
     assert paragraphs[3].paragraph_number_on_page == 2
+
+
+def test_numbered_list_metadata_does_not_increment_paragraph_number():
+    doc = Document()
+    doc.add_paragraph("This paragraph introduces the section. It has enough detail.")
+    list_para = doc.add_paragraph("This is a numbered list item with Normal style.")
+    pPr = list_para._p.get_or_add_pPr()
+    numPr = OxmlElement("w:numPr")
+    ilvl = OxmlElement("w:ilvl")
+    ilvl.set(qn("w:val"), "0")
+    num_id = OxmlElement("w:numId")
+    num_id.set(qn("w:val"), "1")
+    numPr.append(ilvl)
+    numPr.append(num_id)
+    pPr.append(numPr)
+    doc.add_paragraph("This paragraph follows the numbered item. It should be paragraph two.")
+
+    paragraphs = extract_prose(doc)
+
+    assert paragraphs[1].heading_level == 0
+    assert paragraphs[1].is_list_item
+    assert paragraphs[0].paragraph_number_on_page == 1
+    assert paragraphs[2].paragraph_number_on_page == 2
 
 
 def test_page_break_resets_paragraph_number_on_page():

@@ -12,7 +12,7 @@ const FEEDBACK_EMAIL = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL || "";
 
 interface Finding {
   rule_id: string;
-  severity: "error" | "warning" | "info";
+  severity: "error" | "warning" | "suggestion" | "info";
   paragraph_index: number;
   message: string;
   suggested_fix: string;
@@ -97,6 +97,7 @@ const RULE_LABELS: Record<string, string> = {
   PRF001: "Short paragraph",
   REF010: "Publisher business designation",
   STY001: "Passive voice",
+  MEC023: "First-line paragraph indent",
 };
 
 function ruleLabel(f: Finding) {
@@ -174,13 +175,38 @@ function buildFeedbackTemplate({
 const SEV_BORDER: Record<string, string> = {
   error: "border-red-300 bg-red-50",
   warning: "border-yellow-300 bg-yellow-50",
+  suggestion: "border-cyan-200 bg-cyan-50",
   info: "border-blue-200 bg-blue-50",
 };
 const SEV_BADGE: Record<string, string> = {
   error: "bg-red-100 text-red-700",
   warning: "bg-yellow-100 text-yellow-700",
+  suggestion: "bg-cyan-100 text-cyan-700",
   info: "bg-blue-100 text-blue-700",
 };
+
+const SEVERITY_GUIDE = [
+  {
+    label: "Warning",
+    className: "bg-yellow-100 text-yellow-800 border-yellow-200",
+    text: "Likely APA or formatting issue. Review and fix unless your program template says otherwise.",
+  },
+  {
+    label: "Suggestion",
+    className: "bg-cyan-100 text-cyan-800 border-cyan-200",
+    text: "Optional writing improvement. Use only if it improves clarity and preserves meaning.",
+  },
+  {
+    label: "Info",
+    className: "bg-blue-100 text-blue-800 border-blue-200",
+    text: "Program preference or soft signal. Check against chair, school, or template requirements.",
+  },
+  {
+    label: "Error",
+    className: "bg-red-100 text-red-800 border-red-200",
+    text: "High-priority inconsistency, usually citation/reference related. Correct before submission.",
+  },
+];
 
 function FindingCard({ f }: { f: Finding }) {
   return (
@@ -488,6 +514,18 @@ export default function ReviewPage() {
 
         <div className="bg-blue-50 border border-blue-200 rounded-lg px-4 py-2 text-xs text-blue-700 mb-6">
           Your text is processed server-side and deleted immediately. Not stored, not used for training.
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4 mb-6">
+          <h2 className="text-sm font-semibold text-gray-900 mb-3">Severity guide</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {SEVERITY_GUIDE.map((item) => (
+              <div key={item.label} className={`border rounded-md px-3 py-2 ${item.className}`}>
+                <p className="text-xs font-semibold mb-1">{item.label}</p>
+                <p className="text-xs leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-lg p-4 mb-6">

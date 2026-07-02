@@ -99,7 +99,8 @@ _GROUP_AUTHOR_MARKERS = re.compile(
     r'\b(Association|Institute|University|Ministry|Department|Agency|'
     r'Organization|Organisation|Committee|Council|Board|Office|Bureau|'
     r'Commission|Foundation|Network|Group|Team|Consortium|'
-    r'Inc\.|Ltd\.|LLC|Corp\.?|Research|Center|Centre)\b',
+    r'Inc\.|Ltd\.|LLC|Corp\.?|Research|Center|Centre|'
+    r'Gartner|PwC|PWC|Deloitte|McKinsey|Forrester)\b',
     re.IGNORECASE,
 )
 
@@ -133,9 +134,9 @@ def is_group_author(name: str) -> bool:
 # Also handles year suffixes: 2021a
 _PAREN_CITE_RE = re.compile(
     r'\('
-    r'(?P<authors>[A-Z][A-Za-z\'\-]+'
-        r'(?:\s+[A-Za-z\'\-]+)*'          # compound surnames like "Al Abri"
-        r'(?:\s*[,&]\s*[A-Z][A-Za-z\'\-]+(?:\s+[A-Za-z\'\-]+)*)*'  # additional authors
+    r'(?P<authors>[A-Za-z][A-Za-z0-9&.\'\-]+'
+        r'(?:\s+[A-Za-z][A-Za-z0-9&.\'\-]+)*'          # compounds/group names like "Al Abri" or "Allied Market Research"
+        r'(?:\s*[,&]\s*[A-Za-z][A-Za-z0-9&.\'\-]+(?:\s+[A-Za-z][A-Za-z0-9&.\'\-]+)*)*'  # additional authors
         r'(?:\s+et\s+al\.?)?'
     r')'
     r',?\s*'
@@ -166,7 +167,7 @@ _NARRATIVE_RE = re.compile(
 
 # Individual source unit within multi-citation
 _SINGLE_IN_MULTI_RE = re.compile(
-    r'(?P<authors>[A-Z][A-Za-z\'\-]+(?:\s+[A-Za-z\'\-]+)*(?:\s+et\s+al\.?)?)'
+    r'(?P<authors>[A-Za-z][A-Za-z0-9&.\'\-]+(?:\s+[A-Za-z][A-Za-z0-9&.\'\-]+)*(?:\s+et\s+al\.?)?)'
     r',?\s*(?P<year>\d{4}[a-z]?)'
 )
 
@@ -180,6 +181,16 @@ _DISCOURSE_PREFIX_RE = re.compile(
     r'conversely|nonetheless|nevertheless)\s+',
     re.IGNORECASE,
 )
+
+_LOWERCASE_GROUP_CITE_RE = re.compile(
+    r'(?<![A-Za-z])(?P<authors>[a-z][a-z0-9&.\'-]{1,12})\s+\((?P<year>\d{4}[a-z]?)\)'
+)
+
+_LOWERCASE_CITATION_STOPWORDS = {
+    "and", "but", "data", "figure", "finding", "findings", "paper",
+    "paragraph", "research", "result", "results", "section", "study",
+    "table", "text", "this", "that", "these", "those",
+}
 
 
 def _normalize_quotes(text: str) -> str:
@@ -283,6 +294,24 @@ def parse_citations(text: str, paragraph_index: int = 0) -> list[Citation]:
             position_in_para=pos,
         ))
 
+    # Lowercase/acronym group authors, e.g., "pwc (2024)".
+    for m in _LOWERCASE_GROUP_CITE_RE.finditer(text):
+        pos = m.start()
+        if pos in seen_positions or any(abs(pos - sp) < 3 for sp in seen_positions):
+            continue
+        raw_author = m.group("authors")
+        if raw_author.lower() in _LOWERCASE_CITATION_STOPWORDS:
+            continue
+        seen_positions.add(pos)
+        citations.append(Citation(
+            raw=m.group(),
+            authors=[normalise_surname(raw_author)],
+            year=m.group("year"),
+            form="narrative",
+            paragraph_index=paragraph_index,
+            position_in_para=pos,
+        ))
+
     return citations
 
 
@@ -302,7 +331,7 @@ _REF_AUTHOR_YEAR_RE = re.compile(
 
 # Simpler: grab the very first token(s) before a comma+space+initial or before the year
 _REF_FIRST_SURNAME_RE = re.compile(
-    r'^(?P<surname>[A-Z][A-Za-z\'\-]+(?:\s+[A-Za-z\'\-]+)*)',
+    r'^(?P<surname>[A-Za-z][A-Za-z0-9&.\'\-]+(?:\s+[A-Za-z][A-Za-z0-9&.\'\-]+)*)',
 )
 
 
