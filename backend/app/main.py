@@ -261,6 +261,67 @@ def _severity_definition(severity: str) -> str:
     return definitions.get(severity.upper(), "Review this item and decide whether a change is needed.")
 
 
+def _sentence_spans(text: str) -> list[tuple[int, int]]:
+    spans = [(m.start(), m.end()) for m in re.finditer(r'[^.!?]+[.!?]?', text)]
+    return [(s, e) for s, e in spans if text[s:e].strip()]
+
+
+def _token_set(text: str) -> set[str]:
+    return {t.lower() for t in re.findall(r"[A-Za-z0-9']+", text) if len(t) > 2}
+
+
+def _best_sentence_span(text: str, target: str = "") -> tuple[int, int] | None:
+    spans = _sentence_spans(text)
+    if not spans:
+        return (0, min(len(text), 120)) if text else None
+    target_tokens = _token_set(target)
+    if target_tokens:
+        best = max(
+            spans,
+            key=lambda span: len(_token_set(text[span[0]:span[1]]) & target_tokens),
+        )
+        if len(_token_set(text[best[0]:best[1]]) & target_tokens) > 0:
+            return best
+    return spans[0]
+
+
+def _target_span(text: str, target: str = "") -> tuple[int, int] | None:
+    target = (target or "").strip()
+    if target:
+        start = text.find(target)
+        if start >= 0:
+            return (start, start + len(target))
+        start = text.lower().find(target.lower())
+        if start >= 0:
+            return (start, start + len(target))
+    return _best_sentence_span(text, target)
+
+
+def _insert_run_after(run, text: str):
+    from copy import deepcopy
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    from docx.text.run import Run
+
+    new_r = OxmlElement("w:r")
+    rPr = run._r.find(qn("w:rPr"))
+    if rPr is not None:
+        new_r.append(deepcopy(rPr))
+    t = OxmlElement("w:t")
+    if text[:1].isspace() or text[-1:].isspace():
+        t.set(qn("xml:space"), "preserve")
+    t.text = text
+    new_r.append(t)
+    run._r.addnext(new_r)
+    return Run(new_r, run._parent)
+
+
+def _style_anchor_run(run, highlight_color, font_color) -> None:
+    run.font.highlight_color = highlight_color
+    run.font.color.rgb = font_color
+    run.bold = True
+
+
 def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> list:
     from docx.enum.text import WD_COLOR_INDEX
     from docx.shared import RGBColor
@@ -285,36 +346,40 @@ def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> l
         return []
 
     para_text = paragraph.text or ""
-    target = (target or "").strip()
-    start = -1
-    end = -1
-    if target and target in para_text:
-        start = para_text.index(target)
-        end = start + len(target)
-    elif target:
-        lower_para = para_text.lower()
-        lower_target = target.lower()
-        start = lower_para.find(lower_target)
-        if start >= 0:
-            end = start + len(target)
-
-    if start < 0:
-        for run in runs:
-            run.font.highlight_color = highlight_color
-            run.font.color.rgb = font_color
-            run.bold = True
-        return runs
+    span = _target_span(para_text, target)
+    if span is None:
+        return []
+    start, end = span
 
     highlighted = []
     cursor = 0
     for run in runs:
+        original = run.text
         run_start = cursor
-        run_end = cursor + len(run.text)
+        run_end = cursor + len(original)
         if run_end > start and run_start < end:
-            run.font.highlight_color = highlight_color
-            run.font.color.rgb = font_color
-            run.bold = True
-            highlighted.append(run)
+            local_start = max(0, start - run_start)
+            local_end = min(len(original), end - run_start)
+            before = original[:local_start]
+            anchor = original[local_start:local_end]
+            after = original[local_end:]
+            if local_start == 0 and local_end == len(original):
+                _style_anchor_run(run, highlight_color, font_color)
+                highlighted.append(run)
+            elif local_start == 0:
+                run.text = anchor
+                if after:
+                    _insert_run_after(run, after)
+                _style_anchor_run(run, highlight_color, font_color)
+                highlighted.append(run)
+            else:
+                run.text = before
+                if after:
+                    _insert_run_after(run, after)
+                if anchor:
+                    anchor_run = _insert_run_after(run, anchor)
+                    _style_anchor_run(anchor_run, highlight_color, font_color)
+                    highlighted.append(anchor_run)
         cursor = run_end
     return highlighted
 
@@ -332,6 +397,9 @@ def _comment_text(row: dict) -> str:
 
 
 def _finding_target(finding: Finding) -> str:
+    quoted = re.search(r"'([^']{2,80})'", finding.message)
+    if quoted:
+        return quoted.group(1)
     return finding.excerpt or ""
 
 
