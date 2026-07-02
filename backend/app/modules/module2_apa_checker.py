@@ -181,6 +181,7 @@ _SCALE_SCORE_RE  = re.compile(
     re.IGNORECASE,
 )
 _MONEY_RE        = re.compile(r'[$£€¥]\s*\d+')
+_RANGE_CONTEXT_RE = re.compile(r'\d+\s*(?:-|–|—|to|through|and)\s*\d+', re.IGNORECASE)
 
 
 def _exempt_numeral(text: str, m: re.Match) -> bool:
@@ -202,6 +203,7 @@ def _exempt_numeral(text: str, m: re.Match) -> bool:
     if _ORDINAL_RE.match(text[start:end + 4]): return True
     if _SCALE_SCORE_RE.search(near):       return True
     if _MONEY_RE.search(text[max(0, start - 2):end + 1]): return True
+    if _RANGE_CONTEXT_RE.search(near):      return True
     return False
 
 
@@ -244,7 +246,7 @@ _SENTENCE_START_NUM_RE = re.compile(
 )
 
 # MEC003: Small numeral 1–9
-_SMALL_NUMERAL_RE = re.compile(r'(?<![\d,.\-])([0-9])(?![\d,.])')
+_NUMERIC_TOKEN_RE = re.compile(r'(?<![\w.-])(\d[\d,]*(?:\.\d+)?)(?![\w.-])')
 
 # MEC006: "N percent" → "N%"
 _N_PERCENT_RE = re.compile(r'\b(\d+(?:\.\d+)?)\s+percent\b', re.IGNORECASE)
@@ -756,10 +758,13 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
 
     # MEC003 — Small numeral 1–9
     numeral_threshold = cfg.get("numeral_threshold", 10)
-    for m in _SMALL_NUMERAL_RE.finditer(masked):
+    for m in _NUMERIC_TOKEN_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
             continue
-        num = int(m.group(1))
+        token = m.group(1)
+        if len(token) != 1:
+            continue
+        num = int(token)
         if num < numeral_threshold and not _exempt_numeral(masked, m):
             _add("MEC003", Severity.WARNING,
                  f"APA §6.33: Spell out numbers zero through nine in prose. "

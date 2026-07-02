@@ -180,6 +180,15 @@ class TestMEC003:
         assert len(n) == 1
         assert "'0'" in n[0].message
 
+    @pytest.mark.parametrize(
+        "expression",
+        ["0 to 9", "1-9", "1–9", "2 and 3"],
+    )
+    def test_small_digits_in_numeric_expressions_not_flagged(self, expression):
+        findings = run(f"The valid values ranged from {expression} in the coding scheme.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on numeric expression {expression}: {[f.excerpt for f in n]}"
+
     def test_comma_grouped_thousand_not_treated_as_small_digit(self):
         findings = run("The program served 1,000 participants across the region.")
         n = [f for f in findings if f.rule_id == "MEC003"]

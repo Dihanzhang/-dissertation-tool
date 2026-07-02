@@ -261,18 +261,9 @@ def _severity_definition(severity: str) -> str:
     return definitions.get(severity.upper(), "Review this item and decide whether a change is needed.")
 
 
-def _severity_color_name(severity: str) -> str:
-    colors = {
-        "ERROR": "red",
-        "WARNING": "yellow",
-        "SUGGESTION": "blue/cyan",
-        "INFO": "green",
-    }
-    return colors.get(severity.upper(), "yellow")
-
-
 def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> list:
     from docx.enum.text import WD_COLOR_INDEX
+    from docx.shared import RGBColor
 
     colors = {
         "ERROR": WD_COLOR_INDEX.RED,
@@ -280,7 +271,14 @@ def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> l
         "SUGGESTION": WD_COLOR_INDEX.TURQUOISE,
         "INFO": WD_COLOR_INDEX.BRIGHT_GREEN,
     }
+    font_colors = {
+        "ERROR": RGBColor(192, 0, 0),
+        "WARNING": RGBColor(156, 101, 0),
+        "SUGGESTION": RGBColor(0, 102, 204),
+        "INFO": RGBColor(0, 128, 0),
+    }
     highlight_color = colors.get(severity.upper(), WD_COLOR_INDEX.YELLOW)
+    font_color = font_colors.get(severity.upper(), RGBColor(156, 101, 0))
 
     runs = [run for run in paragraph.runs if run.text]
     if not runs:
@@ -303,6 +301,8 @@ def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> l
     if start < 0:
         for run in runs:
             run.font.highlight_color = highlight_color
+            run.font.color.rgb = font_color
+            run.bold = True
         return runs
 
     highlighted = []
@@ -312,6 +312,8 @@ def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> l
         run_end = cursor + len(run.text)
         if run_end > start and run_start < end:
             run.font.highlight_color = highlight_color
+            run.font.color.rgb = font_color
+            run.bold = True
             highlighted.append(run)
         cursor = run_end
     return highlighted
@@ -321,7 +323,6 @@ def _comment_text(row: dict) -> str:
     parts = [
         f'{row["kind"]}: {row["label"]}',
         f'Severity: {row["severity"]}',
-        f'Color code: {_severity_color_name(str(row["severity"]))}',
         _severity_definition(str(row["severity"])),
         str(row["message"]),
     ]
