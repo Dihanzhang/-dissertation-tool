@@ -187,9 +187,9 @@ const SEV_BADGE: Record<string, string> = {
 
 const SEVERITY_GUIDE = [
   {
-    label: "Warning",
-    className: "bg-amber-50 text-amber-800 border-amber-200",
-    text: "Review and usually fix.",
+    label: "Info",
+    className: "bg-sky-50 text-sky-800 border-sky-200",
+    text: "Check program preference.",
   },
   {
     label: "Suggestion",
@@ -197,9 +197,9 @@ const SEVERITY_GUIDE = [
     text: "Optional style improvement.",
   },
   {
-    label: "Info",
-    className: "bg-sky-50 text-sky-800 border-sky-200",
-    text: "Check program preference.",
+    label: "Warning",
+    className: "bg-amber-50 text-amber-800 border-amber-200",
+    text: "Review and usually fix.",
   },
   {
     label: "Error",
@@ -520,9 +520,6 @@ export default function ReviewPage() {
               <span className="rounded-full bg-[#123c3d] px-3 py-1 text-xs font-semibold text-white">
                 Dissertation Review
               </span>
-              <span className="rounded-full border border-[#cfd9cf] bg-white px-3 py-1 text-xs font-medium text-slate-600">
-                APA 7 DOCX checker
-              </span>
             </div>
             <h1 className="max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
               Review your dissertation chapter before submission
@@ -637,7 +634,7 @@ export default function ReviewPage() {
 
         <div className="mb-5 rounded-lg border border-[#dce4db] bg-white/80 px-3 py-2 shadow-sm">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="mr-1 text-xs font-semibold text-slate-700">Severity</span>
+            <span className="mr-1 text-xs font-semibold text-slate-700">Severity Category with Suggested Action</span>
             {SEVERITY_GUIDE.map((item) => (
               <span key={item.label} className={`rounded-full border px-2.5 py-1 text-xs ${item.className}`}>
                 <span className="font-semibold">{item.label}:</span> {item.text}
