@@ -132,6 +132,54 @@ class TestMEC003:
         n = [f for f in findings if f.rule_id == "MEC003"]
         assert len(n) == 0, f"MEC003 fired on decimal digit: {[f.excerpt for f in n]}"
 
+    def test_zero_inside_hundreds_not_flagged(self):
+        findings = run("The program reached 200 participants across three sites.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on digit inside 200: {[f.excerpt for f in n]}"
+
+    @pytest.mark.parametrize(
+        "number",
+        ["101", "212", "323", "434", "545", "656", "767", "878", "989"],
+    )
+    def test_digits_one_through_nine_inside_larger_numbers_not_flagged(self, number):
+        findings = run(f"The program reached {number} participants across three sites.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on digit inside {number}: {[f.excerpt for f in n]}"
+
+    def test_zero_inside_year_not_flagged(self):
+        findings = run("The policy was introduced in 2005 and revised later.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on digit inside 2005: {[f.excerpt for f in n]}"
+
+    @pytest.mark.parametrize(
+        "year",
+        ["2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009"],
+    )
+    def test_digits_one_through_nine_inside_years_not_flagged(self, year):
+        findings = run(f"The policy was introduced in {year} and revised later.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on digit inside {year}: {[f.excerpt for f in n]}"
+
+    def test_decimal_zero_not_flagged(self):
+        findings = run("The effect estimate was 0.5 in the sensitivity analysis.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on decimal zero: {[f.excerpt for f in n]}"
+
+    @pytest.mark.parametrize(
+        "decimal",
+        ["1.1", "2.2", "3.3", "4.4", "5.5", "6.6", "7.7", "8.8", "9.9"],
+    )
+    def test_digits_one_through_nine_inside_decimals_not_flagged(self, decimal):
+        findings = run(f"The effect estimate was {decimal} in the sensitivity analysis.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 0, f"MEC003 fired on digit inside {decimal}: {[f.excerpt for f in n]}"
+
+    def test_standalone_zero_is_flagged_in_prose(self):
+        findings = run("The final model retained 0 control variables after screening.")
+        n = [f for f in findings if f.rule_id == "MEC003"]
+        assert len(n) == 1
+        assert "'0'" in n[0].message
+
     def test_comma_grouped_thousand_not_treated_as_small_digit(self):
         findings = run("The program served 1,000 participants across the region.")
         n = [f for f in findings if f.rule_id == "MEC003"]
@@ -197,6 +245,15 @@ class TestMEC023:
 
     def test_pasted_text_without_format_metadata_not_flagged(self):
         findings = run("This pasted paragraph has no formatting metadata. The app cannot check indentation.")
+        assert not has_rule(findings, "MEC023")
+
+    def test_short_title_like_line_without_indent_not_flagged(self):
+        para = make_para(
+            "Implementation Timeline.",
+            has_format_metadata=True,
+            first_line_indent_twips=None,
+        )
+        findings = check_paragraphs([para], DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
         assert not has_rule(findings, "MEC023")
 
 

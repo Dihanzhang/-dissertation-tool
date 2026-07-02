@@ -261,6 +261,16 @@ def _severity_definition(severity: str) -> str:
     return definitions.get(severity.upper(), "Review this item and decide whether a change is needed.")
 
 
+def _severity_color_name(severity: str) -> str:
+    colors = {
+        "ERROR": "red",
+        "WARNING": "yellow",
+        "SUGGESTION": "blue/cyan",
+        "INFO": "green",
+    }
+    return colors.get(severity.upper(), "yellow")
+
+
 def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> list:
     from docx.enum.text import WD_COLOR_INDEX
 
@@ -311,6 +321,7 @@ def _comment_text(row: dict) -> str:
     parts = [
         f'{row["kind"]}: {row["label"]}',
         f'Severity: {row["severity"]}',
+        f'Color code: {_severity_color_name(str(row["severity"]))}',
         _severity_definition(str(row["severity"])),
         str(row["message"]),
     ]

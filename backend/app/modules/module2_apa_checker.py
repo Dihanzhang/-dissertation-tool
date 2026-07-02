@@ -124,6 +124,22 @@ def _excerpt(text: str, start: int, end: int, window: int = 20) -> str:
     return text[max(0, start - window):min(len(text), end + window)].strip()[:80]
 
 
+def _is_indent_check_candidate(para: ProseParagraph) -> bool:
+    """Only check first-line indent on substantial body paragraphs from DOCX."""
+    if not getattr(para, "has_format_metadata", False):
+        return False
+    if para.heading_level is not None or para.is_reference_entry or getattr(para, "is_list_item", False):
+        return False
+    text = para.raw_text.strip()
+    if not text:
+        return False
+    if not re.search(r'[.!?]\s*$', text):
+        return False
+    word_count = len(re.findall(r'\b\w+\b', text))
+    sentence_count = len(_sentences(text))
+    return word_count >= _INDENT_MIN_WORDS or sentence_count >= _INDENT_MIN_SENTENCES
+
+
 # ===========================================================================
 # MEC — Number exemption helpers (§6.32–6.33)
 # ===========================================================================
@@ -190,6 +206,7 @@ def _exempt_numeral(text: str, m: re.Match) -> bool:
 
 
 _NUM_WORDS = {
+    0: "zero",
     1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
     6: "six", 7: "seven", 8: "eight", 9: "nine",
 }
@@ -227,7 +244,7 @@ _SENTENCE_START_NUM_RE = re.compile(
 )
 
 # MEC003: Small numeral 1–9
-_SMALL_NUMERAL_RE = re.compile(r'(?<![\d,])([1-9])(?![\d,])')
+_SMALL_NUMERAL_RE = re.compile(r'(?<![\d,.\-])([0-9])(?![\d,.])')
 
 # MEC006: "N percent" → "N%"
 _N_PERCENT_RE = re.compile(r'\b(\d+(?:\.\d+)?)\s+percent\b', re.IGNORECASE)
@@ -254,6 +271,8 @@ _BIG_NUM_CONTEXT_EXEMPT = re.compile(
 
 _APA_FIRST_LINE_INDENT_TWIPS = 720  # 0.5 in. = 1.27 cm
 _APA_FIRST_LINE_INDENT_TOLERANCE = 80
+_INDENT_MIN_WORDS = 25
+_INDENT_MIN_SENTENCES = 2
 
 # MEC011: Apostrophe in number plural
 _NUM_APOSTROPHE_RE = re.compile(r"\b(\d+)'s\b")
@@ -701,7 +720,7 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
         ))
 
     # MEC023 - Body paragraph first-line indent (DOCX uploads only).
-    if getattr(para, "has_format_metadata", False):
+    if _is_indent_check_candidate(para):
         indent = getattr(para, "first_line_indent_twips", None)
         if indent is None or abs(indent - _APA_FIRST_LINE_INDENT_TWIPS) > _APA_FIRST_LINE_INDENT_TOLERANCE:
             _add(
