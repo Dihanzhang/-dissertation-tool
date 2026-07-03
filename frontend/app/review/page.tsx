@@ -535,7 +535,7 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={() => setMode("upload")}
-                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "upload" ? "bg-[#2f7d6b] text-white shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
+                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "upload" ? "bg-[#e8efe8] text-[#123c3d] shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
               >
                 Upload .docx
               </button>
@@ -605,7 +605,7 @@ export default function ReviewPage() {
             <button
               type="submit"
               disabled={checking || !canSubmit}
-              className="rounded-lg bg-[#2f7d6b] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#256a5b] disabled:opacity-50"
+              className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
             >
               {checking ? "Checking..." : "Run APA 7 check"}
             </button>
@@ -631,12 +631,12 @@ export default function ReviewPage() {
           ))}
         </div>
 
-        <div className="mx-auto mb-6 flex max-w-4xl flex-col gap-3 border-t border-[#dce4db] pt-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto mb-6 flex max-w-4xl flex-col items-center gap-3 border-t border-[#dce4db] pt-4 text-center">
           <p className="text-xs text-slate-500">
             {BETA_VERSION} private beta: check the on-screen findings and reviewed DOCX, then report false positives or confusing comments.
           </p>
           {checkResult && (
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-center gap-2">
               <button
                 type="button"
                 onClick={handleCopyFeedbackTemplate}
