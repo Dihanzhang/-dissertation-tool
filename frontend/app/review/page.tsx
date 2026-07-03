@@ -514,26 +514,16 @@ export default function ReviewPage() {
     <main className="min-h-screen bg-[#f7f8f5] text-slate-900">
       <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
 
-        <div className="mb-7 flex flex-col gap-4 border-b border-[#dce4db] pb-5 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <div className="mb-3 flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-[#123c3d] px-3 py-1 text-xs font-semibold text-white">
-                Dissertation Review
-              </span>
-            </div>
-            <h1 className="max-w-2xl text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
-              Review your dissertation chapter before submission
-            </h1>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
-              Upload a Word document to find APA, citation, style, and formatting issues. Download a reviewed copy with comments in the same document.
-            </p>
-          </div>
-          <div className="rounded-lg border border-[#dce4db] bg-white px-4 py-3 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Privacy</p>
-            <p className="mt-1 max-w-xs text-xs leading-5 text-slate-600">
-              Processed server-side and deleted immediately. Not stored or used for training.
-            </p>
-          </div>
+        <div className="mx-auto mb-7 max-w-2xl border-b border-[#dce4db] pb-5 text-center">
+          <h1 className="text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
+            Review your document before submission
+          </h1>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            Upload a Word document to find APA, citation, style, and formatting issues. Download a reviewed copy with comments in the same document.
+          </p>
+          <p className="mt-2 text-xs text-slate-500">
+            Processed server-side and deleted immediately. Not stored or used for training.
+          </p>
         </div>
 
         {/* Input form */}
@@ -632,31 +622,20 @@ export default function ReviewPage() {
           </div>
         </form>
 
-        <div className="mb-5 rounded-lg border border-[#dce4db] bg-white/80 px-3 py-2 shadow-sm">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="mr-1 text-xs font-semibold text-slate-700">Severity Category with Suggested Action</span>
-            {SEVERITY_GUIDE.map((item) => (
-              <span key={item.label} className={`rounded-full border px-2.5 py-1 text-xs ${item.className}`}>
-                <span className="font-semibold">{item.label}:</span> {item.text}
-              </span>
-            ))}
-          </div>
+        <div className="mx-auto mb-5 flex max-w-4xl flex-wrap items-center justify-center gap-2 text-xs">
+          <span className="mr-1 font-semibold text-slate-700">Severity Category with Suggested Action</span>
+          {SEVERITY_GUIDE.map((item) => (
+            <span key={item.label} className={`rounded-full border px-2.5 py-1 ${item.className}`}>
+              <span className="font-semibold">{item.label}:</span> {item.text}
+            </span>
+          ))}
         </div>
 
-        <div className="mb-6 rounded-lg border border-[#dce4db] bg-white p-3 shadow-sm">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <div className="flex flex-wrap items-center gap-2 mb-1">
-                <span className="rounded-full bg-[#e8efe8] px-2 py-0.5 text-xs font-semibold text-[#123c3d]">
-                  {BETA_VERSION}
-                </span>
-                <span className="text-sm font-semibold text-slate-900">Private beta test</span>
-              </div>
-              <p className="text-xs text-slate-500">
-                Check the on-screen findings and reviewed DOCX, then report false positives or confusing comments.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-2">
+        <div className="mx-auto mb-6 flex max-w-4xl flex-col gap-3 border-t border-[#dce4db] pt-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-slate-500">
+            {BETA_VERSION} private beta: check the on-screen findings and reviewed DOCX, then report false positives or confusing comments.
+          </p>
+          <div className="flex flex-wrap gap-2">
               <button
                 type="button"
                 onClick={handleCopyFeedbackTemplate}
@@ -673,7 +652,6 @@ export default function ReviewPage() {
                   Email beta feedback
                 </button>
               )}
-            </div>
           </div>
         </div>
 
