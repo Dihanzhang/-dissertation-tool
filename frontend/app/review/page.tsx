@@ -638,6 +638,8 @@ export default function ReviewPage() {
                 alt="Sample reviewed Word document with highlighted text and review comments"
                 width={1143}
                 height={813}
+                unoptimized
+                priority
                 className="h-auto w-full"
               />
             </div>
