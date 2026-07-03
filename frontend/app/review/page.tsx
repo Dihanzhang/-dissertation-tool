@@ -521,8 +521,8 @@ export default function ReviewPage() {
           <p className="mt-3 text-sm leading-6 text-slate-600">
             Upload a Word document to find APA, citation, style, and formatting issues. Download a reviewed copy with comments in the same document.
           </p>
-          <p className="mt-2 text-xs text-slate-500">
-            Processed server-side and deleted immediately. Not stored or used for training.
+          <p className="mt-2 text-xs leading-5 text-slate-500">
+            <span className="font-semibold text-slate-600">Privacy:</span> Uploaded documents and pasted text are processed securely on the server for the purpose of generating this review, deleted immediately after processing, and are not stored or used for model training.
           </p>
         </div>
 
@@ -535,7 +535,7 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={() => setMode("upload")}
-                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "upload" ? "bg-[#123c3d] text-white shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
+                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "upload" ? "bg-[#2f7d6b] text-white shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
               >
                 Upload .docx
               </button>
@@ -605,7 +605,7 @@ export default function ReviewPage() {
             <button
               type="submit"
               disabled={checking || !canSubmit}
-              className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
+              className="rounded-lg bg-[#2f7d6b] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#256a5b] disabled:opacity-50"
             >
               {checking ? "Checking..." : "Run APA 7 check"}
             </button>
@@ -614,7 +614,7 @@ export default function ReviewPage() {
                 type="button"
                 onClick={handleDownloadAnnotated}
                 disabled={annotating}
-                className="rounded-lg bg-[#2f7d6b] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#256a5b] disabled:opacity-50"
+                className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
               >
                 {annotating ? "Preparing..." : "Download reviewed .docx"}
               </button>
@@ -635,7 +635,8 @@ export default function ReviewPage() {
           <p className="text-xs text-slate-500">
             {BETA_VERSION} private beta: check the on-screen findings and reviewed DOCX, then report false positives or confusing comments.
           </p>
-          <div className="flex flex-wrap gap-2">
+          {checkResult && (
+            <div className="flex flex-wrap gap-2">
               <button
                 type="button"
                 onClick={handleCopyFeedbackTemplate}
@@ -652,7 +653,8 @@ export default function ReviewPage() {
                   Email beta feedback
                 </button>
               )}
-          </div>
+            </div>
+          )}
         </div>
 
         {checkError && (
