@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useCallback, useRef } from "react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -621,6 +622,27 @@ export default function ReviewPage() {
             )}
           </div>
         </form>
+
+        <section className="mx-auto mb-6 max-w-4xl">
+          <div className="grid gap-4 rounded-lg border border-[#dce4db] bg-white/85 p-3 shadow-sm sm:grid-cols-[0.95fr_1.35fr] sm:items-center">
+            <div className="px-1 py-2 sm:px-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-[#2f7d6b]">Sample reviewed document</p>
+              <h2 className="mt-2 text-lg font-semibold text-slate-950">See comments beside the highlighted text</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                The reviewed DOCX keeps your document format and adds color-coded highlights with comments beside the relevant sentence or phrase.
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-md border border-[#dce4db] bg-slate-50">
+              <Image
+                src="/review-output-sample.png"
+                alt="Sample reviewed Word document with highlighted text and review comments"
+                width={1143}
+                height={813}
+                className="h-auto w-full"
+              />
+            </div>
+          </div>
+        </section>
 
         <div className="mx-auto mb-5 flex max-w-4xl flex-wrap items-center justify-center gap-2 text-xs">
           <span className="mr-1 font-semibold text-slate-700">Severity Category with Suggested Action</span>
