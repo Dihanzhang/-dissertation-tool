@@ -542,7 +542,7 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={() => { setMode("paste"); setUploadedFile(null); }}
-                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "paste" ? "bg-[#123c3d] text-white shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
+                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "paste" ? "bg-[#e8efe8] text-[#123c3d] shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
               >
                 Paste text
               </button>
