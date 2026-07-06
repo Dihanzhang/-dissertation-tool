@@ -1016,7 +1016,7 @@ def _check_sty(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
         _add("STY001", Severity.SUGGESTION,
              f"APA §4.13: Passive voice detected ('{m.group().strip()}'). "
              "Prefer active voice in scholarly writing — recast with an explicit subject.",
-             "Recast as active voice: 'We found…' / 'I conducted…'",
+             "Recast as active voice.",
              exc=_excerpt(masked, m.start(), m.end()), ch="§4.13")
 
     # STY002 — Redundant phrases
