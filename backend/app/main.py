@@ -58,6 +58,7 @@ _CONFIG_PATH = Path(__file__).parent / "config" / "prof_checklist.yaml"
 WORD_CAP = int(os.getenv("WORD_CAP_PER_CREDIT", "5000"))
 FREE_TRIAL_CAP = int(os.getenv("FREE_TRIAL_WORD_CAP", "3000"))
 TEST_MODE = os.getenv("TEST_MODE", "false").lower() in ("true", "1", "yes")
+RULE_SET_VERSION = "apa-qa-gap-f6d2709"
 
 
 def _cfg():
@@ -612,7 +613,12 @@ def _empty_citation_result(note: str) -> CitationMatchResult:
 
 @app.get("/api/health")
 async def health():
-    return {"status": "ok", "build_step": 2, "test_mode": TEST_MODE}
+    return {
+        "status": "ok",
+        "build_step": 2,
+        "test_mode": TEST_MODE,
+        "rule_set_version": RULE_SET_VERSION,
+    }
 
 
 @app.post("/api/check/text", response_model=CheckResponse)
