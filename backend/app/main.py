@@ -58,7 +58,7 @@ _CONFIG_PATH = Path(__file__).parent / "config" / "prof_checklist.yaml"
 WORD_CAP = int(os.getenv("WORD_CAP_PER_CREDIT", "5000"))
 FREE_TRIAL_CAP = int(os.getenv("FREE_TRIAL_WORD_CAP", "3000"))
 TEST_MODE = os.getenv("TEST_MODE", "false").lower() in ("true", "1", "yes")
-RULE_SET_VERSION = "apa-qa-gap-f6d2709"
+RULE_SET_VERSION = "apa-qa-gap-highlight-fix"
 
 
 def _cfg():
@@ -407,7 +407,10 @@ def _finding_target(finding: Finding) -> str:
     found = re.search(r"Found:\s*'([^']+)'", finding.message)
     if found:
         return found.group(1)
-    quoted = re.search(r"'([^']{2,80})'", finding.message)
+    lowercase_target = re.search(r"Use lowercase for\s+'([^']+)'", finding.message)
+    if lowercase_target:
+        return lowercase_target.group(1)
+    quoted = re.search(r"(?<![A-Za-z])'([^']{2,80})'(?![A-Za-z])", finding.message)
     if quoted:
         return quoted.group(1)
     return finding.excerpt or ""

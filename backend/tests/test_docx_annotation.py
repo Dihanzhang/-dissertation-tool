@@ -82,3 +82,24 @@ def test_annotated_rows_targets_full_multiple_citation_parenthetical():
     rows = _annotated_rows(findings, citation_result)
 
     assert rows[0]["target"] == citation
+
+
+def test_annotated_rows_ignores_possessive_apostrophe_when_targeting():
+    findings = [
+        Finding(
+            rule_id="MEC026",
+            severity=Severity.WARNING,
+            paragraph_index=4,
+            message=(
+                "APA §6.15: Generic job titles are lowercase when they do not immediately "
+                "precede a person's name. Use lowercase for 'Chief Executive Officer'."
+            ),
+            suggested_fix="Use lowercase: 'chief executive officer'",
+            excerpt="shaped uptake. The Chief Executive Officer of the firm sponsor",
+        ),
+    ]
+    citation_result = CitationMatchResult([], [], [], [], [], [], [], [])
+
+    rows = _annotated_rows(findings, citation_result)
+
+    assert rows[0]["target"] == "Chief Executive Officer"
