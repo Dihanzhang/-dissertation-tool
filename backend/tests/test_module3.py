@@ -465,6 +465,22 @@ class TestMissingAndUncited(unittest.TestCase):
         result = run_citation_check(body, refs)
         self.assertGreaterEqual(len(result.year_mismatches), 1)
 
+    def test_narrative_citation_prefaced_by_as_detects_year_mismatch(self):
+        body = 'As Ibarra (2019) argued, "professional identity is provisional."'
+        refs = "Ibarra, H. (2018). Working identity. Harvard Business Review Press."
+        result = run_citation_check(body, refs)
+        self.assertEqual(len(result.missing_references), 0)
+        self.assertGreaterEqual(len(result.year_mismatches), 1)
+
+    def test_uncited_reference_from_answer_key_detected(self):
+        body = "Prior research (Kim, 2019) supports this finding."
+        refs = (
+            "Kim, S. (2019). Identity threat and professional expertise. Academy of Management Review.\n"
+            "Zhou, M. (2020). Adult development and technological change. Management Learning."
+        )
+        result = run_citation_check(body, refs)
+        self.assertTrue(any("Zhou" in u["reference"] for u in result.uncited_references))
+
 
 # ===========================================================================
 # Additional parse_references edge cases

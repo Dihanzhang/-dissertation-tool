@@ -282,6 +282,18 @@ _NUM_APOSTROPHE_RE = re.compile(r"\b(\d+)'s\b")
 # MEC012: Spaced em dash
 _SPACED_EMDASH_RE = re.compile(r' — ')
 
+# MEC024: Hyphen with spaces used where an em dash is intended
+_SPACED_HYPHEN_DASH_RE = re.compile(r'\s-\s')
+_SPACED_HYPHEN_DASH_PAIR_RE = re.compile(r'\s-\s[^.!?]{1,100}?\s-\s')
+
+# MEC025: Ordinal numerals below 10
+_SMALL_ORDINAL_RE = re.compile(r'\b([1-9](?:st|nd|rd|th))\b', re.IGNORECASE)
+_ORDINAL_WORDS = {
+    "1st": "first", "2nd": "second", "3rd": "third", "4th": "fourth",
+    "5th": "fifth", "6th": "sixth", "7th": "seventh", "8th": "eighth",
+    "9th": "ninth",
+}
+
 # MEC013: -ly adverb hyphenation
 _LY_HYPHEN_RE = re.compile(r'\b([a-z]+ly)-([a-z]+)\b', re.IGNORECASE)
 _LY_ADJECTIVE_EXEMPT_FIRST_WORDS = {
@@ -358,6 +370,18 @@ _WRONG_ELLIPSIS_RE = re.compile(r'\.{3}|…')   # three dots or unicode ellipsis
 
 # MEC022: Adjacent numerals ("2 5-point scales" → "two 5-point scales")
 _ADJACENT_NUM_RE = re.compile(r'\b(\d+)\s+(\d+)[-–]')
+
+# MEC026/MEC027: Job title capitalization
+_JOB_TITLE_WORDS = (
+    r'chief executive officer|chief learning officer|chief financial officer|'
+    r'chief operating officer|chief technology officer|chief information officer|'
+    r'president|vice president|director|manager|dean|provost|chair'
+)
+_GENERIC_CAP_TITLE_RE = re.compile(rf'\b(?P<title>{_JOB_TITLE_WORDS})\b', re.IGNORECASE)
+_PRENAME_LOWER_TITLE_RE = re.compile(rf'\b(?P<title>{_JOB_TITLE_WORDS})\s+(?P<name>[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)')
+
+# MEC028: Ellipsis at start of quotation
+_QUOTE_START_ELLIPSIS_RE = re.compile(r'(?P<quote>["“])\s*(?:\.{3}|…)\s*')
 
 # MEC017: Wordy title phrases
 _WORDY_TITLE_RE = re.compile(
@@ -606,6 +630,10 @@ _CIT_THREE_PLUS_RE = re.compile(
 # CIT004: Multiple citations — check alphabetical order
 _MULTI_CIT_RE = re.compile(r'\(([^)]+;\s*[^)]+)\)')
 _CIT_SURNAME_RE = re.compile(r'([A-Z][A-Za-z\-\']+)(?:\s+et\s+al\.)?(?:,\s*n\.d\.|\s*,\s*\d{4})')
+_CIT_SOURCE_RE = re.compile(
+    r'(?P<author>[A-Z][A-Za-z\-\']+(?:\s+et\s+al\.)?)\s*,\s*(?P<year>\d{4}[a-z]?|n\.d\.)',
+    re.IGNORECASE,
+)
 
 # CIT005: Wrong et al. format
 _ETAL_WRONG_RE = re.compile(r'\bet\.al\b|\betal\b|\bet\s+al\b(?!\.)', re.IGNORECASE)
@@ -641,6 +669,13 @@ _FIRST_NAME_PAREN_RE = re.compile(
 
 # CIT014: Personal communication in reference list
 _PERSONAL_COMM_RE = re.compile(r'\bpersonal\s+communication\b', re.IGNORECASE)
+_PERSONAL_COMM_WITH_DATE_RE = re.compile(
+    r'\bpersonal\s+communication\s*,\s*(?:'
+    r'(?:[A-Z][a-z]+\s+\d{1,2},\s+\d{4})|'
+    r'(?:\d{1,2}\s+[A-Z][a-z]+\s+\d{4})'
+    r')',
+    re.IGNORECASE,
+)
 
 # CIT019: Over-citation (same citation ≥ 3x in one paragraph)
 _ANY_CIT_RE = re.compile(
@@ -876,6 +911,41 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
              "Remove spaces around the em dash: word—word",
              True, _excerpt(masked, m.start(), m.end()), "§6.6")
 
+    # MEC024 — Hyphen with spaces used as an em dash
+    paired_hyphen_spans: list[tuple[int, int]] = []
+    for m in _SPACED_HYPHEN_DASH_PAIR_RE.finditer(masked):
+        if _near_quote_mask(masked, m.start(), m.end()):
+            continue
+        paired_hyphen_spans.append((m.start(), m.end()))
+        _add("MEC024", Severity.WARNING,
+             "APA §6.6: Hyphens with spaces are not em dashes. Use em dashes with no "
+             "surrounding spaces for parenthetical breaks.",
+             "Replace spaced hyphens with unspaced em dashes: word—phrase—word",
+             True, _excerpt(masked, m.start(), m.end()), "§6.6")
+
+    for m in _SPACED_HYPHEN_DASH_RE.finditer(masked):
+        if any(start <= m.start() < end for start, end in paired_hyphen_spans):
+            continue
+        if _near_quote_mask(masked, m.start(), m.end()):
+            continue
+        _add("MEC024", Severity.WARNING,
+             "APA §6.6: A hyphen with spaces is not an em dash. Use an em dash with no "
+             "surrounding spaces for parenthetical breaks.",
+             "Replace spaced hyphen with an unspaced em dash: word—word",
+             True, _excerpt(masked, m.start(), m.end()), "§6.6")
+
+    # MEC025 — Ordinal numerals below 10
+    for m in _SMALL_ORDINAL_RE.finditer(masked):
+        if _near_quote_mask(masked, m.start(), m.end()):
+            continue
+        raw = m.group(1).lower()
+        corrected = _ORDINAL_WORDS.get(raw, raw)
+        _add("MEC025", Severity.WARNING,
+             f"APA §6.33: Ordinal numbers below 10 are generally expressed as words. "
+             f"'{m.group(1)}' should be written as '{corrected}' unless an exception applies.",
+             f"Replace '{m.group(1)}' with '{corrected}'",
+             True, _excerpt(masked, m.start(), m.end()), "§6.33")
+
     # MEC013 — -ly adverb hyphenation
     for m in _LY_HYPHEN_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
@@ -980,6 +1050,42 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
              "Combine a word and a numeral to clarify: e.g., 'two 5-point scales' or '2 five-point scales'.",
              "Combine word + numeral to avoid ambiguity",
              exc=_excerpt(masked, m.start(), m.end()), ch="§6.34")
+
+    # MEC026 — Generic job title incorrectly capitalized
+    for m in _GENERIC_CAP_TITLE_RE.finditer(text):
+        title = m.group("title")
+        if title == title.lower():
+            continue
+        following = text[m.end():m.end() + 40]
+        if re.match(r'\s+[A-Z][a-z]+', following):
+            continue
+        if _near_quote_mask(masked, m.start(), m.end()):
+            continue
+        _add("MEC026", Severity.WARNING,
+             f"APA §6.15: Generic job titles are lowercase when they do not immediately "
+             f"precede a person's name. Use lowercase for '{title}'.",
+             f"Use lowercase: '{title.lower()}'",
+             True, _excerpt(text, m.start(), m.end()), "§6.15")
+
+    # MEC027 — Job title before a name should be capitalized
+    for m in _PRENAME_LOWER_TITLE_RE.finditer(text):
+        if _near_quote_mask(masked, m.start(), m.end()):
+            continue
+        title = m.group("title")
+        corrected = " ".join(w.capitalize() for w in title.split())
+        _add("MEC027", Severity.WARNING,
+             f"APA §6.15: A title immediately preceding a name is capitalized. "
+             f"'{title} {m.group('name')}' should use title case.",
+             f"Capitalize the title: '{corrected} {m.group('name')}'",
+             True, _excerpt(text, m.start(), m.end()), "§6.15")
+
+    # MEC028 — Ellipsis at start of quotation
+    for m in _QUOTE_START_ELLIPSIS_RE.finditer(text):
+        _add("MEC028", Severity.WARNING,
+             "APA §8.31: Do not use an ellipsis at the beginning of a quotation unless "
+             "the ellipsis is part of the original quoted material.",
+             "Remove the opening ellipsis unless it appears in the original source.",
+             True, _excerpt(text, m.start(), m.end()), "§8.31")
 
     # MEC017 — Wordy title phrases (check first ~200 chars only — likely title/abstract)
     if para.index < 5:
@@ -1297,6 +1403,65 @@ def _check_hed(
                 ))
 
 
+def _check_lists(paragraphs: list[ProseParagraph], findings: list[Finding]) -> None:
+    """MEC029-MEC030: APA list formatting and parallelism (§6.49-§6.52)."""
+    groups: list[list[ProseParagraph]] = []
+    current: list[ProseParagraph] = []
+
+    for para in paragraphs:
+        if getattr(para, "is_list_item", False) and not para.is_reference_entry:
+            current.append(para)
+        else:
+            if len(current) >= 2:
+                groups.append(current)
+            current = []
+    if len(current) >= 2:
+        groups.append(current)
+
+    for group in groups:
+        texts = [p.raw_text.strip() for p in group if p.raw_text.strip()]
+        if len(texts) < 2:
+            continue
+
+        starts_upper = [bool(t and t[0].isupper()) for t in texts]
+        terminal_marks = [t[-1] if t[-1:] in ".;:" else "" for t in texts]
+        word_counts = [len(re.findall(r'\b\w+\b', t)) for t in texts]
+        first = group[0]
+
+        if all(mark == "" for mark in terminal_marks) and all(count <= 8 for count in word_counts):
+            findings.append(Finding(
+                rule_id="MEC029",
+                severity=Severity.WARNING,
+                paragraph_index=first.index,
+                message=(
+                    "APA §6.50-§6.51: Phrase-style list items should use a consistent APA list "
+                    "format. If the items are not complete sentences or ordered steps, use bullets "
+                    "or lettered list items rather than a numbered-step style."
+                ),
+                suggested_fix="Use a consistent bulleted or lettered list format for phrase-style items.",
+                excerpt="; ".join(texts[:3])[:120],
+                location_hint=_loc(first),
+                category=Category.MECHANICS.value,
+                chapter="§6.50-§6.51",
+            ))
+
+        if len(set(starts_upper)) > 1 or len(set(terminal_marks)) > 1:
+            findings.append(Finding(
+                rule_id="MEC030",
+                severity=Severity.WARNING,
+                paragraph_index=first.index,
+                message=(
+                    "APA §6.49 and §6.52: Items in a list should be syntactically parallel and "
+                    "use a consistent capitalization and punctuation scheme."
+                ),
+                suggested_fix="Make list items parallel and use consistent capitalization and end punctuation.",
+                excerpt="; ".join(texts[:3])[:120],
+                location_hint=_loc(first),
+                category=Category.MECHANICS.value,
+                chapter="§6.49, §6.52",
+            ))
+
+
 def _check_cit(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None:
     """CIT001–CIT019: In-Text Citations (§8)."""
     idx = para.index
@@ -1345,21 +1510,19 @@ def _check_cit(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     for m in _MULTI_CIT_RE.finditer(text):
         inner = m.group(1)
         parts = [p.strip() for p in inner.split(';')]
-        surnames = []
+        source_keys = []
         for part in parts:
-            sm = _CIT_SURNAME_RE.match(part.strip())
+            sm = _CIT_SOURCE_RE.match(part.strip())
             if sm:
-                surnames.append(sm.group(1).lower())
-        if len(surnames) >= 2:
-            for i in range(len(surnames) - 1):
-                if surnames[i] > surnames[i + 1]:
-                    _add("CIT004", Severity.WARNING,
-                         f"APA §8.19: Multiple citations in one set of parentheses must be ordered "
-                         f"alphabetically by first author's surname. "
-                         f"Found: '({inner[:80]})'.",
-                         "Reorder citations alphabetically by first author surname",
-                         exc=m.group()[:80], ch="§8.19")
-                    break
+                author = re.sub(r'\s+et\s+al\.$', '', sm.group("author"), flags=re.IGNORECASE).lower()
+                source_keys.append((author, sm.group("year").lower()))
+        if len(source_keys) >= 2 and source_keys != sorted(source_keys):
+            _add("CIT004", Severity.WARNING,
+                 f"APA §8.19: Multiple citations in one set of parentheses must be ordered "
+                 f"alphabetically by first author's surname; works by the same author are ordered by year. "
+                 f"Found: '({inner[:80]})'.",
+                 "Reorder citations alphabetically by first author surname and year",
+                 exc=m.group()[:80], ch="§8.19")
 
     # CIT005 — Wrong et al. format
     for m in _ETAL_WRONG_RE.finditer(text):
@@ -1423,6 +1586,13 @@ def _check_cit(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
              "only — they do NOT appear in the reference list because they cannot be retrieved.",
              "Ensure this personal communication is NOT listed in the References section",
              exc=text[:80], ch="§8.9")
+
+        if not _PERSONAL_COMM_WITH_DATE_RE.search(text):
+            _add("CIT020", Severity.WARNING,
+                 "APA §8.9: In-text citations for personal communications include the communicator, "
+                 "the words 'personal communication,' and an exact date.",
+                 "Add the exact date to the personal communication citation.",
+                 exc=text[:80], ch="§8.9")
 
     # CIT019 — Over-citation (same citation ≥ 3x in one paragraph)
     cit_counts: dict[str, int] = {}
@@ -1655,6 +1825,7 @@ def check_paragraphs(
     # Document-level checks
     _check_abstract_length(paragraphs, findings)
     _check_hed(paragraphs, heading_cfg, findings)
+    _check_lists(paragraphs, findings)
     _check_ref_entries(ref_paragraphs, prose_cfg, findings)
 
     # Paragraph-level checks (prose only)

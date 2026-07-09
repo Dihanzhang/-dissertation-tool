@@ -17,6 +17,7 @@ def make_para(
     index: int = 0,
     heading_level=None,
     is_ref: bool = False,
+    is_list_item: bool = False,
     has_format_metadata: bool = False,
     first_line_indent_twips=None,
 ) -> ProseParagraph:
@@ -29,6 +30,7 @@ def make_para(
         masked_text=masked,
         heading_level=heading_level,
         is_reference_entry=is_ref,
+        is_list_item=is_list_item,
         has_format_metadata=has_format_metadata,
         first_line_indent_twips=first_line_indent_twips,
     )
@@ -908,6 +910,72 @@ class TestTBL:
     def test_tbl002_arabic_numeral_not_flagged(self):
         findings = run("Results are presented in Table 3.")
         assert not has_rule(findings, "TBL002")
+
+
+# ===========================================================================
+# QA answer-key regression gaps
+# ===========================================================================
+
+class TestAPA7QAGaps:
+    def test_spaced_hyphen_used_as_em_dash_flagged(self):
+        findings = run("The barrier - not the technology - lies in professional identity.")
+        assert has_rule(findings, "MEC024")
+
+    def test_small_ordinal_numeral_flagged(self):
+        findings = run("Participants were allocated to the 1st cohort or the second cohort.")
+        assert has_rule(findings, "MEC025")
+
+    def test_generic_capitalized_job_title_flagged(self):
+        findings = run("The Chief Executive Officer of the firm sponsored the initiative.")
+        assert has_rule(findings, "MEC026")
+
+    def test_title_before_name_should_be_capitalized(self):
+        findings = run("The rollout was endorsed by chief learning officer Amanda Reyes.")
+        assert has_rule(findings, "MEC027")
+
+    def test_correct_title_capitalization_not_flagged(self):
+        findings = run("The president made remarks. President Biden signed the order.")
+        assert not has_rule(findings, "MEC026")
+        assert not has_rule(findings, "MEC027")
+
+    def test_opening_ellipsis_in_quote_flagged(self):
+        findings = run('One participant noted, "...I felt like a novice again."')
+        assert has_rule(findings, "MEC028")
+
+    def test_personal_communication_missing_date_flagged(self):
+        findings = run("The rollout was confirmed by the sponsor (K. Patel, personal communication).")
+        assert has_rule(findings, "CIT020")
+
+    def test_personal_communication_with_date_not_flagged(self):
+        findings = run("The rollout was confirmed by the sponsor (K. Patel, personal communication, March 4, 2025).")
+        assert not has_rule(findings, "CIT020")
+
+    def test_same_author_citations_ordered_by_year(self):
+        findings = run("The pattern was consistent with prior work (Kim, 2021; Kim, 2019).")
+        assert has_rule(findings, "CIT004")
+
+    def test_generic_his_and_manpower_flagged(self):
+        findings = run("Before a consultant adopts the tool, his identity shifts. Firms underestimated the manpower required.")
+        assert has_rule(findings, "BFL018A")
+        assert has_rule(findings, "BFL026A")
+
+    def test_phrase_style_list_items_flagged(self):
+        paras = [
+            make_para("diagnostic interviews with senior staff", index=0, heading_level=0, is_list_item=True),
+            make_para("workflow mapping workshops", index=1, heading_level=0, is_list_item=True),
+            make_para("supervised experimentation with live client tasks", index=2, heading_level=0, is_list_item=True),
+        ]
+        findings = check_paragraphs(paras, DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
+        assert has_rule(findings, "MEC029")
+
+    def test_list_parallelism_capitalization_punctuation_flagged(self):
+        paras = [
+            make_para("Understanding the psychology of adoption.", index=0, heading_level=0, is_list_item=True),
+            make_para("practitioners map their own workflows", index=1, heading_level=0, is_list_item=True),
+            make_para("To evaluate outcomes honestly;", index=2, heading_level=0, is_list_item=True),
+        ]
+        findings = check_paragraphs(paras, DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
+        assert has_rule(findings, "MEC030")
 
 
 # ===========================================================================

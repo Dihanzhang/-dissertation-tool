@@ -196,6 +196,16 @@ BFL_RULES: list[BFLRule] = [
     ),
 
     BFLRule(
+        "BFL018A",
+        re.compile(r'\b(?:a|an|the|each|every)\s+(?:consultant|participant|practitioner|student|employee|worker|leader|manager|respondent|person|individual)\b[^.!?]{0,120}\bhis\b',
+                   re.IGNORECASE),
+        "APA §5.5: Generic masculine pronouns such as 'his' are discouraged when referring "
+        "to people of unspecified gender. Use singular 'they' or reword the sentence.",
+        "their",
+        "§5.5",
+    ),
+
+    BFLRule(
         "BFL019",
         re.compile(r'\bbirth\s+sex\b|\bnatal\s+sex\b', re.IGNORECASE),
         "APA §5.5: 'birth sex' and 'natal sex' are not preferred. "
@@ -259,6 +269,15 @@ BFL_RULES: list[BFLRule] = [
         re.compile(r'\bchairman\b', re.IGNORECASE),
         "APA §5.5: 'chairman' is gender-specific. Use 'chair' or 'chairperson'.",
         "chair",
+        "§5.5",
+    ),
+
+    BFLRule(
+        "BFL026A",
+        re.compile(r'\bmanpower\b', re.IGNORECASE),
+        "APA §5.5: 'manpower' is gendered language. Use a gender-neutral term such as "
+        "'workforce', 'staffing', or 'personnel'.",
+        "workforce / staffing / personnel",
         "§5.5",
     ),
 

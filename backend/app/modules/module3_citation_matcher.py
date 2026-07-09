@@ -177,7 +177,7 @@ _SINGLE_IN_MULTI_RE = re.compile(
 _DISCOURSE_PREFIX_RE = re.compile(
     r'^(?:meanwhile|however|furthermore|moreover|additionally|therefore|thus|'
     r'finally|recently|previously|notably|importantly|consequently|subsequently|'
-    r'alternatively|specifically|overall|collectively|indeed|similarly|'
+    r'alternatively|specifically|overall|collectively|indeed|similarly|as|'
     r'conversely|nonetheless|nevertheless)\s+',
     re.IGNORECASE,
 )
