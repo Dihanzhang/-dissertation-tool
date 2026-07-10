@@ -977,6 +977,41 @@ class TestAPA7QAGaps:
         findings = check_paragraphs(paras, DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
         assert has_rule(findings, "MEC030")
 
+    def test_spelled_out_time_unit_number_flagged(self):
+        findings = run("The interviews were conducted over a period of five weeks.")
+        assert has_rule(findings, "MEC031")
+
+    def test_inline_parenthesized_numbered_list_flagged(self):
+        findings = run(
+            "The program included three stages: (1) diagnostic interviews, "
+            "(2) workflow mapping, and (3) supervised experimentation."
+        )
+        assert has_rule(findings, "MEC032")
+
+    def test_reference_title_case_flagged(self):
+        findings = run(
+            "Brown, L. (2019). Technology Acceptance In Knowledge-Intensive Firms. "
+            "Organization Studies, 40(7), 989-1010.",
+            is_ref=True,
+        )
+        assert has_rule(findings, "REF024")
+
+    def test_reference_personal_communication_flagged(self):
+        findings = run("Patel, K. (2025, March 4). Personal communication.", is_ref=True)
+        assert has_rule(findings, "REF025")
+
+    def test_reference_periodical_missing_italics_flagged(self):
+        para = make_para(
+            "Kim, S. (2021). When the tool knows more than you: Expertise renegotiation in consulting. "
+            "Human Relations, 74(9), 1401-1425.",
+            index=0,
+            is_ref=True,
+        )
+        para.reference_periodical_italic_ok = False
+        para.reference_periodical_italic_excerpt = "Human Relations, 74"
+        findings = check_paragraphs([para], DEFAULT_PROSE_CFG, DEFAULT_HEADING_CFG)
+        assert has_rule(findings, "REF026")
+
 
 # ===========================================================================
 # Finding data model

@@ -98,6 +98,44 @@ _ARTICLE_CORRECT = re.compile(r'\bArticle\s+[a-zA-Z0-9]+')
 # ISBN/ISSN in reference entries (§9.34 — should not appear)
 _ISBN_ISSN_RE = re.compile(r'\bISBN[:\s]|\bISSN[:\s]', re.IGNORECASE)
 
+# Reference article/chapter title segment after the date.
+_REF_TITLE_SEGMENT_RE = re.compile(r'\(\d{4}[^)]*\)\.\s+(?P<title>.+?)\.\s+')
+_PERSONAL_COMMUNICATION_RE = re.compile(r'\bpersonal\s+communication\b', re.IGNORECASE)
+_TITLE_CASE_EXEMPT_WORDS = {
+    "I", "AI", "APA", "COVID", "USA", "US", "UK",
+}
+_LOWERCASE_TITLE_WORDS = {
+    "a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into",
+    "nor", "of", "on", "or", "the", "to", "with", "without",
+}
+
+
+def _looks_like_reference_title_case_error(text: str) -> tuple[bool, str]:
+    match = _REF_TITLE_SEGMENT_RE.search(text)
+    if not match:
+        return False, ""
+    title = match.group("title").strip()
+    # Ignore the first word and the first word after a colon; both may be capitalized.
+    exempt_positions = {0}
+    words = list(re.finditer(r'\b[A-Za-z][A-Za-z-]*\b', title))
+    for idx, word in enumerate(words):
+        if title[:word.start()].rstrip().endswith(":"):
+            exempt_positions.add(idx)
+
+    unexpected_caps = []
+    for idx, word in enumerate(words):
+        raw = word.group(0)
+        if idx in exempt_positions:
+            continue
+        if raw in _TITLE_CASE_EXEMPT_WORDS:
+            continue
+        if raw.lower() in _LOWERCASE_TITLE_WORDS and raw != raw.lower():
+            unexpected_caps.append(raw)
+            continue
+        if raw[:1].isupper() and raw[1:] != raw[1:].upper():
+            unexpected_caps.append(raw)
+    return len(unexpected_caps) >= 2, title
+
 
 # ---------------------------------------------------------------------------
 # Alphabetical order check helper
@@ -349,6 +387,27 @@ def check_ref_entries(
                 "These identifiers are not part of APA Style references.",
                 f"Remove '{m.group().strip()}' from the reference entry",
                 "§9.34",
+            )
+
+        # REF024 — Article/chapter title should use sentence case (§9.19)
+        title_case_error, title = _looks_like_reference_title_case_error(text)
+        if title_case_error:
+            _add(
+                "REF024", "warning",
+                "APA §9.19: Titles of articles and chapters in the reference list use sentence case, "
+                "not title case. Capitalize only the first word of the title/subtitle and proper nouns.",
+                "Convert the reference title to sentence case.",
+                "§9.19",
+            )
+
+        # REF025 — Personal communications do not appear in References (§8.9)
+        if _PERSONAL_COMMUNICATION_RE.search(text):
+            _add(
+                "REF025", "error",
+                "APA §8.9: Personal communications are cited only in text and should not appear "
+                "in the reference list because readers cannot retrieve them.",
+                "Remove this personal communication from the reference list.",
+                "§8.9",
             )
 
         # REF018 — Alphabetical order (§9.44)

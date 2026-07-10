@@ -337,6 +337,15 @@ _TIME_UNIT_SPELLED_RE = re.compile(
     r'\b(\d+)\s+(hours?|minutes?|seconds?|milliseconds?|microseconds?)\b',
     re.IGNORECASE,
 )
+_TIME_UNIT_WORD_RE = re.compile(
+    r'\b(one|two|three|four|five|six|seven|eight|nine)\s+'
+    r'(days?|weeks?|months?|years?|hours?|minutes?|seconds?)\b',
+    re.IGNORECASE,
+)
+_TIME_WORD_TO_NUM = {
+    "one": "1", "two": "2", "three": "3", "four": "4", "five": "5",
+    "six": "6", "seven": "7", "eight": "8", "nine": "9",
+}
 _TIME_ABBREV_MAP = {
     'hour': 'hr', 'hours': 'hr',
     'minute': 'min', 'minutes': 'min',
@@ -370,6 +379,9 @@ _WRONG_ELLIPSIS_RE = re.compile(r'\.{3}|…')   # three dots or unicode ellipsis
 
 # MEC022: Adjacent numerals ("2 5-point scales" → "two 5-point scales")
 _ADJACENT_NUM_RE = re.compile(r'\b(\d+)\s+(\d+)[-–]')
+
+# MEC032: Inline parenthesized numbered list, e.g. "(1) item, (2) item"
+_INLINE_PAREN_NUMBERED_LIST_RE = re.compile(r':\s*\(1\)\s+[^.?!]+?\(2\)\s+[^.?!]+', re.IGNORECASE)
 
 # MEC026/MEC027: Job title capitalization
 _JOB_TITLE_WORDS = (
@@ -827,6 +839,20 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
              f"Replace '{m.group()}' with its numeral form.",
              exc=_excerpt(masked, m.start(), m.end()), ch="§6.32")
 
+    # MEC031 — Spelled-out numbers with time units
+    for m in _TIME_UNIT_WORD_RE.finditer(masked):
+        if _near_quote_mask(masked, m.start(), m.end()):
+            continue
+        if m.start() in _sentence_starts:
+            continue
+        number = _TIME_WORD_TO_NUM.get(m.group(1).lower(), m.group(1))
+        corrected = f"{number} {m.group(2)}"
+        _add("MEC031", Severity.WARNING,
+             f"APA §6.32: Use numerals for numbers that represent time. "
+             f"'{m.group()}' should be written as '{corrected}'.",
+             f"Replace '{m.group()}' with '{corrected}'",
+             True, _excerpt(masked, m.start(), m.end()), "§6.32")
+
     # MEC006 — "N percent" → "N%"
     for m in _N_PERCENT_RE.finditer(masked):
         if _near_quote_mask(masked, m.start(), m.end()):
@@ -1050,6 +1076,17 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
              "Combine a word and a numeral to clarify: e.g., 'two 5-point scales' or '2 five-point scales'.",
              "Combine word + numeral to avoid ambiguity",
              exc=_excerpt(masked, m.start(), m.end()), ch="§6.34")
+
+    # MEC032 — Inline numbered list with parenthesized numerals
+    for m in _INLINE_PAREN_NUMBERED_LIST_RE.finditer(masked):
+        if _near_quote_mask(masked, m.start(), m.end()):
+            continue
+        _add("MEC032", Severity.WARNING,
+             "APA §6.50-§6.51: Avoid inline parenthesized numbered lists for phrase-style "
+             "items. Use a proper numbered list for complete steps, or use lettered/bulleted "
+             "format for phrase-style items.",
+             "Convert to an APA-style displayed list or recast as a sentence.",
+             exc=_excerpt(masked, m.start(), m.end()), ch="§6.50-§6.51")
 
     # MEC026 — Generic job title incorrectly capitalized
     for m in _GENERIC_CAP_TITLE_RE.finditer(text):
@@ -1638,6 +1675,25 @@ def _check_ref_entries(
             category=Category.REFERENCE.value,
             chapter=rf.get("chapter", "§9"),
         ))
+
+    for para in ref_paragraphs:
+        italic_ok = getattr(para, "reference_periodical_italic_ok", None)
+        if italic_ok is False:
+            excerpt = getattr(para, "reference_periodical_italic_excerpt", "") or para.raw_text[:80]
+            findings.append(Finding(
+                rule_id="REF026",
+                severity=Severity.WARNING,
+                paragraph_index=para.index,
+                message=(
+                    "APA §9.25: In periodical references, italicize the periodical title "
+                    "and volume number."
+                ),
+                suggested_fix="Italicize the journal title and volume number in this reference entry.",
+                excerpt=excerpt[:80],
+                location_hint=_loc(para),
+                category=Category.REFERENCE.value,
+                chapter="§9.25",
+            ))
 
 
 def _check_tbl(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None:

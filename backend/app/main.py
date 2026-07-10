@@ -58,7 +58,7 @@ _CONFIG_PATH = Path(__file__).parent / "config" / "prof_checklist.yaml"
 WORD_CAP = int(os.getenv("WORD_CAP_PER_CREDIT", "5000"))
 FREE_TRIAL_CAP = int(os.getenv("FREE_TRIAL_WORD_CAP", "3000"))
 TEST_MODE = os.getenv("TEST_MODE", "false").lower() in ("true", "1", "yes")
-RULE_SET_VERSION = "apa-qa-gap-highlight-fix"
+RULE_SET_VERSION = "apa-mp-comments-gap-fix"
 
 
 def _cfg():

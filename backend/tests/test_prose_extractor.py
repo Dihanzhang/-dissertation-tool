@@ -115,6 +115,30 @@ def test_numbered_list_metadata_does_not_increment_paragraph_number():
     assert paragraphs[2].paragraph_number_on_page == 2
 
 
+def test_bold_italic_manual_heading_is_level_three():
+    doc = Document()
+    doc.add_paragraph("Main Section", style="Heading 1")
+    para = doc.add_paragraph()
+    run = para.add_run("Pilot Program Data")
+    run.bold = True
+    run.italic = True
+
+    paragraphs = extract_prose(doc)
+
+    assert paragraphs[1].heading_level == 3
+
+
+def test_bold_sentence_with_terminal_punctuation_is_not_heading():
+    doc = Document()
+    para = doc.add_paragraph()
+    run = para.add_run("The program included three stages: (1) interviews, (2) workshops, and (3) tasks.")
+    run.bold = True
+
+    paragraphs = extract_prose(doc)
+
+    assert paragraphs[0].heading_level is None
+
+
 def test_page_break_resets_paragraph_number_on_page():
     doc = Document()
     doc.add_paragraph("This is the first paragraph. It is on page one.")

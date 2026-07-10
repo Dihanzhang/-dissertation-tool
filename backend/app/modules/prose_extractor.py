@@ -34,6 +34,8 @@ class ProseParagraph:
     is_list_item: bool = False
     first_line_indent_twips: Optional[int] = None
     has_format_metadata: bool = False
+    reference_periodical_italic_ok: Optional[bool] = None
+    reference_periodical_italic_excerpt: str = ""
 
 
 QUOTE_MASK = "\x00QUOTE\x00"
@@ -97,6 +99,12 @@ def _all_runs_bold(para) -> bool:
     """Return True if every non-empty run in the paragraph is bold."""
     runs = [r for r in para.runs if r.text.strip()]
     return bool(runs) and all(r.bold for r in runs)
+
+
+def _all_runs_italic(para) -> bool:
+    """Return True if every non-empty run in the paragraph is italic."""
+    runs = [r for r in para.runs if r.text.strip()]
+    return bool(runs) and all(r.italic for r in runs)
 
 
 def _is_centered(para) -> bool:
@@ -180,6 +188,13 @@ def _heading_level(para) -> Optional[int]:
     # Returning 2 instead of 1 prevents HED002 from firing when a Level-1 heading
     # is immediately followed by a bold flush-left subheading (a common dissertation
     # pattern that is correct APA 7 structure).
+    if _TERMINAL_PUNCT_RE.search(text):
+        return None
+
+    # APA Level 3 = flush-left, bold italic.
+    if _all_runs_bold(para) and _all_runs_italic(para) and len(text) <= 200:
+        return 3
+
     if _all_runs_bold(para) and len(text) <= 200:
         return 2
 
@@ -273,6 +288,38 @@ def _is_table_figure_title_after_label(text: str) -> bool:
     return not _TERMINAL_PUNCT_RE.search(stripped)
 
 
+def _reference_periodical_italic_info(para) -> tuple[Optional[bool], str]:
+    """Check whether a journal title + volume segment is italicized."""
+    text = para.text.strip()
+    match = re.search(
+        r'\(\d{4}[^)]*\)\.\s+.+?\.\s+(?P<periodical>[^.]+?,\s*\d+)',
+        text,
+    )
+    if not match:
+        return None, ""
+
+    start, end = match.span("periodical")
+    char_pos = 0
+    italic_chars = 0
+    segment_chars = 0
+    for run in para.runs:
+        run_text = run.text or ""
+        run_start = char_pos
+        run_end = char_pos + len(run_text)
+        overlap_start = max(start, run_start)
+        overlap_end = min(end, run_end)
+        if overlap_start < overlap_end:
+            length = overlap_end - overlap_start
+            segment_chars += length
+            if run.italic:
+                italic_chars += length
+        char_pos = run_end
+
+    if segment_chars == 0:
+        return None, match.group("periodical")
+    return italic_chars >= max(1, int(segment_chars * 0.8)), match.group("periodical")
+
+
 def extract_prose(doc: Document) -> list[ProseParagraph]:
     """
     Walk the document body and return only author-prose paragraphs.
@@ -323,6 +370,7 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
 
         if in_reference_section and level is None:
             paragraph_number_on_page += 1
+            periodical_italic_ok, periodical_excerpt = _reference_periodical_italic_info(para)
             # Reference entry — skip prose rules but keep for citation matching
             paragraphs.append(ProseParagraph(
                 index=idx,
@@ -336,6 +384,8 @@ def extract_prose(doc: Document) -> list[ProseParagraph]:
                 is_list_item=is_list_item,
                 first_line_indent_twips=_first_line_indent_twips(para),
                 has_format_metadata=True,
+                reference_periodical_italic_ok=periodical_italic_ok,
+                reference_periodical_italic_excerpt=periodical_excerpt,
             ))
             previous_was_table_figure_label = False
             if has_page_break:
