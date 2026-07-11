@@ -1,0 +1,116 @@
+{
+  "description": "DOCX regression suite for the dissertation APA 7 review tool.",
+  "scope": "Covers deterministic APA 7 rule families currently implemented by the application.",
+  "cases": [
+    {
+      "file": "01_mechanics_numbers_punctuation.docx",
+      "expected_rule_coverage": [
+        "MEC002",
+        "MEC003",
+        "MEC004",
+        "MEC031",
+        "MEC022",
+        "MEC011",
+        "MEC010",
+        "MEC012",
+        "MEC024",
+        "MEC025",
+        "MEC007",
+        "MEC009",
+        "MEC008",
+        "MEC028",
+        "MEC021"
+      ]
+    },
+    {
+      "file": "02_citations_and_matching.docx",
+      "expected_rule_coverage": [
+        "CIT001",
+        "CIT002",
+        "CIT003",
+        "CIT004",
+        "CIT005",
+        "CIT006",
+        "CIT007",
+        "CIT014",
+        "CIT020",
+        "CIT019",
+        "year_mismatches",
+        "missing_references",
+        "uncited_references"
+      ]
+    },
+    {
+      "file": "03_style_bias_language.docx",
+      "expected_rule_coverage": [
+        "STY001",
+        "STY002",
+        "STY003",
+        "STY004",
+        "STY005",
+        "STY006",
+        "STY007",
+        "STY008",
+        "STY009",
+        "STY010",
+        "STY012",
+        "STY013",
+        "STY014",
+        "STY015",
+        "BFL001",
+        "BFL006",
+        "BFL011",
+        "BFL018",
+        "BFL018A",
+        "BFL026",
+        "BFL026A",
+        "BFL031",
+        "BFL032",
+        "BFL033"
+      ]
+    },
+    {
+      "file": "04_headings_lists_tables.docx",
+      "expected_rule_coverage": [
+        "HED001",
+        "HED002",
+        "MEC030",
+        "MEC032",
+        "TBL001",
+        "TBL002",
+        "PRF001"
+      ]
+    },
+    {
+      "file": "05_reference_formatting.docx",
+      "expected_rule_coverage": [
+        "REF001",
+        "REF002",
+        "REF003",
+        "REF005",
+        "REF006",
+        "REF007",
+        "REF008",
+        "REF009",
+        "REF010",
+        "REF011",
+        "REF012",
+        "REF013",
+        "REF015",
+        "REF016",
+        "REF023",
+        "REF024",
+        "REF025",
+        "REF026"
+      ]
+    },
+    {
+      "file": "06_false_positive_traps.docx",
+      "expected_rule_coverage": [
+        "should_not_flag_time_unit_5_weeks",
+        "should_not_flag_president_title",
+        "should_not_flag_table_label_title"
+      ]
+    }
+  ]
+}
