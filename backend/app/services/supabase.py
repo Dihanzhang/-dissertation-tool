@@ -56,3 +56,31 @@ class SupabasePassRepository:
         )
         if response_status not in (200, 201):
             raise RuntimeError("Could not save feedback.")
+
+    async def fulfil_submission_pass(
+        self,
+        *,
+        event_id: str,
+        user_id: str,
+        checkout_session_id: str,
+        payment_intent_id: str | None,
+        starts_at: datetime,
+        expires_at: datetime,
+    ) -> bool:
+        response_status, payload = await self._request(
+            "POST",
+            f"{self._base_url}/rpc/fulfil_submission_pass",
+            headers=self._headers,
+            json={
+                "p_stripe_event_id": event_id,
+                "p_event_type": "checkout.session.completed",
+                "p_user_id": user_id,
+                "p_checkout_session_id": checkout_session_id,
+                "p_payment_intent_id": payment_intent_id,
+                "p_starts_at": starts_at.isoformat(),
+                "p_expires_at": expires_at.isoformat(),
+            },
+        )
+        if response_status != 200:
+            raise RuntimeError("Could not activate Submission Pass access.")
+        return bool(payload)

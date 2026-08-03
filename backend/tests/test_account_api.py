@@ -82,3 +82,60 @@ def test_checkout_requires_sign_in_and_returns_stripe_url(monkeypatch):
 
     assert response.status_code == 200
     assert response.json() == {"checkout_url": "https://checkout.stripe.test/session"}
+
+
+def test_signed_stripe_webhook_activates_pass(monkeypatch):
+    from app import main
+
+    class Repo:
+        def __init__(self):
+            self.kwargs = None
+
+        async def fulfil_submission_pass(self, **kwargs):
+            self.kwargs = kwargs
+            return True
+
+    repo = Repo()
+    monkeypatch.setattr(main, "_pass_repository", lambda: repo)
+    monkeypatch.setattr(main, "_settings", lambda: type("Settings", (), {
+        "stripe_webhook_secret": "whsec_test",
+        "pass_duration_days": 30,
+    })())
+    monkeypatch.setattr(main.stripe.Webhook, "construct_event", lambda payload, signature, secret: {
+        "id": "evt_1",
+        "type": "checkout.session.completed",
+        "data": {"object": {
+            "id": "cs_1",
+            "client_reference_id": "00000000-0000-0000-0000-000000000001",
+            "payment_intent": "pi_1",
+            "payment_status": "paid",
+        }},
+    })
+
+    response = TestClient(main.app).post(
+        "/api/billing/webhook", content=b"signed payload", headers={"stripe-signature": "signature"}
+    )
+
+    assert response.status_code == 200
+    assert response.json() == {"received": True, "activated": True}
+    assert repo.kwargs["event_id"] == "evt_1"
+
+
+def test_feedback_accepts_a_valid_message(monkeypatch):
+    from app import main
+
+    saved = []
+
+    class Repo:
+        async def save_feedback(self, feedback):
+            saved.append(feedback)
+
+    monkeypatch.setattr(main, "_pass_repository", lambda: Repo())
+    response = TestClient(main.app).post(
+        "/api/feedback",
+        json={"name": "Dihan", "contact": "dihan@example.com", "message": "This was very helpful for my reference list.", "website": ""},
+    )
+
+    assert response.status_code == 201
+    assert response.json() == {"received": True}
+    assert saved[0].name == "Dihan"

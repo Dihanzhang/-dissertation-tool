@@ -27,7 +27,7 @@ try:
 except ImportError:
     pass
 
-from fastapi import Depends, FastAPI, File, Form, Header, HTTPException, UploadFile
+from fastapi import Depends, FastAPI, File, Form, Header, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
@@ -46,7 +46,8 @@ from .modules import credits as credit_store
 from .auth import SupabaseAuthenticator
 from .config import Settings
 from .services.access import CurrentUser
-from .services.billing import create_checkout_session
+from .services.billing import create_checkout_session, fulfil_completed_checkout
+from .services.feedback import FeedbackInput, validate_feedback
 from .services.supabase import SupabasePassRepository
 
 app = FastAPI(
@@ -120,6 +121,13 @@ class TextCheckRequest(BaseModel):
     body_text: str
     reference_text: str = ""
     levenshtein_threshold: int = 2
+
+
+class FeedbackRequest(BaseModel):
+    name: str = ""
+    contact: str = ""
+    message: str
+    website: str = ""
 
 
 class FindingOut(BaseModel):
@@ -693,6 +701,47 @@ async def create_submission_pass_checkout(user: CurrentUser = Depends(get_curren
             site_url=settings.site_url,
         )
     }
+
+
+@app.post("/api/billing/webhook")
+async def stripe_webhook(request: Request, stripe_signature: str | None = Header(default=None)):
+    settings = _settings()
+    if not settings.stripe_webhook_secret:
+        raise HTTPException(status_code=503, detail="Stripe webhook is not configured yet.")
+    if not stripe_signature:
+        raise HTTPException(status_code=400, detail="Missing Stripe signature.")
+    try:
+        event = stripe.Webhook.construct_event(
+            await request.body(), stripe_signature, settings.stripe_webhook_secret
+        )
+    except (ValueError, stripe.SignatureVerificationError):
+        raise HTTPException(status_code=400, detail="Invalid Stripe webhook signature.")
+
+    if event["type"] != "checkout.session.completed":
+        return {"received": True, "activated": False}
+    try:
+        activated = await fulfil_completed_checkout(
+            event_id=event["id"],
+            checkout_session=event["data"]["object"],
+            repository=_pass_repository(),
+            now=datetime.now(UTC),
+            pass_duration_days=settings.pass_duration_days,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    return {"received": True, "activated": activated}
+
+
+@app.post("/api/feedback", status_code=201)
+async def submit_feedback(req: FeedbackRequest):
+    try:
+        feedback = validate_feedback(
+            FeedbackInput(name=req.name, contact=req.contact, message=req.message, website=req.website)
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc))
+    await _pass_repository().save_feedback(feedback)
+    return {"received": True}
 
 
 @app.post("/api/check/text", response_model=CheckResponse)
