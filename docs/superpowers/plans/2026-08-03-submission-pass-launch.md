@@ -425,7 +425,7 @@ Expected: FAIL until production origin validation exists.
 
 - [ ] **Step 3: Make production controls explicit**
 
-Set Render \`TEST_MODE=false\`; require the Netlify production origin in \`CORS_ORIGINS\`; document Stripe test/live settings, Supabase redirect URLs, migration, feedback access through Supabase, and a support inbox. The checklist must include test purchase, webhook retry, expiry, repurchase, invalid DOCX, feedback rate limit, legal-link review, mobile review, social preview, and rollback by disabling the Stripe price/webhook.
+Set Render \`TEST_MODE=false\`; require the Netlify production origin in \`CORS_ORIGINS\`; document Stripe test/live settings, Supabase redirect URLs, migration, feedback access through Supabase, and \`dihan.zhang@outlook.com\` as the support inbox. The checklist must include test purchase, webhook retry, expiry, repurchase, invalid DOCX, feedback rate limit, legal-link review, mobile review, social preview, and rollback by disabling the Stripe price/webhook.
 
 - [ ] **Step 4: Run the release gate**
 

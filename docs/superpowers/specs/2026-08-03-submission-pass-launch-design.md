@@ -109,6 +109,8 @@ Document text is not stored in these records.
 - Include a visible "Need help with your pass?" link in purchase and account
   views. It scrolls to the landing-page message form, where users can provide
   an optional contact detail for a reply.
+- Display `dihan.zhang@outlook.com` as the support contact on payment receipts,
+  policy pages, and the customer support fallback.
 
 ## Analytics and marketing
 
