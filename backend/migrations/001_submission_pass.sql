@@ -35,3 +35,58 @@ create table public.feedback (
   status text not null default 'received',
   created_at timestamptz not null default now()
 );
+
+-- These records are only accessed by the backend using Supabase's service-role
+-- key. They must never be readable or writable from the browser.
+alter table public.submission_passes enable row level security;
+alter table public.payment_events enable row level security;
+alter table public.access_audit enable row level security;
+alter table public.feedback enable row level security;
+
+-- A Stripe event may be delivered more than once. This function records the
+-- event and creates the pass in one database transaction, so only the first
+-- delivery can create access.
+create or replace function public.fulfil_submission_pass(
+  p_stripe_event_id text,
+  p_event_type text,
+  p_user_id uuid,
+  p_checkout_session_id text,
+  p_payment_intent_id text,
+  p_starts_at timestamptz,
+  p_expires_at timestamptz
+) returns boolean
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  event_row_count bigint;
+begin
+  insert into public.payment_events (stripe_event_id, event_type)
+  values (p_stripe_event_id, p_event_type)
+  on conflict (stripe_event_id) do nothing;
+
+  get diagnostics event_row_count = row_count;
+  if event_row_count = 0 then
+    return false;
+  end if;
+
+  insert into public.submission_passes (
+    user_id,
+    stripe_checkout_session_id,
+    stripe_payment_intent_id,
+    starts_at,
+    expires_at,
+    status
+  ) values (
+    p_user_id,
+    p_checkout_session_id,
+    p_payment_intent_id,
+    p_starts_at,
+    p_expires_at,
+    'active'
+  );
+
+  return true;
+end;
+$$;
