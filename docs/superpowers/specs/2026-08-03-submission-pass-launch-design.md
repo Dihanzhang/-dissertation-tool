@@ -106,6 +106,9 @@ Document text is not stored in these records.
   suggested edits.
 - Send transactional purchase and expiry emails, and offer a recovery path for
   interrupted checkout or lost device access.
+- Include a visible "Need help with your pass?" link in purchase and account
+  views. It scrolls to the landing-page message form, where users can provide
+  an optional contact detail for a reply.
 
 ## Analytics and marketing
 

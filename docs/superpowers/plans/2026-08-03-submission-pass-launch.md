@@ -382,7 +382,7 @@ Expected: FAIL because the page/component are absent.
 
 - [ ] **Step 3: Implement the approved public content**
 
-Use the reviewed-document image as a labelled sample, not customer proof. State AU$14.95 / 30 days, normal-personal-use boundary, checks/limits, user approval of edits, verified privacy behaviour, and no guarantee claims. Add fields “Your name”, “Your contact (optional)”, “Your experience”, and hidden “website”; show a clear in-place success/error state. Link approved Privacy, Terms, Refunds, and support routes. Add an original 1200×630 social card with no university logos.
+Use the reviewed-document image as a labelled sample, not customer proof. State AU$14.95 / 30 days, normal-personal-use boundary, checks/limits, user approval of edits, verified privacy behaviour, and no guarantee claims. Add fields “Your name”, “Your contact (optional)”, “Your experience”, and hidden “website”; show a clear in-place success/error state. Link approved Privacy, Terms, Refunds, and a visible “Need help with your pass?” anchor to the message form. Add an original 1200×630 social card with no university logos.
 
 - [ ] **Step 4: Verify**
 
