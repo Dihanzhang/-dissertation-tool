@@ -51,6 +51,13 @@ pricing, privacy and academic-integrity trust content, FAQ, and Open Graph
 metadata/image for social sharing. Add account, checkout-return, and
 billing-status views.
 
+The landing page also includes a calm "Share your experience" feedback form:
+an optional name, optional contact detail for a requested reply, and a required
+message box. It explains that contact information is only used to respond when
+provided, confirms successful submission in place, and does not interrupt the
+purchase flow. Include a hidden honeypot field, server-side validation, and
+rate limiting to reduce spam.
+
 The review UI reads a server-provided entitlement state before allowing a new
 APA or AI review request. It explains whether the account has an active or
 expired pass without exposing payment implementation details.
@@ -60,7 +67,8 @@ expired pass without exposing payment implementation details.
 Replace the in-memory credit model with durable records for users, Submission
 Passes, and payment/webhook events. Use Stripe-hosted Checkout for the fixed
 price. Add authenticated endpoints to create a checkout session, report
-entitlement state, and receive Stripe webhooks.
+entitlement state, receive Stripe webhooks, and accept rate-limited public
+feedback submissions.
 
 Webhook processing must validate Stripe signatures and be idempotent. A
 processed-event record prevents duplicated passes when Stripe retries an event.
@@ -76,6 +84,8 @@ AI provider.
   processed timestamp for idempotency.
 - `access_audit`: minimal non-document-content record of significant access
   decisions and failures for support and abuse investigation.
+- `feedback`: optional name/contact, message, submission time, and minimal
+  delivery/status fields. It never contains uploaded document text.
 
 Document text is not stored in these records.
 
@@ -84,6 +94,8 @@ Document text is not stored in these records.
 - Use a managed production database, provider secret management, and HTTPS.
 - Validate uploaded DOCX files and enforce documented size/request limits.
 - Rate-limit account and upload endpoints; do not rely on client-side limits.
+- Rate-limit and validate public feedback submissions; clearly state how
+  feedback/contact details are handled in the Privacy Policy.
 - Publish Privacy Policy, Terms of Use, Refund Policy, and a contact/support
   path before checkout is enabled.
 - State accurately how uploads, outputs, account data, and payment data are
@@ -118,6 +130,8 @@ to validate the price and product wording.
   do not charge a pass for a rejected request.
 - Provider failure: do not consume access unfairly; record the event without
   persisting dissertation content.
+- Feedback validation/submission failure: retain no partial message, preserve
+  the visitor's typed text in the form, and provide a clear retry message.
 
 ## Verification and launch gates
 
@@ -126,11 +140,13 @@ to validate the price and product wording.
 2. Integration tests exercise Stripe test-mode purchase, cancellation, delayed
    webhook, and pass expiry.
 3. Frontend tests cover each account state and the purchase/renewal paywall.
-4. Render the landing page at mobile and desktop sizes; inspect social preview
+4. Frontend and API tests cover feedback validation, honeypot rejection, rate
+   limits, successful confirmation, and failure recovery.
+5. Render the landing page at mobile and desktop sizes; inspect social preview
    metadata and image.
-5. Test one complete production-like purchase with Stripe test credentials,
+6. Test one complete production-like purchase with Stripe test credentials,
    receipt email, access grant, review, expiry handling, and repurchase.
-6. Complete a privacy/security and copy review before enabling live Stripe
+7. Complete a privacy/security and copy review before enabling live Stripe
    payments or paid ads.
 
 ## Explicit non-goals for this release
