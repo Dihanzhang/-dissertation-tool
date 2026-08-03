@@ -9,6 +9,9 @@ class Settings:
     stripe_secret_key: str
     stripe_webhook_secret: str
     stripe_price_id: str
+    supabase_url: str
+    supabase_anon_key: str
+    supabase_service_role_key: str
     site_url: str
     pass_duration_days: int
     max_upload_bytes: int
@@ -24,6 +27,9 @@ class Settings:
             stripe_secret_key=stripe_secret_key,
             stripe_webhook_secret=stripe_webhook_secret,
             stripe_price_id=os.getenv("STRIPE_PRICE_ID", ""),
+            supabase_url=os.getenv("SUPABASE_URL", "").rstrip("/"),
+            supabase_anon_key=os.getenv("SUPABASE_ANON_KEY", ""),
+            supabase_service_role_key=os.getenv("SUPABASE_SERVICE_ROLE_KEY", ""),
             site_url=os.getenv("SITE_URL", "http://localhost:3000").rstrip("/"),
             pass_duration_days=int(os.getenv("PASS_DURATION_DAYS", "30")),
             max_upload_bytes=int(os.getenv("MAX_UPLOAD_BYTES", "10485760")),
