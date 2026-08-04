@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const BETA_VERSION = process.env.NEXT_PUBLIC_BETA_VERSION || "Beta v0.1";
@@ -319,6 +320,7 @@ function SuggestionCard({
 // ---------------------------------------------------------------------------
 
 export default function ReviewPage() {
+  const router = useRouter();
   const [mode, setMode] = useState<"paste" | "upload">("upload");
   const [pastedText, setPastedText] = useState("");
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
@@ -340,6 +342,22 @@ export default function ReviewPage() {
 
   // The body text used for Module 1 (set after check so we know what was submitted)
   const [submittedBodyText, setSubmittedBodyText] = useState("");
+  const [accessChecked, setAccessChecked] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("submission-pass-token") || sessionStorage.getItem("submission-pass-token") || "";
+    if (!token) {
+      router.replace("/account");
+      return;
+    }
+    void fetch(`${API_BASE}/api/account/entitlement`, { headers: { Authorization: `Bearer ${token}` } })
+      .then(async (response) => response.ok ? response.json() : null)
+      .then((access: { can_submit?: boolean } | null) => {
+        if (!access?.can_submit) router.replace("/account");
+        else setAccessChecked(true);
+      })
+      .catch(() => router.replace("/account"));
+  }, [router]);
 
   // ---------------------------------------------------------------------------
   // APA check
@@ -516,6 +534,10 @@ export default function ReviewPage() {
   const acceptedCount = Object.values(decisions).filter((d) => d === "accepted").length;
   const words = mode === "paste" ? wordCount(pastedText) : uploadedFile ? null : 0;
   const canSubmit = mode === "paste" ? pastedText.trim().length > 0 : uploadedFile !== null;
+
+  if (!accessChecked) {
+    return <main className="mx-auto min-h-screen max-w-xl px-6 py-16 text-slate-700">Checking your access…</main>;
+  }
 
   return (
     <main className="min-h-screen bg-[#f7f8f5] text-slate-900">

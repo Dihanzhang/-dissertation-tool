@@ -204,6 +204,10 @@ class EstimateResponse(BaseModel):
     test_mode: bool
 
 
+class BetaRedemptionResponse(BaseModel):
+    expires_at: datetime
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -686,6 +690,21 @@ async def account_entitlement(user: CurrentUser = Depends(get_current_user)):
     if active_pass is None:
         return {"can_submit": False, "status": "none", "expires_at": None}
     return {"can_submit": True, "status": "active", "expires_at": active_pass["expires_at"]}
+
+
+@app.post("/api/beta/redeem", response_model=BetaRedemptionResponse)
+async def redeem_beta_invitation(user: CurrentUser = Depends(get_current_user)):
+    redemption = await _pass_repository().redeem_beta_invite(
+        user_id=user.id,
+        email=user.email,
+        at=datetime.now(UTC),
+    )
+    if not redemption.redeemed or redemption.expires_at is None:
+        raise HTTPException(
+            status_code=403,
+            detail="This email does not have an active beta invitation.",
+        )
+    return BetaRedemptionResponse(expires_at=redemption.expires_at)
 
 
 @app.post("/api/billing/checkout-session")
