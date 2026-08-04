@@ -8,7 +8,7 @@ export default function CheckoutSuccessPage() {
       <p className="mt-4 text-slate-600">
         Your Submission Pass is being activated. This usually takes only a few seconds.
       </p>
-      <Link href="/account" className="mt-8 inline-block rounded-md bg-blue-700 px-5 py-3 font-semibold text-white">
+      <Link href="/account" className="button-primary mt-8 rounded-md px-5 py-3 font-semibold">
         Go to my Submission Pass
       </Link>
     </main>

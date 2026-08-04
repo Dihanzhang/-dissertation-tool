@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .button-interaction {
+    @apply inline-flex cursor-pointer items-center justify-center transition duration-150 ease-out motion-reduce:transform-none hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-default disabled:transform-none disabled:shadow-none;
+  }
+
+  .button-primary {
+    @apply inline-flex cursor-pointer items-center justify-center bg-blue-700 text-white transition duration-150 ease-out motion-reduce:transform-none hover:-translate-y-0.5 hover:bg-blue-800 hover:shadow-md active:translate-y-0 active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-default disabled:transform-none disabled:shadow-none;
+  }
+
+  .button-secondary {
+    @apply inline-flex cursor-pointer items-center justify-center border border-slate-300 bg-white text-slate-800 transition duration-150 ease-out motion-reduce:transform-none hover:-translate-y-0.5 hover:border-slate-400 hover:bg-slate-50 hover:shadow-md active:translate-y-0 active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-default disabled:transform-none disabled:shadow-none;
+  }
+}

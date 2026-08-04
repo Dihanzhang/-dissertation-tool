@@ -299,15 +299,15 @@ function SuggestionCard({
       </div>
       {decision === "pending" ? (
         <div className="flex gap-2">
-          <button onClick={() => onDecide("accepted")} className="px-3 py-1.5 text-xs font-semibold bg-green-600 text-white rounded hover:bg-green-700 transition">Accept</button>
-          <button onClick={() => onDecide("rejected")} className="px-3 py-1.5 text-xs font-semibold bg-gray-200 text-gray-700 rounded hover:bg-gray-300 transition">Reject</button>
+          <button onClick={() => onDecide("accepted")} className="button-interaction rounded bg-green-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-green-700">Accept</button>
+          <button onClick={() => onDecide("rejected")} className="button-interaction rounded bg-gray-200 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-300">Reject</button>
         </div>
       ) : (
         <div className="flex items-center gap-2">
           <span className={`text-xs font-semibold ${decision === "accepted" ? "text-green-700" : "text-gray-500"}`}>
             {decision === "accepted" ? "✓ Accepted" : "✗ Rejected"}
           </span>
-          <button onClick={() => onDecide("pending")} className="text-xs text-gray-400 underline hover:text-gray-600">Undo</button>
+          <button onClick={() => onDecide("pending")} className="button-interaction rounded text-xs text-gray-400 underline hover:text-gray-600">Undo</button>
         </div>
       )}
     </div>
@@ -543,14 +543,14 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={() => setMode("upload")}
-                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "upload" ? "bg-[#e8efe8] text-[#123c3d] shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
+                className={`button-interaction rounded-md px-4 py-1.5 text-sm font-semibold ${mode === "upload" ? "bg-[#e8efe8] text-[#123c3d] shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
               >
                 Upload .docx
               </button>
               <button
                 type="button"
                 onClick={() => { setMode("paste"); setUploadedFile(null); }}
-                className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${mode === "paste" ? "bg-[#e8efe8] text-[#123c3d] shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
+                className={`button-interaction rounded-md px-4 py-1.5 text-sm font-semibold ${mode === "paste" ? "bg-[#e8efe8] text-[#123c3d] shadow-sm" : "text-slate-500 hover:bg-[#eef3ee] hover:text-slate-800"}`}
               >
                 Paste text
               </button>
@@ -595,7 +595,7 @@ export default function ReviewPage() {
                   <button
                     type="button"
                     onClick={(e) => { e.stopPropagation(); setUploadedFile(null); }}
-                    className="mt-2 text-xs font-medium text-red-600 underline"
+                    className="button-interaction mt-2 rounded text-xs font-medium text-red-600 underline"
                   >
                     Remove
                   </button>
@@ -613,7 +613,7 @@ export default function ReviewPage() {
             <button
               type="submit"
               disabled={checking || !canSubmit}
-              className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
+              className="button-interaction rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white hover:bg-[#0b3031] disabled:opacity-50"
             >
               {checking ? "Checking..." : "Run APA 7 check"}
             </button>
@@ -622,7 +622,7 @@ export default function ReviewPage() {
                 type="button"
                 onClick={handleDownloadAnnotated}
                 disabled={annotating}
-                className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
+                className="button-interaction rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white hover:bg-[#0b3031] disabled:opacity-50"
               >
                 {annotating ? "Preparing..." : "Download reviewed .docx"}
               </button>
@@ -671,7 +671,7 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={handleCopyFeedbackTemplate}
-                className="rounded-md border border-[#cfd9cf] bg-white px-3 py-2 text-xs font-semibold text-slate-700 transition hover:bg-[#f4faf6]"
+                className="button-secondary rounded-md border-[#cfd9cf] px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-[#f4faf6]"
               >
                 {feedbackCopied ? "Template copied" : "Copy feedback template"}
               </button>
@@ -679,7 +679,7 @@ export default function ReviewPage() {
                 <button
                   type="button"
                   onClick={handleEmailFeedback}
-                  className="rounded-md bg-slate-900 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-800"
+                  className="button-interaction rounded-md bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-slate-800"
                 >
                   Email beta feedback
                 </button>
@@ -716,7 +716,7 @@ export default function ReviewPage() {
                 <button
                   key={t}
                   onClick={() => setTab(t)}
-                  className={`px-4 py-2 text-sm font-semibold ${tab === t ? "border-b-2 border-[#123c3d] text-[#123c3d]" : "text-slate-500 hover:text-slate-700"}`}
+                  className={`button-interaction px-4 py-2 text-sm font-semibold ${tab === t ? "border-b-2 border-[#123c3d] text-[#123c3d]" : "text-slate-500 hover:text-slate-700"}`}
                 >
                   {t === "apa" ? `APA Rules (${checkResult.apa_findings.length})` : `Citations (${citationTotal})`}
                 </button>
@@ -759,10 +759,10 @@ export default function ReviewPage() {
                 <p className="text-sm font-semibold text-amber-800 mb-1">Multi-credit submission</p>
                 <p className="text-sm text-amber-700 mb-3">{pendingOversized.message}</p>
                 <div className="flex gap-3">
-                  <button onClick={() => runReview(true)} className="px-4 py-2 bg-amber-600 text-white text-sm font-semibold rounded hover:bg-amber-700 transition">
+                  <button onClick={() => runReview(true)} className="button-interaction rounded bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700">
                     Confirm — use {pendingOversized.credits_required} credits
                   </button>
-                  <button onClick={() => setPendingOversized(null)} className="px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm font-semibold rounded hover:bg-gray-50 transition">
+                  <button onClick={() => setPendingOversized(null)} className="button-secondary rounded border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">
                     Cancel
                   </button>
                 </div>
@@ -777,7 +777,7 @@ export default function ReviewPage() {
               <button
                 onClick={() => runReview(false)}
                 disabled={reviewing}
-                className="rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white shadow-sm transition hover:bg-[#0b3031] disabled:opacity-50"
+                className="button-interaction rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white hover:bg-[#0b3031] disabled:opacity-50"
               >
                 {reviewing ? "Running AI review…" : "Run AI polish (1 credit)"}
               </button>
@@ -818,7 +818,7 @@ export default function ReviewPage() {
                         />
                         <button
                           onClick={() => navigator.clipboard.writeText(buildAcceptedText())}
-                          className="mt-2 px-4 py-1.5 text-xs bg-green-600 text-white rounded hover:bg-green-700 transition"
+                          className="button-interaction mt-2 rounded bg-green-600 px-4 py-1.5 text-xs text-white hover:bg-green-700"
                         >
                           Copy to clipboard
                         </button>
