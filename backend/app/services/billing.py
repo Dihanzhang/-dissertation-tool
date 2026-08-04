@@ -22,12 +22,14 @@ def create_checkout_session(
     site_url: str,
 ) -> str:
     session = stripe_client.checkout.sessions.create(
-        mode="payment",
-        line_items=[{"price": price_id, "quantity": 1}],
-        client_reference_id=user.id,
-        customer_email=user.email,
-        success_url=f"{site_url.rstrip('/')}/checkout/success?session_id={{CHECKOUT_SESSION_ID}}",
-        cancel_url=f"{site_url.rstrip('/')}/checkout/cancel",
+        {
+            "mode": "payment",
+            "line_items": [{"price": price_id, "quantity": 1}],
+            "client_reference_id": user.id,
+            "customer_email": user.email,
+            "success_url": f"{site_url.rstrip('/')}/checkout/success?session_id={{CHECKOUT_SESSION_ID}}",
+            "cancel_url": f"{site_url.rstrip('/')}/checkout/cancel",
+        }
     )
     return session.url
 

@@ -7,10 +7,10 @@ import pytest
 
 class FakeCheckoutSessions:
     def __init__(self):
-        self.kwargs = None
+        self.params = None
 
-    def create(self, **kwargs):
-        self.kwargs = kwargs
+    def create(self, params):
+        self.params = params
         return type("Session", (), {"url": "https://checkout.stripe.test/session"})()
 
 
@@ -34,11 +34,11 @@ def test_checkout_uses_one_time_submission_pass_price():
     )
 
     assert url == "https://checkout.stripe.test/session"
-    assert stripe_client.checkout.sessions.kwargs["mode"] == "payment"
-    assert stripe_client.checkout.sessions.kwargs["line_items"] == [
+    assert stripe_client.checkout.sessions.params["mode"] == "payment"
+    assert stripe_client.checkout.sessions.params["line_items"] == [
         {"price": "price_1U0EGA1hGDXgltDgofSJbFBS", "quantity": 1}
     ]
-    assert stripe_client.checkout.sessions.kwargs["client_reference_id"] == "user-1"
+    assert stripe_client.checkout.sessions.params["client_reference_id"] == "user-1"
 
 
 @pytest.mark.asyncio

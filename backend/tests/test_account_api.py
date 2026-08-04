@@ -59,8 +59,8 @@ def test_checkout_requires_sign_in_and_returns_stripe_url(monkeypatch):
     from app.services.access import CurrentUser
 
     class Sessions:
-        def create(self, **kwargs):
-            assert kwargs["client_reference_id"] == "user-1"
+        def create(self, params):
+            assert params["client_reference_id"] == "user-1"
             return type("Session", (), {"url": "https://checkout.stripe.test/session"})()
 
     class Client:
