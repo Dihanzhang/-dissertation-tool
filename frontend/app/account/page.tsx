@@ -17,7 +17,7 @@ export default function AccountPage() {
   const [access, setAccess] = useState<Access | null>(null);
 
   useEffect(() => {
-    const accessToken = new URLSearchParams(window.location.hash.slice(1)).get("access_token") || "";
+    const accessToken = new URLSearchParams(window.location.hash.slice(1)).get("access_token") || sessionStorage.getItem("submission-pass-token") || "";
     setToken(accessToken);
     if (accessToken) sessionStorage.setItem("submission-pass-token", accessToken);
     if (accessToken) void loadAccess(accessToken);
@@ -48,9 +48,14 @@ export default function AccountPage() {
   }
 
   async function buyPass() {
-    const response = await fetch(`${API_BASE}/api/billing/checkout-session`, { method: "POST", headers: { Authorization: `Bearer ${token}` } });
-    if (!response.ok) { setNotice("Please sign in first, then try again."); return; }
-    window.location.assign((await response.json()).checkout_url);
+    setNotice("Opening secure checkout…");
+    try {
+      const response = await fetch(`${API_BASE}/api/billing/checkout-session`, { method: "POST", headers: { Authorization: `Bearer ${token}` } });
+      if (!response.ok) { setNotice("We could not open checkout. Your sign-in may have expired; please request a new link."); return; }
+      window.location.assign((await response.json()).checkout_url);
+    } catch {
+      setNotice("We could not open checkout. Please try again or email dihan.zhang@outlook.com.");
+    }
   }
 
   return <main className="mx-auto min-h-screen max-w-xl px-6 py-16">
