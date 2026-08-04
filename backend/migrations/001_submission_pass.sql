@@ -90,3 +90,12 @@ begin
   return true;
 end;
 $$;
+
+-- SECURITY DEFINER functions otherwise receive EXECUTE for PUBLIC by default.
+-- Only the backend's service-role connection may activate a paid pass.
+revoke all on function public.fulfil_submission_pass(
+  text, text, uuid, text, text, timestamptz, timestamptz
+) from public, anon, authenticated;
+grant execute on function public.fulfil_submission_pass(
+  text, text, uuid, text, text, timestamptz, timestamptz
+) to service_role;
