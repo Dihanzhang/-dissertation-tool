@@ -25,3 +25,13 @@ def test_settings_loads_supabase_server_configuration(monkeypatch):
     assert settings.supabase_url == "https://project.supabase.co"
     assert settings.supabase_anon_key == "anon-key"
     assert settings.supabase_service_role_key == "service-role-key"
+
+
+def test_production_rejects_wildcard_cors(monkeypatch):
+    from app.config import Settings
+
+    monkeypatch.setenv("ENVIRONMENT", "production")
+    monkeypatch.setenv("CORS_ORIGINS", "*")
+
+    with pytest.raises(ValueError, match="CORS_ORIGINS"):
+        Settings.from_env()
