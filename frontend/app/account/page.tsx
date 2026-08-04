@@ -13,6 +13,7 @@ export default function AccountPage() {
   const [email, setEmail] = useState("");
   const [token, setToken] = useState("");
   const [notice, setNotice] = useState("");
+  const [sending, setSending] = useState(false);
   const [access, setAccess] = useState<Access | null>(null);
 
   useEffect(() => {
@@ -30,12 +31,20 @@ export default function AccountPage() {
   async function sendSignIn(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!SUPABASE_URL || !SUPABASE_ANON_KEY) { setNotice("Email sign-in is being configured. Please try again shortly."); return; }
-    const response = await fetch(`${SUPABASE_URL}/auth/v1/otp`, {
-      method: "POST",
-      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ email, create_user: true, email_redirect_to: `${window.location.origin}/account` }),
-    });
-    setNotice(response.ok ? "Check your email for your secure sign-in link." : "We could not send the sign-in link. Please try again.");
+    setSending(true);
+    setNotice("Sending your secure sign-in link…");
+    try {
+      const response = await fetch(`${SUPABASE_URL}/auth/v1/otp`, {
+        method: "POST",
+        headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ email, create_user: true, email_redirect_to: `${window.location.origin}/account` }),
+      });
+      setNotice(response.ok ? "Check your email for your secure sign-in link." : "We could not send the sign-in link. Please try again.");
+    } catch {
+      setNotice("We could not send the sign-in link. Please check your connection and try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   async function buyPass() {
@@ -50,7 +59,7 @@ export default function AccountPage() {
     {!token ? <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6" onSubmit={sendSignIn}>
       <p>Enter your email and we’ll send a secure sign-in link.</p>
       <input required type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" className="w-full rounded-md border p-3" />
-      <button className="rounded-md bg-blue-700 px-5 py-3 font-semibold text-white">Email me a sign-in link</button>
+      <button disabled={sending} className="rounded-md bg-blue-700 px-5 py-3 font-semibold text-white disabled:opacity-60">{sending ? "Sending…" : "Email me a sign-in link"}</button>
     </form> : <section className="mt-8 rounded-xl bg-slate-50 p-6">
       {access?.can_submit ? <><p className="font-semibold text-emerald-700">Your Submission Pass is active.</p><p className="mt-2 text-slate-600">Expires {new Date(access.expires_at!).toLocaleDateString()}.</p><Link href="/review" className="mt-5 inline-block rounded-md bg-blue-700 px-5 py-3 font-semibold text-white">Start a review</Link></> : <><p className="font-semibold">No active Submission Pass</p><p className="mt-2 text-slate-600">AU$14.95 for 30 days of unlimited personal rechecks.</p><button onClick={buyPass} className="mt-5 rounded-md bg-blue-700 px-5 py-3 font-semibold text-white">Buy Submission Pass</button></>}
     </section>}
