@@ -6,6 +6,7 @@ from typing import Any
 
 import httpx
 
+from .access import BetaRedemption
 from .feedback import Feedback
 
 Request = Callable[..., Awaitable[tuple[int, Any]]]
@@ -56,6 +57,28 @@ class SupabasePassRepository:
         )
         if response_status not in (200, 201):
             raise RuntimeError("Could not save feedback.")
+
+    async def redeem_beta_invite(
+        self, *, user_id: str, email: str, at: datetime
+    ) -> BetaRedemption:
+        response_status, payload = await self._request(
+            "POST",
+            f"{self._base_url}/rpc/redeem_beta_invite",
+            headers=self._headers,
+            json={
+                "p_user_id": user_id,
+                "p_email": email.strip().lower(),
+                "p_now": at.isoformat(),
+            },
+        )
+        if response_status != 200:
+            raise RuntimeError("Could not redeem beta access.")
+        if not payload or not payload.get("redeemed"):
+            return BetaRedemption(redeemed=False, expires_at=None)
+        return BetaRedemption(
+            redeemed=True,
+            expires_at=datetime.fromisoformat(payload["expires_at"]),
+        )
 
     async def fulfil_submission_pass(
         self,

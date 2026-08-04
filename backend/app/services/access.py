@@ -18,8 +18,18 @@ class Entitlement:
     expires_at: datetime | None
 
 
+@dataclass(frozen=True)
+class BetaRedemption:
+    redeemed: bool
+    expires_at: datetime | None
+
+
 class PassRepository(Protocol):
     def find_active_pass(self, user_id: str, at: datetime) -> dict | None: ...
+
+    async def redeem_beta_invite(
+        self, *, user_id: str, email: str, at: datetime
+    ) -> BetaRedemption: ...
 
 
 def entitlement_for(user: CurrentUser, repo: PassRepository, at: datetime) -> Entitlement:

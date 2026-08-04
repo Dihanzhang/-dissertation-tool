@@ -16,20 +16,30 @@ export default function AccountPage() {
   const [sending, setSending] = useState(false);
   const [access, setAccess] = useState<Access | null>(null);
 
-  useEffect(() => {
-    const accessToken = new URLSearchParams(window.location.hash.slice(1)).get("access_token") || localStorage.getItem("submission-pass-token") || sessionStorage.getItem("submission-pass-token") || "";
-    setToken(accessToken);
-    if (accessToken) {
-      localStorage.setItem("submission-pass-token", accessToken);
-      sessionStorage.setItem("submission-pass-token", accessToken);
-    }
-    if (accessToken) void loadAccess(accessToken);
-  }, []);
-
-  async function loadAccess(activeToken = token) {
+  async function loadAccess(activeToken: string) {
     const response = await fetch(`${API_BASE}/api/account/entitlement`, { headers: { Authorization: `Bearer ${activeToken}` } });
     if (response.ok) setAccess(await response.json());
   }
+
+  useEffect(() => {
+    async function restoreSession() {
+      await Promise.resolve();
+      const accessToken = new URLSearchParams(window.location.hash.slice(1)).get("access_token") || localStorage.getItem("submission-pass-token") || sessionStorage.getItem("submission-pass-token") || "";
+      if (accessToken) {
+        localStorage.setItem("submission-pass-token", accessToken);
+        sessionStorage.setItem("submission-pass-token", accessToken);
+      }
+      if (accessToken && localStorage.getItem("beta-redemption-pending") === "true") {
+        window.location.replace(`/beta${window.location.hash}`);
+        return;
+      }
+      if (accessToken) {
+        setToken(accessToken);
+        await loadAccess(accessToken);
+      }
+    }
+    void restoreSession();
+  }, []);
 
   async function sendSignIn(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();

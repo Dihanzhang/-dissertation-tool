@@ -69,3 +69,31 @@ async def test_repository_fulfils_a_payment_through_the_atomic_database_function
     assert received["url"] == "https://project.supabase.co/rest/v1/rpc/fulfil_submission_pass"
     assert received["json"]["p_stripe_event_id"] == "evt_1"
     assert received["json"]["p_checkout_session_id"] == "cs_1"
+
+
+@pytest.mark.asyncio
+async def test_repository_redeems_an_invitation_with_a_normalized_email():
+    from app.services.supabase import SupabasePassRepository
+
+    received: dict[str, object] = {}
+
+    async def fake_request(method: str, url: str, **kwargs):
+        received.update({"method": method, "url": url, **kwargs})
+        return 200, {"redeemed": True, "expires_at": "2026-09-02T00:00:00+00:00"}
+
+    repo = SupabasePassRepository("https://project.supabase.co", "service-key", fake_request)
+    result = await repo.redeem_beta_invite(
+        user_id="00000000-0000-0000-0000-000000000001",
+        email=" Student@Example.edu ",
+        at=datetime(2026, 8, 3, tzinfo=UTC),
+    )
+
+    assert result.redeemed is True
+    assert result.expires_at == datetime(2026, 9, 2, tzinfo=UTC)
+    assert received["method"] == "POST"
+    assert received["url"] == "https://project.supabase.co/rest/v1/rpc/redeem_beta_invite"
+    assert received["json"] == {
+        "p_user_id": "00000000-0000-0000-0000-000000000001",
+        "p_email": "student@example.edu",
+        "p_now": "2026-08-03T00:00:00+00:00",
+    }
