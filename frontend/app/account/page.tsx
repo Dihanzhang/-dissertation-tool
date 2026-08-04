@@ -67,9 +67,9 @@ export default function AccountPage() {
     {!token ? <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6 text-slate-900" onSubmit={sendSignIn}>
       <p>Enter your email and we’ll send a secure sign-in link.</p>
       <input required type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" className="w-full rounded-md border p-3" />
-      <button disabled={sending} className="rounded-md bg-blue-700 px-5 py-3 font-semibold text-white disabled:opacity-60">{sending ? "Sending…" : "Email me a sign-in link"}</button>
+      <button disabled={sending} className="button-primary rounded-md px-5 py-3 font-semibold disabled:opacity-60">{sending ? "Sending…" : "Email me a sign-in link"}</button>
     </form> : <section className="mt-8 rounded-xl bg-slate-50 p-6 text-slate-900">
-      {access?.can_submit ? <><p className="font-semibold text-emerald-700">Your Submission Pass is active.</p><p className="mt-2 text-slate-600">Expires {new Date(access.expires_at!).toLocaleDateString()}.</p><Link href="/review" className="mt-5 inline-block rounded-md bg-blue-700 px-5 py-3 font-semibold text-white">Start a review</Link></> : <><p className="font-semibold">No active Submission Pass</p><p className="mt-2 text-slate-600">AU$14.95 for 30 days of unlimited personal rechecks.</p><button onClick={buyPass} className="mt-5 rounded-md bg-blue-700 px-5 py-3 font-semibold text-white">Buy Submission Pass</button></>}
+      {access?.can_submit ? <><p className="font-semibold text-emerald-700">Your Submission Pass is active.</p><p className="mt-2 text-slate-600">Expires {new Date(access.expires_at!).toLocaleDateString()}.</p><Link href="/review" className="button-primary mt-5 rounded-md px-5 py-3 font-semibold">Start a review</Link></> : <><p className="font-semibold">No active Submission Pass</p><p className="mt-2 text-slate-600">AU$14.95 for 30 days of unlimited personal rechecks.</p><button onClick={buyPass} className="button-primary mt-5 rounded-md px-5 py-3 font-semibold">Buy Submission Pass</button></>}
     </section>}
     {notice && <p role="status" className="mt-4 text-slate-700">{notice}</p>}
     <p className="mt-10 text-sm text-slate-600">Need help with your pass? <a className="underline" href="mailto:dihan.zhang@outlook.com">dihan.zhang@outlook.com</a></p>

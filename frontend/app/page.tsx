@@ -41,8 +41,8 @@ export default function LandingPage() {
           Check APA 7 alignment, citations and references, then review clarity while you remain in control of every change.
         </p>
         <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-          <Link href="/account" className="rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800">Get Submission Pass — AU$14.95</Link>
-          <a href="#how-it-works" className="rounded-lg border border-slate-300 px-6 py-3 font-semibold hover:bg-slate-50">How it works</a>
+          <Link href="/account" className="button-primary rounded-lg px-6 py-3 font-semibold">Get Submission Pass — AU$14.95</Link>
+          <a href="#how-it-works" className="button-secondary rounded-lg px-6 py-3 font-semibold">How it works</a>
         </div>
         <p className="mt-4 text-sm text-slate-500">One payment · 30 days of unlimited personal rechecks</p>
       </section>
@@ -70,7 +70,7 @@ export default function LandingPage() {
             <input name="contact" aria-label="Contact" placeholder="Email or contact (optional)" className="w-full rounded-md p-3 text-slate-900" />
             <input name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
             <textarea name="message" required minLength={10} maxLength={2000} aria-label="Feedback message" placeholder="Tell me what worked, what did not, or what you need." className="min-h-32 w-full rounded-md p-3 text-slate-900" />
-            <button disabled={status === "sending"} className="rounded-md bg-white px-5 py-3 font-semibold text-slate-900 disabled:opacity-60">{status === "sending" ? "Sending…" : "Send feedback"}</button>
+            <button disabled={status === "sending"} className="button-interaction rounded-md bg-white px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100 disabled:opacity-60">{status === "sending" ? "Sending…" : "Send feedback"}</button>
             {status === "sent" && <p role="status" className="text-emerald-300">Thank you — your message has been received.</p>}
             {status === "error" && <p role="alert" className="text-rose-300">Your message could not be sent. Please try again or email dihan.zhang@outlook.com.</p>}
           </form>
