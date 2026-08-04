@@ -1,12 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 export default function LandingPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  useEffect(() => {
+    if (window.location.hash.includes("access_token=")) {
+      window.location.replace(`/account${window.location.hash}`);
+    }
+  }, []);
 
   async function sendFeedback(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
