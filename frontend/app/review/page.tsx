@@ -9,7 +9,7 @@ const BETA_VERSION = process.env.NEXT_PUBLIC_BETA_VERSION || "Beta v0.1";
 const FEEDBACK_EMAIL = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL || "";
 
 function authHeaders(): Record<string, string> {
-  const token = typeof window === "undefined" ? "" : sessionStorage.getItem("submission-pass-token");
+  const token = typeof window === "undefined" ? "" : localStorage.getItem("submission-pass-token") || sessionStorage.getItem("submission-pass-token");
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 

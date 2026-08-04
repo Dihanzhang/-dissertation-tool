@@ -17,9 +17,12 @@ export default function AccountPage() {
   const [access, setAccess] = useState<Access | null>(null);
 
   useEffect(() => {
-    const accessToken = new URLSearchParams(window.location.hash.slice(1)).get("access_token") || sessionStorage.getItem("submission-pass-token") || "";
+    const accessToken = new URLSearchParams(window.location.hash.slice(1)).get("access_token") || localStorage.getItem("submission-pass-token") || sessionStorage.getItem("submission-pass-token") || "";
     setToken(accessToken);
-    if (accessToken) sessionStorage.setItem("submission-pass-token", accessToken);
+    if (accessToken) {
+      localStorage.setItem("submission-pass-token", accessToken);
+      sessionStorage.setItem("submission-pass-token", accessToken);
+    }
     if (accessToken) void loadAccess(accessToken);
   }, []);
 
