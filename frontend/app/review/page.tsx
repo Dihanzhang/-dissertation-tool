@@ -1,11 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useCallback, useRef } from "react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const BETA_VERSION = process.env.NEXT_PUBLIC_BETA_VERSION || "Beta v0.1";
 const FEEDBACK_EMAIL = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL || "";
+
+function authHeaders(): Record<string, string> {
+  const token = typeof window === "undefined" ? "" : sessionStorage.getItem("submission-pass-token");
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
 
 // ---------------------------------------------------------------------------
 // Types
@@ -354,7 +360,7 @@ export default function ReviewPage() {
       if (mode === "upload" && uploadedFile) {
         const form = new FormData();
         form.append("file", uploadedFile);
-        const res = await fetch(`${API_BASE}/api/check/docx`, { method: "POST", body: form });
+        const res = await fetch(`${API_BASE}/api/check/docx`, { method: "POST", body: form, headers: authHeaders() });
         if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
         data = await res.json();
         setSubmittedBodyText("");  // docx body managed server-side
@@ -363,7 +369,7 @@ export default function ReviewPage() {
         setSubmittedBodyText(body);
         const res = await fetch(`${API_BASE}/api/check/text`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/json", ...authHeaders() },
           body: JSON.stringify({ body_text: body, reference_text: refs, levenshtein_threshold: 2 }),
         });
         if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
@@ -387,7 +393,7 @@ export default function ReviewPage() {
     try {
       const form = new FormData();
       form.append("file", uploadedFile);
-      const res = await fetch(`${API_BASE}/api/check/docx/annotated`, { method: "POST", body: form });
+      const res = await fetch(`${API_BASE}/api/check/docx/annotated`, { method: "POST", body: form, headers: authHeaders() });
       if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
 
       const blob = await res.blob();
@@ -443,7 +449,7 @@ export default function ReviewPage() {
     try {
       const res = await fetch(`${API_BASE}/api/review`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...authHeaders() },
         body: JSON.stringify({
           body_text: text,
           request_id: requestId + (confirmed ? "_c" : ""),
@@ -516,6 +522,7 @@ export default function ReviewPage() {
       <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
 
         <div className="mx-auto mb-7 max-w-2xl border-b border-[#dce4db] pb-5 text-center">
+          <Link href="/account" className="text-sm font-semibold text-blue-700">Manage Submission Pass</Link>
           <h1 className="text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
             Review your document before submission
           </h1>

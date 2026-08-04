@@ -15,7 +15,10 @@ import math
 import os
 import re
 import tempfile
+from datetime import UTC, datetime
 from pathlib import Path
+
+import stripe
 
 # Load .env in development (no-op if python-dotenv not installed or file absent)
 try:
@@ -24,7 +27,7 @@ try:
 except ImportError:
     pass
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import Depends, FastAPI, File, Form, Header, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
@@ -40,6 +43,12 @@ from .modules.module3_citation_matcher import (
 from .modules.module1_editor import run_module1, EditSuggestion
 from .modules.text_splitter import count_words, split_into_chunks, estimate_chunks
 from .modules import credits as credit_store
+from .auth import SupabaseAuthenticator
+from .config import Settings
+from .services.access import CurrentUser
+from .services.billing import create_checkout_session, fulfil_completed_checkout
+from .services.feedback import FeedbackInput, validate_feedback
+from .services.supabase import SupabasePassRepository
 
 app = FastAPI(
     title="Dissertation APA 7 Review API",
@@ -48,7 +57,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # restrict in production
+    allow_origins=os.getenv("CORS_ORIGINS", "http://localhost:3000").split(","),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -59,6 +68,45 @@ WORD_CAP = int(os.getenv("WORD_CAP_PER_CREDIT", "5000"))
 FREE_TRIAL_CAP = int(os.getenv("FREE_TRIAL_WORD_CAP", "3000"))
 TEST_MODE = os.getenv("TEST_MODE", "false").lower() in ("true", "1", "yes")
 RULE_SET_VERSION = "apa-mp-comments-gap-fix"
+
+
+def _settings() -> Settings:
+    return Settings.from_env()
+
+
+async def get_current_user(authorization: str | None = Header(default=None)) -> CurrentUser:
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="Sign in is required.")
+    settings = _settings()
+    if not settings.supabase_url or not settings.supabase_anon_key:
+        raise HTTPException(status_code=503, detail="Sign-in is not configured yet.")
+    return await SupabaseAuthenticator(settings.supabase_url, settings.supabase_anon_key).verify(
+        authorization.removeprefix("Bearer ")
+    )
+
+
+def _pass_repository() -> SupabasePassRepository:
+    settings = _settings()
+    if not settings.supabase_url or not settings.supabase_service_role_key:
+        raise HTTPException(status_code=503, detail="Submission Pass access is not configured yet.")
+    return SupabasePassRepository(settings.supabase_url, settings.supabase_service_role_key)
+
+
+def _stripe_client() -> stripe.StripeClient:
+    settings = _settings()
+    if not settings.stripe_secret_key or not settings.stripe_price_id:
+        raise HTTPException(status_code=503, detail="Payments are not configured yet.")
+    return stripe.StripeClient(settings.stripe_secret_key)
+
+
+async def require_active_pass(user: CurrentUser = Depends(get_current_user)) -> CurrentUser:
+    active_pass = await _pass_repository().find_active_pass(user.id, datetime.now(UTC))
+    if active_pass is None:
+        raise HTTPException(
+            status_code=402,
+            detail="An active Submission Pass is required for new checks.",
+        )
+    return user
 
 
 def _cfg():
@@ -73,6 +121,13 @@ class TextCheckRequest(BaseModel):
     body_text: str
     reference_text: str = ""
     levenshtein_threshold: int = 2
+
+
+class FeedbackRequest(BaseModel):
+    name: str = ""
+    contact: str = ""
+    message: str
+    website: str = ""
 
 
 class FindingOut(BaseModel):
@@ -624,8 +679,73 @@ async def health():
     }
 
 
+@app.get("/api/account/entitlement")
+async def account_entitlement(user: CurrentUser = Depends(get_current_user)):
+    """Return access state without exposing payment or document data."""
+    active_pass = await _pass_repository().find_active_pass(user.id, datetime.now(UTC))
+    if active_pass is None:
+        return {"can_submit": False, "status": "none", "expires_at": None}
+    return {"can_submit": True, "status": "active", "expires_at": active_pass["expires_at"]}
+
+
+@app.post("/api/billing/checkout-session")
+async def create_submission_pass_checkout(user: CurrentUser = Depends(get_current_user)):
+    settings = _settings()
+    if not settings.stripe_price_id:
+        raise HTTPException(status_code=503, detail="Payments are not configured yet.")
+    return {
+        "checkout_url": create_checkout_session(
+            user=user,
+            stripe_client=_stripe_client(),
+            price_id=settings.stripe_price_id,
+            site_url=settings.site_url,
+        )
+    }
+
+
+@app.post("/api/billing/webhook")
+async def stripe_webhook(request: Request, stripe_signature: str | None = Header(default=None)):
+    settings = _settings()
+    if not settings.stripe_webhook_secret:
+        raise HTTPException(status_code=503, detail="Stripe webhook is not configured yet.")
+    if not stripe_signature:
+        raise HTTPException(status_code=400, detail="Missing Stripe signature.")
+    try:
+        event = stripe.Webhook.construct_event(
+            await request.body(), stripe_signature, settings.stripe_webhook_secret
+        )
+    except (ValueError, stripe.SignatureVerificationError):
+        raise HTTPException(status_code=400, detail="Invalid Stripe webhook signature.")
+
+    if event["type"] != "checkout.session.completed":
+        return {"received": True, "activated": False}
+    try:
+        activated = await fulfil_completed_checkout(
+            event_id=event["id"],
+            checkout_session=event["data"]["object"],
+            repository=_pass_repository(),
+            now=datetime.now(UTC),
+            pass_duration_days=settings.pass_duration_days,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    return {"received": True, "activated": activated}
+
+
+@app.post("/api/feedback", status_code=201)
+async def submit_feedback(req: FeedbackRequest):
+    try:
+        feedback = validate_feedback(
+            FeedbackInput(name=req.name, contact=req.contact, message=req.message, website=req.website)
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc))
+    await _pass_repository().save_feedback(feedback)
+    return {"received": True}
+
+
 @app.post("/api/check/text", response_model=CheckResponse)
-async def check_text(req: TextCheckRequest):
+async def check_text(req: TextCheckRequest, _: CurrentUser = Depends(require_active_pass)):
     """Module 2 + 3 on plain text — free, no LLM."""
     cfg = _cfg()
     prose_cfg = cfg.get("prose_rules", {})
@@ -666,6 +786,7 @@ async def check_docx(
     file: UploadFile = File(...),
     reference_text: str = Form(default=""),
     levenshtein_threshold: int = Form(default=2),
+    _: CurrentUser = Depends(require_active_pass),
 ):
     """Module 2 + 3 on an uploaded .docx — free. Uploaded file deleted after processing."""
     if not file.filename or not file.filename.endswith(".docx"):
@@ -728,6 +849,7 @@ async def check_docx_annotated(
     file: UploadFile = File(...),
     reference_text: str = Form(default=""),
     levenshtein_threshold: int = Form(default=2),
+    _: CurrentUser = Depends(require_active_pass),
 ):
     """Return a copy of the uploaded .docx with findings highlighted and summarized."""
     if not file.filename or not file.filename.endswith(".docx"):
@@ -783,7 +905,7 @@ async def check_docx_annotated(
 
 
 @app.post("/api/review/estimate", response_model=EstimateResponse)
-async def review_estimate(req: EstimateRequest):
+async def review_estimate(req: EstimateRequest, _: CurrentUser = Depends(require_active_pass)):
     """Return word count and credit cost estimate. No LLM call — free."""
     word_count = count_words(req.body_text)
     cap = FREE_TRIAL_CAP if req.tier == "free" else WORD_CAP
@@ -800,7 +922,7 @@ async def review_estimate(req: EstimateRequest):
 
 
 @app.post("/api/review", response_model=ReviewResponse)
-async def review(req: ReviewRequest):
+async def review(req: ReviewRequest, _: CurrentUser = Depends(require_active_pass)):
     """
     Module 1 — LLM-based clarity/voice editing, metered by credits.
 

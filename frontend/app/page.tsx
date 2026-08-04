@@ -1,107 +1,75 @@
+"use client";
+
 import Link from "next/link";
+import { FormEvent, useState } from "react";
+
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 export default function LandingPage() {
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  async function sendFeedback(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStatus("sending");
+    const form = new FormData(event.currentTarget);
+    try {
+      const response = await fetch(`${API_BASE}/api/feedback`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(form)),
+      });
+      if (!response.ok) throw new Error("Could not send feedback");
+      event.currentTarget.reset();
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero */}
-      <section className="max-w-3xl mx-auto px-6 py-20 text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Dissertation APA&nbsp;7 Review Assistant
-        </h1>
-        <p className="text-lg text-gray-600 mb-2">
-          Doctoral writing review, APA&nbsp;7 alignment, citation/reference
-          checking, and professor-rule compliance.
+    <main className="min-h-screen bg-white text-slate-900">
+      <section className="mx-auto max-w-4xl px-6 py-20 text-center">
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">APA 7 dissertation review</p>
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">A careful final review before you submit.</h1>
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+          Check APA 7 alignment, citations and references, then review clarity while you remain in control of every change.
         </p>
-        <p className="text-base text-gray-500 mb-8">
-          Flags and suggests — you approve every change. Designed to stay on
-          the right side of university academic-integrity policies.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Link
-            href="/review"
-            className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
-          >
-            Try one section free
-          </Link>
-          <a
-            href="#pricing"
-            className="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition"
-          >
-            See pricing
-          </a>
+        <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+          <Link href="/account" className="rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800">Get Submission Pass — AU$14.95</Link>
+          <a href="#how-it-works" className="rounded-lg border border-slate-300 px-6 py-3 font-semibold hover:bg-slate-50">How it works</a>
         </div>
+        <p className="mt-4 text-sm text-slate-500">One payment · 30 days of unlimited personal rechecks</p>
+      </section>
 
-        {/* Data notice */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-800 text-left">
-          <strong>Data handling:</strong> Your uploaded text is processed to
-          generate your review and then deleted. It is not used to train models
-          and is not retained.
+      <section id="how-it-works" className="bg-slate-50 py-14">
+        <div className="mx-auto grid max-w-4xl gap-6 px-6 md:grid-cols-3">
+          {["Sign in with your email", "Buy one Submission Pass", "Recheck your own dissertation as you revise"].map((item, index) => <div className="rounded-xl bg-white p-6 shadow-sm" key={item}><p className="font-semibold text-blue-700">0{index + 1}</p><p className="mt-3 text-lg font-semibold">{item}</p></div>)}
         </div>
       </section>
 
-      {/* Feature list */}
-      <section className="max-w-3xl mx-auto px-6 pb-16">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-          What it checks (free — no login required)
-        </h2>
-        <ul className="space-y-3 text-gray-700">
-          {[
-            "APA 7 heading levels (Levels 1–5, skipped levels, headings with no body text)",
-            "Numbers: spelled-out vs numeral rule, with unit/statistic/table exemptions",
-            'Demonstrative pronouns as bare subjects (“This shows” flagged; “This study” not)',
-            "Personal pronouns in author prose — softened in positionality/reflexivity sections",
-            "Banned words and expeditionary verbs — in author prose only, never inside quotes",
-            "Repeated narrative citations within the same paragraph (APA §8.16)",
-            "Citation–reference cross-matching: missing, uncited, year mismatches",
-            "Spelling mismatches between citation and reference (Levenshtein ≤ 2, same year)",
-            "Co-author-only soft flags (e.g. Davis as co-author but not first author)",
-            "Compound and group author parsing (Al Abri, APA, Van den Berg)",
-          ].map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="text-blue-500 mt-0.5">✓</span>
-              <span>{item}</span>
-            </li>
-          ))}
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <h2 className="text-2xl font-bold">What your pass includes</h2>
+        <ul className="mt-6 grid gap-3 text-slate-700 sm:grid-cols-2">
+          {["APA 7 and reference-list checks", "Citation–reference matching", "Annotated DOCX download", "AI-assisted clarity review", "Unlimited personal rechecks for 30 days", "Prior results remain visible after expiry"].map((item) => <li key={item}>✓ {item}</li>)}
         </ul>
+        <p className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">This tool supports your own writing. It does not guarantee APA compliance or grades, and it does not replace your supervisor or university requirements.</p>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="bg-gray-50 py-16">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Pricing
-          </h2>
-          <div className="inline-block bg-white border border-gray-200 rounded-xl p-8 shadow-sm text-left">
-            <p className="text-3xl font-bold text-gray-900 mb-1">$14.99</p>
-            <p className="text-gray-600 mb-4">
-              10 AI-assisted reviews of up to 5,000 words each — use them
-              across one document or many, in any order.
-            </p>
-            <ul className="text-sm text-gray-600 space-y-1 mb-6">
-              <li>› Re-running a revised section uses one review</li>
-              <li>› APA rule-checking is always free (no credit used)</li>
-              <li>› Credits are non-expiring at launch</li>
-            </ul>
-            <Link
-              href="/review"
-              className="block text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
-            >
-              Try one section free first
-            </Link>
-          </div>
+      <section id="feedback" className="bg-slate-900 py-16 text-white">
+        <div className="mx-auto max-w-xl px-6">
+          <h2 className="text-2xl font-bold">Share your experience</h2>
+          <p className="mt-2 text-slate-300">Your feedback helps improve the tool. Name and contact details are optional.</p>
+          <form className="mt-6 space-y-4" onSubmit={sendFeedback}>
+            <input name="name" aria-label="Name" placeholder="Name (optional)" className="w-full rounded-md p-3 text-slate-900" />
+            <input name="contact" aria-label="Contact" placeholder="Email or contact (optional)" className="w-full rounded-md p-3 text-slate-900" />
+            <input name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+            <textarea name="message" required minLength={10} maxLength={2000} aria-label="Feedback message" placeholder="Tell me what worked, what did not, or what you need." className="min-h-32 w-full rounded-md p-3 text-slate-900" />
+            <button disabled={status === "sending"} className="rounded-md bg-white px-5 py-3 font-semibold text-slate-900 disabled:opacity-60">{status === "sending" ? "Sending…" : "Send feedback"}</button>
+            {status === "sent" && <p role="status" className="text-emerald-300">Thank you — your message has been received.</p>}
+            {status === "error" && <p role="alert" className="text-rose-300">Your message could not be sent. Please try again or email dihan.zhang@outlook.com.</p>}
+          </form>
+          <p className="mt-8 text-sm text-slate-300">Need help with your pass? <a className="underline" href="mailto:dihan.zhang@outlook.com">dihan.zhang@outlook.com</a></p>
         </div>
-      </section>
-
-      {/* Limitation notice */}
-      <section className="max-w-3xl mx-auto px-6 py-10 text-sm text-gray-500">
-        <p>
-          <strong>Limitation notice:</strong> This tool supports writing review
-          and APA alignment. It does not replace supervisor feedback,
-          institutional review, or professional editorial judgment. Source
-          verification depends on available reference metadata, uploaded
-          sources, abstracts, or full text.
-        </p>
       </section>
     </main>
   );

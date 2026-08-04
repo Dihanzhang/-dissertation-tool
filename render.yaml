@@ -9,4 +9,4 @@ services:
     healthCheckPath: /api/health
     envVars:
       - key: TEST_MODE
-        value: "true"
+        value: "false"
