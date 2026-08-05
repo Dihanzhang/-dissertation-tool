@@ -1,119 +1,111 @@
-# Private beta links — how to run the beta
+# Beta links — how to give a tester free access
 
-This replaces the old email sign-in beta. Testers no longer receive a magic-link
-email, no longer create an account, and no longer pay. Each tester gets one
-private web address that works on its own for 30 days.
+A beta link is one web address that lets one person use the review tool free for
+30 days. No sign-in, no payment, no account.
 
-Everything below is done by you. Testers only ever click their link.
+You do everything from the Supabase website. You never need to open a terminal.
 
 ---
 
-## One-time setup: add the new table to Supabase
+## Step 1 — Set this up (once only)
 
-You only do this once.
-
-1. Open [supabase.com](https://supabase.com) and sign in.
-2. Open your project for the dissertation tool.
-3. In the left sidebar, click **SQL Editor**.
+1. Go to **supabase.com** and sign in.
+2. Click your dissertation tool project.
+3. In the menu on the left, click **SQL Editor**.
 4. Click **New query**.
-5. Open the file `backend/migrations/003_beta_access_links.sql` in this repo,
-   copy everything in it, and paste it into the query box.
+5. Open the file `backend/migrations/003_beta_access_links.sql` from this
+   project, select all of it, copy it, and paste it into the big empty box.
 6. Click **Run**.
 
-You should see a success message. If it says something already exists, the
-migration has already been applied and you can move on.
-
-Nothing else in Supabase needs to change. Payments and paid passes are untouched.
+You should see "Success". You never have to do this step again.
 
 ---
 
-## Create a link for one tester
+## Step 2 — Make a link for a tester
 
-Run this on your own computer, from the `backend` folder:
+1. In Supabase, click **SQL Editor**, then **New query**.
+2. Paste this in, changing `tester-a` to a short nickname for that person:
 
-```
-python -m app.tools.beta_links create --label tester-a
-```
-
-`--label` is just a short note so you can tell links apart later. Use something
-like `tester-a`, `usc-1`, or `supervisor`. **Do not put an email address in the
-label** — the command will refuse it.
-
-The command prints the link **once**, like this:
-
-```
-Private beta link (shown once — copy it now, it is not recoverable):
-  https://apa7.aithrival.com/beta/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-  link id:    3f7c... (use this to revoke)
-  label:      tester-a
-  expires at: 2026-09-04T...
+```sql
+select 'https://apa7.aithrival.com/beta/' || create_beta_access_link('tester-a') as link;
 ```
 
-Copy the link and the link id somewhere safe before closing the window. The link
-itself cannot be shown again — only a scrambled version is stored — so if you
-lose it, create a new one and revoke the old one.
+3. Click **Run**.
 
-If your `SITE_URL` is not set to the live site, add the address yourself:
+A result appears with one box containing the full web address. **Copy it now and
+save it somewhere.** You cannot look it up again later — the system deliberately
+does not keep a copy. If you lose it, just make a new one.
+
+Use a nickname you'll recognise, like `tester-a`, `jane-supervisor`, or
+`usc-group-1`. **Do not use an email address** — it will refuse.
+
+---
+
+## Step 3 — Send it
+
+Send the address to your tester by email or message, with something like:
+
+> Here's your personal link to the tool. Please don't forward it to anyone else.
+> Just click it and you can start straight away — nothing to sign up for and
+> nothing to pay. It works for 30 days.
+
+That's it. When they click it, the tool opens and they can use it.
+
+---
+
+## To see who has a link
+
+**SQL Editor** → **New query** → paste → **Run**:
+
+```sql
+select label, status, expires_at from beta_access_links order by created_at desc;
+```
+
+This shows the nicknames, whether each link still works, and when it stops
+working. It does not show the links themselves.
+
+---
+
+## To switch a link off
+
+If a link gets shared around, or someone finishes early. Change `tester-a` to
+that person's nickname:
+
+```sql
+update beta_access_links set status = 'revoked', revoked_at = now()
+where label = 'tester-a';
+```
+
+Click **Run**. It stops working immediately.
+
+---
+
+## Good to know
+
+- **Links expire on their own after 30 days.** There is nothing to cancel and
+  nobody gets charged, ever.
+- **Treat a link like a password.** Anyone holding the address can use the tool.
+  Send it directly to one person, don't post it publicly, and switch it off if it
+  spreads.
+- **Testers can't reach anything to do with money.** They cannot see the account
+  page, cannot buy anything, and cannot affect paying customers.
+- **You are not storing anyone's email.** Each link is recorded under the
+  nickname you chose and a random internal number.
+- **Nobody can recover a link from the database**, including you. Only a
+  scrambled version is kept, which is what makes it safe to store.
+
+---
+
+## For developers
+
+There is also a command-line equivalent, if the Supabase service-role key is
+present in `backend/.env`:
 
 ```
 python -m app.tools.beta_links create --label tester-a --site https://apa7.aithrival.com
-```
-
----
-
-## Send the link
-
-Send it to the tester however you like — email, Teams, a message. Tell them:
-
-> This link is personal, please don't forward or post it. Just open it and you
-> can start reviewing straight away. No sign-in, no payment. It works for 30 days.
-
-Because there is no email step, Outlook and USC mail scanners cannot break it.
-
----
-
-## See which links exist
-
-```
 python -m app.tools.beta_links list
+python -m app.tools.beta_links revoke --id <link id>
 ```
 
-This shows each link's id, label, status, and expiry date. It never shows the
-link itself.
-
----
-
-## Revoke a link
-
-If a link is shared around, or a tester finishes early:
-
-```
-python -m app.tools.beta_links revoke --id 3f7c...
-```
-
-Use the link id from `create` or `list`. It takes effect immediately — the next
-time that person loads the page, they are locked out.
-
----
-
-## What testers can and cannot do
-
-They **can** run APA checks, upload documents, and download reviewed documents,
-free, for 30 days.
-
-They **cannot** reach the account page, buy anything, or affect any paying
-customer. Their access expires on its own after 30 days with nothing to cancel.
-
----
-
-## Things worth knowing
-
-- A private link is a secret in a web address. Anyone who has the address has the
-  access, so treat it like a password: send it directly, don't post it anywhere
-  public, and revoke it if it spreads. Web addresses can also appear in server
-  logs and browser history, which is why every link expires and can be revoked.
-- Only a scrambled (hashed) version of each link is stored, so nobody — including
-  anyone who could read the database — can recover a working link from Supabase.
-- Testers are recorded by a random internal id, never by email address.
-- The `/beta` address is not linked from the public site.
+It does the same thing as the SQL above: generates 32 random bytes, stores only
+the SHA-256 hash, and prints the raw link once.

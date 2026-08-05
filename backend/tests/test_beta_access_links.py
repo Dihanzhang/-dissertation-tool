@@ -155,6 +155,21 @@ def test_migration_stores_no_raw_tokens_and_is_locked_to_service_role():
     assert "grant all on table public.beta_access_links to service_role" in migration
 
 
+def test_sql_link_creator_matches_the_token_format_the_api_accepts():
+    """Links made in the Supabase SQL editor must pass is_beta_token_shaped()."""
+    migration = (Path(__file__).parents[1] / "migrations" / "003_beta_access_links.sql").read_text()
+
+    assert "create or replace function public.create_beta_access_link" in migration
+    # 32 random bytes, base64 with padding stripped, made URL-safe -> 43 chars of [A-Za-z0-9_-]
+    assert "gen_random_bytes(32)" in migration
+    assert "rtrim(encode(gen_random_bytes(32), 'base64'), '=')" in migration
+    assert "'+/', '-_'" in migration
+    # stored hashed, never raw, and matching hash_beta_token()
+    assert "encode(digest(new_secret, 'sha256'), 'hex')" in migration
+    assert "now() + interval '30 days'" in migration
+    assert "revoke all on function public.create_beta_access_link(text) from public, anon, authenticated" in migration
+
+
 def test_beta_link_default_duration_is_thirty_days():
     from app.services.beta_links import beta_link_expiry
 
