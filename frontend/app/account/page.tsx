@@ -14,8 +14,6 @@ export default function AccountPage() {
   const [token, setToken] = useState("");
   const [notice, setNotice] = useState("");
   const [sending, setSending] = useState(false);
-  const [codeSent, setCodeSent] = useState(false);
-  const [code, setCode] = useState("");
   const [access, setAccess] = useState<Access | null>(null);
 
   async function loadAccess(activeToken: string) {
@@ -43,50 +41,16 @@ export default function AccountPage() {
     event.preventDefault();
     if (!SUPABASE_URL || !SUPABASE_ANON_KEY) { setNotice("Email sign-in is being configured. Please try again shortly."); return; }
     setSending(true);
-    setNotice("Sending your sign-in code…");
+    setNotice("Sending your secure sign-in link…");
     try {
-      // A code, not a link: email security scanners cannot use up a number.
       const response = await fetch(`${SUPABASE_URL}/auth/v1/otp`, {
         method: "POST",
         headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ email, create_user: true }),
+        body: JSON.stringify({ email, create_user: true, email_redirect_to: `${window.location.origin}/account` }),
       });
-      if (response.ok) {
-        setCodeSent(true);
-        setNotice("We emailed you a 6-digit code. Enter it below. It expires in 1 hour.");
-      } else {
-        const problem = await response.json().catch(() => ({}));
-        setNotice(problem?.error_code === "over_email_send_rate_limit"
-          ? "Too many sign-in emails have been sent in the last hour. Please wait a few minutes and try again."
-          : "We could not send the code. Please check the address and try again.");
-      }
+      setNotice(response.ok ? "Check your email for your secure sign-in link." : "We could not send the sign-in link. Please try again.");
     } catch {
-      setNotice("We could not send the code. Please check your connection and try again.");
-    } finally {
-      setSending(false);
-    }
-  }
-
-  async function verifyCode(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setSending(true);
-    setNotice("Checking your code…");
-    try {
-      const response = await fetch(`${SUPABASE_URL}/auth/v1/verify`, {
-        method: "POST",
-        headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ email, token: code.trim(), type: "email" }),
-      });
-      if (!response.ok) { setNotice("That code was not correct or has expired. Please check it or request a new one."); return; }
-      const session = await response.json();
-      const accessToken = session.access_token as string;
-      localStorage.setItem("submission-pass-token", accessToken);
-      sessionStorage.setItem("submission-pass-token", accessToken);
-      setToken(accessToken);
-      setNotice("");
-      await loadAccess(accessToken);
-    } catch {
-      setNotice("We could not check your code. Please check your connection and try again.");
+      setNotice("We could not send the sign-in link. Please check your connection and try again.");
     } finally {
       setSending(false);
     }
@@ -106,16 +70,11 @@ export default function AccountPage() {
   return <main className="mx-auto min-h-screen max-w-xl px-6 py-16">
     <Link href="/" className="text-sm font-semibold text-blue-700">← Dissertation Review</Link>
     <h1 className="mt-8 text-3xl font-bold">Your Submission Pass</h1>
-    {!token ? (codeSent ? <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6 text-slate-900" onSubmit={verifyCode}>
-      <p>Enter the 6-digit code we emailed to <span className="font-semibold">{email}</span>.</p>
-      <input required inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]*" maxLength={6} value={code} onChange={(event) => setCode(event.target.value.replace(/\D/g, ""))} placeholder="123456" className="w-full rounded-md border p-3 text-center text-2xl tracking-[0.4em]" />
-      <button disabled={sending || code.length < 6} className="button-primary rounded-md px-5 py-3 font-semibold disabled:opacity-60">{sending ? "Checking…" : "Sign in"}</button>
-      <button type="button" onClick={() => { setCodeSent(false); setCode(""); setNotice(""); }} className="block text-sm text-slate-600 underline">Use a different email address</button>
-    </form> : <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6 text-slate-900" onSubmit={sendSignIn}>
-      <p>Enter your email and we’ll send you a 6-digit sign-in code.</p>
+    {!token ? <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6 text-slate-900" onSubmit={sendSignIn}>
+      <p>Enter your email and we’ll send a secure sign-in link.</p>
       <input required type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" className="w-full rounded-md border p-3" />
-      <button disabled={sending} className="button-primary rounded-md px-5 py-3 font-semibold disabled:opacity-60">{sending ? "Sending…" : "Email me a sign-in code"}</button>
-    </form>) : <section className="mt-8 rounded-xl bg-slate-50 p-6 text-slate-900">
+      <button disabled={sending} className="button-primary rounded-md px-5 py-3 font-semibold disabled:opacity-60">{sending ? "Sending…" : "Email me a sign-in link"}</button>
+    </form> : <section className="mt-8 rounded-xl bg-slate-50 p-6 text-slate-900">
       {access?.can_submit ? <><p className="font-semibold text-emerald-700">Your Submission Pass is active.</p><p className="mt-2 text-slate-600">Expires {new Date(access.expires_at!).toLocaleDateString()}.</p><Link href="/review" className="button-primary mt-5 rounded-md px-5 py-3 font-semibold">Start a review</Link></> : <><p className="font-semibold">No active Submission Pass</p><p className="mt-2 text-slate-600">AU$14.95 for 30 days of unlimited personal rechecks.</p><button onClick={buyPass} className="button-primary mt-5 rounded-md px-5 py-3 font-semibold">Buy Submission Pass</button></>}
     </section>}
     {notice && <p role="status" className="mt-4 text-slate-700">{notice}</p>}
