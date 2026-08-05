@@ -5,3 +5,12 @@
 
 [build.environment]
   NEXT_PUBLIC_BETA_VERSION = "Beta v0.1"
+
+# Private beta links are /beta/<token>. The exported site has no page per token,
+# so every one of them is served by the single /beta page, which reads the token
+# from the URL. This is a rewrite, not a redirect: the token stays in the path
+# long enough for the page to read it, and is never sent to another host.
+[[redirects]]
+  from = "/beta/*"
+  to = "/beta.html"
+  status = 200

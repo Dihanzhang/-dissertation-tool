@@ -72,28 +72,48 @@ async def test_repository_fulfils_a_payment_through_the_atomic_database_function
 
 
 @pytest.mark.asyncio
-async def test_repository_redeems_an_invitation_with_a_normalized_email():
+async def test_repository_creates_a_beta_link_without_sending_the_raw_secret():
     from app.services.supabase import SupabasePassRepository
 
     received: dict[str, object] = {}
 
     async def fake_request(method: str, url: str, **kwargs):
         received.update({"method": method, "url": url, **kwargs})
-        return 200, {"redeemed": True, "expires_at": "2026-09-02T00:00:00+00:00"}
+        return 201, [{"id": "link-1", "label": "tester-a", "expires_at": "2026-09-04T00:00:00+00:00"}]
 
     repo = SupabasePassRepository("https://project.supabase.co", "service-key", fake_request)
-    result = await repo.redeem_beta_invite(
-        user_id="00000000-0000-0000-0000-000000000001",
-        email=" Student@Example.edu ",
-        at=datetime(2026, 8, 3, tzinfo=UTC),
+    link = await repo.create_beta_access_link(
+        token_hash="a-sha256-hash",
+        expires_at=datetime(2026, 9, 4, tzinfo=UTC),
+        label="tester-a",
     )
 
-    assert result.redeemed is True
-    assert result.expires_at == datetime(2026, 9, 2, tzinfo=UTC)
+    assert link["id"] == "link-1"
     assert received["method"] == "POST"
-    assert received["url"] == "https://project.supabase.co/rest/v1/rpc/redeem_beta_invite"
+    assert received["url"] == "https://project.supabase.co/rest/v1/beta_access_links"
     assert received["json"] == {
-        "p_user_id": "00000000-0000-0000-0000-000000000001",
-        "p_email": "student@example.edu",
-        "p_now": "2026-08-03T00:00:00+00:00",
+        "token_hash": "a-sha256-hash",
+        "expires_at": "2026-09-04T00:00:00+00:00",
+        "label": "tester-a",
     }
+
+
+@pytest.mark.asyncio
+async def test_repository_revokes_a_beta_link_by_id():
+    from app.services.supabase import SupabasePassRepository
+
+    received: dict[str, object] = {}
+
+    async def fake_request(method: str, url: str, **kwargs):
+        received.update({"method": method, "url": url, **kwargs})
+        return 200, [{"id": "link-1"}]
+
+    repo = SupabasePassRepository("https://project.supabase.co", "service-key", fake_request)
+    revoked = await repo.revoke_beta_access_link(
+        link_id="link-1", at=datetime(2026, 8, 5, tzinfo=UTC)
+    )
+
+    assert revoked is True
+    assert received["method"] == "PATCH"
+    assert received["params"] == {"id": "eq.link-1"}
+    assert received["json"]["status"] == "revoked"

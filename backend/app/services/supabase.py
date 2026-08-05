@@ -6,7 +6,6 @@ from typing import Any
 
 import httpx
 
-from .access import BetaRedemption
 from .feedback import Feedback
 
 Request = Callable[..., Awaitable[tuple[int, Any]]]
@@ -58,27 +57,65 @@ class SupabasePassRepository:
         if response_status not in (200, 201):
             raise RuntimeError("Could not save feedback.")
 
-    async def redeem_beta_invite(
-        self, *, user_id: str, email: str, at: datetime
-    ) -> BetaRedemption:
+    async def find_active_beta_link(self, token_hash: str, at: datetime) -> dict | None:
         response_status, payload = await self._request(
-            "POST",
-            f"{self._base_url}/rpc/redeem_beta_invite",
+            "GET",
+            f"{self._base_url}/beta_access_links",
             headers=self._headers,
-            json={
-                "p_user_id": user_id,
-                "p_email": email.strip().lower(),
-                "p_now": at.isoformat(),
+            params={
+                "select": "subject_id,expires_at",
+                "token_hash": f"eq.{token_hash}",
+                "status": "eq.active",
+                "expires_at": f"gt.{at.isoformat()}",
+                "limit": "1",
             },
         )
         if response_status != 200:
-            raise RuntimeError("Could not redeem beta access.")
-        if not payload or not payload.get("redeemed"):
-            return BetaRedemption(redeemed=False, expires_at=None)
-        return BetaRedemption(
-            redeemed=True,
-            expires_at=datetime.fromisoformat(payload["expires_at"]),
+            raise RuntimeError("Could not read beta access.")
+        return payload[0] if payload else None
+
+    async def create_beta_access_link(
+        self, *, token_hash: str, expires_at: datetime, label: str | None
+    ) -> dict:
+        response_status, payload = await self._request(
+            "POST",
+            f"{self._base_url}/beta_access_links",
+            headers={**self._headers, "Prefer": "return=representation"},
+            json={
+                "token_hash": token_hash,
+                "expires_at": expires_at.isoformat(),
+                "label": label or None,
+            },
         )
+        if response_status not in (200, 201):
+            raise RuntimeError("Could not create the beta access link.")
+        return payload[0]
+
+    async def list_beta_access_links(self) -> list[dict]:
+        response_status, payload = await self._request(
+            "GET",
+            f"{self._base_url}/beta_access_links",
+            headers=self._headers,
+            params={
+                "select": "id,label,status,expires_at,created_at,revoked_at",
+                "order": "created_at.desc",
+            },
+        )
+        if response_status != 200:
+            raise RuntimeError("Could not list beta access links.")
+        return payload or []
+
+    async def revoke_beta_access_link(self, *, link_id: str, at: datetime) -> bool:
+        response_status, payload = await self._request(
+            "PATCH",
+            f"{self._base_url}/beta_access_links",
+            headers={**self._headers, "Prefer": "return=representation"},
+            params={"id": f"eq.{link_id}"},
+            json={"status": "revoked", "revoked_at": at.isoformat()},
+        )
+        if response_status not in (200, 204):
+            raise RuntimeError("Could not revoke the beta access link.")
+        return bool(payload)
 
     async def fulfil_submission_pass(
         self,

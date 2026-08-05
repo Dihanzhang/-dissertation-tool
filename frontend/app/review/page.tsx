@@ -9,7 +9,13 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const BETA_VERSION = process.env.NEXT_PUBLIC_BETA_VERSION || "Beta v0.1";
 const FEEDBACK_EMAIL = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL || "";
 
+function betaToken(): string {
+  return typeof window === "undefined" ? "" : localStorage.getItem("beta-access-token") || "";
+}
+
 function authHeaders(): Record<string, string> {
+  const beta = betaToken();
+  if (beta) return { "X-Beta-Access": beta };
   const token = typeof window === "undefined" ? "" : localStorage.getItem("submission-pass-token") || sessionStorage.getItem("submission-pass-token");
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
@@ -343,20 +349,31 @@ export default function ReviewPage() {
   // The body text used for Module 1 (set after check so we know what was submitted)
   const [submittedBodyText, setSubmittedBodyText] = useState("");
   const [accessChecked, setAccessChecked] = useState(false);
+  const [betaExpiry, setBetaExpiry] = useState("");
 
   useEffect(() => {
+    const beta = betaToken();
     const token = localStorage.getItem("submission-pass-token") || sessionStorage.getItem("submission-pass-token") || "";
-    if (!token) {
+    if (!beta && !token) {
       router.replace("/account");
       return;
     }
-    void fetch(`${API_BASE}/api/account/entitlement`, { headers: { Authorization: `Bearer ${token}` } })
+    const accessRequest = beta
+      ? fetch(`${API_BASE}/api/beta/access`, { headers: { "X-Beta-Access": beta } })
+      : fetch(`${API_BASE}/api/account/entitlement`, { headers: { Authorization: `Bearer ${token}` } });
+    const fallback = beta ? "/beta" : "/account";
+    void accessRequest
       .then(async (response) => response.ok ? response.json() : null)
-      .then((access: { can_submit?: boolean } | null) => {
-        if (!access?.can_submit) router.replace("/account");
-        else setAccessChecked(true);
+      .then((access: { can_submit?: boolean; expires_at?: string | null } | null) => {
+        if (!access?.can_submit) {
+          if (beta) localStorage.removeItem("beta-access-token");
+          router.replace(fallback);
+          return;
+        }
+        if (beta && access.expires_at) setBetaExpiry(access.expires_at);
+        setAccessChecked(true);
       })
-      .catch(() => router.replace("/account"));
+      .catch(() => router.replace(fallback));
   }, [router]);
 
   // ---------------------------------------------------------------------------
@@ -544,7 +561,13 @@ export default function ReviewPage() {
       <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
 
         <div className="mx-auto mb-7 max-w-2xl border-b border-[#dce4db] pb-5 text-center">
-          <Link href="/account" className="text-sm font-semibold text-blue-700">Manage Submission Pass</Link>
+          {betaExpiry ? (
+            <p className="text-sm font-semibold text-[#2f7d6b]">
+              Private beta access — expires {new Date(betaExpiry).toLocaleDateString()}
+            </p>
+          ) : (
+            <Link href="/account" className="text-sm font-semibold text-blue-700">Manage Submission Pass</Link>
+          )}
           <h1 className="text-3xl font-semibold tracking-normal text-slate-950 sm:text-4xl">
             Review your document before submission
           </h1>

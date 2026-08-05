@@ -46,6 +46,7 @@ from .modules import credits as credit_store
 from .auth import SupabaseAuthenticator
 from .config import Settings
 from .services.access import CurrentUser
+from .services.beta_links import hash_beta_token, is_beta_token_shaped
 from .services.billing import create_checkout_session, fulfil_completed_checkout
 from .services.feedback import FeedbackInput, validate_feedback
 from .services.supabase import SupabasePassRepository
@@ -68,6 +69,7 @@ WORD_CAP = int(os.getenv("WORD_CAP_PER_CREDIT", "5000"))
 FREE_TRIAL_CAP = int(os.getenv("FREE_TRIAL_WORD_CAP", "3000"))
 TEST_MODE = os.getenv("TEST_MODE", "false").lower() in ("true", "1", "yes")
 RULE_SET_VERSION = "apa-mp-comments-gap-fix"
+BETA_LINK_REJECTED = "This private beta link is not valid or has expired."
 
 
 def _settings() -> Settings:
@@ -107,6 +109,28 @@ async def require_active_pass(user: CurrentUser = Depends(get_current_user)) -> 
             detail="An active Submission Pass is required for new checks.",
         )
     return user
+
+
+async def _resolve_beta_link(token: str) -> dict:
+    """Return the beta link row for a private link, or refuse access."""
+    if is_beta_token_shaped(token):
+        link = await _pass_repository().find_active_beta_link(
+            hash_beta_token(token), datetime.now(UTC)
+        )
+        if link is not None:
+            return link
+    raise HTTPException(status_code=403, detail=BETA_LINK_REJECTED)
+
+
+async def require_review_access(
+    authorization: str | None = Header(default=None),
+    x_beta_access: str | None = Header(default=None),
+) -> None:
+    """Review endpoints accept either a paid Submission Pass or a private beta link."""
+    if x_beta_access:
+        await _resolve_beta_link(x_beta_access)
+        return
+    await require_active_pass(await get_current_user(authorization))
 
 
 def _cfg():
@@ -202,10 +226,6 @@ class EstimateResponse(BaseModel):
     word_cap_per_credit: int
     free_trial_cap: int
     test_mode: bool
-
-
-class BetaRedemptionResponse(BaseModel):
-    expires_at: datetime
 
 
 # ---------------------------------------------------------------------------
@@ -692,19 +712,13 @@ async def account_entitlement(user: CurrentUser = Depends(get_current_user)):
     return {"can_submit": True, "status": "active", "expires_at": active_pass["expires_at"]}
 
 
-@app.post("/api/beta/redeem", response_model=BetaRedemptionResponse)
-async def redeem_beta_invitation(user: CurrentUser = Depends(get_current_user)):
-    redemption = await _pass_repository().redeem_beta_invite(
-        user_id=user.id,
-        email=user.email,
-        at=datetime.now(UTC),
-    )
-    if not redemption.redeemed or redemption.expires_at is None:
-        raise HTTPException(
-            status_code=403,
-            detail="This email does not have an active beta invitation.",
-        )
-    return BetaRedemptionResponse(expires_at=redemption.expires_at)
+@app.get("/api/beta/access")
+async def beta_access(x_beta_access: str | None = Header(default=None)):
+    """Report whether a private beta link is still usable. No account required."""
+    if not x_beta_access:
+        raise HTTPException(status_code=403, detail=BETA_LINK_REJECTED)
+    link = await _resolve_beta_link(x_beta_access)
+    return {"can_submit": True, "status": "active", "expires_at": link["expires_at"]}
 
 
 @app.post("/api/billing/checkout-session")
@@ -764,7 +778,7 @@ async def submit_feedback(req: FeedbackRequest):
 
 
 @app.post("/api/check/text", response_model=CheckResponse)
-async def check_text(req: TextCheckRequest, _: CurrentUser = Depends(require_active_pass)):
+async def check_text(req: TextCheckRequest, _: None = Depends(require_review_access)):
     """Module 2 + 3 on plain text — free, no LLM."""
     cfg = _cfg()
     prose_cfg = cfg.get("prose_rules", {})
@@ -805,7 +819,7 @@ async def check_docx(
     file: UploadFile = File(...),
     reference_text: str = Form(default=""),
     levenshtein_threshold: int = Form(default=2),
-    _: CurrentUser = Depends(require_active_pass),
+    _: None = Depends(require_review_access),
 ):
     """Module 2 + 3 on an uploaded .docx — free. Uploaded file deleted after processing."""
     if not file.filename or not file.filename.endswith(".docx"):
@@ -868,7 +882,7 @@ async def check_docx_annotated(
     file: UploadFile = File(...),
     reference_text: str = Form(default=""),
     levenshtein_threshold: int = Form(default=2),
-    _: CurrentUser = Depends(require_active_pass),
+    _: None = Depends(require_review_access),
 ):
     """Return a copy of the uploaded .docx with findings highlighted and summarized."""
     if not file.filename or not file.filename.endswith(".docx"):
@@ -924,7 +938,7 @@ async def check_docx_annotated(
 
 
 @app.post("/api/review/estimate", response_model=EstimateResponse)
-async def review_estimate(req: EstimateRequest, _: CurrentUser = Depends(require_active_pass)):
+async def review_estimate(req: EstimateRequest, _: None = Depends(require_review_access)):
     """Return word count and credit cost estimate. No LLM call — free."""
     word_count = count_words(req.body_text)
     cap = FREE_TRIAL_CAP if req.tier == "free" else WORD_CAP
@@ -941,7 +955,7 @@ async def review_estimate(req: EstimateRequest, _: CurrentUser = Depends(require
 
 
 @app.post("/api/review", response_model=ReviewResponse)
-async def review(req: ReviewRequest, _: CurrentUser = Depends(require_active_pass)):
+async def review(req: ReviewRequest, _: None = Depends(require_review_access)):
     """
     Module 1 — LLM-based clarity/voice editing, metered by credits.
 
