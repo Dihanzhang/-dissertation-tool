@@ -20,9 +20,12 @@ test("the entered code is exchanged for a session", async () => {
   assert.match(source, /access_token/);
 });
 
-test("the page collects a 6-digit code", async () => {
+test("the page collects a numeric code of whatever length Supabase sends", async () => {
   const source = await account();
 
   assert.match(source, /inputMode="numeric"/);
-  assert.match(source, /maxLength=\{6\}/);
+  assert.match(source, /autoComplete="one-time-code"/);
+  // Supabase's OTP length is a project setting, so no fixed length may be assumed.
+  assert.doesNotMatch(source, /maxLength=\{6\}/);
+  assert.doesNotMatch(source, /6-digit/);
 });

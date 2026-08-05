@@ -53,7 +53,7 @@ export default function AccountPage() {
       });
       if (response.ok) {
         setCodeSent(true);
-        setNotice("We emailed you a 6-digit code. Enter it below. It expires in 1 hour.");
+        setNotice("We emailed you a sign-in code. Enter it below. It expires in 1 hour.");
       } else {
         const problem = await response.json().catch(() => ({}));
         setNotice(problem?.error_code === "over_email_send_rate_limit"
@@ -107,12 +107,13 @@ export default function AccountPage() {
     <Link href="/" className="text-sm font-semibold text-blue-700">← Dissertation Review</Link>
     <h1 className="mt-8 text-3xl font-bold">Your Submission Pass</h1>
     {!token ? (codeSent ? <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6 text-slate-900" onSubmit={verifyCode}>
-      <p>Enter the 6-digit code we emailed to <span className="font-semibold">{email}</span>.</p>
-      <input required inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]*" maxLength={6} value={code} onChange={(event) => setCode(event.target.value.replace(/\D/g, ""))} placeholder="123456" className="w-full rounded-md border p-3 text-center text-2xl tracking-[0.4em]" />
+      <p>Enter the code we emailed to <span className="font-semibold">{email}</span>.</p>
+      {/* Supabase's OTP length is configurable, so accept whatever it sends. */}
+      <input required inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]*" maxLength={10} value={code} onChange={(event) => setCode(event.target.value.replace(/\D/g, ""))} placeholder="12345678" className="w-full rounded-md border p-3 text-center text-2xl tracking-[0.4em]" />
       <button disabled={sending || code.length < 6} className="button-primary rounded-md px-5 py-3 font-semibold disabled:opacity-60">{sending ? "Checking…" : "Sign in"}</button>
       <button type="button" onClick={() => { setCodeSent(false); setCode(""); setNotice(""); }} className="block text-sm text-slate-600 underline">Use a different email address</button>
     </form> : <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6 text-slate-900" onSubmit={sendSignIn}>
-      <p>Enter your email and we’ll send you a 6-digit sign-in code.</p>
+      <p>Enter your email and we’ll send you a sign-in code.</p>
       <input required type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@example.com" className="w-full rounded-md border p-3" />
       <button disabled={sending} className="button-primary rounded-md px-5 py-3 font-semibold disabled:opacity-60">{sending ? "Sending…" : "Email me a sign-in code"}</button>
     </form>) : <section className="mt-8 rounded-xl bg-slate-50 p-6 text-slate-900">
