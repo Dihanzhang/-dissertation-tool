@@ -350,6 +350,7 @@ export default function ReviewPage() {
   const [submittedBodyText, setSubmittedBodyText] = useState("");
   const [accessChecked, setAccessChecked] = useState(false);
   const [betaExpiry, setBetaExpiry] = useState("");
+  const [waking, setWaking] = useState(false);
 
   useEffect(() => {
     const beta = betaToken();
@@ -358,11 +359,16 @@ export default function ReviewPage() {
       router.replace("/account");
       return;
     }
-    const accessRequest = beta
+    // The API sleeps when idle and can take up to a minute to wake, so say so
+    // rather than leaving a blank screen, and retry once before giving up.
+    const slowTimer = window.setTimeout(() => setWaking(true), 4000);
+    const askForAccess = () => beta
       ? fetch(`${API_BASE}/api/beta/access`, { headers: { "X-Beta-Access": beta } })
       : fetch(`${API_BASE}/api/account/entitlement`, { headers: { Authorization: `Bearer ${token}` } });
+    const accessRequest = askForAccess().catch(() => askForAccess());
     const fallback = beta ? "/beta" : "/account";
     void accessRequest
+      .finally(() => window.clearTimeout(slowTimer))
       .then(async (response) => response.ok ? response.json() : null)
       .then((access: { can_submit?: boolean; expires_at?: string | null } | null) => {
         if (!access?.can_submit) {
@@ -553,7 +559,16 @@ export default function ReviewPage() {
   const canSubmit = mode === "paste" ? pastedText.trim().length > 0 : uploadedFile !== null;
 
   if (!accessChecked) {
-    return <main className="mx-auto min-h-screen max-w-xl px-6 py-16 text-slate-700">Checking your access…</main>;
+    return (
+      <main className="mx-auto min-h-screen max-w-xl px-6 py-16 text-slate-700">
+        <p>Opening your review…</p>
+        {waking && (
+          <p className="mt-3 text-sm text-slate-500">
+            The server is waking up after being idle. This can take up to a minute the first time — no need to refresh.
+          </p>
+        )}
+      </main>
+    );
   }
 
   return (

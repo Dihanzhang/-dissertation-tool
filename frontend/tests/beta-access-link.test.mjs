@@ -20,6 +20,21 @@ test("the beta page no longer sends magic-link emails", async () => {
   assert.doesNotMatch(source, /beta-redemption-pending/);
 });
 
+test("the beta page hands off to the review page without a server round trip", async () => {
+  const source = await read("../app/beta/page.tsx");
+
+  // The review page already validates the token; checking it here too made the
+  // tester wait for two server calls instead of one.
+  assert.doesNotMatch(source, /fetch\(/);
+  assert.doesNotMatch(source, /api\/beta\/access/);
+});
+
+test("the review page explains a slow cold start instead of looking frozen", async () => {
+  const source = await read("../app/review/page.tsx");
+
+  assert.match(source, /waking up/i);
+});
+
 test("the review page authorises requests with the beta header", async () => {
   const source = await read("../app/review/page.tsx");
 
