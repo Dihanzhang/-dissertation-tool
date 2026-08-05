@@ -4,6 +4,9 @@ import os
 from dataclasses import dataclass
 
 
+PUBLIC_SITE_ORIGINS = ("https://apa7.aithrival.com", "https://www.apa7.aithrival.com")
+
+
 @dataclass(frozen=True)
 class Settings:
     stripe_secret_key: str
@@ -23,11 +26,17 @@ class Settings:
         stripe_webhook_secret = os.getenv("STRIPE_WEBHOOK_SECRET", "")
         if stripe_secret_key.startswith("sk_live_") and not stripe_webhook_secret:
             raise ValueError("STRIPE_WEBHOOK_SECRET is required with a live Stripe key.")
-        cors_origins = tuple(
+        configured_origins = [
             origin.strip() for origin in os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",") if origin.strip()
-        )
-        if os.getenv("ENVIRONMENT", "").lower() == "production" and "*" in cors_origins:
+        ]
+        if os.getenv("ENVIRONMENT", "").lower() == "production" and "*" in configured_origins:
             raise ValueError("CORS_ORIGINS cannot use * in production.")
+        # The public site must always be able to call its own API, even if
+        # CORS_ORIGINS was configured before the custom domain existed.
+        site_url = os.getenv("SITE_URL", "http://localhost:3000").rstrip("/")
+        cors_origins = tuple(
+            dict.fromkeys([*configured_origins, site_url, *PUBLIC_SITE_ORIGINS])
+        )
 
         return cls(
             stripe_secret_key=stripe_secret_key,

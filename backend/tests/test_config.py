@@ -35,3 +35,18 @@ def test_production_rejects_wildcard_cors(monkeypatch):
 
     with pytest.raises(ValueError, match="CORS_ORIGINS"):
         Settings.from_env()
+
+
+def test_public_site_origin_is_always_allowed(monkeypatch):
+    """The live domain must reach its own API even if CORS_ORIGINS predates it."""
+    from app.config import Settings
+
+    monkeypatch.setenv("CORS_ORIGINS", "https://dissertation-tool.netlify.app")
+    monkeypatch.setenv("SITE_URL", "https://apa7.aithrival.com")
+    monkeypatch.setenv("ENVIRONMENT", "production")
+
+    origins = Settings.from_env().cors_origins
+
+    assert "https://apa7.aithrival.com" in origins
+    assert "https://dissertation-tool.netlify.app" in origins
+    assert len(origins) == len(set(origins))
