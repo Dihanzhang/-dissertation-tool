@@ -10,10 +10,6 @@ export default function LandingPage() {
 
   useEffect(() => {
     if (window.location.hash.includes("access_token=")) {
-      if (localStorage.getItem("beta-redemption-pending") === "true") {
-        window.location.replace(`/beta${window.location.hash}`);
-        return;
-      }
       window.location.replace(`/account${window.location.hash}`);
     }
   }, []);

@@ -40,15 +40,12 @@ def test_check_is_blocked_without_an_active_pass(monkeypatch):
         async def find_active_pass(self, user_id, at):
             return None
 
-    async def current_user():
+    async def current_user(authorization=None):
         return CurrentUser(id="user-1", email="student@example.com")
 
     monkeypatch.setattr(main, "_pass_repository", lambda: Repo())
-    main.app.dependency_overrides[main.get_current_user] = current_user
-    try:
-        response = TestClient(main.app).post("/api/check/text", json={"body_text": "A short paragraph."})
-    finally:
-        main.app.dependency_overrides.clear()
+    monkeypatch.setattr(main, "get_current_user", current_user)
+    response = TestClient(main.app).post("/api/check/text", json={"body_text": "A short paragraph."})
 
     assert response.status_code == 402
     assert response.json()["detail"] == "An active Submission Pass is required for new checks."
@@ -82,55 +79,6 @@ def test_checkout_requires_sign_in_and_returns_stripe_url(monkeypatch):
 
     assert response.status_code == 200
     assert response.json() == {"checkout_url": "https://checkout.stripe.test/session"}
-
-
-def test_beta_redemption_grants_an_invited_user_a_pass(monkeypatch):
-    from app import main
-    from app.services.access import BetaRedemption, CurrentUser
-
-    class Repo:
-        async def redeem_beta_invite(self, *, user_id, email, at):
-            assert user_id == "user-1"
-            assert email == "student@example.edu"
-            return BetaRedemption(
-                redeemed=True,
-                expires_at=datetime(2026, 9, 2, tzinfo=UTC),
-            )
-
-    async def current_user():
-        return CurrentUser(id="user-1", email="student@example.edu")
-
-    monkeypatch.setattr(main, "_pass_repository", lambda: Repo())
-    main.app.dependency_overrides[main.get_current_user] = current_user
-    try:
-        response = TestClient(main.app).post("/api/beta/redeem")
-    finally:
-        main.app.dependency_overrides.clear()
-
-    assert response.status_code == 200
-    assert response.json() == {"expires_at": "2026-09-02T00:00:00Z"}
-
-
-def test_beta_redemption_rejects_an_email_without_an_invitation(monkeypatch):
-    from app import main
-    from app.services.access import BetaRedemption, CurrentUser
-
-    class Repo:
-        async def redeem_beta_invite(self, *, user_id, email, at):
-            return BetaRedemption(redeemed=False, expires_at=None)
-
-    async def current_user():
-        return CurrentUser(id="user-1", email="not-invited@example.edu")
-
-    monkeypatch.setattr(main, "_pass_repository", lambda: Repo())
-    main.app.dependency_overrides[main.get_current_user] = current_user
-    try:
-        response = TestClient(main.app).post("/api/beta/redeem")
-    finally:
-        main.app.dependency_overrides.clear()
-
-    assert response.status_code == 403
-    assert response.json()["detail"] == "This email does not have an active beta invitation."
 
 
 def test_signed_stripe_webhook_activates_pass(monkeypatch):

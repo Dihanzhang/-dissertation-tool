@@ -29,10 +29,6 @@ export default function AccountPage() {
         localStorage.setItem("submission-pass-token", accessToken);
         sessionStorage.setItem("submission-pass-token", accessToken);
       }
-      if (accessToken && localStorage.getItem("beta-redemption-pending") === "true") {
-        window.location.replace(`/beta${window.location.hash}`);
-        return;
-      }
       if (accessToken) {
         setToken(accessToken);
         await loadAccess(accessToken);
