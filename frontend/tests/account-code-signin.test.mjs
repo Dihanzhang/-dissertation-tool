@@ -29,3 +29,12 @@ test("the page collects a numeric code of whatever length Supabase sends", async
   assert.doesNotMatch(source, /maxLength=\{6\}/);
   assert.doesNotMatch(source, /6-digit/);
 });
+
+test("an expired session returns the user to the sign-in form", async () => {
+  const source = await account();
+
+  // Without this the page shows a signed-in view backed by a dead token, and
+  // there is no way to request a new code.
+  assert.match(source, /status === 401/);
+  assert.match(source, /removeItem\("submission-pass-token"\)/);
+});

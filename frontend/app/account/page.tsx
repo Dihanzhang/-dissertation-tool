@@ -18,8 +18,18 @@ export default function AccountPage() {
   const [code, setCode] = useState("");
   const [access, setAccess] = useState<Access | null>(null);
 
+  function signOutExpiredSession() {
+    localStorage.removeItem("submission-pass-token");
+    sessionStorage.removeItem("submission-pass-token");
+    setToken("");
+    setAccess(null);
+    setNotice("Your sign-in has expired. Enter your email for a new code.");
+  }
+
   async function loadAccess(activeToken: string) {
     const response = await fetch(`${API_BASE}/api/account/entitlement`, { headers: { Authorization: `Bearer ${activeToken}` } });
+    // A stale token otherwise leaves a signed-in page with no way back to the form.
+    if (response.status === 401) { signOutExpiredSession(); return; }
     if (response.ok) setAccess(await response.json());
   }
 
@@ -96,7 +106,8 @@ export default function AccountPage() {
     setNotice("Opening secure checkout…");
     try {
       const response = await fetch(`${API_BASE}/api/billing/checkout-session`, { method: "POST", headers: { Authorization: `Bearer ${token}` } });
-      if (!response.ok) { setNotice("We could not open checkout. Your sign-in may have expired; please request a new link."); return; }
+      if (response.status === 401) { signOutExpiredSession(); return; }
+      if (!response.ok) { setNotice("We could not open checkout. Please try again, or email dihan.zhang@outlook.com if it keeps happening."); return; }
       window.location.assign((await response.json()).checkout_url);
     } catch {
       setNotice("We could not open checkout. Please try again or email dihan.zhang@outlook.com.");
