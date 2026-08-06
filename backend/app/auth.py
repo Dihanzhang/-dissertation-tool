@@ -27,6 +27,15 @@ class SupabaseAuthenticator:
             self._user_url,
             {"Authorization": f"Bearer {token}", "apikey": self._anon_key},
         )
-        if status_code != status.HTTP_200_OK or not payload.get("id") or not payload.get("email"):
+        if status_code in (status.HTTP_401_UNAUTHORIZED, status.HTTP_403_FORBIDDEN):
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Sign in is required.")
+        if status_code != status.HTTP_200_OK:
+            # Rate limits and outages must not look like a rejected session: the
+            # browser discards the session on a 401 and asks for a new emailed code.
+            raise HTTPException(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                detail="We could not check your sign-in just now. Please try again in a moment.",
+            )
+        if not payload.get("id") or not payload.get("email"):
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Sign in is required.")
         return CurrentUser(id=str(payload["id"]), email=str(payload["email"]))
