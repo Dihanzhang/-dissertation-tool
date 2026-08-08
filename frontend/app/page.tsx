@@ -60,7 +60,7 @@ export default function LandingPage() {
             ))}
           </ol>
           <p className="text-slate-600">
-            Need help? <a className="underline" href="mailto:dihan.zhang@outlook.com">dihan.zhang@outlook.com</a>
+            Need help? Contact <a className="underline" href="mailto:dihan.zhang@outlook.com">dihan.zhang@outlook.com</a>
           </p>
         </div>
       </section>
