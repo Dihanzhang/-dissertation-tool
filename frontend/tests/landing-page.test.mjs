@@ -27,8 +27,8 @@ test("feedback fields are visible against the dark section", async () => {
 test("the help contact sits near the buying decision, not at the page foot", async () => {
   const source = await landing();
 
-  const help = source.indexOf("Need help with your pass?");
+  const help = source.indexOf("Need help?");
   const feedback = source.indexOf('id="feedback"');
-  assert.ok(help !== -1, "the help line must still exist");
+  assert.ok(help !== -1, "the help contact must still exist");
   assert.ok(help < feedback, "the help line must appear above the feedback section");
 });

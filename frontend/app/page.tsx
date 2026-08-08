@@ -35,34 +35,42 @@ export default function LandingPage() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <section className="mx-auto max-w-4xl px-6 py-20 text-center">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">APA 7 dissertation review</p>
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">A careful final review before you submit.</h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+      <section className="mx-auto max-w-4xl px-6 pb-8 pt-12 text-center">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">APA 7 dissertation review</p>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">A careful final review before you submit.</h1>
+        <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">
           Check APA 7 alignment, citations and references, then review clarity while you remain in control of every change.
         </p>
-        <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+        <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
           <Link href="/account" className="button-primary rounded-lg px-6 py-3 font-semibold">Get Submission Pass — AU$14.95</Link>
           <a href="#how-it-works" className="button-secondary rounded-lg px-6 py-3 font-semibold">How it works</a>
         </div>
-        <p className="mt-4 text-sm text-slate-500">One payment · 30 days of unlimited personal rechecks</p>
+        <p className="mt-3 text-sm text-slate-500">One payment · 30 days of unlimited personal rechecks</p>
       </section>
 
-      <section id="how-it-works" className="bg-slate-50 py-14">
-        <div className="mx-auto grid max-w-4xl gap-6 px-6 md:grid-cols-3">
-          {["Sign in with your email", "Buy one Submission Pass", "Recheck your own dissertation as you revise"].map((item, index) => <div className="rounded-xl bg-white p-6 shadow-sm" key={item}><p className="font-semibold text-blue-700">0{index + 1}</p><p className="mt-3 text-lg font-semibold">{item}</p></div>)}
+      {/* Kept to a single compact strip so the sample below stays visible without scrolling. */}
+      <section id="how-it-works" className="border-y border-slate-200 bg-slate-50 py-4">
+        <div className="mx-auto flex max-w-4xl flex-col gap-x-6 gap-y-2 px-6 text-sm sm:flex-row sm:items-center sm:justify-between">
+          <ol className="flex flex-col gap-x-6 gap-y-1 sm:flex-row">
+            {["Sign in with your email", "Buy one Submission Pass", "Recheck as you revise"].map((item, index) => (
+              <li key={item} className="flex items-center gap-2 text-slate-700">
+                <span className="font-semibold text-blue-700">0{index + 1}</span>
+                <span className="font-medium">{item}</span>
+              </li>
+            ))}
+          </ol>
+          <p className="text-slate-600">
+            Need help? <a className="underline" href="mailto:dihan.zhang@outlook.com">dihan.zhang@outlook.com</a>
+          </p>
         </div>
-        <p className="mx-auto mt-8 max-w-4xl px-6 text-sm text-slate-600">
-          Need help with your pass? <a className="underline" href="mailto:dihan.zhang@outlook.com">dihan.zhang@outlook.com</a>
-        </p>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-16">
+      <section className="mx-auto max-w-5xl px-6 pb-14 pt-8">
         <div className="grid gap-8 md:grid-cols-[0.9fr_1.3fr] md:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">What you get back</p>
-            <h2 className="mt-3 text-2xl font-bold">Comments beside the highlighted text</h2>
-            <p className="mt-4 leading-7 text-slate-600">
+            <h2 className="mt-2 text-2xl font-bold">Comments beside the highlighted text</h2>
+            <p className="mt-3 leading-7 text-slate-600">
               You download your own Word document, unchanged in format, with colour-coded highlights and a
               comment beside each sentence or phrase that needs attention.
             </p>
