@@ -39,7 +39,7 @@ export default function LandingPage() {
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">APA 7 dissertation review</p>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">A careful final review before you submit.</h1>
         <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">
-          Check APA 7 alignment, citations and references, then review clarity while you remain in control of every change.
+          Check APA 7 alignment, citations, references and writing rules through deterministic checks, then decide what to change.
         </p>
         <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
           <Link href="/account" className="button-primary rounded-lg px-6 py-3 font-semibold">Get Submission Pass — AU$14.95</Link>
@@ -95,7 +95,7 @@ export default function LandingPage() {
       <section className="mx-auto max-w-4xl px-6 pb-16">
         <h2 className="text-2xl font-bold">What your pass includes</h2>
         <ul className="mt-6 grid gap-3 text-slate-700 sm:grid-cols-2">
-          {["APA 7 and reference-list checks", "Citation–reference matching", "Annotated DOCX download", "AI-assisted clarity review", "Unlimited personal rechecks for 30 days", "Prior results remain visible after expiry"].map((item) => <li key={item}>✓ {item}</li>)}
+          {["APA 7 and reference-list checks", "Citation–reference matching", "Annotated DOCX download", "Deterministic, rule-based findings", "Unlimited personal rechecks for 30 days", "Prior results remain visible after expiry"].map((item) => <li key={item}>✓ {item}</li>)}
         </ul>
         <p className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">This tool supports your own writing. It does not guarantee APA compliance or grades, and it does not replace your supervisor or university requirements.</p>
       </section>

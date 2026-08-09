@@ -1,6 +1,6 @@
 # Dissertation APA 7 Review Assistant
 
-A deterministic APA 7 rule-checking and AI-assisted writing polish tool built for doctoral dissertation review. Designed for EdD/PhD students at USC and similar institutions. The APA checker is free and runs locally; AI polish is metered via credits.
+A deterministic, rule-based APA 7 review tool built for doctoral dissertations. No large language model generates the review results.
 
 ---
 
@@ -25,15 +25,15 @@ A deterministic APA 7 rule-checking and AI-assisted writing polish tool built fo
 
 ### Purpose
 
-This tool checks dissertation drafts for APA 7 compliance and optionally polishes prose for doctoral register. It does not store text, does not train on submissions, and is designed to stay within academic-integrity boundaries: the AI module only suggests changes — the user approves every edit.
+This tool checks dissertation drafts for APA 7 alignment using deterministic, rule-based logic. The same input produces the same findings, and each finding can be traced to a specific rule. It does not store text or train on submissions. Writers review every finding and decide what to change.
 
 ### Core Capabilities
 
-| Capability | Module | Cost |
-|---|---|---|
-| APA 7 rule checking (168 rules, 8 categories) | Module 2 | Free |
-| Citation ↔ reference cross-matching | Module 3 | Free |
-| AI-assisted clarity/register polish | Module 1 | 1 credit per 5,000 words |
+| Capability | Module |
+|---|---|
+| APA 7 rule checking (168 rules, 8 categories) | Module 2 |
+| Citation ↔ reference cross-matching | Module 3 |
+| Annotated DOCX output with rule-linked comments | Modules 2 and 3 |
 
 ### Intended Users
 
@@ -54,17 +54,17 @@ dissertation-tool/
 │   │   │   └── prof_checklist.yaml   # Tunable rule thresholds
 │   │   └── modules/
 │   │       ├── prose_extractor.py    # .docx parser → ProseParagraph list
-│   │       ├── module1_editor.py     # LLM clarity/register polish
+│   │       ├── module1_editor.py     # Legacy experimental editor (not exposed)
 │   │       ├── module2_apa_checker.py # Deterministic APA 7 rule engine
 │   │       ├── module3_citation_matcher.py  # Citation↔reference cross-check
 │   │       ├── apa_ref_rules.py      # REF001–REF023 reference list rules
 │   │       ├── apa_bfl_rules.py      # BFL001–BFL034 bias-free language rules
 │   │       ├── credits.py            # Credit balance store
-│   │       ├── provider.py           # LLM provider abstraction
+│   │       ├── provider.py           # Legacy provider abstraction
 │   │       ├── text_splitter.py      # Chunk text at paragraph boundaries
-│   │       └── citation_lock.py      # Prevent LLM from altering citations
+│   │       └── citation_lock.py      # Legacy editor safeguard
 │   └── tests/
-│       ├── test_module1.py     # Citation lock, text splitter, LLM mock tests
+│       ├── test_module1.py     # Legacy editor regression tests
 │       ├── test_module2.py     # APA rule engine unit tests
 │       └── test_module3.py     # Citation matching unit tests
 └── frontend/                   # Next.js frontend
@@ -78,7 +78,7 @@ dissertation-tool/
 
 | Service | Port | Notes |
 |---|---|---|
-| FastAPI backend | 8001 | Primary; module 2+3 (free) and module 1 (LLM) |
+| FastAPI backend | 8001 | Primary; deterministic Modules 2 and 3 |
 | Next.js frontend | 3001 | Review UI |
 | Legacy backend | 8000 | Earlier build step; still running in parallel |
 
@@ -122,11 +122,10 @@ npm run dev -- -p 3001
 Stored in `backend/.env` (not committed). Copy from `backend/.env.example`:
 
 ```env
-ANTHROPIC_API_KEY=sk-...          # Required for Module 1 (AI polish)
-WORD_CAP_PER_CREDIT=5000          # Words per credit (default 5000)
-FREE_TRIAL_WORD_CAP=3000          # Free tier cap
 TEST_MODE=false                    # true = bypass credit check in dev
 ```
+
+The repository still contains legacy editor environment variables and endpoints, but the current product does not call them.
 
 ### API Health Check
 
@@ -185,16 +184,9 @@ Two input modes:
 - Co-author-only matches (soft flag)
 - Uncited references (in list but never cited)
 
-### AI Polish Panel (paste mode only)
+### Review method
 
-Appears below APA results. Calls `POST /api/review`:
-
-1. If oversized (>5,000 words): confirmation dialog showing chunk count and credits required
-2. On confirm: suggestions returned as `SuggestionCard` grid
-3. Each card shows: original | revised | reason | edit type | % changed
-4. Accept / Reject / Undo controls per suggestion
-5. "Preview with accepted changes" textarea + Copy to clipboard button
-6. HEAVY EDIT badge (amber) when `change_ratio > 0.4` — user must review carefully
+The current review experience uses Modules 2 and 3. Findings are produced by deterministic, rule-based checks. No large language model generates the review results.
 
 ---
 
@@ -242,15 +234,9 @@ result = run_citation_check_paragraphs(paragraphs, ref_text, levenshtein_thresho
 - `spelling_mismatches`: Levenshtein ≤ threshold, same year (soft flag)
 - `co_author_only_matches`: matched on co-author surname only
 
-### Module 1 — AI Polish (`module1_editor.py`)
+### Module 1 — Legacy code, not part of the current product
 
-LLM-based clarity and register editor. Sends text to Claude, receives structured JSON with original/revised sentence pairs. Citation lock validates that all citations present in the original appear unchanged in the suggestion.
-
-**Credit flow:**
-1. `POST /api/review/estimate` — word count + chunk count preview (no LLM call)
-2. `POST /api/review` — if oversized and `confirmed_oversized=False`, returns confirmation
-3. On confirm: splits into chunks, calls LLM per chunk, charges one credit per successful chunk
-4. Text is not retained after response is sent
+The repository retains an earlier experimental LLM editor and provider code for development history. The current landing page and review experience do not expose or call it, and it does not generate current product review results.
 
 ### `prose_extractor.py` — Paragraph Classification
 
@@ -495,9 +481,9 @@ class TestMEC003(unittest.TestCase):
 | `TestGroupAuthorUncited` | `Allied Market Research. (2024, April)` reference not flagged uncited |
 | `TestGroupAuthorVariantName` | `Stanford Institute...` reference not flagged uncited |
 
-### test_module1.py — LLM + Credit Logic
+### test_module1.py — Legacy editor regression coverage
 
-Covers citation lock (preserved/dropped/added/altered), text splitter (chunk boundaries, paragraph-level splits, citation preservation), edit classification (change ratio), and module 1 integration with a mock LLM provider.
+Covers the retained legacy editor code. These tests do not describe the current product review flow.
 
 ---
 

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useCallback, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -59,30 +59,6 @@ interface CitationIssue {
   distance?: number;
 }
 
-interface Suggestion {
-  original: string;
-  revised: string;
-  reason: string;
-  edit_type: "light" | "heavy";
-  change_ratio: number;
-}
-
-interface ReviewResponse {
-  status: "ok" | "oversized_confirmation" | "no_credits" | "error";
-  suggestions: Suggestion[];
-  word_count: number;
-  chunk_count: number;
-  credits_required: number;
-  credits_remaining: number;
-  model_used: string;
-  rejected_by_citation_lock: number;
-  rejected_sentence_not_found: number;
-  message: string;
-  test_mode: boolean;
-}
-
-type SuggestionDecision = "pending" | "accepted" | "rejected";
-
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -101,10 +77,6 @@ function splitOnReferences(text: string): { body: string; refs: string } {
 
 function wordCount(text: string) {
   return text.trim().split(/\s+/).filter(Boolean).length;
-}
-
-function randomId() {
-  return Math.random().toString(36).slice(2) + Date.now().toString(36);
 }
 
 const RULE_LABELS: Record<string, string> = {
@@ -271,56 +243,6 @@ function CitationIssueCard({ issue, label }: { issue: Record<string, unknown>; l
   );
 }
 
-function SuggestionCard({
-  s, index, decision, onDecide,
-}: {
-  s: Suggestion; index: number; decision: SuggestionDecision; onDecide: (d: SuggestionDecision) => void;
-}) {
-  const heavy = s.edit_type === "heavy";
-  const border =
-    decision === "accepted" ? "border-green-400 bg-green-50" :
-    decision === "rejected" ? "border-gray-200 bg-gray-50 opacity-60" :
-    heavy ? "border-amber-300 bg-amber-50" : "border-blue-200 bg-white";
-
-  return (
-    <div className={`border rounded-lg p-4 mb-3 transition-all ${border}`}>
-      <div className="flex items-center gap-2 mb-2">
-        <span className="text-xs font-semibold text-gray-400">#{index + 1}</span>
-        <span className="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600">{s.reason}</span>
-        {heavy && (
-          <span className="text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-700 font-semibold">
-            HEAVY EDIT — review carefully
-          </span>
-        )}
-        <span className="text-xs text-gray-400 ml-auto">{Math.round(s.change_ratio * 100)}% changed</span>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
-        <div>
-          <p className="text-xs font-medium text-gray-500 mb-1">Original</p>
-          <p className="text-sm text-gray-700 bg-gray-50 rounded p-2 border border-gray-200 leading-relaxed">{s.original}</p>
-        </div>
-        <div>
-          <p className="text-xs font-medium text-gray-500 mb-1">Revised</p>
-          <p className="text-sm text-gray-800 bg-blue-50 rounded p-2 border border-blue-200 leading-relaxed">{s.revised}</p>
-        </div>
-      </div>
-      {decision === "pending" ? (
-        <div className="flex gap-2">
-          <button onClick={() => onDecide("accepted")} className="button-interaction rounded bg-green-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-green-700">Accept</button>
-          <button onClick={() => onDecide("rejected")} className="button-interaction rounded bg-gray-200 px-3 py-1.5 text-xs font-semibold text-gray-700 hover:bg-gray-300">Reject</button>
-        </div>
-      ) : (
-        <div className="flex items-center gap-2">
-          <span className={`text-xs font-semibold ${decision === "accepted" ? "text-green-700" : "text-gray-500"}`}>
-            {decision === "accepted" ? "✓ Accepted" : "✗ Rejected"}
-          </span>
-          <button onClick={() => onDecide("pending")} className="button-interaction rounded text-xs text-gray-400 underline hover:text-gray-600">Undo</button>
-        </div>
-      )}
-    </div>
-  );
-}
-
 // ---------------------------------------------------------------------------
 // Main page
 // ---------------------------------------------------------------------------
@@ -339,15 +261,6 @@ export default function ReviewPage() {
   const [feedbackCopied, setFeedbackCopied] = useState(false);
   const [tab, setTab] = useState<"apa" | "citations">("apa");
 
-  const [reviewing, setReviewing] = useState(false);
-  const [reviewResult, setReviewResult] = useState<ReviewResponse | null>(null);
-  const [reviewError, setReviewError] = useState("");
-  const [pendingOversized, setPendingOversized] = useState<ReviewResponse | null>(null);
-  const [decisions, setDecisions] = useState<Record<number, SuggestionDecision>>({});
-  const [requestId] = useState(randomId);
-
-  // The body text used for Module 1 (set after check so we know what was submitted)
-  const [submittedBodyText, setSubmittedBodyText] = useState("");
   const [accessChecked, setAccessChecked] = useState(false);
   const [betaExpiry, setBetaExpiry] = useState("");
   const [waking, setWaking] = useState(false);
@@ -391,9 +304,6 @@ export default function ReviewPage() {
     setChecking(true);
     setCheckError("");
     setCheckResult(null);
-    setReviewResult(null);
-    setPendingOversized(null);
-    setDecisions({});
 
     try {
       let data: CheckResponse;
@@ -404,10 +314,8 @@ export default function ReviewPage() {
         const res = await fetch(`${API_BASE}/api/check/docx`, { method: "POST", body: form, headers: authHeaders() });
         if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
         data = await res.json();
-        setSubmittedBodyText("");  // docx body managed server-side
       } else {
         const { body, refs } = splitOnReferences(pastedText);
-        setSubmittedBodyText(body);
         const res = await fetch(`${API_BASE}/api/check/text`, {
           method: "POST",
           headers: { "Content-Type": "application/json", ...authHeaders() },
@@ -476,57 +384,6 @@ export default function ReviewPage() {
     window.location.href = `mailto:${FEEDBACK_EMAIL}?subject=${subject}&body=${body}`;
   }
 
-  // ---------------------------------------------------------------------------
-  // AI polish (Module 1) — paste mode only for now
-  // ---------------------------------------------------------------------------
-
-  const runReview = useCallback(async (confirmed = false) => {
-    const text = submittedBodyText || pastedText;
-    if (!text.trim()) return;
-    setReviewing(true);
-    setReviewError("");
-    setPendingOversized(null);
-
-    try {
-      const res = await fetch(`${API_BASE}/api/review`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", ...authHeaders() },
-        body: JSON.stringify({
-          body_text: text,
-          request_id: requestId + (confirmed ? "_c" : ""),
-          user_id: "anonymous",
-          tier: "paid",
-          confirmed_oversized: confirmed,
-        }),
-      });
-      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
-      const data: ReviewResponse = await res.json();
-      if (data.status === "oversized_confirmation") {
-        setPendingOversized(data);
-      } else {
-        setReviewResult(data);
-        setDecisions({});
-      }
-    } catch (err) {
-      setReviewError(err instanceof Error ? err.message : "Review failed.");
-    } finally {
-      setReviewing(false);
-    }
-  }, [submittedBodyText, pastedText, requestId]);
-
-  function decide(i: number, d: SuggestionDecision) {
-    setDecisions((prev) => ({ ...prev, [i]: d }));
-  }
-
-  function buildAcceptedText() {
-    if (!reviewResult) return submittedBodyText || pastedText;
-    let text = submittedBodyText || pastedText;
-    reviewResult.suggestions
-      .filter((_, i) => decisions[i] === "accepted")
-      .forEach((s) => { text = text.replace(s.original, s.revised); });
-    return text;
-  }
-
   const citationTotal = checkResult
     ? checkResult.missing_references.length + checkResult.uncited_references.length +
       checkResult.year_mismatches.length + checkResult.spelling_mismatches.length +
@@ -554,7 +411,6 @@ export default function ReviewPage() {
       ].sort((a, b) => compareCitationIssues(a.issue, b.issue))
     : [];
 
-  const acceptedCount = Object.values(decisions).filter((d) => d === "accepted").length;
   const words = mode === "paste" ? wordCount(pastedText) : uploadedFile ? null : 0;
   const canSubmit = mode === "paste" ? pastedText.trim().length > 0 : uploadedFile !== null;
 
@@ -591,6 +447,9 @@ export default function ReviewPage() {
           </p>
           <p className="mt-2 text-xs leading-5 text-slate-500">
             <span className="font-semibold text-slate-600">Privacy:</span> Uploaded documents and pasted text are processed securely on the server for the purpose of generating this review, deleted immediately after processing, and are not stored or used for model training.
+          </p>
+          <p className="mt-2 text-xs leading-5 text-slate-500">
+            <span className="font-semibold text-slate-600">Review method:</span> Findings are produced by deterministic, rule-based checks. No large language model generates the review results.
           </p>
         </div>
 
@@ -799,92 +658,6 @@ export default function ReviewPage() {
                     No citation issues.
                     {checkResult.stats.references_parsed === 0 && " No reference list detected — include a \"References\" heading in your text for citation matching."}
                   </p>
-                )}
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* AI Polish — only available for pasted text (docx body not retained client-side) */}
-        {checkResult && mode === "paste" && (
-          <div className="border-t border-[#dce4db] pt-8">
-            <h2 className="mb-1 text-lg font-semibold text-slate-900">AI-Assisted Polish</h2>
-            <p className="mb-4 text-sm text-slate-500">
-              Improves clarity, reduces passive voice, raises doctoral register.
-              Every suggestion requires your approval — citations are locked and cannot be changed.
-            </p>
-
-            {pendingOversized && (
-              <div className="border border-amber-300 bg-amber-50 rounded-lg p-4 mb-4">
-                <p className="text-sm font-semibold text-amber-800 mb-1">Multi-credit submission</p>
-                <p className="text-sm text-amber-700 mb-3">{pendingOversized.message}</p>
-                <div className="flex gap-3">
-                  <button onClick={() => runReview(true)} className="button-interaction rounded bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700">
-                    Confirm — use {pendingOversized.credits_required} credits
-                  </button>
-                  <button onClick={() => setPendingOversized(null)} className="button-secondary rounded border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            )}
-
-            {reviewError && (
-              <div className="border border-red-300 bg-red-50 rounded-lg p-4 text-red-700 text-sm mb-4">{reviewError}</div>
-            )}
-
-            {!reviewResult && !pendingOversized && (
-              <button
-                onClick={() => runReview(false)}
-                disabled={reviewing}
-                className="button-interaction rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white hover:bg-[#0b3031] disabled:opacity-50"
-              >
-                {reviewing ? "Running AI review…" : "Run AI polish (1 credit)"}
-              </button>
-            )}
-
-            {reviewing && <p className="text-sm text-gray-500 mt-2 animate-pulse">Sending to AI… 10–30 seconds.</p>}
-
-            {reviewResult && (
-              <div>
-                <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-wrap gap-6 text-sm">
-                  <span><strong>{reviewResult.suggestions.length}</strong> suggestion(s)</span>
-                  <span><strong>{acceptedCount}</strong> accepted</span>
-                  {reviewResult.rejected_by_citation_lock > 0 && (
-                    <span className="text-amber-700"><strong>{reviewResult.rejected_by_citation_lock}</strong> blocked by citation lock</span>
-                  )}
-                  {reviewResult.model_used && <span className="text-gray-400 font-mono text-xs ml-auto">{reviewResult.model_used}</span>}
-                  {reviewResult.test_mode && <span className="text-purple-600 text-xs font-semibold">TEST MODE</span>}
-                </div>
-
-                {reviewResult.suggestions.length === 0 ? (
-                  <p className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-lg p-4">
-                    No clarity or register improvements found. Your writing looks strong on these dimensions.
-                  </p>
-                ) : (
-                  <>
-                    {reviewResult.suggestions.map((s, i) => (
-                      <SuggestionCard key={i} s={s} index={i} decision={decisions[i] ?? "pending"} onDecide={(d) => decide(i, d)} />
-                    ))}
-
-                    {acceptedCount > 0 && (
-                      <div className="mt-6">
-                        <h3 className="text-sm font-semibold text-gray-700 mb-2">Preview with accepted changes ({acceptedCount})</h3>
-                        <textarea
-                          readOnly
-                          value={buildAcceptedText()}
-                          rows={10}
-                          className="w-full border border-green-300 rounded-lg px-3 py-2 text-sm font-mono bg-green-50 resize-y"
-                        />
-                        <button
-                          onClick={() => navigator.clipboard.writeText(buildAcceptedText())}
-                          className="button-interaction mt-2 rounded bg-green-600 px-4 py-1.5 text-xs text-white hover:bg-green-700"
-                        >
-                          Copy to clipboard
-                        </button>
-                      </div>
-                    )}
-                  </>
                 )}
               </div>
             )}
