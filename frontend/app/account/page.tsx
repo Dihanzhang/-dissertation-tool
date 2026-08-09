@@ -115,7 +115,7 @@ export default function AccountPage() {
   }
 
   return <main className="mx-auto min-h-screen max-w-xl px-6 py-16">
-    <Link href="/" className="text-sm font-semibold text-blue-700">← Dissertation Review</Link>
+    <Link href="/" className="text-sm font-semibold text-blue-700">← APA 7 Review Tool</Link>
     <h1 className="mt-8 text-3xl font-bold">Your Submission Pass</h1>
     {!token ? (codeSent ? <form className="mt-8 space-y-4 rounded-xl bg-slate-50 p-6 text-slate-900" onSubmit={verifyCode}>
       <p>Enter the code we emailed to <span className="font-semibold">{email}</span>.</p>

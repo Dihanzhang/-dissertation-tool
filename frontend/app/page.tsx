@@ -36,10 +36,10 @@ export default function LandingPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section className="mx-auto max-w-4xl px-6 pb-8 pt-12 text-center">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">APA 7 dissertation review</p>
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">A careful final review before you submit.</h1>
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">APA 7 Review Tool</p>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">A careful review before you submit.</h1>
         <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">
-          Check APA 7 alignment, citations, references and writing rules through deterministic checks, then decide what to change.
+          If you’re writing an essay, research paper or dissertation, check APA 7 alignment, citations, references and writing rules through deterministic, rule-based checks, then decide what to change.
         </p>
         <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
           <Link href="/account" className="button-primary rounded-lg px-6 py-3 font-semibold">Get Submission Pass — AU$14.95</Link>

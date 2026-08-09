@@ -379,7 +379,7 @@ export default function ReviewPage() {
       fileName: uploadedFile?.name ?? "",
       checkResult,
     });
-    const subject = encodeURIComponent(`Dissertation Review beta feedback - ${BETA_VERSION}`);
+    const subject = encodeURIComponent(`APA 7 Review Tool beta feedback - ${BETA_VERSION}`);
     const body = encodeURIComponent(template);
     window.location.href = `mailto:${FEEDBACK_EMAIL}?subject=${subject}&body=${body}`;
   }

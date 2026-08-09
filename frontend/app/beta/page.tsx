@@ -31,7 +31,7 @@ export default function BetaPage() {
 
   return (
     <main className="mx-auto min-h-screen max-w-xl px-6 py-16">
-      <Link href="/" className="text-sm font-semibold text-blue-700">← Dissertation Review</Link>
+      <Link href="/" className="text-sm font-semibold text-blue-700">← APA 7 Review Tool</Link>
       <h1 className="mt-8 text-3xl font-bold">Private beta access</h1>
       <p className="mt-3 text-slate-600">{notice || "Opening your review…"}</p>
       <p className="mt-10 text-sm text-slate-600">
