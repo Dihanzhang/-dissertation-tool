@@ -69,6 +69,8 @@ class Finding:
     location_hint: str     = ""
     category:      str     = ""    # Category enum value string
     chapter:       str     = ""    # APA section reference, e.g. "§6.33"
+    target_text:   str     = ""    # Exact original text, independent of comment wording
+    target_start:  Optional[int] = None  # Offset in raw_text (before quote masking)
 
 
 # ===========================================================================
@@ -187,6 +189,12 @@ _RANGE_CONTEXT_RE = re.compile(r'\d+\s*(?:-|–|—|to|through|and)\s*\d+', re.I
 def _exempt_numeral(text: str, m: re.Match) -> bool:
     """Return True if this numeral is exempt from the spell-out rule."""
     start, end = m.span()
+    if re.search(r'\b(?:pp?|paras?)\.\s*$', text[:start], re.IGNORECASE):
+        return True
+    # Inline enumeration is checked by MEC032, not as prose quantities.
+    if (text[max(0, start - 1):start] == '(' and text[end:end + 1] == ')'
+            and len(re.findall(r'\(\d+\)\s+\w', text)) >= 2):
+        return True
     # Decimal fraction: the "5" in "361.5" — digit follows "." or another digit
     if start > 0 and text[start - 1] in '.0123456789':
         return True
@@ -760,12 +768,12 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
     loc = _loc(para)
     cat = Category.MECHANICS.value
 
-    def _add(rule_id, sev, msg, fix="", auto=False, exc="", ch=""):
+    def _add(rule_id, sev, msg, fix="", auto=False, exc="", ch="", target="", start=None):
         findings.append(Finding(
             rule_id=rule_id, severity=sev, paragraph_index=idx,
             message=msg, suggested_fix=fix, autofixable=auto,
             excerpt=exc or text[:80], location_hint=loc,
-            category=cat, chapter=ch,
+            category=cat, chapter=ch, target_text=target, target_start=start,
         ))
 
     # MEC023 - Body paragraph first-line indent (DOCX uploads only).
@@ -793,31 +801,35 @@ def _check_mec(para: ProseParagraph, cfg: dict, findings: list[Finding]) -> None
              _excerpt(masked, m.start(), m.end()), "§6.1")
 
     # MEC002 — Sentence-starting numeral
-    for m in _SENTENCE_START_NUM_RE.finditer(masked):
-        if _near_quote_mask(masked, m.start(), m.end()):
+    for m in _SENTENCE_START_NUM_RE.finditer(text):
+        start, end = m.span(1)
+        if _is_in_quotes(text, start) or _is_in_parentheses(text, start):
+            continue
+        if re.search(r'\b(?:et\s+al|pp?|paras?)\.\s*$', text[:start], re.IGNORECASE):
             continue
         _add("MEC002", Severity.WARNING,
              f"APA §6.33: Do not begin a sentence with a numeral ('{m.group().strip()}'). "
              "Reword the sentence or spell out the number if below 10.",
              "Reword sentence so the numeral is not first.",
-             exc=masked[m.start():min(len(masked), m.end() + 40)].strip()[:80],
-             ch="§6.33")
+             exc=text[start:min(len(text), end + 40)].strip()[:80],
+             ch="§6.33", target=m.group(1), start=start)
 
     # MEC003 — Small numeral 1–9
     numeral_threshold = cfg.get("numeral_threshold", 10)
-    for m in _NUMERIC_TOKEN_RE.finditer(masked):
-        if _near_quote_mask(masked, m.start(), m.end()):
+    for m in _NUMERIC_TOKEN_RE.finditer(text):
+        if _is_in_quotes(text, m.start()):
             continue
         token = m.group(1)
         if len(token) != 1:
             continue
         num = int(token)
-        if num < numeral_threshold and not _exempt_numeral(masked, m):
+        if num < numeral_threshold and not _exempt_numeral(text, m):
             _add("MEC003", Severity.WARNING,
                  f"APA §6.33: Spell out numbers zero through nine in prose. "
                  f"'{m.group()}' → '{_NUM_WORDS.get(num, m.group())}'.",
                  f"Replace '{m.group()}' with '{_NUM_WORDS.get(num, m.group())}'",
-                 True, _excerpt(masked, m.start(), m.end()), "§6.33")
+                 True, _excerpt(text, m.start(), m.end()), "§6.33",
+                 target=m.group(), start=m.start())
 
     # MEC004 — Number ≥10 as words
     # APA §6.33 exception: numbers that BEGIN a sentence must be spelled out (or reworded).
@@ -1674,6 +1686,8 @@ def _check_ref_entries(
             location_hint=_loc(para) if para else rf.get("location_hint", ""),
             category=Category.REFERENCE.value,
             chapter=rf.get("chapter", "§9"),
+            target_text=rf.get("target_text", ""),
+            target_start=rf.get("target_start"),
         ))
 
     for para in ref_paragraphs:

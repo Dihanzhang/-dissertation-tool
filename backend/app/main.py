@@ -34,7 +34,7 @@ from pydantic import BaseModel
 from starlette.background import BackgroundTask
 
 from .modules.prose_extractor import ProseParagraph, extract_prose, QUOTE_MASK
-from .modules.module2_apa_checker import check_paragraphs, Finding, _load_config
+from .modules.module2_apa_checker import check_paragraphs, Finding, Severity, _load_config
 from .modules.module3_citation_matcher import (
     CitationMatchResult,
     run_citation_check,
@@ -68,7 +68,7 @@ _CONFIG_PATH = Path(__file__).parent / "config" / "prof_checklist.yaml"
 WORD_CAP = int(os.getenv("WORD_CAP_PER_CREDIT", "5000"))
 FREE_TRIAL_CAP = int(os.getenv("FREE_TRIAL_WORD_CAP", "3000"))
 TEST_MODE = os.getenv("TEST_MODE", "false").lower() in ("true", "1", "yes")
-RULE_SET_VERSION = "apa-mp-comments-gap-fix"
+RULE_SET_VERSION = "apa-review-quality-severity-2026-10-15"
 BETA_LINK_REJECTED = "This private beta link is not valid or has expired."
 
 
@@ -282,8 +282,21 @@ def _decorate_and_sort_citation_issues(
     paragraphs: list[ProseParagraph],
 ) -> None:
     para_by_index = _paragraph_lookup(paragraphs)
+    reference_by_line = {ref.line_index: ref for ref in citation_result.references}
+    reference_paragraphs: dict[str, list[ProseParagraph]] = {}
+    for para in paragraphs:
+        if para.is_reference_entry:
+            reference_paragraphs.setdefault(" ".join(para.raw_text.split()), []).append(para)
+    for issue in citation_result.uncited_references:
+        reference = reference_by_line.get(issue.get("line_index"))
+        candidates = reference_paragraphs.get(" ".join(reference.raw.split()), []) if reference else []
+        if candidates:
+            para = candidates.pop(0)
+            issue["paragraph_index"] = para.index
+            issue["reference"] = para.raw_text
 
     def decorate(issue: dict) -> dict:
+        issue.setdefault("severity", "warning")
         para = para_by_index.get(issue.get("paragraph_index"))
         if para is not None:
             issue["page_number"] = para.page_number
@@ -402,7 +415,7 @@ def _style_anchor_run(run, highlight_color, font_color) -> None:
     run.bold = True
 
 
-def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> list:
+def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING", target_start: int | None = None) -> list:
     from docx.enum.text import WD_COLOR_INDEX
     from docx.shared import RGBColor
 
@@ -426,7 +439,14 @@ def _highlight_runs(paragraph, target: str = "", severity: str = "WARNING") -> l
         return []
 
     para_text = paragraph.text or ""
-    span = _target_span(para_text, target)
+    if target_start is not None:
+        # extract_prose strips paragraph-edge whitespace; offsets use that text.
+        start = target_start + len(para_text) - len(para_text.lstrip())
+        span = (start, start + len(target))
+        if para_text[span[0]:span[1]] != target:
+            return []  # Never move an exact finding to an unrelated sentence.
+    else:
+        span = _target_span(para_text, target)
     if span is None:
         return []
     start, end = span
@@ -481,6 +501,8 @@ def _comment_text(row: dict) -> str:
 
 
 def _finding_target(finding: Finding) -> str:
+    if finding.target_text:
+        return finding.target_text
     if finding.rule_id == "CIT004" and finding.excerpt:
         return finding.excerpt
     found = re.search(r"Found:\s*'([^']+)'", finding.message)
@@ -527,6 +549,7 @@ def _annotated_rows(
             "message": finding.message,
             "suggested_fix": finding.suggested_fix,
             "target": _finding_target(finding),
+            "target_start": finding.target_start,
         })
 
     for label, issue in _citation_issue_groups(citation_result):
@@ -539,7 +562,7 @@ def _annotated_rows(
             "context": issue.get("citation") or issue.get("reference", ""),
             "message": issue.get("message", ""),
             "suggested_fix": "",
-            "target": issue.get("citation", ""),
+            "target": issue.get("citation") or issue.get("reference", ""),
         })
 
     deduped: dict[tuple, dict] = {}
@@ -550,6 +573,7 @@ def _annotated_rows(
             str(row.get("label", "")).lower(),
             str(row.get("severity", "")).lower(),
             re.sub(r"\s+", " ", str(row.get("target", "")).strip().lower()),
+            row.get("target_start"),
         )
         existing = deduped.get(key)
         if existing is None:
@@ -585,6 +609,7 @@ def _annotate_docx(doc_path: str, output_path: str, rows: list[dict]) -> None:
             doc.paragraphs[para_index],
             str(row.get("target") or ""),
             str(row.get("severity") or "WARNING"),
+            target_start=row.get("target_start"),
         )
         if anchor_runs:
             doc.add_comment(
@@ -882,6 +907,7 @@ async def check_docx_annotated(
     file: UploadFile = File(...),
     reference_text: str = Form(default=""),
     levenshtein_threshold: int = Form(default=2),
+    severities: list[Severity] | None = Form(default=None),
     _: None = Depends(require_review_access),
 ):
     """Return a copy of the uploaded .docx with findings highlighted and summarized."""
@@ -918,6 +944,9 @@ async def check_docx_annotated(
         _decorate_and_sort_citation_issues(citation_result, paragraphs)
 
         rows = _annotated_rows(apa_findings, citation_result)
+        if severities is not None:
+            selected = {severity.value.upper() for severity in severities}
+            rows = [row for row in rows if row["severity"] in selected]
         with tempfile.NamedTemporaryFile(suffix=".docx", delete=False) as out:
             out_path = out.name
         _annotate_docx(tmp_path, out_path, rows)

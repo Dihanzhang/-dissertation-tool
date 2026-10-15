@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import FeedbackForm from "../feedback-form";
+import { SEVERITIES, isSeveritySelected, type Severity } from "./severity";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const BETA_VERSION = process.env.NEXT_PUBLIC_BETA_VERSION || "Beta v0.1";
-const FEEDBACK_EMAIL = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL || "";
 
 function betaToken(): string {
   return typeof window === "undefined" ? "" : localStorage.getItem("beta-access-token") || "";
@@ -111,49 +112,6 @@ function compareCitationIssues(a: CitationIssue, b: CitationIssue) {
   return a.message.localeCompare(b.message);
 }
 
-function buildFeedbackTemplate({
-  mode,
-  fileName,
-  checkResult,
-}: {
-  mode: "paste" | "upload";
-  fileName: string;
-  checkResult: CheckResponse | null;
-}) {
-  const stats = checkResult
-    ? [
-        `APA findings: ${checkResult.apa_findings.length}`,
-        `Citation issues: ${
-          checkResult.missing_references.length +
-          checkResult.uncited_references.length +
-          checkResult.year_mismatches.length +
-          checkResult.spelling_mismatches.length +
-          checkResult.co_author_only_matches.length
-        }`,
-        `Paragraphs checked: ${checkResult.stats.paragraphs_checked}`,
-      ].join("\n")
-    : "No check result yet.";
-
-  return [
-    `Version: ${BETA_VERSION}`,
-    `Mode: ${mode}`,
-    `File: ${fileName || "N/A"}`,
-    stats,
-    "",
-    "1. What worked well?",
-    "",
-    "2. What was confusing?",
-    "",
-    "3. False positives or wrong APA suggestions:",
-    "",
-    "4. Missing issues the tool should have found:",
-    "",
-    "5. Reviewed DOCX formatting/comment problems:",
-    "",
-    "6. Overall: Would you use this again? Why or why not?",
-  ].join("\n");
-}
-
 // ---------------------------------------------------------------------------
 // Sub-components
 // ---------------------------------------------------------------------------
@@ -228,11 +186,15 @@ function FindingCard({ f }: { f: Finding }) {
   );
 }
 
-function CitationIssueCard({ issue, label }: { issue: Record<string, unknown>; label: string }) {
+function CitationIssueCard({ issue, label }: { issue: CitationIssue; label: string }) {
   const locationHint = typeof issue.location_hint === "string" ? issue.location_hint : "";
+  const severity = issue.severity ?? "warning";
   return (
-    <div className="border border-amber-200 bg-white rounded-lg p-3 mb-2 shadow-sm">
-      <p className="text-xs font-semibold text-amber-700 mb-1">{label}</p>
+    <div className={`border rounded-lg p-3 mb-2 shadow-sm ${SEV_BORDER[severity]}`}>
+      <div className="mb-1 flex items-center gap-2">
+        <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${SEV_BADGE[severity]}`}>{severity.toUpperCase()}</span>
+        <p className="text-xs font-semibold text-slate-700">{label}</p>
+      </div>
       <p className="text-sm text-slate-800 leading-6">{String(issue.message)}</p>
       {locationHint && (
         <p className="text-xs text-slate-400 italic mt-1">
@@ -258,7 +220,8 @@ export default function ReviewPage() {
   const [annotating, setAnnotating] = useState(false);
   const [checkResult, setCheckResult] = useState<CheckResponse | null>(null);
   const [checkError, setCheckError] = useState("");
-  const [feedbackCopied, setFeedbackCopied] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
+  const [selectedSeverities, setSelectedSeverities] = useState<Severity[]>([...SEVERITIES]);
   const [tab, setTab] = useState<"apa" | "citations">("apa");
 
   const [accessChecked, setAccessChecked] = useState(false);
@@ -326,6 +289,8 @@ export default function ReviewPage() {
       }
 
       setCheckResult(data);
+      setSelectedSeverities([...SEVERITIES]);
+      setFeedbackOpen(false);
       setTab("apa");
     } catch (err) {
       setCheckError(err instanceof Error ? err.message : "Request failed.");
@@ -335,13 +300,14 @@ export default function ReviewPage() {
   }
 
   async function handleDownloadAnnotated() {
-    if (!uploadedFile) return;
+    if (!uploadedFile || selectedSeverities.length === 0) return;
     setAnnotating(true);
     setCheckError("");
 
     try {
       const form = new FormData();
       form.append("file", uploadedFile);
+      selectedSeverities.forEach(severity => form.append("severities", severity));
       const res = await fetch(`${API_BASE}/api/check/docx/annotated`, { method: "POST", body: form, headers: authHeaders() });
       if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `HTTP ${res.status}`);
 
@@ -360,28 +326,6 @@ export default function ReviewPage() {
     } finally {
       setAnnotating(false);
     }
-  }
-
-  async function handleCopyFeedbackTemplate() {
-    const template = buildFeedbackTemplate({
-      mode,
-      fileName: uploadedFile?.name ?? "",
-      checkResult,
-    });
-    await navigator.clipboard.writeText(template);
-    setFeedbackCopied(true);
-    window.setTimeout(() => setFeedbackCopied(false), 2500);
-  }
-
-  function handleEmailFeedback() {
-    const template = buildFeedbackTemplate({
-      mode,
-      fileName: uploadedFile?.name ?? "",
-      checkResult,
-    });
-    const subject = encodeURIComponent(`APA 7 Review Tool beta feedback - ${BETA_VERSION}`);
-    const body = encodeURIComponent(template);
-    window.location.href = `mailto:${FEEDBACK_EMAIL}?subject=${subject}&body=${body}`;
   }
 
   const citationTotal = checkResult
@@ -410,6 +354,15 @@ export default function ReviewPage() {
         })),
       ].sort((a, b) => compareCitationIssues(a.issue, b.issue))
     : [];
+  const visibleFindings = checkResult?.apa_findings.filter(f => isSeveritySelected(f.severity, selectedSeverities)) ?? [];
+  const visibleCitationIssues = citationIssues.filter(({ issue }) => isSeveritySelected(issue.severity, selectedSeverities));
+  const feedbackContext = checkResult ? [
+    `Version: ${BETA_VERSION}`,
+    `Mode: ${mode}`,
+    `APA findings: ${checkResult.apa_findings.length}`,
+    `Citation issues: ${citationTotal}`,
+    `Paragraphs checked: ${checkResult.stats.paragraphs_checked}`,
+  ].join("\n") : "";
 
   const words = mode === "paste" ? wordCount(pastedText) : uploadedFile ? null : 0;
   const canSubmit = mode === "paste" ? pastedText.trim().length > 0 : uploadedFile !== null;
@@ -540,10 +493,10 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={handleDownloadAnnotated}
-                disabled={annotating}
+                disabled={annotating || selectedSeverities.length === 0}
                 className="button-interaction rounded-lg bg-[#123c3d] px-6 py-2.5 font-semibold text-white hover:bg-[#0b3031] disabled:opacity-50"
               >
-                {annotating ? "Preparing..." : "Download reviewed .docx"}
+                {annotating ? "Preparing..." : "Download reviewed DOCX — selected categories"}
               </button>
             )}
           </div>
@@ -586,23 +539,19 @@ export default function ReviewPage() {
             {BETA_VERSION} private beta: check the on-screen findings and reviewed DOCX, then report false positives or confusing comments.
           </p>
           {checkResult && (
-            <div className="flex flex-wrap justify-center gap-2">
+            <div className="w-full max-w-xl">
               <button
                 type="button"
-                onClick={handleCopyFeedbackTemplate}
+                onClick={() => setFeedbackOpen(open => !open)}
+                aria-expanded={feedbackOpen}
+                aria-controls="review-feedback"
                 className="button-secondary rounded-md border-[#cfd9cf] px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-[#f4faf6]"
               >
-                {feedbackCopied ? "Template copied" : "Copy feedback template"}
+                Share your feedback
               </button>
-              {FEEDBACK_EMAIL && (
-                <button
-                  type="button"
-                  onClick={handleEmailFeedback}
-                  className="button-interaction rounded-md bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-slate-800"
-                >
-                  Email beta feedback
-                </button>
-              )}
+              <div id="review-feedback" hidden={!feedbackOpen} className="mt-4">
+                <FeedbackForm context={feedbackContext} />
+              </div>
             </div>
           )}
         </div>
@@ -630,6 +579,23 @@ export default function ReviewPage() {
               </div>
             )}
 
+            <fieldset className="mb-4 rounded-lg border border-[#dce4db] bg-white p-4">
+              <legend className="px-1 text-sm font-semibold text-slate-800">Show severity categories</legend>
+              <div className="flex flex-wrap gap-x-6 gap-y-3">
+                {SEVERITIES.map(severity => (
+                  <label key={severity} className="flex cursor-pointer items-center gap-2 text-sm text-slate-800">
+                    <input type="checkbox" checked={selectedSeverities.includes(severity)}
+                      onChange={event => setSelectedSeverities(selected => event.target.checked ? [...selected, severity] : selected.filter(s => s !== severity))}
+                      className="h-4 w-4 accent-[#123c3d]" />
+                    {severity[0].toUpperCase() + severity.slice(1)}
+                  </label>
+                ))}
+              </div>
+              <p className="mt-3 text-sm text-slate-600" role="status">Showing {visibleFindings.length + visibleCitationIssues.length} of {checkResult.apa_findings.length + citationTotal} findings</p>
+              <p className="mt-1 text-xs text-slate-500">Your selection also applies to the reviewed Word download.</p>
+              {selectedSeverities.length === 0 && <p className="mt-2 text-sm text-amber-800">Select at least one severity category to download a reviewed document.</p>}
+            </fieldset>
+
             <div className="mb-4 flex border-b border-[#dce4db]">
               {(["apa", "citations"] as const).map((t) => (
                 <button
@@ -637,7 +603,7 @@ export default function ReviewPage() {
                   onClick={() => setTab(t)}
                   className={`button-interaction px-4 py-2 text-sm font-semibold ${tab === t ? "border-b-2 border-[#123c3d] text-[#123c3d]" : "text-slate-500 hover:text-slate-700"}`}
                 >
-                  {t === "apa" ? `APA Rules (${checkResult.apa_findings.length})` : `Citations (${citationTotal})`}
+                  {t === "apa" ? `APA Rules (${visibleFindings.length} of ${checkResult.apa_findings.length})` : `Citations (${visibleCitationIssues.length} of ${citationTotal})`}
                 </button>
               ))}
             </div>
@@ -645,14 +611,17 @@ export default function ReviewPage() {
             {tab === "apa" && (
               checkResult.apa_findings.length === 0
                 ? <p className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">No APA 7 rule findings.</p>
-                : checkResult.apa_findings.map((f, i) => <FindingCard key={i} f={f} />)
+                : visibleFindings.length === 0
+                  ? <p className="rounded-lg border border-slate-200 bg-white p-4 text-sm text-slate-700">No findings match your selection.</p>
+                  : visibleFindings.map((f, i) => <FindingCard key={i} f={f} />)
             )}
 
             {tab === "citations" && (
               <div>
-                {citationIssues.map(({ issue, label }, i) => (
-                  <CitationIssueCard key={`ci-${i}`} issue={issue as unknown as Record<string, unknown>} label={label} />
+                {visibleCitationIssues.map(({ issue, label }, i) => (
+                  <CitationIssueCard key={`ci-${i}`} issue={issue} label={label} />
                 ))}
+                {citationTotal > 0 && visibleCitationIssues.length === 0 && <p className="rounded-lg border border-slate-200 bg-white p-4 text-sm text-slate-700">No findings match your selection.</p>}
                 {citationTotal === 0 && (
                   <p className="rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700">
                     No citation issues.

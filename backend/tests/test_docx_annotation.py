@@ -5,6 +5,48 @@ from app.modules.module2_apa_checker import Finding, Severity
 from app.modules.module3_citation_matcher import CitationMatchResult
 
 
+def test_uncited_reference_warning_is_anchored_to_its_reference_entry(tmp_path):
+    from app.main import _annotate_docx, _decorate_and_sort_citation_issues
+    from app.modules.module3_citation_matcher import run_citation_check_paragraphs
+    from app.modules.prose_extractor import extract_prose
+
+    doc = Document()
+    doc.add_paragraph("Introduction", style="Heading 1")
+    doc.add_paragraph("This paragraph discusses the research without citing a source.")
+    doc.add_paragraph("References", style="Heading 1")
+    reference = "Jones, K. (2020). An unused reference. Academic Journal, 3, 1–5."
+    doc.add_paragraph(reference)
+    paragraphs = extract_prose(doc)
+    result = run_citation_check_paragraphs(paragraphs, reference)
+    _decorate_and_sort_citation_issues(result, paragraphs)
+
+    assert result.uncited_references[0]["paragraph_index"] == 3
+    rows = _annotated_rows([], result)
+    assert rows[0]["target"] == reference
+    source, reviewed = tmp_path / "original.docx", tmp_path / "reviewed.docx"
+    doc.save(source)
+    _annotate_docx(str(source), str(reviewed), rows)
+    exported = Document(reviewed)
+    assert len(exported.comments) == 1
+    assert "Reference not cited in text" in next(iter(exported.comments)).text
+    assert [r.text for r in exported.paragraphs[3].runs if r.font.highlight_color is not None] == [reference]
+    assert all(r.font.highlight_color is None for r in exported.paragraphs[1].runs)
+
+
+def test_separate_reference_list_does_not_anchor_to_unrelated_document_text():
+    from app.main import _decorate_and_sort_citation_issues
+    from app.modules.module3_citation_matcher import run_citation_check_paragraphs
+    from app.modules.prose_extractor import extract_prose
+
+    doc = Document()
+    doc.add_paragraph("The article contains no reference section.")
+    paragraphs = extract_prose(doc)
+    result = run_citation_check_paragraphs(paragraphs, "Jones, K. (2020). An unused reference.")
+    _decorate_and_sort_citation_issues(result, paragraphs)
+    assert result.uncited_references
+    assert result.uncited_references[0].get("paragraph_index") is None
+
+
 def test_highlight_runs_splits_single_run_to_target_phrase_only():
     doc = Document()
     para = doc.add_paragraph("The initiative is delivered by four coordinated teams.")

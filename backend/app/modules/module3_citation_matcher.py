@@ -132,17 +132,21 @@ def is_group_author(name: str) -> bool:
 
 # Parenthetical: (Smith, 2021) or (Smith & Jones, 2021) or (Smith et al., 2021)
 # Also handles year suffixes: 2021a
-_PAREN_CITE_RE = re.compile(
-    r'\('
+_CITATION_SOURCE_PATTERN = (
     r'(?P<authors>[A-Za-z][A-Za-z0-9&.\'\-]+'
         r'(?:\s+[A-Za-z][A-Za-z0-9&.\'\-]+)*'          # compounds/group names like "Al Abri" or "Allied Market Research"
         r'(?:\s*[,&]\s*[A-Za-z][A-Za-z0-9&.\'\-]+(?:\s+[A-Za-z][A-Za-z0-9&.\'\-]+)*)*'  # additional authors
         r'(?:\s+et\s+al\.?)?'
     r')'
-    r',?\s*'
+    r'(?:\s*,\s*)*\s*'
     r'(?P<year>\d{4}[a-z]?)'
-    r'\)',
+    r'(?!\d)'
+    r'(?P<additional_years>(?:\s*,\s*\d{4}[a-z]?(?!\d))*)'
 )
+# Presence matching tolerates locators; punctuation/style checks are separate.
+_CITATION_LOCATOR_PATTERN = r'(?:\s*,?\s*(?:pp?|paras?)\.\s*[^();]+)?'
+_PAREN_CITATION_PREFIX = r'(?:(?:e\.g\.|i\.e\.|cf\.|see(?:\s+also)?)\s*,?\s+(?=[A-Za-z]))?'
+_PAREN_CITE_RE = re.compile(r'\(' + _PAREN_CITATION_PREFIX + _CITATION_SOURCE_PATTERN + _CITATION_LOCATOR_PATTERN + r'\s*\)')
 
 # Also: multiple sources in one set of parens: (Smith, 2021; Jones, 2019)
 _MULTI_PAREN_RE = re.compile(r'\(([^)]+(?:;[^)]+)+)\)')
@@ -154,22 +158,19 @@ _NARRATIVE_RE = re.compile(
     r'(?<![A-Za-z])'           # not preceded by a letter (soft word boundary)
     r'(?P<authors>'
     r'[A-Z][A-Za-z\'\-]+'     # first word of surname (capital)
-    r'(?:\s+[A-Z][A-Za-z\'\-]+)*'   # additional words in compound surname (each capital)
+    r'(?:\s+(?:(?:van|von|de|den|der|del|da|di|la|le)\s+)*[A-Z][A-Za-z\'\-]+)*'
     r'(?:\s+et\s+al\.?)?'
     r'(?:\s+(?:and|&)\s+'
         r'[A-Z][A-Za-z\'\-]+'
-        r'(?:\s+[A-Z][A-Za-z\'\-]+)*'
+        r'(?:\s+(?:(?:van|von|de|den|der|del|da|di|la|le)\s+)*[A-Z][A-Za-z\'\-]+)*'
         r'(?:\s+et\s+al\.?)?'
     r')*'
     r')'
-    r'\s+\((?P<year>\d{4}[a-z]?)\)',
+    r'\s+\((?P<year>\d{4}[a-z]?)' + _CITATION_LOCATOR_PATTERN + r'\)',
 )
 
 # Individual source unit within multi-citation
-_SINGLE_IN_MULTI_RE = re.compile(
-    r'(?P<authors>[A-Za-z][A-Za-z0-9&.\'\-]+(?:\s+[A-Za-z][A-Za-z0-9&.\'\-]+)*(?:\s+et\s+al\.?)?)'
-    r',?\s*(?P<year>\d{4}[a-z]?)'
-)
+_SINGLE_IN_MULTI_RE = re.compile(_PAREN_CITATION_PREFIX + _CITATION_SOURCE_PATTERN + _CITATION_LOCATOR_PATTERN)
 
 
 # Discourse/transition words that start sentences and may be captured by the narrative
@@ -178,7 +179,8 @@ _DISCOURSE_PREFIX_RE = re.compile(
     r'^(?:meanwhile|however|furthermore|moreover|additionally|therefore|thus|'
     r'finally|recently|previously|notably|importantly|consequently|subsequently|'
     r'alternatively|specifically|overall|collectively|indeed|similarly|as|'
-    r'conversely|nonetheless|nevertheless)\s+',
+    r'conversely|nonetheless|nevertheless|while|whereas|although|though|'
+    r'following|unlike|when|because|since|after|before|both|also)\s+',
     re.IGNORECASE,
 )
 
@@ -211,7 +213,9 @@ def _parse_author_string(author_str: str) -> list[str]:
     s = re.sub(r'\bet\s+al\.?', '', author_str).strip()
 
     # Split on & or 'and'
-    parts = re.split(r'\s*(?:&|and)\s*', s, flags=re.IGNORECASE)
+    # "and" is a separator only as a word, never inside Anderson or Brandt.
+    # An organisational author may itself contain "and".
+    parts = [s] if is_group_author(s) and '&' not in s else re.split(r'\s*(?:&|\band\b)\s*', s, flags=re.IGNORECASE)
     surnames = []
     for part in parts:
         part = part.strip().rstrip(".,")
@@ -231,62 +235,64 @@ def parse_citations(text: str, paragraph_index: int = 0) -> list[Citation]:
     # Normalise Unicode smart quotes so MS Word possessives ("Kotter's") match the regex
     text = _normalize_quotes(text)
     citations: list[Citation] = []
-    seen_positions: set[int] = set()
+    seen_spans: list[tuple[int, int]] = []
+
+    def overlaps(start: int, end: int) -> bool:
+        return any(start < b and end > a for a, b in seen_spans)
 
     # Parenthetical: simple (Author, Year)
     for m in _PAREN_CITE_RE.finditer(text):
         pos = m.start()
-        if pos in seen_positions:
+        if overlaps(*m.span()):
             continue
-        seen_positions.add(pos)
+        seen_spans.append(m.span())
         authors = _parse_author_string(m.group("authors"))
-        citations.append(Citation(
-            raw=m.group(),
-            authors=authors,
-            year=m.group("year"),
-            form="parenthetical",
-            paragraph_index=paragraph_index,
-            position_in_para=pos,
-        ))
+        years = [m.group("year")] + re.findall(r'\d{4}[a-z]?', m.group("additional_years"))
+        for year in years:
+            citations.append(Citation(
+                raw=m.group(), authors=authors, year=year, form="parenthetical",
+                paragraph_index=paragraph_index, position_in_para=pos,
+            ))
 
     # Multi-citation: (Smith, 2021; Jones, 2019)
     for m in _MULTI_PAREN_RE.finditer(text):
-        pos = m.start()
+        if overlaps(*m.span()):
+            continue
+        seen_spans.append(m.span())
         content = m.group(1)
         if ';' not in content:
             continue
-        parts = content.split(';')
-        for part in parts:
-            part = part.strip()
+        for part_match in re.finditer(r'[^;]+', content):
+            part = part_match.group().strip()
+            pos = m.start(1) + part_match.start() + len(part_match.group()) - len(part_match.group().lstrip())
+            # Keep a recognized author/year even with an unsupported trailing
+            # locator (e.g., Chapter 3); it must not become a false uncited entry.
             sm = _SINGLE_IN_MULTI_RE.match(part)
             if sm:
-                if pos not in seen_positions:
-                    seen_positions.add(pos)
                 authors = _parse_author_string(sm.group("authors"))
-                citations.append(Citation(
-                    raw=part,
-                    authors=authors,
-                    year=sm.group("year"),
-                    form="parenthetical",
-                    paragraph_index=paragraph_index,
-                    position_in_para=pos,
-                ))
+                years = [sm.group("year")] + re.findall(r'\d{4}[a-z]?', sm.group("additional_years"))
+                for year in years:
+                    citations.append(Citation(
+                        raw=part, authors=authors, year=year, form="parenthetical",
+                        paragraph_index=paragraph_index, position_in_para=pos,
+                    ))
 
     # Narrative: Author (Year)
     for m in _NARRATIVE_RE.finditer(text):
         pos = m.start()
         # Skip if already captured as parenthetical (overlapping)
-        if any(abs(pos - sp) < 3 for sp in seen_positions):
+        if overlaps(*m.span()):
             continue
-        seen_positions.add(pos)
+        seen_spans.append(m.span())
         # Strip leading discourse words ("Meanwhile", "However", etc.) that get
         # captured because they start a sentence with a capital letter but are
         # not part of the author name: "Meanwhile Allied Market Research (2024)"
         raw_authors = m.group("authors")
         clean_authors = _DISCOURSE_PREFIX_RE.sub("", raw_authors).strip()
+        pos += len(raw_authors) - len(clean_authors)
         authors = _parse_author_string(clean_authors)
         citations.append(Citation(
-            raw=m.group(),
+            raw=text[pos:m.end()],
             authors=authors,
             year=m.group("year"),
             form="narrative",
@@ -297,12 +303,12 @@ def parse_citations(text: str, paragraph_index: int = 0) -> list[Citation]:
     # Lowercase/acronym group authors, e.g., "pwc (2024)".
     for m in _LOWERCASE_GROUP_CITE_RE.finditer(text):
         pos = m.start()
-        if pos in seen_positions or any(abs(pos - sp) < 3 for sp in seen_positions):
+        if overlaps(*m.span()):
             continue
         raw_author = m.group("authors")
         if raw_author.lower() in _LOWERCASE_CITATION_STOPWORDS:
             continue
-        seen_positions.add(pos)
+        seen_spans.append(m.span())
         citations.append(Citation(
             raw=m.group(),
             authors=[normalise_surname(raw_author)],

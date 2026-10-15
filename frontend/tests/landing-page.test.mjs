@@ -14,7 +14,7 @@ test("the sample reviewed document is shown before what the pass includes", asyn
 });
 
 test("feedback fields are visible against the dark section", async () => {
-  const source = await landing();
+  const source = await readFile(new URL("../app/feedback-form.tsx", import.meta.url), "utf8");
 
   // Dark text with no background renders invisible in a browser's dark mode.
   const fields = source.match(/<(input|textarea)[^>]*name="(name|contact|message)"[^>]*>/g) ?? [];

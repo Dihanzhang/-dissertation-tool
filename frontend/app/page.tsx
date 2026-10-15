@@ -2,36 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent, useEffect, useState } from "react";
-
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+import { useEffect } from "react";
+import FeedbackForm from "./feedback-form";
 
 export default function LandingPage() {
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
-
   useEffect(() => {
     if (window.location.hash.includes("access_token=")) {
       window.location.replace(`/account${window.location.hash}`);
     }
   }, []);
-
-  async function sendFeedback(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setStatus("sending");
-    const form = new FormData(event.currentTarget);
-    try {
-      const response = await fetch(`${API_BASE}/api/feedback`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(form)),
-      });
-      if (!response.ok) throw new Error("Could not send feedback");
-      event.currentTarget.reset();
-      setStatus("sent");
-    } catch {
-      setStatus("error");
-    }
-  }
 
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -102,19 +81,9 @@ export default function LandingPage() {
 
       <section id="feedback" className="bg-slate-900 py-16 text-white">
         <div className="mx-auto max-w-xl px-6">
-          <h2 className="text-2xl font-bold">Share your experience</h2>
+          <h2 className="text-2xl font-bold">Share your feedback</h2>
           <p className="mt-2 text-slate-300">Your feedback helps improve the tool. Name and contact details are optional.</p>
-          <form className="mt-6 space-y-4" onSubmit={sendFeedback}>
-            {/* bg-white is required: a browser in dark mode gives unstyled fields a
-                dark background, which made these invisible against this section. */}
-            <input name="name" aria-label="Name" placeholder="Name (optional)" className="w-full rounded-md border border-slate-300 bg-white p-3 text-slate-900 placeholder:text-slate-500" />
-            <input name="contact" aria-label="Contact" placeholder="Email or contact (optional)" className="w-full rounded-md border border-slate-300 bg-white p-3 text-slate-900 placeholder:text-slate-500" />
-            <input name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
-            <textarea name="message" required minLength={10} maxLength={2000} aria-label="Feedback message" placeholder="Tell me what worked, what did not, or what you need." className="min-h-32 w-full rounded-md border border-slate-300 bg-white p-3 text-slate-900 placeholder:text-slate-500" />
-            <button disabled={status === "sending"} className="button-interaction rounded-md bg-white px-5 py-3 font-semibold text-slate-900 hover:bg-slate-100 disabled:opacity-60">{status === "sending" ? "Sending…" : "Send feedback"}</button>
-            {status === "sent" && <p role="status" className="text-emerald-300">Thank you — your message has been received.</p>}
-            {status === "error" && <p role="alert" className="text-rose-300">Your message could not be sent. Please try again or email dihan.zhang@outlook.com.</p>}
-          </form>
+          <div className="mt-6"><FeedbackForm /></div>
         </div>
       </section>
     </main>

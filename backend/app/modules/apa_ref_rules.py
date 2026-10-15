@@ -106,7 +106,7 @@ _TITLE_CASE_EXEMPT_WORDS = {
 }
 _LOWERCASE_TITLE_WORDS = {
     "a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into",
-    "nor", "of", "on", "or", "the", "to", "with", "without",
+    "nor", "of", "on", "or", "the", "to", "with", "without", "between", "among",
 }
 
 
@@ -123,18 +123,27 @@ def _looks_like_reference_title_case_error(text: str) -> tuple[bool, str]:
             exempt_positions.add(idx)
 
     unexpected_caps = []
+    capitalized_function_word = False
+    content_words = 0
     for idx, word in enumerate(words):
         raw = word.group(0)
         if idx in exempt_positions:
             continue
         if raw in _TITLE_CASE_EXEMPT_WORDS:
             continue
-        if raw.lower() in _LOWERCASE_TITLE_WORDS and raw != raw.lower():
-            unexpected_caps.append(raw)
+        if raw.lower() in _LOWERCASE_TITLE_WORDS:
+            if raw != raw.lower():
+                unexpected_caps.append(raw)
+                capitalized_function_word = True
             continue
+        content_words += 1
         if raw[:1].isupper() and raw[1:] != raw[1:].upper():
             unexpected_caps.append(raw)
-    return len(unexpected_caps) >= 2, title
+    # Capitalised names alone (places, organisations, scales) are not evidence.
+    # Require a wider title-case pattern and a capitalised function word. This
+    # deliberately favours precision when proper names cannot be identified.
+    return (capitalized_function_word and len(unexpected_caps) >= 3
+            and len(unexpected_caps) / max(1, content_words) >= 0.7), title
 
 
 # ---------------------------------------------------------------------------
@@ -180,16 +189,18 @@ def check_ref_entries(
         text = entry["text"]
         loc = f'Reference entry — "{text[:60].rstrip()}{"…" if len(text) > 60 else ""}"'
 
-        def _add(rule_id, severity, message, suggested_fix="", chapter="§9"):
+        def _add(rule_id, severity, message, suggested_fix="", chapter="§9", target="", start=None):
             findings.append({
                 "rule_id": rule_id,
                 "severity": severity,
                 "paragraph_index": idx,
                 "message": message,
                 "suggested_fix": suggested_fix,
-                "excerpt": text[:80],
+                "excerpt": target or text[:80],
                 "location_hint": loc,
                 "chapter": chapter,
+                "target_text": target,
+                "target_start": start,
             })
 
         # REF001 — Old DOI format (§9.34)
@@ -394,10 +405,12 @@ def check_ref_entries(
         if title_case_error:
             _add(
                 "REF024", "warning",
-                "APA §9.19: Titles of articles and chapters in the reference list use sentence case, "
-                "not title case. Capitalize only the first word of the title/subtitle and proper nouns.",
-                "Convert the reference title to sentence case.",
+                "APA §9.19: Possible title-case capitalization in the reference title. "
+                "Review the highlighted title: capitalize the first word of the title/subtitle "
+                "and retain proper nouns and formal names.",
+                "Use sentence case for ordinary title words; preserve proper nouns and formal names.",
                 "§9.19",
+                target=title, start=_REF_TITLE_SEGMENT_RE.search(text).start("title"),
             )
 
         # REF025 — Personal communications do not appear in References (§8.9)
