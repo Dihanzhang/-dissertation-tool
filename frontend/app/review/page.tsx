@@ -289,7 +289,6 @@ export default function ReviewPage() {
       }
 
       setCheckResult(data);
-      setSelectedSeverities([...SEVERITIES]);
       setFeedbackOpen(false);
       setTab("apa");
     } catch (err) {
@@ -502,6 +501,26 @@ export default function ReviewPage() {
           </div>
         </form>
 
+        <fieldset className="mx-auto mb-6 max-w-4xl rounded-lg border border-[#dce4db] bg-white p-4">
+          <legend className="px-1 text-sm font-semibold text-slate-800">Show severity categories</legend>
+          <div className="flex flex-wrap gap-x-6 gap-y-3">
+            {SEVERITIES.map(severity => (
+              <label key={severity} className="flex cursor-pointer items-center gap-2 text-sm text-slate-800">
+                <input type="checkbox" checked={selectedSeverities.includes(severity)}
+                  onChange={event => {
+                    const checked = event.target.checked;
+                    setSelectedSeverities(selected => checked ? [...selected, severity] : selected.filter(s => s !== severity));
+                  }}
+                  className="h-4 w-4 accent-[#123c3d]" />
+                {severity[0].toUpperCase() + severity.slice(1)}
+              </label>
+            ))}
+          </div>
+          {checkResult && <p className="mt-3 text-sm text-slate-600" role="status">Showing {visibleFindings.length + visibleCitationIssues.length} of {checkResult.apa_findings.length + citationTotal} findings</p>}
+          <p className="mt-1 text-xs text-slate-500">Your selection also applies to the reviewed Word download.</p>
+          {selectedSeverities.length === 0 && <p className="mt-2 text-sm text-amber-800">Select at least one severity category to download a reviewed document.</p>}
+        </fieldset>
+
         <section className="mx-auto mb-6 max-w-4xl">
           <div className="grid gap-4 rounded-lg border border-[#dce4db] bg-white/85 p-3 shadow-sm sm:grid-cols-[0.95fr_1.35fr] sm:items-center">
             <div className="px-1 py-2 sm:px-3">
@@ -578,23 +597,6 @@ export default function ReviewPage() {
                 {checkResult.scope_warning}
               </div>
             )}
-
-            <fieldset className="mb-4 rounded-lg border border-[#dce4db] bg-white p-4">
-              <legend className="px-1 text-sm font-semibold text-slate-800">Show severity categories</legend>
-              <div className="flex flex-wrap gap-x-6 gap-y-3">
-                {SEVERITIES.map(severity => (
-                  <label key={severity} className="flex cursor-pointer items-center gap-2 text-sm text-slate-800">
-                    <input type="checkbox" checked={selectedSeverities.includes(severity)}
-                      onChange={event => setSelectedSeverities(selected => event.target.checked ? [...selected, severity] : selected.filter(s => s !== severity))}
-                      className="h-4 w-4 accent-[#123c3d]" />
-                    {severity[0].toUpperCase() + severity.slice(1)}
-                  </label>
-                ))}
-              </div>
-              <p className="mt-3 text-sm text-slate-600" role="status">Showing {visibleFindings.length + visibleCitationIssues.length} of {checkResult.apa_findings.length + citationTotal} findings</p>
-              <p className="mt-1 text-xs text-slate-500">Your selection also applies to the reviewed Word download.</p>
-              {selectedSeverities.length === 0 && <p className="mt-2 text-sm text-amber-800">Select at least one severity category to download a reviewed document.</p>}
-            </fieldset>
 
             <div className="mb-4 flex border-b border-[#dce4db]">
               {(["apa", "citations"] as const).map((t) => (
